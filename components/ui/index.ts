@@ -12,3 +12,4 @@ export { Col } from "./Col";
 
 // Form Elements
 export { Button } from "./Button";
+export { Input } from "./Input";
