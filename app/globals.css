@@ -106,6 +106,25 @@
   --element-gap-md: 24px;
   --element-gap-lg: 32px;
   --element-gap-xl: 48px;
+
+  /* ==========================================
+     СЕТКА (GRID)
+     12 колонок Desktop, 4 колонки Mobile
+     ========================================== */
+
+  /* Колонки */
+  --grid-columns: 12;
+  --grid-columns-tablet: 8;
+  --grid-columns-mobile: 4;
+
+  /* Gutter — gap между колонками */
+  --grid-gutter: 24px;
+  --grid-gutter-sm: 16px;
+
+  /* Max-width контейнера */
+  --container-max-width: 1280px;
+  --container-max-width-lg: 1440px;
+  --container-max-width-sm: 960px;
 }
 
 @theme inline {
@@ -163,6 +182,16 @@
   --element-gap-md: var(--element-gap-md);
   --element-gap-lg: var(--element-gap-lg);
   --element-gap-xl: var(--element-gap-xl);
+
+  /* Grid */
+  --grid-columns: var(--grid-columns);
+  --grid-columns-tablet: var(--grid-columns-tablet);
+  --grid-columns-mobile: var(--grid-columns-mobile);
+  --grid-gutter: var(--grid-gutter);
+  --grid-gutter-sm: var(--grid-gutter-sm);
+  --container-max-width: var(--container-max-width);
+  --container-max-width-lg: var(--container-max-width-lg);
+  --container-max-width-sm: var(--container-max-width-sm);
 }
 
 body {
