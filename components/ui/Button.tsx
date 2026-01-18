@@ -58,40 +58,66 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     const baseClasses = [
       "inline-flex items-center justify-center",
       "font-medium uppercase",
-      "transition-all duration-300",
+      "transition-all duration-300 ease-[cubic-bezier(0.2,0.8,0.2,1)]",
       "cursor-pointer",
       "select-none",
+      // Focus styles для accessibility
+      "focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2",
     ];
 
     // Стили вариантов
     const variantClasses: Record<ButtonVariant, string> = {
+      // Primary — основная CTA кнопка с заливкой
       primary: clsx(
         "bg-[var(--color-accent)] text-white",
-        "border border-[var(--color-accent)]",
-        "hover:bg-[var(--color-accent-hover)]"
+        "border-2 border-[var(--color-accent)]",
+        "hover:bg-[var(--color-accent-hover)] hover:border-[var(--color-accent-hover)]",
+        "active:scale-[0.98]",
+        "tracking-[var(--letter-spacing-extra-wide)]"
       ),
+      // Secondary — кнопка с обводкой
       secondary: clsx(
         "bg-transparent text-[var(--color-text-primary)]",
-        "border border-[var(--color-line-dark)]",
-        "hover:border-[var(--color-text-primary)]"
+        "border-2 border-[var(--color-line-dark)]",
+        "hover:border-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]",
+        "active:scale-[0.98]",
+        "tracking-[var(--letter-spacing-wide)]"
       ),
+      // Ghost — прозрачная кнопка, только текст
       ghost: clsx(
         "bg-transparent text-[var(--color-text-primary)]",
-        "border border-transparent",
-        "hover:bg-[var(--color-background-alt)]"
+        "border-2 border-transparent",
+        "hover:bg-[var(--color-background-alt)]",
+        "active:bg-[var(--color-line)]",
+        "tracking-[var(--letter-spacing-wide)]"
       ),
+      // Outline — обводка с заливкой на hover (CTA стиль)
       outline: clsx(
         "bg-transparent text-[var(--color-text-primary)]",
-        "border border-[var(--color-text-primary)]",
-        "hover:bg-[var(--color-accent)] hover:text-white"
+        "border-2 border-[var(--color-text-primary)]",
+        "hover:bg-[var(--color-accent)] hover:text-white hover:border-[var(--color-accent)]",
+        "active:scale-[0.98]",
+        "tracking-[var(--letter-spacing-extra-wide)]"
       ),
     };
 
-    // Стили размеров
+    // Стили размеров с точными значениями padding
     const sizeClasses: Record<ButtonSize, string> = {
-      sm: "px-4 py-2 text-[var(--font-size-small)] tracking-wide",
-      md: "px-6 py-3 text-[var(--font-size-small)] tracking-wide",
-      lg: "px-8 py-4 text-[var(--font-size-body)] tracking-wide",
+      // SM — компактная кнопка
+      sm: clsx(
+        "h-9 px-4",
+        "text-[12px]"
+      ),
+      // MD — стандартная кнопка
+      md: clsx(
+        "h-11 px-6",
+        "text-[13px]"
+      ),
+      // LG — крупная CTA кнопка
+      lg: clsx(
+        "h-14 px-8",
+        "text-[14px]"
+      ),
     };
 
     // Стили disabled
