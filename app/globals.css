@@ -186,6 +186,44 @@ body {
 }
 
 /* ============================================
+   «ЛОМАНАЯ» ТИПОГРАФИКА
+   Смешение кириллицы и латиницы с увеличенной разрядкой
+   Примеры: «С A Й Т Ы», «П O Д К Л Ю Ч», «W E B S T U D I O»
+   ============================================ */
+
+/* Базовый класс — широкий spacing */
+.text-broken {
+  font-family: var(--font-display), var(--font-display-fallback);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-extra-wide);
+}
+
+/* Ультра-широкий spacing для акцентных заголовков */
+.text-broken-ultra {
+  font-family: var(--font-display), var(--font-display-fallback);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-ultra-wide);
+}
+
+/* Модификатор размеров для .text-broken */
+.text-broken-h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+}
+
+.text-broken-h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+}
+
+.text-broken-h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+}
+
+/* ============================================
    RESPONSIVE — Mobile (< 768px)
    ============================================ */
 
