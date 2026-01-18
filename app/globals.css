@@ -70,6 +70,42 @@
   --letter-spacing-wide: 0.05em;
   --letter-spacing-extra-wide: 0.2em;
   --letter-spacing-ultra-wide: 0.35em;
+
+  /* ==========================================
+     SPACING СИСТЕМА
+     Базовый unit: 4px
+     ========================================== */
+
+  /* Базовые единицы */
+  --spacing-unit: 4px;
+  --spacing-xs: 4px;      /* 1 unit */
+  --spacing-sm: 8px;      /* 2 units */
+  --spacing-md: 16px;     /* 4 units */
+  --spacing-lg: 24px;     /* 6 units */
+  --spacing-xl: 32px;     /* 8 units */
+  --spacing-2xl: 48px;    /* 12 units */
+  --spacing-3xl: 64px;    /* 16 units */
+  --spacing-4xl: 96px;    /* 24 units */
+  --spacing-5xl: 128px;   /* 32 units */
+
+  /* Section gaps — вертикальные отступы между секциями */
+  --section-gap: 120px;
+  --section-gap-sm: 80px;
+
+  /* Container padding — боковые отступы контейнера */
+  --container-padding: 48px;
+  --container-padding-lg: 64px;
+
+  /* Card padding */
+  --card-padding: 24px;
+  --card-padding-lg: 32px;
+
+  /* Element gaps — отступы между элементами внутри секции */
+  --element-gap-xs: 8px;
+  --element-gap-sm: 16px;
+  --element-gap-md: 24px;
+  --element-gap-lg: 32px;
+  --element-gap-xl: 48px;
 }
 
 @theme inline {
@@ -104,6 +140,29 @@
   --letter-spacing-wide: var(--letter-spacing-wide);
   --letter-spacing-extra-wide: var(--letter-spacing-extra-wide);
   --letter-spacing-ultra-wide: var(--letter-spacing-ultra-wide);
+
+  /* Spacing */
+  --spacing-unit: var(--spacing-unit);
+  --spacing-xs: var(--spacing-xs);
+  --spacing-sm: var(--spacing-sm);
+  --spacing-md: var(--spacing-md);
+  --spacing-lg: var(--spacing-lg);
+  --spacing-xl: var(--spacing-xl);
+  --spacing-2xl: var(--spacing-2xl);
+  --spacing-3xl: var(--spacing-3xl);
+  --spacing-4xl: var(--spacing-4xl);
+  --spacing-5xl: var(--spacing-5xl);
+  --section-gap: var(--section-gap);
+  --section-gap-sm: var(--section-gap-sm);
+  --container-padding: var(--container-padding);
+  --container-padding-lg: var(--container-padding-lg);
+  --card-padding: var(--card-padding);
+  --card-padding-lg: var(--card-padding-lg);
+  --element-gap-xs: var(--element-gap-xs);
+  --element-gap-sm: var(--element-gap-sm);
+  --element-gap-md: var(--element-gap-md);
+  --element-gap-lg: var(--element-gap-lg);
+  --element-gap-xl: var(--element-gap-xl);
 }
 
 body {
@@ -224,11 +283,73 @@ body {
 }
 
 /* ============================================
+   SPACING УТИЛИТАРНЫЕ КЛАССЫ
+   ============================================ */
+
+/* Section — вертикальные отступы секций */
+.section {
+  padding-top: var(--section-gap);
+  padding-bottom: var(--section-gap);
+}
+
+.section-sm {
+  padding-top: var(--section-gap-sm);
+  padding-bottom: var(--section-gap-sm);
+}
+
+/* Container — контейнер с боковыми отступами */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.container-lg {
+  max-width: 1440px;
+  padding-left: var(--container-padding-lg);
+  padding-right: var(--container-padding-lg);
+}
+
+/* Card padding */
+.card-padding {
+  padding: var(--card-padding);
+}
+
+.card-padding-lg {
+  padding: var(--card-padding-lg);
+}
+
+/* Element gaps — для flex/grid контейнеров */
+.gap-element-xs {
+  gap: var(--element-gap-xs);
+}
+
+.gap-element-sm {
+  gap: var(--element-gap-sm);
+}
+
+.gap-element-md {
+  gap: var(--element-gap-md);
+}
+
+.gap-element-lg {
+  gap: var(--element-gap-lg);
+}
+
+.gap-element-xl {
+  gap: var(--element-gap-xl);
+}
+
+/* ============================================
    RESPONSIVE — Mobile (< 768px)
    ============================================ */
 
 @media (max-width: 767px) {
   :root {
+    /* Типографика */
     --font-size-h1: 40px;
     --font-size-h2: 32px;
     --font-size-h3: 24px;
@@ -236,5 +357,15 @@ body {
     --font-size-body: 16px;
     --font-size-small: 13px;
     --font-size-caption: 12px;
+
+    /* Spacing */
+    --section-gap: 80px;
+    --section-gap-sm: 56px;
+    --container-padding: 20px;
+    --container-padding-lg: 24px;
+    --card-padding: 20px;
+    --card-padding-lg: 24px;
+    --element-gap-lg: 24px;
+    --element-gap-xl: 32px;
   }
 }
