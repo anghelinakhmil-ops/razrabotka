@@ -77,25 +77,52 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
 
     // Классы для input
     const inputClasses = clsx(
-      // Базовые стили
+      // Базовые стили (default state)
       "w-full",
       "bg-[var(--color-background)]",
       "border-2 border-[var(--color-line)]",
       "text-[var(--color-text-primary)]",
-      "placeholder:text-[var(--color-text-light)]",
       "rounded-none", // Острые углы для premium стиля
+
+      // Placeholder стили
+      "placeholder:text-[var(--color-text-light)]",
+      "placeholder:transition-opacity placeholder:duration-200",
+      "focus:placeholder:opacity-50",
+
       // Transition
       "transition-all duration-300 ease-[cubic-bezier(0.2,0.8,0.2,1)]",
-      // Focus
+
+      // Hover state (только если не disabled и не error)
+      !disabled && !hasError && "hover:border-[var(--color-line-dark)]",
+
+      // Focus state
       "focus:outline-none",
       "focus:border-[var(--color-text-primary)]",
       "focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2",
+
+      // Filled state (когда есть значение)
+      // Используем CSS класс для заполненного поля - border темнее
+      "[&:not(:placeholder-shown):not(:focus)]:border-[var(--color-line-dark)]",
+
       // Размер
       sizeClasses[size],
-      // Состояние ошибки
-      hasError && "border-red-500 focus:border-red-500",
-      // Disabled
-      disabled && "opacity-50 cursor-not-allowed bg-[var(--color-background-alt)]",
+
+      // Error state
+      hasError && [
+        "border-red-500",
+        "hover:border-red-600",
+        "focus:border-red-500",
+        "focus-visible:ring-red-500/20",
+      ],
+
+      // Disabled state
+      disabled && [
+        "opacity-50",
+        "cursor-not-allowed",
+        "bg-[var(--color-background-alt)]",
+        "hover:border-[var(--color-line)]", // Отменяем hover
+      ],
+
       // Кастомные классы
       className
     );
@@ -104,8 +131,13 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
     const labelClasses = clsx(
       "block mb-2",
       "text-[14px] font-medium",
-      "text-[var(--color-text-primary)]",
       "tracking-[var(--letter-spacing-wide)]",
+      "transition-colors duration-200",
+      // Цвет в зависимости от состояния
+      hasError
+        ? "text-red-500"
+        : "text-[var(--color-text-primary)]",
+      // Disabled
       disabled && "opacity-50"
     );
 
