@@ -1,12 +1,16 @@
 @import "tailwindcss";
 
 /* ============================================
-   Дизайн-система: Цветовые токены
+   Дизайн-система: Токены
    Стиль: Premium-minimal / Architectural
    Референс: THE BRIDGE
    ============================================ */
 
 :root {
+  /* ==========================================
+     ЦВЕТА
+     ========================================== */
+
   /* Фоновые цвета */
   --color-background: #FFFFFF;
   --color-background-alt: #FAFAFA;
@@ -24,30 +28,82 @@
   /* Акцентный цвет (для CTA) */
   --color-accent: #1A1A1A;
   --color-accent-hover: #333333;
+
+  /* ==========================================
+     ТИПОГРАФИКА — Размеры (Desktop)
+     ========================================== */
+
+  --font-size-h1: 72px;
+  --font-size-h2: 56px;
+  --font-size-h3: 32px;
+  --font-size-body-lg: 20px;
+  --font-size-body: 18px;
+  --font-size-small: 14px;
+  --font-size-caption: 12px;
+
+  /* ==========================================
+     ТИПОГРАФИКА — Line Height
+     ========================================== */
+
+  --line-height-h1: 1.1;
+  --line-height-h2: 1.15;
+  --line-height-h3: 1.2;
+  --line-height-body: 1.6;
+  --line-height-body-lg: 1.5;
+  --line-height-small: 1.5;
+  --line-height-caption: 1.4;
+
+  /* ==========================================
+     ТИПОГРАФИКА — Font Weight
+     ========================================== */
+
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
+  /* ==========================================
+     ТИПОГРАФИКА — Letter Spacing
+     ========================================== */
+
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+  --letter-spacing-extra-wide: 0.2em;
+  --letter-spacing-ultra-wide: 0.35em;
 }
 
 @theme inline {
-  /* Фоновые цвета */
+  /* Цвета */
   --color-background: var(--color-background);
   --color-background-alt: var(--color-background-alt);
-
-  /* Текстовые цвета */
   --color-text-primary: var(--color-text-primary);
   --color-text-secondary: var(--color-text-secondary);
   --color-text-muted: var(--color-text-muted);
   --color-text-light: var(--color-text-light);
-
-  /* Линии */
   --color-line: var(--color-line);
   --color-line-dark: var(--color-line-dark);
-
-  /* Акцент */
   --color-accent: var(--color-accent);
   --color-accent-hover: var(--color-accent-hover);
 
   /* Шрифты */
   --font-display: var(--font-display);
   --font-body: var(--font-body);
+
+  /* Размеры шрифтов */
+  --font-size-h1: var(--font-size-h1);
+  --font-size-h2: var(--font-size-h2);
+  --font-size-h3: var(--font-size-h3);
+  --font-size-body-lg: var(--font-size-body-lg);
+  --font-size-body: var(--font-size-body);
+  --font-size-small: var(--font-size-small);
+  --font-size-caption: var(--font-size-caption);
+
+  /* Letter Spacing */
+  --letter-spacing-tight: var(--letter-spacing-tight);
+  --letter-spacing-normal: var(--letter-spacing-normal);
+  --letter-spacing-wide: var(--letter-spacing-wide);
+  --letter-spacing-extra-wide: var(--letter-spacing-extra-wide);
+  --letter-spacing-ultra-wide: var(--letter-spacing-ultra-wide);
 }
 
 body {
@@ -60,4 +116,87 @@ body {
 :root {
   --font-display-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-body-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ============================================
+   ТИПОГРАФИЧЕСКИЕ КЛАССЫ
+   ============================================ */
+
+/* H1 — Display заголовок */
+.text-h1 {
+  font-family: var(--font-display), var(--font-display-fallback);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-h1);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+}
+
+/* H2 — Заголовок секции */
+.text-h2 {
+  font-family: var(--font-display), var(--font-display-fallback);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-h2);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+}
+
+/* H3 — Подзаголовок */
+.text-h3 {
+  font-family: var(--font-display), var(--font-display-fallback);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-h3);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+/* Body Large */
+.text-body-lg {
+  font-family: var(--font-body), var(--font-body-fallback);
+  font-size: var(--font-size-body-lg);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body-lg);
+}
+
+/* Body — Основной текст */
+.text-body {
+  font-family: var(--font-body), var(--font-body-fallback);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+}
+
+/* Small */
+.text-small {
+  font-family: var(--font-body), var(--font-body-fallback);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-small);
+}
+
+/* Caption */
+.text-caption {
+  font-family: var(--font-body), var(--font-body-fallback);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-caption);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* ============================================
+   RESPONSIVE — Mobile (< 768px)
+   ============================================ */
+
+@media (max-width: 767px) {
+  :root {
+    --font-size-h1: 40px;
+    --font-size-h2: 32px;
+    --font-size-h3: 24px;
+    --font-size-body-lg: 18px;
+    --font-size-body: 16px;
+    --font-size-small: 13px;
+    --font-size-caption: 12px;
+  }
 }
