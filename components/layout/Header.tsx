@@ -1,0 +1,220 @@
+"use client";
+
+import { clsx } from "clsx";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { BrokenText } from "../ui/BrokenText";
+import { Button } from "../ui/Button";
+
+interface NavItem {
+  label: string;
+  href: string;
+}
+
+const NAV_ITEMS: NavItem[] = [
+  { label: "Главная", href: "/" },
+  { label: "Про нас", href: "/about" },
+  { label: "Услуги", href: "/services" },
+  { label: "Кейсы", href: "/cases" },
+  { label: "Блог", href: "/blog" },
+  { label: "Контакты", href: "/contacts" },
+];
+
+interface HeaderProps {
+  /** Callback для открытия мобильного меню */
+  onMenuOpen?: () => void;
+  /** Callback для открытия модала "Заказать звонок" */
+  onCallbackClick?: () => void;
+  /** Дополнительные CSS классы */
+  className?: string;
+}
+
+/**
+ * Header — шапка сайта
+ *
+ * Включает:
+ * - Логотип (типографический, «ломаный» стиль)
+ * - Навигация по центру (скрыта на mobile)
+ * - CTA кнопка «Заказать звонок»
+ * - Sticky с backdrop-blur при скролле
+ */
+export function Header({
+  onMenuOpen,
+  onCallbackClick,
+  className,
+}: HeaderProps) {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Track scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // Check initial position
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <header
+      className={clsx(
+        "fixed top-0 left-0 right-0",
+        "z-50",
+        "transition-all duration-300",
+        // Background & blur on scroll
+        isScrolled
+          ? "bg-[var(--color-background)]/95 backdrop-blur-md shadow-sm"
+          : "bg-transparent",
+        className
+      )}
+    >
+      {/* Contact bar (optional, hidden on scroll) */}
+      <div
+        className={clsx(
+          "hidden lg:block",
+          "border-b border-[var(--color-line)]",
+          "transition-all duration-300",
+          isScrolled ? "h-0 opacity-0 overflow-hidden" : "h-auto opacity-100"
+        )}
+      >
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="flex items-center justify-end gap-6 py-2">
+            <a
+              href="mailto:hello@webstudio.com"
+              className={clsx(
+                "text-[13px]",
+                "text-[var(--color-text-muted)]",
+                "hover:text-[var(--color-text-primary)]",
+                "transition-colors duration-200"
+              )}
+            >
+              hello@webstudio.com
+            </a>
+            <a
+              href="tel:+78001234567"
+              className={clsx(
+                "text-[13px]",
+                "text-[var(--color-text-muted)]",
+                "hover:text-[var(--color-text-primary)]",
+                "transition-colors duration-200"
+              )}
+            >
+              +7 (800) 123-45-67
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Main header */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div
+          className={clsx(
+            "flex items-center justify-between",
+            "transition-all duration-300",
+            isScrolled ? "h-16 lg:h-18" : "h-18 lg:h-22"
+          )}
+        >
+          {/* Logo */}
+          <Link
+            href="/"
+            className={clsx(
+              "relative z-10",
+              "focus-visible:outline-none",
+              "focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2"
+            )}
+          >
+            <BrokenText
+              text="WEBSTUDIO"
+              spaced
+              className={clsx(
+                "text-[18px] lg:text-[22px]",
+                "font-bold",
+                "tracking-[0.15em]"
+              )}
+            />
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:block" aria-label="Основная навигация">
+            <ul className="flex items-center gap-8">
+              {NAV_ITEMS.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className={clsx(
+                      "relative",
+                      "text-[13px] font-medium uppercase",
+                      "tracking-[var(--letter-spacing-wide)]",
+                      "text-[var(--color-text-primary)]",
+                      "transition-colors duration-200",
+                      "hover:text-[var(--color-text-muted)]",
+                      // Underline animation
+                      "after:absolute after:bottom-0 after:left-0",
+                      "after:w-0 after:h-[1px]",
+                      "after:bg-[var(--color-text-primary)]",
+                      "after:transition-all after:duration-300",
+                      "hover:after:w-full",
+                      // Focus
+                      "focus-visible:outline-none",
+                      "focus-visible:after:w-full"
+                    )}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* Right side: CTA + Mobile menu button */}
+          <div className="flex items-center gap-4">
+            {/* CTA Button - hidden on mobile */}
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={onCallbackClick}
+              className="hidden md:inline-flex"
+            >
+              Заказать звонок
+            </Button>
+
+            {/* Mobile menu button */}
+            <button
+              type="button"
+              onClick={onMenuOpen}
+              aria-label="Открыть меню"
+              className={clsx(
+                "lg:hidden",
+                "p-2 -mr-2",
+                "text-[var(--color-text-primary)]",
+                "transition-colors duration-200",
+                "hover:text-[var(--color-text-muted)]",
+                "focus-visible:outline-none",
+                "focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2"
+              )}
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+export default Header;

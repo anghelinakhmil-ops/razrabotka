@@ -30,7 +30,12 @@ interface ButtonBaseProps {
 }
 
 // Пропсы для button элемента
-interface ButtonAsButton extends ButtonBaseProps {
+interface ButtonAsButton
+  extends ButtonBaseProps,
+    Omit<
+      React.ButtonHTMLAttributes<HTMLButtonElement>,
+      keyof ButtonBaseProps | "as"
+    > {
   as?: "button";
   href?: never;
 }
