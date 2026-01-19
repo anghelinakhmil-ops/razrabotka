@@ -12,3 +12,5 @@ export { Services } from "./Services";
 export type { ServiceData } from "./Services";
 export { Process } from "./Process";
 export type { ProcessStepData } from "./Process";
+export { CasesPreview } from "./CasesPreview";
+export type { CaseData } from "./CasesPreview";
