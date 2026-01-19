@@ -20,6 +20,8 @@ export interface BenefitData {
   subtitle: string;
   /** Описание (текст или ReactNode) */
   description: ReactNode;
+  /** Паттерн для «ломаной» типографики заголовка */
+  mixPattern?: number[];
   /** URL изображения */
   imageSrc?: string;
   /** Alt текст для изображения */
@@ -41,6 +43,7 @@ const defaultBenefits: BenefitData[] = [
     number: "01",
     title: "СТРАТЕГИЯ",
     subtitle: "Стратегия и структура",
+    mixPattern: [3, 6], // СТР A ТЕГ I Я
     description:
       "Начинаем с глубокого анализа вашего бизнеса, целевой аудитории и конкурентов. Разрабатываем структуру сайта, которая ведёт посетителя к целевому действию.",
   },
@@ -48,6 +51,7 @@ const defaultBenefits: BenefitData[] = [
     number: "02",
     title: "ДИЗАЙН",
     subtitle: "Дизайн «премиум-минимал»",
+    mixPattern: [1, 4], // Д I ЗА Y Н
     description:
       "Создаём уникальный визуальный стиль без шаблонов. Много воздуха, чёткая типографика, продуманная анимация — сайт, который выделяется и запоминается.",
   },
@@ -55,6 +59,7 @@ const defaultBenefits: BenefitData[] = [
     number: "03",
     title: "СКОРОСТЬ",
     subtitle: "Скорость и SEO",
+    mixPattern: [2, 5], // СК O РО C ТЬ
     description:
       "Оптимизируем каждую страницу для Core Web Vitals. Быстрая загрузка, правильная семантика, техническое SEO — ваш сайт будет любить и Google, и пользователи.",
   },
@@ -62,6 +67,7 @@ const defaultBenefits: BenefitData[] = [
     number: "04",
     title: "ИНТЕГРАЦИИ",
     subtitle: "Интеграции (оплаты/CRM/Telegram)",
+    mixPattern: [0, 5], // I НТЕГР A ЦИИ
     description:
       "Подключаем платёжные системы, CRM, аналитику, Telegram-уведомления и любые другие сервисы, необходимые для автоматизации вашего бизнеса.",
   },
@@ -69,6 +75,7 @@ const defaultBenefits: BenefitData[] = [
     number: "05",
     title: "ПОДДЕРЖКА",
     subtitle: "Поддержка после запуска",
+    mixPattern: [1, 6], // П O ДДЕРЖ K А
     description:
       "Не бросаем после сдачи проекта. Техническая поддержка, мелкие доработки, консультации — мы рядом, когда вам нужно.",
   },
@@ -138,6 +145,7 @@ function BenefitItem({
   title,
   subtitle,
   description,
+  mixPattern,
   imageSrc,
   imageAlt,
   blurDataURL,
@@ -171,7 +179,7 @@ function BenefitItem({
               <BrokenText
                 text={title}
                 spaced
-                mixPattern={[1]}
+                mixPattern={mixPattern}
                 className="text-h3 font-display font-bold text-[var(--color-text-primary)] tracking-wide"
               />
             </h3>
