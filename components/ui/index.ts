@@ -27,3 +27,6 @@ export { ServiceCard } from "./ServiceCard";
 export { CaseCard } from "./CaseCard";
 export { BlogCard } from "./BlogCard";
 export { TestimonialCard } from "./TestimonialCard";
+
+// Interactive
+export { Accordion, AccordionItem } from "./Accordion";
