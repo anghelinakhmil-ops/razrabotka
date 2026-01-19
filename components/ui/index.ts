@@ -31,3 +31,6 @@ export { TestimonialCard } from "./TestimonialCard";
 // Interactive
 export { Accordion, AccordionItem } from "./Accordion";
 export { Modal } from "./Modal";
+
+// Misc
+export { Badge } from "./Badge";
