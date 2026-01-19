@@ -20,3 +20,6 @@ export { PhoneInput, DEFAULT_COUNTRIES } from "./PhoneInput";
 export type { CountryCode } from "./PhoneInput";
 export { Checkbox } from "./Checkbox";
 export { Radio, RadioGroup } from "./Radio";
+
+// Cards
+export { Card, CardHeader, CardBody, CardFooter } from "./Card";
