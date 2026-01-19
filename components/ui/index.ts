@@ -16,3 +16,5 @@ export { Input } from "./Input";
 export { Textarea } from "./Textarea";
 export { Select } from "./Select";
 export type { SelectOption } from "./Select";
+export { PhoneInput, DEFAULT_COUNTRIES } from "./PhoneInput";
+export type { CountryCode } from "./PhoneInput";
