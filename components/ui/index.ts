@@ -35,3 +35,4 @@ export { Modal } from "./Modal";
 // Misc
 export { Badge } from "./Badge";
 export { Divider } from "./Divider";
+export { Spinner } from "./Spinner";
