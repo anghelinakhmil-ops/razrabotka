@@ -25,3 +25,4 @@ export { Radio, RadioGroup } from "./Radio";
 export { Card, CardHeader, CardBody, CardFooter } from "./Card";
 export { ServiceCard } from "./ServiceCard";
 export { CaseCard } from "./CaseCard";
+export { BlogCard } from "./BlogCard";
