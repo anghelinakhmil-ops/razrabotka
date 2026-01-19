@@ -5,6 +5,8 @@
  * Основано на дизайн-системе из CLAUDE.md
  */
 
+import type { Variants } from "framer-motion";
+
 // ============================================================================
 // Duration — длительность анимаций
 // ============================================================================
@@ -64,6 +66,112 @@ export const translateY = {
 } as const;
 
 // ============================================================================
+// Motion Variants — готовые варианты анимаций для Framer Motion
+// ============================================================================
+
+/** Fade In — простое появление */
+export const fadeIn: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: duration.normal,
+      ease,
+    },
+  },
+};
+
+/** Fade Up — появление снизу вверх */
+export const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: translateY.normal,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: duration.normal,
+      ease,
+    },
+  },
+};
+
+/** Fade Down — появление сверху вниз */
+export const fadeDown: Variants = {
+  hidden: {
+    opacity: 0,
+    y: -translateY.normal,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: duration.normal,
+      ease,
+    },
+  },
+};
+
+/** Slide Left — появление справа налево */
+export const slideLeft: Variants = {
+  hidden: {
+    opacity: 0,
+    x: translateY.large,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: duration.normal,
+      ease,
+    },
+  },
+};
+
+/** Slide Right — появление слева направо */
+export const slideRight: Variants = {
+  hidden: {
+    opacity: 0,
+    x: -translateY.large,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: duration.normal,
+      ease,
+    },
+  },
+};
+
+/** Scale — появление с масштабированием */
+export const scale: Variants = {
+  hidden: {
+    opacity: 0,
+    scale: 0.95,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: duration.normal,
+      ease,
+    },
+  },
+};
+
+/** Все варианты анимаций */
+export const variants = {
+  fadeIn,
+  fadeUp,
+  fadeDown,
+  slideLeft,
+  slideRight,
+  scale,
+} as const;
+
+// ============================================================================
 // Motion Config — объединённая конфигурация
 // ============================================================================
 
@@ -73,6 +181,7 @@ export const motionConfig = {
   easePresets,
   stagger,
   translateY,
+  variants,
 } as const;
 
 // ============================================================================
