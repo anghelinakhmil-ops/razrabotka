@@ -10,3 +10,5 @@ export { Metrics } from "./Metrics";
 export type { MetricData } from "./Metrics";
 export { Services } from "./Services";
 export type { ServiceData } from "./Services";
+export { Process } from "./Process";
+export type { ProcessStepData } from "./Process";
