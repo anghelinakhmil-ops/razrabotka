@@ -26,6 +26,13 @@ export function Hero({ onCtaClick }: HeroProps) {
     }
   };
 
+  const handleScrollToProcess = () => {
+    const processSection = document.getElementById("process");
+    if (processSection) {
+      processSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       id="hero"
@@ -70,9 +77,12 @@ export function Hero({ onCtaClick }: HeroProps) {
                   mixPattern={[1]}
                   className="text-[var(--color-text-primary)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold tracking-tight"
                 />
-                <span className="text-[var(--color-text-muted)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-medium mt-2">
-                  под ключ
-                </span>
+                <BrokenText
+                  text="ПОД КЛЮЧ"
+                  spaced
+                  mixPattern={[1]}
+                  className="text-[var(--color-text-muted)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-medium mt-2"
+                />
               </h1>
             </RevealOnScroll>
 
@@ -90,7 +100,7 @@ export function Hero({ onCtaClick }: HeroProps) {
 
             {/* CTA кнопки */}
             <RevealOnScroll direction="up" delay={0.4}>
-              <div className="flex flex-col sm:flex-row gap-4 mt-4">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-4">
                 <Button
                   variant="primary"
                   size="lg"
@@ -107,6 +117,14 @@ export function Hero({ onCtaClick }: HeroProps) {
                   className="hover-lift"
                 >
                   Смотреть кейсы
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="lg"
+                  onClick={handleScrollToProcess}
+                  className="hover-underline-animate"
+                >
+                  Как мы работаем →
                 </Button>
               </div>
             </RevealOnScroll>
