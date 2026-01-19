@@ -18,3 +18,5 @@ export { Testimonials } from "./Testimonials";
 export type { TestimonialData } from "./Testimonials";
 export { FAQ } from "./FAQ";
 export type { FAQItem } from "./FAQ";
+export { LeadFormSection } from "./LeadFormSection";
+export type { LeadFormData } from "./LeadFormSection";
