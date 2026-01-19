@@ -16,3 +16,5 @@ export { CasesPreview } from "./CasesPreview";
 export type { CaseData } from "./CasesPreview";
 export { Testimonials } from "./Testimonials";
 export type { TestimonialData } from "./Testimonials";
+export { FAQ } from "./FAQ";
+export type { FAQItem } from "./FAQ";
