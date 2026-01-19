@@ -30,3 +30,4 @@ export { TestimonialCard } from "./TestimonialCard";
 
 // Interactive
 export { Accordion, AccordionItem } from "./Accordion";
+export { Modal } from "./Modal";
