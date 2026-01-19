@@ -23,3 +23,4 @@ export { Radio, RadioGroup } from "./Radio";
 
 // Cards
 export { Card, CardHeader, CardBody, CardFooter } from "./Card";
+export { ServiceCard } from "./ServiceCard";
