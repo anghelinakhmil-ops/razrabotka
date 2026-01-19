@@ -1,6 +1,7 @@
 import { clsx } from "clsx";
 import Link from "next/link";
 import { BrokenText } from "../ui/BrokenText";
+import { Button } from "../ui/Button";
 
 interface NavItem {
   label: string;
@@ -58,6 +59,8 @@ const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 interface FooterProps {
+  /** Callback для открытия модала "Заказать звонок" */
+  onCallbackClick?: () => void;
   /** Дополнительные CSS классы */
   className?: string;
 }
@@ -73,7 +76,7 @@ interface FooterProps {
  * - Юридические ссылки
  * - Копирайт
  */
-export function Footer({ className }: FooterProps) {
+export function Footer({ onCallbackClick, className }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -84,6 +87,51 @@ export function Footer({ className }: FooterProps) {
         className
       )}
     >
+      {/* Lead block — CTA section */}
+      <div className="bg-[var(--color-text-primary)] text-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+            {/* Text */}
+            <div className="text-center lg:text-left">
+              <BrokenText
+                text="ОБСУДИТЬ ПРОЕКТ"
+                spaced
+                className={clsx(
+                  "text-[32px] md:text-[40px] lg:text-[48px]",
+                  "font-bold",
+                  "tracking-[0.1em]",
+                  "text-white",
+                  "mb-4"
+                )}
+              />
+              <p className="text-[16px] lg:text-[18px] text-white/70 max-w-md">
+                Расскажите о вашем проекте, и мы предложим лучшее решение
+              </p>
+            </div>
+            {/* CTA */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={onCallbackClick}
+                className="border-white text-white hover:bg-white hover:text-[var(--color-text-primary)]"
+              >
+                Заказать звонок
+              </Button>
+              <Button
+                as={Link}
+                href="/brief"
+                variant="ghost"
+                size="lg"
+                className="text-white hover:bg-white/10"
+              >
+                Заполнить бриф
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Main footer content */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
