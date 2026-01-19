@@ -18,3 +18,5 @@ export { Select } from "./Select";
 export type { SelectOption } from "./Select";
 export { PhoneInput, DEFAULT_COUNTRIES } from "./PhoneInput";
 export type { CountryCode } from "./PhoneInput";
+export { Checkbox } from "./Checkbox";
+export { Radio, RadioGroup } from "./Radio";
