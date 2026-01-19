@@ -5,22 +5,55 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { ease, duration } from "@/lib/motion";
 
+/** Ключ для sessionStorage */
+const PRELOADER_SHOWN_KEY = "webstudio_preloader_shown";
+
 interface PreloaderProps {
   /** Минимальная длительность показа (мс) */
   minDuration?: number;
   /** Синхронизировать с реальной загрузкой страницы */
   syncWithPageLoad?: boolean;
+  /** Принудительно показать (игнорирует sessionStorage) */
+  forceShow?: boolean;
   /** Callback после завершения */
   onComplete?: () => void;
 }
 
 /**
+ * Проверяет, был ли прелоадер уже показан в этой сессии
+ */
+function wasPreloaderShown(): boolean {
+  if (typeof window === "undefined") return false;
+
+  try {
+    return sessionStorage.getItem(PRELOADER_SHOWN_KEY) === "true";
+  } catch {
+    // sessionStorage может быть недоступен (приватный режим и т.д.)
+    return false;
+  }
+}
+
+/**
+ * Сохраняет флаг что прелоадер был показан
+ */
+function markPreloaderAsShown(): void {
+  if (typeof window === "undefined") return;
+
+  try {
+    sessionStorage.setItem(PRELOADER_SHOWN_KEY, "true");
+  } catch {
+    // Игнорируем ошибки sessionStorage
+  }
+}
+
+/**
  * Preloader — полноэкранный прелоадер с счётчиком
  *
- * Показывается при первой загрузке страницы.
- * Отображает логотип и счётчик 0% → 100%.
+ * Показывается только при первой загрузке страницы в сессии.
+ * Не показывается при навигации между страницами (SPA).
  *
  * Особенности:
+ * - Показывается только один раз за сессию (sessionStorage)
  * - Не блокирует SEO (рендерится только на клиенте)
  * - Синхронизируется с реальной загрузкой страницы (опционально)
  * - Плавная анимация с easing для счётчика
@@ -29,16 +62,37 @@ interface PreloaderProps {
 export function Preloader({
   minDuration = 2000,
   syncWithPageLoad = true,
+  forceShow = false,
   onComplete,
 }: PreloaderProps) {
+  // Начальное состояние: проверяем sessionStorage
+  const [shouldShow, setShouldShow] = useState<boolean | null>(null);
   const [isVisible, setIsVisible] = useState(true);
   const [progress, setProgress] = useState(0);
   const [isExiting, setIsExiting] = useState(false);
   const [isPageLoaded, setIsPageLoaded] = useState(false);
 
+  // Проверка sessionStorage при монтировании
+  useEffect(() => {
+    // Если forceShow — всегда показываем
+    if (forceShow) {
+      setShouldShow(true);
+      return;
+    }
+
+    // Проверяем, был ли прелоадер уже показан
+    const alreadyShown = wasPreloaderShown();
+    setShouldShow(!alreadyShown);
+
+    // Если уже показывали — вызываем onComplete сразу
+    if (alreadyShown) {
+      onComplete?.();
+    }
+  }, [forceShow, onComplete]);
+
   // Отслеживание реальной загрузки страницы
   useEffect(() => {
-    if (!syncWithPageLoad) {
+    if (!shouldShow || !syncWithPageLoad) {
       setIsPageLoaded(true);
       return;
     }
@@ -69,7 +123,7 @@ export function Preloader({
       window.removeEventListener("load", handleLoad);
       document.removeEventListener("readystatechange", handleReadyStateChange);
     };
-  }, [syncWithPageLoad]);
+  }, [shouldShow, syncWithPageLoad]);
 
   // Easing функция для более плавного счётчика (замедление к концу)
   const easeOutQuart = useCallback((t: number): number => {
@@ -78,7 +132,7 @@ export function Preloader({
 
   // Инкремент счётчика с easing
   useEffect(() => {
-    if (!isVisible || isExiting) return;
+    if (!shouldShow || !isVisible || isExiting) return;
 
     const startTime = Date.now();
     const targetDuration = minDuration;
@@ -115,11 +169,13 @@ export function Preloader({
         cancelAnimationFrame(animationId);
       }
     };
-  }, [isVisible, isExiting, minDuration, syncWithPageLoad, isPageLoaded, easeOutQuart]);
+  }, [shouldShow, isVisible, isExiting, minDuration, syncWithPageLoad, isPageLoaded, easeOutQuart]);
 
   // Обработка завершения анимации выхода
   const handleExitComplete = () => {
     setIsVisible(false);
+    // Сохраняем в sessionStorage что прелоадер был показан
+    markPreloaderAsShown();
     onComplete?.();
   };
 
@@ -128,8 +184,17 @@ export function Preloader({
     return num.toString().padStart(3, " ");
   };
 
-  // Не рендерим на сервере для SEO
-  // AnimatePresence автоматически обрабатывает exit анимацию
+  // Пока не определили shouldShow — ничего не рендерим (избегаем flash)
+  if (shouldShow === null) {
+    return null;
+  }
+
+  // Если не нужно показывать — ничего не рендерим
+  if (!shouldShow) {
+    return null;
+  }
+
+  // Рендерим прелоадер
   return (
     <AnimatePresence onExitComplete={handleExitComplete}>
       {isVisible && (
