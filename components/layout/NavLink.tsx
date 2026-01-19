@@ -49,7 +49,8 @@ export function NavLink({
         "relative",
         "text-[13px] font-medium uppercase",
         "tracking-[var(--letter-spacing-wide)]",
-        "transition-colors duration-200",
+        // Transition с ease из дизайн-системы
+        "transition-colors duration-300 ease-[cubic-bezier(0.2,0.8,0.2,1)]",
         // Цвет в зависимости от состояния
         isActive
           ? "text-[var(--color-text-primary)]"
@@ -58,7 +59,7 @@ export function NavLink({
         "after:absolute after:bottom-0 after:left-0",
         "after:h-[1px]",
         "after:bg-[var(--color-text-primary)]",
-        "after:transition-all after:duration-300",
+        "after:transition-all after:duration-300 after:ease-[cubic-bezier(0.2,0.8,0.2,1)]",
         // Underline состояние
         isActive ? "after:w-full" : "after:w-0 hover:after:w-full",
         // Focus
