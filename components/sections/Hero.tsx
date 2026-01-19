@@ -5,11 +5,18 @@ import { Button } from "@/components/ui/Button";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Container } from "@/components/ui/Container";
 import { RevealOnScroll } from "@/components/motion";
+import { HeroVisual } from "./HeroVisual";
 import { ease, duration } from "@/lib/motion";
 
 interface HeroProps {
   /** Callback для CTA кнопки */
   onCtaClick?: () => void;
+  /** URL изображения для визуала */
+  imageSrc?: string;
+  /** Alt текст для изображения */
+  imageAlt?: string;
+  /** Blur placeholder (base64) */
+  blurDataURL?: string;
 }
 
 /**
@@ -18,7 +25,12 @@ interface HeroProps {
  * Полноэкранная секция с заголовком, подзаголовком и CTA.
  * Стиль: Premium-minimal / Architectural (референс: THE BRIDGE)
  */
-export function Hero({ onCtaClick }: HeroProps) {
+export function Hero({
+  onCtaClick,
+  imageSrc,
+  imageAlt,
+  blurDataURL,
+}: HeroProps) {
   const handleScrollToNext = () => {
     const nextSection = document.getElementById("benefits");
     if (nextSection) {
@@ -133,54 +145,11 @@ export function Hero({ onCtaClick }: HeroProps) {
           {/* Правая часть — Визуал */}
           <div className="relative order-1 lg:order-2 flex items-center justify-center lg:justify-end">
             <RevealOnScroll direction="left" delay={0.3} duration={0.8}>
-              <div className="relative w-full max-w-md lg:max-w-lg xl:max-w-xl aspect-[4/5]">
-                {/* Placeholder для изображения */}
-                <div className="absolute inset-0 bg-[var(--color-background-alt)] rounded-sm overflow-hidden">
-                  {/* Декоративный элемент вместо изображения */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="relative w-3/4 h-3/4">
-                      {/* Геометрические фигуры */}
-                      <motion.div
-                        className="absolute top-0 left-0 w-full h-full border border-[var(--color-line)]"
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: duration.slow, ease, delay: 0.5 }}
-                      />
-                      <motion.div
-                        className="absolute top-4 left-4 right-4 bottom-4 border border-[var(--color-line-dark)]"
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: duration.slow, ease, delay: 0.6 }}
-                      />
-                      <motion.div
-                        className="absolute top-8 left-8 right-8 bottom-8 bg-[var(--color-text-primary)]"
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: duration.slow, ease, delay: 0.7 }}
-                      >
-                        {/* Текст внутри */}
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <BrokenText
-                            text="WS"
-                            spaced
-                            className="text-[var(--color-background)] text-6xl lg:text-8xl font-display font-bold"
-                          />
-                        </div>
-                      </motion.div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Декоративный номер */}
-                <motion.span
-                  className="absolute -right-4 lg:-right-8 top-1/2 -translate-y-1/2 text-8xl lg:text-9xl font-display font-bold text-[var(--color-line)] select-none"
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: duration.slow, ease, delay: 0.8 }}
-                >
-                  01
-                </motion.span>
-              </div>
+              <HeroVisual
+                imageSrc={imageSrc}
+                imageAlt={imageAlt}
+                blurDataURL={blurDataURL}
+              />
             </RevealOnScroll>
           </div>
         </div>
