@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { BrokenText } from "../ui/BrokenText";
 import { Button } from "../ui/Button";
+import { NavLink } from "./NavLink";
 
 interface NavItem {
   label: string;
@@ -141,28 +142,9 @@ export function Header({
             <ul className="flex items-center gap-8">
               {NAV_ITEMS.map((item) => (
                 <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className={clsx(
-                      "relative",
-                      "text-[13px] font-medium uppercase",
-                      "tracking-[var(--letter-spacing-wide)]",
-                      "text-[var(--color-text-primary)]",
-                      "transition-colors duration-200",
-                      "hover:text-[var(--color-text-muted)]",
-                      // Underline animation
-                      "after:absolute after:bottom-0 after:left-0",
-                      "after:w-0 after:h-[1px]",
-                      "after:bg-[var(--color-text-primary)]",
-                      "after:transition-all after:duration-300",
-                      "hover:after:w-full",
-                      // Focus
-                      "focus-visible:outline-none",
-                      "focus-visible:after:w-full"
-                    )}
-                  >
+                  <NavLink href={item.href} exact={item.href === "/"}>
                     {item.label}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ul>
