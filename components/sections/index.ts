@@ -14,3 +14,5 @@ export { Process } from "./Process";
 export type { ProcessStepData } from "./Process";
 export { CasesPreview } from "./CasesPreview";
 export type { CaseData } from "./CasesPreview";
+export { Testimonials } from "./Testimonials";
+export type { TestimonialData } from "./Testimonials";
