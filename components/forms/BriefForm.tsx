@@ -429,6 +429,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
             placeholder="Расскажите подробнее о проекте, особых пожеланиях или вопросах..."
             error={errors.comment?.message}
             disabled={formState === "loading"}
+            helperText="Необязательно — любая дополнительная информация о проекте"
             rows={5}
             {...register("comment")}
           />
