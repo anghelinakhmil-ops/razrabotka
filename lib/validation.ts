@@ -54,6 +54,26 @@ export const urlSchema = z
   .optional()
   .or(z.literal(""));
 
+/** Валидация поля референсов (может содержать URL или текст) */
+export const referencesSchema = z
+  .string()
+  .max(2000, "Текст слишком длинный (максимум 2000 символов)")
+  .refine(
+    (val) => {
+      if (!val || val.trim() === "") return true;
+      // Извлекаем потенциальные URL из текста
+      const urlPattern = /https?:\/\/[^\s]+/gi;
+      const urls = val.match(urlPattern);
+      if (!urls) return true;
+      // Проверяем каждый найденный URL
+      const urlValidationPattern = /^https?:\/\/[a-zA-Z0-9][-a-zA-Z0-9]*(\.[a-zA-Z0-9][-a-zA-Z0-9]*)+[^\s]*$/;
+      return urls.every((url) => urlValidationPattern.test(url));
+    },
+    { message: "Проверьте формат URL-адресов" }
+  )
+  .optional()
+  .or(z.literal(""));
+
 /** Валидация комментария/сообщения */
 export const messageSchema = z
   .string()
@@ -99,7 +119,7 @@ export const briefFormSchema = z.object({
   goal: z.string().min(1, "Выберите основную цель"),
   timeline: z.string().optional(),
   budget: z.string().optional(),
-  references: messageSchema,
+  references: referencesSchema,
 
   // Контакты
   name: nameSchema,
