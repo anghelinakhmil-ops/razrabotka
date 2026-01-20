@@ -3,3 +3,4 @@
  */
 
 export { QuickLeadForm } from "./QuickLeadForm";
+export { BriefForm } from "./BriefForm";
