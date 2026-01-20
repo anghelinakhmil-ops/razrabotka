@@ -48,3 +48,6 @@ coverage
 # Misc
 *.pem
 Thumbs.db
+
+# Data (leads, logs)
+data/

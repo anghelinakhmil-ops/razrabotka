@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
+import { logLead } from "@/lib/leads";
 
 /**
  * Типы заявок
@@ -131,10 +132,19 @@ export async function POST(request: NextRequest): Promise<NextResponse<ApiRespon
     const leadData = validationResult.data;
     const leadId = generateLeadId();
 
-    // Логируем заявку (в консоль для dev)
-    console.log("📩 New lead received:", formatLeadForLog(leadData, leadId));
+    // Получаем страницу-источник из referer
+    const referer = request.headers.get("referer") || "";
+    const sourcePage = referer ? new URL(referer).pathname : "unknown";
 
-    // TODO: Phase 8.10 - Сохранение в файл/БД
+    // Логируем и сохраняем заявку
+    await logLead(
+      leadId,
+      leadData.type,
+      leadData.source || "unknown",
+      leadData as Record<string, unknown>,
+      sourcePage
+    );
+
     // TODO: Phase 8.11 - Отправка email
     // TODO: Phase 8.12 - Отправка в Telegram
 
