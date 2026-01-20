@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { logLead } from "@/lib/leads";
+import { sendLeadNotification } from "@/lib/email";
 
 /**
  * Типы заявок
@@ -145,7 +146,33 @@ export async function POST(request: NextRequest): Promise<NextResponse<ApiRespon
       sourcePage
     );
 
-    // TODO: Phase 8.11 - Отправка email
+    // Отправляем email уведомление
+    const emailResult = await sendLeadNotification({
+      id: leadId,
+      type: leadData.type,
+      source: leadData.source || "unknown",
+      sourcePage,
+      timestamp: leadData.timestamp || new Date().toISOString(),
+      name: "name" in leadData ? leadData.name : undefined,
+      phone: "phone" in leadData ? leadData.phone : undefined,
+      email: "email" in leadData ? leadData.email : undefined,
+      // Brief specific fields
+      ...("siteType" in leadData && {
+        siteType: leadData.siteType,
+        goal: leadData.goal,
+        timeline: leadData.timeline,
+        budget: leadData.budget,
+        references: leadData.references,
+        telegram: leadData.telegram,
+        comment: leadData.comment,
+      }),
+    });
+
+    // Логируем результат отправки email (но не блокируем ответ)
+    if (!emailResult.success) {
+      console.warn(`⚠️ Email not sent for lead ${leadId}: ${emailResult.error}`);
+    }
+
     // TODO: Phase 8.12 - Отправка в Telegram
 
     // Возвращаем успешный ответ
