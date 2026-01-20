@@ -3,41 +3,10 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { PhoneInput } from "@/components/ui/PhoneInput";
-
-/**
- * Zod схема валидации для быстрой формы
- */
-const quickLeadSchema = z.object({
-  name: z
-    .string()
-    .min(2, "Имя должно содержать минимум 2 символа")
-    .max(50, "Имя слишком длинное")
-    .optional()
-    .or(z.literal("")),
-  phone: z
-    .string()
-    .min(10, "Введите корректный номер телефона")
-    .regex(/^[\d\s\-\+\(\)]+$/, "Некорректный формат телефона")
-    .optional()
-    .or(z.literal("")),
-  email: z
-    .string()
-    .email("Введите корректный email")
-    .optional()
-    .or(z.literal("")),
-}).refine(
-  (data) => data.phone || data.email,
-  {
-    message: "Укажите телефон или email для связи",
-    path: ["phone"],
-  }
-);
-
-type QuickLeadFormData = z.infer<typeof quickLeadSchema>;
+import { quickLeadSchema, type QuickLeadFormData } from "@/lib/validation";
 
 /**
  * Состояния формы
@@ -88,9 +57,12 @@ export function QuickLeadForm({
     reset,
     setValue,
     watch,
-    formState: { errors },
+    trigger,
+    formState: { errors, touchedFields },
   } = useForm<QuickLeadFormData>({
     resolver: zodResolver(quickLeadSchema),
+    mode: "onBlur", // Валидация при потере фокуса
+    reValidateMode: "onChange", // Повторная валидация при изменении
     defaultValues: {
       name: "",
       phone: "",
@@ -140,7 +112,11 @@ export function QuickLeadForm({
   };
 
   const handlePhoneChange = (value: string) => {
-    setValue("phone", value, { shouldValidate: true });
+    setValue("phone", value, { shouldValidate: touchedFields.phone });
+  };
+
+  const handlePhoneBlur = () => {
+    trigger("phone");
   };
 
   // Success state
@@ -191,6 +167,7 @@ export function QuickLeadForm({
             <PhoneInput
               value={phoneValue || ""}
               onChange={handlePhoneChange}
+              onBlur={handlePhoneBlur}
               placeholder="Ваш телефон"
               error={errors.phone?.message}
               disabled={formState === "loading"}
@@ -220,6 +197,7 @@ export function QuickLeadForm({
         <PhoneInput
           value={phoneValue || ""}
           onChange={handlePhoneChange}
+          onBlur={handlePhoneBlur}
           placeholder="Ваш телефон"
           error={errors.phone?.message}
           disabled={formState === "loading"}
@@ -266,6 +244,7 @@ export function QuickLeadForm({
         label="Телефон"
         value={phoneValue || ""}
         onChange={handlePhoneChange}
+        onBlur={handlePhoneBlur}
         placeholder="+7 (___) ___-__-__"
         error={errors.phone?.message}
         disabled={formState === "loading"}

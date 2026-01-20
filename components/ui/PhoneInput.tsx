@@ -72,6 +72,8 @@ interface PhoneInputProps {
   value?: string;
   /** Callback при изменении */
   onChange?: (value: string) => void;
+  /** Callback при потере фокуса */
+  onBlur?: () => void;
   /** Placeholder для номера */
   placeholder?: string;
   /** Текст ошибки */
@@ -153,6 +155,7 @@ export const PhoneInput = forwardRef<HTMLInputElement, PhoneInputProps>(
       label,
       value = "",
       onChange,
+      onBlur,
       placeholder,
       error,
       helperText,
@@ -408,6 +411,7 @@ export const PhoneInput = forwardRef<HTMLInputElement, PhoneInputProps>(
             inputMode="numeric"
             value={displayValue}
             onChange={handleInputChange}
+            onBlur={onBlur}
             placeholder={computedPlaceholder}
             disabled={disabled}
             required={required}
