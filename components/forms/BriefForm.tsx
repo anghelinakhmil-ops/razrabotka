@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,6 +10,11 @@ import { Textarea } from "@/components/ui/Textarea";
 import { Select } from "@/components/ui/Select";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 import { briefFormSchema, type BriefFormData } from "@/lib/validation";
+
+/**
+ * Ключ для хранения черновика в localStorage
+ */
+const DRAFT_STORAGE_KEY = "brief_form_draft";
 
 /**
  * Опции для селекта «Тип сайта»
@@ -90,9 +95,50 @@ const sectionAnimation = {
  * Используется для сбора детальной информации о проекте.
  * Включает секции: О проекте, Контакты, Дополнительно.
  */
+/**
+ * Загрузить черновик из localStorage
+ */
+function loadDraft(): Partial<BriefFormData> | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const saved = localStorage.getItem(DRAFT_STORAGE_KEY);
+    if (saved) {
+      return JSON.parse(saved);
+    }
+  } catch {
+    // Игнорируем ошибки парсинга
+  }
+  return null;
+}
+
+/**
+ * Сохранить черновик в localStorage
+ */
+function saveDraft(data: Partial<BriefFormData>): void {
+  if (typeof window === "undefined") return;
+  try {
+    localStorage.setItem(DRAFT_STORAGE_KEY, JSON.stringify(data));
+  } catch {
+    // Игнорируем ошибки записи
+  }
+}
+
+/**
+ * Очистить черновик из localStorage
+ */
+function clearDraft(): void {
+  if (typeof window === "undefined") return;
+  try {
+    localStorage.removeItem(DRAFT_STORAGE_KEY);
+  } catch {
+    // Игнорируем ошибки
+  }
+}
+
 export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
   const [formState, setFormState] = useState<FormState>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
+  const [draftLoaded, setDraftLoaded] = useState(false);
 
   const {
     register,
@@ -120,6 +166,43 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
     },
   });
 
+  // Загрузка черновика при монтировании
+  useEffect(() => {
+    const draft = loadDraft();
+    if (draft && !draftLoaded) {
+      // Восстанавливаем значения из черновика
+      Object.entries(draft).forEach(([key, value]) => {
+        if (value) {
+          setValue(key as keyof BriefFormData, value);
+        }
+      });
+      setDraftLoaded(true);
+    }
+  }, [setValue, draftLoaded]);
+
+  // Следим за всеми полями формы
+  const formValues = watch();
+
+  // Сохранение черновика при изменении полей
+  const saveDraftDebounced = useCallback(() => {
+    // Не сохраняем, если форма отправлена успешно
+    if (formState === "success") return;
+
+    // Проверяем, есть ли данные для сохранения
+    const hasData = Object.values(formValues).some((v) => v && v.trim() !== "");
+    if (hasData) {
+      saveDraft(formValues);
+    }
+  }, [formValues, formState]);
+
+  // Сохраняем черновик с дебаунсом
+  useEffect(() => {
+    if (!draftLoaded) return;
+
+    const timeoutId = setTimeout(saveDraftDebounced, 500);
+    return () => clearTimeout(timeoutId);
+  }, [formValues, draftLoaded, saveDraftDebounced]);
+
   const phoneValue = watch("phone");
 
   const onSubmit = async (data: BriefFormData) => {
@@ -144,6 +227,8 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
         throw new Error("Ошибка отправки. Попробуйте позже.");
       }
 
+      // Очищаем черновик после успешной отправки
+      clearDraft();
       setFormState("success");
       onSuccess?.(data);
     } catch (error) {
