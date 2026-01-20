@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { MobileMenu } from "./MobileMenu";
+import { CallbackModal } from "@/components/forms/CallbackModal";
 
 interface LayoutClientProps {
   children: React.ReactNode;
@@ -14,21 +15,23 @@ interface LayoutClientProps {
  *
  * Управляет состоянием:
  * - MobileMenu (open/closed)
- * - CallbackModal (будет добавлен позже)
+ * - CallbackModal (open/closed)
  */
 export function LayoutClient({ children }: LayoutClientProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  // TODO: добавить состояние для CallbackModal в Phase 8
-  // const [isCallbackModalOpen, setIsCallbackModalOpen] = useState(false);
+  const [isCallbackModalOpen, setIsCallbackModalOpen] = useState(false);
 
   const handleMenuOpen = () => setIsMobileMenuOpen(true);
   const handleMenuClose = () => setIsMobileMenuOpen(false);
 
-  // TODO: заменить на открытие модала в Phase 8
   const handleCallbackClick = () => {
-    // Временно: открываем ссылку на страницу контактов
-    window.location.href = "/contacts";
+    // Закрываем мобильное меню если открыто
+    setIsMobileMenuOpen(false);
+    // Открываем модал
+    setIsCallbackModalOpen(true);
   };
+
+  const handleCallbackClose = () => setIsCallbackModalOpen(false);
 
   return (
     <>
@@ -53,8 +56,12 @@ export function LayoutClient({ children }: LayoutClientProps) {
       {/* Footer */}
       <Footer onCallbackClick={handleCallbackClick} />
 
-      {/* TODO: Preloader будет добавлен в Phase 5 */}
-      {/* TODO: CallbackModal будет добавлен в Phase 8 */}
+      {/* Callback Modal */}
+      <CallbackModal
+        isOpen={isCallbackModalOpen}
+        onClose={handleCallbackClose}
+        source="header_cta"
+      />
     </>
   );
 }
