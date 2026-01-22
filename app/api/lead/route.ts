@@ -66,11 +66,6 @@ const leadSchema = z.discriminatedUnion("type", [
 ]);
 
 /**
- * Тип данных заявки
- */
-type LeadData = z.infer<typeof leadSchema>;
-
-/**
  * Интерфейс ответа API
  */
 interface ApiResponse {
@@ -87,17 +82,6 @@ function generateLeadId(): string {
   const timestamp = Date.now().toString(36);
   const random = Math.random().toString(36).substring(2, 8);
   return `lead_${timestamp}_${random}`;
-}
-
-/**
- * Форматирование данных заявки для логирования
- */
-function formatLeadForLog(data: LeadData, leadId: string): object {
-  return {
-    id: leadId,
-    ...data,
-    receivedAt: new Date().toISOString(),
-  };
 }
 
 /**

@@ -192,10 +192,11 @@ function ProcessStep({
   number,
   title,
   description,
-  isLast = false,
+  isLast: _isLast = false,
   showConnector = true,
   reverse = false,
 }: ProcessStepProps) {
+  void _isLast; // Reserved for future use
   return (
     <div className="relative">
       {/* Контент */}
@@ -233,8 +234,9 @@ function ProcessStepMobile({
   number,
   title,
   description,
-  isLast = false,
+  isLast: _isLast = false,
 }: ProcessStepData & { isLast?: boolean }) {
+  void _isLast; // Reserved for future use
   return (
     <div className="relative pl-12 pb-10">
       {/* Точка на линии */}

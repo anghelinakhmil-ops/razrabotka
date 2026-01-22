@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
@@ -143,7 +143,6 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
   const {
     register,
     handleSubmit,
-    reset,
     setValue,
     watch,
     trigger,
@@ -254,11 +253,6 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
   const handleRetry = () => {
     setFormState("idle");
     setErrorMessage("");
-  };
-
-  const handleReset = () => {
-    reset();
-    setFormState("idle");
   };
 
   // Success state

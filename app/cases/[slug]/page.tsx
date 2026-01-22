@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
@@ -364,7 +365,7 @@ function HeroSection({ caseData }: { caseData: CaseData }) {
     <section className="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-[var(--color-background)]">
       <Container>
         <RevealOnScroll direction="up">
-          <a
+          <Link
             href="/cases"
             className="inline-flex items-center gap-2 text-body-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors mb-8"
           >
@@ -378,7 +379,7 @@ function HeroSection({ caseData }: { caseData: CaseData }) {
               />
             </svg>
             Все кейсы
-          </a>
+          </Link>
         </RevealOnScroll>
 
         <RevealOnScroll direction="up" delay={0.1}>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { ease, duration } from "@/lib/motion";
@@ -65,41 +65,35 @@ export function Preloader({
   forceShow = false,
   onComplete,
 }: PreloaderProps) {
-  // Начальное состояние: проверяем sessionStorage
-  const [shouldShow, setShouldShow] = useState<boolean | null>(null);
+  // Вычисляем начальное значение shouldShow синхронно
+  const shouldShow = useMemo(() => {
+    if (forceShow) return true;
+    if (typeof window === "undefined") return null;
+    return !wasPreloaderShown();
+  }, [forceShow]);
+
+  // Вычисляем начальное значение isPageLoaded синхронно
+  const initialPageLoaded = useMemo(() => {
+    if (!syncWithPageLoad) return true;
+    if (typeof document === "undefined") return false;
+    return document.readyState === "complete";
+  }, [syncWithPageLoad]);
+
   const [isVisible, setIsVisible] = useState(true);
   const [progress, setProgress] = useState(0);
   const [isExiting, setIsExiting] = useState(false);
-  const [isPageLoaded, setIsPageLoaded] = useState(false);
+  const [isPageLoaded, setIsPageLoaded] = useState(initialPageLoaded);
 
-  // Проверка sessionStorage при монтировании
+  // Вызов onComplete если прелоадер уже был показан
   useEffect(() => {
-    // Если forceShow — всегда показываем
-    if (forceShow) {
-      setShouldShow(true);
-      return;
-    }
-
-    // Проверяем, был ли прелоадер уже показан
-    const alreadyShown = wasPreloaderShown();
-    setShouldShow(!alreadyShown);
-
-    // Если уже показывали — вызываем onComplete сразу
-    if (alreadyShown) {
+    if (shouldShow === false) {
       onComplete?.();
     }
-  }, [forceShow, onComplete]);
+  }, [shouldShow, onComplete]);
 
   // Отслеживание реальной загрузки страницы
   useEffect(() => {
-    if (!shouldShow || !syncWithPageLoad) {
-      setIsPageLoaded(true);
-      return;
-    }
-
-    // Проверяем текущее состояние документа
-    if (document.readyState === "complete") {
-      setIsPageLoaded(true);
+    if (!shouldShow || !syncWithPageLoad || isPageLoaded) {
       return;
     }
 
@@ -123,7 +117,7 @@ export function Preloader({
       window.removeEventListener("load", handleLoad);
       document.removeEventListener("readystatechange", handleReadyStateChange);
     };
-  }, [shouldShow, syncWithPageLoad]);
+  }, [shouldShow, syncWithPageLoad, isPageLoaded]);
 
   // Easing функция для более плавного счётчика (замедление к концу)
   const easeOutQuart = useCallback((t: number): number => {

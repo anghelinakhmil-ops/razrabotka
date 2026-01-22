@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
@@ -464,7 +465,7 @@ export default async function BlogPostPage({
         <Container>
           <div className="max-w-3xl">
             <RevealOnScroll direction="up">
-              <a
+              <Link
                 href="/blog"
                 className="inline-flex items-center gap-2 text-body-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors mb-8"
               >
@@ -478,7 +479,7 @@ export default async function BlogPostPage({
                   />
                 </svg>
                 Все статьи
-              </a>
+              </Link>
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.1}>
