@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
+import { TrackPageView } from "@/components/analytics/TrackPageView";
 
 /**
  * Данные кейса
@@ -325,6 +326,8 @@ export default async function CaseDetailPage({
 
   return (
     <main>
+      <TrackPageView event="case_view" params={{ case_slug: slug }} />
+
       {/* Hero */}
       <HeroSection caseData={caseData} />
 

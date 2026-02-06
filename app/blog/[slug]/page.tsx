@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import { TrackPageView } from "@/components/analytics/TrackPageView";
 
 /**
  * Секция оглавления
@@ -461,6 +462,8 @@ export default async function BlogPostPage({
 
   return (
     <main>
+      <TrackPageView event="blog_read" params={{ article_slug: slug }} />
+
       {/* JSON-LD */}
       <script
         type="application/ld+json"

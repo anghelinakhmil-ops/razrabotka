@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 import { quickLeadSchema, type QuickLeadFormData } from "@/lib/validation";
+import { trackFormStart, trackFormSubmit, trackFormError } from "@/lib/analytics";
 
 /**
  * Анимации для переходов состояний
@@ -61,6 +62,14 @@ export function QuickLeadForm({
 }: QuickLeadFormProps) {
   const [formState, setFormState] = useState<FormState>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
+  const [formStarted, setFormStarted] = useState(false);
+
+  const handleFormFocus = () => {
+    if (!formStarted) {
+      setFormStarted(true);
+      trackFormStart("quick_lead");
+    }
+  };
 
   const {
     register,
@@ -107,6 +116,7 @@ export function QuickLeadForm({
       }
 
       setFormState("success");
+      trackFormSubmit("quick_lead");
       onSuccess?.(data);
 
       // Reset form after delay
@@ -116,9 +126,9 @@ export function QuickLeadForm({
       }, 5000);
     } catch (error) {
       setFormState("error");
-      setErrorMessage(
-        error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже."
-      );
+      const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";
+      setErrorMessage(msg);
+      trackFormError("quick_lead", msg);
     }
   };
 
@@ -271,6 +281,7 @@ export function QuickLeadForm({
     return (
       <motion.form
         onSubmit={handleSubmit(onSubmit)}
+        onFocus={handleFormFocus}
         className="w-full"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -327,6 +338,7 @@ export function QuickLeadForm({
     return (
       <motion.form
         onSubmit={handleSubmit(onSubmit)}
+        onFocus={handleFormFocus}
         className="space-y-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -387,6 +399,7 @@ export function QuickLeadForm({
   return (
     <motion.form
       onSubmit={handleSubmit(onSubmit)}
+      onFocus={handleFormFocus}
       className="space-y-5"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

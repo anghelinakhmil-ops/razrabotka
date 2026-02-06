@@ -7,6 +7,7 @@ import { Container } from "@/components/ui/Container";
 import { RevealOnScroll } from "@/components/motion";
 import { HeroVisual } from "./HeroVisual";
 import { ease, duration } from "@/lib/motion";
+import { trackCtaClick } from "@/lib/analytics";
 
 interface HeroProps {
   /** Callback для CTA кнопки */
@@ -116,20 +117,25 @@ export function Hero({
                 <Button
                   variant="primary"
                   size="lg"
-                  onClick={onCtaClick}
+                  onClick={() => {
+                    trackCtaClick("hero", "Обсудить проект", "/");
+                    onCtaClick?.();
+                  }}
                   className="hover-lift"
                 >
                   Обсудить проект
                 </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  as="a"
-                  href="/cases"
-                  className="hover-lift"
-                >
-                  Смотреть кейсы
-                </Button>
+                <span onClick={() => trackCtaClick("hero", "Смотреть кейсы", "/")}>
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    as="a"
+                    href="/cases"
+                    className="hover-lift"
+                  >
+                    Смотреть кейсы
+                  </Button>
+                </span>
                 <Button
                   variant="ghost"
                   size="lg"

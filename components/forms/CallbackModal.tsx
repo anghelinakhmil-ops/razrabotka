@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 import { callbackFormSchema, type CallbackFormData } from "@/lib/validation";
+import { trackFormStart, trackFormSubmit, trackFormError } from "@/lib/analytics";
 
 /**
  * Состояния формы
@@ -43,6 +44,14 @@ export function CallbackModal({
 }: CallbackModalProps) {
   const [formState, setFormState] = useState<FormState>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
+  const [formStarted, setFormStarted] = useState(false);
+
+  const handleFormFocus = () => {
+    if (!formStarted) {
+      setFormStarted(true);
+      trackFormStart("callback");
+    }
+  };
 
   const {
     register,
@@ -87,12 +96,13 @@ export function CallbackModal({
       }
 
       setFormState("success");
+      trackFormSubmit("callback");
       onSuccess?.(data);
     } catch (error) {
       setFormState("error");
-      setErrorMessage(
-        error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже."
-      );
+      const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";
+      setErrorMessage(msg);
+      trackFormError("callback", msg);
     }
   };
 
@@ -222,6 +232,7 @@ export function CallbackModal({
         /* Form state */
         <motion.form
           onSubmit={handleSubmit(onSubmit)}
+          onFocus={handleFormFocus}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}

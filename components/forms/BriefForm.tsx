@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/Textarea";
 import { Select } from "@/components/ui/Select";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 import { briefFormSchema, type BriefFormData } from "@/lib/validation";
+import { trackFormStart, trackFormSubmit, trackFormError } from "@/lib/analytics";
 
 /**
  * Ключ для хранения черновика в localStorage
@@ -139,6 +140,14 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
   const [formState, setFormState] = useState<FormState>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [draftLoaded, setDraftLoaded] = useState(false);
+  const [formStarted, setFormStarted] = useState(false);
+
+  const handleFormFocus = () => {
+    if (!formStarted) {
+      setFormStarted(true);
+      trackFormStart("brief");
+    }
+  };
 
   const {
     register,
@@ -229,12 +238,13 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
       // Очищаем черновик после успешной отправки
       clearDraft();
       setFormState("success");
+      trackFormSubmit("brief");
       onSuccess?.(data);
     } catch (error) {
       setFormState("error");
-      setErrorMessage(
-        error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже."
-      );
+      const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";
+      setErrorMessage(msg);
+      trackFormError("brief", msg);
     }
   };
 
@@ -395,7 +405,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
       transition={{ duration: 0.4 }}
       className="p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm"
     >
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-10">
+      <form onSubmit={handleSubmit(onSubmit)} onFocus={handleFormFocus} className="space-y-10">
         {/* Section 1: О проекте */}
         <motion.section {...sectionAnimation} transition={{ ...sectionAnimation.transition, delay: 0.1 }}>
           <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-6 pb-4 border-b border-[var(--color-line)]">
