@@ -1,4 +1,16 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "WebStudio — Разработка сайтов под ключ",
+  description:
+    "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, высокая скорость, SEO-оптимизация. Конверсия от 3%.",
+  openGraph: {
+    title: "WebStudio — Разработка сайтов под ключ",
+    description:
+      "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, высокая скорость.",
+  },
+};
 
 export default function Home() {
   return (
