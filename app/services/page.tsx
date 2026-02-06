@@ -4,6 +4,7 @@ import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { LeadFormSection } from "@/components/sections";
+import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Услуги | WebStudio — Разработка сайтов под ключ",
@@ -127,8 +128,31 @@ const comparisonData = {
  * Services Page — страница услуг
  */
 export default function ServicesPage() {
+  const services = packages.map((pkg) => ({
+    name: pkg.title,
+    description: pkg.description,
+    price: pkg.price.replace("от ", ""),
+  }));
+
   return (
     <main>
+      {/* JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema(services)),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema([
+            { name: "Главная", url: "/" },
+            { name: "Услуги", url: "/services" },
+          ])),
+        }}
+      />
+
       {/* Hero Section */}
       <HeroSection />
 

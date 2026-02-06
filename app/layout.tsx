@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import { LayoutClient } from "@/components/layout";
+import { organizationSchema, webSiteSchema } from "@/lib/schema";
 import "./globals.css";
 
 // Display шрифт — для заголовков, «ломаной» типографики
@@ -69,6 +70,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(webSiteSchema()),
+          }}
+        />
+      </head>
       <body
         className={`${spaceGrotesk.variable} ${inter.variable} antialiased bg-[var(--color-background)] text-[var(--color-text-primary)]`}
       >

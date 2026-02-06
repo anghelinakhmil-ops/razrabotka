@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Accordion, AccordionItem } from "@/components/ui/Accordion";
 import { RevealOnScroll } from "@/components/motion";
+import { faqSchema } from "@/lib/schema";
 
 /**
  * Данные для одного вопроса FAQ
@@ -96,6 +97,14 @@ export function FAQ({ items = defaultFAQItems }: FAQProps) {
       id="faq"
       className="py-[var(--section-gap)] bg-[var(--color-background-alt)]"
     >
+      {/* JSON-LD FAQPage */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema(items)),
+        }}
+      />
+
       <Container>
         {/* Заголовок секции */}
         <RevealOnScroll direction="up" className="mb-12 lg:mb-16">

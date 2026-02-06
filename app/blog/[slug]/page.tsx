@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 /**
  * Секция оглавления
@@ -460,6 +461,30 @@ export default async function BlogPostPage({
 
   return (
     <main>
+      {/* JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema({
+            title: post.title,
+            description: post.excerpt,
+            slug,
+            date: post.date,
+            author: post.author,
+          })),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema([
+            { name: "Главная", url: "/" },
+            { name: "Блог", url: "/blog" },
+            { name: post.title, url: `/blog/${slug}` },
+          ])),
+        }}
+      />
+
       {/* Hero */}
       <section className="pt-32 pb-12 lg:pt-40 lg:pb-16 bg-[var(--color-background)]">
         <Container>
