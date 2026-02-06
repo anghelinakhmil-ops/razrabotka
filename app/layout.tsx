@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import { LayoutClient } from "@/components/layout";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { Analytics } from "@vercel/analytics/react";
 import { organizationSchema, webSiteSchema } from "@/lib/schema";
 import "./globals.css";
 
@@ -90,6 +91,7 @@ export default function RootLayout({
         className={`${spaceGrotesk.variable} ${inter.variable} antialiased bg-[var(--color-background)] text-[var(--color-text-primary)]`}
       >
         <GoogleAnalytics />
+        <Analytics />
         <LayoutClient>{children}</LayoutClient>
       </body>
     </html>
