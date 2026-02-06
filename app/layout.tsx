@@ -21,6 +21,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://webstudio.dev"),
   title: {
     default: "WebStudio | Разработка сайтов под ключ",
     template: "%s | WebStudio",
