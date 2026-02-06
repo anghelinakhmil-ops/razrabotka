@@ -255,14 +255,6 @@ body {
   line-height: var(--line-height-body);
 }
 
-/* Small */
-.text-small {
-  font-family: var(--font-body), var(--font-body-fallback);
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-small);
-}
-
 /* Caption */
 .text-caption {
   font-family: var(--font-body), var(--font-body-fallback);
@@ -309,67 +301,6 @@ body {
 .text-broken-h3 {
   font-size: var(--font-size-h3);
   line-height: var(--line-height-h3);
-}
-
-/* ============================================
-   SPACING УТИЛИТАРНЫЕ КЛАССЫ
-   ============================================ */
-
-/* Section — вертикальные отступы секций */
-.section {
-  padding-top: var(--section-gap);
-  padding-bottom: var(--section-gap);
-}
-
-.section-sm {
-  padding-top: var(--section-gap-sm);
-  padding-bottom: var(--section-gap-sm);
-}
-
-/* Container — контейнер с боковыми отступами */
-.container {
-  width: 100%;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--container-padding);
-  padding-right: var(--container-padding);
-}
-
-.container-lg {
-  max-width: 1440px;
-  padding-left: var(--container-padding-lg);
-  padding-right: var(--container-padding-lg);
-}
-
-/* Card padding */
-.card-padding {
-  padding: var(--card-padding);
-}
-
-.card-padding-lg {
-  padding: var(--card-padding-lg);
-}
-
-/* Element gaps — для flex/grid контейнеров */
-.gap-element-xs {
-  gap: var(--element-gap-xs);
-}
-
-.gap-element-sm {
-  gap: var(--element-gap-sm);
-}
-
-.gap-element-md {
-  gap: var(--element-gap-md);
-}
-
-.gap-element-lg {
-  gap: var(--element-gap-lg);
-}
-
-.gap-element-xl {
-  gap: var(--element-gap-xl);
 }
 
 /* ============================================
@@ -437,44 +368,6 @@ body {
   transform: scaleX(1);
 }
 
-/* Вариант: underline справа налево */
-.hover-underline-animate-rtl::after {
-  transform-origin: right center;
-}
-
-/* Вариант: underline из центра */
-.hover-underline-animate-center::after {
-  transform-origin: center center;
-}
-
-/* ----------------------------------------
-   Button Hover — смена заливки
-   ---------------------------------------- */
-.hover-fill {
-  transition: background-color var(--transition-fast),
-              color var(--transition-fast),
-              border-color var(--transition-fast);
-}
-
-.hover-fill:hover {
-  background-color: var(--color-text-primary);
-  color: var(--color-background);
-  border-color: var(--color-text-primary);
-}
-
-/* Инверсная версия */
-.hover-fill-inverse {
-  transition: background-color var(--transition-fast),
-              color var(--transition-fast),
-              border-color var(--transition-fast);
-}
-
-.hover-fill-inverse:hover {
-  background-color: var(--color-background);
-  color: var(--color-text-primary);
-  border-color: var(--color-background);
-}
-
 /* ----------------------------------------
    Card Hover — scale + shadow
    ---------------------------------------- */
@@ -488,17 +381,6 @@ body {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
-/* Более subtle версия */
-.hover-card-subtle {
-  transition: transform var(--transition-fast),
-              box-shadow var(--transition-fast);
-}
-
-.hover-card-subtle:hover {
-  transform: scale(1.01);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-}
-
 /* ----------------------------------------
    Micro-shift — микро-сдвиг вверх
    ---------------------------------------- */
@@ -510,102 +392,13 @@ body {
   transform: translateY(-2px);
 }
 
-/* Более заметный сдвиг */
-.hover-lift-lg {
-  transition: transform var(--transition-fast);
-}
-
-.hover-lift-lg:hover {
-  transform: translateY(-4px);
-}
-
-/* ----------------------------------------
-   Opacity Hover
-   ---------------------------------------- */
-.hover-opacity {
-  transition: opacity var(--transition-fast);
-}
-
-.hover-opacity:hover {
-  opacity: 0.7;
-}
-
-/* ----------------------------------------
-   Scale Hover — только масштабирование
-   ---------------------------------------- */
-.hover-scale {
-  transition: transform var(--transition-fast);
-}
-
-.hover-scale:hover {
-  transform: scale(1.05);
-}
-
-.hover-scale-sm {
-  transition: transform var(--transition-fast);
-}
-
-.hover-scale-sm:hover {
-  transform: scale(1.02);
-}
-
-/* ----------------------------------------
-   Combined Hover — сочетание эффектов
-   ---------------------------------------- */
-.hover-combined {
-  transition: transform var(--transition-fast),
-              box-shadow var(--transition-fast),
-              background-color var(--transition-fast);
-}
-
-.hover-combined:hover {
-  transform: translateY(-2px) scale(1.01);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-}
-
-/* ----------------------------------------
-   Image Hover — для изображений
-   ---------------------------------------- */
-.hover-image-zoom {
-  overflow: hidden;
-}
-
-.hover-image-zoom img {
-  transition: transform var(--transition-normal);
-}
-
-.hover-image-zoom:hover img {
-  transform: scale(1.05);
-}
-
-/* ----------------------------------------
-   Link Hover — для ссылок
-   ---------------------------------------- */
-.hover-link {
-  transition: color var(--transition-fast);
-}
-
-.hover-link:hover {
-  color: var(--color-text-muted);
-}
-
 /* ----------------------------------------
    Respects prefers-reduced-motion
    ---------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   .hover-underline-animate::after,
-  .hover-fill,
-  .hover-fill-inverse,
   .hover-card,
-  .hover-card-subtle,
-  .hover-lift,
-  .hover-lift-lg,
-  .hover-opacity,
-  .hover-scale,
-  .hover-scale-sm,
-  .hover-combined,
-  .hover-image-zoom img,
-  .hover-link {
+  .hover-lift {
     transition: none;
   }
 }
