@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import { LayoutClient } from "@/components/layout";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { CookieConsent } from "@/components/layout/CookieConsent";
 import { Analytics } from "@vercel/analytics/react";
 import { organizationSchema, webSiteSchema } from "@/lib/schema";
 import "./globals.css";
@@ -93,6 +94,7 @@ export default function RootLayout({
         <GoogleAnalytics />
         <Analytics />
         <LayoutClient>{children}</LayoutClient>
+        <CookieConsent />
       </body>
     </html>
   );
