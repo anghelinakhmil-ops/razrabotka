@@ -2,7 +2,7 @@
 
 import { clsx } from "clsx";
 import Link from "next/link";
-import { useEffect, useCallback } from "react";
+import { useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BrokenText } from "../ui/BrokenText";
 import { Button } from "../ui/Button";
@@ -118,6 +118,8 @@ export function MobileMenu({
   onCallbackClick,
   className,
 }: MobileMenuProps) {
+  const menuRef = useRef<HTMLDivElement>(null);
+
   // Handle Escape key
   const handleEscape = useCallback((e: KeyboardEvent) => {
     if (e.key === "Escape") {
@@ -125,11 +127,36 @@ export function MobileMenu({
     }
   }, [onClose]);
 
-  // Lock body scroll and add escape listener
+  // Focus trap
+  const handleTabKey = useCallback((e: KeyboardEvent) => {
+    if (e.key !== "Tab" || !menuRef.current) return;
+
+    const focusableElements = menuRef.current.querySelectorAll<HTMLElement>(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+
+    if (e.shiftKey) {
+      if (document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement?.focus();
+      }
+    } else {
+      if (document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement?.focus();
+      }
+    }
+  }, []);
+
+  // Lock body scroll, add escape listener and focus trap
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
       document.addEventListener("keydown", handleEscape);
+      document.addEventListener("keydown", handleTabKey);
     } else {
       document.body.style.overflow = "";
     }
@@ -137,8 +164,9 @@ export function MobileMenu({
     return () => {
       document.body.style.overflow = "";
       document.removeEventListener("keydown", handleEscape);
+      document.removeEventListener("keydown", handleTabKey);
     };
-  }, [isOpen, handleEscape]);
+  }, [isOpen, handleEscape, handleTabKey]);
 
   // Handle navigation click - close menu
   const handleNavClick = () => {
@@ -181,6 +209,7 @@ export function MobileMenu({
               "overflow-y-auto",
               className
             )}
+            ref={menuRef}
             role="dialog"
             aria-modal="true"
             aria-label="Мобильное меню"
