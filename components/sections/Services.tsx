@@ -4,7 +4,9 @@ import { ReactNode } from "react";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
-import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
+import { motion } from "framer-motion";
+import { RevealOnScroll, StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
+import { ease, duration } from "@/lib/motion";
 
 /**
  * Данные для одной услуги
@@ -94,21 +96,30 @@ export function Services({ services = defaultServices }: ServicesProps) {
     >
       <Container>
         {/* Заголовок секции */}
-        <RevealOnScroll direction="up" className="mb-16 lg:mb-24">
+        <div className="mb-16 lg:mb-24">
           <div className="flex flex-col gap-4">
-            <span className="text-caption text-[var(--color-text-muted)]">
-              Направления
-            </span>
-            <h2>
+            <SplitTextReveal
+              text="Направления"
+              as="span"
+              className="text-caption text-[var(--color-text-muted)]"
+              direction="up"
+              staggerDelay={0.06}
+            />
+            <motion.h2
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: duration.slow, ease, delay: 0.3 }}
+            >
               <BrokenText
                 text="УСЛУГИ"
                 spaced
                 mixPattern={[2, 4]}
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
-            </h2>
+            </motion.h2>
           </div>
-        </RevealOnScroll>
+        </div>
 
         {/* Сетка услуг */}
         <StaggerContainer

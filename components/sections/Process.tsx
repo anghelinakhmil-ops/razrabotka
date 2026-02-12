@@ -1,9 +1,11 @@
 "use client";
 
 import { ReactNode } from "react";
+import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
-import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
+import { RevealOnScroll, StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
+import { ease, duration } from "@/lib/motion";
 
 /**
  * Данные для одного шага процесса
@@ -96,21 +98,30 @@ export function Process({ steps = defaultSteps }: ProcessProps) {
     >
       <Container>
         {/* Заголовок секции */}
-        <RevealOnScroll direction="up" className="mb-12 lg:mb-20">
+        <div className="mb-12 lg:mb-20">
           <div className="flex flex-col gap-4">
-            <span className="text-caption text-[var(--color-text-muted)]">
-              Этапы
-            </span>
-            <h2>
+            <SplitTextReveal
+              text="Этапы"
+              as="span"
+              className="text-caption text-[var(--color-text-muted)]"
+              direction="up"
+              staggerDelay={0.06}
+            />
+            <motion.h2
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: duration.slow, ease, delay: 0.3 }}
+            >
               <BrokenText
                 text="ПРОЦЕСС"
                 spaced
                 mixPattern={[2, 5]}
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
-            </h2>
+            </motion.h2>
           </div>
-        </RevealOnScroll>
+        </div>
 
         {/* Timeline - Desktop (горизонтальный, 2 ряда по 4) */}
         <div className="hidden lg:block">

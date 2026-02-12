@@ -5,6 +5,7 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { MobileMenu } from "./MobileMenu";
 import { CallbackModal } from "@/components/forms/CallbackModal";
+import { LenisProvider } from "@/components/motion/LenisProvider";
 
 interface LayoutClientProps {
   children: React.ReactNode;
@@ -34,7 +35,7 @@ export function LayoutClient({ children }: LayoutClientProps) {
   const handleCallbackClose = () => setIsCallbackModalOpen(false);
 
   return (
-    <>
+    <LenisProvider>
       {/* Header */}
       <Header
         onMenuOpen={handleMenuOpen}
@@ -62,7 +63,7 @@ export function LayoutClient({ children }: LayoutClientProps) {
         onClose={handleCallbackClose}
         source="header_cta"
       />
-    </>
+    </LenisProvider>
   );
 }
 

@@ -203,8 +203,9 @@ export function Preloader({
           exit={{
             opacity: 0,
             y: -30,
+            filter: "blur(20px)",
             transition: {
-              duration: duration.normal,
+              duration: duration.slow,
               ease,
             },
           }}

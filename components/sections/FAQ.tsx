@@ -1,9 +1,11 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Accordion, AccordionItem } from "@/components/ui/Accordion";
-import { RevealOnScroll } from "@/components/motion";
+import { RevealOnScroll, SplitTextReveal } from "@/components/motion";
+import { ease, duration } from "@/lib/motion";
 import { faqSchema } from "@/lib/schema";
 
 /**
@@ -107,21 +109,30 @@ export function FAQ({ items = defaultFAQItems }: FAQProps) {
 
       <Container>
         {/* Заголовок секции */}
-        <RevealOnScroll direction="up" className="mb-12 lg:mb-16">
+        <div className="mb-12 lg:mb-16">
           <div className="flex flex-col gap-4">
-            <span className="text-caption text-[var(--color-text-muted)]">
-              Ответы
-            </span>
-            <h2>
+            <SplitTextReveal
+              text="Ответы"
+              as="span"
+              className="text-caption text-[var(--color-text-muted)]"
+              direction="up"
+              staggerDelay={0.06}
+            />
+            <motion.h2
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: duration.slow, ease, delay: 0.3 }}
+            >
               <BrokenText
                 text="ВОПРОСЫ"
                 spaced
                 mixPattern={[2, 5]}
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
-            </h2>
+            </motion.h2>
           </div>
-        </RevealOnScroll>
+        </div>
 
         {/* FAQ Grid - две колонки на desktop */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-12">

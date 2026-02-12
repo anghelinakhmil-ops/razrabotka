@@ -10,3 +10,6 @@ export {
   cardStaggerPreset,
   navStaggerPreset,
 } from "./StaggerChildren";
+export { LenisProvider, useLenis } from "./LenisProvider";
+export { SplitTextReveal } from "./SplitTextReveal";
+export { ScrollScrubText } from "./ScrollScrubText";

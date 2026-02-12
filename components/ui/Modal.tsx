@@ -184,8 +184,8 @@ export function Modal({
           "bg-[var(--color-background)]",
           "border-2 border-[var(--color-line)]",
           "shadow-2xl",
-          // Animation
-          "animate-in fade-in zoom-in-95 duration-200",
+          // Animation with blur effect
+          "animate-modal-blur-in",
           className
         )}
       >
