@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
+import { CtaButton } from "@/components/ui/CtaButton";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 
 /**
@@ -369,15 +370,14 @@ function CTASection() {
 
           <RevealOnScroll direction="up" delay={0.2}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+              <CtaButton
                 variant="primary"
                 size="lg"
-                as={Link}
-                href="/#contact"
+                source="cases_cta"
                 className="bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
               >
                 Обсудить проект
-              </Button>
+              </CtaButton>
               <Button
                 variant="outline"
                 size="lg"

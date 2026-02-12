@@ -4,7 +4,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
-import { RevealOnScroll, StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
+import { CtaButton } from "@/components/ui/CtaButton";
+import { StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
 import { ease, duration } from "@/lib/motion";
 
 /**
@@ -127,6 +128,13 @@ export function Testimonials({ testimonials = defaultTestimonials }: Testimonial
             </StaggerItem>
           ))}
         </StaggerContainer>
+
+        {/* CTA */}
+        <div className="mt-12 lg:mt-16 text-center">
+          <CtaButton variant="primary" size="lg" source="testimonials_cta">
+            Стать следующим довольным клиентом
+          </CtaButton>
+        </div>
       </Container>
     </section>
   );

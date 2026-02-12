@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { MobileMenu } from "./MobileMenu";
@@ -34,6 +34,13 @@ export function LayoutClient({ children }: LayoutClientProps) {
   };
 
   const handleCallbackClose = () => setIsCallbackModalOpen(false);
+
+  // Listen for CustomEvent from CtaButton (works from Server & Client components)
+  useEffect(() => {
+    const handleOpenModal = () => setIsCallbackModalOpen(true);
+    window.addEventListener("open-callback-modal", handleOpenModal);
+    return () => window.removeEventListener("open-callback-modal", handleOpenModal);
+  }, []);
 
   return (
     <LenisProvider>

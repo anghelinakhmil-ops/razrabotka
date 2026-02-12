@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
+import { CtaButton } from "@/components/ui/CtaButton";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { LeadFormSection } from "@/components/sections";
 import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
@@ -321,15 +322,14 @@ function PackageSection({
 
             {/* CTA */}
             <RevealOnScroll direction="up" delay={0.4}>
-              <Button
+              <CtaButton
                 variant="primary"
                 size="lg"
-                as="a"
-                href={`/#contact`}
+                source="services_cta"
                 className="hover-lift"
               >
                 Заказать {title.toLowerCase()}
-              </Button>
+              </CtaButton>
             </RevealOnScroll>
           </div>
 

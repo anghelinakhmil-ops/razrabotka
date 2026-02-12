@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Accordion, AccordionItem } from "@/components/ui/Accordion";
+import { Button } from "@/components/ui/Button";
 import { RevealOnScroll, SplitTextReveal } from "@/components/motion";
 import { ease, duration } from "@/lib/motion";
 import { faqSchema } from "@/lib/schema";
@@ -166,6 +167,21 @@ export function FAQ({ items = defaultFAQItems }: FAQProps) {
             </Accordion>
           </RevealOnScroll>
         </div>
+
+        {/* CTA после FAQ */}
+        <RevealOnScroll direction="up" delay={0.3}>
+          <div className="mt-16 lg:mt-20 pt-12 border-t border-[var(--color-line)] text-center">
+            <p className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-3">
+              Остались вопросы?
+            </p>
+            <p className="text-body text-[var(--color-text-muted)] mb-6">
+              Свяжитесь с нами — ответим в течение часа
+            </p>
+            <Button variant="primary" size="lg" as="a" href="/contacts">
+              Связаться с нами
+            </Button>
+          </div>
+        </RevealOnScroll>
       </Container>
     </section>
   );

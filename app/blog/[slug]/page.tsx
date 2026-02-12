@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { CtaButton } from "@/components/ui/CtaButton";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { TrackPageView } from "@/components/analytics/TrackPageView";
@@ -671,9 +672,9 @@ export default async function BlogPostPage({
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.2}>
-              <Button variant="primary" size="lg" as="a" href="/#contact">
+              <CtaButton variant="primary" size="lg" source="blog_detail_cta">
                 Обсудить проект
-              </Button>
+              </CtaButton>
             </RevealOnScroll>
           </div>
         </Container>

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
+import { CtaButton } from "@/components/ui/CtaButton";
 import { RevealOnScroll, StaggerContainer, StaggerItem, ScrollScrubText } from "@/components/motion";
 
 export const metadata: Metadata = {
@@ -361,15 +362,14 @@ function CTASection() {
 
           <RevealOnScroll direction="up" delay={0.2}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+              <CtaButton
                 variant="primary"
                 size="lg"
-                as="a"
-                href="/#contact"
+                source="about_cta"
                 className="bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
               >
                 Обсудить проект
-              </Button>
+              </CtaButton>
               <Button
                 variant="outline"
                 size="lg"
