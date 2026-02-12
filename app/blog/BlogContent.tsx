@@ -38,7 +38,7 @@ const allPosts: BlogPost[] = [
       "Разбираем преимущества Next.js для коммерческих проектов: SEO, производительность, масштабируемость.",
     category: "development",
     categoryLabel: "Разработка",
-    date: "2024-12-15",
+    date: "2026-01-20",
     readTime: "8 мин",
     author: "Команда WebStudio",
   },
@@ -49,7 +49,7 @@ const allPosts: BlogPost[] = [
       "Как дизайн влияет на продажи. Практические приёмы, которые увеличивают конверсию.",
     category: "design",
     categoryLabel: "Дизайн",
-    date: "2024-12-10",
+    date: "2026-01-12",
     readTime: "6 мин",
     author: "Команда WebStudio",
   },
@@ -60,7 +60,7 @@ const allPosts: BlogPost[] = [
       "Что нужно сделать для SEO до запуска и в первые месяцы работы сайта.",
     category: "marketing",
     categoryLabel: "Маркетинг",
-    date: "2024-12-05",
+    date: "2025-12-28",
     readTime: "10 мин",
     author: "Команда WebStudio",
   },
@@ -71,7 +71,7 @@ const allPosts: BlogPost[] = [
       "Сколько стоит сайт, сколько приносит клиентов и когда окупается. Разбор на примерах.",
     category: "business",
     categoryLabel: "Бизнес",
-    date: "2024-11-28",
+    date: "2025-12-15",
     readTime: "7 мин",
     author: "Команда WebStudio",
   },
@@ -82,7 +82,7 @@ const allPosts: BlogPost[] = [
       "Сравниваем два подхода к стилизации в React-проектах. Плюсы, минусы, когда что использовать.",
     category: "development",
     categoryLabel: "Разработка",
-    date: "2024-11-20",
+    date: "2025-11-25",
     readTime: "9 мин",
     author: "Команда WebStudio",
   },
@@ -93,7 +93,7 @@ const allPosts: BlogPost[] = [
       "Почему меньше — это больше. Как минималистичный дизайн влияет на UX и конверсию.",
     category: "design",
     categoryLabel: "Дизайн",
-    date: "2024-11-15",
+    date: "2025-11-10",
     readTime: "5 мин",
     author: "Команда WebStudio",
   },
@@ -104,7 +104,7 @@ const allPosts: BlogPost[] = [
       "Практический гайд по оптимизации производительности сайта. Core Web Vitals, изображения, код.",
     category: "development",
     categoryLabel: "Разработка",
-    date: "2024-11-10",
+    date: "2025-10-20",
     readTime: "12 мин",
     author: "Команда WebStudio",
   },
@@ -115,7 +115,7 @@ const allPosts: BlogPost[] = [
       "Какие блоки должны быть на лендинге и в каком порядке. Структура, которая продаёт.",
     category: "marketing",
     categoryLabel: "Маркетинг",
-    date: "2024-11-05",
+    date: "2025-10-05",
     readTime: "8 мин",
     author: "Команда WebStudio",
   },
@@ -341,27 +341,38 @@ function NoResults({ onReset }: { onReset: () => void }) {
  */
 function CTASection() {
   return (
-    <section className="py-[var(--section-gap)] bg-[var(--color-background-alt)]">
+    <section className="py-[var(--section-gap)] bg-[var(--color-text-primary)]">
       <Container>
         <div className="max-w-2xl mx-auto text-center">
           <RevealOnScroll direction="up">
-            <h2 className="text-h2 font-display font-bold text-[var(--color-text-primary)] mb-4">
+            <h2 className="text-h2 font-display font-bold text-[var(--color-background)] mb-4">
               Нужен сайт?
             </h2>
           </RevealOnScroll>
 
           <RevealOnScroll direction="up" delay={0.1}>
-            <p className="text-body text-[var(--color-text-muted)] mb-8">
+            <p className="text-body text-[var(--color-background)]/70 mb-8">
               Применим все эти знания на практике — для вашего проекта.
             </p>
           </RevealOnScroll>
 
           <RevealOnScroll direction="up" delay={0.2}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <CtaButton variant="primary" size="lg" source="blog_cta">
+              <CtaButton
+                variant="primary"
+                size="lg"
+                source="blog_cta"
+                className="bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
+              >
                 Обсудить проект
               </CtaButton>
-              <Button variant="outline" size="lg" as={Link} href="/services">
+              <Button
+                variant="outline"
+                size="lg"
+                as={Link}
+                href="/services"
+                className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
+              >
                 Смотреть услуги
               </Button>
             </div>

@@ -43,7 +43,7 @@ const postsData: Record<string, BlogPostData> = {
       "Разбираем преимущества Next.js для коммерческих проектов: SEO, производительность, масштабируемость.",
     category: "development",
     categoryLabel: "Разработка",
-    date: "2024-12-15",
+    date: "2026-01-20",
     readTime: "8 мин",
     author: "Команда WebStudio",
     toc: [
@@ -93,7 +93,7 @@ const postsData: Record<string, BlogPostData> = {
       "Как дизайн влияет на продажи. Практические приёмы, которые увеличивают конверсию.",
     category: "design",
     categoryLabel: "Дизайн",
-    date: "2024-12-10",
+    date: "2026-01-12",
     readTime: "6 мин",
     author: "Команда WebStudio",
     toc: [
@@ -132,7 +132,7 @@ const postsData: Record<string, BlogPostData> = {
       "Что нужно сделать для SEO до запуска и в первые месяцы работы сайта.",
     category: "marketing",
     categoryLabel: "Маркетинг",
-    date: "2024-12-05",
+    date: "2025-12-28",
     readTime: "10 мин",
     author: "Команда WebStudio",
     toc: [
@@ -183,7 +183,7 @@ const postsData: Record<string, BlogPostData> = {
       "Сколько стоит сайт, сколько приносит клиентов и когда окупается. Разбор на примерах.",
     category: "business",
     categoryLabel: "Бизнес",
-    date: "2024-11-28",
+    date: "2025-12-15",
     readTime: "7 мин",
     author: "Команда WebStudio",
     toc: [
@@ -221,7 +221,7 @@ const postsData: Record<string, BlogPostData> = {
       "Сравниваем два подхода к стилизации в React-проектах. Плюсы, минусы, когда что использовать.",
     category: "development",
     categoryLabel: "Разработка",
-    date: "2024-11-20",
+    date: "2025-11-25",
     readTime: "9 мин",
     author: "Команда WebStudio",
     toc: [
@@ -265,7 +265,7 @@ const postsData: Record<string, BlogPostData> = {
       "Почему меньше — это больше. Как минималистичный дизайн влияет на UX и конверсию.",
     category: "design",
     categoryLabel: "Дизайн",
-    date: "2024-11-15",
+    date: "2025-11-10",
     readTime: "5 мин",
     author: "Команда WebStudio",
     toc: [
@@ -298,7 +298,7 @@ const postsData: Record<string, BlogPostData> = {
       "Практический гайд по оптимизации производительности сайта. Core Web Vitals, изображения, код.",
     category: "development",
     categoryLabel: "Разработка",
-    date: "2024-11-10",
+    date: "2025-10-20",
     readTime: "12 мин",
     author: "Команда WebStudio",
     toc: [
@@ -349,7 +349,7 @@ const postsData: Record<string, BlogPostData> = {
       "Какие блоки должны быть на лендинге и в каком порядке. Структура, которая продаёт.",
     category: "marketing",
     categoryLabel: "Маркетинг",
-    date: "2024-11-05",
+    date: "2025-10-05",
     readTime: "8 мин",
     author: "Команда WebStudio",
     toc: [
