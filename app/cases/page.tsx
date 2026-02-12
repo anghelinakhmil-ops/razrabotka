@@ -36,6 +36,7 @@ const allCases: CaseItem[] = [
     categoryLabel: "Эксперт",
     description: "Сайт для бизнес-коуча с записью на консультации и блогом.",
     result: "+180% заявок",
+    imageSrc: "/images/cases/case-expert-coach.jpg",
   },
   {
     slug: "ecommerce-fashion",
@@ -44,6 +45,7 @@ const allCases: CaseItem[] = [
     categoryLabel: "E-commerce",
     description: "Магазин женской одежды с каталогом 500+ товаров.",
     result: "3.2 сек LCP",
+    imageSrc: "/images/cases/case-ecommerce-fashion.jpg",
   },
   {
     slug: "landing-saas",
@@ -52,6 +54,7 @@ const allCases: CaseItem[] = [
     categoryLabel: "Лендинг",
     description: "Конверсионная страница для облачного сервиса аналитики.",
     result: "8.5% конверсия",
+    imageSrc: "/images/cases/case-landing-saas.jpg",
   },
   {
     slug: "expert-psychologist",
@@ -60,6 +63,7 @@ const allCases: CaseItem[] = [
     categoryLabel: "Эксперт",
     description: "Персональный сайт с онлайн-записью и интеграцией с календарём.",
     result: "+240% записей",
+    imageSrc: "/images/cases/case-expert-psychologist.jpg",
   },
   {
     slug: "ecommerce-cosmetics",
@@ -68,6 +72,7 @@ const allCases: CaseItem[] = [
     categoryLabel: "E-commerce",
     description: "Интернет-магазин натуральной косметики с подпиской.",
     result: "95 Lighthouse",
+    imageSrc: "/images/cases/case-ecommerce-cosmetics.jpg",
   },
   {
     slug: "landing-event",
@@ -76,6 +81,7 @@ const allCases: CaseItem[] = [
     categoryLabel: "Лендинг",
     description: "Лендинг для бизнес-конференции с онлайн-регистрацией.",
     result: "1200+ регистраций",
+    imageSrc: "/images/cases/case-landing-event.jpg",
   },
   {
     slug: "expert-lawyer",
@@ -84,6 +90,7 @@ const allCases: CaseItem[] = [
     categoryLabel: "Эксперт",
     description: "Корпоративный сайт юриста с портфолио дел и записью.",
     result: "+150% обращений",
+    imageSrc: "/images/cases/case-corporate-it.jpg",
   },
   {
     slug: "ecommerce-electronics",
@@ -92,6 +99,7 @@ const allCases: CaseItem[] = [
     categoryLabel: "E-commerce",
     description: "Интернет-магазин гаджетов с умным поиском и фильтрами.",
     result: "+85% конверсии",
+    imageSrc: "/images/cases/case-ecommerce-electronics.jpg",
   },
   {
     slug: "landing-app",
@@ -100,6 +108,7 @@ const allCases: CaseItem[] = [
     categoryLabel: "Лендинг",
     description: "Промо-страница для fitness-приложения с App Store ссылками.",
     result: "12K установок",
+    imageSrc: "/images/cases/case-expert-nutrition.jpg",
   },
 ];
 

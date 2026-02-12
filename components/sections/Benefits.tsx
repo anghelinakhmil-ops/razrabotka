@@ -46,6 +46,8 @@ const defaultBenefits: BenefitData[] = [
     mixPattern: [3, 6], // СТР A ТЕГ I Я
     description:
       "Начинаем с глубокого анализа вашего бизнеса, целевой аудитории и конкурентов. Разрабатываем структуру сайта, которая ведёт посетителя к целевому действию.",
+    imageSrc: "/images/benefits/benefit-01-strategy.jpg",
+    imageAlt: "Стратегическое планирование структуры сайта",
   },
   {
     number: "02",
@@ -54,6 +56,8 @@ const defaultBenefits: BenefitData[] = [
     mixPattern: [1, 4], // Д I ЗА Y Н
     description:
       "Создаём уникальный визуальный стиль без шаблонов. Много воздуха, чёткая типографика, продуманная анимация — сайт, который выделяется и запоминается.",
+    imageSrc: "/images/benefits/benefit-02-design.jpg",
+    imageAlt: "Премиум-минимал дизайн интерфейса",
   },
   {
     number: "03",
@@ -62,6 +66,8 @@ const defaultBenefits: BenefitData[] = [
     mixPattern: [2, 5], // СК O РО C ТЬ
     description:
       "Оптимизируем каждую страницу для Core Web Vitals. Быстрая загрузка, правильная семантика, техническое SEO — ваш сайт будет любить и Google, и пользователи.",
+    imageSrc: "/images/benefits/benefit-03-speed.jpg",
+    imageAlt: "Высокая скорость загрузки и оптимизация",
   },
   {
     number: "04",
@@ -70,6 +76,8 @@ const defaultBenefits: BenefitData[] = [
     mixPattern: [0, 5], // I НТЕГР A ЦИИ
     description:
       "Подключаем платёжные системы, CRM, аналитику, Telegram-уведомления и любые другие сервисы, необходимые для автоматизации вашего бизнеса.",
+    imageSrc: "/images/benefits/benefit-04-integrations.jpg",
+    imageAlt: "Интеграции с платёжными системами и CRM",
   },
   {
     number: "05",
@@ -78,6 +86,8 @@ const defaultBenefits: BenefitData[] = [
     mixPattern: [1, 6], // П O ДДЕРЖ K А
     description:
       "Не бросаем после сдачи проекта. Техническая поддержка, мелкие доработки, консультации — мы рядом, когда вам нужно.",
+    imageSrc: "/images/benefits/benefit-05-support.jpg",
+    imageAlt: "Команда поддержки всегда на связи",
   },
 ];
 

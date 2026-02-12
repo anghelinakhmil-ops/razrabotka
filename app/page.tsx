@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
 import Benefits from "@/components/sections/Benefits";
+import FullBleedImage from "@/components/sections/FullBleedImage";
 import Metrics from "@/components/sections/Metrics";
 import Services from "@/components/sections/Services";
 import Process from "@/components/sections/Process";
@@ -26,6 +27,10 @@ export default function Home() {
     <>
       <Hero />
       <Benefits />
+      <FullBleedImage
+        src="/images/fullbleed-workspace.jpg"
+        alt="Рабочий процесс создания сайта в WebStudio"
+      />
       <Metrics />
       <Services />
       <Process />
