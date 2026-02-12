@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { BrokenText } from "@/components/ui/BrokenText";
@@ -32,21 +33,18 @@ export function Hero({ onCtaClick, imageSrc }: HeroProps) {
       id="hero"
       className="relative h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: imageSrc
-            ? `url(${imageSrc})`
-            : "url(/images/hero-bg.jpg)",
-        }}
-      >
-        {/* Fallback dark background if no image */}
-        <div className="absolute inset-0 bg-[var(--color-text-primary)]" />
-      </div>
-
+      {/* Background: fallback color + image + overlay */}
+      <div className="absolute inset-0 bg-[var(--color-text-primary)]" />
+      <Image
+        src={imageSrc || "/images/hero-bg.jpg"}
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
       {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/40" />
 
       {/* Content — centered */}
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-16 xl:px-24 text-center">

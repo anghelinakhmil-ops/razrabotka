@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
@@ -37,6 +38,7 @@ const defaultTestimonials: TestimonialData[] = [
     quote:
       "Сайт окупился за первый месяц. Записей стало в 3 раза больше, и клиенты приходят уже «тёплые» — они прочитали обо мне всё на сайте.",
     project: "Сайт психолога",
+    avatarSrc: "/images/testimonials/anna-kovaleva.jpg",
   },
   {
     name: "Максим Петров",
@@ -44,6 +46,7 @@ const defaultTestimonials: TestimonialData[] = [
     quote:
       "Наконец-то магазин работает быстро. Раньше клиенты уходили из-за медленной загрузки. Сейчас конверсия выросла на 40%.",
     project: "Интернет-магазин",
+    avatarSrc: "/images/testimonials/maxim-petrov.jpg",
   },
   {
     name: "Елена Соколова",
@@ -51,6 +54,7 @@ const defaultTestimonials: TestimonialData[] = [
     quote:
       "Очень понравился подход — не просто красивая картинка, а продуманная структура. Каждый блок работает на конверсию.",
     project: "Персональный сайт",
+    avatarSrc: "/images/testimonials/elena-sokolova.jpg",
   },
   {
     name: "Дмитрий Волков",
@@ -58,6 +62,7 @@ const defaultTestimonials: TestimonialData[] = [
     quote:
       "Запустили лендинг за 2 недели. Качество на уровне топовых агентств, но без их бюджетов и бюрократии.",
     project: "Лендинг SaaS",
+    avatarSrc: "/images/testimonials/dmitry-volkov.jpg",
   },
   {
     name: "Ольга Миронова",
@@ -65,6 +70,7 @@ const defaultTestimonials: TestimonialData[] = [
     quote:
       "Сайт передаёт атмосферу студии идеально. Минимализм, воздух, спокойствие — именно то, что нужно было.",
     project: "Сайт студии",
+    avatarSrc: "/images/testimonials/olga-mironova.jpg",
   },
 ];
 
@@ -133,6 +139,7 @@ function TestimonialCard({
   name,
   role,
   quote,
+  avatarSrc,
   project,
 }: TestimonialData) {
   return (
@@ -158,11 +165,23 @@ function TestimonialCard({
 
       {/* Автор */}
       <div className="flex items-center gap-4 pt-6 border-t border-[var(--color-line)]">
-        {/* Аватар placeholder */}
-        <div className="w-12 h-12 rounded-full bg-[var(--color-line)] flex items-center justify-center flex-shrink-0">
-          <span className="text-lg font-display font-bold text-[var(--color-text-muted)]">
-            {name.charAt(0)}
-          </span>
+        {/* Аватар */}
+        <div className="relative w-12 h-12 rounded-full overflow-hidden bg-[var(--color-line)] flex-shrink-0">
+          {avatarSrc ? (
+            <Image
+              src={avatarSrc}
+              alt={name}
+              width={48}
+              height={48}
+              className="object-cover"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <span className="text-lg font-display font-bold text-[var(--color-text-muted)]">
+                {name.charAt(0)}
+              </span>
+            </div>
+          )}
         </div>
 
         <div className="flex flex-col">
