@@ -120,9 +120,18 @@ export function Header({
               variant="primary"
               size="sm"
               onClick={onCallbackClick}
-              className="hidden md:inline-flex"
+              className="hidden sm:inline-flex"
             >
               Заказать звонок
+            </Button>
+            {/* Compact CTA for mobile */}
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={onCallbackClick}
+              className="sm:hidden !px-3 !text-[11px]"
+            >
+              Звонок
             </Button>
 
             {/* Mobile menu button */}

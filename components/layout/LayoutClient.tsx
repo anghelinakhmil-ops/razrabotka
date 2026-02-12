@@ -6,6 +6,7 @@ import { Footer } from "./Footer";
 import { MobileMenu } from "./MobileMenu";
 import { CallbackModal } from "@/components/forms/CallbackModal";
 import { LenisProvider } from "@/components/motion/LenisProvider";
+import { CustomCursor } from "@/components/ui/CustomCursor";
 
 interface LayoutClientProps {
   children: React.ReactNode;
@@ -36,6 +37,9 @@ export function LayoutClient({ children }: LayoutClientProps) {
 
   return (
     <LenisProvider>
+      {/* Custom Cursor — hidden on touch devices */}
+      <CustomCursor />
+
       {/* Header */}
       <Header
         onMenuOpen={handleMenuOpen}
