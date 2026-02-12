@@ -64,57 +64,20 @@ export function Header({
         "fixed top-0 left-0 right-0",
         "z-50",
         "transition-all duration-300",
-        // Background & blur on scroll
+        // Background & blur on scroll — no shadow, subtle effect
         isScrolled
-          ? "bg-[var(--color-background)]/95 backdrop-blur-md shadow-sm"
+          ? "bg-[var(--color-background)]/90 backdrop-blur-md"
           : "bg-transparent",
         className
       )}
     >
-      {/* Contact bar (optional, hidden on scroll) */}
-      <div
-        className={clsx(
-          "hidden lg:block",
-          "border-b border-[var(--color-line)]",
-          "transition-all duration-300",
-          isScrolled ? "h-0 opacity-0 overflow-hidden" : "h-auto opacity-100"
-        )}
-      >
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex items-center justify-end gap-6 py-2">
-            <a
-              href="mailto:hello@webstudio.com"
-              className={clsx(
-                "text-[13px]",
-                "text-[var(--color-text-muted)]",
-                "hover:text-[var(--color-text-primary)]",
-                "transition-colors duration-200"
-              )}
-            >
-              hello@webstudio.com
-            </a>
-            <a
-              href="tel:+78001234567"
-              className={clsx(
-                "text-[13px]",
-                "text-[var(--color-text-muted)]",
-                "hover:text-[var(--color-text-primary)]",
-                "transition-colors duration-200"
-              )}
-            >
-              +7 (800) 123-45-67
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Main header */}
+      {/* Main header — single row, no contact bar */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div
           className={clsx(
             "flex items-center justify-between",
             "transition-all duration-300",
-            isScrolled ? "h-16 lg:h-18" : "h-18 lg:h-22"
+            isScrolled ? "h-16 lg:h-16" : "h-18 lg:h-20"
           )}
         >
           {/* Logo */}

@@ -48,8 +48,8 @@ export function LayoutClient({ children }: LayoutClientProps) {
         onCallbackClick={handleCallbackClick}
       />
 
-      {/* Main content */}
-      <main className="min-h-screen pt-[72px] lg:pt-[88px]">
+      {/* Main content — relative + z-10 + bg to scroll over fixed footer */}
+      <main className="relative z-10 min-h-screen bg-[var(--color-background)] pt-[72px] lg:pt-[80px]">
         {children}
       </main>
 
