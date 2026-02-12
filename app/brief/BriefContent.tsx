@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { useForm, Controller } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
@@ -9,6 +11,8 @@ import { Textarea } from "@/components/ui/Textarea";
 import { Select } from "@/components/ui/Select";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { CONTACT, MESSENGERS, SOCIAL_ICONS } from "@/lib/constants";
+import { briefFormSchema, type BriefFormData } from "@/lib/validation";
+import { trackFormStart, trackFormSubmit, trackFormError } from "@/lib/analytics";
 
 /**
  * Опции для селектов
@@ -211,44 +215,66 @@ export default function BriefContent() {
  */
 function BriefForm() {
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [formData, setFormData] = useState({
-    siteType: "",
-    goal: "",
-    timeline: "",
-    budget: "",
-    references: "",
-    name: "",
-    email: "",
-    phone: "",
-    telegram: "",
-    comment: "",
+  const [errorMessage, setErrorMessage] = useState("");
+  const [formStarted, setFormStarted] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    control,
+    formState: { errors },
+  } = useForm<BriefFormData>({
+    resolver: zodResolver(briefFormSchema),
+    mode: "onBlur",
+    defaultValues: {
+      siteType: "",
+      goal: "",
+      timeline: "",
+      budget: "",
+      references: "",
+      name: "",
+      email: "",
+      phone: "",
+      telegram: "",
+      comment: "",
+    },
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleFormFocus = () => {
+    if (!formStarted) {
+      setFormStarted(true);
+      trackFormStart("brief");
+    }
+  };
+
+  const onSubmit = async (data: BriefFormData) => {
     setFormState("loading");
+    setErrorMessage("");
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    try {
+      const response = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "brief",
+          source: "brief_form",
+          ...data,
+          timestamp: new Date().toISOString(),
+        }),
+      });
 
-    // Simulate success
-    setFormState("success");
-  };
+      if (!response.ok) {
+        throw new Error("Ошибка отправки. Попробуйте позже.");
+      }
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
-
-  const handleSelectChange = (name: string) => (value: string) => {
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+      setFormState("success");
+      trackFormSubmit("brief");
+    } catch (error) {
+      setFormState("error");
+      const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";
+      setErrorMessage(msg);
+      trackFormError("brief", msg);
+    }
   };
 
   if (formState === "success") {
@@ -289,55 +315,116 @@ function BriefForm() {
     );
   }
 
+  if (formState === "error") {
+    return (
+      <div className="p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
+        <div className="text-center py-12">
+          <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-red-100 flex items-center justify-center">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              className="text-red-500"
+            >
+              <path
+                d="M12 8V12M12 16H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+          <h3 className="text-h2 font-display font-bold text-red-600 mb-4">
+            Ошибка отправки
+          </h3>
+          <p className="text-body text-[var(--color-text-muted)] mb-8">
+            {errorMessage}
+          </p>
+          <Button variant="primary" size="md" onClick={() => setFormState("idle")}>
+            Попробовать снова
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
-      <form onSubmit={handleSubmit} className="space-y-8">
+      <form onSubmit={handleSubmit(onSubmit)} onFocus={handleFormFocus} className="space-y-8">
         {/* Section 1: О проекте */}
         <div>
           <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-6 pb-4 border-b border-[var(--color-line)]">
             О проекте
           </h3>
           <div className="space-y-6">
-            <Select
-              label="Тип сайта"
-              value={formData.siteType}
-              onChange={handleSelectChange("siteType")}
-              options={siteTypeOptions}
-              required
+            <Controller
+              name="siteType"
+              control={control}
+              render={({ field }) => (
+                <Select
+                  label="Тип сайта"
+                  value={field.value}
+                  onChange={field.onChange}
+                  options={siteTypeOptions}
+                  error={errors.siteType?.message}
+                  required
+                />
+              )}
             />
 
-            <Select
-              label="Основная цель"
-              value={formData.goal}
-              onChange={handleSelectChange("goal")}
-              options={goalOptions}
-              required
+            <Controller
+              name="goal"
+              control={control}
+              render={({ field }) => (
+                <Select
+                  label="Основная цель"
+                  value={field.value}
+                  onChange={field.onChange}
+                  options={goalOptions}
+                  error={errors.goal?.message}
+                  required
+                />
+              )}
             />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <Select
-                label="Сроки"
-                value={formData.timeline}
-                onChange={handleSelectChange("timeline")}
-                options={timelineOptions}
+              <Controller
+                name="timeline"
+                control={control}
+                render={({ field }) => (
+                  <Select
+                    label="Сроки"
+                    value={field.value || ""}
+                    onChange={field.onChange}
+                    options={timelineOptions}
+                  />
+                )}
               />
 
-              <Select
-                label="Бюджет"
-                value={formData.budget}
-                onChange={handleSelectChange("budget")}
-                options={budgetOptions}
+              <Controller
+                name="budget"
+                control={control}
+                render={({ field }) => (
+                  <Select
+                    label="Бюджет"
+                    value={field.value || ""}
+                    onChange={field.onChange}
+                    options={budgetOptions}
+                  />
+                )}
               />
             </div>
 
             <Textarea
               label="Референсы / конкуренты"
-              name="references"
-              value={formData.references}
-              onChange={handleChange}
               placeholder="Ссылки на сайты, которые вам нравятся, или сайты конкурентов..."
               rows={3}
               helperText="Необязательно, но поможет нам лучше понять ваши ожидания"
+              error={errors.references?.message}
+              disabled={formState === "loading"}
+              {...register("references")}
             />
           </div>
         </div>
@@ -350,42 +437,39 @@ function BriefForm() {
           <div className="space-y-6">
             <Input
               label="Имя"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
               placeholder="Как к вам обращаться"
-              required
+              error={errors.name?.message}
+              disabled={formState === "loading"}
+              {...register("name")}
             />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <Input
                 label="Email"
-                name="email"
                 type="email"
-                value={formData.email}
-                onChange={handleChange}
                 placeholder="email@example.com"
-                required
+                error={errors.email?.message}
+                disabled={formState === "loading"}
+                {...register("email")}
               />
 
               <Input
                 label="Телефон"
-                name="phone"
                 type="tel"
-                value={formData.phone}
-                onChange={handleChange}
                 placeholder="+7 (___) ___-__-__"
-                required
+                error={errors.phone?.message}
+                disabled={formState === "loading"}
+                {...register("phone")}
               />
             </div>
 
             <Input
               label="Telegram"
-              name="telegram"
-              value={formData.telegram}
-              onChange={handleChange}
               placeholder="@username"
               helperText="Необязательно — для быстрой связи"
+              error={errors.telegram?.message}
+              disabled={formState === "loading"}
+              {...register("telegram")}
             />
           </div>
         </div>
@@ -397,11 +481,11 @@ function BriefForm() {
           </h3>
           <Textarea
             label="Комментарий"
-            name="comment"
-            value={formData.comment}
-            onChange={handleChange}
             placeholder="Расскажите подробнее о проекте, особых пожеланиях или вопросах..."
             rows={5}
+            error={errors.comment?.message}
+            disabled={formState === "loading"}
+            {...register("comment")}
           />
         </div>
 

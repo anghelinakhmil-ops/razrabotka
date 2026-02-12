@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
@@ -8,6 +10,8 @@ import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { CONTACT, MESSENGERS, SOCIAL_ICONS } from "@/lib/constants";
+import { contactFormSchema, type ContactFormData } from "@/lib/validation";
+import { trackFormStart, trackFormSubmit, trackFormError } from "@/lib/analytics";
 
 /**
  * Contacts Page — страница контактов
@@ -274,37 +278,57 @@ function SocialLink({
  */
 function ContactForm() {
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
+  const [errorMessage, setErrorMessage] = useState("");
+  const [formStarted, setFormStarted] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
+    mode: "onBlur",
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormState("loading");
-
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    // Simulate success
-    setFormState("success");
-
-    // Reset after 3 seconds
-    setTimeout(() => {
-      setFormState("idle");
-      setFormData({ name: "", email: "", phone: "", message: "" });
-    }, 3000);
+  const handleFormFocus = () => {
+    if (!formStarted) {
+      setFormStarted(true);
+      trackFormStart("contact");
+    }
   };
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
+  const onSubmit = async (data: ContactFormData) => {
+    setFormState("loading");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "quick",
+          source: "contact_form",
+          name: data.name,
+          email: data.email,
+          phone: data.phone || undefined,
+          message: data.message,
+          timestamp: new Date().toISOString(),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Ошибка отправки. Попробуйте позже.");
+      }
+
+      setFormState("success");
+      trackFormSubmit("contact");
+    } catch (error) {
+      setFormState("error");
+      const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";
+      setErrorMessage(msg);
+      trackFormError("contact", msg);
+    }
   };
 
   if (formState === "success") {
@@ -331,9 +355,47 @@ function ContactForm() {
           <h3 className="text-h3 font-display font-bold text-[var(--color-text-primary)] mb-2">
             Сообщение отправлено
           </h3>
-          <p className="text-body text-[var(--color-text-muted)]">
+          <p className="text-body text-[var(--color-text-muted)] mb-6">
             Мы свяжемся с вами в ближайшее время
           </p>
+          <Button variant="ghost" size="md" onClick={() => { reset(); setFormState("idle"); }}>
+            Отправить ещё
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
+  if (formState === "error") {
+    return (
+      <div className="p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
+        <div className="text-center py-8">
+          <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-red-100 flex items-center justify-center">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              className="text-red-500"
+            >
+              <path
+                d="M12 8V12M12 16H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+          <h3 className="text-h3 font-display font-bold text-red-600 mb-2">
+            Ошибка отправки
+          </h3>
+          <p className="text-body text-[var(--color-text-muted)] mb-6">
+            {errorMessage}
+          </p>
+          <Button variant="primary" size="md" onClick={() => setFormState("idle")}>
+            Попробовать снова
+          </Button>
         </div>
       </div>
     );
@@ -348,44 +410,41 @@ function ContactForm() {
         Опишите ваш проект — мы ответим в течение 2 часов
       </p>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit(onSubmit)} onFocus={handleFormFocus} className="space-y-6">
         <Input
           label="Имя"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
           placeholder="Как к вам обращаться"
-          required
+          error={errors.name?.message}
+          disabled={formState === "loading"}
+          {...register("name")}
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <Input
             label="Email"
-            name="email"
             type="email"
-            value={formData.email}
-            onChange={handleChange}
             placeholder="email@example.com"
-            required
+            error={errors.email?.message}
+            disabled={formState === "loading"}
+            {...register("email")}
           />
           <Input
             label="Телефон"
-            name="phone"
             type="tel"
-            value={formData.phone}
-            onChange={handleChange}
             placeholder="+7 (___) ___-__-__"
+            error={errors.phone?.message}
+            disabled={formState === "loading"}
+            {...register("phone")}
           />
         </div>
 
         <Textarea
           label="Сообщение"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
           placeholder="Расскажите о вашем проекте..."
           rows={5}
-          required
+          error={errors.message?.message}
+          disabled={formState === "loading"}
+          {...register("message")}
         />
 
         <Button

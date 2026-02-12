@@ -38,6 +38,7 @@ interface LeadTelegramData {
   name?: string;
   phone?: string;
   email?: string;
+  message?: string;
   // Brief specific
   siteType?: string;
   goal?: string;
@@ -170,6 +171,9 @@ function formatQuickLeadMessage(data: LeadTelegramData): string {
   }
   if (data.email) {
     message += `📧 *Email:* ${escapeMarkdown(data.email)}\n`;
+  }
+  if (data.message) {
+    message += `\n💬 *Сообщение:*\n${escapeMarkdown(data.message)}\n`;
   }
 
   message += `\n`;

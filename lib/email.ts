@@ -40,6 +40,7 @@ interface LeadEmailData {
   name?: string;
   phone?: string;
   email?: string;
+  message?: string;
   // Brief specific
   siteType?: string;
   goal?: string;
@@ -185,6 +186,14 @@ function generateQuickLeadEmail(data: LeadEmailData): string {
             <td style="padding: 15px 0; border-bottom: 1px solid #e5e5e5;">
               <strong style="color: #666666;">Email:</strong><br>
               <a href="mailto:${data.email}" style="color: #1a1a1a; font-size: 16px; text-decoration: none;">${data.email}</a>
+            </td>
+          </tr>
+          ` : ""}
+          ${data.message ? `
+          <tr>
+            <td style="padding: 15px 0; border-bottom: 1px solid #e5e5e5;">
+              <strong style="color: #666666;">Сообщение:</strong><br>
+              <span style="color: #1a1a1a; font-size: 16px; white-space: pre-wrap;">${data.message}</span>
             </td>
           </tr>
           ` : ""}
@@ -364,6 +373,7 @@ function generatePlainTextEmail(data: LeadEmailData): string {
   if (data.name) text += `Имя: ${data.name}\n`;
   if (data.phone) text += `Телефон: ${data.phone}\n`;
   if (data.email) text += `Email: ${data.email}\n`;
+  if (data.message) text += `\nСообщение:\n${data.message}\n`;
   if (data.telegram) text += `Telegram: ${data.telegram}\n`;
 
   if (data.type === "brief") {

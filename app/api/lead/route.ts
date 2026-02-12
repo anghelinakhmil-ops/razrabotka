@@ -26,6 +26,7 @@ const quickLeadSchema = baseLeadSchema.extend({
   name: z.string().optional(),
   phone: z.string().optional(),
   email: z.string().email().optional(),
+  message: z.string().optional(),
 }).refine((data) => data.phone || data.email, {
   message: "Требуется телефон или email",
 });
@@ -141,6 +142,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ApiRespon
       name: "name" in leadData ? leadData.name : undefined,
       phone: "phone" in leadData ? leadData.phone : undefined,
       email: "email" in leadData ? leadData.email : undefined,
+      message: "message" in leadData ? leadData.message : undefined,
       // Brief specific fields
       ...("siteType" in leadData && {
         siteType: leadData.siteType,
@@ -168,6 +170,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ApiRespon
       name: "name" in leadData ? leadData.name : undefined,
       phone: "phone" in leadData ? leadData.phone : undefined,
       email: "email" in leadData ? leadData.email : undefined,
+      message: "message" in leadData ? leadData.message : undefined,
       // Brief specific fields
       ...("siteType" in leadData && {
         siteType: leadData.siteType,

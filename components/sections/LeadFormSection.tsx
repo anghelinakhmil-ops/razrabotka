@@ -1,24 +1,50 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { RevealOnScroll } from "@/components/motion";
+import { trackFormStart, trackFormSubmit, trackFormError } from "@/lib/analytics";
+
+/**
+ * Схема быстрой формы (name + contact)
+ * Contact может быть телефоном, email или Telegram
+ */
+const quickFormSchema = z.object({
+  name: z.string().min(2, "Имя должно содержать минимум 2 символа"),
+  contact: z.string().min(3, "Введите телефон или Telegram"),
+});
+
+type QuickFormData = z.infer<typeof quickFormSchema>;
 
 interface LeadFormSectionProps {
   /** Заголовок секции */
   title?: string;
   /** Подзаголовок */
   subtitle?: string;
-  /** Callback при успешной отправке */
-  onSubmit?: (data: LeadFormData) => void;
+  /** Источник формы (для аналитики) */
+  source?: string;
 }
 
 export interface LeadFormData {
   name: string;
   contact: string;
+}
+
+/**
+ * Определяет тип контакта (email или phone)
+ */
+function parseContact(contact: string): { phone?: string; email?: string } {
+  const trimmed = contact.trim();
+  if (trimmed.includes("@") && trimmed.includes(".")) {
+    return { email: trimmed };
+  }
+  return { phone: trimmed };
 }
 
 /**
@@ -34,31 +60,59 @@ export interface LeadFormData {
 export function LeadFormSection({
   title = "ОБСУДИТЬ ПРОЕКТ",
   subtitle = "Оставьте контакты — свяжемся в течение 2 часов в рабочее время",
-  onSubmit,
+  source = "lead_form",
 }: LeadFormSectionProps) {
-  const [formData, setFormData] = useState<LeadFormData>({
-    name: "",
-    contact: "",
+  const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [formStarted, setFormStarted] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<QuickFormData>({
+    resolver: zodResolver(quickFormSchema),
+    mode: "onBlur",
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-
-    if (!formData.name.trim() || !formData.contact.trim()) return;
-
-    setIsSubmitting(true);
-
-    // Имитация отправки (заменится на реальный API в Фазе 8)
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    if (onSubmit) {
-      onSubmit(formData);
+  const handleFormFocus = () => {
+    if (!formStarted) {
+      setFormStarted(true);
+      trackFormStart("quick");
     }
+  };
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+  const onSubmit = async (data: QuickFormData) => {
+    setFormState("loading");
+    setErrorMessage("");
+
+    try {
+      const contactFields = parseContact(data.contact);
+
+      const response = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "quick",
+          source,
+          name: data.name,
+          ...contactFields,
+          timestamp: new Date().toISOString(),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Ошибка отправки. Попробуйте позже.");
+      }
+
+      setFormState("success");
+      trackFormSubmit("quick");
+    } catch (error) {
+      setFormState("error");
+      const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";
+      setErrorMessage(msg);
+      trackFormError("quick", msg);
+    }
   };
 
   return (
@@ -87,35 +141,29 @@ export function LeadFormSection({
             </p>
           </RevealOnScroll>
 
-          {/* Форма или Success State */}
+          {/* Форма или Success/Error State */}
           <RevealOnScroll direction="up" delay={0.2}>
-            {isSubmitted ? (
+            {formState === "success" ? (
               <SuccessMessage />
+            ) : formState === "error" ? (
+              <ErrorMessage message={errorMessage} onRetry={() => setFormState("idle")} />
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit(onSubmit)} onFocus={handleFormFocus} className="space-y-6">
                 {/* Поля формы */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Input
-                    name="name"
                     placeholder="Ваше имя"
-                    value={formData.name}
-                    onChange={(e) =>
-                      setFormData((prev) => ({ ...prev, name: e.target.value }))
-                    }
-                    required
-                    disabled={isSubmitting}
+                    error={errors.name?.message}
+                    disabled={formState === "loading"}
                     className="bg-transparent border-[var(--color-line-dark)] text-[var(--color-background)] placeholder:text-[var(--color-text-muted)]"
+                    {...register("name")}
                   />
                   <Input
-                    name="contact"
                     placeholder="Телефон или Telegram"
-                    value={formData.contact}
-                    onChange={(e) =>
-                      setFormData((prev) => ({ ...prev, contact: e.target.value }))
-                    }
-                    required
-                    disabled={isSubmitting}
+                    error={errors.contact?.message}
+                    disabled={formState === "loading"}
                     className="bg-transparent border-[var(--color-line-dark)] text-[var(--color-background)] placeholder:text-[var(--color-text-muted)]"
+                    {...register("contact")}
                   />
                 </div>
 
@@ -124,10 +172,10 @@ export function LeadFormSection({
                   type="submit"
                   variant="primary"
                   size="lg"
-                  loading={isSubmitting}
+                  loading={formState === "loading"}
                   className="w-full md:w-auto min-w-[200px] bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
                 >
-                  {isSubmitting ? "Отправка..." : "Отправить заявку"}
+                  Отправить заявку
                 </Button>
 
                 {/* Privacy notice */}
@@ -173,7 +221,6 @@ export function LeadFormSection({
 function SuccessMessage() {
   return (
     <div className="py-8">
-      {/* Checkmark icon */}
       <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 border-[var(--color-background)] flex items-center justify-center">
         <svg
           width="32"
@@ -191,13 +238,53 @@ function SuccessMessage() {
           />
         </svg>
       </div>
-
       <h3 className="text-h3 font-display font-bold text-[var(--color-background)] mb-3">
         Заявка отправлена!
       </h3>
       <p className="text-body text-[var(--color-text-muted)]">
         Свяжемся с вами в ближайшее время для обсуждения проекта.
       </p>
+    </div>
+  );
+}
+
+/**
+ * ErrorMessage — сообщение об ошибке
+ */
+function ErrorMessage({ message, onRetry }: { message: string; onRetry: () => void }) {
+  return (
+    <div className="py-8">
+      <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 border-red-400 flex items-center justify-center">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          className="text-red-400"
+        >
+          <path
+            d="M12 8V12M12 16H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </div>
+      <h3 className="text-h3 font-display font-bold text-red-400 mb-3">
+        Ошибка отправки
+      </h3>
+      <p className="text-body text-[var(--color-text-muted)] mb-6">
+        {message}
+      </p>
+      <Button
+        variant="outline"
+        size="md"
+        onClick={onRetry}
+        className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
+      >
+        Попробовать снова
+      </Button>
     </div>
   );
 }
