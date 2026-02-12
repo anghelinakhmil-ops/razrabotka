@@ -6,20 +6,7 @@ import { useEffect, useState } from "react";
 import { BrokenText } from "../ui/BrokenText";
 import { Button } from "../ui/Button";
 import { NavLink } from "./NavLink";
-
-interface NavItem {
-  label: string;
-  href: string;
-}
-
-const NAV_ITEMS: NavItem[] = [
-  { label: "Главная", href: "/" },
-  { label: "Про нас", href: "/about" },
-  { label: "Услуги", href: "/services" },
-  { label: "Кейсы", href: "/cases" },
-  { label: "Блог", href: "/blog" },
-  { label: "Контакты", href: "/contacts" },
-];
+import { NAV_ITEMS } from "@/lib/constants";
 
 interface HeaderProps {
   /** Callback для открытия мобильного меню */

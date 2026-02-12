@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
+import { CONTACT } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Политика конфиденциальности | WebStudio",
@@ -202,10 +203,10 @@ export default function PrivacyPage() {
               <p>
                 Для реализации этих прав свяжитесь с нами по адресу{" "}
                 <a
-                  href="mailto:privacy@webstudio.dev"
+                  href={`mailto:${CONTACT.privacyEmail}`}
                   className="text-[var(--color-text-primary)] underline hover:no-underline"
                 >
-                  privacy@webstudio.dev
+                  {CONTACT.privacyEmail}
                 </a>
               </p>
             </PolicySection>
@@ -233,22 +234,22 @@ export default function PrivacyPage() {
                 <li>
                   Email:{" "}
                   <a
-                    href="mailto:privacy@webstudio.dev"
+                    href={`mailto:${CONTACT.privacyEmail}`}
                     className="text-[var(--color-text-primary)] underline hover:no-underline"
                   >
-                    privacy@webstudio.dev
+                    {CONTACT.privacyEmail}
                   </a>
                 </li>
                 <li>
                   Телефон:{" "}
                   <a
-                    href="tel:+79991234567"
+                    href={`tel:${CONTACT.phoneRaw}`}
                     className="text-[var(--color-text-primary)] underline hover:no-underline"
                   >
-                    +7 (999) 123-45-67
+                    {CONTACT.phone}
                   </a>
                 </li>
-                <li>Адрес: Москва, ул. Примерная, д. 1, офис 100</li>
+                <li>Адрес: {CONTACT.address}</li>
               </ul>
             </PolicySection>
           </div>
