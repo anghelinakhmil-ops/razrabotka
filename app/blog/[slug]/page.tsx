@@ -588,7 +588,7 @@ export default async function BlogPostPage({
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {prevPost ? (
-              <a
+              <Link
                 href={`/blog/${prevPost.slug}`}
                 className="group p-6 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm hover:border-[var(--color-line-dark)] transition-colors"
               >
@@ -598,13 +598,13 @@ export default async function BlogPostPage({
                 <span className="text-body font-medium text-[var(--color-text-primary)] group-hover:text-[var(--color-text-secondary)] transition-colors line-clamp-2">
                   {prevPost.title}
                 </span>
-              </a>
+              </Link>
             ) : (
               <div />
             )}
 
             {nextPost && (
-              <a
+              <Link
                 href={`/blog/${nextPost.slug}`}
                 className="group p-6 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm hover:border-[var(--color-line-dark)] transition-colors text-right"
               >
@@ -614,7 +614,7 @@ export default async function BlogPostPage({
                 <span className="text-body font-medium text-[var(--color-text-primary)] group-hover:text-[var(--color-text-secondary)] transition-colors line-clamp-2">
                   {nextPost.title}
                 </span>
-              </a>
+              </Link>
             )}
           </div>
         </Container>
@@ -636,7 +636,7 @@ export default async function BlogPostPage({
             >
               {relatedPosts.map((relatedPost) => (
                 <StaggerItem key={relatedPost.slug}>
-                  <a
+                  <Link
                     href={`/blog/${relatedPost.slug}`}
                     className="group block p-6 bg-[var(--color-background)] border border-[var(--color-line)] rounded-sm hover:border-[var(--color-line-dark)] transition-colors"
                   >
@@ -646,7 +646,7 @@ export default async function BlogPostPage({
                     <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] group-hover:text-[var(--color-text-secondary)] transition-colors line-clamp-2">
                       {relatedPost.title}
                     </h3>
-                  </a>
+                  </Link>
                 </StaggerItem>
               ))}
             </StaggerContainer>
