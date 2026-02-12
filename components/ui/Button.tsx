@@ -4,7 +4,7 @@ import { clsx } from "clsx";
 import Link from "next/link";
 import { forwardRef } from "react";
 
-type ButtonVariant = "primary" | "secondary" | "ghost" | "outline";
+type ButtonVariant = "primary" | "secondary" | "ghost" | "outline" | "link";
 type ButtonSize = "sm" | "md" | "lg";
 
 // Базовые пропсы для всех вариантов Button
@@ -151,6 +151,13 @@ function useButtonClasses({
       "hover:bg-[var(--color-accent)] hover:text-white hover:border-[var(--color-accent)]",
       "active:scale-[0.98]",
       "tracking-[var(--letter-spacing-extra-wide)]"
+    ),
+    link: clsx(
+      "bg-transparent text-[var(--color-text-primary)]",
+      "border-none !p-0 !h-auto",
+      "tracking-[var(--letter-spacing-wide)]",
+      "hover-underline-animate",
+      "hover:opacity-70"
     ),
   };
 

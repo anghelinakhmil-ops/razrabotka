@@ -16,9 +16,9 @@
   --color-background-alt: #FFFFFF;
 
   /* Текстовые цвета */
-  --color-text-primary: #1A1A1A;
-  --color-text-secondary: #333333;
-  --color-text-muted: #666666;
+  --color-text-primary: #1a2a32;
+  --color-text-secondary: #555555;
+  --color-text-muted: #555555;
   --color-text-light: #737373;
 
   /* Линии и границы */
@@ -26,16 +26,16 @@
   --color-line-dark: #CCCCCC;
 
   /* Акцентный цвет (для CTA) */
-  --color-accent: #1A1A1A;
-  --color-accent-hover: #333333;
+  --color-accent: #1a2a32;
+  --color-accent-hover: #2a3a42;
 
   /* ==========================================
      ТИПОГРАФИКА — Размеры (Desktop)
      ========================================== */
 
-  --font-size-h1: 72px;
-  --font-size-h2: 56px;
-  --font-size-h3: 32px;
+  --font-size-h1: clamp(40px, 5vw + 16px, 72px);
+  --font-size-h2: clamp(32px, 4vw + 12px, 56px);
+  --font-size-h3: clamp(24px, 2vw + 12px, 32px);
   --font-size-body-lg: 18px;
   --font-size-body: 16px;
   --font-size-small: 14px;
@@ -309,10 +309,7 @@ body {
 
 @media (max-width: 767px) {
   :root {
-    /* Типографика */
-    --font-size-h1: 40px;
-    --font-size-h2: 32px;
-    --font-size-h3: 24px;
+    /* Типографика (h1-h3 handled by clamp()) */
     --font-size-body-lg: 16px;
     --font-size-body: 15px;
     --font-size-small: 13px;

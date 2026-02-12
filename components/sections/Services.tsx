@@ -182,11 +182,11 @@ function ServiceCard({
 
       {/* CTA */}
       <Button
-        variant="outline"
+        variant="link"
         size="md"
         as="a"
         href={ctaHref}
-        className="w-full hover-lift"
+        className="mt-auto"
       >
         {ctaText}
       </Button>

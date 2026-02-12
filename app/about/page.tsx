@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
-import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
+import { RevealOnScroll, StaggerContainer, StaggerItem, ScrollScrubText } from "@/components/motion";
 
 export const metadata: Metadata = {
   title: "О нас | WebStudio — Разработка сайтов под ключ",
@@ -66,12 +66,10 @@ function HeroSection() {
           </h1>
         </RevealOnScroll>
 
-        <RevealOnScroll direction="up" delay={0.2}>
-          <p className="text-body-lg text-[var(--color-text-secondary)] max-w-2xl">
-            Мы — веб-студия, которая создаёт сайты с фокусом на результат.
-            Не просто красивые страницы, а инструменты для роста вашего бизнеса.
-          </p>
-        </RevealOnScroll>
+        <ScrollScrubText
+          text="Мы — веб-студия, которая создаёт сайты с фокусом на результат. Не просто красивые страницы, а инструменты для роста вашего бизнеса."
+          className="text-body-lg text-[var(--color-text-muted)] max-w-2xl"
+        />
       </Container>
     </section>
   );
@@ -101,27 +99,25 @@ function ApproachSection() {
               </h2>
             </RevealOnScroll>
 
-            <RevealOnScroll direction="up" delay={0.1}>
-              <div className="space-y-4 text-body text-[var(--color-text-secondary)]">
-                <p>
-                  Каждый проект начинается с понимания ваших целей. Мы не делаем
-                  сайты «как у всех» — мы создаём решения под конкретные задачи.
-                </p>
-                <p>
-                  Стратегия → Дизайн → Разработка → Результат. Каждый этап
-                  согласовывается, каждое решение обосновано.
-                </p>
-                <p>
-                  Минимализм не ради минимализма. Убираем лишнее, чтобы
-                  оставить главное — то, что конвертирует посетителей в клиентов.
-                </p>
-              </div>
-            </RevealOnScroll>
+            <div className="space-y-4 text-body">
+              <ScrollScrubText
+                text="Каждый проект начинается с понимания ваших целей. Мы не делаем сайты «как у всех» — мы создаём решения под конкретные задачи."
+                className="text-[var(--color-text-muted)]"
+              />
+              <ScrollScrubText
+                text="Стратегия → Дизайн → Разработка → Результат. Каждый этап согласовывается, каждое решение обосновано."
+                className="text-[var(--color-text-muted)]"
+              />
+              <ScrollScrubText
+                text="Минимализм не ради минимализма. Убираем лишнее, чтобы оставить главное — то, что конвертирует посетителей в клиентов."
+                className="text-[var(--color-text-muted)]"
+              />
+            </div>
           </div>
 
           {/* Визуал placeholder */}
           <RevealOnScroll direction="up" delay={0.2}>
-            <div className="aspect-[4/3] bg-[var(--color-background)] border border-[var(--color-line)] rounded-sm flex items-center justify-center">
+            <div className="aspect-[4/3] bg-[var(--color-background)] border border-[var(--color-line)]  flex items-center justify-center">
               <div className="text-center">
                 <span className="text-8xl font-display font-bold text-[var(--color-line)]">
                   01
@@ -267,7 +263,7 @@ function PrinciplesSection() {
         >
           {principles.map((principle, index) => (
             <StaggerItem key={index}>
-              <div className="p-6 bg-[var(--color-background)] border border-[var(--color-line)] rounded-sm h-full">
+              <div className="p-6 bg-[var(--color-background)] border border-[var(--color-line)]  h-full">
                 <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-2">
                   {principle.title}
                 </h3>

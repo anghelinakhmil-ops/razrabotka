@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
-import { RevealOnScroll, StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
+import { RevealOnScroll, StaggerContainer, StaggerItem, SplitTextReveal, ScrollScrubText } from "@/components/motion";
 import { ease, duration } from "@/lib/motion";
 
 /**
@@ -201,11 +201,18 @@ function BenefitItem({
             </p>
           </StaggerItem>
 
-          {/* Описание */}
+          {/* Описание — scrub-эффект при скролле */}
           <StaggerItem>
-            <div className="text-body text-[var(--color-text-muted)] max-w-md">
-              {description}
-            </div>
+            {typeof description === "string" ? (
+              <ScrollScrubText
+                text={description}
+                className="text-body text-[var(--color-text-muted)] max-w-md"
+              />
+            ) : (
+              <div className="text-body text-[var(--color-text-muted)] max-w-md">
+                {description}
+              </div>
+            )}
           </StaggerItem>
         </StaggerContainer>
       </div>

@@ -134,11 +134,10 @@ export function CasesPreview({
               transition={{ duration: duration.normal, ease, delay: 0.5 }}
             >
               <Button
-                variant="outline"
+                variant="link"
                 size="md"
                 as="a"
                 href="/cases"
-                className="hover-lift"
               >
                 Все кейсы
               </Button>
@@ -161,11 +160,10 @@ export function CasesPreview({
         {/* CTA Mobile */}
         <RevealOnScroll direction="up" className="mt-10 sm:hidden">
           <Button
-            variant="outline"
+            variant="link"
             size="md"
             as="a"
             href="/cases"
-            className="w-full hover-lift"
           >
             Все кейсы
           </Button>
