@@ -64,7 +64,7 @@ export function Header({
           className={clsx(
             "flex items-center justify-between",
             "transition-all duration-300",
-            isScrolled ? "h-16 lg:h-16" : "h-18 lg:h-20"
+            isScrolled ? "h-16 lg:h-16" : "h-[72px] lg:h-20"
           )}
         >
           {/* Logo */}

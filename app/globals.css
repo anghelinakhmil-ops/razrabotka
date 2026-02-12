@@ -13,12 +13,12 @@
 
   /* Фоновые цвета */
   --color-background: #FFFFFF;
-  --color-background-alt: #FFFFFF;
+  --color-background-alt: #FAFAFA;
 
   /* Текстовые цвета */
   --color-text-primary: #1a2a32;
-  --color-text-secondary: #555555;
-  --color-text-muted: #555555;
+  --color-text-secondary: #333333;
+  --color-text-muted: #666666;
   --color-text-light: #737373;
 
   /* Линии и границы */
@@ -36,8 +36,10 @@
   --font-size-h1: clamp(40px, 5vw + 16px, 72px);
   --font-size-h2: clamp(32px, 4vw + 12px, 56px);
   --font-size-h3: clamp(24px, 2vw + 12px, 32px);
+  --font-size-h4: clamp(18px, 1.5vw + 8px, 24px);
   --font-size-body-lg: 18px;
   --font-size-body: 16px;
+  --font-size-body-sm: 14px;
   --font-size-small: 14px;
   --font-size-caption: 12px;
 
@@ -48,6 +50,7 @@
   --line-height-h1: 1.1;
   --line-height-h2: 1.15;
   --line-height-h3: 1.2;
+  --line-height-h4: 1.3;
   --line-height-body: 1.6;
   --line-height-body-lg: 1.5;
   --line-height-small: 1.5;
@@ -148,6 +151,7 @@
   --font-size-h1: var(--font-size-h1);
   --font-size-h2: var(--font-size-h2);
   --font-size-h3: var(--font-size-h3);
+  --font-size-h4: var(--font-size-h4);
   --font-size-body-lg: var(--font-size-body-lg);
   --font-size-body: var(--font-size-body);
   --font-size-small: var(--font-size-small);
@@ -239,6 +243,15 @@ body {
   letter-spacing: var(--letter-spacing-normal);
 }
 
+/* H4 — Подзаголовок малый */
+.text-h4 {
+  font-family: var(--font-display), var(--font-display-fallback);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-h4);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
 /* Body Large */
 .text-body-lg {
   font-family: var(--font-body), var(--font-body-fallback);
@@ -253,6 +266,14 @@ body {
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-body);
+}
+
+/* Body Small */
+.text-body-sm {
+  font-family: var(--font-body), var(--font-body-fallback);
+  font-size: var(--font-size-body-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-small);
 }
 
 /* Caption */

@@ -273,7 +273,7 @@ function CasePlaceholder({ category }: { category: string }) {
   // Разные паттерны для разных категорий
   const patterns: Record<string, { bg: string; accent: string }> = {
     Эксперт: { bg: "bg-gradient-to-br from-gray-100 to-gray-200", accent: "bg-gray-300" },
-    "E-commerce": { bg: "bg-gradient-to-br from-gray-50 to-gray-150", accent: "bg-gray-250" },
+    "E-commerce": { bg: "bg-gradient-to-br from-gray-50 to-gray-200", accent: "bg-gray-300" },
     Лендинг: { bg: "bg-gradient-to-br from-gray-100 to-gray-100", accent: "bg-gray-200" },
   };
 
