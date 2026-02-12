@@ -125,7 +125,7 @@ function TestimonialCard({
   project,
 }: TestimonialData) {
   return (
-    <div className="flex flex-col h-full p-6 lg:p-8 bg-[var(--color-background-alt)] rounded-sm border border-[var(--color-line)]">
+    <div className="flex flex-col h-full p-6 lg:p-8 bg-[var(--color-background-alt)] border border-[var(--color-line)]">
       {/* Кавычка */}
       <svg
         width="32"

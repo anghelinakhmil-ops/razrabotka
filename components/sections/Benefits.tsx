@@ -98,7 +98,7 @@ export function Benefits({ benefits = defaultBenefits }: BenefitsProps) {
     >
       <Container>
         {/* Заголовок секции */}
-        <RevealOnScroll direction="up" className="mb-16 lg:mb-24">
+        <RevealOnScroll direction="up" className="mb-20 lg:mb-32">
           <div className="flex flex-col gap-4">
             <span className="text-caption text-[var(--color-text-muted)]">
               Почему мы
@@ -115,7 +115,7 @@ export function Benefits({ benefits = defaultBenefits }: BenefitsProps) {
         </RevealOnScroll>
 
         {/* Список преимуществ */}
-        <div className="flex flex-col gap-24 lg:gap-32">
+        <div className="flex flex-col gap-32 lg:gap-40">
           {benefits.map((benefit, index) => (
             <BenefitItem
               key={benefit.number}
@@ -163,7 +163,7 @@ function BenefitItem({
           {/* Номер */}
           <StaggerItem>
             <motion.span
-              className="text-7xl lg:text-8xl xl:text-9xl font-display font-bold text-[var(--color-line)] leading-none select-none"
+              className="text-7xl lg:text-8xl xl:text-9xl font-display font-bold text-[var(--color-text-primary)]/10 leading-none select-none"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -208,7 +208,7 @@ function BenefitItem({
           delay={0.2}
           duration={0.8}
         >
-          <div className="relative aspect-[4/3] bg-[var(--color-background-alt)] rounded-sm overflow-hidden">
+          <div className="relative aspect-[4/3] bg-[var(--color-background-alt)] overflow-hidden">
             {imageSrc ? (
               <Image
                 src={imageSrc}

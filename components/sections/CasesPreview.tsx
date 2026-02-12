@@ -173,7 +173,7 @@ function CaseCard({
   return (
     <a
       href={`/cases/${slug}`}
-      className="group block relative overflow-hidden rounded-sm bg-[var(--color-background)] border border-[var(--color-line)] hover:border-[var(--color-line-dark)] transition-colors duration-300 hover-card"
+      className="group block relative overflow-hidden bg-[var(--color-background)] border border-[var(--color-line)] hover:border-[var(--color-line-dark)] transition-colors duration-300 hover-card"
     >
       {/* Изображение / Placeholder */}
       <div className="relative aspect-[4/3] bg-[var(--color-background-alt)] overflow-hidden">
@@ -262,7 +262,7 @@ function CasePlaceholder({ category }: { category: string }) {
 
         {/* Центральный блок */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-16 h-16 border border-[var(--color-line)] rounded-sm" />
+          <div className="w-16 h-16 border border-[var(--color-line)]" />
         </div>
       </div>
     </div>

@@ -35,7 +35,7 @@ export function HeroVisual({
   return (
     <div className="relative w-full max-w-md lg:max-w-lg xl:max-w-xl aspect-[4/5]">
       {/* Контейнер изображения/визуала */}
-      <div className="absolute inset-0 bg-[var(--color-background-alt)] rounded-sm overflow-hidden">
+      <div className="absolute inset-0 bg-[var(--color-background-alt)] overflow-hidden">
         {hasImage ? (
           /* Оптимизированное изображение */
           <Image

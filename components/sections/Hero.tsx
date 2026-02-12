@@ -3,35 +3,23 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { BrokenText } from "@/components/ui/BrokenText";
-import { Container } from "@/components/ui/Container";
-import { RevealOnScroll } from "@/components/motion";
-import { HeroVisual } from "./HeroVisual";
 import { ease, duration } from "@/lib/motion";
 import { trackCtaClick } from "@/lib/analytics";
 
 interface HeroProps {
   /** Callback для CTA кнопки */
   onCtaClick?: () => void;
-  /** URL изображения для визуала */
+  /** URL фонового изображения */
   imageSrc?: string;
-  /** Alt текст для изображения */
-  imageAlt?: string;
-  /** Blur placeholder (base64) */
-  blurDataURL?: string;
 }
 
 /**
- * Hero — главная секция лендинга
+ * Hero — fullscreen секция с фоновым изображением
  *
- * Полноэкранная секция с заголовком, подзаголовком и CTA.
  * Стиль: Premium-minimal / Architectural (референс: THE BRIDGE)
+ * Текст по центру поверх тёмного overlay на фото.
  */
-export function Hero({
-  onCtaClick,
-  imageSrc,
-  imageAlt,
-  blurDataURL,
-}: HeroProps) {
+export function Hero({ onCtaClick, imageSrc }: HeroProps) {
   const handleScrollToNext = () => {
     const nextSection = document.getElementById("benefits");
     if (nextSection) {
@@ -39,135 +27,118 @@ export function Hero({
     }
   };
 
-  const handleScrollToProcess = () => {
-    const processSection = document.getElementById("process");
-    if (processSection) {
-      processSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="relative h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Фоновый градиент/паттерн */}
-      <div className="absolute inset-0 bg-[var(--color-background)]">
-        {/* Subtle gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-background)] via-[var(--color-background)] to-[var(--color-background-alt)] opacity-50" />
-
-        {/* Декоративные линии */}
-        <div className="absolute top-0 right-0 w-1/2 h-full opacity-[0.03]">
-          <div className="absolute top-1/4 right-1/4 w-[1px] h-1/2 bg-[var(--color-text-primary)]" />
-          <div className="absolute top-1/3 right-1/3 w-[1px] h-1/3 bg-[var(--color-text-primary)]" />
-        </div>
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: imageSrc
+            ? `url(${imageSrc})`
+            : "url(/images/hero-bg.jpg)",
+        }}
+      >
+        {/* Fallback dark background if no image */}
+        <div className="absolute inset-0 bg-[var(--color-text-primary)]" />
       </div>
 
-      {/* Контент */}
-      <Container className="relative z-10 py-20 lg:py-0">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(100vh-144px)] lg:min-h-0">
-          {/* Левая часть — Текст */}
-          <div className="flex flex-col gap-6 lg:gap-8 order-2 lg:order-1">
-            {/* Надзаголовок */}
-            <RevealOnScroll direction="up" delay={0.1}>
-              <p className="text-caption text-[var(--color-text-muted)]">
-                Веб-студия полного цикла
-              </p>
-            </RevealOnScroll>
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/50" />
 
-            {/* Заголовок H1 */}
-            <RevealOnScroll direction="up" delay={0.2}>
-              <h1 className="flex flex-col gap-2">
-                <BrokenText
-                  text="РАЗРАБОТКА"
-                  spaced
-                  mixPattern={[1, 5]}
-                  className="text-[var(--color-text-primary)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold tracking-tight"
-                />
-                <BrokenText
-                  text="САЙТОВ"
-                  spaced
-                  mixPattern={[1]}
-                  className="text-[var(--color-text-primary)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold tracking-tight"
-                />
-                <BrokenText
-                  text="ПОД КЛЮЧ"
-                  spaced
-                  mixPattern={[1]}
-                  className="text-[var(--color-text-muted)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-medium mt-2"
-                />
-              </h1>
-            </RevealOnScroll>
+      {/* Content — centered */}
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-16 xl:px-24 text-center">
+        {/* Caption */}
+        <motion.p
+          className="text-caption text-white/60 mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: duration.normal, ease, delay: 0.2 }}
+        >
+          Веб-студия полного цикла
+        </motion.p>
 
-            {/* Подзаголовок */}
-            <RevealOnScroll direction="up" delay={0.3}>
-              <p className="text-body-lg text-[var(--color-text-secondary)] max-w-md">
-                Создаём сайты для{" "}
-                <span className="text-[var(--color-text-primary)] font-medium">экспертов</span>,{" "}
-                <span className="text-[var(--color-text-primary)] font-medium">e-commerce</span> и{" "}
-                <span className="text-[var(--color-text-primary)] font-medium">бизнесов</span>.
-                <br />
-                Premium-minimal дизайн, скорость, SEO.
-              </p>
-            </RevealOnScroll>
+        {/* H1 — Headline */}
+        <motion.h1
+          className="flex flex-col items-center gap-2 mb-8"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: duration.slow, ease, delay: 0.4 }}
+        >
+          <BrokenText
+            text="РАЗРАБОТКА"
+            spaced
+            mixPattern={[1, 5]}
+            className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold tracking-tight"
+          />
+          <BrokenText
+            text="САЙТОВ"
+            spaced
+            mixPattern={[1]}
+            className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold tracking-tight"
+          />
+          <BrokenText
+            text="ПОД КЛЮЧ"
+            spaced
+            mixPattern={[1]}
+            className="text-white/60 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-medium mt-2"
+          />
+        </motion.h1>
 
-            {/* CTA кнопки */}
-            <RevealOnScroll direction="up" delay={0.4}>
-              <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-4">
-                <Button
-                  variant="primary"
-                  size="lg"
-                  onClick={() => {
-                    trackCtaClick("hero", "Обсудить проект", "/");
-                    onCtaClick?.();
-                  }}
-                  className="hover-lift"
-                >
-                  Обсудить проект
-                </Button>
-                <span onClick={() => trackCtaClick("hero", "Смотреть кейсы", "/")}>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    as="a"
-                    href="/cases"
-                    className="hover-lift"
-                  >
-                    Смотреть кейсы
-                  </Button>
-                </span>
-                <Button
-                  variant="ghost"
-                  size="lg"
-                  onClick={handleScrollToProcess}
-                  className="hover-underline-animate"
-                >
-                  Как мы работаем →
-                </Button>
-              </div>
-            </RevealOnScroll>
-          </div>
+        {/* Subtitle */}
+        <motion.p
+          className="text-body-lg text-white/70 max-w-lg mx-auto mb-10"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: duration.normal, ease, delay: 0.6 }}
+        >
+          Создаём сайты для{" "}
+          <span className="text-white font-medium">экспертов</span>,{" "}
+          <span className="text-white font-medium">e-commerce</span> и{" "}
+          <span className="text-white font-medium">бизнесов</span>
+        </motion.p>
 
-          {/* Правая часть — Визуал */}
-          <div className="relative order-1 lg:order-2 flex items-center justify-center lg:justify-end">
-            <RevealOnScroll direction="left" delay={0.3} duration={0.8}>
-              <HeroVisual
-                imageSrc={imageSrc}
-                imageAlt={imageAlt}
-                blurDataURL={blurDataURL}
-              />
-            </RevealOnScroll>
-          </div>
-        </div>
-      </Container>
+        {/* 2 CTA buttons */}
+        <motion.div
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: duration.normal, ease, delay: 0.8 }}
+        >
+          <Button
+            variant="outline"
+            size="lg"
+            onClick={() => {
+              trackCtaClick("hero", "Обсудить проект", "/");
+              onCtaClick?.();
+            }}
+            className="border-white text-white hover:bg-white hover:text-[var(--color-text-primary)]"
+          >
+            Обсудить проект
+          </Button>
+          <span onClick={() => trackCtaClick("hero", "Смотреть кейсы", "/")}>
+            <Button
+              variant="ghost"
+              size="lg"
+              as="a"
+              href="/cases"
+              className="text-white hover:bg-white/10"
+            >
+              Смотреть кейсы
+            </Button>
+          </span>
+        </motion.div>
+      </div>
 
       {/* Scroll Indicator */}
       <motion.button
         onClick={handleScrollToNext}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors cursor-pointer z-10"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50 hover:text-white transition-colors cursor-pointer z-10"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: duration.normal, ease, delay: 1 }}
+        transition={{ duration: duration.normal, ease, delay: 1.2 }}
         aria-label="Прокрутить к следующей секции"
       >
         <span className="text-caption">Скролл</span>

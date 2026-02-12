@@ -94,7 +94,7 @@ export function Services({ services = defaultServices }: ServicesProps) {
     >
       <Container>
         {/* Заголовок секции */}
-        <RevealOnScroll direction="up" className="mb-12 lg:mb-16">
+        <RevealOnScroll direction="up" className="mb-16 lg:mb-24">
           <div className="flex flex-col gap-4">
             <span className="text-caption text-[var(--color-text-muted)]">
               Направления
@@ -112,7 +112,7 @@ export function Services({ services = defaultServices }: ServicesProps) {
 
         {/* Сетка услуг */}
         <StaggerContainer
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
           staggerDelay={0.1}
         >
           {services.map((service, index) => (
@@ -138,10 +138,10 @@ function ServiceCard({
   icon,
 }: ServiceData) {
   return (
-    <div className="group flex flex-col h-full p-6 lg:p-8 bg-[var(--color-background-alt)] rounded-sm border border-[var(--color-line)] hover:border-[var(--color-line-dark)] transition-colors duration-300 hover-card">
+    <div className="group flex flex-col h-full p-6 lg:p-8 bg-[var(--color-background-alt)] border border-[var(--color-line)] hover:border-[var(--color-line-dark)] transition-colors duration-300 hover-card">
       {/* Номер/иконка */}
       {icon && (
-        <span className="text-5xl lg:text-6xl font-display font-bold text-[var(--color-line)] mb-6 leading-none select-none group-hover:text-[var(--color-line-dark)] transition-colors">
+        <span className="text-5xl lg:text-6xl font-display font-bold text-[var(--color-text-primary)]/10 mb-6 leading-none select-none group-hover:text-[var(--color-text-primary)]/20 transition-colors">
           {icon}
         </span>
       )}
