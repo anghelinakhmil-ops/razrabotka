@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
@@ -185,7 +186,7 @@ export default function BlogContent() {
       </section>
 
       {/* Category Filters */}
-      <section className="py-6 bg-[var(--color-background)] border-b border-[var(--color-line)] sticky top-0 z-40">
+      <section className="py-6 bg-[var(--color-background)] border-b border-[var(--color-line)] sticky top-16 z-40">
         <Container>
           <RevealOnScroll direction="up">
             <div className="flex flex-wrap gap-2 lg:gap-4">
@@ -248,7 +249,7 @@ function BlogCard({
   readTime,
 }: BlogPost) {
   return (
-    <a
+    <Link
       href={`/blog/${slug}`}
       className="group flex flex-col h-full p-6 lg:p-8 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm hover:border-[var(--color-line-dark)] transition-colors duration-300"
     >
@@ -294,7 +295,7 @@ function BlogCard({
           />
         </svg>
       </div>
-    </a>
+    </Link>
   );
 }
 
@@ -356,10 +357,10 @@ function CTASection() {
 
           <RevealOnScroll direction="up" delay={0.2}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" size="lg" as="a" href="/#contact">
+              <Button variant="primary" size="lg" as={Link} href="/#contact">
                 Обсудить проект
               </Button>
-              <Button variant="outline" size="lg" as="a" href="/services">
+              <Button variant="outline" size="lg" as={Link} href="/services">
                 Смотреть услуги
               </Button>
             </div>

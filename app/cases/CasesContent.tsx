@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
@@ -165,7 +166,7 @@ export default function CasesContent() {
       </section>
 
       {/* Filters */}
-      <section className="py-6 bg-[var(--color-background)] border-b border-[var(--color-line)] sticky top-0 z-40">
+      <section className="py-6 bg-[var(--color-background)] border-b border-[var(--color-line)] sticky top-16 z-40">
         <Container>
           <RevealOnScroll direction="up">
             <div className="flex flex-wrap gap-2 lg:gap-4">
@@ -228,7 +229,7 @@ function CaseCard({
   imageSrc,
 }: CaseItem) {
   return (
-    <a
+    <Link
       href={`/cases/${slug}`}
       className="group block relative overflow-hidden rounded-sm bg-[var(--color-background-alt)] border border-[var(--color-line)] hover:border-[var(--color-line-dark)] transition-colors duration-300"
     >
@@ -301,7 +302,7 @@ function CaseCard({
           </svg>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 
@@ -371,7 +372,7 @@ function CTASection() {
               <Button
                 variant="primary"
                 size="lg"
-                as="a"
+                as={Link}
                 href="/#contact"
                 className="bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
               >
@@ -380,7 +381,7 @@ function CTASection() {
               <Button
                 variant="outline"
                 size="lg"
-                as="a"
+                as={Link}
                 href="/services"
                 className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
               >

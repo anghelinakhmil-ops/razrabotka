@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
@@ -198,7 +199,7 @@ function CaseCard({
   blurDataURL,
 }: CaseData) {
   return (
-    <a
+    <Link
       href={`/cases/${slug}`}
       className="group block relative overflow-hidden bg-[var(--color-background)] border border-[var(--color-line)] hover:border-[var(--color-line-dark)] transition-colors duration-300 hover-card"
     >
@@ -261,7 +262,7 @@ function CaseCard({
           </svg>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 

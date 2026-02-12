@@ -678,7 +678,7 @@ function OtherCasesSection({ cases }: { cases: CaseData[] }) {
         >
           {cases.map((caseItem) => (
             <StaggerItem key={caseItem.slug}>
-              <a
+              <Link
                 href={`/cases/${caseItem.slug}`}
                 className="group block p-6 bg-[var(--color-background)] border border-[var(--color-line)] rounded-sm hover:border-[var(--color-line-dark)] transition-colors"
               >
@@ -688,7 +688,7 @@ function OtherCasesSection({ cases }: { cases: CaseData[] }) {
                 <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] group-hover:text-[var(--color-text-secondary)] transition-colors">
                   {caseItem.title}
                 </h3>
-              </a>
+              </Link>
             </StaggerItem>
           ))}
         </StaggerContainer>
