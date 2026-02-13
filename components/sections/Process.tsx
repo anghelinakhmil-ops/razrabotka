@@ -123,134 +123,41 @@ export function Process({ steps = defaultSteps }: ProcessProps) {
           </div>
         </div>
 
-        {/* Timeline - Desktop (горизонтальный, 2 ряда по 4) */}
-        <div className="hidden lg:block">
-          <StaggerContainer staggerDelay={0.08}>
-            {/* Первый ряд: шаги 1-4 */}
-            <div className="grid grid-cols-4 gap-0 mb-12">
-              {steps.slice(0, 4).map((step, index) => (
-                <StaggerItem key={step.number}>
-                  <ProcessStep
-                    {...step}
-                    showConnector={index < 3}
-                  />
-                </StaggerItem>
-              ))}
-            </div>
-
-            {/* Вертикальный коннектор между рядами */}
-            <div className="flex justify-end pr-[12.5%] mb-12">
-              <div className="w-px h-12 bg-[var(--color-line)]" />
-            </div>
-
-            {/* Второй ряд: шаги 5-8 (в обратном порядке для визуального flow) */}
-            <div className="grid grid-cols-4 gap-0">
-              {steps.slice(4, 8).reverse().map((step, index) => (
-                <StaggerItem key={step.number}>
-                  <ProcessStep
-                    {...step}
-                    showConnector={index < 3}
-                    reverse
-                  />
-                </StaggerItem>
-              ))}
-            </div>
-          </StaggerContainer>
-        </div>
-
-        {/* Timeline - Mobile/Tablet (вертикальный) */}
-        <div className="lg:hidden">
-          <StaggerContainer
-            className="relative"
-            staggerDelay={0.1}
-          >
-            {/* Вертикальная линия */}
-            <div className="absolute left-4 top-0 bottom-0 w-px bg-[var(--color-line)]" />
-
-            {steps.map((step) => (
-              <StaggerItem key={step.number}>
-                <ProcessStepMobile {...step} />
-              </StaggerItem>
-            ))}
-          </StaggerContainer>
-        </div>
+        {/* Единый адаптивный grid */}
+        <StaggerContainer
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8"
+          staggerDelay={0.08}
+        >
+          {steps.map((step) => (
+            <StaggerItem key={step.number}>
+              <ProcessStep {...step} />
+            </StaggerItem>
+          ))}
+        </StaggerContainer>
       </Container>
     </section>
   );
 }
 
 /**
- * Props для ProcessStep
- */
-interface ProcessStepProps extends ProcessStepData {
-  /** Показывать коннектор */
-  showConnector?: boolean;
-  /** Обратное направление (для второго ряда) */
-  reverse?: boolean;
-}
-
-/**
- * ProcessStep — один шаг (Desktop)
+ * ProcessStep — один шаг процесса (адаптивный)
  */
 function ProcessStep({
   number,
   title,
   description,
-  showConnector = true,
-  reverse = false,
-}: ProcessStepProps) {
-  return (
-    <div className="relative">
-      {/* Контент */}
-      <div className="pr-8">
-        {/* Номер */}
-        <span className="block text-6xl xl:text-7xl font-display font-bold text-[var(--color-line)] mb-4 leading-none">
-          {number}
-        </span>
-
-        {/* Заголовок */}
-        <h3 className="text-h3 font-display font-bold text-[var(--color-text-primary)] mb-2">
-          {title}
-        </h3>
-
-        {/* Описание */}
-        <p className="text-body-sm text-[var(--color-text-muted)] leading-relaxed">
-          {description}
-        </p>
-      </div>
-
-      {/* Горизонтальный коннектор */}
-      {showConnector && (
-        <div
-          className={`absolute top-8 ${reverse ? "left-0 -translate-x-full" : "right-0"} w-8 h-px bg-[var(--color-line)]`}
-        />
-      )}
-    </div>
-  );
-}
-
-/**
- * ProcessStepMobile — один шаг (Mobile)
- */
-function ProcessStepMobile({
-  number,
-  title,
-  description,
 }: ProcessStepData) {
   return (
-    <div className="relative pl-12 pb-10">
-      {/* Точка на линии */}
-      <div className="absolute left-2.5 top-1 w-3 h-3 rounded-full bg-[var(--color-text-primary)] border-2 border-[var(--color-background)]" />
+    <div>
+      {/* Номер */}
+      <span className="block text-5xl sm:text-6xl xl:text-7xl font-display font-bold text-[var(--color-line)] mb-4 leading-none">
+        {number}
+      </span>
 
-      {/* Номер и заголовок */}
-      <div className="flex items-baseline gap-3 mb-2">
-        <span className="text-3xl font-display font-bold text-[var(--color-line)] leading-none">
-          {number}
-        </span>
-        <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)]">
-          {title}
-        </h3>
-      </div>
+      {/* Заголовок */}
+      <h3 className="text-h3 font-display font-bold text-[var(--color-text-primary)] mb-2">
+        {title}
+      </h3>
 
       {/* Описание */}
       <p className="text-body-sm text-[var(--color-text-muted)] leading-relaxed">
