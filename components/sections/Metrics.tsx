@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
-import { RevealOnScroll, StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
+import { StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
 import { ease, duration } from "@/lib/motion";
 
 /**

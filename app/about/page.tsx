@@ -118,7 +118,7 @@ function ApproachSection() {
 
           {/* Визуал placeholder */}
           <RevealOnScroll direction="up" delay={0.2}>
-            <div className="aspect-[4/3] bg-[var(--color-background)] border border-[var(--color-line)]  flex items-center justify-center">
+            <div className="aspect-[4/3] bg-[var(--color-background)] border border-[var(--color-line)] flex items-center justify-center">
               <div className="text-center">
                 <span className="text-8xl font-display font-bold text-[var(--color-line)]">
                   01
@@ -264,7 +264,7 @@ function PrinciplesSection() {
         >
           {principles.map((principle, index) => (
             <StaggerItem key={index}>
-              <div className="p-6 bg-[var(--color-background)] border border-[var(--color-line)]  h-full">
+              <div className="p-6 bg-[var(--color-background)] border border-[var(--color-line)] h-full">
                 <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-2">
                   {principle.title}
                 </h3>

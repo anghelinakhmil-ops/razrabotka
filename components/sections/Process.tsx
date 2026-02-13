@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
-import { RevealOnScroll, StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
+import { StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
 import { ease, duration } from "@/lib/motion";
 
 /**
@@ -132,7 +132,6 @@ export function Process({ steps = defaultSteps }: ProcessProps) {
                 <StaggerItem key={step.number}>
                   <ProcessStep
                     {...step}
-                    isLast={index === 3}
                     showConnector={index < 3}
                   />
                 </StaggerItem>
@@ -150,7 +149,6 @@ export function Process({ steps = defaultSteps }: ProcessProps) {
                 <StaggerItem key={step.number}>
                   <ProcessStep
                     {...step}
-                    isLast={index === 3}
                     showConnector={index < 3}
                     reverse
                   />
@@ -169,12 +167,9 @@ export function Process({ steps = defaultSteps }: ProcessProps) {
             {/* Вертикальная линия */}
             <div className="absolute left-4 top-0 bottom-0 w-px bg-[var(--color-line)]" />
 
-            {steps.map((step, index) => (
+            {steps.map((step) => (
               <StaggerItem key={step.number}>
-                <ProcessStepMobile
-                  {...step}
-                  isLast={index === steps.length - 1}
-                />
+                <ProcessStepMobile {...step} />
               </StaggerItem>
             ))}
           </StaggerContainer>
@@ -188,8 +183,6 @@ export function Process({ steps = defaultSteps }: ProcessProps) {
  * Props для ProcessStep
  */
 interface ProcessStepProps extends ProcessStepData {
-  /** Последний шаг в ряду */
-  isLast?: boolean;
   /** Показывать коннектор */
   showConnector?: boolean;
   /** Обратное направление (для второго ряда) */
@@ -203,11 +196,9 @@ function ProcessStep({
   number,
   title,
   description,
-  isLast: _isLast = false,
   showConnector = true,
   reverse = false,
 }: ProcessStepProps) {
-  void _isLast; // Reserved for future use
   return (
     <div className="relative">
       {/* Контент */}
@@ -245,9 +236,7 @@ function ProcessStepMobile({
   number,
   title,
   description,
-  isLast: _isLast = false,
-}: ProcessStepData & { isLast?: boolean }) {
-  void _isLast; // Reserved for future use
+}: ProcessStepData) {
   return (
     <div className="relative pl-12 pb-10">
       {/* Точка на линии */}

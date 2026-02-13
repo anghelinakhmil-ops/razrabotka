@@ -116,7 +116,7 @@ export function Header({
               variant="primary"
               size="sm"
               onClick={onCallbackClick}
-              className="sm:hidden !px-3 !text-[11px]"
+              className="sm:hidden px-3 text-[11px]"
             >
               Звонок
             </Button>

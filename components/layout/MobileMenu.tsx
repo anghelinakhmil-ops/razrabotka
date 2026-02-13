@@ -7,9 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BrokenText } from "../ui/BrokenText";
 import { Button } from "../ui/Button";
 import { NAV_ITEMS, SOCIAL_LINKS_COMPACT, CONTACT } from "@/lib/constants";
-
-// Ease timing из дизайн-системы
-const ease: [number, number, number, number] = [0.2, 0.8, 0.2, 1];
+import { ease } from "@/lib/motion";
 
 // Motion variants
 const overlayVariants = {

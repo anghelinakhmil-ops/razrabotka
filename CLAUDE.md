@@ -708,14 +708,14 @@ clsx, tailwind-merge
 :root {
   --color-background: #FFFFFF;
   --color-background-alt: #FAFAFA;
-  --color-text-primary: #1A1A1A;
+  --color-text-primary: #1a2a32;
   --color-text-secondary: #333333;
   --color-text-muted: #666666;
-  --color-text-light: #999999;
+  --color-text-light: #737373;
   --color-line: #E5E5E5;
   --color-line-dark: #CCCCCC;
-  --color-accent: #1A1A1A;
-  --color-accent-hover: #333333;
+  --color-accent: #1a2a32;
+  --color-accent-hover: #2a3a42;
 }
 ```
 

@@ -165,7 +165,7 @@ export function Modal({
           "bg-black/60",
           "backdrop-blur-sm",
           // Animation
-          "animate-in fade-in duration-200"
+          "animate-fade-in"
         )}
         onClick={handleOverlayClick}
         aria-hidden="true"
