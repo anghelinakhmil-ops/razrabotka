@@ -49,6 +49,12 @@ interface LeadEmailData {
   references?: string;
   telegram?: string;
   comment?: string;
+  // UTM
+  utm_source?: string;
+  utm_medium?: string;
+  utm_campaign?: string;
+  utm_term?: string;
+  utm_content?: string;
 }
 
 /**
@@ -203,6 +209,16 @@ function generateQuickLeadEmail(data: LeadEmailData): string {
               <span style="color: #1a1a1a; font-size: 16px;">${data.source} (${data.sourcePage})</span>
             </td>
           </tr>
+          ${data.utm_source ? `
+          <tr>
+            <td style="padding: 15px 0; border-bottom: 1px solid #e5e5e5;">
+              <strong style="color: #666666;">Рекламный канал (UTM):</strong><br>
+              <span style="color: #1a1a1a; font-size: 16px;">${[data.utm_source, data.utm_medium, data.utm_campaign].filter(Boolean).join(" / ")}</span>
+              ${data.utm_term ? `<br><span style="color: #999999; font-size: 14px;">Ключевое слово: ${data.utm_term}</span>` : ""}
+              ${data.utm_content ? `<br><span style="color: #999999; font-size: 14px;">Контент: ${data.utm_content}</span>` : ""}
+            </td>
+          </tr>
+          ` : ""}
           <tr>
             <td style="padding: 15px 0;">
               <strong style="color: #666666;">Время:</strong><br>
@@ -341,6 +357,13 @@ function generateBriefEmail(data: LeadEmailData): string {
               <span style="color: #999999; font-size: 12px;">Источник: ${data.source} (${data.sourcePage})</span>
             </td>
           </tr>
+          ${data.utm_source ? `
+          <tr>
+            <td style="padding: 5px 0;">
+              <span style="color: #999999; font-size: 12px;">UTM: ${[data.utm_source, data.utm_medium, data.utm_campaign].filter(Boolean).join(" / ")}</span>
+            </td>
+          </tr>
+          ` : ""}
           <tr>
             <td style="padding: 5px 0;">
               <span style="color: #999999; font-size: 12px;">Время: ${new Date(data.timestamp).toLocaleString("ru-RU")}</span>
@@ -393,6 +416,10 @@ function generatePlainTextEmail(data: LeadEmailData): string {
 
   text += `\n${"-".repeat(40)}\n`;
   text += `Источник: ${data.source} (${data.sourcePage})\n`;
+  if (data.utm_source) {
+    text += `UTM: ${[data.utm_source, data.utm_medium, data.utm_campaign].filter(Boolean).join(" / ")}\n`;
+    if (data.utm_term) text += `Ключевое слово: ${data.utm_term}\n`;
+  }
   text += `Время: ${new Date(data.timestamp).toLocaleString("ru-RU")}\n`;
 
   return text;

@@ -8,7 +8,8 @@ import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 import { quickLeadSchema, type QuickLeadFormData } from "@/lib/validation";
-import { trackFormStart, trackFormSubmit, trackFormError } from "@/lib/analytics";
+import { getUtmData } from "@/lib/utm";
+import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
 
 /**
  * Анимации для переходов состояний
@@ -108,6 +109,7 @@ export function QuickLeadForm({
           source,
           type: "quick",
           timestamp: new Date().toISOString(),
+          ...getUtmData(),
         }),
       });
 
@@ -117,6 +119,7 @@ export function QuickLeadForm({
 
       setFormState("success");
       trackFormSubmit("quick_lead");
+      trackConversion("quick_lead", "quick");
       onSuccess?.(data);
 
       // Reset form after delay

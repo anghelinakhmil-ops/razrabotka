@@ -8,8 +8,9 @@ import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
+import { getUtmData } from "@/lib/utm";
 import { RevealOnScroll } from "@/components/motion";
-import { trackFormStart, trackFormSubmit, trackFormError } from "@/lib/analytics";
+import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
 
 /**
  * Схема быстрой формы (name + contact)
@@ -98,6 +99,7 @@ export function LeadFormSection({
           name: data.name,
           ...contactFields,
           timestamp: new Date().toISOString(),
+          ...getUtmData(),
         }),
       });
 
@@ -107,6 +109,7 @@ export function LeadFormSection({
 
       setFormState("success");
       trackFormSubmit("quick");
+      trackConversion("quick", "quick");
     } catch (error) {
       setFormState("error");
       const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";

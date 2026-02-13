@@ -7,6 +7,7 @@ import { MobileMenu } from "./MobileMenu";
 import { CallbackModal } from "@/components/forms/CallbackModal";
 import { LenisProvider } from "@/components/motion/LenisProvider";
 import { CustomCursor } from "@/components/ui/CustomCursor";
+import { captureUtm } from "@/lib/utm";
 
 interface LayoutClientProps {
   children: React.ReactNode;
@@ -40,6 +41,11 @@ export function LayoutClient({ children }: LayoutClientProps) {
     const handleOpenModal = () => setIsCallbackModalOpen(true);
     window.addEventListener("open-callback-modal", handleOpenModal);
     return () => window.removeEventListener("open-callback-modal", handleOpenModal);
+  }, []);
+
+  // Capture UTM params from URL on first load
+  useEffect(() => {
+    captureUtm();
   }, []);
 
   return (

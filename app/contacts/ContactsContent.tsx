@@ -8,10 +8,11 @@ import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
+import { getUtmData } from "@/lib/utm";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { CONTACT, MESSENGERS, SOCIAL_ICONS } from "@/lib/constants";
 import { contactFormSchema, type ContactFormData } from "@/lib/validation";
-import { trackFormStart, trackFormSubmit, trackFormError } from "@/lib/analytics";
+import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
 
 /**
  * Contacts Page — страница контактов
@@ -325,6 +326,7 @@ function ContactForm() {
           phone: data.phone || undefined,
           message: data.message,
           timestamp: new Date().toISOString(),
+          ...getUtmData(),
         }),
       });
 
@@ -334,6 +336,7 @@ function ContactForm() {
 
       setFormState("success");
       trackFormSubmit("contact");
+      trackConversion("contact", "quick");
     } catch (error) {
       setFormState("error");
       const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";

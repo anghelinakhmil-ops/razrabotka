@@ -8,8 +8,9 @@ import { Modal } from "@/components/ui/Modal";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { PhoneInput } from "@/components/ui/PhoneInput";
+import { getUtmData } from "@/lib/utm";
 import { callbackFormSchema, type CallbackFormData } from "@/lib/validation";
-import { trackFormStart, trackFormSubmit, trackFormError } from "@/lib/analytics";
+import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
 
 /**
  * Состояния формы
@@ -88,6 +89,7 @@ export function CallbackModal({
           source,
           type: "callback",
           timestamp: new Date().toISOString(),
+          ...getUtmData(),
         }),
       });
 
@@ -97,6 +99,7 @@ export function CallbackModal({
 
       setFormState("success");
       trackFormSubmit("callback");
+      trackConversion("callback", "callback");
       onSuccess?.(data);
     } catch (error) {
       setFormState("error");

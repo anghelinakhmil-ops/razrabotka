@@ -47,6 +47,12 @@ interface LeadTelegramData {
   references?: string;
   telegram?: string;
   comment?: string;
+  // UTM
+  utm_source?: string;
+  utm_medium?: string;
+  utm_campaign?: string;
+  utm_term?: string;
+  utm_content?: string;
 }
 
 /**
@@ -179,6 +185,10 @@ function formatQuickLeadMessage(data: LeadTelegramData): string {
   message += `\n`;
   message += `🔗 *Источник:* ${escapeMarkdown(data.source)}\n`;
   message += `📄 *Страница:* ${escapeMarkdown(data.sourcePage)}\n`;
+  if (data.utm_source) {
+    const utmStr = [data.utm_source, data.utm_medium, data.utm_campaign].filter(Boolean).join(" / ");
+    message += `📊 *UTM:* ${escapeMarkdown(utmStr)}\n`;
+  }
   message += `🕐 *Время:* ${escapeMarkdown(new Date(data.timestamp).toLocaleString("ru-RU"))}\n`;
   message += `\n`;
   message += `🆔 \`${data.id}\``;
@@ -227,6 +237,10 @@ function formatBriefMessage(data: LeadTelegramData): string {
   // Мета
   message += `\n`;
   message += `🔗 ${escapeMarkdown(data.source)} \\| ${escapeMarkdown(data.sourcePage)}\n`;
+  if (data.utm_source) {
+    const utmStr = [data.utm_source, data.utm_medium, data.utm_campaign].filter(Boolean).join(" / ");
+    message += `📊 UTM: ${escapeMarkdown(utmStr)}\n`;
+  }
   message += `🕐 ${escapeMarkdown(new Date(data.timestamp).toLocaleString("ru-RU"))}\n`;
   message += `🆔 \`${data.id}\``;
 

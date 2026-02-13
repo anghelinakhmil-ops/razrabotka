@@ -85,6 +85,16 @@ export function trackCaseView(caseSlug: string) {
   });
 }
 
+/** Конверсия — успешная отправка формы (для Google Ads) */
+export function trackConversion(formName: string, leadType: string) {
+  trackEvent({
+    action: "conversion",
+    form_name: formName,
+    lead_type: leadType,
+    page: typeof window !== "undefined" ? window.location.pathname : "",
+  });
+}
+
 /** Прочтение статьи */
 export function trackBlogRead(articleSlug: string) {
   trackEvent({

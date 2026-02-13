@@ -16,6 +16,12 @@ const baseLeadSchema = z.object({
   source: z.string().optional(),
   type: z.enum(["quick", "brief", "callback"]),
   timestamp: z.string().optional(),
+  // UTM-метки из рекламных ссылок
+  utm_source: z.string().optional(),
+  utm_medium: z.string().optional(),
+  utm_campaign: z.string().optional(),
+  utm_term: z.string().optional(),
+  utm_content: z.string().optional(),
 });
 
 /**
@@ -132,6 +138,15 @@ export async function POST(request: NextRequest): Promise<NextResponse<ApiRespon
       sourcePage
     );
 
+    // UTM-данные из рекламных ссылок
+    const utmData = {
+      utm_source: leadData.utm_source,
+      utm_medium: leadData.utm_medium,
+      utm_campaign: leadData.utm_campaign,
+      utm_term: leadData.utm_term,
+      utm_content: leadData.utm_content,
+    };
+
     // Отправляем email уведомление
     const emailResult = await sendLeadNotification({
       id: leadId,
@@ -153,6 +168,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ApiRespon
         telegram: leadData.telegram,
         comment: leadData.comment,
       }),
+      ...utmData,
     });
 
     // Логируем результат отправки email (но не блокируем ответ)
@@ -181,6 +197,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ApiRespon
         telegram: leadData.telegram,
         comment: leadData.comment,
       }),
+      ...utmData,
     });
 
     // Логируем результат отправки в Telegram

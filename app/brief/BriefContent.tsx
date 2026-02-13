@@ -8,11 +8,12 @@ import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
+import { getUtmData } from "@/lib/utm";
 import { Select } from "@/components/ui/Select";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { CONTACT, MESSENGERS, SOCIAL_ICONS } from "@/lib/constants";
 import { briefFormSchema, type BriefFormData } from "@/lib/validation";
-import { trackFormStart, trackFormSubmit, trackFormError } from "@/lib/analytics";
+import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
 
 /**
  * Опции для селектов
@@ -260,6 +261,7 @@ function BriefForm() {
           source: "brief_form",
           ...data,
           timestamp: new Date().toISOString(),
+          ...getUtmData(),
         }),
       });
 
@@ -269,6 +271,7 @@ function BriefForm() {
 
       setFormState("success");
       trackFormSubmit("brief");
+      trackConversion("brief_form", "brief");
     } catch (error) {
       setFormState("error");
       const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";

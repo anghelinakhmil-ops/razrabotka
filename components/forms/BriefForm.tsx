@@ -8,9 +8,10 @@ import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
 import { Select } from "@/components/ui/Select";
+import { getUtmData } from "@/lib/utm";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 import { briefFormSchema, type BriefFormData } from "@/lib/validation";
-import { trackFormStart, trackFormSubmit, trackFormError } from "@/lib/analytics";
+import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
 
 /**
  * Ключ для хранения черновика в localStorage
@@ -228,6 +229,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
           source,
           type: "brief",
           timestamp: new Date().toISOString(),
+          ...getUtmData(),
         }),
       });
 
@@ -239,6 +241,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
       clearDraft();
       setFormState("success");
       trackFormSubmit("brief");
+      trackConversion("brief", "brief");
       onSuccess?.(data);
     } catch (error) {
       setFormState("error");
