@@ -176,7 +176,7 @@ export function LeadFormSection({
                   variant="primary"
                   size="lg"
                   loading={formState === "loading"}
-                  className="w-full md:w-auto min-w-[200px] bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
+                  className="w-full md:w-auto md:min-w-[200px] bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
                 >
                   Отправить заявку
                 </Button>

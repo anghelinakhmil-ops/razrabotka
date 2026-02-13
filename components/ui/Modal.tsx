@@ -194,7 +194,7 @@ export function Modal({
           <div
             className={clsx(
               "flex items-center justify-between",
-              "px-6 py-4",
+              "px-4 py-3 sm:px-6 sm:py-4",
               "border-b border-[var(--color-line)]"
             )}
           >
@@ -251,7 +251,7 @@ export function Modal({
         {/* Body */}
         <div
           className={clsx(
-            "px-6 py-6",
+            "px-4 py-4 sm:px-6 sm:py-6",
             "text-[var(--color-text-primary)]",
             "max-h-[calc(100vh-12rem)]",
             "overflow-y-auto"

@@ -278,7 +278,7 @@ function PackageSection({
           {/* Left: Info */}
           <div className={isEven ? "lg:order-2" : ""}>
             <RevealOnScroll direction="up">
-              <span className="text-8xl lg:text-9xl font-display font-bold text-[var(--color-line)] leading-none block mb-6">
+              <span className="text-6xl sm:text-8xl lg:text-9xl font-display font-bold text-[var(--color-line)] leading-none block mb-6">
                 {number}
               </span>
             </RevealOnScroll>

@@ -53,14 +53,14 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
       >
         {/* Lead block — CTA section */}
         <div className="border-b border-white/10">
-          <div className="max-w-[1440px] mx-auto px-8 lg:px-16 xl:px-24 py-16 lg:py-24">
+          <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 py-16 lg:py-24">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
               <div className="text-center lg:text-left">
                 <BrokenText
                   text="ОБСУДИТЬ ПРОЕКТ"
                   spaced
                   className={clsx(
-                    "text-[32px] md:text-[40px] lg:text-[48px]",
+                    "text-[16px] sm:text-[32px] md:text-[40px] lg:text-[48px]",
                     "font-bold",
                     "tracking-[0.1em]",
                     "text-white",
@@ -95,7 +95,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
         </div>
 
         {/* Main footer content — all dark */}
-        <div className="max-w-[1440px] mx-auto px-8 lg:px-16 xl:px-24 py-16 lg:py-20">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 py-16 lg:py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
             {/* Column 1: Logo + Description */}
             <div className="lg:col-span-1">
@@ -242,7 +242,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10">
-          <div className="max-w-[1440px] mx-auto px-8 lg:px-16 xl:px-24 py-6">
+          <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-[13px] text-white/30">
                 &copy; {currentYear} {COMPANY_NAME}. Все права защищены.

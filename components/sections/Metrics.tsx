@@ -93,7 +93,7 @@ export function Metrics({ metrics = defaultMetrics }: MetricsProps) {
 
         {/* Сетка метрик */}
         <StaggerContainer
-          className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 lg:gap-0"
           staggerDelay={0.1}
         >
           {metrics.map((metric, index) => (
@@ -142,7 +142,7 @@ function MetricItem({
             {prefix}
           </span>
         )}
-        <span className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-display font-bold text-[var(--color-text-primary)] leading-none">
+        <span className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-display font-bold text-[var(--color-text-primary)] leading-none">
           {value}
         </span>
         {suffix && (

@@ -37,7 +37,7 @@ export function Container({
 }: ContainerProps) {
   const classes = clsx(
     "w-full mx-auto",
-    "px-8 lg:px-16 xl:px-24",
+    "px-5 sm:px-8 lg:px-16 xl:px-24",
     size === "sm" && "max-w-[var(--container-max-width-sm)]",
     size === "default" && "max-w-[var(--container-max-width)]",
     size === "lg" && "max-w-[var(--container-max-width-lg)]",

@@ -120,7 +120,7 @@ function ApproachSection() {
           <RevealOnScroll direction="up" delay={0.2}>
             <div className="aspect-[4/3] bg-[var(--color-background)] border border-[var(--color-line)] flex items-center justify-center">
               <div className="text-center">
-                <span className="text-8xl font-display font-bold text-[var(--color-line)]">
+                <span className="text-6xl sm:text-8xl font-display font-bold text-[var(--color-line)]">
                   01
                 </span>
                 <p className="text-caption text-[var(--color-text-muted)] mt-4">

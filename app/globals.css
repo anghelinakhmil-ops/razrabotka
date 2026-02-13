@@ -198,6 +198,11 @@
   --container-max-width-sm: var(--container-max-width-sm);
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--color-background);
   color: var(--color-text-primary);

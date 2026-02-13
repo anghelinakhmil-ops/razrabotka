@@ -47,7 +47,7 @@ export function Hero({ onCtaClick, imageSrc }: HeroProps) {
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Content — centered */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-16 xl:px-24 text-center">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 text-center">
         {/* Caption */}
         <motion.p
           className="text-caption text-white/60 mb-6"
@@ -69,13 +69,13 @@ export function Hero({ onCtaClick, imageSrc }: HeroProps) {
             text="РАЗРАБОТКА"
             spaced
             mixPattern={[1, 5]}
-            className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold tracking-tight"
+            className="text-white text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold tracking-tight"
           />
           <BrokenText
             text="САЙТОВ"
             spaced
             mixPattern={[1]}
-            className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold tracking-tight"
+            className="text-white text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold tracking-tight"
           />
           <BrokenText
             text="ПОД КЛЮЧ"

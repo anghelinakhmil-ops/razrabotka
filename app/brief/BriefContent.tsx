@@ -282,7 +282,7 @@ function BriefForm() {
 
   if (formState === "success") {
     return (
-      <div className="p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
+      <div className="p-4 sm:p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
         <div className="text-center py-12">
           <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[var(--color-text-primary)] flex items-center justify-center">
             <svg
@@ -320,7 +320,7 @@ function BriefForm() {
 
   if (formState === "error") {
     return (
-      <div className="p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
+      <div className="p-4 sm:p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
         <div className="text-center py-12">
           <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-red-100 flex items-center justify-center">
             <svg
@@ -354,7 +354,7 @@ function BriefForm() {
   }
 
   return (
-    <div className="p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
+    <div className="p-4 sm:p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
       <form onSubmit={handleSubmit(onSubmit)} onFocus={handleFormFocus} className="space-y-8">
         {/* Section 1: О проекте */}
         <div>

@@ -134,7 +134,7 @@ export function Benefits({ benefits = defaultBenefits }: BenefitsProps) {
         </div>
 
         {/* Список преимуществ */}
-        <div className="flex flex-col gap-32 lg:gap-40">
+        <div className="flex flex-col gap-16 sm:gap-24 lg:gap-40">
           {benefits.map((benefit, index) => (
             <BenefitItem
               key={benefit.number}
@@ -182,7 +182,7 @@ function BenefitItem({
           {/* Номер */}
           <StaggerItem>
             <motion.span
-              className="text-7xl lg:text-8xl xl:text-9xl font-display font-bold text-[var(--color-text-primary)]/10 leading-none select-none"
+              className="text-5xl sm:text-7xl lg:text-8xl xl:text-9xl font-display font-bold text-[var(--color-text-primary)]/10 leading-none select-none"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

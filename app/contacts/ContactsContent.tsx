@@ -289,7 +289,7 @@ function ContactForm() {
 
   if (formState === "success") {
     return (
-      <div className="p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
+      <div className="p-4 sm:p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
         <div className="text-center py-8">
           <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-[var(--color-text-primary)] flex items-center justify-center">
             <svg
@@ -324,7 +324,7 @@ function ContactForm() {
 
   if (formState === "error") {
     return (
-      <div className="p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
+      <div className="p-4 sm:p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
         <div className="text-center py-8">
           <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-red-100 flex items-center justify-center">
             <svg
