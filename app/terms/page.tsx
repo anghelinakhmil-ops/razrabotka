@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 
 export const metadata: Metadata = {
-  title: "Условия использования | NAKO Agency",
+  title: "Условия использования",
   description:
     "Условия использования сайта NAKO Agency. Правила пользования сайтом, ограничения ответственности и порядок разрешения споров.",
   openGraph: {

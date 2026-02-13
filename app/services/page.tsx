@@ -8,7 +8,7 @@ import { LeadFormSection } from "@/components/sections";
 import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Услуги | NAKO Agency — Разработка сайтов под ключ",
+  title: "Услуги",
   description:
     "Пакеты услуг: сайт для эксперта, интернет-магазин, лендинг. Фиксированные сроки, прозрачные цены. Узнайте, что входит в каждый пакет.",
   openGraph: {

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import CasesContent from "./CasesContent";
 
 export const metadata: Metadata = {
-  title: "Кейсы — Портфолио | NAKO Agency",
+  title: "Кейсы — Портфолио",
   description:
     "Портфолио веб-студии NAKO Agency. Реальные проекты: интернет-магазины, лендинги, корпоративные сайты и личные бренды экспертов.",
   openGraph: {

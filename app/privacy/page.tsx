@@ -4,7 +4,7 @@ import { BrokenText } from "@/components/ui/BrokenText";
 import { CONTACT } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Политика конфиденциальности | NAKO Agency",
+  title: "Политика конфиденциальности",
   description:
     "Политика конфиденциальности NAKO Agency. Информация о сборе, использовании и защите персональных данных пользователей.",
   openGraph: {

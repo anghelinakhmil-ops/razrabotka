@@ -405,7 +405,7 @@ export async function generateMetadata({
   const post = postsData[slug];
 
   if (!post) {
-    return { title: "Статья не найдена | NAKO Agency" };
+    return { title: "Статья не найдена" };
   }
 
   return {

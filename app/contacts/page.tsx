@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import ContactsContent from "./ContactsContent";
 
 export const metadata: Metadata = {
-  title: "Контакты | NAKO Agency",
+  title: "Контакты",
   description:
     "Свяжитесь с NAKO Agency по email. Ответим в течение 2 часов.",
   openGraph: {

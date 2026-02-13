@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BriefContent from "./BriefContent";
 
 export const metadata: Metadata = {
-  title: "Бриф — Оставить заявку | NAKO Agency",
+  title: "Бриф — Оставить заявку",
   description:
     "Заполните бриф на разработку сайта. Расскажите о проекте — мы подготовим персональное коммерческое предложение с точными сроками и стоимостью.",
   openGraph: {

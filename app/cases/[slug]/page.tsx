@@ -288,7 +288,7 @@ export function generateMetadata({
 
     if (!caseData) {
       return {
-        title: "Кейс не найден | NAKO Agency",
+        title: "Кейс не найден",
       };
     }
 
