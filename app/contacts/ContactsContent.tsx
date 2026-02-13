@@ -121,11 +121,6 @@ export default function ContactsContent() {
                         label="WhatsApp"
                         icon={SOCIAL_ICONS.whatsapp("w-5 h-5")}
                       />
-                      <SocialLink
-                        href={MESSENGERS.instagram.url}
-                        label="Instagram"
-                        icon={SOCIAL_ICONS.instagram("w-5 h-5")}
-                      />
                     </div>
                   </div>
                 </StaggerItem>
