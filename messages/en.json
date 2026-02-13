@@ -1,3 +1,411 @@
 {
-  "placeholder": "i18n infrastructure ready"
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "cases": "Cases",
+    "blog": "Blog",
+    "contacts": "Contacts"
+  },
+  "header": {
+    "menuOpen": "Menu",
+    "menuClose": "Close",
+    "ariaOpenMenu": "Open menu",
+    "ariaCloseMenu": "Close menu"
+  },
+  "hero": {
+    "caption": "Full-cycle web studio",
+    "line1": "WEBSITE",
+    "line2": "DEVELOPMENT",
+    "line3": "TURNKEY",
+    "subtitle": "We build websites for",
+    "subtitleExperts": "experts",
+    "subtitleEcommerce": "e-commerce",
+    "subtitleBusiness": "businesses",
+    "cta": "Discuss project",
+    "ctaCases": "View cases",
+    "scroll": "Scroll",
+    "ariaScroll": "Scroll to next section"
+  },
+  "benefits": {
+    "caption": "Why us",
+    "title": "BENEFITS",
+    "items": [
+      {
+        "number": "01",
+        "title": "STRATEGY",
+        "subtitle": "Strategy and structure",
+        "description": "We start with deep analysis of your business, target audience, and competitors. We develop a site structure that guides visitors to the target action.",
+        "imageAlt": "Strategic website structure planning"
+      },
+      {
+        "number": "02",
+        "title": "DESIGN",
+        "subtitle": "Premium-minimal design",
+        "description": "We create a unique visual style without templates. Lots of whitespace, clear typography, thoughtful animation — a website that stands out and is remembered.",
+        "imageAlt": "Premium-minimal interface design"
+      },
+      {
+        "number": "03",
+        "title": "SPEED",
+        "subtitle": "Speed and SEO",
+        "description": "We optimize every page for Core Web Vitals. Fast loading, proper semantics, technical SEO — your site will be loved by both Google and users.",
+        "imageAlt": "High loading speed and optimization"
+      },
+      {
+        "number": "04",
+        "title": "INTEGRATIONS",
+        "subtitle": "Integrations (payments/CRM/Telegram)",
+        "description": "We connect payment systems, CRM, analytics, Telegram notifications, and any other services needed to automate your business.",
+        "imageAlt": "Payment system and CRM integrations"
+      },
+      {
+        "number": "05",
+        "title": "SUPPORT",
+        "subtitle": "Post-launch support",
+        "description": "We don't abandon you after project delivery. Technical support, minor tweaks, consultations — we're here when you need us.",
+        "imageAlt": "Support team always in touch"
+      }
+    ]
+  },
+  "metrics": {
+    "caption": "In numbers",
+    "title": "RESULTS",
+    "items": [
+      {
+        "value": "7–21",
+        "label": "days to launch"
+      },
+      {
+        "value": "30–120",
+        "label": "to conversion",
+        "prefix": "+",
+        "suffix": "%"
+      },
+      {
+        "value": "90+",
+        "label": "Lighthouse Score"
+      },
+      {
+        "value": "0",
+        "label": "templates used"
+      }
+    ]
+  },
+  "services": {
+    "caption": "Directions",
+    "title": "SERVICES",
+    "items": [
+      {
+        "title": "Expert website",
+        "description": "Personal website for specialists, coaches, consultants. Sells your expertise and attracts clients.",
+        "features": [
+          "Personal brand",
+          "Work portfolio",
+          "Consultation booking",
+          "Calendar integration"
+        ],
+        "ctaText": "Learn more"
+      },
+      {
+        "title": "Online store",
+        "description": "Full e-commerce with catalog, cart, and payments. Sales automation and integrations.",
+        "features": [
+          "Product catalog",
+          "Online payments",
+          "CRM integration",
+          "Telegram notifications"
+        ],
+        "ctaText": "Learn more"
+      },
+      {
+        "title": "Landing page",
+        "description": "One-page website with high conversion for launching a product, service, or ad campaign.",
+        "features": [
+          "High conversion",
+          "A/B testing",
+          "Quick launch",
+          "Analytics"
+        ],
+        "ctaText": "Learn more"
+      }
+    ]
+  },
+  "process": {
+    "caption": "Stages",
+    "title": "PROCESS",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Brief",
+        "description": "We discuss goals, audience, and project tasks. Fill out the brief and define key success metrics."
+      },
+      {
+        "number": "02",
+        "title": "Prototype",
+        "description": "We create site structure, wireframes, and user scenarios. We agree on the logic before design."
+      },
+      {
+        "number": "03",
+        "title": "Design",
+        "description": "We develop a unique visual style. Each screen is a separate composition with attention to detail."
+      },
+      {
+        "number": "04",
+        "title": "Development",
+        "description": "We code in Next.js focusing on performance. Clean code, SEO optimization, fast loading."
+      },
+      {
+        "number": "05",
+        "title": "Content",
+        "description": "We fill the site with text and media. We help with copywriting and visual content selection."
+      },
+      {
+        "number": "06",
+        "title": "Testing",
+        "description": "We test on all devices and browsers. We test forms, integrations, and user scenarios."
+      },
+      {
+        "number": "07",
+        "title": "Launch",
+        "description": "We deploy to production, set up domain, SSL, analytics. We hand over access and documentation."
+      },
+      {
+        "number": "08",
+        "title": "Support",
+        "description": "We stay in touch after launch. Technical support, updates, and project development."
+      }
+    ]
+  },
+  "casesPreview": {
+    "caption": "Portfolio",
+    "title": "CASES",
+    "viewAll": "All cases",
+    "viewCase": "View case",
+    "items": [
+      {
+        "slug": "expert-coach",
+        "title": "Personal coach website",
+        "category": "Expert",
+        "result": "+180% leads",
+        "imageAlt": "Personal coach website — project preview"
+      },
+      {
+        "slug": "ecommerce-fashion",
+        "title": "Fashion online store",
+        "category": "E-commerce",
+        "result": "3.2s LCP",
+        "imageAlt": "Fashion online store — project preview"
+      },
+      {
+        "slug": "landing-saas",
+        "title": "SaaS product landing",
+        "category": "Landing",
+        "result": "8.5% conversion",
+        "imageAlt": "SaaS product landing — project preview"
+      },
+      {
+        "slug": "expert-psychologist",
+        "title": "Psychologist website",
+        "category": "Expert",
+        "result": "+240% bookings",
+        "imageAlt": "Psychologist website — project preview"
+      },
+      {
+        "slug": "ecommerce-cosmetics",
+        "title": "Cosmetics store",
+        "category": "E-commerce",
+        "result": "95 Lighthouse",
+        "imageAlt": "Cosmetics store — project preview"
+      },
+      {
+        "slug": "landing-event",
+        "title": "Event promo page",
+        "category": "Landing",
+        "result": "1200+ registrations",
+        "imageAlt": "Event promo page — project preview"
+      }
+    ]
+  },
+  "testimonials": {
+    "caption": "Clients",
+    "title": "REVIEWS",
+    "cta": "Become the next satisfied client",
+    "projectLabel": "Project",
+    "items": [
+      {
+        "name": "Anna Kovaleva",
+        "role": "Psychologist, private practice",
+        "quote": "The website paid for itself in the first month. Bookings tripled, and clients come already 'warm' — they've read everything about me on the site.",
+        "project": "Psychologist website"
+      },
+      {
+        "name": "Maxim Petrov",
+        "role": "Founder, FLAVOR cosmetics",
+        "quote": "Finally the store works fast. Before, clients left because of slow loading. Now conversion has grown by 40%.",
+        "project": "Online store"
+      },
+      {
+        "name": "Elena Sokolova",
+        "role": "Business coach",
+        "quote": "Really liked the approach — not just a pretty picture, but a thought-out structure. Every block works for conversion.",
+        "project": "Personal website"
+      },
+      {
+        "name": "Dmitry Volkov",
+        "role": "CEO, TechStart",
+        "quote": "Launched the landing in 2 weeks. Quality on par with top agencies, but without their budgets and bureaucracy.",
+        "project": "SaaS Landing"
+      },
+      {
+        "name": "Olga Mironova",
+        "role": "Owner, yoga studio",
+        "quote": "The website captures the studio atmosphere perfectly. Minimalism, space, calm — exactly what was needed.",
+        "project": "Studio website"
+      }
+    ]
+  },
+  "trustedBy": {
+    "title": "Trusted by"
+  },
+  "faq": {
+    "caption": "Answers",
+    "title": "FAQ",
+    "ctaTitle": "Still have questions?",
+    "ctaSubtitle": "Contact us — we'll reply within an hour",
+    "ctaButton": "Submit request",
+    "items": [
+      {
+        "question": "How long does development take?",
+        "answer": "Timelines depend on project complexity. Landing page — 7–14 days, expert website — 14–21 days, online store — 21–45 days. Exact timelines are discussed after filling out the brief."
+      },
+      {
+        "question": "How much does a website cost? What affects the price?",
+        "answer": "Cost depends on website type, number of pages, design complexity, and integrations. Landing page — from $600, expert website — from $1,000, online store — from $2,000. Exact cost is calculated individually."
+      },
+      {
+        "question": "What's included in turnkey development?",
+        "answer": "Full cycle: brief and analytics, prototyping, unique design, responsive coding, basic SEO, analytics setup, testing and launch. You get a website ready to work."
+      },
+      {
+        "question": "Do I need a domain and hosting?",
+        "answer": "Domain needs to be registered in advance or we'll help with selection and registration. Hosting — we use modern platforms (Vercel, Netlify) with free tiers for most projects."
+      },
+      {
+        "question": "How many revisions are included?",
+        "answer": "Each stage includes a round of revisions: prototype, design, coding. Minor corrections — unlimited. Major concept changes are quoted separately."
+      },
+      {
+        "question": "Is there support after launch?",
+        "answer": "Yes, 30 days of free support after launch: bug fixes, minor edits, consultations. After that — by support agreement or on-demand."
+      },
+      {
+        "question": "Will the website be SEO-optimized?",
+        "answer": "Basic SEO is included: semantic markup, meta tags, sitemap, robots.txt, image optimization, loading speed. Promotion and content marketing — separate service."
+      },
+      {
+        "question": "What integrations are possible?",
+        "answer": "Any: CRM (amoCRM, Bitrix24), payment systems (Stripe, PayPal), email newsletters, Telegram bots, booking calendars, analytics (GA4, etc.) and others on request."
+      },
+      {
+        "question": "How does payment work?",
+        "answer": "In stages: 50% prepayment before starting, 50% after completion and acceptance. For large projects, splitting into 3 stages is possible. We work by contract."
+      },
+      {
+        "question": "What if I don't like the design?",
+        "answer": "We approve each stage before moving to the next. If the design doesn't suit after the first iteration — we offer 2 alternative concepts. In case of complete disagreement — refund per contract."
+      }
+    ]
+  },
+  "leadForm": {
+    "title": "DISCUSS PROJECT",
+    "subtitle": "Leave your contacts — we'll get in touch within 2 hours during business hours",
+    "namePlaceholder": "Your name",
+    "contactPlaceholder": "Phone or Telegram",
+    "submit": "Submit request",
+    "privacy": "By clicking the button, you agree to the",
+    "privacyLink": "privacy policy",
+    "successTitle": "Request sent!",
+    "successText": "We'll contact you shortly to discuss the project.",
+    "errorTitle": "Sending error",
+    "retry": "Try again",
+    "briefCta": "Want to tell more about your project?",
+    "briefButton": "Fill out the brief",
+    "validation": {
+      "nameMin": "Name must be at least 2 characters",
+      "contactMin": "Enter phone or Telegram"
+    }
+  },
+  "footer": {
+    "cta": "DISCUSS PROJECT",
+    "ctaSubtitle": "Tell us about your project, and we'll suggest the best solution",
+    "ctaButton": "Fill out the brief",
+    "description": "We build turnkey websites for experts, e-commerce, and businesses. Premium-minimal design that delivers results.",
+    "navTitle": "Navigation",
+    "contactsTitle": "Contacts",
+    "legalTitle": "Information",
+    "copyright": "All rights reserved.",
+    "madeWith": "Made with",
+    "madeIn": "at"
+  },
+  "cookieConsent": {
+    "text": "We use cookies for analytics and site improvement.",
+    "link": "Learn more",
+    "accept": "Accept",
+    "decline": "Decline",
+    "ariaLabel": "Cookie consent"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page may have been deleted or you followed an incorrect link. Check the address or return to the home page.",
+    "home": "Go to home",
+    "contact": "Contact us",
+    "lookingFor": "You might be looking for:",
+    "linkServices": "Services",
+    "linkCases": "Cases",
+    "linkBlog": "Blog",
+    "linkAbout": "About us"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "retry": "Try again",
+    "home": "Go to home"
+  },
+  "common": {
+    "cta": "Discuss project",
+    "readMore": "Read more",
+    "back": "Back",
+    "submit": "Submit",
+    "loading": "Loading...",
+    "allArticles": "All articles",
+    "previousArticle": "Previous",
+    "nextArticle": "Next",
+    "readAlso": "Read more",
+    "needHelp": "Need help with a project?",
+    "needHelpSubtitle": "We'll apply this knowledge to your business. Want to discuss?",
+    "tableOfContents": "Contents",
+    "filters": {
+      "all": "All",
+      "expert": "Expert",
+      "ecommerce": "E-commerce",
+      "landing": "Landing",
+      "development": "Development",
+      "design": "Design",
+      "marketing": "Marketing",
+      "business": "Business"
+    },
+    "noResults": "No results found"
+  },
+  "meta": {
+    "homeTitle": "NAKO Agency — Turnkey Website Development",
+    "homeDescription": "We build websites for experts, e-commerce, and businesses. Premium-minimal design, speed, SEO.",
+    "aboutTitle": "About Us",
+    "servicesTitle": "Services",
+    "casesTitle": "Cases",
+    "blogTitle": "Blog",
+    "contactsTitle": "Contacts",
+    "briefTitle": "Brief",
+    "privacyTitle": "Privacy Policy",
+    "termsTitle": "Terms of Use"
+  }
 }

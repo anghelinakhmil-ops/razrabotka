@@ -1,3 +1,411 @@
 {
-  "placeholder": "infrastructura i18n gata"
+  "nav": {
+    "home": "Acasă",
+    "about": "Despre noi",
+    "services": "Servicii",
+    "cases": "Cazuri",
+    "blog": "Blog",
+    "contacts": "Contacte"
+  },
+  "header": {
+    "menuOpen": "Meniu",
+    "menuClose": "Închide",
+    "ariaOpenMenu": "Deschide meniul",
+    "ariaCloseMenu": "Închide meniul"
+  },
+  "hero": {
+    "caption": "Studio web cu ciclu complet",
+    "line1": "DEZVOLTARE",
+    "line2": "SITE-URI",
+    "line3": "LA CHEIE",
+    "subtitle": "Creăm site-uri pentru",
+    "subtitleExperts": "experți",
+    "subtitleEcommerce": "e-commerce",
+    "subtitleBusiness": "afaceri",
+    "cta": "Discută proiectul",
+    "ctaCases": "Vezi cazurile",
+    "scroll": "Scroll",
+    "ariaScroll": "Derulează la secțiunea următoare"
+  },
+  "benefits": {
+    "caption": "De ce noi",
+    "title": "AVANTAJE",
+    "items": [
+      {
+        "number": "01",
+        "title": "STRATEGIE",
+        "subtitle": "Strategie și structură",
+        "description": "Începem cu o analiză profundă a afacerii dvs., a publicului țintă și a competitorilor. Dezvoltăm structura site-ului care ghidează vizitatorul spre acțiunea dorită.",
+        "imageAlt": "Planificarea strategică a structurii site-ului"
+      },
+      {
+        "number": "02",
+        "title": "DESIGN",
+        "subtitle": "Design premium-minimal",
+        "description": "Creăm un stil vizual unic fără șabloane. Mult spațiu, tipografie clară, animație atentă — un site care iese în evidență și rămâne în memorie.",
+        "imageAlt": "Design premium-minimal al interfeței"
+      },
+      {
+        "number": "03",
+        "title": "VITEZĂ",
+        "subtitle": "Viteză și SEO",
+        "description": "Optimizăm fiecare pagină pentru Core Web Vitals. Încărcare rapidă, semantică corectă, SEO tehnic — site-ul dvs. va fi apreciat atât de Google, cât și de utilizatori.",
+        "imageAlt": "Viteză mare de încărcare și optimizare"
+      },
+      {
+        "number": "04",
+        "title": "INTEGRĂRI",
+        "subtitle": "Integrări (plăți/CRM/Telegram)",
+        "description": "Conectăm sisteme de plată, CRM, analitică, notificări Telegram și orice alte servicii necesare pentru automatizarea afacerii dvs.",
+        "imageAlt": "Integrări cu sisteme de plată și CRM"
+      },
+      {
+        "number": "05",
+        "title": "SUPORT",
+        "subtitle": "Suport după lansare",
+        "description": "Nu vă abandonăm după livrarea proiectului. Suport tehnic, ajustări minore, consultanțe — suntem aici când aveți nevoie.",
+        "imageAlt": "Echipa de suport mereu la dispoziție"
+      }
+    ]
+  },
+  "metrics": {
+    "caption": "În cifre",
+    "title": "REZULTATE",
+    "items": [
+      {
+        "value": "7–21",
+        "label": "zile până la lansare"
+      },
+      {
+        "value": "30–120",
+        "label": "la conversie",
+        "prefix": "+",
+        "suffix": "%"
+      },
+      {
+        "value": "90+",
+        "label": "Lighthouse Score"
+      },
+      {
+        "value": "0",
+        "label": "șabloane folosite"
+      }
+    ]
+  },
+  "services": {
+    "caption": "Direcții",
+    "title": "SERVICII",
+    "items": [
+      {
+        "title": "Site pentru expert",
+        "description": "Site personal pentru specialiști, coachi, consultanți. Vinde expertiza dvs. și atrage clienți.",
+        "features": [
+          "Brand personal",
+          "Portofoliu de lucrări",
+          "Programare consultație",
+          "Integrare calendar"
+        ],
+        "ctaText": "Detalii"
+      },
+      {
+        "title": "Magazin online",
+        "description": "E-commerce complet cu catalog, coș și plăți. Automatizarea vânzărilor și integrări.",
+        "features": [
+          "Catalog produse",
+          "Plăți online",
+          "Integrare CRM",
+          "Notificări Telegram"
+        ],
+        "ctaText": "Detalii"
+      },
+      {
+        "title": "Landing page",
+        "description": "Site de o pagină cu conversie înaltă pentru lansarea unui produs, serviciu sau campanie publicitară.",
+        "features": [
+          "Conversie înaltă",
+          "Testare A/B",
+          "Lansare rapidă",
+          "Analitică"
+        ],
+        "ctaText": "Detalii"
+      }
+    ]
+  },
+  "process": {
+    "caption": "Etape",
+    "title": "PROCES",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Brief",
+        "description": "Discutăm obiectivele, audiența și sarcinile proiectului. Completăm brief-ul și definim metricile cheie de succes."
+      },
+      {
+        "number": "02",
+        "title": "Prototip",
+        "description": "Creăm structura site-ului, wireframe-uri și scenarii de utilizare. Aprobăm logica înainte de design."
+      },
+      {
+        "number": "03",
+        "title": "Design",
+        "description": "Dezvoltăm un stil vizual unic. Fiecare ecran este o compoziție separată cu atenție la detalii."
+      },
+      {
+        "number": "04",
+        "title": "Dezvoltare",
+        "description": "Codăm în Next.js cu focus pe performanță. Cod curat, optimizare SEO, încărcare rapidă."
+      },
+      {
+        "number": "05",
+        "title": "Conținut",
+        "description": "Umplem site-ul cu texte și media. Ajutăm cu copywriting și selectarea conținutului vizual."
+      },
+      {
+        "number": "06",
+        "title": "Testare",
+        "description": "Testăm pe toate dispozitivele și browserele. Testăm formulare, integrări și scenarii de utilizare."
+      },
+      {
+        "number": "07",
+        "title": "Lansare",
+        "description": "Implementăm în producție, configurăm domeniu, SSL, analitică. Predăm accesurile și documentația."
+      },
+      {
+        "number": "08",
+        "title": "Suport",
+        "description": "Rămânem în contact după lansare. Suport tehnic, actualizări și dezvoltarea proiectului."
+      }
+    ]
+  },
+  "casesPreview": {
+    "caption": "Portofoliu",
+    "title": "CAZURI",
+    "viewAll": "Toate cazurile",
+    "viewCase": "Vezi cazul",
+    "items": [
+      {
+        "slug": "expert-coach",
+        "title": "Site personal coach",
+        "category": "Expert",
+        "result": "+180% cereri",
+        "imageAlt": "Site personal coach — previzualizare proiect"
+      },
+      {
+        "slug": "ecommerce-fashion",
+        "title": "Magazin online de modă",
+        "category": "E-commerce",
+        "result": "3.2s LCP",
+        "imageAlt": "Magazin online de modă — previzualizare proiect"
+      },
+      {
+        "slug": "landing-saas",
+        "title": "Landing produs SaaS",
+        "category": "Landing",
+        "result": "8.5% conversie",
+        "imageAlt": "Landing produs SaaS — previzualizare proiect"
+      },
+      {
+        "slug": "expert-psychologist",
+        "title": "Site psiholog",
+        "category": "Expert",
+        "result": "+240% programări",
+        "imageAlt": "Site psiholog — previzualizare proiect"
+      },
+      {
+        "slug": "ecommerce-cosmetics",
+        "title": "Magazin cosmetice",
+        "category": "E-commerce",
+        "result": "95 Lighthouse",
+        "imageAlt": "Magazin cosmetice — previzualizare proiect"
+      },
+      {
+        "slug": "landing-event",
+        "title": "Pagină promoțională eveniment",
+        "category": "Landing",
+        "result": "1200+ înregistrări",
+        "imageAlt": "Pagină promoțională eveniment — previzualizare proiect"
+      }
+    ]
+  },
+  "testimonials": {
+    "caption": "Clienți",
+    "title": "RECENZII",
+    "cta": "Devino următorul client mulțumit",
+    "projectLabel": "Proiect",
+    "items": [
+      {
+        "name": "Ana Covalenco",
+        "role": "Psiholog, practică privată",
+        "quote": "Site-ul s-a amortizat în prima lună. Programările s-au triplat, iar clienții vin deja \u201Ecalzi\u201D — au citit totul despre mine pe site.",
+        "project": "Site psiholog"
+      },
+      {
+        "name": "Maxim Petrov",
+        "role": "Fondator, FLAVOR cosmetics",
+        "quote": "În sfârșit magazinul funcționează rapid. Înainte clienții plecau din cauza încărcării lente. Acum conversia a crescut cu 40%.",
+        "project": "Magazin online"
+      },
+      {
+        "name": "Elena Sokolova",
+        "role": "Coach de business",
+        "quote": "Mi-a plăcut foarte mult abordarea — nu doar o imagine frumoasă, ci o structură bine gândită. Fiecare bloc lucrează pentru conversie.",
+        "project": "Site personal"
+      },
+      {
+        "name": "Dmitri Volkov",
+        "role": "CEO, TechStart",
+        "quote": "Am lansat landing-ul în 2 săptămâni. Calitate la nivel de agenții de top, dar fără bugetele și birocrația lor.",
+        "project": "Landing SaaS"
+      },
+      {
+        "name": "Olga Mironova",
+        "role": "Proprietar, studio yoga",
+        "quote": "Site-ul transmite atmosfera studioului perfect. Minimalism, spațiu, liniște — exact ce era nevoie.",
+        "project": "Site studio"
+      }
+    ]
+  },
+  "trustedBy": {
+    "title": "Au încredere în noi"
+  },
+  "faq": {
+    "caption": "Răspunsuri",
+    "title": "ÎNTREBĂRI",
+    "ctaTitle": "Mai aveți întrebări?",
+    "ctaSubtitle": "Contactați-ne — răspundem în termen de o oră",
+    "ctaButton": "Trimite cererea",
+    "items": [
+      {
+        "question": "Cât durează dezvoltarea?",
+        "answer": "Termenele depind de complexitatea proiectului. Landing page — 7–14 zile, site expert — 14–21 zile, magazin online — 21–45 zile. Termenele exacte sunt discutate după completarea brief-ului."
+      },
+      {
+        "question": "Cât costă un site? Ce influențează prețul?",
+        "answer": "Costul depinde de tipul site-ului, numărul de pagini, complexitatea designului și integrările. Landing page — de la 600€, site expert — de la 1000€, magazin online — de la 2000€. Costul exact se calculează individual."
+      },
+      {
+        "question": "Ce include dezvoltarea la cheie?",
+        "answer": "Ciclu complet: brief și analitică, prototipare, design unic, codare responsivă, SEO de bază, configurare analitică, testare și lansare. Primiți un site gata de funcționare."
+      },
+      {
+        "question": "Am nevoie de domeniu și hosting?",
+        "answer": "Domeniul trebuie înregistrat în avans sau vă ajutăm cu alegerea și înregistrarea. Hosting — folosim platforme moderne (Vercel, Netlify) cu plan gratuit pentru majoritatea proiectelor."
+      },
+      {
+        "question": "Câte revizuiri sunt incluse?",
+        "answer": "Fiecare etapă include o rundă de revizuiri: prototip, design, codare. Corecții minore — nelimitat. Schimbările majore de concept sunt cotate separat."
+      },
+      {
+        "question": "Există suport după lansare?",
+        "answer": "Da, 30 de zile de suport gratuit după lansare: repararea bug-urilor, editări minore, consultanțe. Apoi — prin contract de suport sau la cerere."
+      },
+      {
+        "question": "Site-ul va fi optimizat SEO?",
+        "answer": "SEO de bază este inclus: markup semantic, meta tag-uri, sitemap, robots.txt, optimizarea imaginilor, viteza de încărcare. Promovarea și marketingul de conținut — serviciu separat."
+      },
+      {
+        "question": "Ce integrări sunt posibile?",
+        "answer": "Orice: CRM (amoCRM, Bitrix24), sisteme de plată (Stripe, PayPal), newslettere email, boți Telegram, calendare de rezervare, analitică (GA4, etc.) și altele la cerere."
+      },
+      {
+        "question": "Cum funcționează plata?",
+        "answer": "În etape: 50% avans înainte de începere, 50% după finalizare și acceptare. Pentru proiecte mari, este posibilă împărțirea în 3 etape. Lucrăm pe bază de contract."
+      },
+      {
+        "question": "Ce se întâmplă dacă nu-mi place designul?",
+        "answer": "Aprobăm fiecare etapă înainte de a trece la următoarea. Dacă designul nu convine după prima iterație — oferim 2 concepte alternative. În caz de dezacord complet — rambursare conform contractului."
+      }
+    ]
+  },
+  "leadForm": {
+    "title": "DISCUTĂ PROIECTUL",
+    "subtitle": "Lăsați contactele — vă vom contacta în termen de 2 ore în timpul programului de lucru",
+    "namePlaceholder": "Numele dvs.",
+    "contactPlaceholder": "Telefon sau Telegram",
+    "submit": "Trimite cererea",
+    "privacy": "Apăsând butonul, sunteți de acord cu",
+    "privacyLink": "politica de confidențialitate",
+    "successTitle": "Cerere trimisă!",
+    "successText": "Vă vom contacta în curând pentru a discuta proiectul.",
+    "errorTitle": "Eroare de trimitere",
+    "retry": "Încearcă din nou",
+    "briefCta": "Doriți să povestiți mai multe despre proiect?",
+    "briefButton": "Completează brief-ul",
+    "validation": {
+      "nameMin": "Numele trebuie să conțină cel puțin 2 caractere",
+      "contactMin": "Introduceți telefonul sau Telegram"
+    }
+  },
+  "footer": {
+    "cta": "DISCUTĂ PROIECTUL",
+    "ctaSubtitle": "Povestiți-ne despre proiectul dvs. și vă vom sugera cea mai bună soluție",
+    "ctaButton": "Completează brief-ul",
+    "description": "Creăm site-uri la cheie pentru experți, e-commerce și afaceri. Design premium-minimal care aduce rezultate.",
+    "navTitle": "Navigare",
+    "contactsTitle": "Contacte",
+    "legalTitle": "Informații",
+    "copyright": "Toate drepturile rezervate.",
+    "madeWith": "Realizat cu",
+    "madeIn": "la"
+  },
+  "cookieConsent": {
+    "text": "Folosim cookie-uri pentru analitică și îmbunătățirea site-ului.",
+    "link": "Detalii",
+    "accept": "Accept",
+    "decline": "Refuz",
+    "ariaLabel": "Consimțământ cookie-uri"
+  },
+  "notFound": {
+    "title": "Pagina nu a fost găsită",
+    "description": "Pagina poate fi fost ștearsă sau ați urmat un link incorect. Verificați adresa sau reveniți la pagina principală.",
+    "home": "Pagina principală",
+    "contact": "Contactați-ne",
+    "lookingFor": "Poate căutați:",
+    "linkServices": "Servicii",
+    "linkCases": "Cazuri",
+    "linkBlog": "Blog",
+    "linkAbout": "Despre noi"
+  },
+  "error": {
+    "title": "Ceva nu a mers bine",
+    "retry": "Încearcă din nou",
+    "home": "Pagina principală"
+  },
+  "common": {
+    "cta": "Discută proiectul",
+    "readMore": "Citește mai mult",
+    "back": "Înapoi",
+    "submit": "Trimite",
+    "loading": "Se încarcă...",
+    "allArticles": "Toate articolele",
+    "previousArticle": "Anterior",
+    "nextArticle": "Următorul",
+    "readAlso": "Citește și",
+    "needHelp": "Aveți nevoie de ajutor cu un proiect?",
+    "needHelpSubtitle": "Vom aplica aceste cunoștințe pentru afacerea dvs. Discutăm?",
+    "tableOfContents": "Cuprins",
+    "filters": {
+      "all": "Toate",
+      "expert": "Expert",
+      "ecommerce": "E-commerce",
+      "landing": "Landing",
+      "development": "Dezvoltare",
+      "design": "Design",
+      "marketing": "Marketing",
+      "business": "Business"
+    },
+    "noResults": "Nu s-au găsit rezultate"
+  },
+  "meta": {
+    "homeTitle": "NAKO Agency — Dezvoltare site-uri la cheie",
+    "homeDescription": "Creăm site-uri pentru experți, e-commerce și afaceri. Design premium-minimal, viteză, SEO.",
+    "aboutTitle": "Despre noi",
+    "servicesTitle": "Servicii",
+    "casesTitle": "Cazuri",
+    "blogTitle": "Blog",
+    "contactsTitle": "Contacte",
+    "briefTitle": "Brief",
+    "privacyTitle": "Politica de confidențialitate",
+    "termsTitle": "Termeni și condiții"
+  }
 }
