@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Container } from "@/components/ui/Container";
@@ -18,6 +20,8 @@ import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from
  * Contacts Page — страница контактов
  */
 export default function ContactsContent() {
+  const t = useTranslations("pages.contacts");
+
   return (
     <main>
       {/* Hero Section */}
@@ -25,14 +29,14 @@ export default function ContactsContent() {
         <Container>
           <RevealOnScroll direction="up">
             <span className="text-caption text-[var(--color-text-muted)] mb-4 block">
-              Связаться с нами
+              {t("caption")}
             </span>
           </RevealOnScroll>
 
           <RevealOnScroll direction="up" delay={0.1}>
             <h1 className="mb-6">
               <BrokenText
-                text="КОНТАКТЫ"
+                text={t("title")}
                 spaced
                 mixPattern={[2, 5]}
                 className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
@@ -42,8 +46,7 @@ export default function ContactsContent() {
 
           <RevealOnScroll direction="up" delay={0.2}>
             <p className="text-body-lg text-[var(--color-text-secondary)] max-w-2xl">
-              Готовы обсудить ваш проект? Свяжитесь с нами любым удобным способом
-              или оставьте заявку — мы ответим в течение 2 часов.
+              {t("description")}
             </p>
           </RevealOnScroll>
         </Container>
@@ -60,8 +63,8 @@ export default function ContactsContent() {
                 <StaggerItem>
                   <ContactBlock
                     number="01"
-                    title="Email"
-                    description="Для запросов и предложений"
+                    title={t("emailTitle")}
+                    description={t("emailDescription")}
                   >
                     <a
                       href={`mailto:${CONTACT.email}`}
@@ -76,14 +79,14 @@ export default function ContactsContent() {
                 <StaggerItem>
                   <ContactBlock
                     number="02"
-                    title="Время ответа"
-                    description="Мы на связи"
+                    title={t("responseTitle")}
+                    description={t("responseDescription")}
                   >
                     <p className="text-body-lg text-[var(--color-text-primary)]">
-                      В течение 2 часов
+                      {t("responseTime")}
                     </p>
                     <p className="text-body-sm text-[var(--color-text-muted)] mt-1">
-                      Отвечаем на все заявки в рабочее время
+                      {t("responseNote")}
                     </p>
                   </ContactBlock>
                 </StaggerItem>
@@ -106,20 +109,19 @@ export default function ContactsContent() {
           <div className="max-w-2xl mx-auto text-center">
             <RevealOnScroll direction="up">
               <h2 className="text-h2 font-display font-bold text-[var(--color-text-primary)] mb-4">
-                Предпочитаете детальный бриф?
+                {t("briefTitle")}
               </h2>
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.1}>
               <p className="text-body text-[var(--color-text-muted)] mb-8">
-                Заполните расширенную форму с описанием проекта —
-                так мы сможем подготовить персональное предложение.
+                {t("briefDescription")}
               </p>
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.2}>
-              <Button variant="primary" size="lg" as="a" href="/brief">
-                Заполнить бриф
+              <Button variant="primary" size="lg" as={Link} href="/brief">
+                {t("briefButton")}
               </Button>
             </RevealOnScroll>
           </div>
@@ -167,6 +169,7 @@ function ContactBlock({
  * ContactForm — форма обратной связи
  */
 function ContactForm() {
+  const t = useTranslations("pages.contacts");
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [formStarted, setFormStarted] = useState(false);
@@ -209,17 +212,16 @@ function ContactForm() {
       });
 
       if (!response.ok) {
-        throw new Error("Ошибка отправки. Попробуйте позже.");
+        throw new Error("Server error");
       }
 
       setFormState("success");
       trackFormSubmit("contact");
       trackConversion("contact", "quick");
-    } catch (error) {
+    } catch {
       setFormState("error");
-      const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";
-      setErrorMessage(msg);
-      trackFormError("contact", msg);
+      setErrorMessage(t("errorTitle"));
+      trackFormError("contact", "submission_failed");
     }
   };
 
@@ -245,13 +247,13 @@ function ContactForm() {
             </svg>
           </div>
           <h3 className="text-h3 font-display font-bold text-[var(--color-text-primary)] mb-2">
-            Сообщение отправлено
+            {t("successTitle")}
           </h3>
           <p className="text-body text-[var(--color-text-muted)] mb-6">
-            Мы свяжемся с вами в ближайшее время
+            {t("successText")}
           </p>
           <Button variant="ghost" size="md" onClick={() => { reset(); setFormState("idle"); }}>
-            Отправить ещё
+            {t("successRetry")}
           </Button>
         </div>
       </div>
@@ -280,13 +282,13 @@ function ContactForm() {
             </svg>
           </div>
           <h3 className="text-h3 font-display font-bold text-red-600 mb-2">
-            Ошибка отправки
+            {t("errorTitle")}
           </h3>
           <p className="text-body text-[var(--color-text-muted)] mb-6">
             {errorMessage}
           </p>
           <Button variant="primary" size="md" onClick={() => setFormState("idle")}>
-            Попробовать снова
+            {t("errorRetry")}
           </Button>
         </div>
       </div>
@@ -296,16 +298,16 @@ function ContactForm() {
   return (
     <div className="p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
       <h3 className="text-h3 font-display font-bold text-[var(--color-text-primary)] mb-2">
-        Напишите нам
+        {t("formTitle")}
       </h3>
       <p className="text-body text-[var(--color-text-muted)] mb-8">
-        Опишите ваш проект — мы ответим в течение 2 часов
+        {t("formDescription")}
       </p>
 
       <form onSubmit={handleSubmit(onSubmit)} onFocus={handleFormFocus} className="space-y-6">
         <Input
-          label="Имя"
-          placeholder="Как к вам обращаться"
+          label={t("formName")}
+          placeholder={t("formNamePlaceholder")}
           error={errors.name?.message}
           disabled={formState === "loading"}
           {...register("name")}
@@ -313,17 +315,17 @@ function ContactForm() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <Input
-            label="Email"
+            label={t("formEmail")}
             type="email"
-            placeholder="email@example.com"
+            placeholder={t("formEmailPlaceholder")}
             error={errors.email?.message}
             disabled={formState === "loading"}
             {...register("email")}
           />
           <Input
-            label="Телефон"
+            label={t("formPhone")}
             type="tel"
-            placeholder="+7 (___) ___-__-__"
+            placeholder={t("formPhonePlaceholder")}
             error={errors.phone?.message}
             disabled={formState === "loading"}
             {...register("phone")}
@@ -331,8 +333,8 @@ function ContactForm() {
         </div>
 
         <Textarea
-          label="Сообщение"
-          placeholder="Расскажите о вашем проекте..."
+          label={t("formMessage")}
+          placeholder={t("formMessagePlaceholder")}
           rows={5}
           error={errors.message?.message}
           disabled={formState === "loading"}
@@ -346,17 +348,16 @@ function ContactForm() {
           fullWidth
           loading={formState === "loading"}
         >
-          Отправить сообщение
+          {t("formSubmit")}
         </Button>
 
         <p className="text-caption text-[var(--color-text-muted)] text-center">
-          Нажимая кнопку, вы соглашаетесь с{" "}
-          <a href="/privacy" className="underline hover:no-underline">
-            политикой конфиденциальности
-          </a>
+          {t("formPrivacy")}{" "}
+          <Link href="/privacy" className="underline hover:no-underline">
+            {t("formPrivacyLink")}
+          </Link>
         </p>
       </form>
     </div>
   );
 }
-

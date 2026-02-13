@@ -534,6 +534,20 @@
       "idealForTitle": "Ideal pentru",
       "comparisonCaption": "Comparatie",
       "comparisonTitle": "PACHETE",
+      "comparisonRows": [
+        { "label": "Numar de pagini", "expert": "Pana la 7", "ecommerce": "Nelimitat", "landing": "1" },
+        { "label": "Design unic", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Responsive (mobil)", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Catalog produse", "expert": "—", "ecommerce": "✓", "landing": "—" },
+        { "label": "Plati online", "expert": "—", "ecommerce": "✓", "landing": "—" },
+        { "label": "Formular cerere", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Integrare CRM", "expert": "Optional", "ecommerce": "✓", "landing": "Optional" },
+        { "label": "Blog", "expert": "Optional", "ecommerce": "Optional", "landing": "—" },
+        { "label": "SEO de baza", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Analitice", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Termene", "expert": "14–21 zile", "ecommerce": "21–45 zile", "landing": "7–14 zile" },
+        { "label": "Suport", "expert": "30 zile", "ecommerce": "30 zile", "landing": "14 zile" }
+      ],
       "detailsButton": "Detalii",
       "formTitle": "DISCUTA PROIECTUL",
       "formSubtitle": "Nu sunteti sigur ce pachet vi se potriveste? Povestiti despre proiect \u2014 vom sugera cea mai buna solutie."

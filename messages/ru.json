@@ -534,6 +534,20 @@
       "idealForTitle": "Подходит для",
       "comparisonCaption": "Сравнение",
       "comparisonTitle": "ПАКЕТЫ",
+      "comparisonRows": [
+        { "label": "Количество страниц", "expert": "До 7", "ecommerce": "Неограниченно", "landing": "1" },
+        { "label": "Уникальный дизайн", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Адаптив (mobile)", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Каталог товаров", "expert": "—", "ecommerce": "✓", "landing": "—" },
+        { "label": "Онлайн-оплата", "expert": "—", "ecommerce": "✓", "landing": "—" },
+        { "label": "Форма заявки", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "CRM интеграция", "expert": "Опционально", "ecommerce": "✓", "landing": "Опционально" },
+        { "label": "Блог", "expert": "Опционально", "ecommerce": "Опционально", "landing": "—" },
+        { "label": "SEO базовое", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Аналитика", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Сроки", "expert": "14–21 день", "ecommerce": "21–45 дней", "landing": "7–14 дней" },
+        { "label": "Поддержка", "expert": "30 дней", "ecommerce": "30 дней", "landing": "14 дней" }
+      ],
       "detailsButton": "Подробнее",
       "formTitle": "ОБСУДИТЬ ПРОЕКТ",
       "formSubtitle": "Не уверены, какой пакет подходит? Расскажите о проекте — мы подберём лучшее решение."

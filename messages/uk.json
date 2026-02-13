@@ -534,6 +534,20 @@
       "idealForTitle": "Підходить для",
       "comparisonCaption": "Порівняння",
       "comparisonTitle": "ПАКЕТИ",
+      "comparisonRows": [
+        { "label": "Кількість сторінок", "expert": "До 7", "ecommerce": "Необмежено", "landing": "1" },
+        { "label": "Унікальний дизайн", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Адаптив (mobile)", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Каталог товарів", "expert": "—", "ecommerce": "✓", "landing": "—" },
+        { "label": "Онлайн-оплата", "expert": "—", "ecommerce": "✓", "landing": "—" },
+        { "label": "Форма заявки", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "CRM інтеграція", "expert": "Опціонально", "ecommerce": "✓", "landing": "Опціонально" },
+        { "label": "Блог", "expert": "Опціонально", "ecommerce": "Опціонально", "landing": "—" },
+        { "label": "SEO базове", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Аналітика", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Терміни", "expert": "14–21 день", "ecommerce": "21–45 днів", "landing": "7–14 днів" },
+        { "label": "Підтримка", "expert": "30 днів", "ecommerce": "30 днів", "landing": "14 днів" }
+      ],
       "detailsButton": "Детальніше",
       "formTitle": "ОБГОВОРИТИ ПРОЄКТ",
       "formSubtitle": "Не впевнені, який пакет підходить? Розкажіть про проєкт — ми підберемо найкраще рішення."

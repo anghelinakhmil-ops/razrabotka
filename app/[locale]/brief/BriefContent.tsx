@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Container } from "@/components/ui/Container";
@@ -16,68 +18,29 @@ import { briefFormSchema, type BriefFormData } from "@/lib/validation";
 import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
 
 /**
- * Опции для селектов
- */
-const siteTypeOptions = [
-  { value: "", label: "Выберите тип сайта" },
-  { value: "expert", label: "Сайт для эксперта / личный бренд" },
-  { value: "ecommerce", label: "Интернет-магазин" },
-  { value: "landing", label: "Лендинг / промо-страница" },
-  { value: "corporate", label: "Корпоративный сайт" },
-  { value: "other", label: "Другое" },
-];
-
-const goalOptions = [
-  { value: "", label: "Основная цель сайта" },
-  { value: "sales", label: "Продажи товаров/услуг" },
-  { value: "leads", label: "Сбор заявок/лидов" },
-  { value: "brand", label: "Имидж и узнаваемость" },
-  { value: "info", label: "Информирование аудитории" },
-  { value: "other", label: "Другое" },
-];
-
-const timelineOptions = [
-  { value: "", label: "Желаемые сроки" },
-  { value: "urgent", label: "Срочно (до 2 недель)" },
-  { value: "normal", label: "2–4 недели" },
-  { value: "relaxed", label: "1–2 месяца" },
-  { value: "flexible", label: "Не срочно, гибко" },
-];
-
-const budgetOptions = [
-  { value: "", label: "Примерный бюджет" },
-  { value: "50-100", label: "50 000 – 100 000 ₽" },
-  { value: "100-200", label: "100 000 – 200 000 ₽" },
-  { value: "200-500", label: "200 000 – 500 000 ₽" },
-  { value: "500+", label: "От 500 000 ₽" },
-  { value: "discuss", label: "Обсудим" },
-];
-
-/**
- * Шаги заполнения брифа
- */
-const briefSteps = [
-  {
-    number: "01",
-    title: "Заполните бриф",
-    description: "Расскажите о проекте, целях и пожеланиях",
-  },
-  {
-    number: "02",
-    title: "Обсудим детали",
-    description: "Свяжемся в течение 2 часов для уточнений",
-  },
-  {
-    number: "03",
-    title: "Получите предложение",
-    description: "Подготовим персональное КП с ценами и сроками",
-  },
-];
-
-/**
  * Brief Page — страница брифа
  */
 export default function BriefContent() {
+  const t = useTranslations("pages.brief");
+
+  const steps = t.raw("steps") as Array<{ title: string; description: string }>;
+  const siteTypeOptions = (t.raw("siteTypeOptions") as string[]).map((label, i) => ({
+    value: i === 0 ? "" : ["expert", "ecommerce", "landing", "corporate", "other"][i - 1],
+    label,
+  }));
+  const goalOptions = (t.raw("goalOptions") as string[]).map((label, i) => ({
+    value: i === 0 ? "" : ["sales", "leads", "brand", "info", "other"][i - 1],
+    label,
+  }));
+  const timelineOptions = (t.raw("timelineOptions") as string[]).map((label, i) => ({
+    value: i === 0 ? "" : ["urgent", "normal", "relaxed", "flexible"][i - 1],
+    label,
+  }));
+  const budgetOptions = (t.raw("budgetOptions") as string[]).map((label, i) => ({
+    value: i === 0 ? "" : ["50-100", "100-200", "200-500", "500+", "discuss"][i - 1],
+    label,
+  }));
+
   return (
     <main>
       {/* Hero Section */}
@@ -85,14 +48,14 @@ export default function BriefContent() {
         <Container>
           <RevealOnScroll direction="up">
             <span className="text-caption text-[var(--color-text-muted)] mb-4 block">
-              Оставить заявку
+              {t("caption")}
             </span>
           </RevealOnScroll>
 
           <RevealOnScroll direction="up" delay={0.1}>
             <h1 className="mb-6">
               <BrokenText
-                text="БРИФ"
+                text={t("title")}
                 spaced
                 mixPattern={[1, 3]}
                 className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
@@ -102,8 +65,7 @@ export default function BriefContent() {
 
           <RevealOnScroll direction="up" delay={0.2}>
             <p className="text-body-lg text-[var(--color-text-secondary)] max-w-2xl">
-              Расскажите о вашем проекте — мы подготовим персональное
-              коммерческое предложение с точными сроками и стоимостью.
+              {t("description")}
             </p>
           </RevealOnScroll>
         </Container>
@@ -116,11 +78,11 @@ export default function BriefContent() {
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
             staggerDelay={0.1}
           >
-            {briefSteps.map((step) => (
-              <StaggerItem key={step.number}>
+            {steps.map((step, index) => (
+              <StaggerItem key={index}>
                 <div className="flex items-start gap-4">
                   <span className="text-h2 font-display font-bold text-[var(--color-line-dark)]">
-                    {step.number}
+                    {String(index + 1).padStart(2, "0")}
                   </span>
                   <div>
                     <h3 className="text-body-lg font-bold text-[var(--color-text-primary)] mb-1">
@@ -141,7 +103,12 @@ export default function BriefContent() {
       <section className="py-[var(--section-gap)] bg-[var(--color-background)]">
         <Container size="sm">
           <RevealOnScroll direction="up">
-            <BriefForm />
+            <BriefForm
+              siteTypeOptions={siteTypeOptions}
+              goalOptions={goalOptions}
+              timelineOptions={timelineOptions}
+              budgetOptions={budgetOptions}
+            />
           </RevealOnScroll>
         </Container>
       </section>
@@ -152,20 +119,19 @@ export default function BriefContent() {
           <div className="max-w-2xl mx-auto text-center">
             <RevealOnScroll direction="up">
               <h2 className="text-h3 font-display font-bold text-[var(--color-text-primary)] mb-4">
-                Предпочитаете общение напрямую?
+                {t("directContact")}
               </h2>
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.1}>
               <p className="text-body text-[var(--color-text-muted)] mb-8">
-                Свяжитесь с нами любым удобным способом —
-                мы всегда на связи и готовы обсудить ваш проект.
+                {t("directContactDescription")}
               </p>
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.2}>
               <p className="text-body-sm text-[var(--color-text-muted)]">
-                Напишите нам на{" "}
+                {t("directContactEmail")}{" "}
                 <a
                   href={`mailto:${CONTACT.email}`}
                   className="text-[var(--color-text-primary)] underline hover:no-underline"
@@ -184,7 +150,18 @@ export default function BriefContent() {
 /**
  * BriefForm — расширенная форма брифа
  */
-function BriefForm() {
+function BriefForm({
+  siteTypeOptions,
+  goalOptions,
+  timelineOptions,
+  budgetOptions,
+}: {
+  siteTypeOptions: Array<{ value: string; label: string }>;
+  goalOptions: Array<{ value: string; label: string }>;
+  timelineOptions: Array<{ value: string; label: string }>;
+  budgetOptions: Array<{ value: string; label: string }>;
+}) {
+  const t = useTranslations("pages.brief");
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [formStarted, setFormStarted] = useState(false);
@@ -236,17 +213,16 @@ function BriefForm() {
       });
 
       if (!response.ok) {
-        throw new Error("Ошибка отправки. Попробуйте позже.");
+        throw new Error("Server error");
       }
 
       setFormState("success");
       trackFormSubmit("brief");
       trackConversion("brief_form", "brief");
-    } catch (error) {
+    } catch {
       setFormState("error");
-      const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";
-      setErrorMessage(msg);
-      trackFormError("brief", msg);
+      setErrorMessage(t("errorTitle"));
+      trackFormError("brief", "submission_failed");
     }
   };
 
@@ -272,16 +248,16 @@ function BriefForm() {
             </svg>
           </div>
           <h3 className="text-h2 font-display font-bold text-[var(--color-text-primary)] mb-4">
-            Бриф отправлен!
+            {t("successTitle")}
           </h3>
           <p className="text-body text-[var(--color-text-muted)] mb-2">
-            Спасибо за заявку. Мы изучим ваш проект и свяжемся
+            {t("successText1")}
           </p>
           <p className="text-body text-[var(--color-text-muted)] mb-8">
-            в течение <strong>2 рабочих часов</strong>.
+            {t("successText2")}
           </p>
-          <Button variant="outline" size="md" as="a" href="/">
-            На главную
+          <Button variant="outline" size="md" as={Link} href="/">
+            {t("successHome")}
           </Button>
         </div>
       </div>
@@ -310,13 +286,13 @@ function BriefForm() {
             </svg>
           </div>
           <h3 className="text-h2 font-display font-bold text-red-600 mb-4">
-            Ошибка отправки
+            {t("errorTitle")}
           </h3>
           <p className="text-body text-[var(--color-text-muted)] mb-8">
             {errorMessage}
           </p>
           <Button variant="primary" size="md" onClick={() => setFormState("idle")}>
-            Попробовать снова
+            {t("errorRetry")}
           </Button>
         </div>
       </div>
@@ -329,7 +305,7 @@ function BriefForm() {
         {/* Section 1: О проекте */}
         <div>
           <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-6 pb-4 border-b border-[var(--color-line)]">
-            О проекте
+            {t("sectionProject")}
           </h3>
           <div className="space-y-6">
             <Controller
@@ -337,7 +313,7 @@ function BriefForm() {
               control={control}
               render={({ field }) => (
                 <Select
-                  label="Тип сайта"
+                  label={t("siteType")}
                   value={field.value}
                   onChange={field.onChange}
                   options={siteTypeOptions}
@@ -352,7 +328,7 @@ function BriefForm() {
               control={control}
               render={({ field }) => (
                 <Select
-                  label="Основная цель"
+                  label={t("goal")}
                   value={field.value}
                   onChange={field.onChange}
                   options={goalOptions}
@@ -368,7 +344,7 @@ function BriefForm() {
                 control={control}
                 render={({ field }) => (
                   <Select
-                    label="Сроки"
+                    label={t("timeline")}
                     value={field.value || ""}
                     onChange={field.onChange}
                     options={timelineOptions}
@@ -381,7 +357,7 @@ function BriefForm() {
                 control={control}
                 render={({ field }) => (
                   <Select
-                    label="Бюджет"
+                    label={t("budget")}
                     value={field.value || ""}
                     onChange={field.onChange}
                     options={budgetOptions}
@@ -391,10 +367,10 @@ function BriefForm() {
             </div>
 
             <Textarea
-              label="Референсы / конкуренты"
-              placeholder="Ссылки на сайты, которые вам нравятся, или сайты конкурентов..."
+              label={t("references")}
+              placeholder={t("referencesPlaceholder")}
               rows={3}
-              helperText="Необязательно, но поможет нам лучше понять ваши ожидания"
+              helperText={t("referencesHelper")}
               error={errors.references?.message}
               disabled={formState === "loading"}
               {...register("references")}
@@ -405,12 +381,12 @@ function BriefForm() {
         {/* Section 2: Контакты */}
         <div>
           <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-6 pb-4 border-b border-[var(--color-line)]">
-            Контактные данные
+            {t("sectionContacts")}
           </h3>
           <div className="space-y-6">
             <Input
-              label="Имя"
-              placeholder="Как к вам обращаться"
+              label={t("name")}
+              placeholder={t("namePlaceholder")}
               error={errors.name?.message}
               disabled={formState === "loading"}
               {...register("name")}
@@ -418,18 +394,18 @@ function BriefForm() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <Input
-                label="Email"
+                label={t("email")}
                 type="email"
-                placeholder="email@example.com"
+                placeholder={t("emailPlaceholder")}
                 error={errors.email?.message}
                 disabled={formState === "loading"}
                 {...register("email")}
               />
 
               <Input
-                label="Телефон"
+                label={t("phone")}
                 type="tel"
-                placeholder="+7 (___) ___-__-__"
+                placeholder={t("phonePlaceholder")}
                 error={errors.phone?.message}
                 disabled={formState === "loading"}
                 {...register("phone")}
@@ -437,9 +413,9 @@ function BriefForm() {
             </div>
 
             <Input
-              label="Telegram"
-              placeholder="@username"
-              helperText="Необязательно — для быстрой связи"
+              label={t("telegram")}
+              placeholder={t("telegramPlaceholder")}
+              helperText={t("telegramHelper")}
               error={errors.telegram?.message}
               disabled={formState === "loading"}
               {...register("telegram")}
@@ -450,11 +426,11 @@ function BriefForm() {
         {/* Section 3: Дополнительно */}
         <div>
           <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-6 pb-4 border-b border-[var(--color-line)]">
-            Дополнительно
+            {t("sectionAdditional")}
           </h3>
           <Textarea
-            label="Комментарий"
-            placeholder="Расскажите подробнее о проекте, особых пожеланиях или вопросах..."
+            label={t("comment")}
+            placeholder={t("commentPlaceholder")}
             rows={5}
             error={errors.comment?.message}
             disabled={formState === "loading"}
@@ -471,18 +447,17 @@ function BriefForm() {
             fullWidth
             loading={formState === "loading"}
           >
-            Отправить бриф
+            {t("submit")}
           </Button>
 
           <p className="text-caption text-[var(--color-text-muted)] text-center mt-4">
-            Нажимая кнопку, вы соглашаетесь с{" "}
-            <a href="/privacy" className="underline hover:no-underline">
-              политикой конфиденциальности
-            </a>
+            {t("privacy")}{" "}
+            <Link href="/privacy" className="underline hover:no-underline">
+              {t("privacyLink")}
+            </Link>
           </p>
         </div>
       </form>
     </div>
   );
 }
-

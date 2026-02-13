@@ -534,6 +534,20 @@
       "idealForTitle": "Ideal for",
       "comparisonCaption": "Comparison",
       "comparisonTitle": "PACKAGES",
+      "comparisonRows": [
+        { "label": "Number of pages", "expert": "Up to 7", "ecommerce": "Unlimited", "landing": "1" },
+        { "label": "Unique design", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Responsive (mobile)", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Product catalog", "expert": "—", "ecommerce": "✓", "landing": "—" },
+        { "label": "Online payments", "expert": "—", "ecommerce": "✓", "landing": "—" },
+        { "label": "Application form", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "CRM integration", "expert": "Optional", "ecommerce": "✓", "landing": "Optional" },
+        { "label": "Blog", "expert": "Optional", "ecommerce": "Optional", "landing": "—" },
+        { "label": "Basic SEO", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Analytics", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
+        { "label": "Timeline", "expert": "14–21 days", "ecommerce": "21–45 days", "landing": "7–14 days" },
+        { "label": "Support", "expert": "30 days", "ecommerce": "30 days", "landing": "14 days" }
+      ],
       "detailsButton": "Learn more",
       "formTitle": "DISCUSS PROJECT",
       "formSubtitle": "Not sure which package suits you? Tell us about your project — we'll suggest the best solution."
