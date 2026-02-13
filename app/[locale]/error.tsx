@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
@@ -16,8 +17,9 @@ export default function Error({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  const t = useTranslations("error");
+
   useEffect(() => {
-    // Log the error to an error reporting service
     console.error("Application error:", error);
   }, [error]);
 
@@ -56,7 +58,7 @@ export default function Error({
           {/* Title */}
           <h1 className="mb-4">
             <BrokenText
-              text="ОШИБКА"
+              text={t("heading")}
               spaced
               mixPattern={[2, 4]}
               className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
@@ -65,22 +67,21 @@ export default function Error({
 
           {/* Subtitle */}
           <h2 className="text-h3 font-display font-bold text-[var(--color-text-secondary)] mb-4">
-            Что-то пошло не так
+            {t("title")}
           </h2>
 
           {/* Description */}
           <p className="text-body-lg text-[var(--color-text-muted)] mb-8 max-w-md mx-auto">
-            Произошла непредвиденная ошибка. Попробуйте обновить страницу
-            или вернитесь на главную.
+            {t("description")}
           </p>
 
           {/* Actions */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="primary" size="lg" onClick={reset}>
-              Попробовать снова
+              {t("retry")}
             </Button>
             <Button variant="outline" size="lg" as={Link} href="/">
-              На главную
+              {t("home")}
             </Button>
           </div>
 
@@ -88,7 +89,7 @@ export default function Error({
           {process.env.NODE_ENV === "development" && error.message && (
             <div className="mt-12 pt-8 border-t border-[var(--color-line)]">
               <p className="text-caption text-[var(--color-text-muted)] uppercase tracking-wider mb-2">
-                Детали ошибки (только в режиме разработки)
+                {t("devDetails")}
               </p>
               <div className="p-4 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm text-left overflow-auto">
                 <code className="text-body-sm text-[var(--color-text-secondary)] break-all">
@@ -106,7 +107,7 @@ export default function Error({
           {/* Help Section */}
           <div className="mt-12 pt-8 border-t border-[var(--color-line)]">
             <p className="text-body-sm text-[var(--color-text-muted)] mb-4">
-              Если ошибка повторяется, свяжитесь с нами:
+              {t("helpText")}
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a

@@ -1,6 +1,7 @@
 "use client";
 
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
@@ -9,6 +10,8 @@ import { Button } from "@/components/ui/Button";
  * Not Found Page — страница 404
  */
 export default function NotFound() {
+  const t = useTranslations("notFound");
+
   return (
     <main className="min-h-[80vh] flex items-center justify-center bg-[var(--color-background)]">
       <Container>
@@ -25,54 +28,53 @@ export default function NotFound() {
 
           {/* Title */}
           <h1 className="text-h2 font-display font-bold text-[var(--color-text-primary)] mb-4">
-            Страница не найдена
+            {t("title")}
           </h1>
 
           {/* Description */}
           <p className="text-body-lg text-[var(--color-text-muted)] mb-8 max-w-md mx-auto">
-            Возможно, страница была удалена или вы перешли по неверной ссылке.
-            Проверьте адрес или вернитесь на главную.
+            {t("description")}
           </p>
 
           {/* Actions */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="primary" size="lg" as={Link} href="/">
-              На главную
+              {t("home")}
             </Button>
             <Button variant="outline" size="lg" as={Link} href="/contacts">
-              Связаться с нами
+              {t("contact")}
             </Button>
           </div>
 
           {/* Helpful Links */}
           <div className="mt-12 pt-8 border-t border-[var(--color-line)]">
             <p className="text-body-sm text-[var(--color-text-muted)] mb-4">
-              Возможно, вы искали:
+              {t("lookingFor")}
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link
                 href="/services"
                 className="text-body-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] underline hover:no-underline transition-colors"
               >
-                Услуги
+                {t("linkServices")}
               </Link>
               <Link
                 href="/cases"
                 className="text-body-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] underline hover:no-underline transition-colors"
               >
-                Кейсы
+                {t("linkCases")}
               </Link>
               <Link
                 href="/blog"
                 className="text-body-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] underline hover:no-underline transition-colors"
               >
-                Блог
+                {t("linkBlog")}
               </Link>
               <Link
                 href="/about"
                 className="text-body-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] underline hover:no-underline transition-colors"
               >
-                О нас
+                {t("linkAbout")}
               </Link>
             </div>
           </div>
