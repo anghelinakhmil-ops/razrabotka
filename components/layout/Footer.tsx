@@ -71,25 +71,15 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
                   Расскажите о вашем проекте, и мы предложим лучшее решение
                 </p>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  onClick={onCallbackClick}
-                  className="border-white text-white hover:bg-white hover:text-[var(--color-text-primary)]"
-                >
-                  Заказать звонок
-                </Button>
-                <Button
-                  as={Link}
-                  href="/brief"
-                  variant="ghost"
-                  size="lg"
-                  className="text-white hover:bg-white/10"
-                >
-                  Заполнить бриф
-                </Button>
-              </div>
+              <Button
+                as={Link}
+                href="/brief"
+                variant="outline"
+                size="lg"
+                className="border-white text-white hover:bg-white hover:text-[var(--color-text-primary)]"
+              >
+                Заполнить бриф
+              </Button>
             </div>
           </div>
         </div>
