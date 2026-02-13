@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { BrokenText } from "../ui/BrokenText";
 import { Button } from "../ui/Button";
 import { NavLink } from "./NavLink";
-import { NAV_ITEMS } from "@/lib/constants";
+import { NAV_ITEMS, CONTACT } from "@/lib/constants";
 
 interface HeaderProps {
   /** Открыто ли мобильное меню */
@@ -120,8 +120,23 @@ export function Header({
             </ul>
           </nav>
 
-          {/* Right side: Menu toggle */}
-          <div className="flex items-center">
+          {/* Right side: email + menu toggle */}
+          <div className="flex items-center gap-6">
+            {/* Email — desktop only */}
+            <a
+              href={`mailto:${CONTACT.email}`}
+              className={clsx(
+                "hidden lg:block",
+                "text-[13px] tracking-wide",
+                "transition-colors duration-300",
+                isMenuOpen
+                  ? "text-white/60 hover:text-white"
+                  : "text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]"
+              )}
+            >
+              {CONTACT.email}
+            </a>
+
             {/* Mobile menu toggle: "Меню" / "Закрити" */}
             <button
               type="button"
