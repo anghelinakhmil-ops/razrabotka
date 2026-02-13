@@ -1,10 +1,10 @@
 "use client";
 
 import { clsx } from "clsx";
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { BrokenText } from "../ui/BrokenText";
-import { Button } from "../ui/Button";
 import { NavLink } from "./NavLink";
 import { NAV_ITEMS, CONTACT } from "@/lib/constants";
 
@@ -27,8 +27,8 @@ interface HeaderProps {
  * Включает:
  * - Логотип (типографический, «ломаный» стиль)
  * - Навигация по центру (скрыта на mobile)
- * - CTA кнопка «Заказать звонок»
- * - Кнопка «Меню» / «Закрити» для мобильного меню
+ * - Email контакт
+ * - Кнопка «Меню» / «Закрыть» для мобильного меню
  * - Sticky с backdrop-blur при скролле
  */
 export function Header({
@@ -38,6 +38,7 @@ export function Header({
   onCallbackClick,
   className,
 }: HeaderProps) {
+  const t = useTranslations();
   const [isScrolled, setIsScrolled] = useState(false);
 
   // Track scroll position
@@ -108,12 +109,12 @@ export function Header({
           </Link>
 
           {/* Desktop Navigation — hidden when menu overlay is open */}
-          <nav className="hidden lg:block" aria-label="Основная навигация">
+          <nav className="hidden lg:block" aria-label={t("nav.home")}>
             <ul className="flex items-center gap-8">
               {NAV_ITEMS.map((item) => (
                 <li key={item.href}>
                   <NavLink href={item.href} exact={item.href === "/"}>
-                    {item.label}
+                    {t(`nav.${item.key}`)}
                   </NavLink>
                 </li>
               ))}
@@ -137,11 +138,11 @@ export function Header({
               {CONTACT.email}
             </a>
 
-            {/* Mobile menu toggle: "Меню" / "Закрити" */}
+            {/* Mobile menu toggle */}
             <button
               type="button"
               onClick={handleMenuToggle}
-              aria-label={isMenuOpen ? "Закрити меню" : "Відкрити меню"}
+              aria-label={isMenuOpen ? t("header.ariaCloseMenu") : t("header.ariaOpenMenu")}
               aria-expanded={isMenuOpen}
               className={clsx(
                 "lg:hidden",
@@ -155,7 +156,7 @@ export function Header({
                 "focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2"
               )}
             >
-              {isMenuOpen ? "Закрити" : "Меню"}
+              {isMenuOpen ? t("header.menuClose") : t("header.menuOpen")}
             </button>
           </div>
         </div>

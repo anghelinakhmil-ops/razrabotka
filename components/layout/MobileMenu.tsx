@@ -1,8 +1,9 @@
 "use client";
 
 import { clsx } from "clsx";
-import Link from "next/link";
 import { useEffect, useCallback, useRef } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { NAV_ITEMS, CONTACT } from "@/lib/constants";
 
 interface MobileMenuProps {
@@ -28,6 +29,7 @@ export function MobileMenu({
   onClose,
   onCallbackClick,
 }: MobileMenuProps) {
+  const t = useTranslations();
   const menuRef = useRef<HTMLDivElement>(null);
 
   // Handle Escape key
@@ -76,18 +78,12 @@ export function MobileMenu({
   // Close on nav click
   const handleNavClick = () => onClose();
 
-  // CTA click — close menu then open callback modal
-  const handleCtaClick = () => {
-    onClose();
-    onCallbackClick?.();
-  };
-
   return (
     <div
       ref={menuRef}
       role="dialog"
       aria-modal={isOpen}
-      aria-label="Мобильное меню"
+      aria-label={t("header.ariaOpenMenu")}
       aria-hidden={!isOpen}
       className={clsx(
         // Fullscreen overlay
@@ -104,7 +100,7 @@ export function MobileMenu({
       {/* Inner scroll container */}
       <div className="flex flex-col h-full overflow-y-auto pt-20 pb-8 px-6 sm:px-8">
         {/* Navigation — main content */}
-        <nav className="flex-1" aria-label="Мобильная навигация">
+        <nav className="flex-1" aria-label={t("nav.home")}>
           <ul className="space-y-1">
             {NAV_ITEMS.map((item, index) => (
               <li
@@ -129,7 +125,7 @@ export function MobileMenu({
                     transitionDelay: isOpen ? `${100 + index * 50}ms` : "0ms",
                   }}
                 >
-                  {item.label}
+                  {t(`nav.${item.key}`)}
                 </Link>
               </li>
             ))}

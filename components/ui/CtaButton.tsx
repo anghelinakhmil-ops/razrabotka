@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 
 interface CtaButtonProps {
@@ -18,7 +18,7 @@ interface CtaButtonProps {
  * CtaButton — CTA кнопка, ведущая на /brief
  */
 export function CtaButton({
-  children = "Обсудить проект",
+  children = "Discuss project",
   variant = "primary",
   size = "lg",
   className,

@@ -1,8 +1,9 @@
 "use client";
 
 import { clsx } from "clsx";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { BrokenText } from "../ui/BrokenText";
 import { Button } from "../ui/Button";
 import { NAV_ITEMS, LEGAL_LINKS, CONTACT, COMPANY_NAME } from "@/lib/constants";
@@ -20,6 +21,8 @@ interface FooterProps {
  * Полностью тёмный фон (как в референсе THE BRIDGE).
  */
 export function Footer({ onCallbackClick, className }: FooterProps) {
+  const t = useTranslations("footer");
+  const tNav = useTranslations("nav");
   const currentYear = new Date().getFullYear();
   const footerRef = useRef<HTMLElement>(null);
   const [footerHeight, setFooterHeight] = useState(0);
@@ -57,7 +60,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
               <div className="text-center lg:text-left">
                 <BrokenText
-                  text="ОБСУДИТЬ ПРОЕКТ"
+                  text={t("cta")}
                   spaced
                   className={clsx(
                     "text-[16px] sm:text-[32px] md:text-[40px] lg:text-[48px]",
@@ -68,7 +71,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
                   )}
                 />
                 <p className="text-[16px] lg:text-[18px] text-white/50 max-w-md">
-                  Расскажите о вашем проекте, и мы предложим лучшее решение
+                  {t("ctaSubtitle")}
                 </p>
               </div>
               <Button
@@ -78,7 +81,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
                 size="lg"
                 className="border-white text-white hover:bg-white hover:text-[var(--color-text-primary)]"
               >
-                Заполнить бриф
+                {t("ctaButton")}
               </Button>
             </div>
           </div>
@@ -102,8 +105,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
                 />
               </Link>
               <p className="text-[14px] text-white/40 leading-relaxed">
-                Создаём сайты под ключ для экспертов, e-commerce и бизнесов.
-                Premium-minimal дизайн, который работает на результат.
+                {t("description")}
               </p>
             </div>
 
@@ -115,9 +117,9 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
                 "text-white/60",
                 "mb-6"
               )}>
-                Навигация
+                {t("navTitle")}
               </h3>
-              <nav aria-label="Навигация в футере">
+              <nav aria-label={t("navTitle")}>
                 <ul className="space-y-3">
                   {NAV_ITEMS.map((item) => (
                     <li key={item.href}>
@@ -130,7 +132,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
                           "transition-colors duration-200"
                         )}
                       >
-                        {item.label}
+                        {tNav(item.key)}
                       </Link>
                     </li>
                   ))}
@@ -146,7 +148,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
                 "text-white/60",
                 "mb-6"
               )}>
-                Контакты
+                {t("contactsTitle")}
               </h3>
               <ul className="space-y-4">
                 <li>
@@ -173,7 +175,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
                 "text-white/60",
                 "mb-6"
               )}>
-                Информация
+                {t("legalTitle")}
               </h3>
               <ul className="space-y-3">
                 {LEGAL_LINKS.map((item) => (
@@ -187,7 +189,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
                         "transition-colors duration-200"
                       )}
                     >
-                      {item.label}
+                      {t(item.key)}
                     </Link>
                   </li>
                 ))}
@@ -201,14 +203,14 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
           <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-[13px] text-white/30">
-                &copy; {currentYear} {COMPANY_NAME}. Все права защищены.
+                &copy; {currentYear} {COMPANY_NAME}. {t("copyright")}
               </p>
               <p className="text-[13px] text-white/20">
-                Разработано с{" "}
-                <span className="text-white/40" aria-label="любовью">
+                {t("madeWith")}{" "}
+                <span className="text-white/40" aria-label="love">
                   &hearts;
                 </span>{" "}
-                в {COMPANY_NAME}
+                {t("madeIn")} {COMPANY_NAME}
               </p>
             </div>
           </div>

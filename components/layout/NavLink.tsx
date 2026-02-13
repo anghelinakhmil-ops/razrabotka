@@ -1,8 +1,7 @@
 "use client";
 
 import { clsx } from "clsx";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 
 interface NavLinkProps {
   /** URL ссылки */
@@ -20,14 +19,6 @@ interface NavLinkProps {
  *
  * Автоматически определяет активную страницу через usePathname
  * и применяет соответствующие стили.
- *
- * @example
- * // Обычная ссылка
- * <NavLink href="/about">Про нас</NavLink>
- *
- * @example
- * // Главная страница (exact match)
- * <NavLink href="/" exact>Главная</NavLink>
  */
 export function NavLink({
   href,

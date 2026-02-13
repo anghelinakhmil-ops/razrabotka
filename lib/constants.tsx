@@ -8,7 +8,7 @@
 // ─── Типы ───────────────────────────────────────────────
 
 export interface NavItem {
-  label: string;
+  key: string;
   href: string;
 }
 
@@ -28,16 +28,15 @@ export const CONTACT = {
 // ─── Навигация ──────────────────────────────────────────
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "Главная", href: "/" },
-  { label: "Про нас", href: "/about" },
-  { label: "Услуги", href: "/services" },
-  { label: "Кейсы", href: "/cases" },
-  { label: "Блог", href: "/blog" },
-  { label: "Контакты", href: "/contacts" },
+  { key: "home", href: "/" },
+  { key: "about", href: "/about" },
+  { key: "services", href: "/services" },
+  { key: "cases", href: "/cases" },
+  { key: "blog", href: "/blog" },
+  { key: "contacts", href: "/contacts" },
 ];
 
 export const LEGAL_LINKS: NavItem[] = [
-  { label: "Политика конфиденциальности", href: "/privacy" },
-  { label: "Условия использования", href: "/terms" },
+  { key: "privacyLink", href: "/privacy" },
+  { key: "termsLink", href: "/terms" },
 ];
-

@@ -346,7 +346,9 @@
     "legalTitle": "Information",
     "copyright": "All rights reserved.",
     "madeWith": "Made with",
-    "madeIn": "at"
+    "madeIn": "at",
+    "privacyLink": "Privacy Policy",
+    "termsLink": "Terms of Use"
   },
   "cookieConsent": {
     "text": "We use cookies for analytics and site improvement.",

@@ -1,7 +1,7 @@
 "use client";
 
 import { clsx } from "clsx";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { forwardRef } from "react";
 
 type ButtonVariant = "primary" | "secondary" | "ghost" | "outline" | "link";

@@ -346,7 +346,9 @@
     "legalTitle": "Informații",
     "copyright": "Toate drepturile rezervate.",
     "madeWith": "Realizat cu",
-    "madeIn": "la"
+    "madeIn": "la",
+    "privacyLink": "Politica de confidențialitate",
+    "termsLink": "Termeni și condiții"
   },
   "cookieConsent": {
     "text": "Folosim cookie-uri pentru analitică și îmbunătățirea site-ului.",
