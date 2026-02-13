@@ -206,15 +206,6 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
                     {CONTACT.email}
                   </a>
                 </li>
-                <li>
-                  <address className={clsx(
-                    "not-italic text-[14px]",
-                    "text-white/40",
-                    "leading-relaxed"
-                  )}>
-                    {CONTACT.address}
-                  </address>
-                </li>
               </ul>
             </div>
 

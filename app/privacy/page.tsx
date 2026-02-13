@@ -249,7 +249,6 @@ export default function PrivacyPage() {
                     {CONTACT.phone}
                   </a>
                 </li>
-                <li>Адрес: {CONTACT.address}</li>
               </ul>
             </PolicySection>
           </div>

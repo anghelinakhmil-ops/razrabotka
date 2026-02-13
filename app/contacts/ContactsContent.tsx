@@ -88,31 +88,10 @@ export default function ContactsContent() {
                   </ContactBlock>
                 </StaggerItem>
 
-                {/* Address */}
-                <StaggerItem>
-                  <ContactBlock
-                    number="03"
-                    title="Адрес"
-                    description="Офис для встреч"
-                  >
-                    <a
-                      href={CONTACT.mapUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-body-lg text-[var(--color-text-primary)] hover:text-[var(--color-text-secondary)] transition-colors"
-                    >
-                      {CONTACT.address}
-                      <span className="block text-body-sm text-[var(--color-text-muted)] mt-1">
-                        Открыть в Google Maps →
-                      </span>
-                    </a>
-                  </ContactBlock>
-                </StaggerItem>
-
                 {/* Working Hours */}
                 <StaggerItem>
                   <ContactBlock
-                    number="04"
+                    number="03"
                     title="Режим работы"
                     description="Время для связи"
                   >
@@ -161,38 +140,6 @@ export default function ContactsContent() {
             </div>
           </div>
         </Container>
-      </section>
-
-      {/* Map Section */}
-      <section className="bg-[var(--color-background-alt)]">
-        <RevealOnScroll direction="up">
-          <div className="relative w-full h-[400px] lg:h-[500px] bg-[var(--color-line)]">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.0!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIxLjAiTiAzN8KwMzcnMDIuMyJF!5e0!3m2!1sru!2sru!4v1700000000000"
-              width="100%"
-              height="100%"
-              style={{ border: 0, filter: "grayscale(100%) contrast(1.1)" }}
-              allowFullScreen={false}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Расположение офиса WebStudio на карте"
-              className="absolute inset-0"
-            />
-            {/* Fallback link */}
-            <noscript>
-              <div className="absolute inset-0 flex items-center justify-center bg-[var(--color-line)]">
-                <a
-                  href={CONTACT.mapUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-body-sm text-[var(--color-text-secondary)] underline hover:no-underline"
-                >
-                  Открыть карту в Google Maps
-                </a>
-              </div>
-            </noscript>
-          </div>
-        </RevealOnScroll>
       </section>
 
       {/* CTA Section */}

@@ -227,22 +227,21 @@ export default function TermsPage() {
                 <li>
                   Email:{" "}
                   <a
-                    href="mailto:hello@webstudio.dev"
+                    href="mailto:anghelinakhmil@gmail.com"
                     className="text-[var(--color-text-primary)] underline hover:no-underline"
                   >
-                    hello@webstudio.dev
+                    anghelinakhmil@gmail.com
                   </a>
                 </li>
                 <li>
                   Телефон:{" "}
                   <a
-                    href="tel:+79991234567"
+                    href="tel:+37376966746"
                     className="text-[var(--color-text-primary)] underline hover:no-underline"
                   >
-                    +7 (999) 123-45-67
+                    +373 76 966 746
                   </a>
                 </li>
-                <li>Адрес: Москва, ул. Примерная, д. 1, офис 100</li>
               </ul>
             </TermsSection>
           </div>
