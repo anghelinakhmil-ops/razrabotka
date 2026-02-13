@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const BASE_URL = "https://webstudio.dev";
+const BASE_URL = "https://nakoagency.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();

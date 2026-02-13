@@ -21,7 +21,7 @@ interface FullBleedImageProps {
  */
 export function FullBleedImage({
   src = "/images/fullbleed-workspace.jpg",
-  alt = "Рабочий процесс WebStudio",
+  alt = "Рабочий процесс NAKO Agency",
   overlayText,
 }: FullBleedImageProps) {
   const ref = useRef<HTMLDivElement>(null);

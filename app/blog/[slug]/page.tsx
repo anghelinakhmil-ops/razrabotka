@@ -44,7 +44,7 @@ const postsData: Record<string, BlogPostData> = {
     categoryLabel: "Разработка",
     date: "2026-01-20",
     readTime: "8 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
     toc: [
       { id: "intro", title: "Введение" },
       { id: "seo", title: "SEO из коробки" },
@@ -94,7 +94,7 @@ const postsData: Record<string, BlogPostData> = {
     categoryLabel: "Дизайн",
     date: "2026-01-12",
     readTime: "6 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
     toc: [
       { id: "hierarchy", title: "Визуальная иерархия" },
       { id: "cta", title: "Чёткий CTA" },
@@ -133,7 +133,7 @@ const postsData: Record<string, BlogPostData> = {
     categoryLabel: "Маркетинг",
     date: "2025-12-28",
     readTime: "10 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
     toc: [
       { id: "before-launch", title: "До запуска" },
       { id: "technical", title: "Техническое SEO" },
@@ -184,7 +184,7 @@ const postsData: Record<string, BlogPostData> = {
     categoryLabel: "Бизнес",
     date: "2025-12-15",
     readTime: "7 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
     toc: [
       { id: "costs", title: "Стоимость сайта" },
       { id: "traffic", title: "Источники трафика" },
@@ -222,7 +222,7 @@ const postsData: Record<string, BlogPostData> = {
     categoryLabel: "Разработка",
     date: "2025-11-25",
     readTime: "9 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
     toc: [
       { id: "tailwind-pros", title: "Плюсы Tailwind" },
       { id: "tailwind-cons", title: "Минусы Tailwind" },
@@ -266,7 +266,7 @@ const postsData: Record<string, BlogPostData> = {
     categoryLabel: "Дизайн",
     date: "2025-11-10",
     readTime: "5 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
     toc: [
       { id: "why", title: "Почему минимализм работает" },
       { id: "principles", title: "Принципы" },
@@ -299,7 +299,7 @@ const postsData: Record<string, BlogPostData> = {
     categoryLabel: "Разработка",
     date: "2025-10-20",
     readTime: "12 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
     toc: [
       { id: "cwv", title: "Core Web Vitals" },
       { id: "images", title: "Изображения" },
@@ -350,7 +350,7 @@ const postsData: Record<string, BlogPostData> = {
     categoryLabel: "Маркетинг",
     date: "2025-10-05",
     readTime: "8 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
     toc: [
       { id: "hero", title: "Hero-секция" },
       { id: "benefits", title: "Преимущества" },
@@ -405,11 +405,11 @@ export async function generateMetadata({
   const post = postsData[slug];
 
   if (!post) {
-    return { title: "Статья не найдена | WebStudio" };
+    return { title: "Статья не найдена | NAKO Agency" };
   }
 
   return {
-    title: `${post.title} | Блог WebStudio`,
+    title: `${post.title} | Блог NAKO Agency`,
     description: post.excerpt,
     openGraph: {
       title: post.title,

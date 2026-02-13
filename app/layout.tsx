@@ -24,10 +24,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://webstudio.dev"),
+  metadataBase: new URL("https://nakoagency.com"),
   title: {
-    default: "WebStudio | Разработка сайтов под ключ",
-    template: "%s | WebStudio",
+    default: "NAKO Agency | Разработка сайтов под ключ",
+    template: "%s | NAKO Agency",
   },
   description:
     "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, скорость, SEO.",
@@ -39,19 +39,19 @@ export const metadata: Metadata = {
     "лендинг",
     "интернет-магазин",
   ],
-  authors: [{ name: "WebStudio" }],
-  creator: "WebStudio",
+  authors: [{ name: "NAKO Agency" }],
+  creator: "NAKO Agency",
   openGraph: {
     type: "website",
     locale: "ru_RU",
-    siteName: "WebStudio",
-    title: "WebStudio | Разработка сайтов под ключ",
+    siteName: "NAKO Agency",
+    title: "NAKO Agency | Разработка сайтов под ключ",
     description:
       "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, скорость, SEO.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "WebStudio | Разработка сайтов под ключ",
+    title: "NAKO Agency | Разработка сайтов под ключ",
     description:
       "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, скорость, SEO.",
   },

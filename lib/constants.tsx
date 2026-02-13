@@ -22,8 +22,8 @@ export interface SocialLink {
 
 // ─── Компания ───────────────────────────────────────────
 
-export const COMPANY_NAME = "WebStudio";
-export const COMPANY_DOMAIN = "webstudio.dev";
+export const COMPANY_NAME = "NAKO Agency";
+export const COMPANY_DOMAIN = "nakoagency.com";
 
 // ─── Контактные данные ──────────────────────────────────
 

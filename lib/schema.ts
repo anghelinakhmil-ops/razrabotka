@@ -1,4 +1,4 @@
-const BASE_URL = "https://webstudio.dev";
+const BASE_URL = "https://nakoagency.com";
 
 /**
  * Organization schema — информация о компании
@@ -7,7 +7,7 @@ export function organizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "WebStudio",
+    name: "NAKO Agency",
     url: BASE_URL,
     logo: `${BASE_URL}/images/logo.png`,
     description:
@@ -28,13 +28,13 @@ export function webSiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "WebStudio",
+    name: "NAKO Agency",
     url: BASE_URL,
     description:
       "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, скорость, SEO.",
     publisher: {
       "@type": "Organization",
-      name: "WebStudio",
+      name: "NAKO Agency",
     },
   };
 }
@@ -89,7 +89,7 @@ export function articleSchema({
     },
     publisher: {
       "@type": "Organization",
-      name: "WebStudio",
+      name: "NAKO Agency",
       logo: {
         "@type": "ImageObject",
         url: `${BASE_URL}/images/logo.png`,
@@ -150,7 +150,7 @@ export function serviceSchema(
         description: service.description,
         provider: {
           "@type": "Organization",
-          name: "WebStudio",
+          name: "NAKO Agency",
         },
         ...(service.price && {
           offers: {

@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Бриф | WebStudio — Оставить заявку на разработку сайта",
+  title: "Бриф | NAKO Agency — Оставить заявку на разработку сайта",
   description:
     "Заполните бриф и получите персональное коммерческое предложение на разработку сайта. Ответим в течение 2 часов с точными сроками и стоимостью.",
   openGraph: {
-    title: "Бриф | WebStudio",
+    title: "Бриф | NAKO Agency",
     description:
       "Заполните бриф и получите персональное предложение на разработку сайта.",
     type: "website",

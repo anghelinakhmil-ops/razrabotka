@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Блог | WebStudio — Статьи о разработке и дизайне",
+  title: "Блог | NAKO Agency — Статьи о разработке и дизайне",
   description:
-    "Статьи о веб-разработке, дизайне, SEO и маркетинге. Практические советы от команды WebStudio.",
+    "Статьи о веб-разработке, дизайне, SEO и маркетинге. Практические советы от команды NAKO Agency.",
   openGraph: {
-    title: "Блог | WebStudio",
+    title: "Блог | NAKO Agency",
     description: "Статьи о веб-разработке, дизайне, SEO и маркетинге.",
     type: "website",
   },

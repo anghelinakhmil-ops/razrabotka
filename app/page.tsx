@@ -12,11 +12,11 @@ import FAQ from "@/components/sections/FAQ";
 import LeadFormSection from "@/components/sections/LeadFormSection";
 
 export const metadata: Metadata = {
-  title: "WebStudio — Разработка сайтов под ключ",
+  title: "NAKO Agency — Разработка сайтов под ключ",
   description:
     "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, высокая скорость, SEO-оптимизация. Конверсия от 3%.",
   openGraph: {
-    title: "WebStudio — Разработка сайтов под ключ",
+    title: "NAKO Agency — Разработка сайтов под ключ",
     description:
       "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, высокая скорость.",
   },
@@ -29,7 +29,7 @@ export default function Home() {
       <Benefits />
       <FullBleedImage
         src="/images/fullbleed-workspace.jpg"
-        alt="Рабочий процесс создания сайта в WebStudio"
+        alt="Рабочий процесс создания сайта в NAKO Agency"
       />
       <Metrics />
       <Services />

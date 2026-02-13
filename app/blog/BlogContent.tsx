@@ -40,7 +40,7 @@ const allPosts: BlogPost[] = [
     categoryLabel: "Разработка",
     date: "2026-01-20",
     readTime: "8 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
   },
   {
     slug: "conversion-design-principles",
@@ -51,7 +51,7 @@ const allPosts: BlogPost[] = [
     categoryLabel: "Дизайн",
     date: "2026-01-12",
     readTime: "6 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
   },
   {
     slug: "seo-for-new-websites",
@@ -62,7 +62,7 @@ const allPosts: BlogPost[] = [
     categoryLabel: "Маркетинг",
     date: "2025-12-28",
     readTime: "10 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
   },
   {
     slug: "expert-website-roi",
@@ -73,7 +73,7 @@ const allPosts: BlogPost[] = [
     categoryLabel: "Бизнес",
     date: "2025-12-15",
     readTime: "7 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
   },
   {
     slug: "tailwind-vs-css-modules",
@@ -84,7 +84,7 @@ const allPosts: BlogPost[] = [
     categoryLabel: "Разработка",
     date: "2025-11-25",
     readTime: "9 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
   },
   {
     slug: "minimalism-in-web-design",
@@ -95,7 +95,7 @@ const allPosts: BlogPost[] = [
     categoryLabel: "Дизайн",
     date: "2025-11-10",
     readTime: "5 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
   },
   {
     slug: "lighthouse-score-optimization",
@@ -106,7 +106,7 @@ const allPosts: BlogPost[] = [
     categoryLabel: "Разработка",
     date: "2025-10-20",
     readTime: "12 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
   },
   {
     slug: "landing-page-anatomy",
@@ -117,7 +117,7 @@ const allPosts: BlogPost[] = [
     categoryLabel: "Маркетинг",
     date: "2025-10-05",
     readTime: "8 мин",
-    author: "Команда WebStudio",
+    author: "Команда NAKO Agency",
   },
 ];
 

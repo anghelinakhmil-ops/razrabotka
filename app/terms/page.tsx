@@ -3,11 +3,11 @@ import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 
 export const metadata: Metadata = {
-  title: "Условия использования | WebStudio",
+  title: "Условия использования | NAKO Agency",
   description:
-    "Условия использования сайта WebStudio. Правила пользования сайтом, ограничения ответственности и порядок разрешения споров.",
+    "Условия использования сайта NAKO Agency. Правила пользования сайтом, ограничения ответственности и порядок разрешения споров.",
   openGraph: {
-    title: "Условия использования | WebStudio",
+    title: "Условия использования | NAKO Agency",
     description: "Условия использования сайта и правила пользования услугами.",
     type: "website",
   },
@@ -52,8 +52,8 @@ export default function TermsPage() {
             <TermsSection number="01" title="Общие положения">
               <p>
                 Настоящие Условия использования (далее — «Условия») регулируют
-                порядок использования сайта webstudio.dev (далее — «Сайт»),
-                принадлежащего WebStudio (далее — «Компания», «мы»).
+                порядок использования сайта nakoagency.com (далее — «Сайт»),
+                принадлежащего NAKO Agency (далее — «Компания», «мы»).
               </p>
               <p>
                 Используя Сайт, вы подтверждаете, что прочитали, поняли и согласны

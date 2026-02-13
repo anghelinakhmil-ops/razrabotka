@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://webstudio.dev/sitemap.xml",
+    sitemap: "https://nakoagency.com/sitemap.xml",
   };
 }

@@ -4,11 +4,11 @@ import { BrokenText } from "@/components/ui/BrokenText";
 import { CONTACT } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Политика конфиденциальности | WebStudio",
+  title: "Политика конфиденциальности | NAKO Agency",
   description:
-    "Политика конфиденциальности WebStudio. Информация о сборе, использовании и защите персональных данных пользователей.",
+    "Политика конфиденциальности NAKO Agency. Информация о сборе, использовании и защите персональных данных пользователей.",
   openGraph: {
-    title: "Политика конфиденциальности | WebStudio",
+    title: "Политика конфиденциальности | NAKO Agency",
     description: "Политика конфиденциальности и обработки персональных данных.",
     type: "website",
   },
@@ -54,7 +54,7 @@ export default function PrivacyPage() {
               <p>
                 Настоящая Политика конфиденциальности (далее — «Политика») определяет
                 порядок обработки и защиты персональных данных пользователей сайта
-                webstudio.dev (далее — «Сайт»), принадлежащего WebStudio (далее —
+                nakoagency.com (далее — «Сайт»), принадлежащего NAKO Agency (далее —
                 «Компания», «мы», «нас»).
               </p>
               <p>

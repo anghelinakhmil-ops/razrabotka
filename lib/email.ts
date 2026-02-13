@@ -16,12 +16,12 @@ const resend = process.env.RESEND_API_KEY
 /**
  * Email адрес для получения уведомлений
  */
-const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || "hello@webstudio.com";
+const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || "hello@nakoagency.com";
 
 /**
  * Email адрес отправителя
  */
-const FROM_EMAIL = process.env.FROM_EMAIL || "WebStudio <noreply@webstudio.com>";
+const FROM_EMAIL = process.env.FROM_EMAIL || "NAKO Agency <noreply@nakoagency.com>";
 
 /**
  * Типы заявок для email
@@ -231,7 +231,7 @@ function generateQuickLeadEmail(data: LeadEmailData): string {
     <tr>
       <td style="padding: 20px 30px; background-color: #f5f5f5; text-align: center;">
         <p style="margin: 0; color: #999999; font-size: 12px;">
-          WebStudio — Разработка сайтов под ключ
+          NAKO Agency — Разработка сайтов под ключ
         </p>
       </td>
     </tr>
@@ -375,7 +375,7 @@ function generateBriefEmail(data: LeadEmailData): string {
     <tr>
       <td style="padding: 20px 30px; background-color: #f5f5f5; text-align: center;">
         <p style="margin: 0; color: #999999; font-size: 12px;">
-          WebStudio — Разработка сайтов под ключ
+          NAKO Agency — Разработка сайтов под ключ
         </p>
       </td>
     </tr>
@@ -439,7 +439,7 @@ export async function sendLeadNotification(data: LeadEmailData): Promise<EmailRe
   }
 
   const typeName = getLeadTypeName(data.type);
-  const subject = `[WebStudio] ${typeName}: ${data.name || data.phone || data.email || "Новая заявка"}`;
+  const subject = `[NAKO Agency] ${typeName}: ${data.name || data.phone || data.email || "Новая заявка"}`;
 
   // Выбираем шаблон в зависимости от типа
   const html = data.type === "brief"

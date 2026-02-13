@@ -288,15 +288,15 @@ export function generateMetadata({
 
     if (!caseData) {
       return {
-        title: "Кейс не найден | WebStudio",
+        title: "Кейс не найден | NAKO Agency",
       };
     }
 
     return {
-      title: `${caseData.title} | Кейсы WebStudio`,
+      title: `${caseData.title} | Кейсы NAKO Agency`,
       description: caseData.description,
       openGraph: {
-        title: `${caseData.title} | WebStudio`,
+        title: `${caseData.title} | NAKO Agency`,
         description: caseData.description,
         type: "article",
       },

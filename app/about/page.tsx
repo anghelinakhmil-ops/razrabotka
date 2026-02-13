@@ -6,11 +6,11 @@ import { CtaButton } from "@/components/ui/CtaButton";
 import { RevealOnScroll, StaggerContainer, StaggerItem, ScrollScrubText } from "@/components/motion";
 
 export const metadata: Metadata = {
-  title: "О нас | WebStudio — Разработка сайтов под ключ",
+  title: "О нас | NAKO Agency — Разработка сайтов под ключ",
   description:
     "Веб-студия с фокусом на результат. Создаём сайты для экспертов, e-commerce и бизнеса. Узнайте о нашем подходе, ценностях и принципах работы.",
   openGraph: {
-    title: "О нас | WebStudio",
+    title: "О нас | NAKO Agency",
     description: "Веб-студия с фокусом на результат. Создаём сайты для экспертов, e-commerce и бизнеса.",
     type: "website",
   },

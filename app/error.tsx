@@ -110,13 +110,13 @@ export default function Error({
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="mailto:hello@webstudio.dev"
+                href="mailto:hello@nakoagency.com"
                 className="text-body-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] underline hover:no-underline transition-colors"
               >
-                hello@webstudio.dev
+                hello@nakoagency.com
               </a>
               <a
-                href="https://t.me/webstudio_dev"
+                href="https://t.me/nakoagency"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-body-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] underline hover:no-underline transition-colors"

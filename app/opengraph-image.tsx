@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "WebStudio — Разработка сайтов под ключ";
+export const alt = "NAKO Agency — Разработка сайтов под ключ";
 export const size = {
   width: 1200,
   height: 630,
@@ -49,7 +49,7 @@ export default async function Image() {
               letterSpacing: "0.1em",
             }}
           >
-            W E B S T U D I O
+            N A K O   A G E N C Y
           </span>
         </div>
 
