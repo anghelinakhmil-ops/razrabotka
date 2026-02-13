@@ -108,10 +108,8 @@ export function Hero({ onCtaClick, imageSrc }: HeroProps) {
           <Button
             variant="outline"
             size="lg"
-            onClick={() => {
-              trackCtaClick("hero", "Обсудить проект", "/");
-              onCtaClick?.();
-            }}
+            as="a"
+            href="/brief"
             className="border-white text-white hover:bg-white hover:text-[var(--color-text-primary)]"
           >
             Обсудить проект

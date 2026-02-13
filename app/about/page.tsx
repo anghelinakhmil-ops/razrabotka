@@ -365,7 +365,6 @@ function CTASection() {
               <CtaButton
                 variant="primary"
                 size="lg"
-                source="about_cta"
                 className="bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
               >
                 Обсудить проект

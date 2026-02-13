@@ -177,8 +177,8 @@ export function FAQ({ items = defaultFAQItems }: FAQProps) {
             <p className="text-body text-[var(--color-text-muted)] mb-6">
               Свяжитесь с нами — ответим в течение часа
             </p>
-            <Button variant="primary" size="lg" as="a" href="/contacts">
-              Связаться с нами
+            <Button variant="primary" size="lg" as="a" href="/brief">
+              Оставить заявку
             </Button>
           </div>
         </RevealOnScroll>

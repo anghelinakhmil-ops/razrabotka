@@ -131,7 +131,7 @@ export function Testimonials({ testimonials = defaultTestimonials }: Testimonial
 
         {/* CTA */}
         <div className="mt-12 lg:mt-16 text-center">
-          <CtaButton variant="primary" size="lg" source="testimonials_cta">
+          <CtaButton variant="primary" size="lg">
             Стать следующим довольным клиентом
           </CtaButton>
         </div>

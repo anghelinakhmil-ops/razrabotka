@@ -325,7 +325,6 @@ function PackageSection({
               <CtaButton
                 variant="primary"
                 size="lg"
-                source="services_cta"
                 className="hover-lift"
               >
                 Заказать {title.toLowerCase()}

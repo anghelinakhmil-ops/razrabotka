@@ -671,7 +671,7 @@ export default async function BlogPostPage({
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.2}>
-              <CtaButton variant="primary" size="lg" source="blog_detail_cta">
+              <CtaButton variant="primary" size="lg">
                 Обсудить проект
               </CtaButton>
             </RevealOnScroll>

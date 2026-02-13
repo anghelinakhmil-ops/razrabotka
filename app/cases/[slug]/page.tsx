@@ -718,7 +718,7 @@ function CTASection() {
           </RevealOnScroll>
 
           <RevealOnScroll direction="up" delay={0.2}>
-            <CtaButton variant="primary" size="lg" source="case_detail_cta">
+            <CtaButton variant="primary" size="lg">
               Обсудить проект
             </CtaButton>
           </RevealOnScroll>
