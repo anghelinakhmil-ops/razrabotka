@@ -120,31 +120,8 @@ export function Header({
             </ul>
           </nav>
 
-          {/* Right side: CTA + Menu toggle */}
-          <div className="flex items-center gap-4">
-            {/* CTA Button - hidden on mobile, hidden when menu open */}
-            {!isMenuOpen && (
-              <>
-                <Button
-                  variant="primary"
-                  size="sm"
-                  onClick={onCallbackClick}
-                  className="hidden sm:inline-flex lg:inline-flex"
-                >
-                  Заказать звонок
-                </Button>
-                {/* Compact CTA for mobile */}
-                <Button
-                  variant="primary"
-                  size="sm"
-                  onClick={onCallbackClick}
-                  className="sm:hidden px-3 text-[11px]"
-                >
-                  Звонок
-                </Button>
-              </>
-            )}
-
+          {/* Right side: Menu toggle */}
+          <div className="flex items-center">
             {/* Mobile menu toggle: "Меню" / "Закрити" */}
             <button
               type="button"
