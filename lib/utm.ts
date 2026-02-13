@@ -24,7 +24,7 @@ export interface UtmData {
   utm_content?: string;
 }
 
-const STORAGE_KEY = "webstudio_utm";
+const STORAGE_KEY = "nako_utm";
 
 /**
  * Захватить UTM-метки из текущего URL и сохранить в sessionStorage.

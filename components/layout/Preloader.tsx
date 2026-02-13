@@ -6,7 +6,7 @@ import { BrokenText } from "@/components/ui/BrokenText";
 import { ease, duration } from "@/lib/motion";
 
 /** Ключ для sessionStorage */
-const PRELOADER_SHOWN_KEY = "webstudio_preloader_shown";
+const PRELOADER_SHOWN_KEY = "nako_preloader_shown";
 
 interface PreloaderProps {
   /** Минимальная длительность показа (мс) */
@@ -229,7 +229,7 @@ export function Preloader({
               }}
             >
               <BrokenText
-                text="WEBSTUDIO"
+                text="NAKO"
                 spaced
                 as="div"
                 className="text-[var(--color-background)] text-2xl lg:text-4xl"

@@ -31,7 +31,7 @@ interface LettersFadeInProps {
  *
  * @example
  * <LettersFadeIn
- *   text="WEBSTUDIO"
+ *   text="NAKO"
  *   as="span"
  *   className="text-h2 font-display"
  *   staggerDelay={0.04}

@@ -101,7 +101,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
             <div className="lg:col-span-1">
               <Link href="/" className="inline-block mb-6">
                 <BrokenText
-                  text="WEBSTUDIO"
+                  text="NAKO"
                   spaced
                   className={clsx(
                     "text-[18px]",

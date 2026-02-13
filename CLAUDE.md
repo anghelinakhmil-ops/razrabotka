@@ -817,7 +817,7 @@ export const revealVariants = {
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Заголовок страницы | WebStudio',
+  title: 'Заголовок страницы | NAKO Agency',
   description: 'Описание страницы до 160 символов',
   openGraph: {
     title: 'Заголовок для соцсетей',

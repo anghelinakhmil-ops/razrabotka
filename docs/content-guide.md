@@ -1,6 +1,6 @@
 # Гайд по управлению контентом
 
-Руководство по добавлению и редактированию контента на сайте WebStudio.
+Руководство по добавлению и редактированию контента на сайте NAKO Agency.
 
 ---
 
@@ -24,7 +24,7 @@ title: "Заголовок статьи"
 description: "Краткое описание до 160 символов (для SEO)"
 date: "2026-02-06"
 category: "development"
-author: "WebStudio"
+author: "NAKO Agency"
 published: true
 featured: false
 readingTime: "5 мин"

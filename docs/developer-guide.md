@@ -1,6 +1,6 @@
 # Гайд для разработчика
 
-Техническая документация проекта WebStudio.
+Техническая документация проекта NAKO Agency.
 
 ---
 
@@ -324,7 +324,7 @@ cp .env.example .env.local
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Заголовок | WebStudio",
+  title: "Заголовок | NAKO Agency",
   description: "Описание до 160 символов",
   openGraph: {
     title: "OG Заголовок",

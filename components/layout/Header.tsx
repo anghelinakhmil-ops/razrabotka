@@ -94,7 +94,7 @@ export function Header({
             )}
           >
             <BrokenText
-              text="WEBSTUDIO"
+              text="NAKO"
               spaced
               className={clsx(
                 "text-[18px] lg:text-[22px]",

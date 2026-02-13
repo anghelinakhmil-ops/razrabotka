@@ -136,8 +136,8 @@ export const brokenTextPresets = {
   sites: { text: "САЙТЫ", spaced: true, mixPattern: [1] as number[] },
   /** "П O Д К Л Ю Ч" с заменой О→O */
   turnkey: { text: "ПОДКЛЮЧ", spaced: true, mixPattern: [1] as number[] },
-  /** "W E B S T U D I O" */
-  webstudio: { text: "WEBSTUDIO", spaced: true },
+  /** "N A K O" */
+  nako: { text: "NAKO", spaced: true },
   /** "Р A З Р А Б О Т К А" */
   development: { text: "РАЗРАБОТКА", spaced: true, mixPattern: [1, 5] as number[] },
 };
