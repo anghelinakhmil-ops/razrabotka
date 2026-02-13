@@ -1,6 +1,6 @@
 # TODO.md — Веб-студия: Разработка сайтов под ключ
 
-> **Последнее обновление:** 12.02.2026
+> **Последнее обновление:** 13.02.2026
 > **Референс:** [THE BRIDGE](https://www.thebridge.kyiv.ua)  
 > **Стиль:** Premium-minimal / Architectural
 
@@ -29,7 +29,8 @@
 | 17 | Аудит: приближение к референсу | 49/49 (100%) | ✅ |
 | 18 | Аудит: исправления (F0→F3) | 33/33 (100%) | ✅ |
 | 19 | Подготовка к рекламе | 10/10 (100%) | ✅ |
-| **ИТОГО** | | **938/938 (100%)** | ✅ |
+| 20 | i18n — Мультиязычность (en/ru/uk/ro) | 8/62 (13%) | ❌ |
+| **ИТОГО** | | **946/1000 (95%)** | 🟡 |
 
 **Легенда статусов:**
 - ✅ 100% — полностью выполнено
@@ -1530,6 +1531,109 @@
 
 ---
 
+# ФАЗА 20: i18n — Мультиязычность (en/ru/uk/ro) [0/62] ❌
+
+> **Библиотека:** next-intl
+> **Языки:** en (default), ru, uk, ro
+> **Маршрутизация:** `/{locale}/...` — всегда с prefix
+> **Переключатель:** Header (desktop) + MobileMenu (mobile)
+
+---
+
+## 20.1 Инфраструктура next-intl [8/8] ✅
+
+- [x] **i18n-01**: Установить `next-intl` (`npm install next-intl`)
+- [x] **i18n-02**: Создать `i18n/config.ts` — locales, defaultLocale, localeNames
+- [x] **i18n-03**: Создать `i18n/routing.ts` — defineRouting с localePrefix: "always"
+- [x] **i18n-04**: Создать `i18n/navigation.ts` — locale-aware Link, redirect, usePathname, useRouter
+- [x] **i18n-05**: Создать `i18n/request.ts` — getRequestConfig с динамическим импортом messages
+- [x] **i18n-06**: Создать `middleware.ts` — locale detection и routing
+- [x] **i18n-07**: Обновить `next.config.ts` — добавить createNextIntlPlugin
+- [x] **i18n-08**: Проверить `npm run build` — инфраструктура работает
+
+## 20.2 Реструктуризация app/ → app/[locale]/ [0/8] ❌
+
+- [ ] **i18n-09**: Создать `app/[locale]/layout.tsx` — locale layout с NextIntlClientProvider
+- [ ] **i18n-10**: Упростить `app/layout.tsx` — убрать metadata, lang (оставить fonts, body, globals.css)
+- [ ] **i18n-11**: Перенести `app/page.tsx` → `app/[locale]/page.tsx`
+- [ ] **i18n-12**: Перенести `app/about/` → `app/[locale]/about/`
+- [ ] **i18n-13**: Перенести `app/services/` → `app/[locale]/services/`
+- [ ] **i18n-14**: Перенести `app/cases/` → `app/[locale]/cases/` (включая [slug])
+- [ ] **i18n-15**: Перенести `app/blog/` → `app/[locale]/blog/` (включая [slug])
+- [ ] **i18n-16**: Перенести остальные страницы (contacts, brief, privacy, terms, error, not-found)
+
+## 20.3 Файлы переводов [0/4] ❌
+
+- [ ] **i18n-17**: Создать `messages/en.json` — полный English перевод (nav, header, hero, benefits, metrics, services, process, cases, testimonials, faq, leadForm, footer, pages, common, meta)
+- [ ] **i18n-18**: Создать `messages/ru.json` — Russian (из текущего hardcoded контента)
+- [ ] **i18n-19**: Создать `messages/uk.json` — Ukrainian
+- [ ] **i18n-20**: Создать `messages/ro.json` — Romanian
+
+## 20.4 Миграция Layout компонентов [0/5] ❌
+
+- [ ] **i18n-21**: Обновить `lib/constants.tsx` — NAV_ITEMS без label (только key + href)
+- [ ] **i18n-22**: Обновить `Header.tsx` — useTranslations, Link from i18n/navigation, labels из переводов
+- [ ] **i18n-23**: Обновить `MobileMenu.tsx` — useTranslations, Link from i18n/navigation
+- [ ] **i18n-24**: Обновить `Footer.tsx` — useTranslations, Link from i18n/navigation
+- [ ] **i18n-25**: Обновить `CtaButton.tsx` — Link from i18n/navigation
+
+## 20.5 Миграция секций главной (12 компонентов) [0/12] ❌
+
+- [ ] **i18n-26**: Hero.tsx — useTranslations("hero")
+- [ ] **i18n-27**: Benefits.tsx — useTranslations("benefits")
+- [ ] **i18n-28**: FullBleedImage.tsx — alt из переводов
+- [ ] **i18n-29**: Metrics.tsx — useTranslations("metrics")
+- [ ] **i18n-30**: Services.tsx — useTranslations("services")
+- [ ] **i18n-31**: Process.tsx — useTranslations("process")
+- [ ] **i18n-32**: CasesPreview.tsx — useTranslations("casesPreview")
+- [ ] **i18n-33**: Testimonials.tsx — useTranslations("testimonials")
+- [ ] **i18n-34**: TrustedBy.tsx — useTranslations("trustedBy")
+- [ ] **i18n-35**: FAQ.tsx — useTranslations("faq")
+- [ ] **i18n-36**: LeadFormSection.tsx — useTranslations("leadForm")
+- [ ] **i18n-37**: HeroVisual.tsx — alt из переводов
+
+## 20.6 Миграция внутренних страниц [0/8] ❌
+
+- [ ] **i18n-38**: About page — getTranslations("pages.about")
+- [ ] **i18n-39**: Services page — getTranslations("pages.services")
+- [ ] **i18n-40**: Contacts page + ContactsContent — useTranslations("pages.contacts")
+- [ ] **i18n-41**: Brief page + BriefContent — useTranslations("pages.brief")
+- [ ] **i18n-42**: Privacy page — getTranslations("pages.privacy")
+- [ ] **i18n-43**: Terms page — getTranslations("pages.terms")
+- [ ] **i18n-44**: Error page — useTranslations
+- [ ] **i18n-45**: Not-found page — useTranslations
+
+## 20.7 Миграция блога и кейсов [0/4] ❌
+
+- [ ] **i18n-46**: Blog listing (BlogContent.tsx) — карточки с переведёнными данными
+- [ ] **i18n-47**: Blog article (blog/[slug]/page.tsx) — контент из переводов по locale
+- [ ] **i18n-48**: Cases listing (CasesContent.tsx) — карточки с переведёнными данными
+- [ ] **i18n-49**: Case detail (cases/[slug]/page.tsx) — контент из переводов по locale
+
+## 20.8 Переключатель языка [0/3] ❌
+
+- [ ] **i18n-50**: Создать `components/ui/LanguageSwitcher.tsx` — текстовые кнопки EN|RU|UK|RO, сохраняет путь
+- [ ] **i18n-51**: Интегрировать LanguageSwitcher в Header.tsx (desktop)
+- [ ] **i18n-52**: Интегрировать LanguageSwitcher в MobileMenu.tsx (mobile)
+
+## 20.9 SEO для i18n [0/5] ❌
+
+- [ ] **i18n-53**: Locale-aware metadata в `app/[locale]/layout.tsx` (title, description, OG через getTranslations)
+- [ ] **i18n-54**: hreflang теги через alternates.languages
+- [ ] **i18n-55**: Обновить `sitemap.ts` — генерировать URL для каждого locale (×4)
+- [ ] **i18n-56**: generateStaticParams в `app/[locale]/layout.tsx` — все 4 локали
+- [ ] **i18n-57**: Locale-aware JSON-LD schema
+
+## 20.10 Финальная проверка [0/5] ❌
+
+- [ ] **i18n-58**: `npm run build` без ошибок
+- [ ] **i18n-59**: Все 44 маршрута (11 × 4) рендерятся корректно
+- [ ] **i18n-60**: Переключатель языка сохраняет путь на всех страницах
+- [ ] **i18n-61**: `/` редиректит на `/en`, `<html lang>` соответствует locale
+- [ ] **i18n-62**: Форматирование дат через useFormatter по locale
+
+---
+
 # 📌 Nice-to-have (после MVP) [0/24]
 
 ## Дополнительный функционал
@@ -1539,7 +1643,7 @@
 - [ ] Блок «Гарантия и поддержка»
 - [ ] Блок «Интеграции» (иконки)
 - [ ] Тёмная тема (dark mode)
-- [ ] Мультиязычность (ru/en)
+- [x] Мультиязычность (ru/en) → **Фаза 20** (en/ru/uk/ro)
 - [ ] Анимированный 3D элемент на Hero
 - [ ] Видео-презентация
 - [ ] Live chat виджет (Tawk.to, Crisp)
@@ -1586,6 +1690,7 @@
 | ДД.ММ.ГГГГ | Создание TODO.md v2.0 (716 задач) | — |
 | 12.02.2026 | Добавлена Фаза 17: Аудит vs THE BRIDGE (45 задач). Выполнено 13/45 | Claude |
 | 12.02.2026 | Добавлена Фаза 18: Аудит исправления F0→F3 (33 задачи) по результатам 3-pass аудита | Claude |
+| 13.02.2026 | Добавлена Фаза 20: i18n — Мультиязычность en/ru/uk/ro (62 задачи) | Claude |
 
 ---
 
