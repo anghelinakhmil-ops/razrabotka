@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { BrokenText } from "../ui/BrokenText";
 import { Button } from "../ui/Button";
-import { NAV_ITEMS, LEGAL_LINKS, SOCIAL_LINKS_FULL, CONTACT, COMPANY_NAME } from "@/lib/constants";
+import { NAV_ITEMS, LEGAL_LINKS, CONTACT, COMPANY_NAME } from "@/lib/constants";
 
 interface FooterProps {
   onCallbackClick?: () => void;
@@ -101,31 +101,10 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
                   )}
                 />
               </Link>
-              <p className="text-[14px] text-white/40 leading-relaxed mb-6">
+              <p className="text-[14px] text-white/40 leading-relaxed">
                 Создаём сайты под ключ для экспертов, e-commerce и бизнесов.
                 Premium-minimal дизайн, который работает на результат.
               </p>
-              <div className="flex items-center gap-3">
-                {SOCIAL_LINKS_FULL.map((social) => (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={social.label}
-                    className={clsx(
-                      "p-2",
-                      "text-white/40",
-                      "hover:text-white",
-                      "transition-colors duration-200",
-                      "focus-visible:outline-none",
-                      "focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-text-primary)]"
-                    )}
-                  >
-                    {social.icon}
-                  </a>
-                ))}
-              </div>
             </div>
 
             {/* Column 2: Navigation */}
@@ -172,24 +151,11 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
               <ul className="space-y-4">
                 <li>
                   <a
-                    href={`tel:${CONTACT.phoneRaw}`}
+                    href={`mailto:${CONTACT.email}`}
                     className={clsx(
                       "block text-[14px]",
                       "text-white",
                       "hover:text-white/60",
-                      "transition-colors duration-200"
-                    )}
-                  >
-                    {CONTACT.phone}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={`mailto:${CONTACT.email}`}
-                    className={clsx(
-                      "block text-[14px]",
-                      "text-white/40",
-                      "hover:text-white",
                       "transition-colors duration-200"
                     )}
                   >

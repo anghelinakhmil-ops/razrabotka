@@ -227,19 +227,10 @@ export default function TermsPage() {
                 <li>
                   Email:{" "}
                   <a
-                    href="mailto:anghelinakhmil@gmail.com"
+                    href="mailto:hello@nakoagency.com"
                     className="text-[var(--color-text-primary)] underline hover:no-underline"
                   >
-                    anghelinakhmil@gmail.com
-                  </a>
-                </li>
-                <li>
-                  Телефон:{" "}
-                  <a
-                    href="tel:+37376966746"
-                    className="text-[var(--color-text-primary)] underline hover:no-underline"
-                  >
-                    +373 76 966 746
+                    hello@nakoagency.com
                   </a>
                 </li>
               </ul>

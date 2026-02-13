@@ -3,8 +3,7 @@
 import { clsx } from "clsx";
 import Link from "next/link";
 import { useEffect, useCallback, useRef } from "react";
-import { Button } from "../ui/Button";
-import { NAV_ITEMS, SOCIAL_LINKS_COMPACT, CONTACT } from "@/lib/constants";
+import { NAV_ITEMS, CONTACT } from "@/lib/constants";
 
 interface MobileMenuProps {
   /** Открыто ли меню */
@@ -137,10 +136,10 @@ export function MobileMenu({
           </ul>
         </nav>
 
-        {/* CTA Button */}
+        {/* Contact info */}
         <div
           className={clsx(
-            "mt-8 transition-all duration-400 ease-out",
+            "mt-8 pt-8 border-t border-white/10 transition-all duration-400 ease-out",
             isOpen
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-4",
@@ -149,73 +148,13 @@ export function MobileMenu({
             transitionDelay: isOpen ? `${100 + NAV_ITEMS.length * 50}ms` : "0ms",
           }}
         >
-          <Button
-            variant="outline"
-            size="lg"
-            fullWidth
-            onClick={handleCtaClick}
-            tabIndex={isOpen ? 0 : -1}
-            className="border-white text-white hover:bg-white hover:text-[var(--color-text-primary)]"
-          >
-            Заказать звонок
-          </Button>
-        </div>
-
-        {/* Contact info */}
-        <div
-          className={clsx(
-            "mt-8 space-y-3 transition-all duration-400 ease-out",
-            isOpen
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-4",
-          )}
-          style={{
-            transitionDelay: isOpen ? `${150 + NAV_ITEMS.length * 50}ms` : "0ms",
-          }}
-        >
-          <a
-            href={`tel:${CONTACT.phoneRaw}`}
-            tabIndex={isOpen ? 0 : -1}
-            className="block text-[16px] text-white hover:text-white/60 transition-colors"
-          >
-            {CONTACT.phone}
-          </a>
           <a
             href={`mailto:${CONTACT.email}`}
             tabIndex={isOpen ? 0 : -1}
-            className="block text-[16px] text-white/50 hover:text-white transition-colors"
+            className="block text-[16px] text-white hover:text-white/60 transition-colors"
           >
             {CONTACT.email}
           </a>
-        </div>
-
-        {/* Social links */}
-        <div
-          className={clsx(
-            "mt-6 pt-6 border-t border-white/10 transition-all duration-400 ease-out",
-            isOpen
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-4",
-          )}
-          style={{
-            transitionDelay: isOpen ? `${200 + NAV_ITEMS.length * 50}ms` : "0ms",
-          }}
-        >
-          <div className="flex items-center gap-4">
-            {SOCIAL_LINKS_COMPACT.map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={social.label}
-                tabIndex={isOpen ? 0 : -1}
-                className="p-2 text-white/40 hover:text-white transition-colors"
-              >
-                {social.icon}
-              </a>
-            ))}
-          </div>
         </div>
       </div>
     </div>

@@ -115,14 +115,6 @@ export default function Error({
               >
                 hello@nakoagency.com
               </a>
-              <a
-                href="https://t.me/nakoagency"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-body-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] underline hover:no-underline transition-colors"
-              >
-                Telegram
-              </a>
             </div>
           </div>
         </div>

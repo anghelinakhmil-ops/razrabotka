@@ -203,10 +203,10 @@ export default function PrivacyPage() {
               <p>
                 Для реализации этих прав свяжитесь с нами по адресу{" "}
                 <a
-                  href={`mailto:${CONTACT.privacyEmail}`}
+                  href={`mailto:${CONTACT.email}`}
                   className="text-[var(--color-text-primary)] underline hover:no-underline"
                 >
-                  {CONTACT.privacyEmail}
+                  {CONTACT.email}
                 </a>
               </p>
             </PolicySection>
@@ -234,19 +234,10 @@ export default function PrivacyPage() {
                 <li>
                   Email:{" "}
                   <a
-                    href={`mailto:${CONTACT.privacyEmail}`}
+                    href={`mailto:${CONTACT.email}`}
                     className="text-[var(--color-text-primary)] underline hover:no-underline"
                   >
-                    {CONTACT.privacyEmail}
-                  </a>
-                </li>
-                <li>
-                  Телефон:{" "}
-                  <a
-                    href={`tel:${CONTACT.phoneRaw}`}
-                    className="text-[var(--color-text-primary)] underline hover:no-underline"
-                  >
-                    {CONTACT.phone}
+                    {CONTACT.email}
                   </a>
                 </li>
               </ul>

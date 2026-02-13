@@ -4,7 +4,7 @@ import ContactsContent from "./ContactsContent";
 export const metadata: Metadata = {
   title: "Контакты | NAKO Agency",
   description:
-    "Свяжитесь с NAKO Agency: телефон, email, Telegram, WhatsApp. Офис в Москве. Ответим в течение 2 часов.",
+    "Свяжитесь с NAKO Agency по email. Ответим в течение 2 часов.",
   openGraph: {
     title: "Контакты | NAKO Agency",
     description:

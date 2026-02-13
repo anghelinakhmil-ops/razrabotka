@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
 import { getUtmData } from "@/lib/utm";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
-import { CONTACT, MESSENGERS, SOCIAL_ICONS } from "@/lib/constants";
+import { CONTACT } from "@/lib/constants";
 import { contactFormSchema, type ContactFormData } from "@/lib/validation";
 import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
 
@@ -72,57 +72,20 @@ export default function ContactsContent() {
                   </ContactBlock>
                 </StaggerItem>
 
-                {/* Phone */}
+                {/* Response time */}
                 <StaggerItem>
                   <ContactBlock
                     number="02"
-                    title="Телефон"
-                    description="Звоните в рабочее время"
-                  >
-                    <a
-                      href={`tel:${CONTACT.phoneRaw}`}
-                      className="text-h4 font-display font-bold text-[var(--color-text-primary)] hover:text-[var(--color-text-secondary)] transition-colors"
-                    >
-                      {CONTACT.phone}
-                    </a>
-                  </ContactBlock>
-                </StaggerItem>
-
-                {/* Working Hours */}
-                <StaggerItem>
-                  <ContactBlock
-                    number="03"
-                    title="Режим работы"
-                    description="Время для связи"
+                    title="Время ответа"
+                    description="Мы на связи"
                   >
                     <p className="text-body-lg text-[var(--color-text-primary)]">
-                      {CONTACT.workingHours}
+                      В течение 2 часов
                     </p>
                     <p className="text-body-sm text-[var(--color-text-muted)] mt-1">
-                      Заявки обрабатываем в течение 2 часов
+                      Отвечаем на все заявки в рабочее время
                     </p>
                   </ContactBlock>
-                </StaggerItem>
-
-                {/* Social Links */}
-                <StaggerItem>
-                  <div className="pt-8 border-t border-[var(--color-line)]">
-                    <p className="text-caption text-[var(--color-text-muted)] uppercase tracking-wider mb-4">
-                      Мессенджеры и соцсети
-                    </p>
-                    <div className="flex flex-wrap gap-4">
-                      <SocialLink
-                        href={MESSENGERS.telegram.url}
-                        label="Telegram"
-                        icon={SOCIAL_ICONS.telegram("w-5 h-5")}
-                      />
-                      <SocialLink
-                        href={MESSENGERS.whatsapp.url}
-                        label="WhatsApp"
-                        icon={SOCIAL_ICONS.whatsapp("w-5 h-5")}
-                      />
-                    </div>
-                  </div>
                 </StaggerItem>
               </StaggerContainer>
             </div>
@@ -197,33 +160,6 @@ function ContactBlock({
         </div>
       </div>
     </div>
-  );
-}
-
-/**
- * SocialLink — ссылка на соцсеть
- */
-function SocialLink({
-  href,
-  label,
-  icon,
-}: {
-  href: string;
-  label: string;
-  icon: React.ReactNode;
-}) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-2 px-4 py-2 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm hover:border-[var(--color-line-dark)] hover:bg-[var(--color-line)] transition-colors"
-    >
-      {icon}
-      <span className="text-body-sm font-medium text-[var(--color-text-primary)]">
-        {label}
-      </span>
-    </a>
   );
 }
 

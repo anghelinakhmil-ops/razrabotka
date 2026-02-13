@@ -11,7 +11,7 @@ import { Textarea } from "@/components/ui/Textarea";
 import { getUtmData } from "@/lib/utm";
 import { Select } from "@/components/ui/Select";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
-import { CONTACT, MESSENGERS, SOCIAL_ICONS } from "@/lib/constants";
+import { CONTACT } from "@/lib/constants";
 import { briefFormSchema, type BriefFormData } from "@/lib/validation";
 import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
 
@@ -164,38 +164,8 @@ export default function BriefContent() {
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.2}>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href={MESSENGERS.telegram.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[var(--color-background)] border border-[var(--color-line)] rounded-sm hover:border-[var(--color-line-dark)] transition-colors"
-                >
-                  {SOCIAL_ICONS.telegram("w-5 h-5")}
-                  <span className="text-body-sm font-medium">Telegram</span>
-                </a>
-                <a
-                  href={MESSENGERS.whatsapp.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[var(--color-background)] border border-[var(--color-line)] rounded-sm hover:border-[var(--color-line-dark)] transition-colors"
-                >
-                  {SOCIAL_ICONS.whatsapp("w-5 h-5")}
-                  <span className="text-body-sm font-medium">WhatsApp</span>
-                </a>
-                <a
-                  href={`tel:${CONTACT.phoneRaw}`}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[var(--color-background)] border border-[var(--color-line)] rounded-sm hover:border-[var(--color-line-dark)] transition-colors"
-                >
-                  {SOCIAL_ICONS.phone("w-5 h-5")}
-                  <span className="text-body-sm font-medium">Позвонить</span>
-                </a>
-              </div>
-            </RevealOnScroll>
-
-            <RevealOnScroll direction="up" delay={0.3}>
-              <p className="text-body-sm text-[var(--color-text-muted)] mt-8">
-                Или напишите на{" "}
+              <p className="text-body-sm text-[var(--color-text-muted)]">
+                Напишите нам на{" "}
                 <a
                   href={`mailto:${CONTACT.email}`}
                   className="text-[var(--color-text-primary)] underline hover:no-underline"
