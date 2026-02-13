@@ -29,8 +29,8 @@
 | 17 | Аудит: приближение к референсу | 49/49 (100%) | ✅ |
 | 18 | Аудит: исправления (F0→F3) | 33/33 (100%) | ✅ |
 | 19 | Подготовка к рекламе | 10/10 (100%) | ✅ |
-| 20 | i18n — Мультиязычность (en/ru/uk/ro) | 37/62 (60%) | 🟡 |
-| **ИТОГО** | | **975/1000 (98%)** | 🟡 |
+| 20 | i18n — Мультиязычность (en/ru/uk/ro) | 45/62 (73%) | 🟡 |
+| **ИТОГО** | | **983/1000 (98%)** | 🟡 |
 
 **Легенда статусов:**
 - ✅ 100% — полностью выполнено
@@ -1531,7 +1531,7 @@
 
 ---
 
-# ФАЗА 20: i18n — Мультиязычность (en/ru/uk/ro) [0/62] ❌
+# ФАЗА 20: i18n — Мультиязычность (en/ru/uk/ro) [45/62] 🟡
 
 > **Библиотека:** next-intl
 > **Языки:** en (default), ru, uk, ro
@@ -1592,16 +1592,16 @@
 - [x] **i18n-36**: LeadFormSection.tsx — useTranslations("leadForm")
 - [x] **i18n-37**: HeroVisual.tsx — alt из переводов
 
-## 20.6 Миграция внутренних страниц [0/8] ❌
+## 20.6 Миграция внутренних страниц [8/8] ✅
 
-- [ ] **i18n-38**: About page — getTranslations("pages.about")
-- [ ] **i18n-39**: Services page — getTranslations("pages.services")
-- [ ] **i18n-40**: Contacts page + ContactsContent — useTranslations("pages.contacts")
-- [ ] **i18n-41**: Brief page + BriefContent — useTranslations("pages.brief")
-- [ ] **i18n-42**: Privacy page — getTranslations("pages.privacy")
-- [ ] **i18n-43**: Terms page — getTranslations("pages.terms")
-- [ ] **i18n-44**: Error page — useTranslations
-- [ ] **i18n-45**: Not-found page — useTranslations
+- [x] **i18n-38**: About page — getTranslations("pages.about")
+- [x] **i18n-39**: Services page — getTranslations("pages.services")
+- [x] **i18n-40**: Contacts page + ContactsContent — useTranslations("pages.contacts")
+- [x] **i18n-41**: Brief page + BriefContent — useTranslations("pages.brief")
+- [x] **i18n-42**: Privacy page — getTranslations("pages.privacy")
+- [x] **i18n-43**: Terms page — getTranslations("pages.terms")
+- [x] **i18n-44**: Error page — useTranslations("error")
+- [x] **i18n-45**: Not-found page — useTranslations("notFound")
 
 ## 20.7 Миграция блога и кейсов [0/4] ❌
 
