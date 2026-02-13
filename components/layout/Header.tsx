@@ -9,8 +9,12 @@ import { NavLink } from "./NavLink";
 import { NAV_ITEMS } from "@/lib/constants";
 
 interface HeaderProps {
+  /** Открыто ли мобильное меню */
+  isMenuOpen?: boolean;
   /** Callback для открытия мобильного меню */
   onMenuOpen?: () => void;
+  /** Callback для закрытия мобильного меню */
+  onMenuClose?: () => void;
   /** Callback для открытия модала "Заказать звонок" */
   onCallbackClick?: () => void;
   /** Дополнительные CSS классы */
@@ -24,10 +28,13 @@ interface HeaderProps {
  * - Логотип (типографический, «ломаный» стиль)
  * - Навигация по центру (скрыта на mobile)
  * - CTA кнопка «Заказать звонок»
+ * - Кнопка «Меню» / «Закрити» для мобильного меню
  * - Sticky с backdrop-blur при скролле
  */
 export function Header({
+  isMenuOpen = false,
   onMenuOpen,
+  onMenuClose,
   onCallbackClick,
   className,
 }: HeaderProps) {
@@ -45,26 +52,36 @@ export function Header({
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleMenuToggle = () => {
+    if (isMenuOpen) {
+      onMenuClose?.();
+    } else {
+      onMenuOpen?.();
+    }
+  };
+
   return (
     <header
       className={clsx(
         "fixed top-0 left-0 right-0",
         "z-50",
         "transition-all duration-300",
-        // Background & blur on scroll — no shadow, subtle effect
-        isScrolled
-          ? "bg-[var(--color-background)]/90 backdrop-blur-md"
-          : "bg-transparent",
+        // When menu is open — transparent bg on dark overlay
+        isMenuOpen
+          ? "bg-transparent"
+          : isScrolled
+            ? "bg-[var(--color-background)]/90 backdrop-blur-md"
+            : "bg-transparent",
         className
       )}
     >
-      {/* Main header — single row, no contact bar */}
+      {/* Main header — single row */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div
           className={clsx(
             "flex items-center justify-between",
             "transition-all duration-300",
-            isScrolled ? "h-16 lg:h-16" : "h-[72px] lg:h-20"
+            isScrolled && !isMenuOpen ? "h-16 lg:h-16" : "h-[72px] lg:h-20"
           )}
         >
           {/* Logo */}
@@ -82,12 +99,15 @@ export function Header({
               className={clsx(
                 "text-[18px] lg:text-[22px]",
                 "font-bold",
-                "tracking-[0.15em]"
+                "tracking-[0.15em]",
+                // White text when menu is open (dark bg)
+                "transition-colors duration-300",
+                isMenuOpen ? "text-white" : ""
               )}
             />
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation — hidden when menu overlay is open */}
           <nav className="hidden lg:block" aria-label="Основная навигация">
             <ul className="flex items-center gap-8">
               {NAV_ITEMS.map((item) => (
@@ -100,56 +120,50 @@ export function Header({
             </ul>
           </nav>
 
-          {/* Right side: CTA + Mobile menu button */}
+          {/* Right side: CTA + Menu toggle */}
           <div className="flex items-center gap-4">
-            {/* CTA Button - hidden on mobile */}
-            <Button
-              variant="primary"
-              size="sm"
-              onClick={onCallbackClick}
-              className="hidden sm:inline-flex"
-            >
-              Заказать звонок
-            </Button>
-            {/* Compact CTA for mobile */}
-            <Button
-              variant="primary"
-              size="sm"
-              onClick={onCallbackClick}
-              className="sm:hidden px-3 text-[11px]"
-            >
-              Звонок
-            </Button>
+            {/* CTA Button - hidden on mobile, hidden when menu open */}
+            {!isMenuOpen && (
+              <>
+                <Button
+                  variant="primary"
+                  size="sm"
+                  onClick={onCallbackClick}
+                  className="hidden sm:inline-flex lg:inline-flex"
+                >
+                  Заказать звонок
+                </Button>
+                {/* Compact CTA for mobile */}
+                <Button
+                  variant="primary"
+                  size="sm"
+                  onClick={onCallbackClick}
+                  className="sm:hidden px-3 text-[11px]"
+                >
+                  Звонок
+                </Button>
+              </>
+            )}
 
-            {/* Mobile menu button */}
+            {/* Mobile menu toggle: "Меню" / "Закрити" */}
             <button
               type="button"
-              onClick={onMenuOpen}
-              aria-label="Открыть меню"
+              onClick={handleMenuToggle}
+              aria-label={isMenuOpen ? "Закрити меню" : "Відкрити меню"}
+              aria-expanded={isMenuOpen}
               className={clsx(
                 "lg:hidden",
-                "p-2 -mr-2",
-                "text-[var(--color-text-primary)]",
-                "transition-colors duration-200",
-                "hover:text-[var(--color-text-muted)]",
+                "py-2 px-1",
+                "text-[14px] font-medium uppercase tracking-[0.05em]",
+                "transition-colors duration-300",
+                isMenuOpen
+                  ? "text-white hover:text-white/60"
+                  : "text-[var(--color-text-primary)] hover:text-[var(--color-text-muted)]",
                 "focus-visible:outline-none",
                 "focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2"
               )}
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+              {isMenuOpen ? "Закрити" : "Меню"}
             </button>
           </div>
         </div>

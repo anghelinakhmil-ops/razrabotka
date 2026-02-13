@@ -55,7 +55,9 @@ export function LayoutClient({ children }: LayoutClientProps) {
 
       {/* Header */}
       <Header
+        isMenuOpen={isMobileMenuOpen}
         onMenuOpen={handleMenuOpen}
+        onMenuClose={handleMenuClose}
         onCallbackClick={handleCallbackClick}
       />
 
