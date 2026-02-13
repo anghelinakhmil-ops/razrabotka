@@ -29,8 +29,8 @@
 | 17 | Аудит: приближение к референсу | 49/49 (100%) | ✅ |
 | 18 | Аудит: исправления (F0→F3) | 33/33 (100%) | ✅ |
 | 19 | Подготовка к рекламе | 10/10 (100%) | ✅ |
-| 20 | i18n — Мультиязычность (en/ru/uk/ro) | 25/62 (40%) | ❌ |
-| **ИТОГО** | | **963/1000 (96%)** | 🟡 |
+| 20 | i18n — Мультиязычность (en/ru/uk/ro) | 37/62 (60%) | 🟡 |
+| **ИТОГО** | | **975/1000 (98%)** | 🟡 |
 
 **Легенда статусов:**
 - ✅ 100% — полностью выполнено
@@ -1577,20 +1577,20 @@
 - [x] **i18n-24**: Обновить `Footer.tsx` — useTranslations, Link from i18n/navigation
 - [x] **i18n-25**: Обновить `CtaButton.tsx` — Link from i18n/navigation
 
-## 20.5 Миграция секций главной (12 компонентов) [0/12] ❌
+## 20.5 Миграция секций главной (12 компонентов) [12/12] ✅
 
-- [ ] **i18n-26**: Hero.tsx — useTranslations("hero")
-- [ ] **i18n-27**: Benefits.tsx — useTranslations("benefits")
-- [ ] **i18n-28**: FullBleedImage.tsx — alt из переводов
-- [ ] **i18n-29**: Metrics.tsx — useTranslations("metrics")
-- [ ] **i18n-30**: Services.tsx — useTranslations("services")
-- [ ] **i18n-31**: Process.tsx — useTranslations("process")
-- [ ] **i18n-32**: CasesPreview.tsx — useTranslations("casesPreview")
-- [ ] **i18n-33**: Testimonials.tsx — useTranslations("testimonials")
-- [ ] **i18n-34**: TrustedBy.tsx — useTranslations("trustedBy")
-- [ ] **i18n-35**: FAQ.tsx — useTranslations("faq")
-- [ ] **i18n-36**: LeadFormSection.tsx — useTranslations("leadForm")
-- [ ] **i18n-37**: HeroVisual.tsx — alt из переводов
+- [x] **i18n-26**: Hero.tsx — useTranslations("hero")
+- [x] **i18n-27**: Benefits.tsx — useTranslations("benefits")
+- [x] **i18n-28**: FullBleedImage.tsx — alt из переводов
+- [x] **i18n-29**: Metrics.tsx — useTranslations("metrics")
+- [x] **i18n-30**: Services.tsx — useTranslations("services")
+- [x] **i18n-31**: Process.tsx — useTranslations("process")
+- [x] **i18n-32**: CasesPreview.tsx — useTranslations("casesPreview")
+- [x] **i18n-33**: Testimonials.tsx — useTranslations("testimonials")
+- [x] **i18n-34**: TrustedBy.tsx — useTranslations("trustedBy")
+- [x] **i18n-35**: FAQ.tsx — useTranslations("faq")
+- [x] **i18n-36**: LeadFormSection.tsx — useTranslations("leadForm")
+- [x] **i18n-37**: HeroVisual.tsx — alt из переводов
 
 ## 20.6 Миграция внутренних страниц [0/8] ❌
 

@@ -3,6 +3,7 @@
 import { ReactNode } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { RevealOnScroll, StaggerContainer, StaggerItem, SplitTextReveal, ScrollScrubText } from "@/components/motion";
@@ -36,62 +37,6 @@ interface BenefitsProps {
 }
 
 /**
- * Преимущества по умолчанию
- */
-const defaultBenefits: BenefitData[] = [
-  {
-    number: "01",
-    title: "СТРАТЕГИЯ",
-    subtitle: "Стратегия и структура",
-    mixPattern: [3, 6], // СТР A ТЕГ I Я
-    description:
-      "Начинаем с глубокого анализа вашего бизнеса, целевой аудитории и конкурентов. Разрабатываем структуру сайта, которая ведёт посетителя к целевому действию.",
-    imageSrc: "/images/benefits/benefit-01-strategy.jpg",
-    imageAlt: "Стратегическое планирование структуры сайта",
-  },
-  {
-    number: "02",
-    title: "ДИЗАЙН",
-    subtitle: "Дизайн «премиум-минимал»",
-    mixPattern: [1, 4], // Д I ЗА Y Н
-    description:
-      "Создаём уникальный визуальный стиль без шаблонов. Много воздуха, чёткая типографика, продуманная анимация — сайт, который выделяется и запоминается.",
-    imageSrc: "/images/benefits/benefit-02-design.jpg",
-    imageAlt: "Премиум-минимал дизайн интерфейса",
-  },
-  {
-    number: "03",
-    title: "СКОРОСТЬ",
-    subtitle: "Скорость и SEO",
-    mixPattern: [2, 5], // СК O РО C ТЬ
-    description:
-      "Оптимизируем каждую страницу для Core Web Vitals. Быстрая загрузка, правильная семантика, техническое SEO — ваш сайт будет любить и Google, и пользователи.",
-    imageSrc: "/images/benefits/benefit-03-speed.jpg",
-    imageAlt: "Высокая скорость загрузки и оптимизация",
-  },
-  {
-    number: "04",
-    title: "ИНТЕГРАЦИИ",
-    subtitle: "Интеграции (оплаты/CRM/Telegram)",
-    mixPattern: [0, 5], // I НТЕГР A ЦИИ
-    description:
-      "Подключаем платёжные системы, CRM, аналитику, Telegram-уведомления и любые другие сервисы, необходимые для автоматизации вашего бизнеса.",
-    imageSrc: "/images/benefits/benefit-04-integrations.jpg",
-    imageAlt: "Интеграции с платёжными системами и CRM",
-  },
-  {
-    number: "05",
-    title: "ПОДДЕРЖКА",
-    subtitle: "Поддержка после запуска",
-    mixPattern: [1, 6], // П O ДДЕРЖ K А
-    description:
-      "Не бросаем после сдачи проекта. Техническая поддержка, мелкие доработки, консультации — мы рядом, когда вам нужно.",
-    imageSrc: "/images/benefits/benefit-05-support.jpg",
-    imageAlt: "Команда поддержки всегда на связи",
-  },
-];
-
-/**
  * Benefits — секция преимуществ
  *
  * Стиль: Premium-minimal / Architectural (референс: THE BRIDGE)
@@ -100,7 +45,26 @@ const defaultBenefits: BenefitData[] = [
  * - Крупные номера как «каркас»
  * - Stagger анимации
  */
-export function Benefits({ benefits = defaultBenefits }: BenefitsProps) {
+export function Benefits({ benefits }: BenefitsProps) {
+  const t = useTranslations("benefits");
+
+  const IMAGE_SLUGS = ["strategy", "design", "speed", "integrations", "support"];
+  const MIX_PATTERNS: (number[] | undefined)[] = [[3, 6], [1, 4], [2, 5], [0, 5], [1, 6]];
+
+  const translatedBenefits: BenefitData[] = (t.raw("items") as Array<{
+    number: string; title: string; subtitle: string; description: string; imageAlt: string;
+  }>).map((item, i) => ({
+    number: item.number,
+    title: item.title,
+    subtitle: item.subtitle,
+    description: item.description,
+    imageAlt: item.imageAlt,
+    imageSrc: `/images/benefits/benefit-${item.number}-${IMAGE_SLUGS[i]}.jpg`,
+    mixPattern: MIX_PATTERNS[i],
+  }));
+
+  const items = benefits || translatedBenefits;
+
   return (
     <section
       id="benefits"
@@ -111,7 +75,7 @@ export function Benefits({ benefits = defaultBenefits }: BenefitsProps) {
         <div className="mb-20 lg:mb-32">
           <div className="flex flex-col gap-4">
             <SplitTextReveal
-              text="Почему мы"
+              text={t("caption")}
               as="span"
               className="text-caption text-[var(--color-text-muted)]"
               direction="up"
@@ -124,7 +88,7 @@ export function Benefits({ benefits = defaultBenefits }: BenefitsProps) {
               transition={{ duration: duration.slow, ease, delay: 0.3 }}
             >
               <BrokenText
-                text="ПРЕИМУЩЕСТВА"
+                text={t("title")}
                 spaced
                 mixPattern={[4, 8]}
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
@@ -135,7 +99,7 @@ export function Benefits({ benefits = defaultBenefits }: BenefitsProps) {
 
         {/* Список преимуществ */}
         <div className="flex flex-col gap-16 sm:gap-24 lg:gap-40">
-          {benefits.map((benefit, index) => (
+          {items.map((benefit, index) => (
             <BenefitItem
               key={benefit.number}
               {...benefit}

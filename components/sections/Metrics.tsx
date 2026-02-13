@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
@@ -26,30 +27,6 @@ interface MetricsProps {
 }
 
 /**
- * Метрики по умолчанию
- */
-const defaultMetrics: MetricData[] = [
-  {
-    value: "7–21",
-    label: "день до запуска",
-  },
-  {
-    value: "30–120",
-    label: "к конверсии",
-    prefix: "+",
-    suffix: "%",
-  },
-  {
-    value: "90+",
-    label: "Lighthouse Score",
-  },
-  {
-    value: "0",
-    label: "шаблонности",
-  },
-];
-
-/**
  * Metrics — секция с ключевыми метриками
  *
  * Стиль: Premium-minimal / Architectural
@@ -58,7 +35,20 @@ const defaultMetrics: MetricData[] = [
  * - Горизонтальная сетка на desktop
  * - Вертикальные разделители
  */
-export function Metrics({ metrics = defaultMetrics }: MetricsProps) {
+export function Metrics({ metrics }: MetricsProps) {
+  const t = useTranslations("metrics");
+
+  const translatedMetrics: MetricData[] = (t.raw("items") as Array<{
+    value: string; label: string; prefix?: string; suffix?: string;
+  }>).map((item) => ({
+    value: item.value,
+    label: item.label,
+    prefix: item.prefix,
+    suffix: item.suffix,
+  }));
+
+  const items = metrics || translatedMetrics;
+
   return (
     <section
       id="metrics"
@@ -69,7 +59,7 @@ export function Metrics({ metrics = defaultMetrics }: MetricsProps) {
         <div className="mb-12 lg:mb-16">
           <div className="flex flex-col gap-4">
             <SplitTextReveal
-              text="В цифрах"
+              text={t("caption")}
               as="span"
               className="text-caption text-[var(--color-text-muted)]"
               direction="up"
@@ -82,7 +72,7 @@ export function Metrics({ metrics = defaultMetrics }: MetricsProps) {
               transition={{ duration: duration.slow, ease, delay: 0.3 }}
             >
               <BrokenText
-                text="РЕЗУЛЬТАТЫ"
+                text={t("title")}
                 spaced
                 mixPattern={[2, 6]}
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
@@ -96,11 +86,11 @@ export function Metrics({ metrics = defaultMetrics }: MetricsProps) {
           className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 lg:gap-0"
           staggerDelay={0.1}
         >
-          {metrics.map((metric, index) => (
+          {items.map((metric, index) => (
             <StaggerItem key={index}>
               <MetricItem
                 {...metric}
-                showDivider={index < metrics.length - 1}
+                showDivider={index < items.length - 1}
               />
             </StaggerItem>
           ))}

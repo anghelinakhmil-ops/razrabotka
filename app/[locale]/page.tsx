@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Hero from "@/components/sections/Hero";
 import Benefits from "@/components/sections/Benefits";
 import FullBleedImage from "@/components/sections/FullBleedImage";
@@ -11,25 +11,16 @@ import TrustedBy from "@/components/sections/TrustedBy";
 import FAQ from "@/components/sections/FAQ";
 import LeadFormSection from "@/components/sections/LeadFormSection";
 
-export const metadata: Metadata = {
-  title: "NAKO Agency — Разработка сайтов под ключ",
-  description:
-    "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, высокая скорость, SEO-оптимизация. Конверсия от 3%.",
-  openGraph: {
-    title: "NAKO Agency — Разработка сайтов под ключ",
-    description:
-      "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, высокая скорость.",
-  },
-};
+export default async function Home() {
+  const t = await getTranslations("hero");
 
-export default function Home() {
   return (
     <>
       <Hero />
       <Benefits />
       <FullBleedImage
         src="/images/fullbleed-workspace.jpg"
-        alt="Рабочий процесс создания сайта в NAKO Agency"
+        alt={t("fullBleedAlt")}
       />
       <Metrics />
       <Services />

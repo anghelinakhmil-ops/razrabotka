@@ -2,6 +2,7 @@
 
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
@@ -26,59 +27,6 @@ interface ProcessProps {
   steps?: ProcessStepData[];
 }
 
-/**
- * Шаги по умолчанию
- */
-const defaultSteps: ProcessStepData[] = [
-  {
-    number: "01",
-    title: "Бриф",
-    description:
-      "Обсуждаем цели, аудиторию и задачи проекта. Заполняем бриф и определяем ключевые метрики успеха.",
-  },
-  {
-    number: "02",
-    title: "Прототип",
-    description:
-      "Создаём структуру сайта, wireframes и пользовательские сценарии. Согласовываем логику до дизайна.",
-  },
-  {
-    number: "03",
-    title: "Дизайн",
-    description:
-      "Разрабатываем уникальный визуальный стиль. Каждый экран — отдельная композиция с вниманием к деталям.",
-  },
-  {
-    number: "04",
-    title: "Разработка",
-    description:
-      "Верстаем на Next.js с фокусом на производительность. Чистый код, SEO-оптимизация, быстрая загрузка.",
-  },
-  {
-    number: "05",
-    title: "Контент",
-    description:
-      "Наполняем сайт текстами и медиа. Помогаем с копирайтингом и подбором визуального контента.",
-  },
-  {
-    number: "06",
-    title: "Тестирование",
-    description:
-      "Проверяем на всех устройствах и браузерах. Тестируем формы, интеграции и пользовательские сценарии.",
-  },
-  {
-    number: "07",
-    title: "Запуск",
-    description:
-      "Разворачиваем на production, настраиваем домен, SSL, аналитику. Передаём доступы и документацию.",
-  },
-  {
-    number: "08",
-    title: "Поддержка",
-    description:
-      "Остаёмся на связи после запуска. Техническая поддержка, обновления и развитие проекта.",
-  },
-];
 
 /**
  * Process — секция «Как мы работаем»
@@ -90,7 +38,19 @@ const defaultSteps: ProcessStepData[] = [
  * - Нумерация шагов
  * - Reveal анимации
  */
-export function Process({ steps = defaultSteps }: ProcessProps) {
+export function Process({ steps }: ProcessProps) {
+  const t = useTranslations("process");
+
+  const translatedSteps: ProcessStepData[] = (t.raw("steps") as Array<{
+    number: string; title: string; description: string;
+  }>).map((step) => ({
+    number: step.number,
+    title: step.title,
+    description: step.description,
+  }));
+
+  const items = steps || translatedSteps;
+
   return (
     <section
       id="process"
@@ -101,7 +61,7 @@ export function Process({ steps = defaultSteps }: ProcessProps) {
         <div className="mb-12 lg:mb-20">
           <div className="flex flex-col gap-4">
             <SplitTextReveal
-              text="Этапы"
+              text={t("caption")}
               as="span"
               className="text-caption text-[var(--color-text-muted)]"
               direction="up"
@@ -114,7 +74,7 @@ export function Process({ steps = defaultSteps }: ProcessProps) {
               transition={{ duration: duration.slow, ease, delay: 0.3 }}
             >
               <BrokenText
-                text="ПРОЦЕСС"
+                text={t("title")}
                 spaced
                 mixPattern={[2, 5]}
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
@@ -128,7 +88,7 @@ export function Process({ steps = defaultSteps }: ProcessProps) {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8"
           staggerDelay={0.08}
         >
-          {steps.map((step) => (
+          {items.map((step) => (
             <StaggerItem key={step.number}>
               <ProcessStep {...step} />
             </StaggerItem>

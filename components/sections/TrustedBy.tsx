@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { SplitTextReveal } from "@/components/motion";
 import { ease, duration } from "@/lib/motion";
@@ -84,11 +85,13 @@ const CLIENTS: ClientLogo[] = [
  * SVG логотипы клиентов в grayscale, как в референсе THE BRIDGE.
  */
 export function TrustedBy() {
+  const t = useTranslations("trustedBy");
+
   return (
     <section className="py-[var(--section-gap-sm)] bg-[var(--color-background)] border-t border-[var(--color-line)]">
       <Container>
         <SplitTextReveal
-          text="Нам доверяют"
+          text={t("title")}
           as="p"
           className="text-caption text-[var(--color-text-muted)] text-center mb-12"
           direction="up"

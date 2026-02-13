@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -11,17 +13,6 @@ import { Input } from "@/components/ui/Input";
 import { getUtmData } from "@/lib/utm";
 import { RevealOnScroll } from "@/components/motion";
 import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
-
-/**
- * Схема быстрой формы (name + contact)
- * Contact может быть телефоном, email или Telegram
- */
-const quickFormSchema = z.object({
-  name: z.string().min(2, "Имя должно содержать минимум 2 символа"),
-  contact: z.string().min(3, "Введите телефон или Telegram"),
-});
-
-type QuickFormData = z.infer<typeof quickFormSchema>;
 
 interface LeadFormSectionProps {
   /** Заголовок секции */
@@ -59,10 +50,19 @@ function parseContact(contact: string): { phone?: string; email?: string } {
  * - Reveal анимации
  */
 export function LeadFormSection({
-  title = "ОБСУДИТЬ ПРОЕКТ",
-  subtitle = "Оставьте контакты — свяжемся в течение 2 часов в рабочее время",
+  title,
+  subtitle,
   source = "lead_form",
 }: LeadFormSectionProps) {
+  const t = useTranslations("leadForm");
+
+  const quickFormSchema = z.object({
+    name: z.string().min(2, t("validation.nameMin")),
+    contact: z.string().min(3, t("validation.contactMin")),
+  });
+
+  type QuickFormData = z.infer<typeof quickFormSchema>;
+
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [formStarted, setFormStarted] = useState(false);
@@ -104,7 +104,7 @@ export function LeadFormSection({
       });
 
       if (!response.ok) {
-        throw new Error("Ошибка отправки. Попробуйте позже.");
+        throw new Error("send_error");
       }
 
       setFormState("success");
@@ -112,7 +112,7 @@ export function LeadFormSection({
       trackConversion("quick", "quick");
     } catch (error) {
       setFormState("error");
-      const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";
+      const msg = t("errorMessage");
       setErrorMessage(msg);
       trackFormError("quick", msg);
     }
@@ -129,7 +129,7 @@ export function LeadFormSection({
           <RevealOnScroll direction="up">
             <h2 className="mb-4">
               <BrokenText
-                text={title}
+                text={title || t("title")}
                 spaced
                 mixPattern={[3, 7]}
                 className="text-h2 font-display font-bold text-[var(--color-background)]"
@@ -140,7 +140,7 @@ export function LeadFormSection({
           {/* Подзаголовок */}
           <RevealOnScroll direction="up" delay={0.1}>
             <p className="text-body text-[var(--color-text-light)] mb-10 lg:mb-12">
-              {subtitle}
+              {subtitle || t("subtitle")}
             </p>
           </RevealOnScroll>
 
@@ -149,20 +149,20 @@ export function LeadFormSection({
             {formState === "success" ? (
               <SuccessMessage />
             ) : formState === "error" ? (
-              <ErrorMessage message={errorMessage} onRetry={() => setFormState("idle")} />
+              <ErrorMessage onRetry={() => setFormState("idle")} />
             ) : (
               <form onSubmit={handleSubmit(onSubmit)} onFocus={handleFormFocus} className="space-y-6">
                 {/* Поля формы */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Input
-                    placeholder="Ваше имя"
+                    placeholder={t("namePlaceholder")}
                     error={errors.name?.message}
                     disabled={formState === "loading"}
                     className="bg-transparent border-[var(--color-line-dark)] text-[var(--color-background)] placeholder:text-[var(--color-text-muted)]"
                     {...register("name")}
                   />
                   <Input
-                    placeholder="Телефон или Telegram"
+                    placeholder={t("contactPlaceholder")}
                     error={errors.contact?.message}
                     disabled={formState === "loading"}
                     className="bg-transparent border-[var(--color-line-dark)] text-[var(--color-background)] placeholder:text-[var(--color-text-muted)]"
@@ -178,18 +178,18 @@ export function LeadFormSection({
                   loading={formState === "loading"}
                   className="w-full md:w-auto md:min-w-[200px] bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
                 >
-                  Отправить заявку
+                  {t("submit")}
                 </Button>
 
                 {/* Privacy notice */}
                 <p className="text-caption text-[var(--color-text-muted)]">
-                  Нажимая кнопку, вы соглашаетесь с{" "}
-                  <a
+                  {t("privacy")}{" "}
+                  <Link
                     href="/privacy"
                     className="underline hover:text-[var(--color-background)] transition-colors"
                   >
-                    политикой конфиденциальности
-                  </a>
+                    {t("privacyLink")}
+                  </Link>
                 </p>
               </form>
             )}
@@ -199,16 +199,16 @@ export function LeadFormSection({
           <RevealOnScroll direction="up" delay={0.3}>
             <div className="mt-10 pt-10 border-t border-[var(--color-line-dark)]">
               <p className="text-body-sm text-[var(--color-text-muted)] mb-4">
-                Хотите рассказать подробнее о проекте?
+                {t("briefCta")}
               </p>
               <Button
                 variant="outline"
                 size="md"
-                as="a"
+                as={Link}
                 href="/brief"
                 className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
               >
-                Заполнить бриф
+                {t("briefButton")}
               </Button>
             </div>
           </RevealOnScroll>
@@ -222,6 +222,8 @@ export function LeadFormSection({
  * SuccessMessage — сообщение об успешной отправке
  */
 function SuccessMessage() {
+  const t = useTranslations("leadForm");
+
   return (
     <div className="py-8">
       <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 border-[var(--color-background)] flex items-center justify-center">
@@ -242,10 +244,10 @@ function SuccessMessage() {
         </svg>
       </div>
       <h3 className="text-h3 font-display font-bold text-[var(--color-background)] mb-3">
-        Заявка отправлена!
+        {t("successTitle")}
       </h3>
       <p className="text-body text-[var(--color-text-muted)]">
-        Свяжемся с вами в ближайшее время для обсуждения проекта.
+        {t("successText")}
       </p>
     </div>
   );
@@ -254,7 +256,9 @@ function SuccessMessage() {
 /**
  * ErrorMessage — сообщение об ошибке
  */
-function ErrorMessage({ message, onRetry }: { message: string; onRetry: () => void }) {
+function ErrorMessage({ onRetry }: { onRetry: () => void }) {
+  const t = useTranslations("leadForm");
+
   return (
     <div className="py-8">
       <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 border-red-400 flex items-center justify-center">
@@ -275,10 +279,10 @@ function ErrorMessage({ message, onRetry }: { message: string; onRetry: () => vo
         </svg>
       </div>
       <h3 className="text-h3 font-display font-bold text-red-400 mb-3">
-        Ошибка отправки
+        {t("errorTitle")}
       </h3>
       <p className="text-body text-[var(--color-text-muted)] mb-6">
-        {message}
+        {t("errorMessage")}
       </p>
       <Button
         variant="outline"
@@ -286,7 +290,7 @@ function ErrorMessage({ message, onRetry }: { message: string; onRetry: () => vo
         onClick={onRetry}
         className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
       >
-        Попробовать снова
+        {t("retry")}
       </Button>
     </div>
   );

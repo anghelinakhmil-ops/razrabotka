@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
@@ -29,51 +30,6 @@ interface TestimonialsProps {
   testimonials?: TestimonialData[];
 }
 
-/**
- * Отзывы по умолчанию
- */
-const defaultTestimonials: TestimonialData[] = [
-  {
-    name: "Анна Ковалёва",
-    role: "Психолог, частная практика",
-    quote:
-      "Сайт окупился за первый месяц. Записей стало в 3 раза больше, и клиенты приходят уже «тёплые» — они прочитали обо мне всё на сайте.",
-    project: "Сайт психолога",
-    avatarSrc: "/images/testimonials/anna-kovaleva.jpg",
-  },
-  {
-    name: "Максим Петров",
-    role: "Основатель, FLAVOR cosmetics",
-    quote:
-      "Наконец-то магазин работает быстро. Раньше клиенты уходили из-за медленной загрузки. Сейчас конверсия выросла на 40%.",
-    project: "Интернет-магазин",
-    avatarSrc: "/images/testimonials/maxim-petrov.jpg",
-  },
-  {
-    name: "Елена Соколова",
-    role: "Бизнес-коуч",
-    quote:
-      "Очень понравился подход — не просто красивая картинка, а продуманная структура. Каждый блок работает на конверсию.",
-    project: "Персональный сайт",
-    avatarSrc: "/images/testimonials/elena-sokolova.jpg",
-  },
-  {
-    name: "Дмитрий Волков",
-    role: "CEO, TechStart",
-    quote:
-      "Запустили лендинг за 2 недели. Качество на уровне топовых агентств, но без их бюджетов и бюрократии.",
-    project: "Лендинг SaaS",
-    avatarSrc: "/images/testimonials/dmitry-volkov.jpg",
-  },
-  {
-    name: "Ольга Миронова",
-    role: "Владелец, студия йоги",
-    quote:
-      "Сайт передаёт атмосферу студии идеально. Минимализм, воздух, спокойствие — именно то, что нужно было.",
-    project: "Сайт студии",
-    avatarSrc: "/images/testimonials/olga-mironova.jpg",
-  },
-];
 
 /**
  * Testimonials — секция отзывов
@@ -84,7 +40,23 @@ const defaultTestimonials: TestimonialData[] = [
  * - Сетка 1 → 2 → 3 колонки
  * - Reveal анимации
  */
-export function Testimonials({ testimonials = defaultTestimonials }: TestimonialsProps) {
+export function Testimonials({ testimonials }: TestimonialsProps) {
+  const t = useTranslations("testimonials");
+
+  const AVATAR_SLUGS = ["anna-kovaleva", "maxim-petrov", "elena-sokolova", "dmitry-volkov", "olga-mironova"];
+
+  const translatedTestimonials: TestimonialData[] = (t.raw("items") as Array<{
+    name: string; role: string; quote: string; project: string;
+  }>).map((item, i) => ({
+    name: item.name,
+    role: item.role,
+    quote: item.quote,
+    project: item.project,
+    avatarSrc: `/images/testimonials/${AVATAR_SLUGS[i]}.jpg`,
+  }));
+
+  const items = testimonials || translatedTestimonials;
+
   return (
     <section
       id="testimonials"
@@ -95,7 +67,7 @@ export function Testimonials({ testimonials = defaultTestimonials }: Testimonial
         <div className="mb-12 lg:mb-16">
           <div className="flex flex-col gap-4">
             <SplitTextReveal
-              text="Клиенты"
+              text={t("caption")}
               as="span"
               className="text-caption text-[var(--color-text-muted)]"
               direction="up"
@@ -108,7 +80,7 @@ export function Testimonials({ testimonials = defaultTestimonials }: Testimonial
               transition={{ duration: duration.slow, ease, delay: 0.3 }}
             >
               <BrokenText
-                text="ОТЗЫВЫ"
+                text={t("title")}
                 spaced
                 mixPattern={[2, 4]}
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
@@ -122,7 +94,7 @@ export function Testimonials({ testimonials = defaultTestimonials }: Testimonial
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
           staggerDelay={0.1}
         >
-          {testimonials.map((testimonial, index) => (
+          {items.map((testimonial, index) => (
             <StaggerItem key={index}>
               <TestimonialCard {...testimonial} />
             </StaggerItem>
@@ -132,7 +104,7 @@ export function Testimonials({ testimonials = defaultTestimonials }: Testimonial
         {/* CTA */}
         <div className="mt-12 lg:mt-16 text-center">
           <CtaButton variant="primary" size="lg">
-            Стать следующим довольным клиентом
+            {t("cta")}
           </CtaButton>
         </div>
       </Container>
@@ -150,6 +122,7 @@ function TestimonialCard({
   avatarSrc,
   project,
 }: TestimonialData) {
+  const t = useTranslations("testimonials");
   return (
     <div className="flex flex-col h-full p-6 lg:p-8 bg-[var(--color-background-alt)] border border-[var(--color-line)]">
       {/* Кавычка */}
@@ -201,7 +174,7 @@ function TestimonialCard({
           </span>
           {project && (
             <span className="text-caption text-[var(--color-text-light)] mt-1">
-              Проект: {project}
+              {t("projectLabel")}: {project}
             </span>
           )}
         </div>

@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { ease, duration } from "@/lib/motion";
@@ -21,6 +23,8 @@ interface HeroProps {
  * Текст по центру поверх тёмного overlay на фото.
  */
 export function Hero({ onCtaClick, imageSrc }: HeroProps) {
+  const t = useTranslations("hero");
+
   const handleScrollToNext = () => {
     const nextSection = document.getElementById("benefits");
     if (nextSection) {
@@ -55,7 +59,7 @@ export function Hero({ onCtaClick, imageSrc }: HeroProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: duration.normal, ease, delay: 0.2 }}
         >
-          Веб-студия полного цикла
+          {t("caption")}
         </motion.p>
 
         {/* H1 — Headline */}
@@ -66,19 +70,19 @@ export function Hero({ onCtaClick, imageSrc }: HeroProps) {
           transition={{ duration: duration.slow, ease, delay: 0.4 }}
         >
           <BrokenText
-            text="РАЗРАБОТКА"
+            text={t("line1")}
             spaced
             mixPattern={[1, 5]}
             className="text-white text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold tracking-tight"
           />
           <BrokenText
-            text="САЙТОВ"
+            text={t("line2")}
             spaced
             mixPattern={[1]}
             className="text-white text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold tracking-tight"
           />
           <BrokenText
-            text="ПОД КЛЮЧ"
+            text={t("line3")}
             spaced
             mixPattern={[1]}
             className="text-white/60 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-medium mt-2"
@@ -92,10 +96,10 @@ export function Hero({ onCtaClick, imageSrc }: HeroProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: duration.normal, ease, delay: 0.6 }}
         >
-          Создаём сайты для{" "}
-          <span className="text-white font-medium">экспертов</span>,{" "}
-          <span className="text-white font-medium">e-commerce</span> и{" "}
-          <span className="text-white font-medium">бизнесов</span>
+          {t("subtitle")}{" "}
+          <span className="text-white font-medium">{t("subtitleExperts")}</span>,{" "}
+          <span className="text-white font-medium">{t("subtitleEcommerce")}</span>{" & "}
+          <span className="text-white font-medium">{t("subtitleBusiness")}</span>
         </motion.p>
 
         {/* 2 CTA buttons */}
@@ -108,21 +112,21 @@ export function Hero({ onCtaClick, imageSrc }: HeroProps) {
           <Button
             variant="outline"
             size="lg"
-            as="a"
+            as={Link}
             href="/brief"
             className="border-white text-white hover:bg-white hover:text-[var(--color-text-primary)]"
           >
-            Обсудить проект
+            {t("cta")}
           </Button>
-          <span onClick={() => trackCtaClick("hero", "Смотреть кейсы", "/")}>
+          <span onClick={() => trackCtaClick("hero", t("ctaCases"), "/")}>
             <Button
               variant="ghost"
               size="lg"
-              as="a"
+              as={Link}
               href="/cases"
               className="text-white hover:bg-white/10"
             >
-              Смотреть кейсы
+              {t("ctaCases")}
             </Button>
           </span>
         </motion.div>
@@ -135,9 +139,9 @@ export function Hero({ onCtaClick, imageSrc }: HeroProps) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: duration.normal, ease, delay: 1.2 }}
-        aria-label="Прокрутить к следующей секции"
+        aria-label={t("ariaScroll")}
       >
-        <span className="text-caption">Скролл</span>
+        <span className="text-caption">{t("scroll")}</span>
         <motion.div
           className="w-[1px] h-8 bg-current"
           animate={{ scaleY: [1, 0.5, 1] }}

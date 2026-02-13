@@ -25,7 +25,9 @@
     "cta": "Discută proiectul",
     "ctaCases": "Vezi cazurile",
     "scroll": "Scroll",
-    "ariaScroll": "Derulează la secțiunea următoare"
+    "ariaScroll": "Derulează la secțiunea următoare",
+    "visualAlt": "Dezvoltare site-uri web la cheie — studio web",
+    "fullBleedAlt": "Procesul de creare a site-ului la NAKO Agency"
   },
   "benefits": {
     "caption": "De ce noi",
@@ -329,6 +331,7 @@
     "successText": "Vă vom contacta în curând pentru a discuta proiectul.",
     "errorTitle": "Eroare de trimitere",
     "retry": "Încearcă din nou",
+    "errorMessage": "A apărut o eroare. Încercați din nou mai târziu.",
     "briefCta": "Doriți să povestiți mai multe despre proiect?",
     "briefButton": "Completează brief-ul",
     "validation": {

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { ease, duration } from "@/lib/motion";
 
@@ -26,10 +27,12 @@ interface HeroVisualProps {
  */
 export function HeroVisual({
   imageSrc,
-  imageAlt = "Разработка сайтов под ключ — веб-студия",
+  imageAlt,
   blurDataURL,
   showFallback = true,
 }: HeroVisualProps) {
+  const t = useTranslations("hero");
+  const resolvedAlt = imageAlt || t("visualAlt");
   const hasImage = !!imageSrc;
 
   return (
@@ -40,7 +43,7 @@ export function HeroVisual({
           /* Оптимизированное изображение */
           <Image
             src={imageSrc}
-            alt={imageAlt}
+            alt={resolvedAlt}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
             className="object-cover"

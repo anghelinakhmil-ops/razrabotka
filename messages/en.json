@@ -25,7 +25,9 @@
     "cta": "Discuss project",
     "ctaCases": "View cases",
     "scroll": "Scroll",
-    "ariaScroll": "Scroll to next section"
+    "ariaScroll": "Scroll to next section",
+    "visualAlt": "Turnkey website development — web studio",
+    "fullBleedAlt": "Website creation process at NAKO Agency"
   },
   "benefits": {
     "caption": "Why us",
@@ -329,6 +331,7 @@
     "successText": "We'll contact you shortly to discuss the project.",
     "errorTitle": "Sending error",
     "retry": "Try again",
+    "errorMessage": "Something went wrong. Please try again later.",
     "briefCta": "Want to tell more about your project?",
     "briefButton": "Fill out the brief",
     "validation": {

@@ -5,6 +5,8 @@ import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
 import { ease, duration } from "@/lib/motion";
 
@@ -32,54 +34,6 @@ interface ServicesProps {
 }
 
 /**
- * Услуги по умолчанию
- */
-const defaultServices: ServiceData[] = [
-  {
-    title: "Сайт для эксперта",
-    description:
-      "Персональный сайт для специалистов, коучей, консультантов. Продаёт вашу экспертизу и привлекает клиентов.",
-    features: [
-      "Личный бренд",
-      "Портфолио работ",
-      "Запись на консультацию",
-      "Интеграция с календарём",
-    ],
-    ctaText: "Подробнее",
-    ctaHref: "/services#expert",
-    icon: "01",
-  },
-  {
-    title: "Интернет-магазин",
-    description:
-      "Полноценный e-commerce с каталогом, корзиной и оплатой. Автоматизация продаж и интеграции.",
-    features: [
-      "Каталог товаров",
-      "Онлайн-оплата",
-      "CRM интеграция",
-      "Telegram-уведомления",
-    ],
-    ctaText: "Подробнее",
-    ctaHref: "/services#ecommerce",
-    icon: "02",
-  },
-  {
-    title: "Лендинг / промо",
-    description:
-      "Одностраничный сайт с высокой конверсией для запуска продукта, услуги или рекламной кампании.",
-    features: [
-      "Высокая конверсия",
-      "A/B тестирование",
-      "Быстрый запуск",
-      "Аналитика",
-    ],
-    ctaText: "Подробнее",
-    ctaHref: "/services#landing",
-    icon: "03",
-  },
-];
-
-/**
  * Services — секция услуг
  *
  * Стиль: Premium-minimal / Architectural
@@ -88,7 +42,23 @@ const defaultServices: ServiceData[] = [
  * - Hover эффекты
  * - CTA на каждую услугу
  */
-export function Services({ services = defaultServices }: ServicesProps) {
+export function Services({ services }: ServicesProps) {
+  const t = useTranslations("services");
+
+  const SERVICE_HREFS = ["/services#expert", "/services#ecommerce", "/services#landing"];
+
+  const translatedServices: ServiceData[] = (t.raw("items") as Array<{
+    title: string; description: string; features: string[]; ctaText: string;
+  }>).map((item, i) => ({
+    title: item.title,
+    description: item.description,
+    features: item.features,
+    ctaText: item.ctaText,
+    ctaHref: SERVICE_HREFS[i],
+    icon: String(i + 1).padStart(2, "0"),
+  }));
+
+  const items = services || translatedServices;
   return (
     <section
       id="services"
@@ -99,7 +69,7 @@ export function Services({ services = defaultServices }: ServicesProps) {
         <div className="mb-16 lg:mb-24">
           <div className="flex flex-col gap-4">
             <SplitTextReveal
-              text="Направления"
+              text={t("caption")}
               as="span"
               className="text-caption text-[var(--color-text-muted)]"
               direction="up"
@@ -112,7 +82,7 @@ export function Services({ services = defaultServices }: ServicesProps) {
               transition={{ duration: duration.slow, ease, delay: 0.3 }}
             >
               <BrokenText
-                text="УСЛУГИ"
+                text={t("title")}
                 spaced
                 mixPattern={[2, 4]}
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
@@ -126,7 +96,7 @@ export function Services({ services = defaultServices }: ServicesProps) {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
           staggerDelay={0.1}
         >
-          {services.map((service, index) => (
+          {items.map((service, index) => (
             <StaggerItem key={index}>
               <ServiceCard {...service} />
             </StaggerItem>
@@ -144,7 +114,7 @@ function ServiceCard({
   title,
   description,
   features,
-  ctaText = "Подробнее",
+  ctaText,
   ctaHref = "/services",
   icon,
 }: ServiceData) {
@@ -184,8 +154,8 @@ function ServiceCard({
       <Button
         variant="link"
         size="md"
-        as="a"
-        href={ctaHref}
+        as={Link}
+        href={ctaHref || "/services"}
         className="mt-auto"
       >
         {ctaText}

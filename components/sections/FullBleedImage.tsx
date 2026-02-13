@@ -20,8 +20,8 @@ interface FullBleedImageProps {
  * Изображение занимает всю ширину экрана, лёгкий параллакс при скролле.
  */
 export function FullBleedImage({
-  src = "/images/fullbleed-workspace.jpg",
-  alt = "Рабочий процесс NAKO Agency",
+  src,
+  alt,
   overlayText,
 }: FullBleedImageProps) {
   const ref = useRef<HTMLDivElement>(null);

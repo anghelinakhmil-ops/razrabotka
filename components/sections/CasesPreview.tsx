@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
@@ -36,59 +37,6 @@ interface CasesPreviewProps {
   limit?: number;
 }
 
-/**
- * Кейсы по умолчанию (placeholder данные)
- */
-const defaultCases: CaseData[] = [
-  {
-    slug: "expert-coach",
-    title: "Персональный сайт коуча",
-    category: "Эксперт",
-    result: "+180% заявок",
-    imageSrc: "/images/cases/case-expert-coach.jpg",
-    imageAlt: "Персональный сайт коуча — превью проекта",
-  },
-  {
-    slug: "ecommerce-fashion",
-    title: "Интернет-магазин одежды",
-    category: "E-commerce",
-    result: "3.2 сек LCP",
-    imageSrc: "/images/cases/case-ecommerce-fashion.jpg",
-    imageAlt: "Интернет-магазин одежды — превью проекта",
-  },
-  {
-    slug: "landing-saas",
-    title: "Лендинг SaaS-продукта",
-    category: "Лендинг",
-    result: "8.5% конверсия",
-    imageSrc: "/images/cases/case-landing-saas.jpg",
-    imageAlt: "Лендинг SaaS-продукта — превью проекта",
-  },
-  {
-    slug: "expert-psychologist",
-    title: "Сайт психолога",
-    category: "Эксперт",
-    result: "+240% записей",
-    imageSrc: "/images/cases/case-expert-psychologist.jpg",
-    imageAlt: "Сайт психолога — превью проекта",
-  },
-  {
-    slug: "ecommerce-cosmetics",
-    title: "Магазин косметики",
-    category: "E-commerce",
-    result: "95 Lighthouse",
-    imageSrc: "/images/cases/case-ecommerce-cosmetics.jpg",
-    imageAlt: "Магазин косметики — превью проекта",
-  },
-  {
-    slug: "landing-event",
-    title: "Промо-страница мероприятия",
-    category: "Лендинг",
-    result: "1200+ регистраций",
-    imageSrc: "/images/cases/case-landing-event.jpg",
-    imageAlt: "Промо-страница мероприятия — превью проекта",
-  },
-];
 
 /**
  * CasesPreview — превью кейсов на главной
@@ -101,10 +49,24 @@ const defaultCases: CaseData[] = [
  * - Ограничение 6 карточек
  */
 export function CasesPreview({
-  cases = defaultCases,
+  cases,
   limit = 6,
 }: CasesPreviewProps) {
-  const displayCases = cases.slice(0, limit);
+  const t = useTranslations("casesPreview");
+
+  const translatedCases: CaseData[] = (t.raw("items") as Array<{
+    slug: string; title: string; category: string; result: string; imageAlt: string;
+  }>).map((item) => ({
+    slug: item.slug,
+    title: item.title,
+    category: item.category,
+    result: item.result,
+    imageAlt: item.imageAlt,
+    imageSrc: `/images/cases/case-${item.slug}.jpg`,
+  }));
+
+  const items = cases || translatedCases;
+  const displayCases = items.slice(0, limit);
 
   return (
     <section
@@ -117,7 +79,7 @@ export function CasesPreview({
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
             <div className="flex flex-col gap-4">
               <SplitTextReveal
-                text="Портфолио"
+                text={t("caption")}
                 as="span"
                 className="text-caption text-[var(--color-text-muted)]"
                 direction="up"
@@ -130,7 +92,7 @@ export function CasesPreview({
                 transition={{ duration: duration.slow, ease, delay: 0.3 }}
               >
                 <BrokenText
-                  text="КЕЙСЫ"
+                  text={t("title")}
                   spaced
                   mixPattern={[1, 3]}
                   className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
@@ -149,10 +111,10 @@ export function CasesPreview({
               <Button
                 variant="link"
                 size="md"
-                as="a"
+                as={Link}
                 href="/cases"
               >
-                Все кейсы
+                {t("viewAll")}
               </Button>
             </motion.div>
           </div>
@@ -175,10 +137,10 @@ export function CasesPreview({
           <Button
             variant="link"
             size="md"
-            as="a"
+            as={Link}
             href="/cases"
           >
-            Все кейсы
+            {t("viewAll")}
           </Button>
         </RevealOnScroll>
       </Container>
@@ -198,6 +160,7 @@ function CaseCard({
   imageAlt,
   blurDataURL,
 }: CaseData) {
+  const t = useTranslations("casesPreview");
   return (
     <Link
       href={`/cases/${slug}`}
@@ -244,7 +207,7 @@ function CaseCard({
 
         {/* Arrow indicator */}
         <div className="mt-4 flex items-center gap-2 text-body-sm text-[var(--color-text-muted)] group-hover:text-[var(--color-text-primary)] transition-colors">
-          <span>Смотреть кейс</span>
+          <span>{t("viewCase")}</span>
           <svg
             width="16"
             height="16"
