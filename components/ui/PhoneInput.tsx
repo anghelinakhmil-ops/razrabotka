@@ -335,7 +335,7 @@ export const PhoneInput = forwardRef<HTMLInputElement, PhoneInputProps>(
     // Классы для dropdown
     const dropdownClasses = clsx(
       "absolute z-50 left-0 mt-1",
-      "min-w-[200px]",
+      "min-w-[200px] max-w-[calc(100vw-2.5rem)]",
       "bg-[var(--color-background)]",
       "border-2 border-[var(--color-text-primary)]",
       "shadow-lg",

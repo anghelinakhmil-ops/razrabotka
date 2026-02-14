@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { ease, duration } from "@/lib/motion";
 import { trackCtaClick } from "@/lib/analytics";
+import { useLenis } from "@/components/motion/LenisProvider";
 
 interface HeroProps {
   /** Callback для CTA кнопки */
@@ -24,11 +25,16 @@ interface HeroProps {
  */
 export function Hero({ onCtaClick, imageSrc }: HeroProps) {
   const t = useTranslations("hero");
+  const lenis = useLenis();
 
   const handleScrollToNext = () => {
     const nextSection = document.getElementById("benefits");
     if (nextSection) {
-      nextSection.scrollIntoView({ behavior: "smooth" });
+      if (lenis) {
+        lenis.scrollTo(nextSection);
+      } else {
+        nextSection.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
