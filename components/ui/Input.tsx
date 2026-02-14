@@ -70,7 +70,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
 
     // Размеры поля
     const sizeClasses = {
-      sm: "h-9 px-3 text-[14px]",
+      sm: "h-9 px-3 text-[16px]",
       md: "h-11 px-4 text-[16px]",
       lg: "h-14 px-5 text-[18px]",
     };

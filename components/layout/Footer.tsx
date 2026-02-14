@@ -89,7 +89,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
 
         {/* Main footer content — all dark */}
         <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 py-16 lg:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8">
             {/* Column 1: Logo + Description */}
             <div className="lg:col-span-1">
               <Link href="/" className="inline-block mb-6">

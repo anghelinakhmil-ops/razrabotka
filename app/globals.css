@@ -198,10 +198,16 @@
   --container-max-width-sm: var(--container-max-width-sm);
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 html,
 body {
   overflow-x: hidden;
   overscroll-behavior: none;
+  touch-action: manipulation;
 }
 
 /* ----------------------------------------

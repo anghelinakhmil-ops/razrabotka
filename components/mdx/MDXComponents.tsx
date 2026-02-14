@@ -375,7 +375,7 @@ export function MDXTableHeader({
   return (
     <th
       className={cn(
-        "px-4 py-3 text-left font-medium text-[var(--color-text-primary)] whitespace-nowrap",
+        "px-4 py-3 text-left font-medium text-[var(--color-text-primary)]",
         className
       )}
       {...props}

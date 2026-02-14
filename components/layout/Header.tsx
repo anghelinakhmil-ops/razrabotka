@@ -73,7 +73,7 @@ export function Header({
         isMenuOpen
           ? "bg-transparent"
           : isScrolled
-            ? "bg-[var(--color-background)]/90 backdrop-blur-md"
+            ? "bg-[var(--color-background)]/95 supports-[backdrop-filter]:bg-[var(--color-background)]/90 backdrop-blur-md"
             : "bg-transparent",
         className
       )}
