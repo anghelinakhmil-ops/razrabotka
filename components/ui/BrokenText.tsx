@@ -122,6 +122,7 @@ export function BrokenText({
     size === "h1" && "text-broken-h1",
     size === "h2" && "text-broken-h2",
     size === "h3" && "text-broken-h3",
+    spaced && "text-broken-spaced",
     className
   );
 

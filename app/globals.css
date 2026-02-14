@@ -351,6 +351,39 @@ body {
     --element-gap-lg: 24px;
     --element-gap-xl: 32px;
   }
+
+  /* Mobile: reduce broken text letter-spacing */
+  .text-broken {
+    letter-spacing: 0.05em;
+  }
+
+  .text-broken-ultra {
+    letter-spacing: 0.08em;
+  }
+
+  /* Mobile: tighten space characters from BrokenText spaced mode */
+  .text-broken-spaced {
+    word-spacing: -0.2em;
+  }
+
+  /* Mobile: increase line-height for broken text headings */
+  .text-broken-h1 {
+    line-height: 1.25;
+  }
+
+  .text-broken-h2 {
+    line-height: 1.3;
+  }
+
+  .text-broken-h3 {
+    line-height: 1.3;
+  }
+
+  /* Safety net: graceful wrapping on overflow */
+  .text-broken,
+  .text-broken-ultra {
+    overflow-wrap: break-word;
+  }
 }
 
 /* ============================================
