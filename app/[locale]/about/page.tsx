@@ -45,7 +45,6 @@ export default async function AboutPage() {
               <BrokenText
                 text={t("heroTitle")}
                 spaced
-                mixPattern="every-3"
                 className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h1>
@@ -71,7 +70,6 @@ export default async function AboutPage() {
                   <BrokenText
                     text={t("approachTitle")}
                     spaced
-                    mixPattern="every-3"
                     className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
                   />
                 </h2>
@@ -120,7 +118,6 @@ export default async function AboutPage() {
               <BrokenText
                 text={t("valuesTitle")}
                 spaced
-                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h2>
@@ -162,7 +159,6 @@ export default async function AboutPage() {
               <BrokenText
                 text={t("principlesTitle")}
                 spaced
-                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h2>
@@ -199,7 +195,6 @@ export default async function AboutPage() {
               <BrokenText
                 text={t("achievementsTitle")}
                 spaced
-                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h2>
@@ -239,7 +234,6 @@ export default async function AboutPage() {
                 <BrokenText
                   text={t("ctaTitle")}
                   spaced
-                  mixPattern="every-3"
                   className="text-h2 font-display font-bold text-[var(--color-background)]"
                 />
               </h2>

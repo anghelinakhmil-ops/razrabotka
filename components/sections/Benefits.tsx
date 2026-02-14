@@ -22,7 +22,6 @@ export interface BenefitData {
   /** Описание (текст или ReactNode) */
   description: ReactNode;
   /** Паттерн для «ломаной» типографики заголовка */
-  mixPattern?: number[];
   /** URL изображения */
   imageSrc?: string;
   /** Alt текст для изображения */
@@ -88,7 +87,6 @@ export function Benefits({ benefits }: BenefitsProps) {
               <BrokenText
                 text={t("title")}
                 spaced
-                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </motion.h2>

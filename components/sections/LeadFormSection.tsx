@@ -132,7 +132,6 @@ export function LeadFormSection({
               <BrokenText
                 text={title || t("title")}
                 spaced
-                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-background)]"
               />
             </h2>

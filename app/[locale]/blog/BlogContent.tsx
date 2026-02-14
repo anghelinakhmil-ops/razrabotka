@@ -70,7 +70,6 @@ export default function BlogContent() {
               <BrokenText
                 text={t("title")}
                 spaced
-                mixPattern="every-3"
                 className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h1>

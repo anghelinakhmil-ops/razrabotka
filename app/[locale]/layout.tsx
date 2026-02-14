@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
-import { Space_Grotesk, Inter } from "next/font/google";
+import { Montserrat, Inter } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { locales } from "@/i18n/config";
 import { LayoutClient } from "@/components/layout";
@@ -15,9 +15,9 @@ import "../globals.css";
 const BASE_URL = "https://nakoagency.com";
 
 // Display шрифт — для заголовков, «ломаной» типографики
-const spaceGrotesk = Space_Grotesk({
+const montserrat = Montserrat({
   variable: "--font-display",
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin", "latin-ext", "cyrillic", "cyrillic-ext"],
   weight: ["500", "700"],
   display: "swap",
 });
@@ -127,7 +127,7 @@ export default async function LocaleLayout({
         />
       </head>
       <body
-        className={`${spaceGrotesk.variable} ${inter.variable} antialiased bg-[var(--color-background)] text-[var(--color-text-primary)]`}
+        className={`${montserrat.variable} ${inter.variable} antialiased bg-[var(--color-background)] text-[var(--color-text-primary)]`}
       >
         <NextIntlClientProvider messages={messages}>
           <GoogleAnalytics />

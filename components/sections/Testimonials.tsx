@@ -82,7 +82,6 @@ export function Testimonials({ testimonials }: TestimonialsProps) {
               <BrokenText
                 text={t("title")}
                 spaced
-                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </motion.h2>
