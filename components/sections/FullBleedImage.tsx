@@ -36,7 +36,7 @@ export function FullBleedImage({
   return (
     <section
       ref={ref}
-      className="relative w-full h-[50vh] lg:h-[70vh] overflow-hidden"
+      className="relative w-full h-[50dvh] lg:h-[70dvh] overflow-hidden"
       aria-label={alt}
     >
       <motion.div className="absolute inset-0" style={{ y }}>

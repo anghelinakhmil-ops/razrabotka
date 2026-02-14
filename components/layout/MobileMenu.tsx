@@ -60,17 +60,25 @@ export function MobileMenu({
     }
   }, []);
 
-  // Scroll lock + keyboard handlers
+  // Scroll lock (iOS-compatible) + keyboard handlers
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden";
+      const scrollY = window.scrollY;
+      document.body.classList.add("scroll-locked");
+      document.body.style.top = `-${scrollY}px`;
       document.addEventListener("keydown", handleEscape);
       document.addEventListener("keydown", handleTabKey);
     } else {
-      document.body.style.overflow = "";
+      const scrollY = Math.abs(parseInt(document.body.style.top || "0", 10));
+      document.body.classList.remove("scroll-locked");
+      document.body.style.top = "";
+      window.scrollTo(0, scrollY);
     }
     return () => {
-      document.body.style.overflow = "";
+      const scrollY = Math.abs(parseInt(document.body.style.top || "0", 10));
+      document.body.classList.remove("scroll-locked");
+      document.body.style.top = "";
+      window.scrollTo(0, scrollY);
       document.removeEventListener("keydown", handleEscape);
       document.removeEventListener("keydown", handleTabKey);
     };
@@ -99,7 +107,7 @@ export function MobileMenu({
       )}
     >
       {/* Inner scroll container */}
-      <div className="flex flex-col h-full overflow-y-auto pt-20 pb-8 px-6 sm:px-8">
+      <div className="flex flex-col h-full overflow-y-auto pt-20 px-6 sm:px-8 safe-bottom">
         {/* Navigation — main content */}
         <nav className="flex-1" aria-label={t("nav.home")}>
           <ul className="space-y-1">

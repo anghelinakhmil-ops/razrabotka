@@ -199,7 +199,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/10">
+        <div className="border-t border-white/10 safe-bottom">
           <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-[13px] text-white/30">

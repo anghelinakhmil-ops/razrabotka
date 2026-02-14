@@ -70,7 +70,7 @@ export function Modal({
     md: "max-w-md",
     lg: "max-w-lg",
     xl: "max-w-xl",
-    full: "max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)]",
+    full: "max-w-[calc(100vw-2rem)] max-h-[calc(100dvh-2rem)]",
   };
 
   // Handle Escape key
@@ -120,8 +120,10 @@ export function Modal({
       // Save previous focus
       previousFocusRef.current = document.activeElement as HTMLElement;
 
-      // Lock body scroll
-      document.body.style.overflow = "hidden";
+      // Lock body scroll (iOS-compatible)
+      const scrollY = window.scrollY;
+      document.body.classList.add("scroll-locked");
+      document.body.style.top = `-${scrollY}px`;
 
       // Add event listeners
       document.addEventListener("keydown", handleKeyDown);
@@ -137,7 +139,10 @@ export function Modal({
 
       return () => {
         clearTimeout(timer);
-        document.body.style.overflow = "";
+        const savedScrollY = Math.abs(parseInt(document.body.style.top || "0", 10));
+        document.body.classList.remove("scroll-locked");
+        document.body.style.top = "";
+        window.scrollTo(0, savedScrollY);
         document.removeEventListener("keydown", handleKeyDown);
         document.removeEventListener("keydown", handleTabKey);
 
@@ -255,7 +260,7 @@ export function Modal({
           className={clsx(
             "px-4 py-4 sm:px-6 sm:py-6",
             "text-[var(--color-text-primary)]",
-            "max-h-[calc(100vh-12rem)]",
+            "max-h-[calc(100dvh-12rem)]",
             "overflow-y-auto"
           )}
         >

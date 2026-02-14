@@ -73,7 +73,7 @@ export function LayoutClient({ children }: LayoutClientProps) {
       />
 
       {/* Main content — relative + z-10 + bg to scroll over fixed footer */}
-      <main className="relative z-10 min-h-screen bg-[var(--color-background)] pt-[72px] lg:pt-[80px]">
+      <main className="relative z-10 min-h-[100dvh] bg-[var(--color-background)] pt-[72px] lg:pt-[80px]">
         {children}
       </main>
 

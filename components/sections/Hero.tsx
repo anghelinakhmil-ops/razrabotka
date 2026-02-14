@@ -35,7 +35,7 @@ export function Hero({ onCtaClick, imageSrc }: HeroProps) {
   return (
     <section
       id="hero"
-      className="relative h-screen flex items-center justify-center overflow-hidden"
+      className="relative h-[100dvh] flex items-center justify-center overflow-hidden"
     >
       {/* Background: fallback color + image + overlay */}
       <div className="absolute inset-0 bg-[var(--color-text-primary)]" />

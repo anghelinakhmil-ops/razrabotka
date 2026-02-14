@@ -67,6 +67,7 @@ export function Header({
       className={clsx(
         "fixed top-0 left-0 right-0",
         "z-50",
+        "safe-top safe-x",
         "transition-all duration-300",
         // When menu is open — transparent bg on dark overlay
         isMenuOpen
