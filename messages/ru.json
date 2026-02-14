@@ -1,4 +1,11 @@
 {
+  "meta": {
+    "siteTitle": "NAKO Agency | Разработка сайтов под ключ",
+    "siteDescription": "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, скорость, SEO.",
+    "ogTitle": "NAKO Agency | Разработка сайтов под ключ",
+    "ogDescription": "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, скорость, SEO.",
+    "keywords": "разработка сайтов, создание сайтов, веб-студия, сайт под ключ, лендинг, интернет-магазин"
+  },
   "nav": {
     "home": "Главная",
     "about": "Про нас",
@@ -404,18 +411,6 @@
       "business": "Бизнес"
     },
     "noResults": "Ничего не найдено"
-  },
-  "meta": {
-    "homeTitle": "NAKO Agency — Разработка сайтов под ключ",
-    "homeDescription": "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, скорость, SEO.",
-    "aboutTitle": "Про нас",
-    "servicesTitle": "Услуги",
-    "casesTitle": "Кейсы",
-    "blogTitle": "Блог",
-    "contactsTitle": "Контакты",
-    "briefTitle": "Бриф",
-    "privacyTitle": "Политика конфиденциальности",
-    "termsTitle": "Условия использования"
   },
   "pages": {
     "about": {

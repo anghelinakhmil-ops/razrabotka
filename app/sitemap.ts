@@ -1,67 +1,48 @@
 import { MetadataRoute } from "next";
+import { locales } from "@/i18n/config";
 
 const BASE_URL = "https://nakoagency.com";
+
+/**
+ * Генерация alternates.languages для каждого URL
+ */
+function getAlternates(path: string): Record<string, string> {
+  const languages: Record<string, string> = {};
+  for (const locale of locales) {
+    languages[locale] = `${BASE_URL}/${locale}${path}`;
+  }
+  return languages;
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
   /* Статические страницы */
-  const staticPages: MetadataRoute.Sitemap = [
-    {
-      url: BASE_URL,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 1.0,
-    },
-    {
-      url: `${BASE_URL}/about`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/services`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/cases`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/blog`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/contacts`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/brief`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/privacy`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${BASE_URL}/terms`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
+  const staticPaths: Array<{
+    path: string;
+    changeFrequency: "weekly" | "monthly" | "yearly";
+    priority: number;
+  }> = [
+    { path: "", changeFrequency: "weekly", priority: 1.0 },
+    { path: "/about", changeFrequency: "monthly", priority: 0.8 },
+    { path: "/services", changeFrequency: "monthly", priority: 0.9 },
+    { path: "/cases", changeFrequency: "weekly", priority: 0.9 },
+    { path: "/blog", changeFrequency: "weekly", priority: 0.8 },
+    { path: "/contacts", changeFrequency: "monthly", priority: 0.7 },
+    { path: "/brief", changeFrequency: "monthly", priority: 0.7 },
+    { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
+    { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
   ];
+
+  const staticPages: MetadataRoute.Sitemap = staticPaths.flatMap((page) =>
+    locales.map((locale) => ({
+      url: `${BASE_URL}/${locale}${page.path}`,
+      lastModified,
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+      alternates: { languages: getAlternates(page.path) },
+    }))
+  );
 
   /* Динамические страницы — кейсы */
   const caseSlugs = [
@@ -76,12 +57,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "landing-app",
   ];
 
-  const casePages: MetadataRoute.Sitemap = caseSlugs.map((slug) => ({
-    url: `${BASE_URL}/cases/${slug}`,
-    lastModified,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+  const casePages: MetadataRoute.Sitemap = caseSlugs.flatMap((slug) =>
+    locales.map((locale) => ({
+      url: `${BASE_URL}/${locale}/cases/${slug}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+      alternates: { languages: getAlternates(`/cases/${slug}`) },
+    }))
+  );
 
   /* Динамические страницы — блог */
   const blogSlugs = [
@@ -95,12 +79,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "landing-page-anatomy",
   ];
 
-  const blogPages: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
-    url: `${BASE_URL}/blog/${slug}`,
-    lastModified,
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
+  const blogPages: MetadataRoute.Sitemap = blogSlugs.flatMap((slug) =>
+    locales.map((locale) => ({
+      url: `${BASE_URL}/${locale}/blog/${slug}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+      alternates: { languages: getAlternates(`/blog/${slug}`) },
+    }))
+  );
 
   return [...staticPages, ...casePages, ...blogPages];
 }

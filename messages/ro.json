@@ -1,4 +1,11 @@
 {
+  "meta": {
+    "siteTitle": "NAKO Agency | Dezvoltare site-uri la cheie",
+    "siteDescription": "Creăm site-uri pentru experți, e-commerce și afaceri. Design premium-minimal, viteză, SEO.",
+    "ogTitle": "NAKO Agency | Dezvoltare site-uri la cheie",
+    "ogDescription": "Creăm site-uri pentru experți, e-commerce și afaceri. Design premium-minimal, viteză, SEO.",
+    "keywords": "dezvoltare site-uri, creare site-uri, studio web, site la cheie, landing page, magazin online"
+  },
   "nav": {
     "home": "Acasă",
     "about": "Despre noi",
@@ -404,18 +411,6 @@
       "business": "Business"
     },
     "noResults": "Nu s-au găsit rezultate"
-  },
-  "meta": {
-    "homeTitle": "NAKO Agency — Dezvoltare site-uri la cheie",
-    "homeDescription": "Creăm site-uri pentru experți, e-commerce și afaceri. Design premium-minimal, viteză, SEO.",
-    "aboutTitle": "Despre noi",
-    "servicesTitle": "Servicii",
-    "casesTitle": "Cazuri",
-    "blogTitle": "Blog",
-    "contactsTitle": "Contacte",
-    "briefTitle": "Brief",
-    "privacyTitle": "Politica de confidențialitate",
-    "termsTitle": "Termeni și condiții"
   },
   "pages": {
     "about": {

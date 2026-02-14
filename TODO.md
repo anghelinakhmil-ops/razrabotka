@@ -1531,7 +1531,7 @@
 
 ---
 
-# ФАЗА 20: i18n — Мультиязычность (en/ru/uk/ro) [52/62] 🟡
+# ФАЗА 20: i18n — Мультиязычность (en/ru/uk/ro) [57/62] 🟡
 
 > **Библиотека:** next-intl
 > **Языки:** en (default), ru, uk, ro
@@ -1616,13 +1616,13 @@
 - [x] **i18n-51**: Интегрировать LanguageSwitcher в Header.tsx (desktop)
 - [x] **i18n-52**: Интегрировать LanguageSwitcher в MobileMenu.tsx (mobile)
 
-## 20.9 SEO для i18n [0/5] ❌
+## 20.9 SEO для i18n [5/5] ✅
 
-- [ ] **i18n-53**: Locale-aware metadata в `app/[locale]/layout.tsx` (title, description, OG через getTranslations)
-- [ ] **i18n-54**: hreflang теги через alternates.languages
-- [ ] **i18n-55**: Обновить `sitemap.ts` — генерировать URL для каждого locale (×4)
-- [ ] **i18n-56**: generateStaticParams в `app/[locale]/layout.tsx` — все 4 локали
-- [ ] **i18n-57**: Locale-aware JSON-LD schema
+- [x] **i18n-53**: Locale-aware metadata в `app/[locale]/layout.tsx` (title, description, OG через getTranslations)
+- [x] **i18n-54**: hreflang теги через alternates.languages
+- [x] **i18n-55**: Обновить `sitemap.ts` — генерировать URL для каждого locale (×4)
+- [x] **i18n-56**: generateStaticParams в `app/[locale]/layout.tsx` — все 4 локали
+- [x] **i18n-57**: Locale-aware JSON-LD schema
 
 ## 20.10 Финальная проверка [0/5] ❌
 

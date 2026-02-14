@@ -1,4 +1,11 @@
 {
+  "meta": {
+    "siteTitle": "NAKO Agency | Turnkey Website Development",
+    "siteDescription": "We create websites for experts, e-commerce, and businesses. Premium-minimal design, speed, SEO.",
+    "ogTitle": "NAKO Agency | Turnkey Website Development",
+    "ogDescription": "We create websites for experts, e-commerce, and businesses. Premium-minimal design, speed, SEO.",
+    "keywords": "website development, web design, web studio, turnkey website, landing page, online store"
+  },
   "nav": {
     "home": "Home",
     "about": "About",
@@ -404,18 +411,6 @@
       "business": "Business"
     },
     "noResults": "No results found"
-  },
-  "meta": {
-    "homeTitle": "NAKO Agency — Turnkey Website Development",
-    "homeDescription": "We build websites for experts, e-commerce, and businesses. Premium-minimal design, speed, SEO.",
-    "aboutTitle": "About Us",
-    "servicesTitle": "Services",
-    "casesTitle": "Cases",
-    "blogTitle": "Blog",
-    "contactsTitle": "Contacts",
-    "briefTitle": "Brief",
-    "privacyTitle": "Privacy Policy",
-    "termsTitle": "Terms of Use"
   },
   "pages": {
     "about": {

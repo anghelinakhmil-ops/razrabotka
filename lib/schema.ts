@@ -3,7 +3,10 @@ const BASE_URL = "https://nakoagency.com";
 /**
  * Organization schema — информация о компании
  */
-export function organizationSchema() {
+export function organizationSchema(options?: {
+  description?: string;
+  locale?: string;
+}) {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -11,11 +14,13 @@ export function organizationSchema() {
     url: BASE_URL,
     logo: `${BASE_URL}/images/logo.png`,
     description:
-      "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, скорость, SEO.",
+      options?.description ??
+      "We create websites for experts, e-commerce, and businesses. Premium-minimal design, speed, SEO.",
+    ...(options?.locale && { inLanguage: options.locale }),
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
-      availableLanguage: ["Russian", "English"],
+      availableLanguage: ["English", "Russian", "Ukrainian", "Romanian"],
     },
     sameAs: [],
   };
@@ -24,14 +29,19 @@ export function organizationSchema() {
 /**
  * WebSite schema — информация о сайте
  */
-export function webSiteSchema() {
+export function webSiteSchema(options?: {
+  description?: string;
+  locale?: string;
+}) {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "NAKO Agency",
     url: BASE_URL,
     description:
-      "Создаём сайты для экспертов, e-commerce и бизнесов. Premium-minimal дизайн, скорость, SEO.",
+      options?.description ??
+      "We create websites for experts, e-commerce, and businesses. Premium-minimal design, speed, SEO.",
+    ...(options?.locale && { inLanguage: options.locale }),
     publisher: {
       "@type": "Organization",
       name: "NAKO Agency",
