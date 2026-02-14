@@ -94,7 +94,7 @@ export function Hero({ onCtaClick, imageSrc }: HeroProps) {
 
         {/* Subtitle */}
         <motion.p
-          className="text-body-lg text-white/70 max-w-lg mx-auto mb-10"
+          className="text-body-lg text-white/70 max-w-2xl mx-auto mb-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: duration.normal, ease, delay: 0.6 }}

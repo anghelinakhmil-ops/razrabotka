@@ -174,10 +174,10 @@ function BenefitItem({
             {typeof description === "string" ? (
               <ScrollScrubText
                 text={description}
-                className="text-body text-[var(--color-text-muted)] max-w-md"
+                className="text-body text-[var(--color-text-muted)] max-w-lg"
               />
             ) : (
-              <div className="text-body text-[var(--color-text-muted)] max-w-md">
+              <div className="text-body text-[var(--color-text-muted)] max-w-lg">
                 {description}
               </div>
             )}

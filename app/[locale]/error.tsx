@@ -70,7 +70,7 @@ export default function Error({
           </h2>
 
           {/* Description */}
-          <p className="text-body-lg text-[var(--color-text-muted)] mb-8 max-w-md mx-auto">
+          <p className="text-body-lg text-[var(--color-text-muted)] mb-8 max-w-xl mx-auto">
             {t("description")}
           </p>
 

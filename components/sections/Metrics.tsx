@@ -142,7 +142,7 @@ function MetricItem({
       </div>
 
       {/* Подпись */}
-      <p className="mt-4 text-body text-[var(--color-text-muted)] max-w-[150px]">
+      <p className="mt-4 text-body text-[var(--color-text-muted)] max-w-[200px]">
         {label}
       </p>
     </div>

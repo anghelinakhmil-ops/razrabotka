@@ -70,7 +70,7 @@ export function Footer({ onCallbackClick, className }: FooterProps) {
                     "mb-4"
                   )}
                 />
-                <p className="text-[16px] lg:text-[18px] text-white/50 max-w-md">
+                <p className="text-[16px] lg:text-[18px] text-white/50 max-w-xl">
                   {t("ctaSubtitle")}
                 </p>
               </div>
