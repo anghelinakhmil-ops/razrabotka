@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { ease, sectionPresets } from "@/lib/motion";
 
 interface FullBleedImageProps {
   /** Image source */
@@ -60,7 +61,7 @@ export function FullBleedImage({
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.8, ease: [0.2, 0.8, 0.2, 1] }}
+            transition={{ duration: sectionPresets.image.duration, ease }}
           >
             {overlayText}
           </motion.p>

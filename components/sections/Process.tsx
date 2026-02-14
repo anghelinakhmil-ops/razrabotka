@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
-import { ease, duration } from "@/lib/motion";
+import { ease, duration, sectionPresets } from "@/lib/motion";
 
 /**
  * Данные для одного шага процесса
@@ -65,13 +65,13 @@ export function Process({ steps }: ProcessProps) {
               as="span"
               className="text-caption text-[var(--color-text-muted)]"
               direction="up"
-              staggerDelay={0.06}
+              staggerDelay={sectionPresets.heading.captionStagger}
             />
             <motion.h2
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: duration.slow, ease, delay: 0.3 }}
+              transition={{ duration: sectionPresets.heading.titleDuration, ease, delay: sectionPresets.heading.titleDelay }}
             >
               <BrokenText
                 text={t("title")}
@@ -86,7 +86,7 @@ export function Process({ steps }: ProcessProps) {
         {/* Единый адаптивный grid */}
         <StaggerContainer
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8"
-          staggerDelay={0.08}
+          staggerDelay={sectionPresets.denseGrid.stagger}
         >
           {items.map((step) => (
             <StaggerItem key={step.number}>

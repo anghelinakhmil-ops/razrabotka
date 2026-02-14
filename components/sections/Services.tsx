@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
-import { ease, duration } from "@/lib/motion";
+import { ease, duration, sectionPresets } from "@/lib/motion";
 
 /**
  * Данные для одной услуги
@@ -73,13 +73,13 @@ export function Services({ services }: ServicesProps) {
               as="span"
               className="text-caption text-[var(--color-text-muted)]"
               direction="up"
-              staggerDelay={0.06}
+              staggerDelay={sectionPresets.heading.captionStagger}
             />
             <motion.h2
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: duration.slow, ease, delay: 0.3 }}
+              transition={{ duration: sectionPresets.heading.titleDuration, ease, delay: sectionPresets.heading.titleDelay }}
             >
               <BrokenText
                 text={t("title")}
@@ -94,7 +94,7 @@ export function Services({ services }: ServicesProps) {
         {/* Сетка услуг */}
         <StaggerContainer
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
-          staggerDelay={0.1}
+          staggerDelay={sectionPresets.grid.stagger}
         >
           {items.map((service, index) => (
             <StaggerItem key={index}>

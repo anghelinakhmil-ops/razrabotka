@@ -172,6 +172,41 @@ export const variants = {
 } as const;
 
 // ============================================================================
+// Section Presets — единые пресеты для секций и страниц
+// ============================================================================
+
+export const sectionPresets = {
+  /** Section heading: caption → h2 → description cascade */
+  heading: {
+    /** SplitTextReveal stagger for captions */
+    captionStagger: 0.06,
+    /** Delay before h2 title animates */
+    titleDelay: 0.3,
+    /** Duration for h2 title animation */
+    titleDuration: duration.slow,
+    /** Delay before subtitle/description */
+    subtitleDelay: 0.4,
+  },
+  /** Card grid (2-3 columns, 3-6 items) */
+  grid: {
+    stagger: 0.1,
+  },
+  /** Dense grid (4+ columns, many small items) */
+  denseGrid: {
+    stagger: 0.08,
+  },
+  /** Content cascade (sequential blocks with progressive delay) */
+  cascade: {
+    step: 0.1,
+  },
+  /** Section images (reveal on scroll) */
+  image: {
+    delay: 0.2,
+    duration: 0.8,
+  },
+} as const;
+
+// ============================================================================
 // Motion Config — объединённая конфигурация
 // ============================================================================
 
@@ -182,6 +217,7 @@ export const motionConfig = {
   stagger,
   translateY,
   variants,
+  sectionPresets,
 } as const;
 
 // ============================================================================

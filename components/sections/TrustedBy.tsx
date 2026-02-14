@@ -1,10 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
-import { SplitTextReveal } from "@/components/motion";
-import { ease, duration } from "@/lib/motion";
+import { SplitTextReveal, StaggerContainer, StaggerItem } from "@/components/motion";
+import { sectionPresets } from "@/lib/motion";
 
 /**
  * SVG логотипы клиентов (стилизованные, grayscale)
@@ -95,28 +94,25 @@ export function TrustedBy() {
           as="p"
           className="text-caption text-[var(--color-text-muted)] text-center mb-12"
           direction="up"
-          staggerDelay={0.06}
+          staggerDelay={sectionPresets.heading.captionStagger}
         />
 
-        <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-8 lg:gap-x-14">
-          {CLIENTS.map((client, i) => (
-            <motion.div
-              key={client.name}
-              className="flex items-center justify-center text-[var(--color-text-muted)]/30 hover:text-[var(--color-text-muted)] transition-colors duration-300"
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{
-                duration: duration.normal,
-                ease,
-                delay: 0.1 + i * 0.08,
-              }}
-              aria-label={client.name}
-            >
-              {client.svg}
-            </motion.div>
+        <StaggerContainer
+          className="flex flex-wrap items-center justify-center gap-x-10 gap-y-8 lg:gap-x-14"
+          staggerDelay={sectionPresets.denseGrid.stagger}
+          delayChildren={sectionPresets.cascade.step}
+        >
+          {CLIENTS.map((client) => (
+            <StaggerItem key={client.name}>
+              <div
+                className="flex items-center justify-center text-[var(--color-text-muted)]/30 hover:text-[var(--color-text-muted)] transition-colors duration-300"
+                aria-label={client.name}
+              >
+                {client.svg}
+              </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
       </Container>
     </section>
   );

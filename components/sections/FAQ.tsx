@@ -8,7 +8,7 @@ import { BrokenText } from "@/components/ui/BrokenText";
 import { Accordion, AccordionItem } from "@/components/ui/Accordion";
 import { Button } from "@/components/ui/Button";
 import { RevealOnScroll, SplitTextReveal } from "@/components/motion";
-import { ease, duration } from "@/lib/motion";
+import { ease, duration, sectionPresets } from "@/lib/motion";
 import { faqSchema } from "@/lib/schema";
 
 /**
@@ -74,13 +74,13 @@ export function FAQ({ items }: FAQProps) {
               as="span"
               className="text-caption text-[var(--color-text-muted)]"
               direction="up"
-              staggerDelay={0.06}
+              staggerDelay={sectionPresets.heading.captionStagger}
             />
             <motion.h2
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: duration.slow, ease, delay: 0.3 }}
+              transition={{ duration: sectionPresets.heading.titleDuration, ease, delay: sectionPresets.heading.titleDelay }}
             >
               <BrokenText
                 text={t("title")}
@@ -95,7 +95,7 @@ export function FAQ({ items }: FAQProps) {
         {/* FAQ Grid - две колонки на desktop */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-12">
           {/* Левая колонка */}
-          <RevealOnScroll direction="up" delay={0.1}>
+          <RevealOnScroll direction="up" delay={sectionPresets.cascade.step}>
             <Accordion allowMultiple>
               {leftColumn.map((item, index) => (
                 <AccordionItem
@@ -110,7 +110,7 @@ export function FAQ({ items }: FAQProps) {
           </RevealOnScroll>
 
           {/* Правая колонка */}
-          <RevealOnScroll direction="up" delay={0.2}>
+          <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 2}>
             <Accordion allowMultiple>
               {rightColumn.map((item, index) => (
                 <AccordionItem
@@ -126,7 +126,7 @@ export function FAQ({ items }: FAQProps) {
         </div>
 
         {/* CTA после FAQ */}
-        <RevealOnScroll direction="up" delay={0.3}>
+        <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 3}>
           <div className="mt-16 lg:mt-20 pt-12 border-t border-[var(--color-line)] text-center">
             <p className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-3">
               {t("ctaTitle")}

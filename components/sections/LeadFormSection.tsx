@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { getUtmData } from "@/lib/utm";
 import { RevealOnScroll } from "@/components/motion";
+import { sectionPresets } from "@/lib/motion";
 import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
 
 interface LeadFormSectionProps {
@@ -138,14 +139,14 @@ export function LeadFormSection({
           </RevealOnScroll>
 
           {/* Подзаголовок */}
-          <RevealOnScroll direction="up" delay={0.1}>
+          <RevealOnScroll direction="up" delay={sectionPresets.cascade.step}>
             <p className="text-body text-[var(--color-text-light)] mb-10 lg:mb-12">
               {subtitle || t("subtitle")}
             </p>
           </RevealOnScroll>
 
           {/* Форма или Success/Error State */}
-          <RevealOnScroll direction="up" delay={0.2}>
+          <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 2}>
             {formState === "success" ? (
               <SuccessMessage />
             ) : formState === "error" ? (
@@ -196,7 +197,7 @@ export function LeadFormSection({
           </RevealOnScroll>
 
           {/* Альтернативный CTA */}
-          <RevealOnScroll direction="up" delay={0.3}>
+          <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 3}>
             <div className="mt-10 pt-10 border-t border-[var(--color-line-dark)]">
               <p className="text-body-sm text-[var(--color-text-muted)] mb-4">
                 {t("briefCta")}

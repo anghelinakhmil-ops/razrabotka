@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { RevealOnScroll, StaggerContainer, StaggerItem, SplitTextReveal, ScrollScrubText } from "@/components/motion";
-import { ease, duration } from "@/lib/motion";
+import { ease, duration, sectionPresets } from "@/lib/motion";
 
 /**
  * Данные для одного преимущества
@@ -79,13 +79,13 @@ export function Benefits({ benefits }: BenefitsProps) {
               as="span"
               className="text-caption text-[var(--color-text-muted)]"
               direction="up"
-              staggerDelay={0.06}
+              staggerDelay={sectionPresets.heading.captionStagger}
             />
             <motion.h2
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: duration.slow, ease, delay: 0.3 }}
+              transition={{ duration: sectionPresets.heading.titleDuration, ease, delay: sectionPresets.heading.titleDelay }}
             >
               <BrokenText
                 text={t("title")}
@@ -195,8 +195,8 @@ function BenefitItem({
       <div className={`${reversed ? "lg:order-1" : "lg:order-2"}`}>
         <RevealOnScroll
           direction={reversed ? "right" : "left"}
-          delay={0.2}
-          duration={0.8}
+          delay={sectionPresets.image.delay}
+          duration={sectionPresets.image.duration}
         >
           <div className="relative aspect-[4/3] bg-[var(--color-background-alt)] overflow-hidden">
             {imageSrc ? (

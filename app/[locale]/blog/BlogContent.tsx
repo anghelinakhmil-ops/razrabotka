@@ -8,6 +8,7 @@ import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
+import { sectionPresets } from "@/lib/motion";
 
 /**
  * Категории статей
@@ -64,7 +65,7 @@ export default function BlogContent() {
             </span>
           </RevealOnScroll>
 
-          <RevealOnScroll direction="up" delay={0.1}>
+          <RevealOnScroll direction="up" delay={sectionPresets.cascade.step}>
             <h1 className="mb-6">
               <BrokenText
                 text={t("title")}
@@ -75,7 +76,7 @@ export default function BlogContent() {
             </h1>
           </RevealOnScroll>
 
-          <RevealOnScroll direction="up" delay={0.2}>
+          <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 2}>
             <p className="text-body-lg text-[var(--color-text-secondary)] max-w-2xl">
               {t("description")}
             </p>
@@ -115,7 +116,7 @@ export default function BlogContent() {
           {filteredPosts.length > 0 ? (
             <StaggerContainer
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
-              staggerDelay={0.1}
+              staggerDelay={sectionPresets.grid.stagger}
             >
               {filteredPosts.map((post) => (
                 <StaggerItem key={post.slug}>
@@ -252,13 +253,13 @@ function CTASection() {
             </h2>
           </RevealOnScroll>
 
-          <RevealOnScroll direction="up" delay={0.1}>
+          <RevealOnScroll direction="up" delay={sectionPresets.cascade.step}>
             <p className="text-body text-[var(--color-background)]/70 mb-8">
               {t("ctaText")}
             </p>
           </RevealOnScroll>
 
-          <RevealOnScroll direction="up" delay={0.2}>
+          <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 2}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <CtaButton
                 variant="primary"

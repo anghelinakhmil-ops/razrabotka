@@ -6,6 +6,7 @@ import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { RevealOnScroll, StaggerContainer, StaggerItem, ScrollScrubText } from "@/components/motion";
+import { sectionPresets } from "@/lib/motion";
 
 export const metadata: Metadata = {
   title: "О нас",
@@ -39,7 +40,7 @@ export default async function AboutPage() {
             </span>
           </RevealOnScroll>
 
-          <RevealOnScroll direction="up" delay={0.1}>
+          <RevealOnScroll direction="up" delay={sectionPresets.cascade.step}>
             <h1 className="mb-6">
               <BrokenText
                 text={t("heroTitle")}
@@ -92,7 +93,7 @@ export default async function AboutPage() {
               </div>
             </div>
 
-            <RevealOnScroll direction="up" delay={0.2}>
+            <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 2}>
               <div className="aspect-[4/3] bg-[var(--color-background)] border border-[var(--color-line)] flex items-center justify-center">
                 <div className="text-center">
                   <span className="text-6xl sm:text-8xl font-display font-bold text-[var(--color-line)]">
@@ -127,7 +128,7 @@ export default async function AboutPage() {
 
           <StaggerContainer
             className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12"
-            staggerDelay={0.1}
+            staggerDelay={sectionPresets.grid.stagger}
           >
             {values.map((value) => (
               <StaggerItem key={value.number}>
@@ -169,7 +170,7 @@ export default async function AboutPage() {
 
           <StaggerContainer
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
-            staggerDelay={0.08}
+            staggerDelay={sectionPresets.denseGrid.stagger}
           >
             {principles.map((principle, index) => (
               <StaggerItem key={index}>
@@ -206,7 +207,7 @@ export default async function AboutPage() {
 
           <StaggerContainer
             className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0"
-            staggerDelay={0.1}
+            staggerDelay={sectionPresets.denseGrid.stagger}
           >
             {achievements.map((item, index) => (
               <StaggerItem key={index}>
@@ -244,13 +245,13 @@ export default async function AboutPage() {
               </h2>
             </RevealOnScroll>
 
-            <RevealOnScroll direction="up" delay={0.1}>
+            <RevealOnScroll direction="up" delay={sectionPresets.cascade.step}>
               <p className="text-body text-[var(--color-text-light)] mb-8">
                 {t("ctaDescription")}
               </p>
             </RevealOnScroll>
 
-            <RevealOnScroll direction="up" delay={0.2}>
+            <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 2}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <CtaButton
                   variant="primary"
