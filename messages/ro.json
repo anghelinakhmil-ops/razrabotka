@@ -1879,5 +1879,9 @@
         }
       }
     }
+  },
+  "preloader": {
+    "loading": "Se încarcă resursele...",
+    "progress": "Încărcare: {progress}%"
   }
 }

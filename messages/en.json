@@ -1879,5 +1879,9 @@
         }
       }
     }
+  },
+  "preloader": {
+    "loading": "Loading resources...",
+    "progress": "Loading: {progress}%"
   }
 }

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { ease, duration } from "@/lib/motion";
 
@@ -65,6 +66,8 @@ export function Preloader({
   forceShow = false,
   onComplete,
 }: PreloaderProps) {
+  const t = useTranslations("preloader");
+
   // Вычисляем начальное значение shouldShow синхронно
   const shouldShow = useMemo(() => {
     if (forceShow) return true;
@@ -260,7 +263,7 @@ export function Preloader({
                   select-none
                 "
                 aria-live="polite"
-                aria-label={`Загрузка: ${progress}%`}
+                aria-label={t("progress", { progress })}
               >
                 {formatProgress(progress)}%
               </span>
@@ -299,7 +302,7 @@ export function Preloader({
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.3 }}
               >
-                Загрузка ресурсов...
+                {t("loading")}
               </motion.p>
             )}
           </div>

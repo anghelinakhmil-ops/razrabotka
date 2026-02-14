@@ -840,5 +840,9 @@
         "landing-app": { "title": "Лендинг мобильного приложения", "categoryLabel": "Лендинг", "description": "Промо-страница для fitness-приложения с App Store ссылками.", "client": "FitLife App", "year": "2024", "duration": "2 недели", "task": "Создать лендинг для мобильного fitness-приложения, который мотивирует на установку. Показать функционал и преимущества, интегрировать ссылки на App Store и Google Play.", "solution": ["Создали яркий, энергичный дизайн", "Добавили интерактивные демо-скриншоты", "Реализовали видео-превью функций", "Интегрировали smart app banners", "Добавили отзывы пользователей и рейтинги"], "results": [{ "value": "12K", "label": "Установок" }, { "value": "15%", "label": "Конверсия" }, { "value": "1.2 сек", "label": "LCP" }, { "value": "99", "label": "Lighthouse" }], "technologies": ["Next.js", "TypeScript", "Framer Motion", "Smart Banners"] }
       }
     }
+  },
+  "preloader": {
+    "loading": "Загрузка ресурсов...",
+    "progress": "Загрузка: {progress}%"
   }
 }

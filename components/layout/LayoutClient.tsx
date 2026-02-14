@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { MobileMenu } from "./MobileMenu";
+import { Preloader } from "./Preloader";
 import { CallbackModal } from "@/components/forms/CallbackModal";
 import { LenisProvider } from "@/components/motion/LenisProvider";
 import { CustomCursor } from "@/components/ui/CustomCursor";
@@ -50,6 +51,9 @@ export function LayoutClient({ children }: LayoutClientProps) {
 
   return (
     <LenisProvider>
+      {/* Preloader — shows once per session on first load */}
+      <Preloader />
+
       {/* Custom Cursor — hidden on touch devices */}
       <CustomCursor />
 
