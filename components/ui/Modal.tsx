@@ -70,7 +70,7 @@ export function Modal({
     md: "max-w-md",
     lg: "max-w-lg",
     xl: "max-w-xl",
-    full: "max-w-[calc(100vw-2rem)] max-h-[calc(100dvh-2rem)]",
+    full: "max-w-[calc(100%-2rem)] max-h-[calc(100dvh-2rem)]",
   };
 
   // Handle Escape key

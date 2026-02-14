@@ -139,7 +139,7 @@ type TranslationFn = ReturnType<typeof import("next-intl").useTranslations>;
  */
 function HeroSection({ caseData, t }: { caseData: CaseData; t: TranslationFn }) {
   return (
-    <section className="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-[var(--color-background)]">
+    <section className="pt-24 pb-16 lg:pt-40 lg:pb-20 bg-[var(--color-background)]">
       <Container>
         <RevealOnScroll direction="up">
           <Link

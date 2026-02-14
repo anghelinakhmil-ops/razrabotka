@@ -34,7 +34,7 @@ export function LenisProvider({ children }: LenisProviderProps) {
     const lenis = new Lenis({
       duration: 1.7,
       easing: (t: number) => Math.min(1, 1 - Math.pow(2, -10 * t)),
-      touchMultiplier: 2,
+      touchMultiplier: 1.5,
       infinite: false,
     });
 

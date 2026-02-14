@@ -31,7 +31,7 @@ export default async function PrivacyPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="pt-32 pb-12 lg:pt-40 lg:pb-16 bg-[var(--color-background)]">
+      <section className="pt-24 pb-12 lg:pt-40 lg:pb-16 bg-[var(--color-background)]">
         <Container size="sm">
           <span className="text-caption text-[var(--color-text-muted)] mb-4 block">
             {t("caption")}

@@ -147,7 +147,7 @@ export default async function BlogPostPage({
       />
 
       {/* Hero */}
-      <section className="pt-32 pb-12 lg:pt-40 lg:pb-16 bg-[var(--color-background)]">
+      <section className="pt-24 pb-12 lg:pt-40 lg:pb-16 bg-[var(--color-background)]">
         <Container>
           <div className="max-w-3xl">
             <RevealOnScroll direction="up">

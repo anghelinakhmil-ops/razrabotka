@@ -261,6 +261,7 @@ export function Preloader({
                   tracking-tight
                   tabular-nums
                   select-none
+                  will-change-transform
                 "
                 aria-live="polite"
                 aria-label={t("progress", { progress })}

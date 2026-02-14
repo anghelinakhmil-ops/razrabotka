@@ -57,7 +57,7 @@ export default function BlogContent() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="pt-32 pb-12 lg:pt-40 lg:pb-16 bg-[var(--color-background)]">
+      <section className="pt-24 pb-12 lg:pt-40 lg:pb-16 bg-[var(--color-background)]">
         <Container>
           <RevealOnScroll direction="up">
             <span className="text-caption text-[var(--color-text-muted)] mb-4 block">

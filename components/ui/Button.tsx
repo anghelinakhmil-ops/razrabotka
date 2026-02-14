@@ -162,7 +162,7 @@ function useButtonClasses({
   };
 
   const sizeClasses: Record<ButtonSize, string> = {
-    sm: clsx("h-9 px-4", "text-[12px]"),
+    sm: clsx("h-11 px-4", "text-[12px]"),
     md: clsx("h-11 px-6", "text-[13px]"),
     lg: clsx("h-14 px-8", "text-[14px]"),
   };
