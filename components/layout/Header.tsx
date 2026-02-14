@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { BrokenText } from "../ui/BrokenText";
+import { LanguageSwitcher } from "../ui/LanguageSwitcher";
 import { NavLink } from "./NavLink";
 import { NAV_ITEMS, CONTACT } from "@/lib/constants";
 
@@ -121,8 +122,14 @@ export function Header({
             </ul>
           </nav>
 
-          {/* Right side: email + menu toggle */}
+          {/* Right side: lang switcher + email + menu toggle */}
           <div className="flex items-center gap-6">
+            {/* Language Switcher — desktop only */}
+            <LanguageSwitcher
+              variant={isMenuOpen ? "dark" : "light"}
+              className="hidden lg:flex"
+            />
+
             {/* Email — desktop only */}
             <a
               href={`mailto:${CONTACT.email}`}

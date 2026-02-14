@@ -4,6 +4,7 @@ import { clsx } from "clsx";
 import { useEffect, useCallback, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { LanguageSwitcher } from "../ui/LanguageSwitcher";
 import { NAV_ITEMS, CONTACT } from "@/lib/constants";
 
 interface MobileMenuProps {
@@ -132,7 +133,7 @@ export function MobileMenu({
           </ul>
         </nav>
 
-        {/* Contact info */}
+        {/* Language Switcher + Contact info */}
         <div
           className={clsx(
             "mt-8 pt-8 border-t border-white/10 transition-all duration-400 ease-out",
@@ -144,6 +145,7 @@ export function MobileMenu({
             transitionDelay: isOpen ? `${100 + NAV_ITEMS.length * 50}ms` : "0ms",
           }}
         >
+          <LanguageSwitcher variant="dark" className="mb-6" />
           <a
             href={`mailto:${CONTACT.email}`}
             tabIndex={isOpen ? 0 : -1}

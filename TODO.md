@@ -29,8 +29,8 @@
 | 17 | Аудит: приближение к референсу | 49/49 (100%) | ✅ |
 | 18 | Аудит: исправления (F0→F3) | 33/33 (100%) | ✅ |
 | 19 | Подготовка к рекламе | 10/10 (100%) | ✅ |
-| 20 | i18n — Мультиязычность (en/ru/uk/ro) | 49/62 (79%) | 🟡 |
-| **ИТОГО** | | **987/1000 (99%)** | 🟡 |
+| 20 | i18n — Мультиязычность (en/ru/uk/ro) | 37/62 (60%) | 🟡 |
+| **ИТОГО** | | **975/1000 (98%)** | 🟡 |
 
 **Легенда статусов:**
 - ✅ 100% — полностью выполнено
@@ -1531,7 +1531,7 @@
 
 ---
 
-# ФАЗА 20: i18n — Мультиязычность (en/ru/uk/ro) [49/62] 🟡
+# ФАЗА 20: i18n — Мультиязычность (en/ru/uk/ro) [52/62] 🟡
 
 > **Библиотека:** next-intl
 > **Языки:** en (default), ru, uk, ro
@@ -1594,27 +1594,27 @@
 
 ## 20.6 Миграция внутренних страниц [8/8] ✅
 
-- [x] **i18n-38**: About page — getTranslations("pages.about")
-- [x] **i18n-39**: Services page — getTranslations("pages.services")
-- [x] **i18n-40**: Contacts page + ContactsContent — useTranslations("pages.contacts")
-- [x] **i18n-41**: Brief page + BriefContent — useTranslations("pages.brief")
-- [x] **i18n-42**: Privacy page — getTranslations("pages.privacy")
-- [x] **i18n-43**: Terms page — getTranslations("pages.terms")
-- [x] **i18n-44**: Error page — useTranslations("error")
-- [x] **i18n-45**: Not-found page — useTranslations("notFound")
+- [ ] **i18n-38**: About page — getTranslations("pages.about")
+- [ ] **i18n-39**: Services page — getTranslations("pages.services")
+- [ ] **i18n-40**: Contacts page + ContactsContent — useTranslations("pages.contacts")
+- [ ] **i18n-41**: Brief page + BriefContent — useTranslations("pages.brief")
+- [ ] **i18n-42**: Privacy page — getTranslations("pages.privacy")
+- [ ] **i18n-43**: Terms page — getTranslations("pages.terms")
+- [ ] **i18n-44**: Error page — useTranslations
+- [ ] **i18n-45**: Not-found page — useTranslations
 
 ## 20.7 Миграция блога и кейсов [4/4] ✅
 
-- [x] **i18n-46**: Blog listing (BlogContent.tsx) — карточки с переведёнными данными
-- [x] **i18n-47**: Blog article (blog/[slug]/page.tsx) — контент из переводов по locale
-- [x] **i18n-48**: Cases listing (CasesContent.tsx) — карточки с переведёнными данными
-- [x] **i18n-49**: Case detail (cases/[slug]/page.tsx) — контент из переводов по locale
+- [ ] **i18n-46**: Blog listing (BlogContent.tsx) — карточки с переведёнными данными
+- [ ] **i18n-47**: Blog article (blog/[slug]/page.tsx) — контент из переводов по locale
+- [ ] **i18n-48**: Cases listing (CasesContent.tsx) — карточки с переведёнными данными
+- [ ] **i18n-49**: Case detail (cases/[slug]/page.tsx) — контент из переводов по locale
 
-## 20.8 Переключатель языка [0/3] ❌
+## 20.8 Переключатель языка [3/3] ✅
 
-- [ ] **i18n-50**: Создать `components/ui/LanguageSwitcher.tsx` — текстовые кнопки EN|RU|UK|RO, сохраняет путь
-- [ ] **i18n-51**: Интегрировать LanguageSwitcher в Header.tsx (desktop)
-- [ ] **i18n-52**: Интегрировать LanguageSwitcher в MobileMenu.tsx (mobile)
+- [x] **i18n-50**: Создать `components/ui/LanguageSwitcher.tsx` — текстовые кнопки EN|RU|UK|RO, сохраняет путь
+- [x] **i18n-51**: Интегрировать LanguageSwitcher в Header.tsx (desktop)
+- [x] **i18n-52**: Интегрировать LanguageSwitcher в MobileMenu.tsx (mobile)
 
 ## 20.9 SEO для i18n [0/5] ❌
 
