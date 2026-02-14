@@ -1,27 +1,36 @@
 /**
  * Email — модуль для отправки email уведомлений
  *
- * Использует Resend для отправки писем о новых заявках.
+ * Использует Fastmail SMTP (nodemailer) для отправки писем о новых заявках.
  */
 
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
 /**
- * Инициализация Resend клиента
+ * Инициализация SMTP транспорта (Fastmail)
  */
-const resend = process.env.RESEND_API_KEY
-  ? new Resend(process.env.RESEND_API_KEY)
-  : null;
+const transporter =
+  process.env.SMTP_HOST && process.env.SMTP_PASS
+    ? nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: Number(process.env.SMTP_PORT) || 465,
+        secure: true,
+        auth: {
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
+        },
+      })
+    : null;
 
 /**
  * Email адрес для получения уведомлений
  */
-const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || "hello@nakoagency.com";
+const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || "leads@nakoagency.com";
 
 /**
  * Email адрес отправителя
  */
-const FROM_EMAIL = process.env.FROM_EMAIL || "NAKO Agency <noreply@nakoagency.com>";
+const FROM_EMAIL = process.env.FROM_EMAIL || "NAKO Agency <hello@nakoagency.com>";
 
 /**
  * Типы заявок для email
@@ -429,9 +438,8 @@ function generatePlainTextEmail(data: LeadEmailData): string {
  * Отправка email уведомления о новой заявке
  */
 export async function sendLeadNotification(data: LeadEmailData): Promise<EmailResult> {
-  // Проверяем наличие API ключа
-  if (!resend) {
-    console.warn("⚠️ RESEND_API_KEY not configured, skipping email");
+  if (!transporter) {
+    console.warn("⚠️ SMTP not configured, skipping email");
     return {
       success: false,
       error: "Email service not configured",
@@ -441,7 +449,6 @@ export async function sendLeadNotification(data: LeadEmailData): Promise<EmailRe
   const typeName = getLeadTypeName(data.type);
   const subject = `[NAKO Agency] ${typeName}: ${data.name || data.phone || data.email || "Новая заявка"}`;
 
-  // Выбираем шаблон в зависимости от типа
   const html = data.type === "brief"
     ? generateBriefEmail(data)
     : generateQuickLeadEmail(data);
@@ -449,7 +456,7 @@ export async function sendLeadNotification(data: LeadEmailData): Promise<EmailRe
   const text = generatePlainTextEmail(data);
 
   try {
-    const response = await resend.emails.send({
+    const info = await transporter.sendMail({
       from: FROM_EMAIL,
       to: NOTIFICATION_EMAIL,
       subject,
@@ -457,15 +464,11 @@ export async function sendLeadNotification(data: LeadEmailData): Promise<EmailRe
       text,
     });
 
-    if (response.error) {
-      throw new Error(response.error.message);
-    }
-
-    console.log(`✉️ Email sent successfully: ${response.data?.id}`);
+    console.log(`✉️ Email sent successfully: ${info.messageId}`);
 
     return {
       success: true,
-      messageId: response.data?.id,
+      messageId: info.messageId,
     };
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : "Unknown error";
@@ -482,5 +485,5 @@ export async function sendLeadNotification(data: LeadEmailData): Promise<EmailRe
  * Проверка конфигурации email
  */
 export function isEmailConfigured(): boolean {
-  return !!resend;
+  return !!transporter;
 }
