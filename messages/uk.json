@@ -34,7 +34,11 @@
     "scroll": "Скрол",
     "ariaScroll": "Прокрутити до наступної секції",
     "visualAlt": "Розробка сайтів під ключ — веб-студія",
-    "fullBleedAlt": "Робочий процес створення сайту в NAKO Agency"
+    "fullBleedAlt": "Робочий процес створення сайту в NAKO Agency",
+    "fullBleedProcessAlt": "Творчий процес у NAKO Agency",
+    "fullBleedProcessOverlay": "ПРОЦЕС",
+    "fullBleedTeamAlt": "Робочий простір команди NAKO Agency",
+    "fullBleedTeamOverlay": "КОМАНДА"
   },
   "benefits": {
     "caption": "Чому ми",

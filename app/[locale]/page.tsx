@@ -24,10 +24,20 @@ export default async function Home() {
       />
       <Metrics />
       <Services />
+      <FullBleedImage
+        src="/images/fullbleed-process.jpg"
+        alt={t("fullBleedProcessAlt")}
+        overlayText={t("fullBleedProcessOverlay")}
+      />
       <Process />
       <CasesPreview />
       <Testimonials />
       <TrustedBy />
+      <FullBleedImage
+        src="/images/fullbleed-team.jpg"
+        alt={t("fullBleedTeamAlt")}
+        overlayText={t("fullBleedTeamOverlay")}
+      />
       <FAQ />
       <LeadFormSection />
     </>

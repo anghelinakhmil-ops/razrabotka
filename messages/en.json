@@ -34,7 +34,11 @@
     "scroll": "Scroll",
     "ariaScroll": "Scroll to next section",
     "visualAlt": "Turnkey website development — web studio",
-    "fullBleedAlt": "Website creation process at NAKO Agency"
+    "fullBleedAlt": "Website creation process at NAKO Agency",
+    "fullBleedProcessAlt": "Creative process at NAKO Agency",
+    "fullBleedProcessOverlay": "CRAFT",
+    "fullBleedTeamAlt": "NAKO Agency team workspace",
+    "fullBleedTeamOverlay": "TEAM"
   },
   "benefits": {
     "caption": "Why us",

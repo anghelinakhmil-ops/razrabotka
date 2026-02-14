@@ -34,7 +34,11 @@
     "scroll": "Scroll",
     "ariaScroll": "Derulează la secțiunea următoare",
     "visualAlt": "Dezvoltare site-uri web la cheie — studio web",
-    "fullBleedAlt": "Procesul de creare a site-ului la NAKO Agency"
+    "fullBleedAlt": "Procesul de creare a site-ului la NAKO Agency",
+    "fullBleedProcessAlt": "Procesul creativ la NAKO Agency",
+    "fullBleedProcessOverlay": "PROCES",
+    "fullBleedTeamAlt": "Spațiul de lucru al echipei NAKO Agency",
+    "fullBleedTeamOverlay": "ECHIPĂ"
   },
   "benefits": {
     "caption": "De ce noi",
