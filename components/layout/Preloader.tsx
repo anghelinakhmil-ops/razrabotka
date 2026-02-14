@@ -153,6 +153,7 @@ export function Preloader({
         // Добавляем задержку перед исчезновением
         setTimeout(() => {
           setIsExiting(true);
+          setIsVisible(false);
         }, 300);
       } else {
         animationId = requestAnimationFrame(updateProgress);
@@ -170,7 +171,6 @@ export function Preloader({
 
   // Обработка завершения анимации выхода
   const handleExitComplete = () => {
-    setIsVisible(false);
     // Сохраняем в sessionStorage что прелоадер был показан
     markPreloaderAsShown();
     onComplete?.();
