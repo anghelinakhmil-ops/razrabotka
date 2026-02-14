@@ -18,21 +18,12 @@ interface BrokenTextProps {
 }
 
 /**
- * Обрабатывает текст: uppercase и добавляет пробелы между буквами
+ * Обрабатывает текст: uppercase
+ * Разрядка реализуется через CSS letter-spacing (не literal пробелы),
+ * чтобы браузер переносил строку только на границе слов.
  */
-function processText(text: string, spaced: boolean): string {
-  const chars = text.toUpperCase().split("");
-
-  const processed = chars.map((char) => {
-    if (char === " ") return spaced ? "   " : " ";
-    return char;
-  });
-
-  if (spaced) {
-    return processed.join(" ");
-  }
-
-  return processed.join("");
+function processText(text: string): string {
+  return text.toUpperCase();
 }
 
 /**
@@ -57,7 +48,7 @@ export function BrokenText({
   className,
   as: Component = "span",
 }: BrokenTextProps) {
-  const processedText = processText(text, spaced);
+  const processedText = processText(text);
 
   const classes = clsx(
     variant === "ultra" ? "text-broken-ultra" : "text-broken",

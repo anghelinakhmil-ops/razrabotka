@@ -357,6 +357,11 @@ body {
   line-height: var(--line-height-h3);
 }
 
+/* Spaced mode — широкая разрядка через CSS (не literal пробелы) */
+.text-broken-spaced {
+  letter-spacing: 0.35em;
+}
+
 /* ============================================
    RESPONSIVE — Mobile (< 768px)
    ============================================ */
@@ -389,9 +394,9 @@ body {
     letter-spacing: 0.08em;
   }
 
-  /* Mobile: tighten space characters from BrokenText spaced mode */
+  /* Mobile: reduce spaced mode letter-spacing */
   .text-broken-spaced {
-    word-spacing: -0.2em;
+    letter-spacing: 0.15em;
   }
 
   /* Mobile: increase line-height for broken text headings */
