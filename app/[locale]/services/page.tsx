@@ -86,7 +86,7 @@ export default async function ServicesPage() {
               <BrokenText
                 text={t("title")}
                 spaced
-                mixPattern={[2, 4]}
+                mixPattern="every-3"
                 className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h1>
@@ -264,7 +264,7 @@ export default async function ServicesPage() {
               <BrokenText
                 text={t("comparisonTitle")}
                 spaced
-                mixPattern={[2, 4]}
+                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h2>

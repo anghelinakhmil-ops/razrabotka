@@ -259,7 +259,7 @@ function TaskSection({ task, t }: { task: string; t: TranslationFn }) {
               <BrokenText
                 text={t("taskTitle")}
                 spaced
-                mixPattern={[2, 4]}
+                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h2>
@@ -292,7 +292,7 @@ function SolutionSection({ solution, t }: { solution: string[]; t: TranslationFn
               <BrokenText
                 text={t("solutionTitle")}
                 spaced
-                mixPattern={[3, 5]}
+                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h2>
@@ -339,7 +339,7 @@ function ResultsSection({
             <BrokenText
               text={t("resultsTitle")}
               spaced
-              mixPattern={[3, 7]}
+              mixPattern="every-3"
               className="text-h2 font-display font-bold text-[var(--color-background)]"
             />
           </h2>
@@ -448,7 +448,7 @@ function OtherCasesSection({
             <BrokenText
               text={t("otherCasesTitle")}
               spaced
-              mixPattern={[2, 8]}
+              mixPattern="every-3"
               className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
             />
           </h2>

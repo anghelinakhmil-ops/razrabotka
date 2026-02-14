@@ -38,7 +38,7 @@ export default function ContactsContent() {
               <BrokenText
                 text={t("title")}
                 spaced
-                mixPattern={[2, 5]}
+                mixPattern="every-3"
                 className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h1>

@@ -85,7 +85,7 @@ export function FAQ({ items }: FAQProps) {
               <BrokenText
                 text={t("title")}
                 spaced
-                mixPattern={[2, 5]}
+                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </motion.h2>

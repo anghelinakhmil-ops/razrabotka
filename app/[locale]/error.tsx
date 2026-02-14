@@ -60,7 +60,6 @@ export default function Error({
             <BrokenText
               text={t("heading")}
               spaced
-              mixPattern={[2, 4]}
               className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
             />
           </h1>

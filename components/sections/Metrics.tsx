@@ -74,7 +74,7 @@ export function Metrics({ metrics }: MetricsProps) {
               <BrokenText
                 text={t("title")}
                 spaced
-                mixPattern={[2, 6]}
+                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </motion.h2>

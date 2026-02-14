@@ -91,20 +91,31 @@ function processText(
  * Создаёт эффект смешения кириллицы и латиницы с увеличенной разрядкой.
  * Референс: THE BRIDGE — «П R ИРОДА», «O РЕНДИ», «THE B RIDGE»
  *
- * @example
- * // Простой текст с пробелами
- * <BrokenText text="САЙТЫ" spaced />
- * // Результат: "С А Й Т Ы"
+ * ## Правила использования mixPattern
+ *
+ * **Tier 1 — Mix (mixPattern="every-3" + spaced):**
+ * Коммерческие H1/H2 заголовки, CTA заголовки, Hero.
+ * Создаёт фирменный «ломаный» стиль.
+ *
+ * **Tier 2 — Spaced only (без mixPattern, только spaced):**
+ * H3 подзаголовки, логотипы, навигация.
+ * Разрядка без замены букв — чистый, читабельный стиль.
+ *
+ * **Tier 3 — Forbidden (не использовать BrokenText):**
+ * Body текст, FAQ ответы, формы, юридические страницы (terms/privacy) H1,
+ * страницы ошибок (error/404).
  *
  * @example
- * // Смешение кириллицы и латиницы
- * <BrokenText text="САЙТЫ" spaced mixPattern="every-2" />
- * // Результат: "C А Й T Ы" (некоторые буквы заменены на латиницу)
+ * // Tier 1: коммерческий заголовок с миксом
+ * <BrokenText text="УСЛУГИ" spaced mixPattern="every-3" />
  *
  * @example
- * // Конкретные позиции для замены
- * <BrokenText text="ПОДКЛЮЧ" spaced mixPattern={[1, 4]} />
- * // Результат: "П O Д К Л Y Ч"
+ * // Tier 2: подзаголовок только с разрядкой
+ * <BrokenText text="СТРАТЕГИЯ" spaced />
+ *
+ * @example
+ * // Tier 1: Hero с миксом
+ * <BrokenText text="РАЗРАБОТКА" spaced mixPattern="every-3" />
  */
 export function BrokenText({
   text,

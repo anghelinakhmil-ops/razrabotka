@@ -41,7 +41,6 @@ export default async function PrivacyPage() {
             <BrokenText
               text={t("heading1")}
               spaced
-              mixPattern={[2, 5]}
               className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
             />
             <span className="block text-h2 font-display font-bold text-[var(--color-text-secondary)] mt-2">

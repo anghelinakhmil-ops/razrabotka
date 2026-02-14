@@ -45,7 +45,7 @@ export default async function AboutPage() {
               <BrokenText
                 text={t("heroTitle")}
                 spaced
-                mixPattern={[1, 3]}
+                mixPattern="every-3"
                 className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h1>
@@ -71,7 +71,7 @@ export default async function AboutPage() {
                   <BrokenText
                     text={t("approachTitle")}
                     spaced
-                    mixPattern={[2, 4]}
+                    mixPattern="every-3"
                     className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
                   />
                 </h2>
@@ -120,7 +120,7 @@ export default async function AboutPage() {
               <BrokenText
                 text={t("valuesTitle")}
                 spaced
-                mixPattern={[3, 6]}
+                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h2>
@@ -162,7 +162,7 @@ export default async function AboutPage() {
               <BrokenText
                 text={t("principlesTitle")}
                 spaced
-                mixPattern={[2, 5]}
+                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h2>
@@ -199,7 +199,7 @@ export default async function AboutPage() {
               <BrokenText
                 text={t("achievementsTitle")}
                 spaced
-                mixPattern={[3, 7]}
+                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h2>
@@ -239,7 +239,7 @@ export default async function AboutPage() {
                 <BrokenText
                   text={t("ctaTitle")}
                   spaced
-                  mixPattern={[2, 5]}
+                  mixPattern="every-3"
                   className="text-h2 font-display font-bold text-[var(--color-background)]"
                 />
               </h2>

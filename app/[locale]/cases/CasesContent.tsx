@@ -65,7 +65,7 @@ export default function CasesContent() {
               <BrokenText
                 text={t("title")}
                 spaced
-                mixPattern={[1, 3]}
+                mixPattern="every-3"
                 className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
               />
             </h1>
@@ -269,7 +269,7 @@ function CTASection() {
               <BrokenText
                 text={t("ctaTitle")}
                 spaced
-                mixPattern={[2, 6]}
+                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-background)]"
               />
             </h2>

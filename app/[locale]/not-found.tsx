@@ -21,7 +21,6 @@ export default function NotFound() {
             <BrokenText
               text="404"
               spaced
-              mixPattern={[1]}
               className="text-[120px] sm:text-[160px] lg:text-[200px] font-display font-bold text-[var(--color-line)] leading-none"
             />
           </div>

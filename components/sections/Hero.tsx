@@ -72,19 +72,19 @@ export function Hero({ onCtaClick, imageSrc }: HeroProps) {
           <BrokenText
             text={t("line1")}
             spaced
-            mixPattern={[1, 5]}
+            mixPattern="every-3"
             className="text-white text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold tracking-tight"
           />
           <BrokenText
             text={t("line2")}
             spaced
-            mixPattern={[1]}
+            mixPattern="every-3"
             className="text-white text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold tracking-tight"
           />
           <BrokenText
             text={t("line3")}
             spaced
-            mixPattern={[1]}
+            mixPattern="every-3"
             className="text-white/60 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-medium mt-2"
           />
         </motion.h1>

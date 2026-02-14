@@ -49,7 +49,6 @@ export function Benefits({ benefits }: BenefitsProps) {
   const t = useTranslations("benefits");
 
   const IMAGE_SLUGS = ["strategy", "design", "speed", "integrations", "support"];
-  const MIX_PATTERNS: (number[] | undefined)[] = [[3, 6], [1, 4], [2, 5], [0, 5], [1, 6]];
 
   const translatedBenefits: BenefitData[] = (t.raw("items") as Array<{
     number: string; title: string; subtitle: string; description: string; imageAlt: string;
@@ -60,7 +59,6 @@ export function Benefits({ benefits }: BenefitsProps) {
     description: item.description,
     imageAlt: item.imageAlt,
     imageSrc: `/images/benefits/benefit-${item.number}-${IMAGE_SLUGS[i]}.jpg`,
-    mixPattern: MIX_PATTERNS[i],
   }));
 
   const items = benefits || translatedBenefits;
@@ -90,7 +88,7 @@ export function Benefits({ benefits }: BenefitsProps) {
               <BrokenText
                 text={t("title")}
                 spaced
-                mixPattern={[4, 8]}
+                mixPattern="every-3"
                 className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
               />
             </motion.h2>
@@ -128,7 +126,6 @@ function BenefitItem({
   title,
   subtitle,
   description,
-  mixPattern,
   imageSrc,
   imageAlt,
   blurDataURL,
@@ -162,7 +159,6 @@ function BenefitItem({
               <BrokenText
                 text={title}
                 spaced
-                mixPattern={mixPattern}
                 className="text-h3 font-display font-bold text-[var(--color-text-primary)] tracking-wide"
               />
             </h3>
