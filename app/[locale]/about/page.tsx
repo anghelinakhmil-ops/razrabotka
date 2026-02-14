@@ -260,15 +260,15 @@ export default async function AboutPage() {
                 >
                   {t("ctaCta")}
                 </CtaButton>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  as={Link}
-                  href="/cases"
-                  className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
-                >
-                  {t("ctaCases")}
-                </Button>
+                <Link href="/cases">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
+                  >
+                    {t("ctaCases")}
+                  </Button>
+                </Link>
               </div>
             </RevealOnScroll>
           </div>
