@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import Link from "next/link";
+import { useTranslations, useFormatter } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
@@ -28,132 +29,29 @@ interface BlogPost {
 }
 
 /**
- * Все статьи (отсортированы по дате, новые первые)
- */
-const allPosts: BlogPost[] = [
-  {
-    slug: "why-nextjs-for-business",
-    title: "Почему Next.js — лучший выбор для бизнес-сайта в 2024",
-    excerpt:
-      "Разбираем преимущества Next.js для коммерческих проектов: SEO, производительность, масштабируемость.",
-    category: "development",
-    categoryLabel: "Разработка",
-    date: "2026-01-20",
-    readTime: "8 мин",
-    author: "Команда NAKO Agency",
-  },
-  {
-    slug: "conversion-design-principles",
-    title: "7 принципов конверсионного дизайна",
-    excerpt:
-      "Как дизайн влияет на продажи. Практические приёмы, которые увеличивают конверсию.",
-    category: "design",
-    categoryLabel: "Дизайн",
-    date: "2026-01-12",
-    readTime: "6 мин",
-    author: "Команда NAKO Agency",
-  },
-  {
-    slug: "seo-for-new-websites",
-    title: "SEO для нового сайта: пошаговый чеклист",
-    excerpt:
-      "Что нужно сделать для SEO до запуска и в первые месяцы работы сайта.",
-    category: "marketing",
-    categoryLabel: "Маркетинг",
-    date: "2025-12-28",
-    readTime: "10 мин",
-    author: "Команда NAKO Agency",
-  },
-  {
-    slug: "expert-website-roi",
-    title: "Окупаемость сайта для эксперта: реальные цифры",
-    excerpt:
-      "Сколько стоит сайт, сколько приносит клиентов и когда окупается. Разбор на примерах.",
-    category: "business",
-    categoryLabel: "Бизнес",
-    date: "2025-12-15",
-    readTime: "7 мин",
-    author: "Команда NAKO Agency",
-  },
-  {
-    slug: "tailwind-vs-css-modules",
-    title: "Tailwind CSS vs CSS Modules: что выбрать",
-    excerpt:
-      "Сравниваем два подхода к стилизации в React-проектах. Плюсы, минусы, когда что использовать.",
-    category: "development",
-    categoryLabel: "Разработка",
-    date: "2025-11-25",
-    readTime: "9 мин",
-    author: "Команда NAKO Agency",
-  },
-  {
-    slug: "minimalism-in-web-design",
-    title: "Минимализм в веб-дизайне: тренд или необходимость",
-    excerpt:
-      "Почему меньше — это больше. Как минималистичный дизайн влияет на UX и конверсию.",
-    category: "design",
-    categoryLabel: "Дизайн",
-    date: "2025-11-10",
-    readTime: "5 мин",
-    author: "Команда NAKO Agency",
-  },
-  {
-    slug: "lighthouse-score-optimization",
-    title: "Как поднять Lighthouse до 90+",
-    excerpt:
-      "Практический гайд по оптимизации производительности сайта. Core Web Vitals, изображения, код.",
-    category: "development",
-    categoryLabel: "Разработка",
-    date: "2025-10-20",
-    readTime: "12 мин",
-    author: "Команда NAKO Agency",
-  },
-  {
-    slug: "landing-page-anatomy",
-    title: "Анатомия идеального лендинга",
-    excerpt:
-      "Какие блоки должны быть на лендинге и в каком порядке. Структура, которая продаёт.",
-    category: "marketing",
-    categoryLabel: "Маркетинг",
-    date: "2025-10-05",
-    readTime: "8 мин",
-    author: "Команда NAKO Agency",
-  },
-];
-
-/**
- * Фильтры категорий
- */
-const categoryFilters: { value: BlogCategory; label: string }[] = [
-  { value: "all", label: "Все статьи" },
-  { value: "development", label: "Разработка" },
-  { value: "design", label: "Дизайн" },
-  { value: "marketing", label: "Маркетинг" },
-  { value: "business", label: "Бизнес" },
-];
-
-/**
- * Форматирование даты
- */
-function formatDate(dateStr: string): string {
-  const date = new Date(dateStr);
-  return date.toLocaleDateString("ru-RU", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-}
-
-/**
  * Blog Page — страница блога
  */
 export default function BlogContent() {
+  const t = useTranslations("pages.blog");
+  const format = useFormatter();
   const [activeCategory, setActiveCategory] = useState<BlogCategory>("all");
+
+  const allPosts = t.raw("posts") as BlogPost[];
+  const categoryFilters: { value: BlogCategory; label: string }[] = [
+    { value: "all", label: t("filterAll") },
+    { value: "development", label: t("filterDevelopment") },
+    { value: "design", label: t("filterDesign") },
+    { value: "marketing", label: t("filterMarketing") },
+    { value: "business", label: t("filterBusiness") },
+  ];
 
   const filteredPosts = useMemo(() => {
     if (activeCategory === "all") return allPosts;
     return allPosts.filter((post) => post.category === activeCategory);
-  }, [activeCategory]);
+  }, [activeCategory, allPosts]);
+
+  const formatDate = (dateStr: string) =>
+    format.dateTime(new Date(dateStr), { day: "numeric", month: "long", year: "numeric" });
 
   return (
     <main>
@@ -162,14 +60,14 @@ export default function BlogContent() {
         <Container>
           <RevealOnScroll direction="up">
             <span className="text-caption text-[var(--color-text-muted)] mb-4 block">
-              Статьи
+              {t("caption")}
             </span>
           </RevealOnScroll>
 
           <RevealOnScroll direction="up" delay={0.1}>
             <h1 className="mb-6">
               <BrokenText
-                text="БЛОГ"
+                text={t("title")}
                 spaced
                 mixPattern={[1, 3]}
                 className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
@@ -179,8 +77,7 @@ export default function BlogContent() {
 
           <RevealOnScroll direction="up" delay={0.2}>
             <p className="text-body-lg text-[var(--color-text-secondary)] max-w-2xl">
-              Делимся опытом в разработке, дизайне и продвижении сайтов.
-              Практические советы и разборы кейсов.
+              {t("description")}
             </p>
           </RevealOnScroll>
         </Container>
@@ -222,7 +119,7 @@ export default function BlogContent() {
             >
               {filteredPosts.map((post) => (
                 <StaggerItem key={post.slug}>
-                  <BlogCard {...post} />
+                  <BlogCard post={post} formatDate={formatDate} />
                 </StaggerItem>
               ))}
             </StaggerContainer>
@@ -242,13 +139,14 @@ export default function BlogContent() {
  * BlogCard — карточка статьи
  */
 function BlogCard({
-  slug,
-  title,
-  excerpt,
-  categoryLabel,
-  date,
-  readTime,
-}: BlogPost) {
+  post,
+  formatDate,
+}: {
+  post: BlogPost;
+  formatDate: (dateStr: string) => string;
+}) {
+  const { slug, title, excerpt, categoryLabel, date, readTime } = post;
+
   return (
     <Link
       href={`/blog/${slug}`}
@@ -304,6 +202,8 @@ function BlogCard({
  * NoResults — состояние «Нет статей»
  */
 function NoResults({ onReset }: { onReset: () => void }) {
+  const t = useTranslations("pages.blog");
+
   return (
     <div className="text-center py-20">
       <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[var(--color-background-alt)] flex items-center justify-center">
@@ -324,13 +224,13 @@ function NoResults({ onReset }: { onReset: () => void }) {
         </svg>
       </div>
       <h3 className="text-h3 font-display font-bold text-[var(--color-text-primary)] mb-2">
-        Нет статей
+        {t("noResultsTitle")}
       </h3>
       <p className="text-body text-[var(--color-text-muted)] mb-6">
-        В этой категории пока нет публикаций
+        {t("noResultsText")}
       </p>
       <Button variant="outline" size="md" onClick={onReset}>
-        Показать все статьи
+        {t("noResultsButton")}
       </Button>
     </div>
   );
@@ -340,19 +240,21 @@ function NoResults({ onReset }: { onReset: () => void }) {
  * CTA Section
  */
 function CTASection() {
+  const t = useTranslations("pages.blog");
+
   return (
     <section className="py-[var(--section-gap)] bg-[var(--color-text-primary)]">
       <Container>
         <div className="max-w-2xl mx-auto text-center">
           <RevealOnScroll direction="up">
             <h2 className="text-h2 font-display font-bold text-[var(--color-background)] mb-4">
-              Нужен сайт?
+              {t("ctaTitle")}
             </h2>
           </RevealOnScroll>
 
           <RevealOnScroll direction="up" delay={0.1}>
             <p className="text-body text-[var(--color-background)]/70 mb-8">
-              Применим все эти знания на практике — для вашего проекта.
+              {t("ctaText")}
             </p>
           </RevealOnScroll>
 
@@ -363,7 +265,7 @@ function CTASection() {
                 size="lg"
                 className="bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
               >
-                Обсудить проект
+                {t("ctaButton")}
               </CtaButton>
               <Button
                 variant="outline"
@@ -372,7 +274,7 @@ function CTASection() {
                 href="/services"
                 className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
               >
-                Смотреть услуги
+                {t("ctaServicesButton")}
               </Button>
             </div>
           </RevealOnScroll>

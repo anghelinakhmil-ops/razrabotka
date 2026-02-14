@@ -431,28 +431,74 @@
       "valuesCaption": "What we believe in",
       "valuesTitle": "VALUES",
       "values": [
-        { "number": "01", "title": "Results", "description": "A website is a tool. Beauty without conversion is meaningless. We create what works." },
-        { "number": "02", "title": "Transparency", "description": "Fixed timelines, clear stages, regular reports. You always know where the project stands." },
-        { "number": "03", "title": "Quality", "description": "Clean code, fast loading, SEO out of the box. We do it right so it doesn't need redoing." },
-        { "number": "04", "title": "Partnership", "description": "Not contractors, but partners. We advise, suggest, and debate — if it's in the project's interest." }
+        {
+          "number": "01",
+          "title": "Results",
+          "description": "A website is a tool. Beauty without conversion is meaningless. We create what works."
+        },
+        {
+          "number": "02",
+          "title": "Transparency",
+          "description": "Fixed timelines, clear stages, regular reports. You always know where the project stands."
+        },
+        {
+          "number": "03",
+          "title": "Quality",
+          "description": "Clean code, fast loading, SEO out of the box. We do it right so it doesn't need redoing."
+        },
+        {
+          "number": "04",
+          "title": "Partnership",
+          "description": "Not contractors, but partners. We advise, suggest, and debate — if it's in the project's interest."
+        }
       ],
       "principlesCaption": "How we work",
       "principlesTitle": "PRINCIPLES",
       "principles": [
-        { "title": "Strategy first", "description": "We don't start design until we understand goals and audience." },
-        { "title": "Less is more", "description": "Every element must work. Decoration for decoration's sake is not our way." },
-        { "title": "Mobile-first", "description": "60%+ traffic is mobile. Phone first, then desktop." },
-        { "title": "Speed is critical", "description": "Lighthouse 90+ is the standard. Fast site = more conversions." },
-        { "title": "SEO from day one", "description": "Not 'we'll fix it later', but right away: semantics, meta tags, structure." },
-        { "title": "Support included", "description": "30 days after launch. Bugs, edits, questions — we handle it." }
+        {
+          "title": "Strategy first",
+          "description": "We don't start design until we understand goals and audience."
+        },
+        {
+          "title": "Less is more",
+          "description": "Every element must work. Decoration for decoration's sake is not our way."
+        },
+        {
+          "title": "Mobile-first",
+          "description": "60%+ traffic is mobile. Phone first, then desktop."
+        },
+        {
+          "title": "Speed is critical",
+          "description": "Lighthouse 90+ is the standard. Fast site = more conversions."
+        },
+        {
+          "title": "SEO from day one",
+          "description": "Not 'we'll fix it later', but right away: semantics, meta tags, structure."
+        },
+        {
+          "title": "Support included",
+          "description": "30 days after launch. Bugs, edits, questions — we handle it."
+        }
       ],
       "achievementsCaption": "In numbers",
       "achievementsTitle": "ACHIEVEMENTS",
       "achievements": [
-        { "value": "50+", "label": "Projects" },
-        { "value": "3", "label": "Years of experience" },
-        { "value": "95%", "label": "Satisfied clients" },
-        { "value": "90+", "label": "Lighthouse Score" }
+        {
+          "value": "50+",
+          "label": "Projects"
+        },
+        {
+          "value": "3",
+          "label": "Years of experience"
+        },
+        {
+          "value": "95%",
+          "label": "Satisfied clients"
+        },
+        {
+          "value": "90+",
+          "label": "Lighthouse Score"
+        }
       ],
       "ctaTitle": "LET'S START?",
       "ctaDescription": "Tell us about your project — we'll discuss how we can help.",
@@ -503,8 +549,21 @@
           "description": "For specialists, coaches, consultants. A website that sells your expertise and attracts clients through content and trust.",
           "price": "from $1,000",
           "timeline": "14–21 days",
-          "features": ["Up to 7 pages", "Unique design", "Responsive layout", "Basic SEO", "Contact form", "Analytics setup", "30 days support"],
-          "idealFor": ["Coaches and consultants", "Psychologists and therapists", "Experts and speakers", "Tutors and mentors"]
+          "features": [
+            "Up to 7 pages",
+            "Unique design",
+            "Responsive layout",
+            "Basic SEO",
+            "Contact form",
+            "Analytics setup",
+            "30 days support"
+          ],
+          "idealFor": [
+            "Coaches and consultants",
+            "Psychologists and therapists",
+            "Experts and speakers",
+            "Tutors and mentors"
+          ]
         },
         {
           "id": "ecommerce",
@@ -513,8 +572,21 @@
           "description": "Full e-commerce with product catalog, cart, online payments, and CRM integration. Automation of sales and customer notifications.",
           "price": "from $2,000",
           "timeline": "21–45 days",
-          "features": ["Product catalog", "Shopping cart", "Online payments", "CRM integration", "Telegram notifications", "Admin panel", "30 days support"],
-          "idealFor": ["Clothing and accessories", "Cosmetics and beauty", "Food and drinks", "Digital products"]
+          "features": [
+            "Product catalog",
+            "Shopping cart",
+            "Online payments",
+            "CRM integration",
+            "Telegram notifications",
+            "Admin panel",
+            "30 days support"
+          ],
+          "idealFor": [
+            "Clothing and accessories",
+            "Cosmetics and beauty",
+            "Food and drinks",
+            "Digital products"
+          ]
         },
         {
           "id": "landing",
@@ -523,8 +595,21 @@
           "description": "One-page website with high conversion for product launch, service, or advertising campaign. Fast development, maximum impact.",
           "price": "from $600",
           "timeline": "7–14 days",
-          "features": ["One-page design", "A/B testing ready", "Lead forms", "Speed optimized", "Analytics", "Mobile-first", "14 days support"],
-          "idealFor": ["Product launches", "Ad campaigns", "Events and webinars", "Service promotions"]
+          "features": [
+            "One-page design",
+            "A/B testing ready",
+            "Lead forms",
+            "Speed optimized",
+            "Analytics",
+            "Mobile-first",
+            "14 days support"
+          ],
+          "idealFor": [
+            "Product launches",
+            "Ad campaigns",
+            "Events and webinars",
+            "Service promotions"
+          ]
         }
       ],
       "priceLabel": "Cost",
@@ -535,18 +620,78 @@
       "comparisonCaption": "Comparison",
       "comparisonTitle": "PACKAGES",
       "comparisonRows": [
-        { "label": "Number of pages", "expert": "Up to 7", "ecommerce": "Unlimited", "landing": "1" },
-        { "label": "Unique design", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "Responsive (mobile)", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "Product catalog", "expert": "—", "ecommerce": "✓", "landing": "—" },
-        { "label": "Online payments", "expert": "—", "ecommerce": "✓", "landing": "—" },
-        { "label": "Application form", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "CRM integration", "expert": "Optional", "ecommerce": "✓", "landing": "Optional" },
-        { "label": "Blog", "expert": "Optional", "ecommerce": "Optional", "landing": "—" },
-        { "label": "Basic SEO", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "Analytics", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "Timeline", "expert": "14–21 days", "ecommerce": "21–45 days", "landing": "7–14 days" },
-        { "label": "Support", "expert": "30 days", "ecommerce": "30 days", "landing": "14 days" }
+        {
+          "label": "Number of pages",
+          "expert": "Up to 7",
+          "ecommerce": "Unlimited",
+          "landing": "1"
+        },
+        {
+          "label": "Unique design",
+          "expert": "✓",
+          "ecommerce": "✓",
+          "landing": "✓"
+        },
+        {
+          "label": "Responsive (mobile)",
+          "expert": "✓",
+          "ecommerce": "✓",
+          "landing": "✓"
+        },
+        {
+          "label": "Product catalog",
+          "expert": "—",
+          "ecommerce": "✓",
+          "landing": "—"
+        },
+        {
+          "label": "Online payments",
+          "expert": "—",
+          "ecommerce": "✓",
+          "landing": "—"
+        },
+        {
+          "label": "Application form",
+          "expert": "✓",
+          "ecommerce": "✓",
+          "landing": "✓"
+        },
+        {
+          "label": "CRM integration",
+          "expert": "Optional",
+          "ecommerce": "✓",
+          "landing": "Optional"
+        },
+        {
+          "label": "Blog",
+          "expert": "Optional",
+          "ecommerce": "Optional",
+          "landing": "—"
+        },
+        {
+          "label": "Basic SEO",
+          "expert": "✓",
+          "ecommerce": "✓",
+          "landing": "✓"
+        },
+        {
+          "label": "Analytics",
+          "expert": "✓",
+          "ecommerce": "✓",
+          "landing": "✓"
+        },
+        {
+          "label": "Timeline",
+          "expert": "14–21 days",
+          "ecommerce": "21–45 days",
+          "landing": "7–14 days"
+        },
+        {
+          "label": "Support",
+          "expert": "30 days",
+          "ecommerce": "30 days",
+          "landing": "14 days"
+        }
       ],
       "detailsButton": "Learn more",
       "formTitle": "DISCUSS PROJECT",
@@ -557,21 +702,57 @@
       "title": "BRIEF",
       "description": "Tell us about your project, goals, and preferences. The more details, the more accurate our estimate.",
       "steps": [
-        { "title": "Fill out the brief", "description": "Tell us about the project, goals, and preferences" },
-        { "title": "We'll discuss details", "description": "We'll contact you within 2 hours for clarification" },
-        { "title": "Get a proposal", "description": "We'll prepare a personalized offer with prices and timelines" }
+        {
+          "title": "Fill out the brief",
+          "description": "Tell us about the project, goals, and preferences"
+        },
+        {
+          "title": "We'll discuss details",
+          "description": "We'll contact you within 2 hours for clarification"
+        },
+        {
+          "title": "Get a proposal",
+          "description": "We'll prepare a personalized offer with prices and timelines"
+        }
       ],
       "sectionProject": "About the project",
       "sectionContacts": "Contact details",
       "sectionAdditional": "Additional",
       "siteType": "Website type",
-      "siteTypeOptions": ["Select website type", "Expert website / personal brand", "Online store", "Landing / promo page", "Corporate website", "Other"],
+      "siteTypeOptions": [
+        "Select website type",
+        "Expert website / personal brand",
+        "Online store",
+        "Landing / promo page",
+        "Corporate website",
+        "Other"
+      ],
       "goal": "Main goal",
-      "goalOptions": ["Website's main goal", "Product/service sales", "Lead collection", "Image and brand awareness", "Audience engagement", "Other"],
+      "goalOptions": [
+        "Website's main goal",
+        "Product/service sales",
+        "Lead collection",
+        "Image and brand awareness",
+        "Audience engagement",
+        "Other"
+      ],
       "timeline": "Timeline",
-      "timelineOptions": ["Desired timeline", "Urgent (up to 2 weeks)", "2–4 weeks", "1–2 months", "Not urgent, flexible"],
+      "timelineOptions": [
+        "Desired timeline",
+        "Urgent (up to 2 weeks)",
+        "2–4 weeks",
+        "1–2 months",
+        "Not urgent, flexible"
+      ],
       "budget": "Budget",
-      "budgetOptions": ["Approximate budget", "$600 – $1,000", "$1,000 – $2,500", "$2,500 – $5,000", "From $5,000", "Let's discuss"],
+      "budgetOptions": [
+        "Approximate budget",
+        "$600 – $1,000",
+        "$1,000 – $2,500",
+        "$2,500 – $5,000",
+        "From $5,000",
+        "Let's discuss"
+      ],
       "references": "References / competitors",
       "referencesPlaceholder": "Links to websites you like...",
       "referencesHelper": "Optional, but helps us better understand...",
@@ -605,17 +786,119 @@
       "heading2": "Policy",
       "lastUpdated": "Last updated: January 19, 2026",
       "sections": [
-        { "number": "01", "title": "General Provisions", "content": ["This Privacy Policy describes how NAKO Agency (hereinafter — \"we\", \"our\", \"Company\") collects, uses, and protects personal data of users of the website nakoagency.com (hereinafter — \"Website\").", "By using the Website, you agree to the terms of this Policy. If you do not agree with the terms, please stop using the Website."] },
-        { "number": "02", "title": "Data We Collect", "content": ["We may collect the following data:", "Personal data provided by you: name, email address, phone number, Telegram username — when filling out forms on the Website.", "Automatically collected data: IP address, browser type, device, pages visited, time spent on site — through cookies and analytics.", "Data from third-party services: analytics data from Google Analytics, Vercel Analytics."] },
-        { "number": "03", "title": "Purposes of Data Processing", "content": ["We use your data for:", "Processing requests and applications submitted through Website forms.", "Communicating with you regarding projects and services.", "Improving the Website and user experience.", "Analytics and statistical research.", "Fulfilling legal obligations."] },
-        { "number": "04", "title": "Legal Basis for Processing", "content": ["Data processing is carried out on the basis of:", "Your consent (when filling out forms).", "Legitimate interest (improving service and analytics).", "Contractual necessity (fulfilling service obligations).", "Legal obligation (compliance with applicable law)."] },
-        { "number": "05", "title": "Sharing Data with Third Parties", "content": ["We do not sell your personal data. Data may be shared with:", "Service providers: Vercel (hosting), Resend (email), Google (analytics).", "Legal authorities: upon lawful request.", "All third-party services comply with data protection standards."] },
-        { "number": "06", "title": "Cookies", "content": ["The Website uses cookies for:", "Ensuring proper Website functionality.", "Analytics and traffic analysis.", "Improving user experience.", "You can disable cookies in your browser settings, but this may affect Website functionality."] },
-        { "number": "07", "title": "Data Protection", "content": ["We take reasonable measures to protect your data:", "Data encryption in transit (HTTPS/TLS).", "Access restricted to authorized personnel only.", "Regular security audits.", "However, no method of data transmission over the Internet is 100% secure."] },
-        { "number": "08", "title": "Data Retention Period", "content": ["Personal data is stored for the period necessary to fulfill the purposes stated in this Policy, but no longer than:", "Application data — 2 years from the date of submission.", "Analytics data — 14 months (Google Analytics standard).", "Cookies — up to 1 year."] },
-        { "number": "09", "title": "Your Rights", "content": ["You have the right to:", "Request access to your personal data.", "Request correction of inaccurate data.", "Request deletion of your data.", "Withdraw consent to data processing.", "File a complaint with the supervisory authority.", "To exercise your rights, contact us at: hello@nakoagency.com"] },
-        { "number": "10", "title": "Changes to the Policy", "content": ["We reserve the right to modify this Policy at any time. Changes take effect upon publication on the Website. We recommend periodically reviewing the current version.", "The date of the last update is indicated at the top of the document."] },
-        { "number": "11", "title": "Contact Information", "content": ["If you have questions regarding this Policy, contact us:", "Email: hello@nakoagency.com", "Website: nakoagency.com"] }
+        {
+          "number": "01",
+          "title": "General Provisions",
+          "content": [
+            "This Privacy Policy describes how NAKO Agency (hereinafter — \"we\", \"our\", \"Company\") collects, uses, and protects personal data of users of the website nakoagency.com (hereinafter — \"Website\").",
+            "By using the Website, you agree to the terms of this Policy. If you do not agree with the terms, please stop using the Website."
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Data We Collect",
+          "content": [
+            "We may collect the following data:",
+            "Personal data provided by you: name, email address, phone number, Telegram username — when filling out forms on the Website.",
+            "Automatically collected data: IP address, browser type, device, pages visited, time spent on site — through cookies and analytics.",
+            "Data from third-party services: analytics data from Google Analytics, Vercel Analytics."
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Purposes of Data Processing",
+          "content": [
+            "We use your data for:",
+            "Processing requests and applications submitted through Website forms.",
+            "Communicating with you regarding projects and services.",
+            "Improving the Website and user experience.",
+            "Analytics and statistical research.",
+            "Fulfilling legal obligations."
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Legal Basis for Processing",
+          "content": [
+            "Data processing is carried out on the basis of:",
+            "Your consent (when filling out forms).",
+            "Legitimate interest (improving service and analytics).",
+            "Contractual necessity (fulfilling service obligations).",
+            "Legal obligation (compliance with applicable law)."
+          ]
+        },
+        {
+          "number": "05",
+          "title": "Sharing Data with Third Parties",
+          "content": [
+            "We do not sell your personal data. Data may be shared with:",
+            "Service providers: Vercel (hosting), Resend (email), Google (analytics).",
+            "Legal authorities: upon lawful request.",
+            "All third-party services comply with data protection standards."
+          ]
+        },
+        {
+          "number": "06",
+          "title": "Cookies",
+          "content": [
+            "The Website uses cookies for:",
+            "Ensuring proper Website functionality.",
+            "Analytics and traffic analysis.",
+            "Improving user experience.",
+            "You can disable cookies in your browser settings, but this may affect Website functionality."
+          ]
+        },
+        {
+          "number": "07",
+          "title": "Data Protection",
+          "content": [
+            "We take reasonable measures to protect your data:",
+            "Data encryption in transit (HTTPS/TLS).",
+            "Access restricted to authorized personnel only.",
+            "Regular security audits.",
+            "However, no method of data transmission over the Internet is 100% secure."
+          ]
+        },
+        {
+          "number": "08",
+          "title": "Data Retention Period",
+          "content": [
+            "Personal data is stored for the period necessary to fulfill the purposes stated in this Policy, but no longer than:",
+            "Application data — 2 years from the date of submission.",
+            "Analytics data — 14 months (Google Analytics standard).",
+            "Cookies — up to 1 year."
+          ]
+        },
+        {
+          "number": "09",
+          "title": "Your Rights",
+          "content": [
+            "You have the right to:",
+            "Request access to your personal data.",
+            "Request correction of inaccurate data.",
+            "Request deletion of your data.",
+            "Withdraw consent to data processing.",
+            "File a complaint with the supervisory authority.",
+            "To exercise your rights, contact us at: hello@nakoagency.com"
+          ]
+        },
+        {
+          "number": "10",
+          "title": "Changes to the Policy",
+          "content": [
+            "We reserve the right to modify this Policy at any time. Changes take effect upon publication on the Website. We recommend periodically reviewing the current version.",
+            "The date of the last update is indicated at the top of the document."
+          ]
+        },
+        {
+          "number": "11",
+          "title": "Contact Information",
+          "content": [
+            "If you have questions regarding this Policy, contact us:",
+            "Email: hello@nakoagency.com",
+            "Website: nakoagency.com"
+          ]
+        }
       ]
     },
     "terms": {
@@ -624,19 +907,957 @@
       "heading2": "of Use",
       "lastUpdated": "Last updated: January 19, 2026",
       "sections": [
-        { "number": "01", "title": "General Provisions", "content": ["These Terms of Use (hereinafter — \"Terms\") govern the use of the website nakoagency.com (hereinafter — \"Website\") operated by NAKO Agency (hereinafter — \"Company\", \"we\", \"our\").", "By accessing and using the Website, you agree to these Terms. If you do not agree, please stop using the Website."] },
-        { "number": "02", "title": "Description of Services", "content": ["The Company provides turnkey website development services, including:", "Website strategy and planning.", "UI/UX design.", "Frontend and backend development.", "SEO optimization.", "Technical support and maintenance.", "Detailed description of services and conditions is provided during individual consultation."] },
-        { "number": "03", "title": "Website Usage", "content": ["When using the Website, you agree to:", "Provide accurate information when filling out forms.", "Not use the Website for illegal purposes.", "Not attempt to gain unauthorized access to the Website or its systems.", "Not distribute malicious software through the Website.", "Not copy, modify, or distribute Website content without written permission."] },
-        { "number": "04", "title": "Intellectual Property", "content": ["All Website content is the intellectual property of NAKO Agency:", "Design, layout, and visual elements.", "Texts, images, and graphics.", "Source code and software solutions.", "Logos and trademarks.", "Using Website materials without written permission from the Company is prohibited."] },
-        { "number": "05", "title": "Service Delivery Procedure", "content": ["Services are provided on the basis of:", "Application through the Website form or email.", "Discussion of requirements and approval of the brief.", "Signing of the service agreement.", "Stage-by-stage delivery and approval.", "Specific conditions, timelines, and costs are determined individually for each project."] },
-        { "number": "06", "title": "Payment for Services", "content": ["Payment terms:", "Payment is made according to the terms specified in the agreement.", "Standard payment scheme: 50% prepayment, 50% upon completion.", "For large projects, payment may be split into 3 stages.", "Payment methods are agreed upon individually.", "Refund terms are specified in the agreement."] },
-        { "number": "07", "title": "Limitation of Liability", "content": ["The Company shall not be liable for:", "Temporary unavailability of the Website due to technical maintenance.", "Losses arising from the use or inability to use the Website.", "Actions of third parties, including hosting providers and payment systems.", "Force majeure circumstances.", "The Company's total liability is limited to the amount paid by the client under the agreement."] },
-        { "number": "08", "title": "Disclaimer of Warranties", "content": ["The Website is provided \"as is\". The Company does not guarantee:", "Uninterrupted Website operation.", "Absence of technical errors.", "Compliance of the Website with your specific requirements.", "Accuracy and completeness of information posted on the Website.", "We strive to ensure the highest quality but cannot guarantee the absence of any defects."] },
-        { "number": "09", "title": "Links to Third-Party Resources", "content": ["The Website may contain links to third-party websites. We are not responsible for:", "Content of third-party websites.", "Privacy policies of third-party resources.", "Any losses arising from the use of third-party resources."] },
-        { "number": "10", "title": "Changes to Terms", "content": ["We reserve the right to modify these Terms at any time without prior notice. Changes take effect upon publication on the Website.", "Continued use of the Website after changes have been made constitutes your acceptance of the new Terms.", "The date of the last update is indicated at the top of the document."] },
-        { "number": "11", "title": "Applicable Law", "content": ["These Terms are governed by applicable law. Any disputes arising in connection with the use of the Website are resolved through negotiations, and if no agreement is reached — in court in accordance with applicable law."] },
-        { "number": "12", "title": "Contact Information", "content": ["If you have questions regarding these Terms, contact us:", "Email: hello@nakoagency.com", "Website: nakoagency.com"] }
+        {
+          "number": "01",
+          "title": "General Provisions",
+          "content": [
+            "These Terms of Use (hereinafter — \"Terms\") govern the use of the website nakoagency.com (hereinafter — \"Website\") operated by NAKO Agency (hereinafter — \"Company\", \"we\", \"our\").",
+            "By accessing and using the Website, you agree to these Terms. If you do not agree, please stop using the Website."
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Description of Services",
+          "content": [
+            "The Company provides turnkey website development services, including:",
+            "Website strategy and planning.",
+            "UI/UX design.",
+            "Frontend and backend development.",
+            "SEO optimization.",
+            "Technical support and maintenance.",
+            "Detailed description of services and conditions is provided during individual consultation."
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Website Usage",
+          "content": [
+            "When using the Website, you agree to:",
+            "Provide accurate information when filling out forms.",
+            "Not use the Website for illegal purposes.",
+            "Not attempt to gain unauthorized access to the Website or its systems.",
+            "Not distribute malicious software through the Website.",
+            "Not copy, modify, or distribute Website content without written permission."
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Intellectual Property",
+          "content": [
+            "All Website content is the intellectual property of NAKO Agency:",
+            "Design, layout, and visual elements.",
+            "Texts, images, and graphics.",
+            "Source code and software solutions.",
+            "Logos and trademarks.",
+            "Using Website materials without written permission from the Company is prohibited."
+          ]
+        },
+        {
+          "number": "05",
+          "title": "Service Delivery Procedure",
+          "content": [
+            "Services are provided on the basis of:",
+            "Application through the Website form or email.",
+            "Discussion of requirements and approval of the brief.",
+            "Signing of the service agreement.",
+            "Stage-by-stage delivery and approval.",
+            "Specific conditions, timelines, and costs are determined individually for each project."
+          ]
+        },
+        {
+          "number": "06",
+          "title": "Payment for Services",
+          "content": [
+            "Payment terms:",
+            "Payment is made according to the terms specified in the agreement.",
+            "Standard payment scheme: 50% prepayment, 50% upon completion.",
+            "For large projects, payment may be split into 3 stages.",
+            "Payment methods are agreed upon individually.",
+            "Refund terms are specified in the agreement."
+          ]
+        },
+        {
+          "number": "07",
+          "title": "Limitation of Liability",
+          "content": [
+            "The Company shall not be liable for:",
+            "Temporary unavailability of the Website due to technical maintenance.",
+            "Losses arising from the use or inability to use the Website.",
+            "Actions of third parties, including hosting providers and payment systems.",
+            "Force majeure circumstances.",
+            "The Company's total liability is limited to the amount paid by the client under the agreement."
+          ]
+        },
+        {
+          "number": "08",
+          "title": "Disclaimer of Warranties",
+          "content": [
+            "The Website is provided \"as is\". The Company does not guarantee:",
+            "Uninterrupted Website operation.",
+            "Absence of technical errors.",
+            "Compliance of the Website with your specific requirements.",
+            "Accuracy and completeness of information posted on the Website.",
+            "We strive to ensure the highest quality but cannot guarantee the absence of any defects."
+          ]
+        },
+        {
+          "number": "09",
+          "title": "Links to Third-Party Resources",
+          "content": [
+            "The Website may contain links to third-party websites. We are not responsible for:",
+            "Content of third-party websites.",
+            "Privacy policies of third-party resources.",
+            "Any losses arising from the use of third-party resources."
+          ]
+        },
+        {
+          "number": "10",
+          "title": "Changes to Terms",
+          "content": [
+            "We reserve the right to modify these Terms at any time without prior notice. Changes take effect upon publication on the Website.",
+            "Continued use of the Website after changes have been made constitutes your acceptance of the new Terms.",
+            "The date of the last update is indicated at the top of the document."
+          ]
+        },
+        {
+          "number": "11",
+          "title": "Applicable Law",
+          "content": [
+            "These Terms are governed by applicable law. Any disputes arising in connection with the use of the Website are resolved through negotiations, and if no agreement is reached — in court in accordance with applicable law."
+          ]
+        },
+        {
+          "number": "12",
+          "title": "Contact Information",
+          "content": [
+            "If you have questions regarding these Terms, contact us:",
+            "Email: hello@nakoagency.com",
+            "Website: nakoagency.com"
+          ]
+        }
       ]
+    },
+    "blog": {
+      "caption": "Articles",
+      "title": "BLOG",
+      "description": "We share our expertise in web development, design, and website promotion. Practical tips and case breakdowns.",
+      "filterAll": "All articles",
+      "filterDevelopment": "Development",
+      "filterDesign": "Design",
+      "filterMarketing": "Marketing",
+      "filterBusiness": "Business",
+      "noResultsTitle": "No articles",
+      "noResultsText": "There are no publications in this category yet",
+      "noResultsButton": "Show all articles",
+      "ctaTitle": "Need a website?",
+      "ctaText": "We'll put all this knowledge into practice — for your project.",
+      "ctaButton": "Discuss project",
+      "ctaServicesButton": "View services",
+      "posts": [
+        {
+          "slug": "why-nextjs-for-business",
+          "title": "Why Next.js Is the Best Choice for a Business Website in 2024",
+          "excerpt": "We break down the advantages of Next.js for commercial projects: SEO, performance, scalability.",
+          "category": "development",
+          "categoryLabel": "Development",
+          "date": "2026-01-20",
+          "readTime": "8 min",
+          "author": "NAKO Agency Team"
+        },
+        {
+          "slug": "conversion-design-principles",
+          "title": "7 Principles of Conversion-Driven Design",
+          "excerpt": "How design impacts sales. Practical techniques that boost conversion.",
+          "category": "design",
+          "categoryLabel": "Design",
+          "date": "2026-01-12",
+          "readTime": "6 min",
+          "author": "NAKO Agency Team"
+        },
+        {
+          "slug": "seo-for-new-websites",
+          "title": "SEO for a New Website: Step-by-Step Checklist",
+          "excerpt": "What you need to do for SEO before launch and in the first months of your website.",
+          "category": "marketing",
+          "categoryLabel": "Marketing",
+          "date": "2025-12-28",
+          "readTime": "10 min",
+          "author": "NAKO Agency Team"
+        },
+        {
+          "slug": "expert-website-roi",
+          "title": "Website ROI for Experts: Real Numbers",
+          "excerpt": "How much a website costs, how many clients it brings, and when it pays for itself. A breakdown with examples.",
+          "category": "business",
+          "categoryLabel": "Business",
+          "date": "2025-12-15",
+          "readTime": "7 min",
+          "author": "NAKO Agency Team"
+        },
+        {
+          "slug": "tailwind-vs-css-modules",
+          "title": "Tailwind CSS vs CSS Modules: Which to Choose",
+          "excerpt": "Comparing two styling approaches in React projects. Pros, cons, and when to use each.",
+          "category": "development",
+          "categoryLabel": "Development",
+          "date": "2025-11-25",
+          "readTime": "9 min",
+          "author": "NAKO Agency Team"
+        },
+        {
+          "slug": "minimalism-in-web-design",
+          "title": "Minimalism in Web Design: Trend or Necessity",
+          "excerpt": "Why less is more. How minimalist design affects UX and conversion.",
+          "category": "design",
+          "categoryLabel": "Design",
+          "date": "2025-11-10",
+          "readTime": "5 min",
+          "author": "NAKO Agency Team"
+        },
+        {
+          "slug": "lighthouse-score-optimization",
+          "title": "How to Boost Lighthouse Score to 90+",
+          "excerpt": "A practical guide to website performance optimization. Core Web Vitals, images, code.",
+          "category": "development",
+          "categoryLabel": "Development",
+          "date": "2025-10-20",
+          "readTime": "12 min",
+          "author": "NAKO Agency Team"
+        },
+        {
+          "slug": "landing-page-anatomy",
+          "title": "Anatomy of a Perfect Landing Page",
+          "excerpt": "What blocks a landing page should have and in what order. A structure that sells.",
+          "category": "marketing",
+          "categoryLabel": "Marketing",
+          "date": "2025-10-05",
+          "readTime": "8 min",
+          "author": "NAKO Agency Team"
+        }
+      ]
+    },
+    "blogPost": {
+      "backLink": "All articles",
+      "tocTitle": "Table of Contents",
+      "prevPost": "← Previous",
+      "nextPost": "Next →",
+      "relatedTitle": "Read more",
+      "ctaTitle": "Need help with a project?",
+      "ctaText": "We'll apply this knowledge to your business. Shall we discuss?",
+      "ctaButton": "Discuss project",
+      "notFound": "Article not found",
+      "breadcrumbHome": "Home",
+      "breadcrumbBlog": "Blog",
+      "posts": {
+        "why-nextjs-for-business": {
+          "title": "Why Next.js Is the Best Choice for a Business Website in 2024",
+          "excerpt": "We break down the advantages of Next.js for commercial projects: SEO, performance, scalability.",
+          "categoryLabel": "Development",
+          "date": "2026-01-20",
+          "readTime": "8 min",
+          "author": "NAKO Agency Team",
+          "toc": [
+            {
+              "id": "intro",
+              "title": "Introduction"
+            },
+            {
+              "id": "seo",
+              "title": "Built-in SEO"
+            },
+            {
+              "id": "performance",
+              "title": "Performance"
+            },
+            {
+              "id": "dx",
+              "title": "Developer Experience"
+            },
+            {
+              "id": "conclusion",
+              "title": "Conclusions"
+            }
+          ],
+          "content": "<h2 id=\"intro\">Introduction</h2><p>Next.js has become the standard for building modern web applications. In 2024, this is especially relevant for business websites where SEO, loading speed, and scalability matter.</p><p>In this article, we'll break down why we choose Next.js for commercial projects and what advantages it gives our clients.</p><h2 id=\"seo\">Built-in SEO</h2><p>The main advantage of Next.js for business is excellent SEO. Unlike regular React applications, Next.js supports server-side rendering (SSR) and static site generation (SSG).</p><p>This means search engines see a fully rendered page rather than empty HTML with JavaScript. The result is fast indexing and high search rankings.</p><ul><li>Automatic meta tag generation</li><li>Built-in Open Graph support</li><li>Automatic sitemap.xml</li><li>Core Web Vitals optimization</li></ul><h2 id=\"performance\">Performance</h2><p>Next.js optimizes performance at the framework level. Automatic code splitting, image optimization, link prefetching — all of this works out of the box.</p><p>For business, this is critical: every second of loading delay can cost conversions. With Next.js, we consistently achieve Lighthouse Scores of 90+.</p><h2 id=\"dx\">Developer Experience</h2><p>Good DX means fast development and fewer bugs. Next.js provides:</p><ul><li>Hot Module Replacement for instant changes</li><li>TypeScript out of the box</li><li>Built-in API Routes</li><li>Excellent documentation and community</li></ul><h2 id=\"conclusion\">Conclusions</h2><p>Next.js isn't just a trendy framework — it's a tool that solves real business problems. SEO, performance, scalability — all out of the box.</p><p>If you're planning to build a website that needs to bring clients from search and convert visitors — Next.js is the right choice.</p>"
+        },
+        "conversion-design-principles": {
+          "title": "7 Principles of Conversion-Driven Design",
+          "excerpt": "How design impacts sales. Practical techniques that boost conversion.",
+          "categoryLabel": "Design",
+          "date": "2026-01-12",
+          "readTime": "6 min",
+          "author": "NAKO Agency Team",
+          "toc": [
+            {
+              "id": "hierarchy",
+              "title": "Visual Hierarchy"
+            },
+            {
+              "id": "cta",
+              "title": "Clear CTA"
+            },
+            {
+              "id": "whitespace",
+              "title": "Whitespace in Design"
+            },
+            {
+              "id": "trust",
+              "title": "Trust Elements"
+            },
+            {
+              "id": "speed",
+              "title": "Loading Speed"
+            }
+          ],
+          "content": "<h2 id=\"hierarchy\">1. Visual Hierarchy</h2><p>The user's eye should move across the page in the right direction. Size, color, contrast — these are tools for managing attention.</p><p>The main offer should be immediately noticeable. Secondary information — smaller and lighter.</p><h2 id=\"cta\">2. Clear CTA</h2><p>The call-to-action button should be obvious. Contrasting color, clear text, sufficient size.</p><p>One main CTA per screen. Don't force the user to choose between multiple equally weighted actions.</p><h2 id=\"whitespace\">3. Whitespace in Design</h2><p>Empty space is not wasted space. It's a tool that helps highlight what's important and improve readability.</p><p>An overloaded design tires users and reduces conversion. Let the content breathe.</p><h2 id=\"trust\">4. Trust Elements</h2><p>Reviews, client logos, certificates, guarantees — everything that confirms your reliability.</p><p>Place them near the CTA — this reduces anxiety before making a decision.</p><h2 id=\"speed\">5. Loading Speed</h2><p>Beautiful design is useless if the page takes 10 seconds to load. Optimization is part of design.</p><p>Lighthouse Score 90+ is the minimum standard for a commercial website.</p>"
+        },
+        "seo-for-new-websites": {
+          "title": "SEO for a New Website: Step-by-Step Checklist",
+          "excerpt": "What you need to do for SEO before launch and in the first months of your website.",
+          "categoryLabel": "Marketing",
+          "date": "2025-12-28",
+          "readTime": "10 min",
+          "author": "NAKO Agency Team",
+          "toc": [
+            {
+              "id": "before-launch",
+              "title": "Before Launch"
+            },
+            {
+              "id": "technical",
+              "title": "Technical SEO"
+            },
+            {
+              "id": "content",
+              "title": "Content"
+            },
+            {
+              "id": "first-months",
+              "title": "First Months"
+            }
+          ],
+          "content": "<h2 id=\"before-launch\">Before Launch</h2><p>SEO starts before the website goes live. Preparation at this stage will save months of work.</p><ul><li>Keyword research</li><li>URL structure</li><li>Content planning</li><li>Analytics setup</li></ul><h2 id=\"technical\">Technical SEO</h2><p>The foundation without which other efforts are meaningless:</p><ul><li>HTTPS is mandatory</li><li>Mobile version</li><li>Loading speed &lt; 3 sec</li><li>Proper heading structure</li><li>XML sitemap</li><li>robots.txt</li></ul><h2 id=\"content\">Content</h2><p>Unique, useful content is the foundation of SEO. Every page should answer a specific user query.</p><p>Meta title and description for every page. Alt text for images. Internal linking.</p><h2 id=\"first-months\">First Months</h2><p>After launch — monitoring and improvements:</p><ul><li>Search Console registration</li><li>Position tracking</li><li>User behavior analysis</li><li>Regular content additions</li></ul>"
+        },
+        "expert-website-roi": {
+          "title": "Website ROI for Experts: Real Numbers",
+          "excerpt": "How much a website costs, how many clients it brings, and when it pays for itself. A breakdown with examples.",
+          "categoryLabel": "Business",
+          "date": "2025-12-15",
+          "readTime": "7 min",
+          "author": "NAKO Agency Team",
+          "toc": [
+            {
+              "id": "costs",
+              "title": "Website Cost"
+            },
+            {
+              "id": "traffic",
+              "title": "Traffic Sources"
+            },
+            {
+              "id": "conversion",
+              "title": "Conversion"
+            },
+            {
+              "id": "roi",
+              "title": "ROI Calculation"
+            }
+          ],
+          "content": "<h2 id=\"costs\">Website Cost</h2><p>A website for an expert costs from $1,000 to $3,000 depending on complexity. It's a one-time investment that works for years.</p><h2 id=\"traffic\">Traffic Sources</h2><p>Where clients come from to an expert's website:</p><ul><li>Organic search (SEO) — 40-60%</li><li>Social media — 20-30%</li><li>Referrals — 10-20%</li><li>Advertising — 10-15%</li></ul><h2 id=\"conversion\">Conversion</h2><p>Average conversion for an expert's website is 3-7%. With 1,000 visitors per month, that's 30-70 leads.</p><p>Conversion to client is about 30%. Total: 9-21 new clients per month.</p><h2 id=\"roi\">ROI Calculation</h2><p>Example: average consultation fee — $100. 15 clients x $100 = $1,500/month.</p><p>With a website cost of $2,000, the payback period is about 1.5 months. After that — pure profit.</p>"
+        },
+        "tailwind-vs-css-modules": {
+          "title": "Tailwind CSS vs CSS Modules: Which to Choose",
+          "excerpt": "Comparing two styling approaches in React projects. Pros, cons, and when to use each.",
+          "categoryLabel": "Development",
+          "date": "2025-11-25",
+          "readTime": "9 min",
+          "author": "NAKO Agency Team",
+          "toc": [
+            {
+              "id": "tailwind-pros",
+              "title": "Tailwind Pros"
+            },
+            {
+              "id": "tailwind-cons",
+              "title": "Tailwind Cons"
+            },
+            {
+              "id": "modules-pros",
+              "title": "CSS Modules Pros"
+            },
+            {
+              "id": "when-to-use",
+              "title": "When to Use Each"
+            }
+          ],
+          "content": "<h2 id=\"tailwind-pros\">Tailwind Pros</h2><ul><li>Fast development — no need to invent class names</li><li>Consistency — design tokens out of the box</li><li>Small final CSS — only used styles</li><li>Easy theme customization</li></ul><h2 id=\"tailwind-cons\">Tailwind Cons</h2><ul><li>Long class strings in markup</li><li>Learning curve</li><li>Complex states require many classes</li></ul><h2 id=\"modules-pros\">CSS Modules Pros</h2><ul><li>Familiar CSS syntax</li><li>Style isolation by default</li><li>Easy to migrate existing CSS</li></ul><h2 id=\"when-to-use\">When to Use Each</h2><p>Tailwind — for new projects where development speed and consistency matter.</p><p>CSS Modules — for projects with an existing design system or a team accustomed to classic CSS.</p>"
+        },
+        "minimalism-in-web-design": {
+          "title": "Minimalism in Web Design: Trend or Necessity",
+          "excerpt": "Why less is more. How minimalist design affects UX and conversion.",
+          "categoryLabel": "Design",
+          "date": "2025-11-10",
+          "readTime": "5 min",
+          "author": "NAKO Agency Team",
+          "toc": [
+            {
+              "id": "why",
+              "title": "Why Minimalism Works"
+            },
+            {
+              "id": "principles",
+              "title": "Principles"
+            },
+            {
+              "id": "mistakes",
+              "title": "Mistakes"
+            }
+          ],
+          "content": "<h2 id=\"why\">Why Minimalism Works</h2><p>Minimalism isn't about emptiness — it's about focus. When there's nothing extra on the page, the user sees what matters.</p><p>Research shows: simple pages are perceived as more reliable and professional.</p><h2 id=\"principles\">Principles of Minimalism</h2><ul><li>One main focus point per screen</li><li>Maximum 2-3 colors</li><li>Plenty of whitespace between elements</li><li>Clear typography</li></ul><h2 id=\"mistakes\">Common Mistakes</h2><p>Minimalism does not equal boring. An empty page without focal points isn't minimalism — it's bad design.</p><p>Every element should work. If something doesn't carry meaning — remove it.</p>"
+        },
+        "lighthouse-score-optimization": {
+          "title": "How to Boost Lighthouse Score to 90+",
+          "excerpt": "A practical guide to website performance optimization. Core Web Vitals, images, code.",
+          "categoryLabel": "Development",
+          "date": "2025-10-20",
+          "readTime": "12 min",
+          "author": "NAKO Agency Team",
+          "toc": [
+            {
+              "id": "cwv",
+              "title": "Core Web Vitals"
+            },
+            {
+              "id": "images",
+              "title": "Images"
+            },
+            {
+              "id": "code",
+              "title": "Code Optimization"
+            },
+            {
+              "id": "fonts",
+              "title": "Fonts"
+            }
+          ],
+          "content": "<h2 id=\"cwv\">Core Web Vitals</h2><p>Google's three main metrics:</p><ul><li>LCP (Largest Contentful Paint) &lt; 2.5 sec</li><li>FID (First Input Delay) &lt; 100 ms</li><li>CLS (Cumulative Layout Shift) &lt; 0.1</li></ul><h2 id=\"images\">Images</h2><p>The main source of performance issues:</p><ul><li>WebP/AVIF formats</li><li>Lazy loading</li><li>Proper sizes (srcset)</li><li>Blur placeholder</li></ul><h2 id=\"code\">Code Optimization</h2><ul><li>Code splitting</li><li>Tree shaking</li><li>Minification</li><li>Removing unused CSS</li></ul><h2 id=\"fonts\">Fonts</h2><p>Fonts often block rendering:</p><ul><li>font-display: swap</li><li>Preloading critical fonts</li><li>Character subsetting</li></ul>"
+        },
+        "landing-page-anatomy": {
+          "title": "Anatomy of a Perfect Landing Page",
+          "excerpt": "What blocks a landing page should have and in what order. A structure that sells.",
+          "categoryLabel": "Marketing",
+          "date": "2025-10-05",
+          "readTime": "8 min",
+          "author": "NAKO Agency Team",
+          "toc": [
+            {
+              "id": "hero",
+              "title": "Hero Section"
+            },
+            {
+              "id": "benefits",
+              "title": "Benefits"
+            },
+            {
+              "id": "social-proof",
+              "title": "Social Proof"
+            },
+            {
+              "id": "cta",
+              "title": "CTA Block"
+            }
+          ],
+          "content": "<h2 id=\"hero\">Hero Section</h2><p>The first screen decides everything. In 5 seconds, the user should understand:</p><ul><li>What you offer</li><li>Who it's for</li><li>Why they should stay</li></ul><h2 id=\"benefits\">Benefits</h2><p>Not features, but benefits. Not '10 years of experience', but 'We'll solve your problem in 3 days'.</p><p>3-5 key benefits with icons or illustrations.</p><h2 id=\"social-proof\">Social Proof</h2><p>Reviews, case studies, client logos, numbers — everything that backs up your claims.</p><p>Place them closer to the CTA — this reduces doubt.</p><h2 id=\"cta\">CTA Block</h2><p>The final call to action. Briefly restate the offer and add a form or button.</p><p>Remove everything unnecessary — just the action.</p>"
+        }
+      }
+    },
+    "cases": {
+      "caption": "Portfolio",
+      "title": "CASES",
+      "description": "Real projects with measurable results. Each case is a solution to a specific business challenge.",
+      "filterAll": "All projects",
+      "filterExpert": "Expert",
+      "filterEcommerce": "E-commerce",
+      "filterLanding": "Landing",
+      "noResultsTitle": "No projects",
+      "noResultsText": "There are no cases in this category yet",
+      "noResultsButton": "Show all projects",
+      "viewCase": "View case",
+      "ctaTitle": "YOUR PROJECT",
+      "ctaText": "Want your project on this list? Tell us about your challenge — we'll discuss the solution.",
+      "ctaButton": "Discuss project",
+      "ctaServicesButton": "View services",
+      "items": [
+        {
+          "slug": "expert-coach",
+          "title": "Personal Coach Website",
+          "category": "expert",
+          "categoryLabel": "Expert",
+          "description": "Website for a business coach with consultation booking and blog.",
+          "result": "+180% leads",
+          "imageSrc": "/images/cases/case-expert-coach.jpg"
+        },
+        {
+          "slug": "ecommerce-fashion",
+          "title": "Fashion Online Store",
+          "category": "ecommerce",
+          "categoryLabel": "E-commerce",
+          "description": "Women's clothing store with a catalog of 500+ products.",
+          "result": "3.2s LCP",
+          "imageSrc": "/images/cases/case-ecommerce-fashion.jpg"
+        },
+        {
+          "slug": "landing-saas",
+          "title": "SaaS Product Landing",
+          "category": "landing",
+          "categoryLabel": "Landing",
+          "description": "Conversion page for a cloud analytics service.",
+          "result": "8.5% conversion",
+          "imageSrc": "/images/cases/case-landing-saas.jpg"
+        },
+        {
+          "slug": "expert-psychologist",
+          "title": "Psychologist Website",
+          "category": "expert",
+          "categoryLabel": "Expert",
+          "description": "Personal website with online booking and calendar integration.",
+          "result": "+240% bookings",
+          "imageSrc": "/images/cases/case-expert-psychologist.jpg"
+        },
+        {
+          "slug": "ecommerce-cosmetics",
+          "title": "Cosmetics Store",
+          "category": "ecommerce",
+          "categoryLabel": "E-commerce",
+          "description": "Online store for natural cosmetics with subscription model.",
+          "result": "95 Lighthouse",
+          "imageSrc": "/images/cases/case-ecommerce-cosmetics.jpg"
+        },
+        {
+          "slug": "landing-event",
+          "title": "Event Promo Page",
+          "category": "landing",
+          "categoryLabel": "Landing",
+          "description": "Landing page for a business conference with online registration.",
+          "result": "1200+ registrations",
+          "imageSrc": "/images/cases/case-landing-event.jpg"
+        },
+        {
+          "slug": "expert-lawyer",
+          "title": "Law Practice Website",
+          "category": "expert",
+          "categoryLabel": "Expert",
+          "description": "Corporate website for a lawyer with case portfolio and booking.",
+          "result": "+150% inquiries",
+          "imageSrc": "/images/cases/case-corporate-it.jpg"
+        },
+        {
+          "slug": "ecommerce-electronics",
+          "title": "Electronics Store",
+          "category": "ecommerce",
+          "categoryLabel": "E-commerce",
+          "description": "Online gadget store with smart search and filters.",
+          "result": "+85% conversion",
+          "imageSrc": "/images/cases/case-ecommerce-electronics.jpg"
+        },
+        {
+          "slug": "landing-app",
+          "title": "Mobile App Landing",
+          "category": "landing",
+          "categoryLabel": "Landing",
+          "description": "Promo page for a fitness app with App Store links.",
+          "result": "12K installs",
+          "imageSrc": "/images/cases/case-expert-nutrition.jpg"
+        }
+      ]
+    },
+    "caseDetail": {
+      "backLink": "All cases",
+      "taskTitle": "TASK",
+      "solutionTitle": "SOLUTION",
+      "resultsTitle": "RESULTS",
+      "techTitle": "Technologies",
+      "galleryTitle": "Gallery",
+      "otherCasesTitle": "OTHER CASES",
+      "previewAlt": "Project preview",
+      "clientLabel": "Client",
+      "yearLabel": "Year",
+      "durationLabel": "Duration",
+      "siteLabel": "Website",
+      "openLink": "Open →",
+      "ctaTitle": "Want the same result?",
+      "ctaText": "Tell us about your project — we will discuss how to achieve your goals.",
+      "ctaButton": "Discuss project",
+      "notFound": "Case not found",
+      "breadcrumbHome": "Home",
+      "breadcrumbCases": "Cases",
+      "cases": {
+        "expert-coach": {
+          "title": "Personal Coach Website",
+          "categoryLabel": "Expert",
+          "description": "Website for a business coach with consultation booking and blog.",
+          "client": "Anna Smirnova, business coach",
+          "year": "2024",
+          "duration": "3 weeks",
+          "task": "Create a personal website for a business coach that will sell consultation services and online courses. The site should convey expertise, build trust, and convert visitors into clients. Calendar integration for booking consultations.",
+          "solution": [
+            "Developed content strategy focused on client case studies",
+            "Created minimalist design with personal brand focus",
+            "Integrated Calendly for online booking",
+            "Added blog for SEO and expertise showcase",
+            "Set up analytics and conversion goals"
+          ],
+          "results": [
+            {
+              "value": "+180%",
+              "label": "Lead growth"
+            },
+            {
+              "value": "2.1 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "94",
+              "label": "Lighthouse"
+            },
+            {
+              "value": "45%",
+              "label": "Booking conversion"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Calendly",
+            "GA4"
+          ]
+        },
+        "ecommerce-fashion": {
+          "title": "Fashion Online Store",
+          "categoryLabel": "E-commerce",
+          "description": "Women's clothing store with 500+ product catalog.",
+          "client": "MODA Store",
+          "year": "2024",
+          "duration": "6 weeks",
+          "task": "Create a modern women's clothing online store with convenient catalog, filtering, cart, and online payment. Loading speed and mobile version are critical as 70% of traffic comes from phones.",
+          "solution": [
+            "Designed UX with mobile-first focus",
+            "Implemented smart filters and autocomplete search",
+            "Integrated YuKassa for online payment",
+            "Set up Telegram notifications for orders",
+            "Optimized images and added lazy loading"
+          ],
+          "results": [
+            {
+              "value": "3.2 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "+65%",
+              "label": "Conversion"
+            },
+            {
+              "value": "500+",
+              "label": "Products"
+            },
+            {
+              "value": "92",
+              "label": "Lighthouse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "YuKassa",
+            "Telegram API"
+          ]
+        },
+        "landing-saas": {
+          "title": "SaaS Product Landing",
+          "categoryLabel": "Landing",
+          "description": "Conversion page for a cloud analytics service.",
+          "client": "DataFlow Analytics",
+          "year": "2024",
+          "duration": "2 weeks",
+          "task": "Create a high-conversion landing page for a SaaS product in business analytics. The page should explain a complex product in simple terms and motivate free trial registration.",
+          "solution": [
+            "Developed structure with progressive information disclosure",
+            "Created animated product demo blocks",
+            "Added social proof and testimonials",
+            "Implemented A/B testing of CTA blocks",
+            "Integrated with CRM for lead tracking"
+          ],
+          "results": [
+            {
+              "value": "8.5%",
+              "label": "Conversion"
+            },
+            {
+              "value": "1.8 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "97",
+              "label": "Lighthouse"
+            },
+            {
+              "value": "-40%",
+              "label": "Bounce Rate"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Framer Motion",
+            "Vercel Analytics"
+          ]
+        },
+        "expert-psychologist": {
+          "title": "Psychologist Website",
+          "categoryLabel": "Expert",
+          "description": "Personal website with online booking and calendar integration.",
+          "client": "Elena Volkova, psychologist",
+          "year": "2024",
+          "duration": "3 weeks",
+          "task": "Develop a website for a practicing psychologist with online booking capability. Design should create a sense of calm and trust. Privacy and booking simplicity are important.",
+          "solution": [
+            "Created calm, minimalist design",
+            "Integrated online booking system",
+            "Added section with therapy specializations",
+            "Implemented initial consultation form",
+            "Set up email notifications for bookings"
+          ],
+          "results": [
+            {
+              "value": "+240%",
+              "label": "Booking growth"
+            },
+            {
+              "value": "2.4 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "91",
+              "label": "Lighthouse"
+            },
+            {
+              "value": "60%",
+              "label": "Online booking"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Cal.com",
+            "Resend"
+          ]
+        },
+        "ecommerce-cosmetics": {
+          "title": "Cosmetics Store",
+          "categoryLabel": "E-commerce",
+          "description": "Online store for natural cosmetics with subscription.",
+          "client": "NaturaCare",
+          "year": "2024",
+          "duration": "5 weeks",
+          "task": "Create a premium online store for natural cosmetics with visual and storytelling focus. Add subscription option for regular delivery.",
+          "solution": [
+            "Developed visually rich design with photo emphasis",
+            "Implemented subscription system with flexible intervals",
+            "Integrated recommendation engine",
+            "Added loyalty program",
+            "Optimized for SEO in cosmetics niche"
+          ],
+          "results": [
+            {
+              "value": "95",
+              "label": "Lighthouse"
+            },
+            {
+              "value": "+120%",
+              "label": "Subscriptions"
+            },
+            {
+              "value": "4.2%",
+              "label": "Conversion"
+            },
+            {
+              "value": "35%",
+              "label": "Repeat purchases"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Stripe Subscriptions",
+            "Algolia"
+          ]
+        },
+        "landing-event": {
+          "title": "Event Promo Page",
+          "categoryLabel": "Landing",
+          "description": "Landing page for a business conference with online registration.",
+          "client": "TechConf 2024",
+          "year": "2024",
+          "duration": "10 days",
+          "task": "Create a promo page for an IT conference with online registration and ticket payment. The page should create hype and FOMO effect.",
+          "solution": [
+            "Created dynamic design with countdown timer",
+            "Implemented different ticket types with pricing",
+            "Integrated online payment",
+            "Added program and speakers section",
+            "Set up email marketing for registrants"
+          ],
+          "results": [
+            {
+              "value": "1200+",
+              "label": "Registrations"
+            },
+            {
+              "value": "12%",
+              "label": "Conversion"
+            },
+            {
+              "value": "1.5 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "98",
+              "label": "Lighthouse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Stripe",
+            "Resend",
+            "Vercel"
+          ]
+        },
+        "expert-lawyer": {
+          "title": "Law Practice Website",
+          "categoryLabel": "Expert",
+          "description": "Corporate website for a lawyer with case portfolio and booking.",
+          "client": "Attorney Petrov I.S.",
+          "year": "2024",
+          "duration": "4 weeks",
+          "task": "Develop a prestigious website for a lawyer that demonstrates experience and expertise. Trust, professionalism, and quick contact capability are important.",
+          "solution": [
+            "Created strict, professional design",
+            "Structured services by legal areas",
+            "Added section with won cases (anonymized)",
+            "Implemented emergency consultation form",
+            "Integrated online chat for quick communication"
+          ],
+          "results": [
+            {
+              "value": "+150%",
+              "label": "Inquiries"
+            },
+            {
+              "value": "2.8 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "89",
+              "label": "Lighthouse"
+            },
+            {
+              "value": "70%",
+              "label": "From search"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Tawk.to"
+          ]
+        },
+        "ecommerce-electronics": {
+          "title": "Electronics Store",
+          "categoryLabel": "E-commerce",
+          "description": "Online gadget store with smart search and filters.",
+          "client": "GadgetHub",
+          "year": "2024",
+          "duration": "7 weeks",
+          "task": "Create a modern electronics online store with UX focus and fast search. Catalog of 2000+ products with many specifications.",
+          "solution": [
+            "Implemented Algolia for instant search",
+            "Created faceted filter system",
+            "Added product comparison",
+            "Integrated with 1C for inventory sync",
+            "Implemented wishlist and price drop notifications"
+          ],
+          "results": [
+            {
+              "value": "+85%",
+              "label": "Conversion"
+            },
+            {
+              "value": "2.9 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "90",
+              "label": "Lighthouse"
+            },
+            {
+              "value": "2000+",
+              "label": "Products"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Algolia",
+            "1C integration",
+            "Redis"
+          ]
+        },
+        "landing-app": {
+          "title": "Mobile App Landing",
+          "categoryLabel": "Landing",
+          "description": "Promo page for a fitness app with App Store links.",
+          "client": "FitLife App",
+          "year": "2024",
+          "duration": "2 weeks",
+          "task": "Create a landing page for a mobile fitness app that motivates downloads. Show functionality and benefits, integrate App Store and Google Play links.",
+          "solution": [
+            "Created bright, energetic design",
+            "Added interactive demo screenshots",
+            "Implemented feature video previews",
+            "Integrated smart app banners",
+            "Added user reviews and ratings"
+          ],
+          "results": [
+            {
+              "value": "12K",
+              "label": "Installs"
+            },
+            {
+              "value": "15%",
+              "label": "Conversion"
+            },
+            {
+              "value": "1.2 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "99",
+              "label": "Lighthouse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Framer Motion",
+            "Smart Banners"
+          ]
+        }
+      }
     }
   }
 }

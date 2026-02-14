@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
@@ -28,112 +29,24 @@ interface CaseItem {
 }
 
 /**
- * Все кейсы
- */
-const allCases: CaseItem[] = [
-  {
-    slug: "expert-coach",
-    title: "Персональный сайт коуча",
-    category: "expert",
-    categoryLabel: "Эксперт",
-    description: "Сайт для бизнес-коуча с записью на консультации и блогом.",
-    result: "+180% заявок",
-    imageSrc: "/images/cases/case-expert-coach.jpg",
-  },
-  {
-    slug: "ecommerce-fashion",
-    title: "Интернет-магазин одежды",
-    category: "ecommerce",
-    categoryLabel: "E-commerce",
-    description: "Магазин женской одежды с каталогом 500+ товаров.",
-    result: "3.2 сек LCP",
-    imageSrc: "/images/cases/case-ecommerce-fashion.jpg",
-  },
-  {
-    slug: "landing-saas",
-    title: "Лендинг SaaS-продукта",
-    category: "landing",
-    categoryLabel: "Лендинг",
-    description: "Конверсионная страница для облачного сервиса аналитики.",
-    result: "8.5% конверсия",
-    imageSrc: "/images/cases/case-landing-saas.jpg",
-  },
-  {
-    slug: "expert-psychologist",
-    title: "Сайт психолога",
-    category: "expert",
-    categoryLabel: "Эксперт",
-    description: "Персональный сайт с онлайн-записью и интеграцией с календарём.",
-    result: "+240% записей",
-    imageSrc: "/images/cases/case-expert-psychologist.jpg",
-  },
-  {
-    slug: "ecommerce-cosmetics",
-    title: "Магазин косметики",
-    category: "ecommerce",
-    categoryLabel: "E-commerce",
-    description: "Интернет-магазин натуральной косметики с подпиской.",
-    result: "95 Lighthouse",
-    imageSrc: "/images/cases/case-ecommerce-cosmetics.jpg",
-  },
-  {
-    slug: "landing-event",
-    title: "Промо-страница мероприятия",
-    category: "landing",
-    categoryLabel: "Лендинг",
-    description: "Лендинг для бизнес-конференции с онлайн-регистрацией.",
-    result: "1200+ регистраций",
-    imageSrc: "/images/cases/case-landing-event.jpg",
-  },
-  {
-    slug: "expert-lawyer",
-    title: "Сайт юридической практики",
-    category: "expert",
-    categoryLabel: "Эксперт",
-    description: "Корпоративный сайт юриста с портфолио дел и записью.",
-    result: "+150% обращений",
-    imageSrc: "/images/cases/case-corporate-it.jpg",
-  },
-  {
-    slug: "ecommerce-electronics",
-    title: "Магазин электроники",
-    category: "ecommerce",
-    categoryLabel: "E-commerce",
-    description: "Интернет-магазин гаджетов с умным поиском и фильтрами.",
-    result: "+85% конверсии",
-    imageSrc: "/images/cases/case-ecommerce-electronics.jpg",
-  },
-  {
-    slug: "landing-app",
-    title: "Лендинг мобильного приложения",
-    category: "landing",
-    categoryLabel: "Лендинг",
-    description: "Промо-страница для fitness-приложения с App Store ссылками.",
-    result: "12K установок",
-    imageSrc: "/images/cases/case-expert-nutrition.jpg",
-  },
-];
-
-/**
- * Фильтры категорий
- */
-const filters: { value: CategoryFilter; label: string }[] = [
-  { value: "all", label: "Все проекты" },
-  { value: "expert", label: "Эксперт" },
-  { value: "ecommerce", label: "E-commerce" },
-  { value: "landing", label: "Лендинг" },
-];
-
-/**
  * Cases Page — страница портфолио
  */
 export default function CasesContent() {
+  const t = useTranslations("pages.cases");
   const [activeFilter, setActiveFilter] = useState<CategoryFilter>("all");
+
+  const allCases = t.raw("items") as CaseItem[];
+  const filters: { value: CategoryFilter; label: string }[] = [
+    { value: "all", label: t("filterAll") },
+    { value: "expert", label: t("filterExpert") },
+    { value: "ecommerce", label: t("filterEcommerce") },
+    { value: "landing", label: t("filterLanding") },
+  ];
 
   const filteredCases = useMemo(() => {
     if (activeFilter === "all") return allCases;
     return allCases.filter((c) => c.category === activeFilter);
-  }, [activeFilter]);
+  }, [activeFilter, allCases]);
 
   return (
     <main>
@@ -142,14 +55,14 @@ export default function CasesContent() {
         <Container>
           <RevealOnScroll direction="up">
             <span className="text-caption text-[var(--color-text-muted)] mb-4 block">
-              Портфолио
+              {t("caption")}
             </span>
           </RevealOnScroll>
 
           <RevealOnScroll direction="up" delay={0.1}>
             <h1 className="mb-6">
               <BrokenText
-                text="КЕЙСЫ"
+                text={t("title")}
                 spaced
                 mixPattern={[1, 3]}
                 className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
@@ -159,8 +72,7 @@ export default function CasesContent() {
 
           <RevealOnScroll direction="up" delay={0.2}>
             <p className="text-body-lg text-[var(--color-text-secondary)] max-w-2xl">
-              Реальные проекты с измеримыми результатами. Каждый кейс — это решение
-              конкретной бизнес-задачи.
+              {t("description")}
             </p>
           </RevealOnScroll>
         </Container>
@@ -202,7 +114,7 @@ export default function CasesContent() {
             >
               {filteredCases.map((caseItem) => (
                 <StaggerItem key={caseItem.slug}>
-                  <CaseCard {...caseItem} />
+                  <CaseCard caseItem={caseItem} />
                 </StaggerItem>
               ))}
             </StaggerContainer>
@@ -221,14 +133,10 @@ export default function CasesContent() {
 /**
  * CaseCard — карточка кейса
  */
-function CaseCard({
-  slug,
-  title,
-  categoryLabel,
-  description,
-  result,
-  imageSrc,
-}: CaseItem) {
+function CaseCard({ caseItem }: { caseItem: CaseItem }) {
+  const t = useTranslations("pages.cases");
+  const { slug, title, categoryLabel, description, result, imageSrc } = caseItem;
+
   return (
     <Link
       href={`/cases/${slug}`}
@@ -285,7 +193,7 @@ function CaseCard({
 
         {/* Arrow indicator */}
         <div className="mt-4 flex items-center gap-2 text-body-sm text-[var(--color-text-muted)] group-hover:text-[var(--color-text-primary)] transition-colors">
-          <span>Смотреть кейс</span>
+          <span>{t("viewCase")}</span>
           <svg
             width="16"
             height="16"
@@ -311,6 +219,8 @@ function CaseCard({
  * NoResults — состояние «Нет результатов»
  */
 function NoResults({ onReset }: { onReset: () => void }) {
+  const t = useTranslations("pages.cases");
+
   return (
     <div className="text-center py-20">
       <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[var(--color-background-alt)] flex items-center justify-center">
@@ -331,13 +241,13 @@ function NoResults({ onReset }: { onReset: () => void }) {
         </svg>
       </div>
       <h3 className="text-h3 font-display font-bold text-[var(--color-text-primary)] mb-2">
-        Нет проектов
+        {t("noResultsTitle")}
       </h3>
       <p className="text-body text-[var(--color-text-muted)] mb-6">
-        В этой категории пока нет кейсов
+        {t("noResultsText")}
       </p>
       <Button variant="outline" size="md" onClick={onReset}>
-        Показать все проекты
+        {t("noResultsButton")}
       </Button>
     </div>
   );
@@ -347,6 +257,8 @@ function NoResults({ onReset }: { onReset: () => void }) {
  * CTA Section
  */
 function CTASection() {
+  const t = useTranslations("pages.cases");
+
   return (
     <section className="py-[var(--section-gap)] bg-[var(--color-text-primary)]">
       <Container>
@@ -354,7 +266,7 @@ function CTASection() {
           <RevealOnScroll direction="up">
             <h2 className="mb-4">
               <BrokenText
-                text="ВАШ ПРОЕКТ"
+                text={t("ctaTitle")}
                 spaced
                 mixPattern={[2, 6]}
                 className="text-h2 font-display font-bold text-[var(--color-background)]"
@@ -364,7 +276,7 @@ function CTASection() {
 
           <RevealOnScroll direction="up" delay={0.1}>
             <p className="text-body text-[var(--color-text-light)] mb-8">
-              Хотите, чтобы ваш проект был в этом списке? Расскажите о задаче — обсудим решение.
+              {t("ctaText")}
             </p>
           </RevealOnScroll>
 
@@ -375,7 +287,7 @@ function CTASection() {
                 size="lg"
                 className="bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
               >
-                Обсудить проект
+                {t("ctaButton")}
               </CtaButton>
               <Button
                 variant="outline"
@@ -384,7 +296,7 @@ function CTASection() {
                 href="/services"
                 className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
               >
-                Смотреть услуги
+                {t("ctaServicesButton")}
               </Button>
             </div>
           </RevealOnScroll>

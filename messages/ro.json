@@ -238,7 +238,7 @@
       {
         "name": "Ana Covalenco",
         "role": "Psiholog, practică privată",
-        "quote": "Site-ul s-a amortizat în prima lună. Programările s-au triplat, iar clienții vin deja \u201Ecalzi\u201D — au citit totul despre mine pe site.",
+        "quote": "Site-ul s-a amortizat în prima lună. Programările s-au triplat, iar clienții vin deja „calzi” — au citit totul despre mine pe site.",
         "project": "Site psiholog"
       },
       {
@@ -424,45 +424,91 @@
       "heroDescription": "Suntem un studio web care creeaza site-uri cu focus pe rezultate. Nu doar pagini frumoase, ci instrumente pentru cresterea afacerii tale.",
       "approachCaption": "Filosofie",
       "approachTitle": "ABORDARE",
-      "approachText1": "Fiecare proiect incepe cu intelegerea obiectivelor tale. Nu facem site-uri ca ale tuturor \u2014 cream solutii pentru sarcini specifice.",
-      "approachText2": "Strategie \u2192 Design \u2192 Dezvoltare \u2192 Rezultate. Fiecare etapa este aprobata, fiecare decizie este justificata.",
-      "approachText3": "Minimalism nu de dragul minimalismului. Eliminam ce e inutil pentru a pastra esentialul \u2014 ceea ce converteste vizitatorii in clienti.",
+      "approachText1": "Fiecare proiect incepe cu intelegerea obiectivelor tale. Nu facem site-uri ca ale tuturor — cream solutii pentru sarcini specifice.",
+      "approachText2": "Strategie → Design → Dezvoltare → Rezultate. Fiecare etapa este aprobata, fiecare decizie este justificata.",
+      "approachText3": "Minimalism nu de dragul minimalismului. Eliminam ce e inutil pentru a pastra esentialul — ceea ce converteste vizitatorii in clienti.",
       "approachVisualLabel": "Strategia e prioritara",
       "valuesCaption": "In ce credem",
       "valuesTitle": "VALORI",
       "values": [
-        { "number": "01", "title": "Rezultat", "description": "Un site este un instrument. Frumusetea fara conversie nu are sens. Cream ceea ce functioneaza." },
-        { "number": "02", "title": "Transparenta", "description": "Termene fixe, etape clare, rapoarte regulate. Stii mereu in ce stadiu este proiectul." },
-        { "number": "03", "title": "Calitate", "description": "Cod curat, incarcare rapida, SEO din start. Facem bine de prima data." },
-        { "number": "04", "title": "Parteneriat", "description": "Nu executanti, ci parteneri. Sfatuim, propunem, debatem \u2014 daca e in interesul proiectului." }
+        {
+          "number": "01",
+          "title": "Rezultat",
+          "description": "Un site este un instrument. Frumusetea fara conversie nu are sens. Cream ceea ce functioneaza."
+        },
+        {
+          "number": "02",
+          "title": "Transparenta",
+          "description": "Termene fixe, etape clare, rapoarte regulate. Stii mereu in ce stadiu este proiectul."
+        },
+        {
+          "number": "03",
+          "title": "Calitate",
+          "description": "Cod curat, incarcare rapida, SEO din start. Facem bine de prima data."
+        },
+        {
+          "number": "04",
+          "title": "Parteneriat",
+          "description": "Nu executanti, ci parteneri. Sfatuim, propunem, debatem — daca e in interesul proiectului."
+        }
       ],
       "principlesCaption": "Cum lucram",
       "principlesTitle": "PRINCIPII",
       "principles": [
-        { "title": "Strategia mai intai", "description": "Nu incepem designul pana nu intelegem obiectivele si audienta." },
-        { "title": "Mai putin e mai mult", "description": "Fiecare element trebuie sa functioneze. Decorul de dragul decorului nu e stilul nostru." },
-        { "title": "Mobile-first", "description": "60%+ din trafic e mobil. Mai intai telefonul, apoi desktop." },
-        { "title": "Viteza e critica", "description": "Lighthouse 90+ e standardul. Site rapid = mai multe conversii." },
-        { "title": "SEO din prima zi", "description": "Nu mai tarziu, ci imediat: semantica, meta taguri, structura." },
-        { "title": "Suport inclus", "description": "30 de zile dupa lansare. Buguri, editari, intrebari \u2014 le rezolvam." }
+        {
+          "title": "Strategia mai intai",
+          "description": "Nu incepem designul pana nu intelegem obiectivele si audienta."
+        },
+        {
+          "title": "Mai putin e mai mult",
+          "description": "Fiecare element trebuie sa functioneze. Decorul de dragul decorului nu e stilul nostru."
+        },
+        {
+          "title": "Mobile-first",
+          "description": "60%+ din trafic e mobil. Mai intai telefonul, apoi desktop."
+        },
+        {
+          "title": "Viteza e critica",
+          "description": "Lighthouse 90+ e standardul. Site rapid = mai multe conversii."
+        },
+        {
+          "title": "SEO din prima zi",
+          "description": "Nu mai tarziu, ci imediat: semantica, meta taguri, structura."
+        },
+        {
+          "title": "Suport inclus",
+          "description": "30 de zile dupa lansare. Buguri, editari, intrebari — le rezolvam."
+        }
       ],
       "achievementsCaption": "In cifre",
       "achievementsTitle": "REALIZARI",
       "achievements": [
-        { "value": "50+", "label": "Proiecte" },
-        { "value": "3", "label": "Ani de experienta" },
-        { "value": "95%", "label": "Clienti multumiti" },
-        { "value": "90+", "label": "Lighthouse Score" }
+        {
+          "value": "50+",
+          "label": "Proiecte"
+        },
+        {
+          "value": "3",
+          "label": "Ani de experienta"
+        },
+        {
+          "value": "95%",
+          "label": "Clienti multumiti"
+        },
+        {
+          "value": "90+",
+          "label": "Lighthouse Score"
+        }
       ],
       "ctaTitle": "SA INCEPEM?",
-      "ctaDescription": "Povestiti-ne despre proiectul dvs. \u2014 vom discuta cum putem ajuta.",
+      "ctaDescription": "Povestiti-ne despre proiectul dvs. — vom discuta cum putem ajuta.",
       "ctaCta": "Discuta proiectul",
       "ctaCases": "Vezi cazurile"
     },
     "contacts": {
       "caption": "Contacteaza-ne",
       "title": "CONTACTE",
-      "description": "Pregatit sa discutam proiectul tau? Contacteaza-ne in orice mod convenabil sau lasa o solicitare \u2014 raspundem in 2 ore.",
+      "description": "Pregatit sa discutam proiectul tau? Contacteaza-ne in orice mod convenabil sau lasa o solicitare — raspundem in 2 ore.",
       "emailTitle": "Email",
       "emailDescription": "Pentru solicitari si propuneri",
       "responseTitle": "Timp de raspuns",
@@ -470,7 +516,7 @@
       "responseTime": "In 2 ore",
       "responseNote": "Raspundem la toate solicitarile in orele de program",
       "formTitle": "Scrie-ne",
-      "formDescription": "Descrie proiectul tau \u2014 raspundem in 2 ore",
+      "formDescription": "Descrie proiectul tau — raspundem in 2 ore",
       "formName": "Nume",
       "formNamePlaceholder": "Cum sa va adresam",
       "formEmail": "Email",
@@ -488,43 +534,82 @@
       "errorTitle": "Eroare la trimitere",
       "errorRetry": "Incearca din nou",
       "briefTitle": "Preferati un brief detaliat?",
-      "briefDescription": "Completati formularul extins cu descrierea proiectului \u2014 astfel putem pregata o oferta personalizata.",
+      "briefDescription": "Completati formularul extins cu descrierea proiectului — astfel putem pregata o oferta personalizata.",
       "briefButton": "Completeaza brieful"
     },
     "services": {
       "caption": "Pachete",
       "title": "SERVICII",
-      "description": "Trei pachete pentru diferite sarcini. Fiecare include tot ce e necesar pentru o lansare de succes \u2014 de la strategie la suport.",
+      "description": "Trei pachete pentru diferite sarcini. Fiecare include tot ce e necesar pentru o lansare de succes — de la strategie la suport.",
       "packages": [
         {
           "id": "expert",
           "title": "Site pentru expert",
           "subtitle": "Brand personal",
           "description": "Pentru specialisti, coachi, consultanti. Un site care va vinde expertiza si atrage clienti prin continut si incredere.",
-          "price": "de la \u20ac500",
-          "timeline": "14\u201321 zile",
-          "features": ["Pana la 7 pagini", "Design unic", "Layout responsiv", "SEO de baza", "Formular de contact", "Configurare analitica", "30 zile suport"],
-          "idealFor": ["Coachi si consultanti", "Psihologi si terapeuti", "Experti si speakeri", "Tutori si mentori"]
+          "price": "de la €500",
+          "timeline": "14–21 zile",
+          "features": [
+            "Pana la 7 pagini",
+            "Design unic",
+            "Layout responsiv",
+            "SEO de baza",
+            "Formular de contact",
+            "Configurare analitica",
+            "30 zile suport"
+          ],
+          "idealFor": [
+            "Coachi si consultanti",
+            "Psihologi si terapeuti",
+            "Experti si speakeri",
+            "Tutori si mentori"
+          ]
         },
         {
           "id": "ecommerce",
           "title": "Magazin online",
           "subtitle": "Solutie e-commerce",
           "description": "E-commerce complet cu catalog, cos, plati online si integrare CRM. Automatizare vanzari si notificari clienti.",
-          "price": "de la \u20ac1.000",
-          "timeline": "21\u201345 zile",
-          "features": ["Catalog produse", "Cos de cumparaturi", "Plati online", "Integrare CRM", "Notificari Telegram", "Panou admin", "30 zile suport"],
-          "idealFor": ["Imbracaminte si accesorii", "Cosmetice si beauty", "Alimente si bauturi", "Produse digitale"]
+          "price": "de la €1.000",
+          "timeline": "21–45 zile",
+          "features": [
+            "Catalog produse",
+            "Cos de cumparaturi",
+            "Plati online",
+            "Integrare CRM",
+            "Notificari Telegram",
+            "Panou admin",
+            "30 zile suport"
+          ],
+          "idealFor": [
+            "Imbracaminte si accesorii",
+            "Cosmetice si beauty",
+            "Alimente si bauturi",
+            "Produse digitale"
+          ]
         },
         {
           "id": "landing",
           "title": "Pagina de aterizare",
           "subtitle": "Conversie ridicata",
           "description": "Site cu o singura pagina cu conversie ridicata pentru lansarea unui produs, serviciu sau campanie publicitara.",
-          "price": "de la \u20ac300",
-          "timeline": "7\u201314 zile",
-          "features": ["Design o pagina", "Pregatit pentru A/B testing", "Formulare de captare", "Optimizare viteza", "Analitica", "Mobile-first", "14 zile suport"],
-          "idealFor": ["Lansari de produse", "Campanii publicitare", "Evenimente si webinarii", "Promotii"]
+          "price": "de la €300",
+          "timeline": "7–14 zile",
+          "features": [
+            "Design o pagina",
+            "Pregatit pentru A/B testing",
+            "Formulare de captare",
+            "Optimizare viteza",
+            "Analitica",
+            "Mobile-first",
+            "14 zile suport"
+          ],
+          "idealFor": [
+            "Lansari de produse",
+            "Campanii publicitare",
+            "Evenimente si webinarii",
+            "Promotii"
+          ]
         }
       ],
       "priceLabel": "Cost",
@@ -535,43 +620,139 @@
       "comparisonCaption": "Comparatie",
       "comparisonTitle": "PACHETE",
       "comparisonRows": [
-        { "label": "Numar de pagini", "expert": "Pana la 7", "ecommerce": "Nelimitat", "landing": "1" },
-        { "label": "Design unic", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "Responsive (mobil)", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "Catalog produse", "expert": "—", "ecommerce": "✓", "landing": "—" },
-        { "label": "Plati online", "expert": "—", "ecommerce": "✓", "landing": "—" },
-        { "label": "Formular cerere", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "Integrare CRM", "expert": "Optional", "ecommerce": "✓", "landing": "Optional" },
-        { "label": "Blog", "expert": "Optional", "ecommerce": "Optional", "landing": "—" },
-        { "label": "SEO de baza", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "Analitice", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "Termene", "expert": "14–21 zile", "ecommerce": "21–45 zile", "landing": "7–14 zile" },
-        { "label": "Suport", "expert": "30 zile", "ecommerce": "30 zile", "landing": "14 zile" }
+        {
+          "label": "Numar de pagini",
+          "expert": "Pana la 7",
+          "ecommerce": "Nelimitat",
+          "landing": "1"
+        },
+        {
+          "label": "Design unic",
+          "expert": "✓",
+          "ecommerce": "✓",
+          "landing": "✓"
+        },
+        {
+          "label": "Responsive (mobil)",
+          "expert": "✓",
+          "ecommerce": "✓",
+          "landing": "✓"
+        },
+        {
+          "label": "Catalog produse",
+          "expert": "—",
+          "ecommerce": "✓",
+          "landing": "—"
+        },
+        {
+          "label": "Plati online",
+          "expert": "—",
+          "ecommerce": "✓",
+          "landing": "—"
+        },
+        {
+          "label": "Formular cerere",
+          "expert": "✓",
+          "ecommerce": "✓",
+          "landing": "✓"
+        },
+        {
+          "label": "Integrare CRM",
+          "expert": "Optional",
+          "ecommerce": "✓",
+          "landing": "Optional"
+        },
+        {
+          "label": "Blog",
+          "expert": "Optional",
+          "ecommerce": "Optional",
+          "landing": "—"
+        },
+        {
+          "label": "SEO de baza",
+          "expert": "✓",
+          "ecommerce": "✓",
+          "landing": "✓"
+        },
+        {
+          "label": "Analitice",
+          "expert": "✓",
+          "ecommerce": "✓",
+          "landing": "✓"
+        },
+        {
+          "label": "Termene",
+          "expert": "14–21 zile",
+          "ecommerce": "21–45 zile",
+          "landing": "7–14 zile"
+        },
+        {
+          "label": "Suport",
+          "expert": "30 zile",
+          "ecommerce": "30 zile",
+          "landing": "14 zile"
+        }
       ],
       "detailsButton": "Detalii",
       "formTitle": "DISCUTA PROIECTUL",
-      "formSubtitle": "Nu sunteti sigur ce pachet vi se potriveste? Povestiti despre proiect \u2014 vom sugera cea mai buna solutie."
+      "formSubtitle": "Nu sunteti sigur ce pachet vi se potriveste? Povestiti despre proiect — vom sugera cea mai buna solutie."
     },
     "brief": {
       "caption": "Trimite solicitarea",
       "title": "BRIEF",
       "description": "Povestiti-ne despre proiect, obiective si preferinte. Cu cat mai multe detalii, cu atat mai precisa va fi estimarea noastra.",
       "steps": [
-        { "title": "Completati brieful", "description": "Povestiti despre proiect, obiective si preferinte" },
-        { "title": "Discutam detaliile", "description": "Va contactam in 2 ore pentru clarificari" },
-        { "title": "Primiti oferta", "description": "Pregatim o oferta personalizata cu preturi si termene" }
+        {
+          "title": "Completati brieful",
+          "description": "Povestiti despre proiect, obiective si preferinte"
+        },
+        {
+          "title": "Discutam detaliile",
+          "description": "Va contactam in 2 ore pentru clarificari"
+        },
+        {
+          "title": "Primiti oferta",
+          "description": "Pregatim o oferta personalizata cu preturi si termene"
+        }
       ],
       "sectionProject": "Despre proiect",
       "sectionContacts": "Date de contact",
       "sectionAdditional": "Suplimentar",
       "siteType": "Tip site",
-      "siteTypeOptions": ["Selectati tipul site-ului", "Site expert / brand personal", "Magazin online", "Landing / pagina promo", "Site corporativ", "Altele"],
+      "siteTypeOptions": [
+        "Selectati tipul site-ului",
+        "Site expert / brand personal",
+        "Magazin online",
+        "Landing / pagina promo",
+        "Site corporativ",
+        "Altele"
+      ],
       "goal": "Obiectiv principal",
-      "goalOptions": ["Obiectivul principal al site-ului", "Vanzari produse/servicii", "Colectare solicitari/leaduri", "Imagine si recunoastere", "Informarea audientei", "Altele"],
+      "goalOptions": [
+        "Obiectivul principal al site-ului",
+        "Vanzari produse/servicii",
+        "Colectare solicitari/leaduri",
+        "Imagine si recunoastere",
+        "Informarea audientei",
+        "Altele"
+      ],
       "timeline": "Termene",
-      "timelineOptions": ["Termene dorite", "Urgent (pana la 2 saptamani)", "2\u20134 saptamani", "1\u20132 luni", "Fara graba, flexibil"],
+      "timelineOptions": [
+        "Termene dorite",
+        "Urgent (pana la 2 saptamani)",
+        "2–4 saptamani",
+        "1–2 luni",
+        "Fara graba, flexibil"
+      ],
       "budget": "Buget",
-      "budgetOptions": ["Buget aproximativ", "\u20ac300 \u2013 \u20ac500", "\u20ac500 \u2013 \u20ac1.200", "\u20ac1.200 \u2013 \u20ac2.500", "De la \u20ac2.500", "Sa discutam"],
+      "budgetOptions": [
+        "Buget aproximativ",
+        "€300 – €500",
+        "€500 – €1.200",
+        "€1.200 – €2.500",
+        "De la €2.500",
+        "Sa discutam"
+      ],
       "references": "Referinte / competitori",
       "referencesPlaceholder": "Linkuri catre site-uri care va plac...",
       "referencesHelper": "Optional, dar ne ajuta sa intelegem mai bine...",
@@ -583,7 +764,7 @@
       "phonePlaceholder": "+40 (___) ___-___",
       "telegram": "Telegram",
       "telegramPlaceholder": "@username",
-      "telegramHelper": "Optional \u2014 pentru comunicare rapida",
+      "telegramHelper": "Optional — pentru comunicare rapida",
       "comment": "Comentariu",
       "commentPlaceholder": "Povestiti mai multe despre proiect...",
       "submit": "Trimite brieful",
@@ -596,7 +777,7 @@
       "errorTitle": "Eroare la trimitere",
       "errorRetry": "Incearca din nou",
       "directContact": "Preferati comunicarea directa?",
-      "directContactDescription": "Contactati-ne in orice mod convenabil \u2014 suntem mereu disponibili.",
+      "directContactDescription": "Contactati-ne in orice mod convenabil — suntem mereu disponibili.",
       "directContactEmail": "Scrieti-ne la"
     },
     "privacy": {
@@ -605,17 +786,119 @@
       "heading2": "de confidentialitate",
       "lastUpdated": "Ultima actualizare: 19 ianuarie 2026",
       "sections": [
-        { "number": "01", "title": "Dispozitii generale", "content": ["Aceasta Politica de confidentialitate descrie modul in care NAKO Agency (denumita in continuare \u2014 \"noi\", \"al nostru\", \"Compania\") colecteaza, utilizeaza si protejeaza datele personale ale utilizatorilor site-ului nakoagency.com (denumit in continuare \u2014 \"Site\").", "Utilizand Site-ul, sunteti de acord cu termenii acestei Politici. Daca nu sunteti de acord, va rugam sa incetati utilizarea Site-ului."] },
-        { "number": "02", "title": "Ce date colectam", "content": ["Putem colecta urmatoarele date:", "Date personale furnizate de dvs.: nume, adresa de email, numar de telefon, Telegram \u2014 la completarea formularelor de pe Site.", "Date colectate automat: adresa IP, tipul browserului, dispozitivul, paginile vizitate, timpul petrecut pe site \u2014 prin cookies si sisteme de analitica.", "Date de la servicii terte: date analitice Google Analytics, Vercel Analytics."] },
-        { "number": "03", "title": "Scopurile prelucrarii datelor", "content": ["Utilizam datele dvs. pentru:", "Procesarea solicitarilor si cererilor trimise prin formularele Site-ului.", "Comunicarea cu dvs. privind proiectele si serviciile.", "Imbunatatirea Site-ului si a experientei utilizatorilor.", "Analitica si cercetari statistice.", "Indeplinirea obligatiilor legale."] },
-        { "number": "04", "title": "Temeiul legal al prelucrarii", "content": ["Prelucrarea datelor se efectueaza in baza:", "Consimtamantului dvs. (la completarea formularelor).", "Interesului legitim (imbunatatirea serviciului si analitica).", "Necesitatii contractuale (indeplinirea obligatiilor de servicii).", "Obligatiei legale (conformitatea cu legislatia aplicabila)."] },
-        { "number": "05", "title": "Transmiterea datelor catre terti", "content": ["Nu vindem datele dvs. personale. Datele pot fi transmise:", "Furnizorilor de servicii: Vercel (hosting), Resend (email), Google (analitica).", "Autoritatilor de stat: la cerere legala.", "Toate serviciile terte respecta standardele de protectie a datelor."] },
-        { "number": "06", "title": "Fisiere cookie", "content": ["Site-ul utilizeaza cookies pentru:", "Asigurarea functionarii corecte a Site-ului.", "Analitica si analiza traficului.", "Imbunatatirea experientei utilizatorilor.", "Puteti dezactiva cookies in setarile browserului, insa acest lucru poate afecta functionalitatea Site-ului."] },
-        { "number": "07", "title": "Protectia datelor", "content": ["Luam masuri rezonabile pentru a proteja datele dvs.:", "Criptarea datelor in tranzit (HTTPS/TLS).", "Accesul limitat doar la personalul autorizat.", "Audituri regulate de securitate.", "Cu toate acestea, nicio metoda de transmitere a datelor prin Internet nu este 100% sigura."] },
-        { "number": "08", "title": "Perioada de stocare a datelor", "content": ["Datele personale sunt stocate pe perioada necesara indeplinirii scopurilor mentionate in aceasta Politica, dar nu mai mult de:", "Date din solicitari \u2014 2 ani de la trimitere.", "Date analitice \u2014 14 luni (standard Google Analytics).", "Cookies \u2014 pana la 1 an."] },
-        { "number": "09", "title": "Drepturile dvs.", "content": ["Aveti dreptul sa:", "Solicitati acces la datele dvs. personale.", "Solicitati corectarea datelor inexacte.", "Solicitati stergerea datelor dvs.", "Retrageti consimtamantul pentru prelucrarea datelor.", "Depuneti o plangere la autoritatea de supraveghere.", "Pentru exercitarea drepturilor, contactati-ne la: hello@nakoagency.com"] },
-        { "number": "10", "title": "Modificari ale Politicii", "content": ["Ne rezervam dreptul de a modifica aceasta Politica in orice moment. Modificarile intra in vigoare la publicarea pe Site. Recomandam verificarea periodica a versiunii actuale.", "Data ultimei actualizari este indicata la inceputul documentului."] },
-        { "number": "11", "title": "Informatii de contact", "content": ["Daca aveti intrebari privind aceasta Politica, contactati-ne:", "Email: hello@nakoagency.com", "Site: nakoagency.com"] }
+        {
+          "number": "01",
+          "title": "Dispozitii generale",
+          "content": [
+            "Aceasta Politica de confidentialitate descrie modul in care NAKO Agency (denumita in continuare — \"noi\", \"al nostru\", \"Compania\") colecteaza, utilizeaza si protejeaza datele personale ale utilizatorilor site-ului nakoagency.com (denumit in continuare — \"Site\").",
+            "Utilizand Site-ul, sunteti de acord cu termenii acestei Politici. Daca nu sunteti de acord, va rugam sa incetati utilizarea Site-ului."
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Ce date colectam",
+          "content": [
+            "Putem colecta urmatoarele date:",
+            "Date personale furnizate de dvs.: nume, adresa de email, numar de telefon, Telegram — la completarea formularelor de pe Site.",
+            "Date colectate automat: adresa IP, tipul browserului, dispozitivul, paginile vizitate, timpul petrecut pe site — prin cookies si sisteme de analitica.",
+            "Date de la servicii terte: date analitice Google Analytics, Vercel Analytics."
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Scopurile prelucrarii datelor",
+          "content": [
+            "Utilizam datele dvs. pentru:",
+            "Procesarea solicitarilor si cererilor trimise prin formularele Site-ului.",
+            "Comunicarea cu dvs. privind proiectele si serviciile.",
+            "Imbunatatirea Site-ului si a experientei utilizatorilor.",
+            "Analitica si cercetari statistice.",
+            "Indeplinirea obligatiilor legale."
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Temeiul legal al prelucrarii",
+          "content": [
+            "Prelucrarea datelor se efectueaza in baza:",
+            "Consimtamantului dvs. (la completarea formularelor).",
+            "Interesului legitim (imbunatatirea serviciului si analitica).",
+            "Necesitatii contractuale (indeplinirea obligatiilor de servicii).",
+            "Obligatiei legale (conformitatea cu legislatia aplicabila)."
+          ]
+        },
+        {
+          "number": "05",
+          "title": "Transmiterea datelor catre terti",
+          "content": [
+            "Nu vindem datele dvs. personale. Datele pot fi transmise:",
+            "Furnizorilor de servicii: Vercel (hosting), Resend (email), Google (analitica).",
+            "Autoritatilor de stat: la cerere legala.",
+            "Toate serviciile terte respecta standardele de protectie a datelor."
+          ]
+        },
+        {
+          "number": "06",
+          "title": "Fisiere cookie",
+          "content": [
+            "Site-ul utilizeaza cookies pentru:",
+            "Asigurarea functionarii corecte a Site-ului.",
+            "Analitica si analiza traficului.",
+            "Imbunatatirea experientei utilizatorilor.",
+            "Puteti dezactiva cookies in setarile browserului, insa acest lucru poate afecta functionalitatea Site-ului."
+          ]
+        },
+        {
+          "number": "07",
+          "title": "Protectia datelor",
+          "content": [
+            "Luam masuri rezonabile pentru a proteja datele dvs.:",
+            "Criptarea datelor in tranzit (HTTPS/TLS).",
+            "Accesul limitat doar la personalul autorizat.",
+            "Audituri regulate de securitate.",
+            "Cu toate acestea, nicio metoda de transmitere a datelor prin Internet nu este 100% sigura."
+          ]
+        },
+        {
+          "number": "08",
+          "title": "Perioada de stocare a datelor",
+          "content": [
+            "Datele personale sunt stocate pe perioada necesara indeplinirii scopurilor mentionate in aceasta Politica, dar nu mai mult de:",
+            "Date din solicitari — 2 ani de la trimitere.",
+            "Date analitice — 14 luni (standard Google Analytics).",
+            "Cookies — pana la 1 an."
+          ]
+        },
+        {
+          "number": "09",
+          "title": "Drepturile dvs.",
+          "content": [
+            "Aveti dreptul sa:",
+            "Solicitati acces la datele dvs. personale.",
+            "Solicitati corectarea datelor inexacte.",
+            "Solicitati stergerea datelor dvs.",
+            "Retrageti consimtamantul pentru prelucrarea datelor.",
+            "Depuneti o plangere la autoritatea de supraveghere.",
+            "Pentru exercitarea drepturilor, contactati-ne la: hello@nakoagency.com"
+          ]
+        },
+        {
+          "number": "10",
+          "title": "Modificari ale Politicii",
+          "content": [
+            "Ne rezervam dreptul de a modifica aceasta Politica in orice moment. Modificarile intra in vigoare la publicarea pe Site. Recomandam verificarea periodica a versiunii actuale.",
+            "Data ultimei actualizari este indicata la inceputul documentului."
+          ]
+        },
+        {
+          "number": "11",
+          "title": "Informatii de contact",
+          "content": [
+            "Daca aveti intrebari privind aceasta Politica, contactati-ne:",
+            "Email: hello@nakoagency.com",
+            "Site: nakoagency.com"
+          ]
+        }
       ]
     },
     "terms": {
@@ -624,19 +907,957 @@
       "heading2": "de utilizare",
       "lastUpdated": "Ultima actualizare: 19 ianuarie 2026",
       "sections": [
-        { "number": "01", "title": "Dispozitii generale", "content": ["Acesti Termeni de utilizare (denumiti in continuare \u2014 \"Termeni\") reglementeaza utilizarea site-ului nakoagency.com (denumit in continuare \u2014 \"Site\") operat de NAKO Agency (denumita in continuare \u2014 \"Compania\", \"noi\", \"al nostru\").", "Accesand si utilizand Site-ul, sunteti de acord cu acesti Termeni. Daca nu sunteti de acord, va rugam sa incetati utilizarea Site-ului."] },
-        { "number": "02", "title": "Descrierea serviciilor", "content": ["Compania ofera servicii de dezvoltare site-uri web la cheie, inclusiv:", "Strategie si planificare site.", "Design UI/UX.", "Dezvoltare frontend si backend.", "Optimizare SEO.", "Suport tehnic si mentenanta.", "Descrierea detaliata a serviciilor si conditiilor se ofera la consultarea individuala."] },
-        { "number": "03", "title": "Utilizarea Site-ului", "content": ["Utilizand Site-ul, va obligati sa:", "Furnizati informatii corecte la completarea formularelor.", "Nu utilizati Site-ul in scopuri ilegale.", "Nu incercati sa obtineti acces neautorizat la Site sau sistemele sale.", "Nu distribuiti software malitios prin Site.", "Nu copiati, modificati sau distribuiti continutul Site-ului fara permisiune scrisa."] },
-        { "number": "04", "title": "Proprietate intelectuala", "content": ["Tot continutul Site-ului este proprietatea intelectuala a NAKO Agency:", "Design, layout si elemente vizuale.", "Texte, imagini si grafica.", "Cod sursa si solutii software.", "Logo-uri si marci comerciale.", "Utilizarea materialelor Site-ului fara permisiunea scrisa a Companiei este interzisa."] },
-        { "number": "05", "title": "Procedura de prestare a serviciilor", "content": ["Serviciile se presteaza in baza:", "Solicitarii prin formularul de pe Site sau prin email.", "Discutarii cerintelor si aprobarii briefului.", "Semnarii contractului de prestare servicii.", "Livrarii si receptiei pe etape.", "Conditiile specifice, termenele si costurile se stabilesc individual pentru fiecare proiect."] },
-        { "number": "06", "title": "Plata serviciilor", "content": ["Conditii de plata:", "Plata se efectueaza conform conditiilor din contract.", "Schema standard: 50% avans, 50% la finalizare.", "Pentru proiecte mari, plata poate fi impartita in 3 etape.", "Metodele de plata se stabilesc individual.", "Conditiile de rambursare sunt stipulate in contract."] },
-        { "number": "07", "title": "Limitarea raspunderii", "content": ["Compania nu raspunde pentru:", "Indisponibilitatea temporara a Site-ului din cauza mentenantei tehnice.", "Pierderi rezultate din utilizarea sau imposibilitatea utilizarii Site-ului.", "Actiunile tertilor, inclusiv furnizori de hosting si sisteme de plata.", "Circumstante de forta majora.", "Raspunderea totala a Companiei este limitata la suma platita de client conform contractului."] },
-        { "number": "08", "title": "Declinarea garantiilor", "content": ["Site-ul este furnizat \"ca atare\". Compania nu garanteaza:", "Functionarea neintrerupta a Site-ului.", "Absenta erorilor tehnice.", "Conformitatea Site-ului cu cerintele dvs. specifice.", "Acuratetea si completitudinea informatiilor publicate pe Site.", "Ne straduim sa asiguram cea mai inalta calitate, dar nu putem garanta absenta oricaror defecte."] },
-        { "number": "09", "title": "Linkuri catre resurse terte", "content": ["Site-ul poate contine linkuri catre site-uri terte. Nu raspundem pentru:", "Continutul site-urilor terte.", "Politicile de confidentialitate ale resurselor terte.", "Orice pierderi rezultate din utilizarea resurselor terte."] },
-        { "number": "10", "title": "Modificarea Termenilor", "content": ["Ne rezervam dreptul de a modifica acesti Termeni in orice moment fara notificare prealabila. Modificarile intra in vigoare la publicarea pe Site.", "Continuarea utilizarii Site-ului dupa efectuarea modificarilor constituie acceptul dvs. al noilor Termeni.", "Data ultimei actualizari este indicata la inceputul documentului."] },
-        { "number": "11", "title": "Legea aplicabila", "content": ["Acesti Termeni sunt guvernati de legislatia aplicabila. Orice dispute aparute in legatura cu utilizarea Site-ului se solutioneaza prin negocieri, iar in cazul neajungerii la un acord \u2014 pe cale judecatoreasca in conformitate cu legislatia aplicabila."] },
-        { "number": "12", "title": "Informatii de contact", "content": ["Daca aveti intrebari privind acesti Termeni, contactati-ne:", "Email: hello@nakoagency.com", "Site: nakoagency.com"] }
+        {
+          "number": "01",
+          "title": "Dispozitii generale",
+          "content": [
+            "Acesti Termeni de utilizare (denumiti in continuare — \"Termeni\") reglementeaza utilizarea site-ului nakoagency.com (denumit in continuare — \"Site\") operat de NAKO Agency (denumita in continuare — \"Compania\", \"noi\", \"al nostru\").",
+            "Accesand si utilizand Site-ul, sunteti de acord cu acesti Termeni. Daca nu sunteti de acord, va rugam sa incetati utilizarea Site-ului."
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Descrierea serviciilor",
+          "content": [
+            "Compania ofera servicii de dezvoltare site-uri web la cheie, inclusiv:",
+            "Strategie si planificare site.",
+            "Design UI/UX.",
+            "Dezvoltare frontend si backend.",
+            "Optimizare SEO.",
+            "Suport tehnic si mentenanta.",
+            "Descrierea detaliata a serviciilor si conditiilor se ofera la consultarea individuala."
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Utilizarea Site-ului",
+          "content": [
+            "Utilizand Site-ul, va obligati sa:",
+            "Furnizati informatii corecte la completarea formularelor.",
+            "Nu utilizati Site-ul in scopuri ilegale.",
+            "Nu incercati sa obtineti acces neautorizat la Site sau sistemele sale.",
+            "Nu distribuiti software malitios prin Site.",
+            "Nu copiati, modificati sau distribuiti continutul Site-ului fara permisiune scrisa."
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Proprietate intelectuala",
+          "content": [
+            "Tot continutul Site-ului este proprietatea intelectuala a NAKO Agency:",
+            "Design, layout si elemente vizuale.",
+            "Texte, imagini si grafica.",
+            "Cod sursa si solutii software.",
+            "Logo-uri si marci comerciale.",
+            "Utilizarea materialelor Site-ului fara permisiunea scrisa a Companiei este interzisa."
+          ]
+        },
+        {
+          "number": "05",
+          "title": "Procedura de prestare a serviciilor",
+          "content": [
+            "Serviciile se presteaza in baza:",
+            "Solicitarii prin formularul de pe Site sau prin email.",
+            "Discutarii cerintelor si aprobarii briefului.",
+            "Semnarii contractului de prestare servicii.",
+            "Livrarii si receptiei pe etape.",
+            "Conditiile specifice, termenele si costurile se stabilesc individual pentru fiecare proiect."
+          ]
+        },
+        {
+          "number": "06",
+          "title": "Plata serviciilor",
+          "content": [
+            "Conditii de plata:",
+            "Plata se efectueaza conform conditiilor din contract.",
+            "Schema standard: 50% avans, 50% la finalizare.",
+            "Pentru proiecte mari, plata poate fi impartita in 3 etape.",
+            "Metodele de plata se stabilesc individual.",
+            "Conditiile de rambursare sunt stipulate in contract."
+          ]
+        },
+        {
+          "number": "07",
+          "title": "Limitarea raspunderii",
+          "content": [
+            "Compania nu raspunde pentru:",
+            "Indisponibilitatea temporara a Site-ului din cauza mentenantei tehnice.",
+            "Pierderi rezultate din utilizarea sau imposibilitatea utilizarii Site-ului.",
+            "Actiunile tertilor, inclusiv furnizori de hosting si sisteme de plata.",
+            "Circumstante de forta majora.",
+            "Raspunderea totala a Companiei este limitata la suma platita de client conform contractului."
+          ]
+        },
+        {
+          "number": "08",
+          "title": "Declinarea garantiilor",
+          "content": [
+            "Site-ul este furnizat \"ca atare\". Compania nu garanteaza:",
+            "Functionarea neintrerupta a Site-ului.",
+            "Absenta erorilor tehnice.",
+            "Conformitatea Site-ului cu cerintele dvs. specifice.",
+            "Acuratetea si completitudinea informatiilor publicate pe Site.",
+            "Ne straduim sa asiguram cea mai inalta calitate, dar nu putem garanta absenta oricaror defecte."
+          ]
+        },
+        {
+          "number": "09",
+          "title": "Linkuri catre resurse terte",
+          "content": [
+            "Site-ul poate contine linkuri catre site-uri terte. Nu raspundem pentru:",
+            "Continutul site-urilor terte.",
+            "Politicile de confidentialitate ale resurselor terte.",
+            "Orice pierderi rezultate din utilizarea resurselor terte."
+          ]
+        },
+        {
+          "number": "10",
+          "title": "Modificarea Termenilor",
+          "content": [
+            "Ne rezervam dreptul de a modifica acesti Termeni in orice moment fara notificare prealabila. Modificarile intra in vigoare la publicarea pe Site.",
+            "Continuarea utilizarii Site-ului dupa efectuarea modificarilor constituie acceptul dvs. al noilor Termeni.",
+            "Data ultimei actualizari este indicata la inceputul documentului."
+          ]
+        },
+        {
+          "number": "11",
+          "title": "Legea aplicabila",
+          "content": [
+            "Acesti Termeni sunt guvernati de legislatia aplicabila. Orice dispute aparute in legatura cu utilizarea Site-ului se solutioneaza prin negocieri, iar in cazul neajungerii la un acord — pe cale judecatoreasca in conformitate cu legislatia aplicabila."
+          ]
+        },
+        {
+          "number": "12",
+          "title": "Informatii de contact",
+          "content": [
+            "Daca aveti intrebari privind acesti Termeni, contactati-ne:",
+            "Email: hello@nakoagency.com",
+            "Site: nakoagency.com"
+          ]
+        }
       ]
+    },
+    "blog": {
+      "caption": "Articole",
+      "title": "BLOG",
+      "description": "Împărtășim experiența în dezvoltare, design și promovarea site-urilor. Sfaturi practice și analize de cazuri.",
+      "filterAll": "Toate articolele",
+      "filterDevelopment": "Dezvoltare",
+      "filterDesign": "Design",
+      "filterMarketing": "Marketing",
+      "filterBusiness": "Business",
+      "noResultsTitle": "Nu sunt articole",
+      "noResultsText": "În această categorie nu sunt publicații deocamdată",
+      "noResultsButton": "Arată toate articolele",
+      "ctaTitle": "Aveți nevoie de un site?",
+      "ctaText": "Vom aplica toate aceste cunoștințe în practică — pentru proiectul dumneavoastră.",
+      "ctaButton": "Discută proiectul",
+      "ctaServicesButton": "Vezi serviciile",
+      "posts": [
+        {
+          "slug": "why-nextjs-for-business",
+          "title": "De ce Next.js — cea mai bună alegere pentru un site de business în 2024",
+          "excerpt": "Analizăm avantajele Next.js pentru proiecte comerciale: SEO, performanță, scalabilitate.",
+          "category": "development",
+          "categoryLabel": "Dezvoltare",
+          "date": "2026-01-20",
+          "readTime": "8 min",
+          "author": "Echipa NAKO Agency"
+        },
+        {
+          "slug": "conversion-design-principles",
+          "title": "7 principii ale designului orientat spre conversie",
+          "excerpt": "Cum influențează designul vânzările. Tehnici practice care cresc conversia.",
+          "category": "design",
+          "categoryLabel": "Design",
+          "date": "2026-01-12",
+          "readTime": "6 min",
+          "author": "Echipa NAKO Agency"
+        },
+        {
+          "slug": "seo-for-new-websites",
+          "title": "SEO pentru un site nou: checklist pas cu pas",
+          "excerpt": "Ce trebuie făcut pentru SEO înainte de lansare și în primele luni de funcționare a site-ului.",
+          "category": "marketing",
+          "categoryLabel": "Marketing",
+          "date": "2025-12-28",
+          "readTime": "10 min",
+          "author": "Echipa NAKO Agency"
+        },
+        {
+          "slug": "expert-website-roi",
+          "title": "Rentabilitatea site-ului pentru un expert: cifre reale",
+          "excerpt": "Cât costă un site, câți clienți aduce și când se amortizează. Analiză pe exemple.",
+          "category": "business",
+          "categoryLabel": "Business",
+          "date": "2025-12-15",
+          "readTime": "7 min",
+          "author": "Echipa NAKO Agency"
+        },
+        {
+          "slug": "tailwind-vs-css-modules",
+          "title": "Tailwind CSS vs CSS Modules: ce să alegi",
+          "excerpt": "Comparăm două abordări de stilizare în proiecte React. Avantaje, dezavantaje, când să folosești fiecare.",
+          "category": "development",
+          "categoryLabel": "Dezvoltare",
+          "date": "2025-11-25",
+          "readTime": "9 min",
+          "author": "Echipa NAKO Agency"
+        },
+        {
+          "slug": "minimalism-in-web-design",
+          "title": "Minimalismul în web design: trend sau necesitate",
+          "excerpt": "De ce mai puțin înseamnă mai mult. Cum influențează designul minimalist UX-ul și conversia.",
+          "category": "design",
+          "categoryLabel": "Design",
+          "date": "2025-11-10",
+          "readTime": "5 min",
+          "author": "Echipa NAKO Agency"
+        },
+        {
+          "slug": "lighthouse-score-optimization",
+          "title": "Cum să crești Lighthouse până la 90+",
+          "excerpt": "Ghid practic de optimizare a performanței site-ului. Core Web Vitals, imagini, cod.",
+          "category": "development",
+          "categoryLabel": "Dezvoltare",
+          "date": "2025-10-20",
+          "readTime": "12 min",
+          "author": "Echipa NAKO Agency"
+        },
+        {
+          "slug": "landing-page-anatomy",
+          "title": "Anatomia landing-ului perfect",
+          "excerpt": "Ce blocuri trebuie să fie pe un landing și în ce ordine. Structura care vinde.",
+          "category": "marketing",
+          "categoryLabel": "Marketing",
+          "date": "2025-10-05",
+          "readTime": "8 min",
+          "author": "Echipa NAKO Agency"
+        }
+      ]
+    },
+    "blogPost": {
+      "backLink": "Toate articolele",
+      "tocTitle": "Cuprins",
+      "prevPost": "← Anteriorul",
+      "nextPost": "Următorul →",
+      "relatedTitle": "Citește și",
+      "ctaTitle": "Aveți nevoie de ajutor cu proiectul?",
+      "ctaText": "Vom aplica aceste cunoștințe pentru afacerea dumneavoastră. Discutăm sarcina?",
+      "ctaButton": "Discută proiectul",
+      "notFound": "Articolul nu a fost găsit",
+      "breadcrumbHome": "Acasă",
+      "breadcrumbBlog": "Blog",
+      "posts": {
+        "why-nextjs-for-business": {
+          "title": "De ce Next.js — cea mai bună alegere pentru un site de business în 2024",
+          "excerpt": "Analizăm avantajele Next.js pentru proiecte comerciale: SEO, performanță, scalabilitate.",
+          "categoryLabel": "Dezvoltare",
+          "date": "2026-01-20",
+          "readTime": "8 min",
+          "author": "Echipa NAKO Agency",
+          "toc": [
+            {
+              "id": "intro",
+              "title": "Introducere"
+            },
+            {
+              "id": "seo",
+              "title": "SEO din cutie"
+            },
+            {
+              "id": "performance",
+              "title": "Performanță"
+            },
+            {
+              "id": "dx",
+              "title": "Developer Experience"
+            },
+            {
+              "id": "conclusion",
+              "title": "Concluzii"
+            }
+          ],
+          "content": "<h2 id=\"intro\">Introducere</h2><p>Next.js a devenit standardul pentru crearea aplicațiilor web moderne. În 2024, acest lucru este deosebit de relevant pentru site-urile de business, unde sunt importante SEO, viteza de încărcare și scalabilitatea.</p><p>În acest articol vom analiza de ce alegem Next.js pentru proiecte comerciale și ce avantaje oferă clienților noștri.</p><h2 id=\"seo\">SEO din cutie</h2><p>Principalul avantaj al Next.js pentru business — SEO excelent. Spre deosebire de aplicațiile React obișnuite, Next.js suportă randarea pe server (SSR) și generarea statică (SSG).</p><p>Aceasta înseamnă că motoarele de căutare văd o pagină complet pregătită, nu un HTML gol cu JavaScript. Rezultatul — indexare rapidă și poziții înalte în căutare.</p><ul><li>Generare automată a meta-tagurilor</li><li>Suport integrat Open Graph</li><li>Sitemap.xml automat</li><li>Optimizare pentru Core Web Vitals</li></ul><h2 id=\"performance\">Performanță</h2><p>Next.js optimizează performanța la nivelul framework-ului. Code splitting automat, optimizarea imaginilor, prefetching-ul link-urilor — totul funcționează fără configurare suplimentară.</p><p>Pentru business, acest lucru este critic: fiecare secundă de întârziere la încărcare poate costa conversii. Cu Next.js obținem constant Lighthouse Score 90+.</p><h2 id=\"dx\">Developer Experience</h2><p>Un DX bun înseamnă dezvoltare rapidă și mai puține bug-uri. Next.js oferă:</p><ul><li>Hot Module Replacement pentru modificări instantanee</li><li>TypeScript din cutie</li><li>API Routes integrat</li><li>Documentație și comunitate excelente</li></ul><h2 id=\"conclusion\">Concluzii</h2><p>Next.js nu este doar un framework la modă, ci un instrument care rezolvă sarcini reale de business. SEO, performanță, scalabilitate — totul din cutie.</p><p>Dacă planificați să creați un site care trebuie să aducă clienți din căutare și să convertească vizitatorii — Next.js va fi alegerea corectă.</p>"
+        },
+        "conversion-design-principles": {
+          "title": "7 principii ale designului orientat spre conversie",
+          "excerpt": "Cum influențează designul vânzările. Tehnici practice care cresc conversia.",
+          "categoryLabel": "Design",
+          "date": "2026-01-12",
+          "readTime": "6 min",
+          "author": "Echipa NAKO Agency",
+          "toc": [
+            {
+              "id": "hierarchy",
+              "title": "Ierarhia vizuală"
+            },
+            {
+              "id": "cta",
+              "title": "CTA clar"
+            },
+            {
+              "id": "whitespace",
+              "title": "Spațiu în design"
+            },
+            {
+              "id": "trust",
+              "title": "Elemente de încredere"
+            },
+            {
+              "id": "speed",
+              "title": "Viteza de încărcare"
+            }
+          ],
+          "content": "<h2 id=\"hierarchy\">1. Ierarhia vizuală</h2><p>Ochiul utilizatorului trebuie să se miște pe pagină în direcția corectă. Dimensiunea, culoarea, contrastul — instrumente de gestionare a atenției.</p><p>Oferta principală trebuie să fie vizibilă imediat. Informațiile secundare — mai mici și mai pale.</p><h2 id=\"cta\">2. CTA clar</h2><p>Butonul de apel la acțiune trebuie să fie evident. Culoare contrastantă, text clar, dimensiune suficientă.</p><p>Un singur CTA principal pe ecran. Nu forțați utilizatorul să aleagă între mai multe acțiuni echivalente.</p><h2 id=\"whitespace\">3. Spațiu în design</h2><p>Spațiul gol nu este o risipă de loc. Este un instrument care ajută la evidențierea elementelor importante și îmbunătățirea lizibilității.</p><p>Designul supraîncărcat obosește și reduce conversia. Lăsați conținutul să respire.</p><h2 id=\"trust\">4. Elemente de încredere</h2><p>Recenzii, logo-uri ale clienților, certificate, garanții — tot ce confirmă fiabilitatea dumneavoastră.</p><p>Plasați-le lângă CTA — acest lucru reduce anxietatea înainte de luarea deciziei.</p><h2 id=\"speed\">5. Viteza de încărcare</h2><p>Designul frumos este inutil dacă pagina se încarcă 10 secunde. Optimizarea face parte din design.</p><p>Lighthouse Score 90+ — standardul minim pentru un site comercial.</p>"
+        },
+        "seo-for-new-websites": {
+          "title": "SEO pentru un site nou: checklist pas cu pas",
+          "excerpt": "Ce trebuie făcut pentru SEO înainte de lansare și în primele luni de funcționare a site-ului.",
+          "categoryLabel": "Marketing",
+          "date": "2025-12-28",
+          "readTime": "10 min",
+          "author": "Echipa NAKO Agency",
+          "toc": [
+            {
+              "id": "before-launch",
+              "title": "Înainte de lansare"
+            },
+            {
+              "id": "technical",
+              "title": "SEO tehnic"
+            },
+            {
+              "id": "content",
+              "title": "Conținut"
+            },
+            {
+              "id": "first-months",
+              "title": "Primele luni"
+            }
+          ],
+          "content": "<h2 id=\"before-launch\">Înainte de lansare</h2><p>SEO începe înainte de publicarea site-ului. Pregătirea în această etapă va economisi luni de muncă.</p><ul><li>Cercetarea cuvintelor cheie</li><li>Structura URL-urilor</li><li>Planificarea conținutului</li><li>Configurarea analiticii</li></ul><h2 id=\"technical\">SEO tehnic</h2><p>Fundația fără de care celelalte eforturi sunt inutile:</p><ul><li>HTTPS este obligatoriu</li><li>Versiunea mobilă</li><li>Viteza de încărcare &lt; 3 sec</li><li>Structura corectă a titlurilor</li><li>XML sitemap</li><li>robots.txt</li></ul><h2 id=\"content\">Conținut</h2><p>Conținutul unic și util — baza SEO. Fiecare pagină trebuie să răspundă la o cerere specifică a utilizatorului.</p><p>Meta title și description pentru fiecare pagină. Texte alt pentru imagini. Interlinking intern.</p><h2 id=\"first-months\">Primele luni</h2><p>După lansare — monitorizare și îmbunătățiri:</p><ul><li>Înregistrarea în Search Console</li><li>Urmărirea pozițiilor</li><li>Analiza comportamentului utilizatorilor</li><li>Adăugarea regulată de conținut</li></ul>"
+        },
+        "expert-website-roi": {
+          "title": "Rentabilitatea site-ului pentru un expert: cifre reale",
+          "excerpt": "Cât costă un site, câți clienți aduce și când se amortizează. Analiză pe exemple.",
+          "categoryLabel": "Business",
+          "date": "2025-12-15",
+          "readTime": "7 min",
+          "author": "Echipa NAKO Agency",
+          "toc": [
+            {
+              "id": "costs",
+              "title": "Costul site-ului"
+            },
+            {
+              "id": "traffic",
+              "title": "Surse de trafic"
+            },
+            {
+              "id": "conversion",
+              "title": "Conversie"
+            },
+            {
+              "id": "roi",
+              "title": "Calculul rentabilității"
+            }
+          ],
+          "content": "<h2 id=\"costs\">Costul site-ului</h2><p>Un site pentru expert costă de la 80.000 la 200.000 ₽ în funcție de complexitate. Este o investiție unică care funcționează ani de zile.</p><h2 id=\"traffic\">Surse de trafic</h2><p>De unde vin clienții pe site-ul unui expert:</p><ul><li>Căutare organică (SEO) — 40-60%</li><li>Rețele sociale — 20-30%</li><li>Recomandări — 10-20%</li><li>Publicitate — 10-15%</li></ul><h2 id=\"conversion\">Conversie</h2><p>Conversia medie a site-ului unui expert — 3-7%. La 1000 de vizitatori pe lună, aceasta înseamnă 30-70 de cereri.</p><p>Conversia în client — aproximativ 30%. Total: 9-21 clienți noi pe lună.</p><h2 id=\"roi\">Calculul rentabilității</h2><p>Exemplu: prețul mediu al consultației — 5000 ₽. 15 clienți × 5000 ₽ = 75.000 ₽/lună.</p><p>La un cost al site-ului de 100.000 ₽, amortizarea — 1,5 luni. Mai departe — profit net.</p>"
+        },
+        "tailwind-vs-css-modules": {
+          "title": "Tailwind CSS vs CSS Modules: ce să alegi",
+          "excerpt": "Comparăm două abordări de stilizare în proiecte React. Avantaje, dezavantaje, când să folosești fiecare.",
+          "categoryLabel": "Dezvoltare",
+          "date": "2025-11-25",
+          "readTime": "9 min",
+          "author": "Echipa NAKO Agency",
+          "toc": [
+            {
+              "id": "tailwind-pros",
+              "title": "Avantajele Tailwind"
+            },
+            {
+              "id": "tailwind-cons",
+              "title": "Dezavantajele Tailwind"
+            },
+            {
+              "id": "modules-pros",
+              "title": "Avantajele CSS Modules"
+            },
+            {
+              "id": "when-to-use",
+              "title": "Când să folosești fiecare"
+            }
+          ],
+          "content": "<h2 id=\"tailwind-pros\">Avantajele Tailwind</h2><ul><li>Dezvoltare rapidă — nu trebuie să inventezi nume de clase</li><li>Consistență — design tokens din cutie</li><li>CSS final mic — doar stilurile utilizate</li><li>Ușor de personalizat tema</li></ul><h2 id=\"tailwind-cons\">Dezavantajele Tailwind</h2><ul><li>Clase lungi în markup</li><li>Curbă de învățare</li><li>Stările complexe necesită multe clase</li></ul><h2 id=\"modules-pros\">Avantajele CSS Modules</h2><ul><li>Sintaxă CSS familiară</li><li>Izolarea stilurilor în mod implicit</li><li>Ușor de migrat CSS-ul existent</li></ul><h2 id=\"when-to-use\">Când să folosești fiecare</h2><p>Tailwind — pentru proiecte noi, unde sunt importante viteza de dezvoltare și consistența.</p><p>CSS Modules — pentru proiecte cu un design system existent sau o echipă obișnuită cu CSS clasic.</p>"
+        },
+        "minimalism-in-web-design": {
+          "title": "Minimalismul în web design: trend sau necesitate",
+          "excerpt": "De ce mai puțin înseamnă mai mult. Cum influențează designul minimalist UX-ul și conversia.",
+          "categoryLabel": "Design",
+          "date": "2025-11-10",
+          "readTime": "5 min",
+          "author": "Echipa NAKO Agency",
+          "toc": [
+            {
+              "id": "why",
+              "title": "De ce funcționează minimalismul"
+            },
+            {
+              "id": "principles",
+              "title": "Principii"
+            },
+            {
+              "id": "mistakes",
+              "title": "Greșeli"
+            }
+          ],
+          "content": "<h2 id=\"why\">De ce funcționează minimalismul</h2><p>Minimalismul nu este despre gol, ci despre focus. Când pe pagină nu există nimic de prisos, utilizatorul vede esențialul.</p><p>Studiile arată: paginile simple sunt percepute ca fiind mai fiabile și mai profesionale.</p><h2 id=\"principles\">Principiile minimalismului</h2><ul><li>Un singur accent principal pe ecran</li><li>Maximum 2-3 culori</li><li>Mult spațiu între elemente</li><li>Tipografie clară</li></ul><h2 id=\"mistakes\">Greșeli tipice</h2><p>Minimalism ≠ plictisitor. O pagină goală fără accente — nu este minimalism, ci design prost.</p><p>Fiecare element trebuie să funcționeze. Dacă ceva nu are sens — eliminăm.</p>"
+        },
+        "lighthouse-score-optimization": {
+          "title": "Cum să crești Lighthouse până la 90+",
+          "excerpt": "Ghid practic de optimizare a performanței site-ului. Core Web Vitals, imagini, cod.",
+          "categoryLabel": "Dezvoltare",
+          "date": "2025-10-20",
+          "readTime": "12 min",
+          "author": "Echipa NAKO Agency",
+          "toc": [
+            {
+              "id": "cwv",
+              "title": "Core Web Vitals"
+            },
+            {
+              "id": "images",
+              "title": "Imagini"
+            },
+            {
+              "id": "code",
+              "title": "Optimizarea codului"
+            },
+            {
+              "id": "fonts",
+              "title": "Fonturi"
+            }
+          ],
+          "content": "<h2 id=\"cwv\">Core Web Vitals</h2><p>Cele trei metrici principale Google:</p><ul><li>LCP (Largest Contentful Paint) &lt; 2,5 sec</li><li>FID (First Input Delay) &lt; 100 ms</li><li>CLS (Cumulative Layout Shift) &lt; 0,1</li></ul><h2 id=\"images\">Imagini</h2><p>Principala sursă de probleme cu performanța:</p><ul><li>Formate WebP/AVIF</li><li>Lazy loading</li><li>Dimensiuni corecte (srcset)</li><li>Blur placeholder</li></ul><h2 id=\"code\">Optimizarea codului</h2><ul><li>Code splitting</li><li>Tree shaking</li><li>Minificare</li><li>Eliminarea CSS-ului neutilizat</li></ul><h2 id=\"fonts\">Fonturi</h2><p>Fonturile blochează adesea randarea:</p><ul><li>font-display: swap</li><li>Preîncărcarea fonturilor critice</li><li>Subset de caractere</li></ul>"
+        },
+        "landing-page-anatomy": {
+          "title": "Anatomia landing-ului perfect",
+          "excerpt": "Ce blocuri trebuie să fie pe un landing și în ce ordine. Structura care vinde.",
+          "categoryLabel": "Marketing",
+          "date": "2025-10-05",
+          "readTime": "8 min",
+          "author": "Echipa NAKO Agency",
+          "toc": [
+            {
+              "id": "hero",
+              "title": "Secțiunea Hero"
+            },
+            {
+              "id": "benefits",
+              "title": "Avantaje"
+            },
+            {
+              "id": "social-proof",
+              "title": "Dovezi sociale"
+            },
+            {
+              "id": "cta",
+              "title": "Blocul CTA"
+            }
+          ],
+          "content": "<h2 id=\"hero\">Secțiunea Hero</h2><p>Primul ecran decide totul. În 5 secunde utilizatorul trebuie să înțeleagă:</p><ul><li>Ce oferiți</li><li>Pentru cine este</li><li>De ce merită să rămână</li></ul><h2 id=\"benefits\">Avantaje</h2><p>Nu caracteristici, ci beneficii. Nu «10 ani de experiență», ci «Vă rezolvăm problema în 3 zile».</p><p>3-5 avantaje cheie cu pictograme sau ilustrații.</p><h2 id=\"social-proof\">Dovezi sociale</h2><p>Recenzii, cazuri, logo-uri ale clienților, cifre — tot ce confirmă cuvintele dumneavoastră.</p><p>Plasați-le mai aproape de CTA — acest lucru reduce îndoielile.</p><h2 id=\"cta\">Blocul CTA</h2><p>Apelul final la acțiune. Repetați pe scurt oferta și adăugați un formular sau un buton.</p><p>Eliminați tot ce este de prisos — doar acțiunea.</p>"
+        }
+      }
+    },
+    "cases": {
+      "caption": "Portofoliu",
+      "title": "CAZURI",
+      "description": "Proiecte reale cu rezultate măsurabile. Fiecare caz — o soluție pentru o sarcină concretă de business.",
+      "filterAll": "Toate proiectele",
+      "filterExpert": "Expert",
+      "filterEcommerce": "E-commerce",
+      "filterLanding": "Landing",
+      "noResultsTitle": "Nu sunt proiecte",
+      "noResultsText": "În această categorie nu sunt cazuri deocamdată",
+      "noResultsButton": "Arată toate proiectele",
+      "viewCase": "Vezi cazul",
+      "ctaTitle": "PROIECTUL TĂU",
+      "ctaText": "Doriți ca proiectul dumneavoastră să fie în această listă? Povestiți-ne despre sarcină — vom discuta soluția.",
+      "ctaButton": "Discută proiectul",
+      "ctaServicesButton": "Vezi serviciile",
+      "items": [
+        {
+          "slug": "expert-coach",
+          "title": "Site personal de coach",
+          "category": "expert",
+          "categoryLabel": "Expert",
+          "description": "Site pentru un coach de business cu programare la consultații și blog.",
+          "result": "+180% cereri",
+          "imageSrc": "/images/cases/case-expert-coach.jpg"
+        },
+        {
+          "slug": "ecommerce-fashion",
+          "title": "Magazin online de îmbrăcăminte",
+          "category": "ecommerce",
+          "categoryLabel": "E-commerce",
+          "description": "Magazin de îmbrăcăminte pentru femei cu catalog de 500+ produse.",
+          "result": "3.2 sec LCP",
+          "imageSrc": "/images/cases/case-ecommerce-fashion.jpg"
+        },
+        {
+          "slug": "landing-saas",
+          "title": "Landing produs SaaS",
+          "category": "landing",
+          "categoryLabel": "Landing",
+          "description": "Pagină de conversie pentru un serviciu cloud de analiză.",
+          "result": "8.5% conversie",
+          "imageSrc": "/images/cases/case-landing-saas.jpg"
+        },
+        {
+          "slug": "expert-psychologist",
+          "title": "Site de psiholog",
+          "category": "expert",
+          "categoryLabel": "Expert",
+          "description": "Site personal cu programare online și integrare cu calendarul.",
+          "result": "+240% programări",
+          "imageSrc": "/images/cases/case-expert-psychologist.jpg"
+        },
+        {
+          "slug": "ecommerce-cosmetics",
+          "title": "Magazin de cosmetice",
+          "category": "ecommerce",
+          "categoryLabel": "E-commerce",
+          "description": "Magazin online de cosmetice naturale cu abonament.",
+          "result": "95 Lighthouse",
+          "imageSrc": "/images/cases/case-ecommerce-cosmetics.jpg"
+        },
+        {
+          "slug": "landing-event",
+          "title": "Pagină promoțională eveniment",
+          "category": "landing",
+          "categoryLabel": "Landing",
+          "description": "Landing pentru o conferință de business cu înregistrare online.",
+          "result": "1200+ înregistrări",
+          "imageSrc": "/images/cases/case-landing-event.jpg"
+        },
+        {
+          "slug": "expert-lawyer",
+          "title": "Site de practică juridică",
+          "category": "expert",
+          "categoryLabel": "Expert",
+          "description": "Site corporativ de avocat cu portofoliu de cazuri și programare.",
+          "result": "+150% solicitări",
+          "imageSrc": "/images/cases/case-corporate-it.jpg"
+        },
+        {
+          "slug": "ecommerce-electronics",
+          "title": "Magazin de electronică",
+          "category": "ecommerce",
+          "categoryLabel": "E-commerce",
+          "description": "Magazin online de gadgeturi cu căutare inteligentă și filtre.",
+          "result": "+85% conversie",
+          "imageSrc": "/images/cases/case-ecommerce-electronics.jpg"
+        },
+        {
+          "slug": "landing-app",
+          "title": "Landing aplicație mobilă",
+          "category": "landing",
+          "categoryLabel": "Landing",
+          "description": "Pagină promoțională pentru o aplicație de fitness cu link-uri App Store.",
+          "result": "12K instalări",
+          "imageSrc": "/images/cases/case-expert-nutrition.jpg"
+        }
+      ]
+    },
+    "caseDetail": {
+      "backLink": "Toate cazurile",
+      "taskTitle": "SARCINA",
+      "solutionTitle": "SOLUȚIA",
+      "resultsTitle": "REZULTATE",
+      "techTitle": "Tehnologii",
+      "galleryTitle": "Galerie",
+      "otherCasesTitle": "ALTE CAZURI",
+      "previewAlt": "Previzualizare proiect",
+      "clientLabel": "Client",
+      "yearLabel": "Anul",
+      "durationLabel": "Termen",
+      "siteLabel": "Site",
+      "openLink": "Deschide →",
+      "ctaTitle": "Doriți un rezultat similar?",
+      "ctaText": "Povestiți-ne despre proiectul dumneavoastră — vom discuta cum să vă atingeți obiectivele.",
+      "ctaButton": "Discută proiectul",
+      "notFound": "Cazul nu a fost găsit",
+      "breadcrumbHome": "Acasă",
+      "breadcrumbCases": "Cazuri",
+      "cases": {
+        "expert-coach": {
+          "title": "Site personal de coach",
+          "categoryLabel": "Expert",
+          "description": "Site pentru un coach de business cu programare la consultații și blog.",
+          "client": "Anna Smirnova, coach de business",
+          "year": "2024",
+          "duration": "3 săptămâni",
+          "task": "Crearea unui site personal pentru un coach de business care va vinde servicii de consultanță și cursuri online. Site-ul trebuie să transmită expertiză, să inspire încredere și să convertească vizitatorii în clienți. Integrare cu calendarul pentru programarea consultațiilor.",
+          "solution": [
+            "Am dezvoltat o strategie de conținut axată pe studii de caz ale clienților",
+            "Am creat un design minimalist cu accent pe brandul personal",
+            "Am integrat Calendly pentru programare online",
+            "Am adăugat blog pentru SEO și demonstrarea expertizei",
+            "Am configurat analitici și obiective de conversie"
+          ],
+          "results": [
+            {
+              "value": "+180%",
+              "label": "Creșterea cererilor"
+            },
+            {
+              "value": "2.1 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "94",
+              "label": "Lighthouse"
+            },
+            {
+              "value": "45%",
+              "label": "Conversie programare"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Calendly",
+            "GA4"
+          ]
+        },
+        "ecommerce-fashion": {
+          "title": "Magazin online de îmbrăcăminte",
+          "categoryLabel": "E-commerce",
+          "description": "Magazin de îmbrăcăminte pentru femei cu catalog de 500+ produse.",
+          "client": "MODA Store",
+          "year": "2024",
+          "duration": "6 săptămâni",
+          "task": "Crearea unui magazin online modern de îmbrăcăminte pentru femei cu catalog convenabil, filtrare, coș și plată online. Viteza de încărcare și versiunea mobilă sunt critice, deoarece 70% din trafic vine de pe telefoane.",
+          "solution": [
+            "Am proiectat UX cu focus pe mobile-first",
+            "Am implementat filtre inteligente și căutare cu autocompletare",
+            "Am integrat YuKassa pentru plăți online",
+            "Am configurat notificări Telegram pentru comenzi",
+            "Am optimizat imaginile și adăugat lazy loading"
+          ],
+          "results": [
+            {
+              "value": "3.2 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "+65%",
+              "label": "Conversie"
+            },
+            {
+              "value": "500+",
+              "label": "Produse"
+            },
+            {
+              "value": "92",
+              "label": "Lighthouse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "YuKassa",
+            "Telegram API"
+          ]
+        },
+        "landing-saas": {
+          "title": "Landing produs SaaS",
+          "categoryLabel": "Landing",
+          "description": "Pagină de conversie pentru un serviciu cloud de analiză.",
+          "client": "DataFlow Analytics",
+          "year": "2024",
+          "duration": "2 săptămâni",
+          "task": "Crearea unei pagini de aterizare cu conversie ridicată pentru un produs SaaS în domeniul analizei de business. Pagina trebuie să explice un produs complex în termeni simpli și să motiveze înregistrarea pentru trial gratuit.",
+          "solution": [
+            "Am dezvoltat o structură cu dezvăluire progresivă a informației",
+            "Am creat blocuri animate de demonstrare a produsului",
+            "Am adăugat dovezi sociale și testimoniale",
+            "Am implementat testare A/B a blocurilor CTA",
+            "Am integrat cu CRM pentru urmărirea lead-urilor"
+          ],
+          "results": [
+            {
+              "value": "8.5%",
+              "label": "Conversie"
+            },
+            {
+              "value": "1.8 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "97",
+              "label": "Lighthouse"
+            },
+            {
+              "value": "-40%",
+              "label": "Bounce Rate"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Framer Motion",
+            "Vercel Analytics"
+          ]
+        },
+        "expert-psychologist": {
+          "title": "Site de psiholog",
+          "categoryLabel": "Expert",
+          "description": "Site personal cu programare online și integrare cu calendarul.",
+          "client": "Elena Volkova, psiholog",
+          "year": "2024",
+          "duration": "3 săptămâni",
+          "task": "Dezvoltarea unui site pentru un psiholog practicant cu posibilitatea de programare online. Designul trebuie să creeze o senzație de calm și încredere. Confidențialitatea și simplitatea programării sunt importante.",
+          "solution": [
+            "Am creat un design calm, minimalist",
+            "Am integrat sistemul de rezervare online",
+            "Am adăugat secțiunea cu direcțiile de lucru",
+            "Am implementat formularul de consultație inițială",
+            "Am configurat notificări email despre programări"
+          ],
+          "results": [
+            {
+              "value": "+240%",
+              "label": "Creșterea programărilor"
+            },
+            {
+              "value": "2.4 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "91",
+              "label": "Lighthouse"
+            },
+            {
+              "value": "60%",
+              "label": "Programare online"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Cal.com",
+            "Resend"
+          ]
+        },
+        "ecommerce-cosmetics": {
+          "title": "Magazin de cosmetice",
+          "categoryLabel": "E-commerce",
+          "description": "Magazin online de cosmetice naturale cu abonament.",
+          "client": "NaturaCare",
+          "year": "2024",
+          "duration": "5 săptămâni",
+          "task": "Crearea unui magazin online premium de cosmetice naturale cu accent pe vizual și storytelling. Adăugarea opțiunii de abonament pentru livrare regulată.",
+          "solution": [
+            "Am dezvoltat un design vizual bogat cu accent pe fotografii",
+            "Am implementat sistemul de abonamente cu intervale flexibile",
+            "Am integrat motorul de recomandări",
+            "Am adăugat programul de loialitate",
+            "Am optimizat pentru SEO în nișa cosmeticelor"
+          ],
+          "results": [
+            {
+              "value": "95",
+              "label": "Lighthouse"
+            },
+            {
+              "value": "+120%",
+              "label": "Abonamente"
+            },
+            {
+              "value": "4.2%",
+              "label": "Conversie"
+            },
+            {
+              "value": "35%",
+              "label": "Achiziții repetate"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Stripe Subscriptions",
+            "Algolia"
+          ]
+        },
+        "landing-event": {
+          "title": "Pagină promoțională eveniment",
+          "categoryLabel": "Landing",
+          "description": "Landing pentru o conferință de business cu înregistrare online.",
+          "client": "TechConf 2024",
+          "year": "2024",
+          "duration": "10 zile",
+          "task": "Crearea unei pagini promo pentru o conferință IT cu posibilitatea de înregistrare online și plată a biletelor. Pagina trebuie să creeze hype și efect FOMO.",
+          "solution": [
+            "Am creat un design dinamic cu cronometru invers",
+            "Am implementat diferite tipuri de bilete cu prețuri",
+            "Am integrat plata online",
+            "Am adăugat programul și speakerii",
+            "Am configurat email marketing pentru înregistrați"
+          ],
+          "results": [
+            {
+              "value": "1200+",
+              "label": "Înregistrări"
+            },
+            {
+              "value": "12%",
+              "label": "Conversie"
+            },
+            {
+              "value": "1.5 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "98",
+              "label": "Lighthouse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Stripe",
+            "Resend",
+            "Vercel"
+          ]
+        },
+        "expert-lawyer": {
+          "title": "Site de practică juridică",
+          "categoryLabel": "Expert",
+          "description": "Site corporativ de avocat cu portofoliu de cazuri și programare.",
+          "client": "Avocat Petrov I.S.",
+          "year": "2024",
+          "duration": "4 săptămâni",
+          "task": "Dezvoltarea unui site de prestigiu pentru un avocat care demonstrează experiența și expertiza. Încrederea, profesionalismul și posibilitatea de contact rapid sunt importante.",
+          "solution": [
+            "Am creat un design strict, profesional",
+            "Am structurat serviciile pe domenii de drept",
+            "Am adăugat secțiunea cu cazuri câștigate (anonim)",
+            "Am implementat formularul de consultație de urgență",
+            "Am integrat chat online pentru comunicare rapidă"
+          ],
+          "results": [
+            {
+              "value": "+150%",
+              "label": "Solicitări"
+            },
+            {
+              "value": "2.8 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "89",
+              "label": "Lighthouse"
+            },
+            {
+              "value": "70%",
+              "label": "Din căutare"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Tawk.to"
+          ]
+        },
+        "ecommerce-electronics": {
+          "title": "Magazin de electronică",
+          "categoryLabel": "E-commerce",
+          "description": "Magazin online de gadgeturi cu căutare inteligentă și filtre.",
+          "client": "GadgetHub",
+          "year": "2024",
+          "duration": "7 săptămâni",
+          "task": "Crearea unui magazin online modern de electronică cu accent pe UX și căutare rapidă. Catalog de 2000+ produse cu multe specificații.",
+          "solution": [
+            "Am implementat Algolia pentru căutare instantanee",
+            "Am creat sistemul de filtre cu fațete",
+            "Am adăugat compararea produselor",
+            "Am integrat cu 1C pentru sincronizarea stocurilor",
+            "Am implementat wishlist și notificări de reducere de preț"
+          ],
+          "results": [
+            {
+              "value": "+85%",
+              "label": "Conversie"
+            },
+            {
+              "value": "2.9 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "90",
+              "label": "Lighthouse"
+            },
+            {
+              "value": "2000+",
+              "label": "Produse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Algolia",
+            "Integrare 1C",
+            "Redis"
+          ]
+        },
+        "landing-app": {
+          "title": "Landing aplicație mobilă",
+          "categoryLabel": "Landing",
+          "description": "Pagină promoțională pentru o aplicație de fitness cu link-uri App Store.",
+          "client": "FitLife App",
+          "year": "2024",
+          "duration": "2 săptămâni",
+          "task": "Crearea unui landing pentru o aplicație mobilă de fitness care motivează instalarea. Prezentarea funcționalității și avantajelor, integrarea link-urilor App Store și Google Play.",
+          "solution": [
+            "Am creat un design strălucitor, energic",
+            "Am adăugat capturi de ecran demo interactive",
+            "Am implementat previzualizări video ale funcțiilor",
+            "Am integrat smart app banners",
+            "Am adăugat recenzii și evaluări ale utilizatorilor"
+          ],
+          "results": [
+            {
+              "value": "12K",
+              "label": "Instalări"
+            },
+            {
+              "value": "15%",
+              "label": "Conversie"
+            },
+            {
+              "value": "1.2 sec",
+              "label": "LCP"
+            },
+            {
+              "value": "99",
+              "label": "Lighthouse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Framer Motion",
+            "Smart Banners"
+          ]
+        }
+      }
     }
   }
 }
