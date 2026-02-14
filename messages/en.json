@@ -290,7 +290,7 @@
       },
       {
         "question": "How much does a website cost? What affects the price?",
-        "answer": "Cost depends on website type, number of pages, design complexity, and integrations. Landing page — from $600, expert website — from $1,000, online store — from $2,000. Exact cost is calculated individually."
+        "answer": "Cost depends on website type, number of pages, design complexity, and integrations. Landing page — from €500, expert website — from €1,000, online store — from €2,000. Exact cost is calculated individually."
       },
       {
         "question": "What's included in turnkey development?",
@@ -567,7 +567,7 @@
           "title": "Expert website",
           "subtitle": "Personal brand",
           "description": "For specialists, coaches, consultants. A website that sells your expertise and attracts clients through content and trust.",
-          "price": "from $1,000",
+          "price": "from €1,000",
           "timeline": "14–21 days",
           "features": [
             "Up to 7 pages",
@@ -590,7 +590,7 @@
           "title": "Online store",
           "subtitle": "E-commerce solution",
           "description": "Full e-commerce with product catalog, cart, online payments, and CRM integration. Automation of sales and customer notifications.",
-          "price": "from $2,000",
+          "price": "from €2,000",
           "timeline": "21–45 days",
           "features": [
             "Product catalog",
@@ -613,7 +613,7 @@
           "title": "Landing page",
           "subtitle": "High conversion",
           "description": "One-page website with high conversion for product launch, service, or advertising campaign. Fast development, maximum impact.",
-          "price": "from $600",
+          "price": "from €500",
           "timeline": "7–14 days",
           "features": [
             "One-page design",
@@ -767,10 +767,10 @@
       "budget": "Budget",
       "budgetOptions": [
         "Approximate budget",
-        "$600 – $1,000",
-        "$1,000 – $2,500",
-        "$2,500 – $5,000",
-        "From $5,000",
+        "€500 – €1,000",
+        "€1,000 – €2,500",
+        "€2,500 – €5,000",
+        "From €5,000",
         "Let's discuss"
       ],
       "references": "References / competitors",
@@ -1283,7 +1283,7 @@
               "title": "ROI Calculation"
             }
           ],
-          "content": "<h2 id=\"costs\">Website Cost</h2><p>A website for an expert costs from $1,000 to $3,000 depending on complexity. It's a one-time investment that works for years.</p><h2 id=\"traffic\">Traffic Sources</h2><p>Where clients come from to an expert's website:</p><ul><li>Organic search (SEO) — 40-60%</li><li>Social media — 20-30%</li><li>Referrals — 10-20%</li><li>Advertising — 10-15%</li></ul><h2 id=\"conversion\">Conversion</h2><p>Average conversion for an expert's website is 3-7%. With 1,000 visitors per month, that's 30-70 leads.</p><p>Conversion to client is about 30%. Total: 9-21 new clients per month.</p><h2 id=\"roi\">ROI Calculation</h2><p>Example: average consultation fee — $100. 15 clients x $100 = $1,500/month.</p><p>With a website cost of $2,000, the payback period is about 1.5 months. After that — pure profit.</p>"
+          "content": "<h2 id=\"costs\">Website Cost</h2><p>A website for an expert costs from €1,000 to €3,000 depending on complexity. It's a one-time investment that works for years.</p><h2 id=\"traffic\">Traffic Sources</h2><p>Where clients come from to an expert's website:</p><ul><li>Organic search (SEO) — 40-60%</li><li>Social media — 20-30%</li><li>Referrals — 10-20%</li><li>Advertising — 10-15%</li></ul><h2 id=\"conversion\">Conversion</h2><p>Average conversion for an expert's website is 3-7%. With 1,000 visitors per month, that's 30-70 leads.</p><p>Conversion to client is about 30%. Total: 9-21 new clients per month.</p><h2 id=\"roi\">ROI Calculation</h2><p>Example: average consultation fee — €100. 15 clients x €100 = €1,500/month.</p><p>With a website cost of €2,000, the payback period is about 1.5 months. After that — pure profit.</p>"
         },
         "tailwind-vs-css-modules": {
           "title": "Tailwind CSS vs CSS Modules: Which to Choose",

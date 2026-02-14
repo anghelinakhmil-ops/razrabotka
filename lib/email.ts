@@ -252,11 +252,11 @@ function getTimelineName(timeline?: string): string {
  */
 function getBudgetName(budget?: string): string {
   const budgets: Record<string, string> = {
-    "50-100": "50 000 – 100 000 ₽",
-    "100-200": "100 000 – 200 000 ₽",
-    "200-500": "200 000 – 500 000 ₽",
-    "500+": "От 500 000 ₽",
-    discuss: "Обсудим",
+    "600-1000": "€500 – €1 000",
+    "1000-2500": "€1 000 – €2 500",
+    "2500-5000": "€2 500 – €5 000",
+    "5000+": "From €5 000",
+    discuss: "Let's discuss",
   };
   return budget ? budgets[budget] || budget : "Не указан";
 }

@@ -290,7 +290,7 @@
       },
       {
         "question": "Cât costă un site? Ce influențează prețul?",
-        "answer": "Costul depinde de tipul site-ului, numărul de pagini, complexitatea designului și integrările. Landing page — de la 600€, site expert — de la 1000€, magazin online — de la 2000€. Costul exact se calculează individual."
+        "answer": "Costul depinde de tipul site-ului, numărul de pagini, complexitatea designului și integrările. Landing page — de la €500, site expert — de la €1 000, magazin online — de la €2 000. Costul exact se calculează individual."
       },
       {
         "question": "Ce include dezvoltarea la cheie?",
@@ -567,7 +567,7 @@
           "title": "Site pentru expert",
           "subtitle": "Brand personal",
           "description": "Pentru specialisti, coachi, consultanti. Un site care va vinde expertiza si atrage clienti prin continut si incredere.",
-          "price": "de la €500",
+          "price": "de la €1 000",
           "timeline": "14–21 zile",
           "features": [
             "Pana la 7 pagini",
@@ -590,7 +590,7 @@
           "title": "Magazin online",
           "subtitle": "Solutie e-commerce",
           "description": "E-commerce complet cu catalog, cos, plati online si integrare CRM. Automatizare vanzari si notificari clienti.",
-          "price": "de la €1.000",
+          "price": "de la €2 000",
           "timeline": "21–45 zile",
           "features": [
             "Catalog produse",
@@ -613,7 +613,7 @@
           "title": "Pagina de aterizare",
           "subtitle": "Conversie ridicata",
           "description": "Site cu o singura pagina cu conversie ridicata pentru lansarea unui produs, serviciu sau campanie publicitara.",
-          "price": "de la €300",
+          "price": "de la €500",
           "timeline": "7–14 zile",
           "features": [
             "Design o pagina",
@@ -767,10 +767,10 @@
       "budget": "Buget",
       "budgetOptions": [
         "Buget aproximativ",
-        "€300 – €500",
-        "€500 – €1.200",
-        "€1.200 – €2.500",
-        "De la €2.500",
+        "€500 – €1 000",
+        "€1 000 – €2 500",
+        "€2 500 – €5 000",
+        "De la €5 000",
         "Sa discutam"
       ],
       "references": "Referinte / competitori",
@@ -1283,7 +1283,7 @@
               "title": "Calculul rentabilității"
             }
           ],
-          "content": "<h2 id=\"costs\">Costul site-ului</h2><p>Un site pentru expert costă de la 80.000 la 200.000 ₽ în funcție de complexitate. Este o investiție unică care funcționează ani de zile.</p><h2 id=\"traffic\">Surse de trafic</h2><p>De unde vin clienții pe site-ul unui expert:</p><ul><li>Căutare organică (SEO) — 40-60%</li><li>Rețele sociale — 20-30%</li><li>Recomandări — 10-20%</li><li>Publicitate — 10-15%</li></ul><h2 id=\"conversion\">Conversie</h2><p>Conversia medie a site-ului unui expert — 3-7%. La 1000 de vizitatori pe lună, aceasta înseamnă 30-70 de cereri.</p><p>Conversia în client — aproximativ 30%. Total: 9-21 clienți noi pe lună.</p><h2 id=\"roi\">Calculul rentabilității</h2><p>Exemplu: prețul mediu al consultației — 5000 ₽. 15 clienți × 5000 ₽ = 75.000 ₽/lună.</p><p>La un cost al site-ului de 100.000 ₽, amortizarea — 1,5 luni. Mai departe — profit net.</p>"
+          "content": "<h2 id=\"costs\">Costul site-ului</h2><p>Un site pentru expert costă de la €1 000 la €3 000 în funcție de complexitate. Este o investiție unică care funcționează ani de zile.</p><h2 id=\"traffic\">Surse de trafic</h2><p>De unde vin clienții pe site-ul unui expert:</p><ul><li>Căutare organică (SEO) — 40-60%</li><li>Rețele sociale — 20-30%</li><li>Recomandări — 10-20%</li><li>Publicitate — 10-15%</li></ul><h2 id=\"conversion\">Conversie</h2><p>Conversia medie a site-ului unui expert — 3-7%. La 1000 de vizitatori pe lună, aceasta înseamnă 30-70 de cereri.</p><p>Conversia în client — aproximativ 30%. Total: 9-21 clienți noi pe lună.</p><h2 id=\"roi\">Calculul rentabilității</h2><p>Exemplu: prețul mediu al consultației — €100. 15 clienți × €100 = €1 500/lună.</p><p>La un cost al site-ului de €2 000, amortizarea — 1,5 luni. Mai departe — profit net.</p>"
         },
         "tailwind-vs-css-modules": {
           "title": "Tailwind CSS vs CSS Modules: ce să alegi",

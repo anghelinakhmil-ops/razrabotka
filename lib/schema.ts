@@ -166,7 +166,7 @@ export function serviceSchema(
           offers: {
             "@type": "Offer",
             price: service.price,
-            priceCurrency: "RUB",
+            priceCurrency: "EUR",
           },
         }),
       },
