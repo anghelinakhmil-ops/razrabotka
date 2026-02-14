@@ -3,6 +3,7 @@
 import { clsx } from "clsx";
 import { useCallback, useEffect, useId, useRef } from "react";
 import { createPortal } from "react-dom";
+import { useTranslations } from "next-intl";
 
 type ModalSize = "sm" | "md" | "lg" | "xl" | "full";
 
@@ -58,6 +59,7 @@ export function Modal({
   showCloseButton = true,
   className,
 }: ModalProps) {
+  const t = useTranslations("common");
   const modalRef = useRef<HTMLDivElement>(null);
   const previousFocusRef = useRef<HTMLElement | null>(null);
   const titleId = useId();
@@ -218,7 +220,7 @@ export function Modal({
               <button
                 type="button"
                 onClick={onClose}
-                aria-label="Закрыть"
+                aria-label={t("close")}
                 className={clsx(
                   "p-2 -m-2",
                   "text-[var(--color-text-muted)]",

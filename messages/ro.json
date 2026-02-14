@@ -329,7 +329,12 @@
   "leadForm": {
     "title": "DISCUTĂ PROIECTUL",
     "subtitle": "Lăsați contactele — vă vom contacta în termen de 2 ore în timpul programului de lucru",
+    "name": "Nume",
     "namePlaceholder": "Numele dvs.",
+    "phone": "Telefon",
+    "phonePlaceholder": "+40 (___) ___-____",
+    "email": "Email",
+    "emailHelper": "Sau introduceți email-ul în loc de telefon",
     "contactPlaceholder": "Telefon sau Telegram",
     "submit": "Trimite cererea",
     "privacy": "Apăsând butonul, sunteți de acord cu",
@@ -366,6 +371,25 @@
     "accept": "Accept",
     "decline": "Refuz",
     "ariaLabel": "Consimțământ cookie-uri"
+  },
+  "callbackModal": {
+    "title": "Solicită un apel",
+    "description": "Lăsați numărul de telefon și vă vom suna în curând pentru a discuta proiectul dumneavoastră.",
+    "name": "Nume",
+    "namePlaceholder": "Cum să vi ne adresăm",
+    "phone": "Telefon",
+    "phonePlaceholder": "+40 (___) ___-____",
+    "submit": "Solicită un apel",
+    "privacy": "Apăsând butonul, sunteți de acord cu",
+    "privacyLink": "politica de confidențialitate",
+    "successTitle": "Solicitare trimisă!",
+    "successText": "Vă vom suna în curând",
+    "close": "Închide",
+    "newRequest": "Solicitare nouă",
+    "errorTitle": "Eroare de trimitere",
+    "errorRetry": "Încearcă din nou",
+    "errorMessage": "Ceva nu a funcționat. Încercați mai târziu.",
+    "errorGeneric": "A apărut o eroare. Încercați mai târziu."
   },
   "notFound": {
     "title": "Pagina nu a fost găsită",
@@ -410,7 +434,8 @@
       "marketing": "Marketing",
       "business": "Business"
     },
-    "noResults": "Nu s-au găsit rezultate"
+    "noResults": "Nu s-au găsit rezultate",
+    "close": "Închide"
   },
   "pages": {
     "about": {

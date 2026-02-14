@@ -329,7 +329,12 @@
   "leadForm": {
     "title": "DISCUSS PROJECT",
     "subtitle": "Leave your contacts — we'll get in touch within 2 hours during business hours",
+    "name": "Name",
     "namePlaceholder": "Your name",
+    "phone": "Phone",
+    "phonePlaceholder": "+1 (___) ___-____",
+    "email": "Email",
+    "emailHelper": "Or provide your email instead of phone",
     "contactPlaceholder": "Phone or Telegram",
     "submit": "Submit request",
     "privacy": "By clicking the button, you agree to the",
@@ -366,6 +371,25 @@
     "accept": "Accept",
     "decline": "Decline",
     "ariaLabel": "Cookie consent"
+  },
+  "callbackModal": {
+    "title": "Request a call",
+    "description": "Leave your phone number and we'll call you back shortly to discuss your project.",
+    "name": "Name",
+    "namePlaceholder": "How should we address you",
+    "phone": "Phone",
+    "phonePlaceholder": "+1 (___) ___-____",
+    "submit": "Request a call",
+    "privacy": "By clicking the button, you agree to the",
+    "privacyLink": "privacy policy",
+    "successTitle": "Request sent!",
+    "successText": "We'll call you back shortly",
+    "close": "Close",
+    "newRequest": "New request",
+    "errorTitle": "Sending error",
+    "errorRetry": "Try again",
+    "errorMessage": "Something went wrong. Please try again later.",
+    "errorGeneric": "An error occurred. Please try again later."
   },
   "notFound": {
     "title": "Page not found",
@@ -410,7 +434,8 @@
       "marketing": "Marketing",
       "business": "Business"
     },
-    "noResults": "No results found"
+    "noResults": "No results found",
+    "close": "Close"
   },
   "pages": {
     "about": {

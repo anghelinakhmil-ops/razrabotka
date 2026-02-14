@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { ease } from "@/lib/motion";
 
@@ -31,6 +33,7 @@ export function getConsentStatus(): ConsentStatus {
  * При «Принять» — загружается GA. При «Отклонить» — GA не загружается.
  */
 export function CookieConsent() {
+  const t = useTranslations("cookieConsent");
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -72,17 +75,17 @@ export function CookieConsent() {
           transition={{ duration: 0.4, ease }}
           className="fixed bottom-0 left-0 right-0 z-50 p-4 sm:p-6"
           role="dialog"
-          aria-label="Согласие на использование cookies"
+          aria-label={t("ariaLabel")}
         >
           <div className="max-w-2xl mx-auto bg-[var(--color-text-primary)] text-[var(--color-background)] rounded-sm p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-lg">
             <p className="text-sm leading-relaxed flex-1">
-              Мы используем cookies для аналитики и улучшения сайта.{" "}
-              <a
+              {t("text")}{" "}
+              <Link
                 href="/privacy"
                 className="underline hover:no-underline"
               >
-                Подробнее
-              </a>
+                {t("link")}
+              </Link>
             </p>
             <div className="flex gap-3 shrink-0">
               <Button
@@ -91,7 +94,7 @@ export function CookieConsent() {
                 onClick={handleDecline}
                 className="!border-[var(--color-background)] !text-[var(--color-background)] hover:!bg-[var(--color-background)] hover:!text-[var(--color-text-primary)]"
               >
-                Отклонить
+                {t("decline")}
               </Button>
               <Button
                 variant="primary"
@@ -99,7 +102,7 @@ export function CookieConsent() {
                 onClick={handleAccept}
                 className="!bg-[var(--color-background)] !text-[var(--color-text-primary)] hover:!bg-[var(--color-line)]"
               >
-                Принять
+                {t("accept")}
               </Button>
             </div>
           </div>

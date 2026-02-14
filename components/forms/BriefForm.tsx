@@ -1,9 +1,11 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
@@ -19,53 +21,12 @@ import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from
 const DRAFT_STORAGE_KEY = "brief_form_draft";
 
 /**
- * Опции для селекта «Тип сайта»
+ * Value keys for select options (paired with translated labels)
  */
-const siteTypeOptions = [
-  { value: "", label: "Выберите тип сайта" },
-  { value: "expert", label: "Сайт для эксперта / личный бренд" },
-  { value: "ecommerce", label: "Интернет-магазин" },
-  { value: "landing", label: "Лендинг / промо-страница" },
-  { value: "corporate", label: "Корпоративный сайт" },
-  { value: "portfolio", label: "Портфолио" },
-  { value: "other", label: "Другое" },
-];
-
-/**
- * Опции для селекта «Цель»
- */
-const goalOptions = [
-  { value: "", label: "Основная цель сайта" },
-  { value: "sales", label: "Продажи товаров/услуг" },
-  { value: "leads", label: "Сбор заявок и лидов" },
-  { value: "brand", label: "Имидж и узнаваемость" },
-  { value: "info", label: "Информирование аудитории" },
-  { value: "community", label: "Создание сообщества" },
-  { value: "other", label: "Другое" },
-];
-
-/**
- * Опции для селекта «Сроки»
- */
-const timelineOptions = [
-  { value: "", label: "Желаемые сроки" },
-  { value: "urgent", label: "Срочно (до 2 недель)" },
-  { value: "normal", label: "2–4 недели" },
-  { value: "relaxed", label: "1–2 месяца" },
-  { value: "flexible", label: "Не срочно, гибко" },
-];
-
-/**
- * Опции для селекта «Бюджет»
- */
-const budgetOptions = [
-  { value: "", label: "Примерный бюджет" },
-  { value: "50-100", label: "50 000 – 100 000 ₽" },
-  { value: "100-200", label: "100 000 – 200 000 ₽" },
-  { value: "200-500", label: "200 000 – 500 000 ₽" },
-  { value: "500+", label: "От 500 000 ₽" },
-  { value: "discuss", label: "Обсудим" },
-];
+const siteTypeValues = ["", "expert", "ecommerce", "landing", "corporate", "other"];
+const goalValues = ["", "sales", "leads", "brand", "info", "other"];
+const timelineValues = ["", "urgent", "normal", "relaxed", "flexible"];
+const budgetValues = ["", "600-1000", "1000-2500", "2500-5000", "5000+", "discuss"];
 
 /**
  * Состояния формы
@@ -138,6 +99,28 @@ function clearDraft(): void {
 }
 
 export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
+  const t = useTranslations("pages.brief");
+
+  const siteTypeOptions = useMemo(() => {
+    const labels = t.raw("siteTypeOptions") as string[];
+    return siteTypeValues.map((value, i) => ({ value, label: labels[i] || value }));
+  }, [t]);
+
+  const goalOptions = useMemo(() => {
+    const labels = t.raw("goalOptions") as string[];
+    return goalValues.map((value, i) => ({ value, label: labels[i] || value }));
+  }, [t]);
+
+  const timelineOptions = useMemo(() => {
+    const labels = t.raw("timelineOptions") as string[];
+    return timelineValues.map((value, i) => ({ value, label: labels[i] || value }));
+  }, [t]);
+
+  const budgetOptions = useMemo(() => {
+    const labels = t.raw("budgetOptions") as string[];
+    return budgetValues.map((value, i) => ({ value, label: labels[i] || value }));
+  }, [t]);
+
   const [formState, setFormState] = useState<FormState>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [draftLoaded, setDraftLoaded] = useState(false);
@@ -234,7 +217,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
       });
 
       if (!response.ok) {
-        throw new Error("Ошибка отправки. Попробуйте позже.");
+        throw new Error(t("errorRetry"));
       }
 
       // Очищаем черновик после успешной отправки
@@ -245,7 +228,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
       onSuccess?.(data);
     } catch (error) {
       setFormState("error");
-      const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";
+      const msg = error instanceof Error ? error.message : t("errorRetry");
       setErrorMessage(msg);
       trackFormError("brief", msg);
     }
@@ -308,7 +291,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
           transition={{ delay: 0.4 }}
           className="text-h2 font-display font-bold text-[var(--color-text-primary)] mb-4"
         >
-          Бриф отправлен!
+          {t("successTitle")}
         </motion.h3>
         <motion.p
           initial={{ opacity: 0 }}
@@ -316,7 +299,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
           transition={{ delay: 0.5 }}
           className="text-body text-[var(--color-text-muted)] mb-2"
         >
-          Спасибо за заявку. Мы изучим ваш проект и свяжемся
+          {t("successText1")}
         </motion.p>
         <motion.p
           initial={{ opacity: 0 }}
@@ -324,7 +307,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
           transition={{ delay: 0.55 }}
           className="text-body text-[var(--color-text-muted)] mb-8"
         >
-          в течение <strong className="text-[var(--color-text-primary)]">2 рабочих часов</strong>.
+          <strong className="text-[var(--color-text-primary)]">{t("successText2")}</strong>
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -332,7 +315,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
           transition={{ delay: 0.6 }}
         >
           <Button variant="outline" size="md" as="a" href="/">
-            На главную
+            {t("successHome")}
           </Button>
         </motion.div>
       </motion.div>
@@ -376,7 +359,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
           transition={{ delay: 0.2 }}
           className="text-h3 font-display font-bold text-red-600 mb-4"
         >
-          Ошибка отправки
+          {t("errorTitle")}
         </motion.h3>
         <motion.p
           initial={{ opacity: 0 }}
@@ -393,7 +376,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
           className="flex gap-4 justify-center"
         >
           <Button variant="primary" size="md" onClick={handleRetry}>
-            Попробовать снова
+            {t("errorRetry")}
           </Button>
         </motion.div>
       </motion.div>
@@ -412,11 +395,11 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
         {/* Section 1: О проекте */}
         <motion.section {...sectionAnimation} transition={{ ...sectionAnimation.transition, delay: 0.1 }}>
           <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-6 pb-4 border-b border-[var(--color-line)]">
-            О проекте
+            {t("sectionProject")}
           </h3>
           <div className="space-y-6">
             <Select
-              label="Тип сайта"
+              label={t("siteType")}
               value={watch("siteType")}
               onChange={handleSelectChange("siteType")}
               options={siteTypeOptions}
@@ -425,7 +408,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
             />
 
             <Select
-              label="Основная цель"
+              label={t("goal")}
               value={watch("goal")}
               onChange={handleSelectChange("goal")}
               options={goalOptions}
@@ -435,7 +418,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <Select
-                label="Сроки"
+                label={t("timeline")}
                 value={watch("timeline") || ""}
                 onChange={handleSelectChange("timeline")}
                 options={timelineOptions}
@@ -443,7 +426,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
               />
 
               <Select
-                label="Бюджет"
+                label={t("budget")}
                 value={watch("budget") || ""}
                 onChange={handleSelectChange("budget")}
                 options={budgetOptions}
@@ -452,11 +435,11 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
             </div>
 
             <Textarea
-              label="Референсы / конкуренты"
-              placeholder="Ссылки на сайты, которые вам нравятся, или сайты конкурентов..."
+              label={t("references")}
+              placeholder={t("referencesPlaceholder")}
               error={errors.references?.message}
               disabled={formState === "loading"}
-              helperText="Необязательно, но поможет нам лучше понять ваши ожидания"
+              helperText={t("referencesHelper")}
               {...register("references")}
             />
           </div>
@@ -465,12 +448,12 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
         {/* Section 2: Контактные данные */}
         <motion.section {...sectionAnimation} transition={{ ...sectionAnimation.transition, delay: 0.2 }}>
           <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-6 pb-4 border-b border-[var(--color-line)]">
-            Контактные данные
+            {t("sectionContacts")}
           </h3>
           <div className="space-y-6">
             <Input
-              label="Имя"
-              placeholder="Как к вам обращаться"
+              label={t("name")}
+              placeholder={t("namePlaceholder")}
               error={errors.name?.message}
               disabled={formState === "loading"}
               required
@@ -479,9 +462,9 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <Input
-                label="Email"
+                label={t("email")}
                 type="email"
-                placeholder="email@example.com"
+                placeholder={t("emailPlaceholder")}
                 error={errors.email?.message}
                 disabled={formState === "loading"}
                 required
@@ -489,11 +472,11 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
               />
 
               <PhoneInput
-                label="Телефон"
+                label={t("phone")}
                 value={phoneValue || ""}
                 onChange={handlePhoneChange}
                 onBlur={handlePhoneBlur}
-                placeholder="+7 (___) ___-__-__"
+                placeholder={t("phonePlaceholder")}
                 error={errors.phone?.message}
                 disabled={formState === "loading"}
                 required
@@ -501,11 +484,11 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
             </div>
 
             <Input
-              label="Telegram"
-              placeholder="@username"
+              label={t("telegram")}
+              placeholder={t("telegramPlaceholder")}
               error={errors.telegram?.message}
               disabled={formState === "loading"}
-              helperText="Необязательно — для быстрой связи"
+              helperText={t("telegramHelper")}
               {...register("telegram")}
             />
           </div>
@@ -514,14 +497,13 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
         {/* Section 3: Дополнительно */}
         <motion.section {...sectionAnimation} transition={{ ...sectionAnimation.transition, delay: 0.3 }}>
           <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-6 pb-4 border-b border-[var(--color-line)]">
-            Дополнительно
+            {t("sectionAdditional")}
           </h3>
           <Textarea
-            label="Комментарий"
-            placeholder="Расскажите подробнее о проекте, особых пожеланиях или вопросах..."
+            label={t("comment")}
+            placeholder={t("commentPlaceholder")}
             error={errors.comment?.message}
             disabled={formState === "loading"}
-            helperText="Необязательно — любая дополнительная информация о проекте"
             rows={5}
             {...register("comment")}
           />
@@ -541,14 +523,14 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
             fullWidth
             loading={formState === "loading"}
           >
-            Отправить бриф
+            {t("submit")}
           </Button>
 
           <p className="text-caption text-[var(--color-text-muted)] text-center mt-4">
-            Нажимая кнопку, вы соглашаетесь с{" "}
-            <a href="/privacy" className="underline hover:no-underline">
-              политикой конфиденциальности
-            </a>
+            {t("privacy")}{" "}
+            <Link href="/privacy" className="underline hover:no-underline">
+              {t("privacyLink")}
+            </Link>
           </p>
         </motion.div>
       </form>

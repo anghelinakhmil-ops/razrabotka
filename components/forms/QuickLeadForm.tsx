@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { PhoneInput } from "@/components/ui/PhoneInput";
@@ -36,7 +38,7 @@ interface QuickLeadFormProps {
   showName?: boolean;
   /** Показывать поле email */
   showEmail?: boolean;
-  /** Текст кнопки */
+  /** Текст кнопки (переопределяет перевод) */
   submitText?: string;
   /** Callback при успешной отправке */
   onSuccess?: (data: QuickLeadFormData) => void;
@@ -56,11 +58,13 @@ export function QuickLeadForm({
   variant = "default",
   showName = true,
   showEmail = true,
-  submitText = "Оставить заявку",
+  submitText,
   onSuccess,
   source = "quick_lead",
   inverted = false,
 }: QuickLeadFormProps) {
+  const t = useTranslations("leadForm");
+  const resolvedSubmitText = submitText ?? t("submit");
   const [formState, setFormState] = useState<FormState>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [formStarted, setFormStarted] = useState(false);
@@ -114,7 +118,7 @@ export function QuickLeadForm({
       });
 
       if (!response.ok) {
-        throw new Error("Ошибка отправки. Попробуйте позже.");
+        throw new Error(t("errorMessage"));
       }
 
       setFormState("success");
@@ -129,7 +133,7 @@ export function QuickLeadForm({
       }, 5000);
     } catch (error) {
       setFormState("error");
-      const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";
+      const msg = error instanceof Error ? error.message : t("errorMessage");
       setErrorMessage(msg);
       trackFormError("quick_lead", msg);
     }
@@ -197,7 +201,7 @@ export function QuickLeadForm({
           transition={{ delay: 0.3 }}
           className="text-h4 font-display font-bold mb-2"
         >
-          Заявка отправлена!
+          {t("successTitle")}
         </motion.h4>
         <motion.p
           initial={{ opacity: 0 }}
@@ -205,7 +209,7 @@ export function QuickLeadForm({
           transition={{ delay: 0.4 }}
           className="text-body-sm text-[var(--color-text-muted)]"
         >
-          Мы свяжемся с вами в ближайшее время
+          {t("successText")}
         </motion.p>
       </motion.div>
     );
@@ -256,7 +260,7 @@ export function QuickLeadForm({
           transition={{ delay: 0.2 }}
           className="text-h4 font-display font-bold mb-2 text-red-600"
         >
-          Ошибка отправки
+          {t("errorTitle")}
         </motion.h4>
         <motion.p
           initial={{ opacity: 0 }}
@@ -272,7 +276,7 @@ export function QuickLeadForm({
           transition={{ delay: 0.4 }}
         >
           <Button variant="outline" size="md" onClick={handleRetry}>
-            Попробовать снова
+            {t("retry")}
           </Button>
         </motion.div>
       </motion.div>
@@ -296,7 +300,7 @@ export function QuickLeadForm({
               value={phoneValue || ""}
               onChange={handlePhoneChange}
               onBlur={handlePhoneBlur}
-              placeholder="Ваш телефон"
+              placeholder={t("phonePlaceholder")}
               error={errors.phone?.message}
               disabled={formState === "loading"}
             />
@@ -308,7 +312,7 @@ export function QuickLeadForm({
             loading={formState === "loading"}
             className="shrink-0"
           >
-            {submitText}
+            {resolvedSubmitText}
           </Button>
         </div>
         <AnimatePresence mode="wait">
@@ -327,7 +331,7 @@ export function QuickLeadForm({
                 onClick={handleRetry}
                 className="text-body-sm text-[var(--color-text-secondary)] underline hover:no-underline shrink-0"
               >
-                Повторить
+                {t("retry")}
               </button>
             </motion.div>
           )}
@@ -351,7 +355,7 @@ export function QuickLeadForm({
           value={phoneValue || ""}
           onChange={handlePhoneChange}
           onBlur={handlePhoneBlur}
-          placeholder="Ваш телефон"
+          placeholder={t("phonePlaceholder")}
           error={errors.phone?.message}
           disabled={formState === "loading"}
         />
@@ -363,7 +367,7 @@ export function QuickLeadForm({
           fullWidth
           loading={formState === "loading"}
         >
-          {submitText}
+          {resolvedSubmitText}
         </Button>
 
         <AnimatePresence mode="wait">
@@ -382,17 +386,17 @@ export function QuickLeadForm({
                 onClick={handleRetry}
                 className="text-body-sm text-[var(--color-text-secondary)] underline hover:no-underline"
               >
-                Попробовать снова
+                {t("retry")}
               </button>
             </motion.div>
           )}
         </AnimatePresence>
 
         <p className="text-caption text-[var(--color-text-muted)] text-center">
-          Нажимая кнопку, вы соглашаетесь с{" "}
-          <a href="/privacy" className="underline hover:no-underline">
-            политикой конфиденциальности
-          </a>
+          {t("privacy")}{" "}
+          <Link href="/privacy" className="underline hover:no-underline">
+            {t("privacyLink")}
+          </Link>
         </p>
       </motion.form>
     );
@@ -415,8 +419,8 @@ export function QuickLeadForm({
           transition={{ delay: 0.1 }}
         >
           <Input
-            label="Имя"
-            placeholder="Как к вам обращаться"
+            label={t("name")}
+            placeholder={t("namePlaceholder")}
             error={errors.name?.message}
             disabled={formState === "loading"}
             {...register("name")}
@@ -430,11 +434,11 @@ export function QuickLeadForm({
         transition={{ delay: showName ? 0.15 : 0.1 }}
       >
         <PhoneInput
-          label="Телефон"
+          label={t("phone")}
           value={phoneValue || ""}
           onChange={handlePhoneChange}
           onBlur={handlePhoneBlur}
-          placeholder="+7 (___) ___-__-__"
+          placeholder={t("phonePlaceholder")}
           error={errors.phone?.message}
           disabled={formState === "loading"}
         />
@@ -447,12 +451,12 @@ export function QuickLeadForm({
           transition={{ delay: 0.2 }}
         >
           <Input
-            label="Email"
+            label={t("email")}
             type="email"
             placeholder="email@example.com"
             error={errors.email?.message}
             disabled={formState === "loading"}
-            helperText="Или укажите email вместо телефона"
+            helperText={t("emailHelper")}
             {...register("email")}
           />
         </motion.div>
@@ -470,7 +474,7 @@ export function QuickLeadForm({
           fullWidth
           loading={formState === "loading"}
         >
-          {submitText}
+          {resolvedSubmitText}
         </Button>
       </motion.div>
 
@@ -480,10 +484,10 @@ export function QuickLeadForm({
         transition={{ delay: 0.3 }}
         className="text-caption text-[var(--color-text-muted)] text-center"
       >
-        Нажимая кнопку, вы соглашаетесь с{" "}
-        <a href="/privacy" className="underline hover:no-underline">
-          политикой конфиденциальности
-        </a>
+        {t("privacy")}{" "}
+        <Link href="/privacy" className="underline hover:no-underline">
+          {t("privacyLink")}
+        </Link>
       </motion.p>
     </motion.form>
   );

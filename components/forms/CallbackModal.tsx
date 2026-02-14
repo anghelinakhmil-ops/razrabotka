@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Modal } from "@/components/ui/Modal";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
@@ -43,6 +45,7 @@ export function CallbackModal({
   onSuccess,
   source = "callback_modal",
 }: CallbackModalProps) {
+  const t = useTranslations("callbackModal");
   const [formState, setFormState] = useState<FormState>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [formStarted, setFormStarted] = useState(false);
@@ -94,7 +97,7 @@ export function CallbackModal({
       });
 
       if (!response.ok) {
-        throw new Error("Ошибка отправки. Попробуйте позже.");
+        throw new Error(t("errorMessage"));
       }
 
       setFormState("success");
@@ -103,7 +106,7 @@ export function CallbackModal({
       onSuccess?.(data);
     } catch (error) {
       setFormState("error");
-      const msg = error instanceof Error ? error.message : "Произошла ошибка. Попробуйте позже.";
+      const msg = error instanceof Error ? error.message : t("errorGeneric");
       setErrorMessage(msg);
       trackFormError("callback", msg);
     }
@@ -140,7 +143,7 @@ export function CallbackModal({
     <Modal
       isOpen={isOpen}
       onClose={handleClose}
-      title="Заказать звонок"
+      title={t("title")}
       size="sm"
     >
       {/* Success state */}
@@ -177,17 +180,17 @@ export function CallbackModal({
             </svg>
           </motion.div>
           <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-2">
-            Заявка отправлена!
+            {t("successTitle")}
           </h3>
           <p className="text-body-sm text-[var(--color-text-muted)] mb-6">
-            Мы перезвоним вам в ближайшее время
+            {t("successText")}
           </p>
           <div className="flex gap-3 justify-center">
             <Button variant="outline" size="md" onClick={handleClose}>
-              Закрыть
+              {t("close")}
             </Button>
             <Button variant="ghost" size="md" onClick={handleNewRequest}>
-              Новая заявка
+              {t("newRequest")}
             </Button>
           </div>
         </motion.div>
@@ -222,13 +225,13 @@ export function CallbackModal({
             </svg>
           </motion.div>
           <h3 className="text-h4 font-display font-bold text-red-600 mb-2">
-            Ошибка отправки
+            {t("errorTitle")}
           </h3>
           <p className="text-body-sm text-[var(--color-text-muted)] mb-6">
             {errorMessage}
           </p>
           <Button variant="primary" size="md" onClick={handleRetry}>
-            Попробовать снова
+            {t("errorRetry")}
           </Button>
         </motion.div>
       ) : (
@@ -242,23 +245,23 @@ export function CallbackModal({
           className="space-y-5"
         >
           <p className="text-body-sm text-[var(--color-text-muted)] mb-2">
-            Оставьте номер телефона, и мы перезвоним вам в ближайшее время для обсуждения вашего проекта.
+            {t("description")}
           </p>
 
           <Input
-            label="Имя"
-            placeholder="Как к вам обращаться"
+            label={t("name")}
+            placeholder={t("namePlaceholder")}
             error={errors.name?.message}
             disabled={formState === "loading"}
             {...register("name")}
           />
 
           <PhoneInput
-            label="Телефон"
+            label={t("phone")}
             value={phoneValue || ""}
             onChange={handlePhoneChange}
             onBlur={handlePhoneBlur}
-            placeholder="+7 (___) ___-__-__"
+            placeholder={t("phonePlaceholder")}
             error={errors.phone?.message}
             disabled={formState === "loading"}
             required
@@ -271,14 +274,14 @@ export function CallbackModal({
             fullWidth
             loading={formState === "loading"}
           >
-            Заказать звонок
+            {t("submit")}
           </Button>
 
           <p className="text-caption text-[var(--color-text-muted)] text-center">
-            Нажимая кнопку, вы соглашаетесь с{" "}
-            <a href="/privacy" className="underline hover:no-underline">
-              политикой конфиденциальности
-            </a>
+            {t("privacy")}{" "}
+            <Link href="/privacy" className="underline hover:no-underline">
+              {t("privacyLink")}
+            </Link>
           </p>
         </motion.form>
       )}
