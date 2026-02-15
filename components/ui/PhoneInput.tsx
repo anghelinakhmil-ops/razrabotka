@@ -339,26 +339,13 @@ export const PhoneInput = forwardRef<HTMLInputElement, PhoneInputProps>(
     }, []);
 
     // Перехват wheel-событий внутри dropdown (предотвращает прокрутку страницы)
-    useEffect(() => {
+    const handleDropdownWheel = useCallback((e: React.WheelEvent<HTMLDivElement>) => {
       const el = dropdownRef.current;
-      if (!el || !isDropdownOpen) return;
+      if (!el) return;
 
-      const handleWheel = (e: WheelEvent) => {
-        const { scrollTop, scrollHeight, clientHeight } = el;
-        const atTop = scrollTop <= 0 && e.deltaY < 0;
-        const atBottom = scrollTop + clientHeight >= scrollHeight && e.deltaY > 0;
-
-        if (!atTop && !atBottom) {
-          e.stopPropagation();
-        }
-        // Всегда предотвращаем всплытие к странице когда dropdown открыт
-        e.preventDefault();
-        el.scrollTop += e.deltaY;
-      };
-
-      el.addEventListener("wheel", handleWheel, { passive: false });
-      return () => el.removeEventListener("wheel", handleWheel);
-    }, [isDropdownOpen]);
+      e.stopPropagation();
+      el.scrollTop += e.deltaY;
+    }, []);
 
     // Отформатированный номер для отображения
     const displayValue = useMemo(() => {
@@ -555,7 +542,7 @@ export const PhoneInput = forwardRef<HTMLInputElement, PhoneInputProps>(
         </div>
 
         {/* Country Dropdown */}
-        <div ref={dropdownRef} className={dropdownClasses}>
+        <div ref={dropdownRef} className={dropdownClasses} onWheel={handleDropdownWheel}>
           <ul role="listbox" className="py-1">
             {countries.map((country) => (
               <li
