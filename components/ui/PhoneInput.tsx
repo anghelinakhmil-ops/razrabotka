@@ -448,8 +448,8 @@ export const PhoneInput = forwardRef<HTMLInputElement, PhoneInputProps>(
       "bg-[var(--color-background)]",
       "border-2 border-[var(--color-text-primary)]",
       "shadow-lg",
-      "max-h-60 overflow-auto",
-      "transition-all duration-200",
+      "max-h-60 overflow-y-auto overscroll-contain",
+      "transition-[opacity,transform] duration-200",
       isDropdownOpen
         ? "opacity-100 translate-y-0"
         : "opacity-0 -translate-y-2 pointer-events-none"
