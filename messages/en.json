@@ -290,7 +290,7 @@
     "items": [
       {
         "question": "How long does development take?",
-        "answer": "Timelines depend on project complexity. Landing page — 7–14 days, expert website — 14–21 days, online store — 21–45 days. Exact timelines are discussed after filling out the brief."
+        "answer": "Timelines depend on project complexity. Landing page — up to 14 days, expert website — up to 21 days, online store — up to 45 days. Exact timelines are discussed after filling out the brief."
       },
       {
         "question": "How much does a website cost? What affects the price?",
@@ -572,7 +572,7 @@
           "subtitle": "Personal brand",
           "description": "For specialists, coaches, consultants. A website that sells your expertise and attracts clients through content and trust.",
           "price": "",
-          "timeline": "14–21 days",
+          "timeline": "up to 21 days",
           "features": [
             "Up to 7 pages",
             "Unique design",
@@ -595,7 +595,7 @@
           "subtitle": "E-commerce solution",
           "description": "Full e-commerce with product catalog, cart, online payments, and CRM integration. Automation of sales and customer notifications.",
           "price": "",
-          "timeline": "21–45 days",
+          "timeline": "up to 45 days",
           "features": [
             "Product catalog",
             "Shopping cart",
@@ -618,7 +618,7 @@
           "subtitle": "High conversion",
           "description": "One-page website with high conversion for product launch, service, or advertising campaign. Fast development, maximum impact.",
           "price": "",
-          "timeline": "7–14 days",
+          "timeline": "up to 14 days",
           "features": [
             "One-page design",
             "A/B testing ready",
@@ -706,9 +706,9 @@
         },
         {
           "label": "Timeline",
-          "expert": "14–21 days",
-          "ecommerce": "21–45 days",
-          "landing": "7–14 days"
+          "expert": "up to 21 days",
+          "ecommerce": "up to 45 days",
+          "landing": "up to 14 days"
         },
         {
           "label": "Support",
