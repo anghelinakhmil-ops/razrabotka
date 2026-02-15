@@ -164,17 +164,10 @@
   --letter-spacing-extra-wide: var(--letter-spacing-extra-wide);
   --letter-spacing-ultra-wide: var(--letter-spacing-ultra-wide);
 
-  /* Spacing */
+  /* Spacing — only non-conflicting tokens exposed to Tailwind.
+     Named sizes (xs/sm/md/lg/xl/2xl…) are NOT registered here
+     to avoid overriding Tailwind v4 built-in max-w-* / w-* values. */
   --spacing-unit: var(--spacing-unit);
-  --spacing-xs: var(--spacing-xs);
-  --spacing-sm: var(--spacing-sm);
-  --spacing-md: var(--spacing-md);
-  --spacing-lg: var(--spacing-lg);
-  --spacing-xl: var(--spacing-xl);
-  --spacing-2xl: var(--spacing-2xl);
-  --spacing-3xl: var(--spacing-3xl);
-  --spacing-4xl: var(--spacing-4xl);
-  --spacing-5xl: var(--spacing-5xl);
   --section-gap: var(--section-gap);
   --section-gap-sm: var(--section-gap-sm);
   --container-padding: var(--container-padding);

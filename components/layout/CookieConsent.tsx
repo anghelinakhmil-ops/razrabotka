@@ -77,7 +77,7 @@ export function CookieConsent() {
           role="dialog"
           aria-label={t("ariaLabel")}
         >
-          <div className="max-w-2xl mx-auto bg-[var(--color-text-primary)] text-[var(--color-background)] rounded-sm p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-lg">
+          <div className="max-w-2xl mx-auto bg-white text-[var(--color-text-primary)] rounded-sm p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-xl border border-[var(--color-line)]">
             <p className="text-sm leading-relaxed flex-1">
               {t("text")}{" "}
               <Link
@@ -92,7 +92,6 @@ export function CookieConsent() {
                 variant="outline"
                 size="sm"
                 onClick={handleDecline}
-                className="!border-[var(--color-background)] !text-[var(--color-background)] hover:!bg-[var(--color-background)] hover:!text-[var(--color-text-primary)]"
               >
                 {t("decline")}
               </Button>
@@ -100,7 +99,6 @@ export function CookieConsent() {
                 variant="primary"
                 size="sm"
                 onClick={handleAccept}
-                className="!bg-[var(--color-background)] !text-[var(--color-text-primary)] hover:!bg-[var(--color-line)]"
               >
                 {t("accept")}
               </Button>

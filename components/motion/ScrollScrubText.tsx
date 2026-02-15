@@ -43,19 +43,15 @@ function ScrollScrubWord({
   );
 
   return (
-    <span className="inline-block">
+    <span className="inline">
       <motion.span
-        className="inline-block"
+        className="inline"
         style={{ opacity }}
         aria-hidden="true"
       >
         {word}
       </motion.span>
-      {index < totalWords - 1 && (
-        <span className="inline-block" aria-hidden="true">
-          &nbsp;
-        </span>
-      )}
+      {index < totalWords - 1 && " "}
     </span>
   );
 }

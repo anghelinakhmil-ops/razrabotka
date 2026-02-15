@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Script from "next/script";
 import { getConsentStatus } from "@/components/layout/CookieConsent";
 
@@ -13,11 +14,13 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
  * Стратегия: afterInteractive — не блокирует рендеринг.
  */
 export function GoogleAnalytics() {
-  if (!GA_ID) return null;
+  const [consented, setConsented] = useState(false);
 
-  // Блокируем загрузку GA до согласия
-  const consent = getConsentStatus();
-  if (consent !== "accepted") return null;
+  useEffect(() => {
+    setConsented(getConsentStatus() === "accepted");
+  }, []);
+
+  if (!GA_ID || !consented) return null;
 
   return (
     <>

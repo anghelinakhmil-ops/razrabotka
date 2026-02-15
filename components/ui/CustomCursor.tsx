@@ -94,8 +94,8 @@ export function CustomCursor() {
     };
   }, [handleMouseMove, handleMouseLeave, handleMouseEnter]);
 
-  // Don't render on touch devices or SSR
-  if (typeof window === "undefined") return null;
+  // Don't render on touch devices
+  if (!isVisible && isTouchDevice.current) return null;
 
   return (
     <motion.div
