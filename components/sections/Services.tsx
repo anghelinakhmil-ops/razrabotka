@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
-import { ease, duration, sectionPresets } from "@/lib/motion";
+import { ease, sectionPresets } from "@/lib/motion";
 
 /**
  * Данные для одной услуги

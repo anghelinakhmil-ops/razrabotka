@@ -7,7 +7,7 @@ import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
-import { ease, duration, sectionPresets } from "@/lib/motion";
+import { ease, sectionPresets } from "@/lib/motion";
 
 /**
  * Данные для одного отзыва

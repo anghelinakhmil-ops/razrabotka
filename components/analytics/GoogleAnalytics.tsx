@@ -1,10 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useSyncExternalStore } from "react";
 import Script from "next/script";
 import { getConsentStatus } from "@/components/layout/CookieConsent";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
+const emptySubscribe = () => () => {};
+const getConsented = () => getConsentStatus() === "accepted";
+const getServerConsented = () => false;
 
 /**
  * GoogleAnalytics — загрузка gtag.js скрипта
@@ -14,11 +18,7 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
  * Стратегия: afterInteractive — не блокирует рендеринг.
  */
 export function GoogleAnalytics() {
-  const [consented, setConsented] = useState(false);
-
-  useEffect(() => {
-    setConsented(getConsentStatus() === "accepted");
-  }, []);
+  const consented = useSyncExternalStore(emptySubscribe, getConsented, getServerConsented);
 
   if (!GA_ID || !consented) return null;
 

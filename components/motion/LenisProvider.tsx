@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, createContext, useContext } from "react";
+import { useEffect, useSyncExternalStore, createContext, useContext } from "react";
 import Lenis from "lenis";
 
 /**
@@ -19,42 +19,56 @@ interface LenisProviderProps {
   children: React.ReactNode;
 }
 
+/** Module-level store for Lenis instance (singleton) */
+let lenisInstance: Lenis | null = null;
+const listeners = new Set<() => void>();
+
+function subscribe(callback: () => void) {
+  listeners.add(callback);
+  return () => { listeners.delete(callback); };
+}
+
+function getSnapshot() { return lenisInstance; }
+function getServerSnapshot() { return null; }
+
 /**
  * LenisProvider — провайдер smooth scroll
  *
  * Настройки приближены к референсу THE BRIDGE:
  * - duration: 1.7 (длительная плавная прокрутка)
  * - easing: exponential ease-out
- * - touchMultiplier: 2
+ * - touchMultiplier: 1.5
  */
 export function LenisProvider({ children }: LenisProviderProps) {
-  const lenisRef = useRef<Lenis | null>(null);
-
   useEffect(() => {
-    const lenis = new Lenis({
+    const instance = new Lenis({
       duration: 1.7,
       easing: (t: number) => Math.min(1, 1 - Math.pow(2, -10 * t)),
       touchMultiplier: 1.5,
       infinite: false,
     });
 
-    lenisRef.current = lenis;
+    lenisInstance = instance;
+    listeners.forEach((cb) => cb());
 
     function raf(time: number) {
-      lenis.raf(time);
+      instance.raf(time);
       requestAnimationFrame(raf);
     }
 
     requestAnimationFrame(raf);
 
     return () => {
-      lenis.destroy();
-      lenisRef.current = null;
+      instance.destroy();
+      lenisInstance = null;
+      listeners.forEach((cb) => cb());
     };
   }, []);
 
+  const lenis = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+
   return (
-    <LenisContext.Provider value={lenisRef.current}>
+    <LenisContext.Provider value={lenis}>
       {children}
     </LenisContext.Provider>
   );

@@ -23,7 +23,7 @@ interface HeroProps {
  * Стиль: Premium-minimal / Architectural (референс: THE BRIDGE)
  * Текст по центру поверх тёмного overlay на фото.
  */
-export function Hero({ onCtaClick, imageSrc }: HeroProps) {
+export function Hero({ imageSrc }: HeroProps) {
   const t = useTranslations("hero");
   const lenis = useLenis();
 

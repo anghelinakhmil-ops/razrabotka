@@ -1,7 +1,14 @@
 "use client";
 
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useSyncExternalStore } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+
+const emptySubscribe = () => () => {};
+const getTouchSnapshot = () =>
+  "ontouchstart" in window ||
+  navigator.maxTouchPoints > 0 ||
+  window.matchMedia("(pointer: coarse)").matches;
+const getTouchServerSnapshot = () => false;
 
 /**
  * CustomCursor — кастомный курсор (кружок следует за мышью)
@@ -16,7 +23,7 @@ export function CustomCursor() {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const [cursorText, setCursorText] = useState("");
-  const isTouchDevice = useRef(false);
+  const isTouch = useSyncExternalStore(emptySubscribe, getTouchSnapshot, getTouchServerSnapshot);
 
   const cursorX = useMotionValue(0);
   const cursorY = useMotionValue(0);
@@ -39,20 +46,11 @@ export function CustomCursor() {
   }, []);
 
   const handleMouseEnter = useCallback(() => {
-    if (!isTouchDevice.current) setIsVisible(true);
+    setIsVisible(true);
   }, []);
 
   useEffect(() => {
-    // Detect touch device
-    const checkTouch = () => {
-      isTouchDevice.current =
-        "ontouchstart" in window ||
-        navigator.maxTouchPoints > 0 ||
-        window.matchMedia("(pointer: coarse)").matches;
-    };
-    checkTouch();
-
-    if (isTouchDevice.current) return;
+    if (isTouch) return;
 
     document.addEventListener("mousemove", handleMouseMove);
     document.addEventListener("mouseleave", handleMouseLeave);
@@ -92,10 +90,9 @@ export function CustomCursor() {
       document.removeEventListener("pointerover", handlePointerOver);
       document.removeEventListener("pointerout", handlePointerOut);
     };
-  }, [handleMouseMove, handleMouseLeave, handleMouseEnter]);
+  }, [isTouch, handleMouseMove, handleMouseLeave, handleMouseEnter]);
 
-  // Don't render on touch devices
-  if (!isVisible && isTouchDevice.current) return null;
+  if (!isVisible && isTouch) return null;
 
   return (
     <motion.div

@@ -28,7 +28,6 @@ interface MobileMenuProps {
 export function MobileMenu({
   isOpen,
   onClose,
-  onCallbackClick,
 }: MobileMenuProps) {
   const t = useTranslations();
   const menuRef = useRef<HTMLDivElement>(null);

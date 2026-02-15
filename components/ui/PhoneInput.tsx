@@ -21,8 +21,9 @@ export interface CountryCode {
   maxLength: number; // Максимальная длина номера без кода
 }
 
-/** Предустановленные страны */
+/** Предустановленные страны (CIS первыми, затем популярные) */
 export const DEFAULT_COUNTRIES: CountryCode[] = [
+  // CIS — приоритет для ЦА
   {
     code: "RU",
     name: "Россия",
@@ -62,6 +63,114 @@ export const DEFAULT_COUNTRIES: CountryCode[] = [
     flag: "🇲🇩",
     mask: "## ###-###",
     maxLength: 8,
+  },
+  // Европа
+  {
+    code: "DE",
+    name: "Германия",
+    dialCode: "+49",
+    flag: "🇩🇪",
+    mask: "### #######",
+    maxLength: 10,
+  },
+  {
+    code: "GB",
+    name: "Великобритания",
+    dialCode: "+44",
+    flag: "🇬🇧",
+    mask: "#### ######",
+    maxLength: 10,
+  },
+  {
+    code: "FR",
+    name: "Франция",
+    dialCode: "+33",
+    flag: "🇫🇷",
+    mask: "# ## ## ## ##",
+    maxLength: 9,
+  },
+  {
+    code: "PL",
+    name: "Польша",
+    dialCode: "+48",
+    flag: "🇵🇱",
+    mask: "### ### ###",
+    maxLength: 9,
+  },
+  {
+    code: "RO",
+    name: "Румыния",
+    dialCode: "+40",
+    flag: "🇷🇴",
+    mask: "### ### ###",
+    maxLength: 9,
+  },
+  {
+    code: "CZ",
+    name: "Чехия",
+    dialCode: "+420",
+    flag: "🇨🇿",
+    mask: "### ### ###",
+    maxLength: 9,
+  },
+  // Ближний Восток и Кавказ
+  {
+    code: "IL",
+    name: "Израиль",
+    dialCode: "+972",
+    flag: "🇮🇱",
+    mask: "##-###-####",
+    maxLength: 9,
+  },
+  {
+    code: "TR",
+    name: "Турция",
+    dialCode: "+90",
+    flag: "🇹🇷",
+    mask: "### ### ## ##",
+    maxLength: 10,
+  },
+  {
+    code: "GE",
+    name: "Грузия",
+    dialCode: "+995",
+    flag: "🇬🇪",
+    mask: "### ## ## ##",
+    maxLength: 9,
+  },
+  {
+    code: "AM",
+    name: "Армения",
+    dialCode: "+374",
+    flag: "🇦🇲",
+    mask: "## ###-###",
+    maxLength: 8,
+  },
+  {
+    code: "AZ",
+    name: "Азербайджан",
+    dialCode: "+994",
+    flag: "🇦🇿",
+    mask: "## ###-##-##",
+    maxLength: 9,
+  },
+  // Средняя Азия
+  {
+    code: "UZ",
+    name: "Узбекистан",
+    dialCode: "+998",
+    flag: "🇺🇿",
+    mask: "## ###-##-##",
+    maxLength: 9,
+  },
+  // США
+  {
+    code: "US",
+    name: "США",
+    dialCode: "+1",
+    flag: "🇺🇸",
+    mask: "(###) ###-####",
+    maxLength: 10,
   },
 ];
 

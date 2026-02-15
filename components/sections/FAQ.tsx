@@ -8,7 +8,7 @@ import { BrokenText } from "@/components/ui/BrokenText";
 import { Accordion, AccordionItem } from "@/components/ui/Accordion";
 import { Button } from "@/components/ui/Button";
 import { RevealOnScroll, SplitTextReveal } from "@/components/motion";
-import { ease, duration, sectionPresets } from "@/lib/motion";
+import { ease, sectionPresets } from "@/lib/motion";
 import { faqSchema } from "@/lib/schema";
 
 /**

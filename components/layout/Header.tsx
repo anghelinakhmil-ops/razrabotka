@@ -36,7 +36,6 @@ export function Header({
   isMenuOpen = false,
   onMenuOpen,
   onMenuClose,
-  onCallbackClick,
   className,
 }: HeaderProps) {
   const t = useTranslations();

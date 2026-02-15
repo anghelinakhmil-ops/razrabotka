@@ -4,6 +4,17 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { ease, duration as durationTokens, stagger as staggerTokens } from "@/lib/motion";
 
+/** Pre-built motion components (avoid creating during render) */
+const motionElements = {
+  h1: motion.h1,
+  h2: motion.h2,
+  h3: motion.h3,
+  h4: motion.h4,
+  p: motion.p,
+  span: motion.span,
+  div: motion.div,
+} as const;
+
 interface SplitTextRevealProps {
   /** Текст для анимации */
   text: string;
@@ -84,8 +95,7 @@ export function SplitTextReveal({
 
   const wordVariants = getWordVariants();
 
-  // Use motion component for the wrapper
-  const MotionComponent = motion.create(Component);
+  const MotionComponent = motionElements[Component];
 
   return (
     <MotionComponent

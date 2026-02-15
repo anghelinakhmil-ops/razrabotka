@@ -20,7 +20,7 @@ interface FooterProps {
  * footer «проявляется» когда контент заканчивается.
  * Полностью тёмный фон (как в референсе THE BRIDGE).
  */
-export function Footer({ onCallbackClick, className }: FooterProps) {
+export function Footer({ className }: FooterProps) {
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
   const currentYear = new Date().getFullYear();

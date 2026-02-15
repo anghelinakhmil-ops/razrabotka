@@ -4,6 +4,17 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { ease, duration as durationTokens } from "@/lib/motion";
 
+/** Pre-built motion components (avoid creating during render) */
+const motionElements = {
+  h1: motion.h1,
+  h2: motion.h2,
+  h3: motion.h3,
+  h4: motion.h4,
+  p: motion.p,
+  span: motion.span,
+  div: motion.div,
+} as const;
+
 interface LettersFadeInProps {
   /** Текст для побуквенной анимации */
   text: string;
@@ -52,7 +63,7 @@ export function LettersFadeIn({
 
   const letters = text.split("");
 
-  const MotionComponent = motion.create(Component);
+  const MotionComponent = motionElements[Component];
 
   return (
     <MotionComponent

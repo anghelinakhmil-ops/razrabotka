@@ -65,7 +65,6 @@ export function LeadFormSection({
   type QuickFormData = z.infer<typeof quickFormSchema>;
 
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [errorMessage, setErrorMessage] = useState("");
   const [formStarted, setFormStarted] = useState(false);
 
   const {
@@ -86,7 +85,6 @@ export function LeadFormSection({
 
   const onSubmit = async (data: QuickFormData) => {
     setFormState("loading");
-    setErrorMessage("");
 
     try {
       const contactFields = parseContact(data.contact);
@@ -111,11 +109,9 @@ export function LeadFormSection({
       setFormState("success");
       trackFormSubmit("quick");
       trackConversion("quick", "quick");
-    } catch (error) {
+    } catch {
       setFormState("error");
-      const msg = t("errorMessage");
-      setErrorMessage(msg);
-      trackFormError("quick", msg);
+      trackFormError("quick", t("errorMessage"));
     }
   };
 

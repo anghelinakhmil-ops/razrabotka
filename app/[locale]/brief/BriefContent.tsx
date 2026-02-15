@@ -10,6 +10,7 @@ import { BrokenText } from "@/components/ui/BrokenText";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
+import { PhoneInput } from "@/components/ui/PhoneInput";
 import { getUtmData } from "@/lib/utm";
 import { Select } from "@/components/ui/Select";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
@@ -401,13 +402,19 @@ function BriefForm({
                 {...register("email")}
               />
 
-              <Input
-                label={t("phone")}
-                type="tel"
-                placeholder={t("phonePlaceholder")}
-                error={errors.phone?.message}
-                disabled={formState === "loading"}
-                {...register("phone")}
+              <Controller
+                name="phone"
+                control={control}
+                render={({ field }) => (
+                  <PhoneInput
+                    label={t("phone")}
+                    value={field.value}
+                    onChange={field.onChange}
+                    onBlur={field.onBlur}
+                    error={errors.phone?.message}
+                    disabled={formState === "loading"}
+                  />
+                )}
               />
             </div>
 

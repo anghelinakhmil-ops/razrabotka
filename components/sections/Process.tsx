@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { StaggerContainer, StaggerItem, SplitTextReveal } from "@/components/motion";
-import { ease, duration, sectionPresets } from "@/lib/motion";
+import { ease, sectionPresets } from "@/lib/motion";
 
 /**
  * Данные для одного шага процесса
