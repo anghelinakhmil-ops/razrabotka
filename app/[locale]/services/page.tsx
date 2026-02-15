@@ -11,7 +11,7 @@ import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Услуги",
   description:
-    "Пакеты услуг: сайт для эксперта, интернет-магазин, лендинг. Фиксированные сроки, прозрачные цены. Узнайте, что входит в каждый пакет.",
+    "Пакеты услуг: сайт для эксперта, интернет-магазин, лендинг. Узнайте, что входит в каждый пакет.",
   openGraph: {
     title: "Услуги | NAKO Agency",
     description: "Пакеты услуг: сайт для эксперта, интернет-магазин, лендинг.",
@@ -24,7 +24,6 @@ interface PackageData {
   title: string;
   subtitle: string;
   description: string;
-  price: string;
   timeline: string;
   features: string[];
   idealFor: string[];
@@ -50,7 +49,6 @@ export default async function ServicesPage() {
   const services = packages.map((pkg) => ({
     name: pkg.title,
     description: pkg.description,
-    price: pkg.price.replace(/от |from /i, ""),
   }));
 
   return (
@@ -157,25 +155,15 @@ export default async function ServicesPage() {
                     </p>
                   </RevealOnScroll>
 
-                  {/* Price & Timeline */}
+                  {/* Timeline */}
                   <RevealOnScroll direction="up" delay={0.3}>
-                    <div className="flex flex-wrap gap-6 mb-8">
-                      <div>
-                        <span className="text-caption text-[var(--color-text-muted)] block mb-1">
-                          {t("priceLabel")}
-                        </span>
-                        <span className="text-h3 font-display font-bold text-[var(--color-text-primary)]">
-                          {pkg.price}
-                        </span>
-                      </div>
-                      <div>
-                        <span className="text-caption text-[var(--color-text-muted)] block mb-1">
-                          {t("timelineLabel")}
-                        </span>
-                        <span className="text-h3 font-display font-bold text-[var(--color-text-primary)]">
-                          {pkg.timeline}
-                        </span>
-                      </div>
+                    <div className="mb-8">
+                      <span className="text-caption text-[var(--color-text-muted)] block mb-1">
+                        {t("timelineLabel")}
+                      </span>
+                      <span className="text-h3 font-display font-bold text-[var(--color-text-primary)]">
+                        {pkg.timeline}
+                      </span>
                     </div>
                   </RevealOnScroll>
 
@@ -287,7 +275,7 @@ export default async function ServicesPage() {
                           {pkg.title}
                         </span>
                         <span className="text-body-sm text-[var(--color-text-muted)] block mt-1">
-                          {pkg.price}
+                          {pkg.timeline}
                         </span>
                       </th>
                     ))}
@@ -332,8 +320,8 @@ export default async function ServicesPage() {
                       {pkg.title}
                     </h3>
                   </div>
-                  <p className="text-h3 font-display font-bold text-[var(--color-text-primary)] mb-4">
-                    {pkg.price}
+                  <p className="text-body-sm text-[var(--color-text-muted)] mb-4">
+                    {pkg.timeline}
                   </p>
                   <div className="space-y-2 text-body-sm">
                     {comparisonRows.slice(0, 6).map((row, rowIndex) => {

@@ -294,7 +294,7 @@
       },
       {
         "question": "How much does a website cost? What affects the price?",
-        "answer": "Cost depends on website type, number of pages, design complexity, and integrations. Landing page — from €500, expert website — from €1,000, online store — from €2,000. Exact cost is calculated individually."
+        "answer": "Cost depends on website type, number of pages, design complexity, and integrations. Exact cost is calculated individually after filling out the brief."
       },
       {
         "question": "What's included in turnkey development?",
@@ -571,7 +571,7 @@
           "title": "Expert website",
           "subtitle": "Personal brand",
           "description": "For specialists, coaches, consultants. A website that sells your expertise and attracts clients through content and trust.",
-          "price": "from €1,000",
+          "price": "",
           "timeline": "14–21 days",
           "features": [
             "Up to 7 pages",
@@ -594,7 +594,7 @@
           "title": "Online store",
           "subtitle": "E-commerce solution",
           "description": "Full e-commerce with product catalog, cart, online payments, and CRM integration. Automation of sales and customer notifications.",
-          "price": "from €2,000",
+          "price": "",
           "timeline": "21–45 days",
           "features": [
             "Product catalog",
@@ -617,7 +617,7 @@
           "title": "Landing page",
           "subtitle": "High conversion",
           "description": "One-page website with high conversion for product launch, service, or advertising campaign. Fast development, maximum impact.",
-          "price": "from €500",
+          "price": "",
           "timeline": "7–14 days",
           "features": [
             "One-page design",
@@ -771,10 +771,9 @@
       "budget": "Budget",
       "budgetOptions": [
         "Approximate budget",
-        "€500 – €1,000",
-        "€1,000 – €2,500",
-        "€2,500 – €5,000",
-        "From €5,000",
+        "Small",
+        "Medium",
+        "Large",
         "Let's discuss"
       ],
       "references": "References / competitors",
