@@ -518,7 +518,7 @@
     "services": {
       "caption": "Пакеты",
       "title": "УСЛУГИ",
-      "description": "Три пакета под разные задачи. Каждый включает всё необходимое для успешного запуска — от стратегии до поддержки.",
+      "description": "Четыре пакета под разные задачи. Каждый включает всё необходимое для успешного запуска — от стратегии до поддержки.",
       "packages": [
         {
           "id": "expert",
@@ -541,6 +541,16 @@
           "idealFor": ["Одежда и аксессуары", "Косметика и бьюти", "Продукты питания", "Цифровые товары"]
         },
         {
+          "id": "corporate",
+          "title": "Корпоративный сайт",
+          "subtitle": "Бизнес-решение",
+          "description": "Многостраничный сайт для компании с фокусом на имидж, доверие и привлечение клиентов. Презентация команды, услуг и достижений.",
+          "price": "",
+          "timeline": "до 30 дней",
+          "features": ["До 15 страниц", "Уникальный дизайн", "Адаптивная вёрстка", "Базовое SEO", "Форма связи", "Страница команды", "Настройка аналитики", "30 дней поддержки"],
+          "idealFor": ["Компании и агентства", "Юридические фирмы", "Медицинские клиники", "Строительные компании"]
+        },
+        {
           "id": "landing",
           "title": "Лендинг / промо",
           "subtitle": "Высокая конверсия",
@@ -559,18 +569,18 @@
       "comparisonCaption": "Сравнение",
       "comparisonTitle": "ПАКЕТЫ",
       "comparisonRows": [
-        { "label": "Количество страниц", "expert": "До 7", "ecommerce": "Неограниченно", "landing": "1" },
-        { "label": "Уникальный дизайн", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "Адаптив (mobile)", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "Каталог товаров", "expert": "—", "ecommerce": "✓", "landing": "—" },
-        { "label": "Онлайн-оплата", "expert": "—", "ecommerce": "✓", "landing": "—" },
-        { "label": "Форма заявки", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "CRM интеграция", "expert": "Опционально", "ecommerce": "✓", "landing": "Опционально" },
-        { "label": "Блог", "expert": "Опционально", "ecommerce": "Опционально", "landing": "—" },
-        { "label": "SEO базовое", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "Аналитика", "expert": "✓", "ecommerce": "✓", "landing": "✓" },
-        { "label": "Сроки", "expert": "до 21 дня", "ecommerce": "до 45 дней", "landing": "до 14 дней" },
-        { "label": "Поддержка", "expert": "30 дней", "ecommerce": "30 дней", "landing": "14 дней" }
+        { "label": "Количество страниц", "expert": "До 7", "ecommerce": "Неограниченно", "corporate": "До 15", "landing": "1" },
+        { "label": "Уникальный дизайн", "expert": "✓", "ecommerce": "✓", "corporate": "✓", "landing": "✓" },
+        { "label": "Адаптив (mobile)", "expert": "✓", "ecommerce": "✓", "corporate": "✓", "landing": "✓" },
+        { "label": "Каталог товаров", "expert": "—", "ecommerce": "✓", "corporate": "—", "landing": "—" },
+        { "label": "Онлайн-оплата", "expert": "—", "ecommerce": "✓", "corporate": "—", "landing": "—" },
+        { "label": "Форма заявки", "expert": "✓", "ecommerce": "✓", "corporate": "✓", "landing": "✓" },
+        { "label": "CRM интеграция", "expert": "Опционально", "ecommerce": "✓", "corporate": "Опционально", "landing": "Опционально" },
+        { "label": "Блог", "expert": "Опционально", "ecommerce": "Опционально", "corporate": "Опционально", "landing": "—" },
+        { "label": "SEO базовое", "expert": "✓", "ecommerce": "✓", "corporate": "✓", "landing": "✓" },
+        { "label": "Аналитика", "expert": "✓", "ecommerce": "✓", "corporate": "✓", "landing": "✓" },
+        { "label": "Сроки", "expert": "до 21 дня", "ecommerce": "до 45 дней", "corporate": "до 30 дней", "landing": "до 14 дней" },
+        { "label": "Поддержка", "expert": "30 дней", "ecommerce": "30 дней", "corporate": "30 дней", "landing": "14 дней" }
       ],
       "detailsButton": "Подробнее",
       "formTitle": "ОБСУДИТЬ ПРОЕКТ",

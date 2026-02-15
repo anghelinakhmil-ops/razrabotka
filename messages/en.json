@@ -564,7 +564,7 @@
     "services": {
       "caption": "Packages",
       "title": "SERVICES",
-      "description": "Three packages for different tasks. Each includes everything needed for a successful launch — from strategy to support.",
+      "description": "Four packages for different tasks. Each includes everything needed for a successful launch — from strategy to support.",
       "packages": [
         {
           "id": "expert",
@@ -613,6 +613,30 @@
           ]
         },
         {
+          "id": "corporate",
+          "title": "Corporate website",
+          "subtitle": "Business solution",
+          "description": "Multi-page website for companies focused on image, trust, and client acquisition. Showcasing your team, services, and achievements.",
+          "price": "",
+          "timeline": "up to 30 days",
+          "features": [
+            "Up to 15 pages",
+            "Unique design",
+            "Responsive layout",
+            "Basic SEO",
+            "Contact form",
+            "Team page",
+            "Analytics setup",
+            "30 days support"
+          ],
+          "idealFor": [
+            "Companies and agencies",
+            "Law firms",
+            "Medical clinics",
+            "Construction companies"
+          ]
+        },
+        {
           "id": "landing",
           "title": "Landing page",
           "subtitle": "High conversion",
@@ -648,72 +672,84 @@
           "label": "Number of pages",
           "expert": "Up to 7",
           "ecommerce": "Unlimited",
+          "corporate": "Up to 15",
           "landing": "1"
         },
         {
           "label": "Unique design",
           "expert": "✓",
           "ecommerce": "✓",
+          "corporate": "✓",
           "landing": "✓"
         },
         {
           "label": "Responsive (mobile)",
           "expert": "✓",
           "ecommerce": "✓",
+          "corporate": "✓",
           "landing": "✓"
         },
         {
           "label": "Product catalog",
           "expert": "—",
           "ecommerce": "✓",
+          "corporate": "—",
           "landing": "—"
         },
         {
           "label": "Online payments",
           "expert": "—",
           "ecommerce": "✓",
+          "corporate": "—",
           "landing": "—"
         },
         {
           "label": "Application form",
           "expert": "✓",
           "ecommerce": "✓",
+          "corporate": "✓",
           "landing": "✓"
         },
         {
           "label": "CRM integration",
           "expert": "Optional",
           "ecommerce": "✓",
+          "corporate": "Optional",
           "landing": "Optional"
         },
         {
           "label": "Blog",
           "expert": "Optional",
           "ecommerce": "Optional",
+          "corporate": "Optional",
           "landing": "—"
         },
         {
           "label": "Basic SEO",
           "expert": "✓",
           "ecommerce": "✓",
+          "corporate": "✓",
           "landing": "✓"
         },
         {
           "label": "Analytics",
           "expert": "✓",
           "ecommerce": "✓",
+          "corporate": "✓",
           "landing": "✓"
         },
         {
           "label": "Timeline",
           "expert": "up to 21 days",
           "ecommerce": "up to 45 days",
+          "corporate": "up to 30 days",
           "landing": "up to 14 days"
         },
         {
           "label": "Support",
           "expert": "30 days",
           "ecommerce": "30 days",
+          "corporate": "30 days",
           "landing": "14 days"
         }
       ],

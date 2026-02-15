@@ -11,10 +11,10 @@ import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Услуги",
   description:
-    "Пакеты услуг: сайт для эксперта, интернет-магазин, лендинг. Узнайте, что входит в каждый пакет.",
+    "Пакеты услуг: сайт для эксперта, интернет-магазин, корпоративный сайт, лендинг. Узнайте, что входит в каждый пакет.",
   openGraph: {
     title: "Услуги | NAKO Agency",
-    description: "Пакеты услуг: сайт для эксперта, интернет-магазин, лендинг.",
+    description: "Пакеты услуг: сайт для эксперта, интернет-магазин, корпоративный сайт, лендинг.",
     type: "website",
   },
 };
@@ -33,6 +33,7 @@ interface ComparisonRow {
   label: string;
   expert: string;
   ecommerce: string;
+  corporate: string;
   landing: string;
 }
 
@@ -44,7 +45,7 @@ export default async function ServicesPage() {
 
   const packages = t.raw("packages") as PackageData[];
   const comparisonRows = t.raw("comparisonRows") as ComparisonRow[];
-  const packageNumbers = ["01", "02", "03"];
+  const packageNumbers = ["01", "02", "03", "04"];
 
   const services = packages.map((pkg) => ({
     name: pkg.title,
@@ -297,6 +298,9 @@ export default async function ServicesPage() {
                         {row.ecommerce}
                       </td>
                       <td className="p-4 text-center text-body text-[var(--color-text-primary)] border-b border-[var(--color-line)]">
+                        {row.corporate}
+                      </td>
+                      <td className="p-4 text-center text-body text-[var(--color-text-primary)] border-b border-[var(--color-line)]">
                         {row.landing}
                       </td>
                     </tr>
@@ -330,7 +334,9 @@ export default async function ServicesPage() {
                           ? row.expert
                           : pkg.id === "ecommerce"
                             ? row.ecommerce
-                            : row.landing;
+                            : pkg.id === "corporate"
+                              ? row.corporate
+                              : row.landing;
                       return (
                         <div key={rowIndex} className="flex justify-between">
                           <span className="text-[var(--color-text-muted)]">{row.label}</span>

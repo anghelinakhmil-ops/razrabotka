@@ -564,7 +564,7 @@
     "services": {
       "caption": "Pachete",
       "title": "SERVICII",
-      "description": "Trei pachete pentru diferite sarcini. Fiecare include tot ce e necesar pentru o lansare de succes — de la strategie la suport.",
+      "description": "Patru pachete pentru diferite sarcini. Fiecare include tot ce e necesar pentru o lansare de succes — de la strategie la suport.",
       "packages": [
         {
           "id": "expert",
@@ -613,6 +613,30 @@
           ]
         },
         {
+          "id": "corporate",
+          "title": "Site corporativ",
+          "subtitle": "Solutie de afaceri",
+          "description": "Site multi-pagina pentru companii, axat pe imagine, incredere si atragerea clientilor. Prezentarea echipei, serviciilor si realizarilor.",
+          "price": "",
+          "timeline": "până la 30 zile",
+          "features": [
+            "Până la 15 pagini",
+            "Design unic",
+            "Layout responsiv",
+            "SEO de baza",
+            "Formular de contact",
+            "Pagina echipei",
+            "Configurare analitica",
+            "30 zile suport"
+          ],
+          "idealFor": [
+            "Companii si agentii",
+            "Firme de avocatura",
+            "Clinici medicale",
+            "Companii de constructii"
+          ]
+        },
+        {
           "id": "landing",
           "title": "Pagina de aterizare",
           "subtitle": "Conversie ridicata",
@@ -648,72 +672,84 @@
           "label": "Numar de pagini",
           "expert": "Pana la 7",
           "ecommerce": "Nelimitat",
+          "corporate": "Până la 15",
           "landing": "1"
         },
         {
           "label": "Design unic",
           "expert": "✓",
           "ecommerce": "✓",
+          "corporate": "✓",
           "landing": "✓"
         },
         {
           "label": "Responsive (mobil)",
           "expert": "✓",
           "ecommerce": "✓",
+          "corporate": "✓",
           "landing": "✓"
         },
         {
           "label": "Catalog produse",
           "expert": "—",
           "ecommerce": "✓",
+          "corporate": "—",
           "landing": "—"
         },
         {
           "label": "Plati online",
           "expert": "—",
           "ecommerce": "✓",
+          "corporate": "—",
           "landing": "—"
         },
         {
           "label": "Formular cerere",
           "expert": "✓",
           "ecommerce": "✓",
+          "corporate": "✓",
           "landing": "✓"
         },
         {
           "label": "Integrare CRM",
           "expert": "Optional",
           "ecommerce": "✓",
+          "corporate": "Optional",
           "landing": "Optional"
         },
         {
           "label": "Blog",
           "expert": "Optional",
           "ecommerce": "Optional",
+          "corporate": "Optional",
           "landing": "—"
         },
         {
           "label": "SEO de baza",
           "expert": "✓",
           "ecommerce": "✓",
+          "corporate": "✓",
           "landing": "✓"
         },
         {
           "label": "Analitice",
           "expert": "✓",
           "ecommerce": "✓",
+          "corporate": "✓",
           "landing": "✓"
         },
         {
           "label": "Termene",
           "expert": "până la 21 zile",
           "ecommerce": "până la 45 zile",
+          "corporate": "până la 30 zile",
           "landing": "până la 14 zile"
         },
         {
           "label": "Suport",
           "expert": "30 zile",
           "ecommerce": "30 zile",
+          "corporate": "30 zile",
           "landing": "14 zile"
         }
       ],
