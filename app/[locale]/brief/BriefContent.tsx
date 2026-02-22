@@ -12,7 +12,6 @@ import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 import { getUtmData } from "@/lib/utm";
-import { Select } from "@/components/ui/Select";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { CONTACT } from "@/lib/constants";
 import { briefFormSchema, type BriefFormData } from "@/lib/validation";
@@ -25,22 +24,6 @@ export default function BriefContent() {
   const t = useTranslations("pages.brief");
 
   const steps = t.raw("steps") as Array<{ title: string; description: string }>;
-  const siteTypeOptions = (t.raw("siteTypeOptions") as string[]).map((label, i) => ({
-    value: i === 0 ? "" : ["expert", "ecommerce", "landing", "corporate", "other"][i - 1],
-    label,
-  }));
-  const goalOptions = (t.raw("goalOptions") as string[]).map((label, i) => ({
-    value: i === 0 ? "" : ["sales", "leads", "brand", "info", "other"][i - 1],
-    label,
-  }));
-  const timelineOptions = (t.raw("timelineOptions") as string[]).map((label, i) => ({
-    value: i === 0 ? "" : ["urgent", "normal", "relaxed", "flexible"][i - 1],
-    label,
-  }));
-  const budgetOptions = (t.raw("budgetOptions") as string[]).map((label, i) => ({
-    value: i === 0 ? "" : ["50-100", "100-200", "200-500", "500+", "discuss"][i - 1],
-    label,
-  }));
 
   return (
     <main>
@@ -103,12 +86,7 @@ export default function BriefContent() {
       <section className="py-[var(--section-gap)] bg-[var(--color-background)]">
         <Container size="sm">
           <RevealOnScroll direction="up">
-            <BriefForm
-              siteTypeOptions={siteTypeOptions}
-              goalOptions={goalOptions}
-              timelineOptions={timelineOptions}
-              budgetOptions={budgetOptions}
-            />
+            <BriefForm />
           </RevealOnScroll>
         </Container>
       </section>
@@ -150,17 +128,7 @@ export default function BriefContent() {
 /**
  * BriefForm — расширенная форма брифа
  */
-function BriefForm({
-  siteTypeOptions,
-  goalOptions,
-  timelineOptions,
-  budgetOptions,
-}: {
-  siteTypeOptions: Array<{ value: string; label: string }>;
-  goalOptions: Array<{ value: string; label: string }>;
-  timelineOptions: Array<{ value: string; label: string }>;
-  budgetOptions: Array<{ value: string; label: string }>;
-}) {
+function BriefForm() {
   const t = useTranslations("pages.brief");
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -175,11 +143,6 @@ function BriefForm({
     resolver: zodResolver(briefFormSchema),
     mode: "onBlur",
     defaultValues: {
-      siteType: "",
-      goal: "",
-      timeline: "",
-      budget: "",
-      references: "",
       name: "",
       email: "",
       phone: "",
@@ -302,83 +265,7 @@ function BriefForm({
   return (
     <div className="p-4 sm:p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm">
       <form onSubmit={handleSubmit(onSubmit)} onFocus={handleFormFocus} className="space-y-8">
-        {/* Section 1: О проекте */}
-        <div>
-          <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-6 pb-4 border-b border-[var(--color-line)]">
-            {t("sectionProject")}
-          </h3>
-          <div className="space-y-6">
-            <Controller
-              name="siteType"
-              control={control}
-              render={({ field }) => (
-                <Select
-                  label={t("siteType")}
-                  value={field.value}
-                  onChange={field.onChange}
-                  options={siteTypeOptions}
-                  error={errors.siteType?.message}
-                  required
-                />
-              )}
-            />
-
-            <Controller
-              name="goal"
-              control={control}
-              render={({ field }) => (
-                <Select
-                  label={t("goal")}
-                  value={field.value}
-                  onChange={field.onChange}
-                  options={goalOptions}
-                  error={errors.goal?.message}
-                  required
-                />
-              )}
-            />
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <Controller
-                name="timeline"
-                control={control}
-                render={({ field }) => (
-                  <Select
-                    label={t("timeline")}
-                    value={field.value || ""}
-                    onChange={field.onChange}
-                    options={timelineOptions}
-                  />
-                )}
-              />
-
-              <Controller
-                name="budget"
-                control={control}
-                render={({ field }) => (
-                  <Select
-                    label={t("budget")}
-                    value={field.value || ""}
-                    onChange={field.onChange}
-                    options={budgetOptions}
-                  />
-                )}
-              />
-            </div>
-
-            <Textarea
-              label={t("references")}
-              placeholder={t("referencesPlaceholder")}
-              rows={3}
-              helperText={t("referencesHelper")}
-              error={errors.references?.message}
-              disabled={formState === "loading"}
-              {...register("references")}
-            />
-          </div>
-        </div>
-
-        {/* Section 2: Контакты */}
+        {/* Section 1: Контакты */}
         <div>
           <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-6 pb-4 border-b border-[var(--color-line)]">
             {t("sectionContacts")}

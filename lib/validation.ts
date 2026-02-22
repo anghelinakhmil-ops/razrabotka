@@ -114,13 +114,6 @@ export type ContactFormData = z.infer<typeof contactFormSchema>;
 
 /** Схема формы брифа */
 export const briefFormSchema = z.object({
-  // О проекте
-  siteType: z.string().min(1, "Выберите тип сайта"),
-  goal: z.string().min(1, "Выберите основную цель"),
-  timeline: z.string().optional(),
-  budget: z.string().optional(),
-  references: referencesSchema,
-
   // Контакты
   name: nameSchema,
   email: emailSchema,

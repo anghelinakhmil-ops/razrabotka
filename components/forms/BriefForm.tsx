@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
@@ -9,7 +9,6 @@ import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
-import { Select } from "@/components/ui/Select";
 import { getUtmData } from "@/lib/utm";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 import { briefFormSchema, type BriefFormData } from "@/lib/validation";
@@ -19,14 +18,6 @@ import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from
  * Ключ для хранения черновика в localStorage
  */
 const DRAFT_STORAGE_KEY = "brief_form_draft";
-
-/**
- * Value keys for select options (paired with translated labels)
- */
-const siteTypeValues = ["", "expert", "ecommerce", "landing", "corporate", "other"];
-const goalValues = ["", "sales", "leads", "brand", "info", "other"];
-const timelineValues = ["", "urgent", "normal", "relaxed", "flexible"];
-const budgetValues = ["", "600-1000", "1000-2500", "2500-5000", "5000+", "discuss"];
 
 /**
  * Состояния формы
@@ -101,26 +92,6 @@ function clearDraft(): void {
 export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
   const t = useTranslations("pages.brief");
 
-  const siteTypeOptions = useMemo(() => {
-    const labels = t.raw("siteTypeOptions") as string[];
-    return siteTypeValues.map((value, i) => ({ value, label: labels[i] || value }));
-  }, [t]);
-
-  const goalOptions = useMemo(() => {
-    const labels = t.raw("goalOptions") as string[];
-    return goalValues.map((value, i) => ({ value, label: labels[i] || value }));
-  }, [t]);
-
-  const timelineOptions = useMemo(() => {
-    const labels = t.raw("timelineOptions") as string[];
-    return timelineValues.map((value, i) => ({ value, label: labels[i] || value }));
-  }, [t]);
-
-  const budgetOptions = useMemo(() => {
-    const labels = t.raw("budgetOptions") as string[];
-    return budgetValues.map((value, i) => ({ value, label: labels[i] || value }));
-  }, [t]);
-
   const [formState, setFormState] = useState<FormState>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [draftLoaded, setDraftLoaded] = useState(false);
@@ -145,11 +116,6 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
     mode: "onBlur",
     reValidateMode: "onChange",
     defaultValues: {
-      siteType: "",
-      goal: "",
-      timeline: "",
-      budget: "",
-      references: "",
       name: "",
       email: "",
       phone: "",
@@ -240,10 +206,6 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
 
   const handlePhoneBlur = () => {
     trigger("phone");
-  };
-
-  const handleSelectChange = (name: keyof BriefFormData) => (value: string) => {
-    setValue(name, value, { shouldValidate: true });
   };
 
   const handleRetry = () => {
@@ -392,61 +354,8 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
       className="p-8 lg:p-12 bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm"
     >
       <form onSubmit={handleSubmit(onSubmit)} onFocus={handleFormFocus} className="space-y-10">
-        {/* Section 1: О проекте */}
+        {/* Section 1: Контактные данные */}
         <motion.section {...sectionAnimation} transition={{ ...sectionAnimation.transition, delay: 0.1 }}>
-          <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-6 pb-4 border-b border-[var(--color-line)]">
-            {t("sectionProject")}
-          </h3>
-          <div className="space-y-6">
-            <Select
-              label={t("siteType")}
-              value={watch("siteType")}
-              onChange={handleSelectChange("siteType")}
-              options={siteTypeOptions}
-              error={errors.siteType?.message}
-              required
-            />
-
-            <Select
-              label={t("goal")}
-              value={watch("goal")}
-              onChange={handleSelectChange("goal")}
-              options={goalOptions}
-              error={errors.goal?.message}
-              required
-            />
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <Select
-                label={t("timeline")}
-                value={watch("timeline") || ""}
-                onChange={handleSelectChange("timeline")}
-                options={timelineOptions}
-                error={errors.timeline?.message}
-              />
-
-              <Select
-                label={t("budget")}
-                value={watch("budget") || ""}
-                onChange={handleSelectChange("budget")}
-                options={budgetOptions}
-                error={errors.budget?.message}
-              />
-            </div>
-
-            <Textarea
-              label={t("references")}
-              placeholder={t("referencesPlaceholder")}
-              error={errors.references?.message}
-              disabled={formState === "loading"}
-              helperText={t("referencesHelper")}
-              {...register("references")}
-            />
-          </div>
-        </motion.section>
-
-        {/* Section 2: Контактные данные */}
-        <motion.section {...sectionAnimation} transition={{ ...sectionAnimation.transition, delay: 0.2 }}>
           <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-6 pb-4 border-b border-[var(--color-line)]">
             {t("sectionContacts")}
           </h3>
@@ -494,8 +403,8 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
           </div>
         </motion.section>
 
-        {/* Section 3: Дополнительно */}
-        <motion.section {...sectionAnimation} transition={{ ...sectionAnimation.transition, delay: 0.3 }}>
+        {/* Section 2: Дополнительно */}
+        <motion.section {...sectionAnimation} transition={{ ...sectionAnimation.transition, delay: 0.2 }}>
           <h3 className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-6 pb-4 border-b border-[var(--color-line)]">
             {t("sectionAdditional")}
           </h3>
@@ -513,7 +422,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.4 }}
+          transition={{ delay: 0.3, duration: 0.4 }}
           className="pt-4"
         >
           <Button
