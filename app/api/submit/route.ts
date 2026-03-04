@@ -92,7 +92,7 @@ function generateLeadId(): string {
 }
 
 /**
- * POST /api/lead
+ * POST /api/submit
  *
  * Обработка заявок с форм сайта.
  * Поддерживает типы: quick, brief, callback
@@ -257,7 +257,7 @@ function getSuccessMessage(type: LeadType): string {
 }
 
 /**
- * OPTIONS /api/lead
+ * OPTIONS /api/submit
  *
  * CORS preflight handler
  */

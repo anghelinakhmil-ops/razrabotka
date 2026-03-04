@@ -195,7 +195,7 @@ function ContactForm() {
     setErrorMessage("");
 
     try {
-      const response = await fetch("/api/lead", {
+      const response = await fetch("/api/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
