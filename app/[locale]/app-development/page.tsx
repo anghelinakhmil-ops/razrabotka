@@ -173,7 +173,7 @@ export default async function AppDevelopmentPage() {
                   <span className="text-caption text-[var(--color-text-muted)] mb-2 block">
                     {item.subtitle}
                   </span>
-                  <h3 className="text-h3 font-display font-bold text-[var(--color-text-primary)] mb-3">
+                  <h3 className="text-h4 lg:text-h3 font-display font-bold text-[var(--color-text-primary)] mb-3 break-words">
                     {item.title}
                   </h3>
                   <p className="text-body text-[var(--color-text-muted)]">
