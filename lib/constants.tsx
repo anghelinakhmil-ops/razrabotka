@@ -31,6 +31,7 @@ export const NAV_ITEMS: NavItem[] = [
   { key: "home", href: "/" },
   { key: "about", href: "/about" },
   { key: "services", href: "/services" },
+  { key: "appDev", href: "/app-development" },
   { key: "cases", href: "/cases" },
   { key: "blog", href: "/blog" },
   { key: "contacts", href: "/contacts" },

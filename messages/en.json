@@ -1,15 +1,16 @@
 {
   "meta": {
     "siteTitle": "NAKO Agency | Turnkey Website Development",
-    "siteDescription": "We create websites for experts, e-commerce, and businesses. Premium-minimal design, speed, SEO.",
-    "ogTitle": "NAKO Agency | Turnkey Website Development",
-    "ogDescription": "We create websites for experts, e-commerce, and businesses. Premium-minimal design, speed, SEO.",
-    "keywords": "website development, web design, web studio, turnkey website, landing page, online store"
+    "siteDescription": "We create websites and apps for experts, e-commerce, and businesses. Premium-minimal design, speed, SEO.",
+    "ogTitle": "NAKO Agency | Turnkey Website & App Development",
+    "ogDescription": "We create websites and apps for experts, e-commerce, and businesses. Premium-minimal design, speed, SEO.",
+    "keywords": "website development, web design, web studio, turnkey website, landing page, online store, app development, mobile apps"
   },
   "nav": {
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "appDev": "Apps",
     "cases": "Cases",
     "blog": "Blog",
     "contacts": "Contacts"
@@ -139,6 +140,17 @@
           "A/B testing",
           "Quick launch",
           "Analytics"
+        ],
+        "ctaText": "Learn more"
+      },
+      {
+        "title": "Apps",
+        "description": "Mobile and web applications for business. iOS, Android, cross-platform solutions — from idea to launch.",
+        "features": [
+          "iOS & Android",
+          "Web apps (PWA)",
+          "Cross-platform",
+          "Support & updates"
         ],
         "ctaText": "Learn more"
       }
@@ -754,6 +766,8 @@
         }
       ],
       "detailsButton": "Learn more",
+      "appDevBanner": "We also develop mobile and web applications",
+      "appDevBannerCta": "Learn more",
       "formTitle": "DISCUSS PROJECT",
       "formSubtitle": "Not sure which package suits you? Tell us about your project — we'll suggest the best solution."
     },
@@ -1095,6 +1109,120 @@
           ]
         }
       ]
+    },
+    "appDev": {
+      "meta": {
+        "title": "App Development",
+        "description": "We develop mobile apps, web apps, and cross-platform solutions. From idea to launch — turnkey.",
+        "ogTitle": "App Development | NAKO Agency",
+        "ogDescription": "We develop mobile apps, web apps, and cross-platform solutions. From idea to launch — turnkey."
+      },
+      "heroCaption": "New direction",
+      "heroTitle": "APP DEVELOPMENT",
+      "heroDescription": "We create apps that solve real business problems. Mobile, web, cross-platform — from idea to launch.",
+      "whyApp": {
+        "caption": "Advantages",
+        "title": "WHY AN APP",
+        "items": [
+          {
+            "number": "01",
+            "title": "Available 24/7",
+            "description": "Your product is always in the client's pocket. Instant access without a browser — one tap and the user is already inside."
+          },
+          {
+            "number": "02",
+            "title": "Engagement",
+            "description": "Push notifications, personalization, loyalty programs. An app builds a direct communication channel with your audience."
+          },
+          {
+            "number": "03",
+            "title": "Business Growth",
+            "description": "A new sales and interaction channel. An app increases customer LTV and opens opportunities for scaling."
+          }
+        ]
+      },
+      "types": {
+        "caption": "Directions",
+        "title": "WHAT WE BUILD",
+        "items": [
+          {
+            "title": "Mobile Apps",
+            "subtitle": "iOS / Android",
+            "description": "Native and cross-platform apps for smartphones and tablets with optimal performance."
+          },
+          {
+            "title": "Web Apps",
+            "subtitle": "SPA / PWA",
+            "description": "Interactive web applications that work in the browser. Fast, responsive, with offline capabilities."
+          },
+          {
+            "title": "Cross-platform",
+            "subtitle": "React Native / Flutter",
+            "description": "One codebase — all platforms. Budget savings while maintaining user experience quality."
+          }
+        ]
+      },
+      "capabilities": {
+        "caption": "Capabilities",
+        "title": "WHAT WE CAN BUILD",
+        "items": [
+          {
+            "title": "E-commerce",
+            "description": "Mobile stores with catalog, cart, payments, and order tracking."
+          },
+          {
+            "title": "Marketplaces",
+            "description": "Platforms connecting sellers and buyers with rating and review systems."
+          },
+          {
+            "title": "Booking",
+            "description": "Scheduling and booking systems for restaurants, hotels, clinics, and services."
+          },
+          {
+            "title": "CRM & Business Tools",
+            "description": "Internal apps for managing processes, tasks, and teams."
+          },
+          {
+            "title": "Social Platforms",
+            "description": "Apps with feeds, chats, profiles, and subscription systems."
+          },
+          {
+            "title": "Education & Fitness",
+            "description": "Learning platforms, habit trackers, and healthy lifestyle apps."
+          }
+        ]
+      },
+      "process": {
+        "caption": "Stages",
+        "title": "DEVELOPMENT PROCESS",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Idea Discussion",
+            "description": "We analyze your idea, define the target audience, key features, and business model."
+          },
+          {
+            "number": "02",
+            "title": "Prototype & Design",
+            "description": "We create wireframes and UI design. Every screen is crafted for user convenience."
+          },
+          {
+            "number": "03",
+            "title": "Development",
+            "description": "We write clean code with focus on performance, security, and scalability."
+          },
+          {
+            "number": "04",
+            "title": "Testing",
+            "description": "We test on real devices. Functional, load, and UX testing."
+          },
+          {
+            "number": "05",
+            "title": "Launch & Support",
+            "description": "We publish to App Store and Google Play. We provide technical support and updates."
+          }
+        ]
+      }
     },
     "blog": {
       "caption": "Articles",

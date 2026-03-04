@@ -6,15 +6,16 @@ import { Button } from "@/components/ui/Button";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { LeadFormSection } from "@/components/sections";
+import { Link } from "@/i18n/navigation";
 import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Услуги",
   description:
-    "Пакеты услуг: сайт для эксперта, интернет-магазин, корпоративный сайт, лендинг. Узнайте, что входит в каждый пакет.",
+    "Пакеты услуг: сайт для эксперта, интернет-магазин, лендинг, разработка приложений. Узнайте, что входит в каждый пакет.",
   openGraph: {
     title: "Услуги | NAKO Agency",
-    description: "Пакеты услуг: сайт для эксперта, интернет-магазин, корпоративный сайт, лендинг.",
+    description: "Пакеты услуг: сайт для эксперта, интернет-магазин, лендинг, разработка приложений.",
     type: "website",
   },
 };
@@ -356,6 +357,25 @@ export default async function ServicesPage() {
                   </Button>
                 </div>
               ))}
+            </div>
+          </RevealOnScroll>
+        </Container>
+      </section>
+
+      {/* App Development Banner */}
+      <section className="py-12 lg:py-16 bg-[var(--color-background-alt)] border-y border-[var(--color-line)]">
+        <Container>
+          <RevealOnScroll direction="up">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+              <p className="text-h3 font-display font-bold text-[var(--color-text-primary)] text-center sm:text-left">
+                {t("appDevBanner")}
+              </p>
+              <Link
+                href="/app-development"
+                className="text-body font-medium text-[var(--color-text-primary)] border-b border-[var(--color-text-primary)] pb-0.5 hover:opacity-70 transition-opacity whitespace-nowrap"
+              >
+                {t("appDevBannerCta")} →
+              </Link>
             </div>
           </RevealOnScroll>
         </Container>

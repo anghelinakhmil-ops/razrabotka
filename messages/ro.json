@@ -1,15 +1,16 @@
 {
   "meta": {
     "siteTitle": "NAKO Agency | Dezvoltare site-uri la cheie",
-    "siteDescription": "Creăm site-uri pentru experți, e-commerce și afaceri. Design premium-minimal, viteză, SEO.",
-    "ogTitle": "NAKO Agency | Dezvoltare site-uri la cheie",
-    "ogDescription": "Creăm site-uri pentru experți, e-commerce și afaceri. Design premium-minimal, viteză, SEO.",
-    "keywords": "dezvoltare site-uri, creare site-uri, studio web, site la cheie, landing page, magazin online"
+    "siteDescription": "Creăm site-uri și aplicații pentru experți, e-commerce și afaceri. Design premium-minimal, viteză, SEO.",
+    "ogTitle": "NAKO Agency | Dezvoltare site-uri și aplicații la cheie",
+    "ogDescription": "Creăm site-uri și aplicații pentru experți, e-commerce și afaceri. Design premium-minimal, viteză, SEO.",
+    "keywords": "dezvoltare site-uri, creare site-uri, studio web, site la cheie, landing page, magazin online, dezvoltare aplicații, aplicații mobile"
   },
   "nav": {
     "home": "Acasă",
     "about": "Despre noi",
     "services": "Servicii",
+    "appDev": "Aplicații",
     "cases": "Cazuri",
     "blog": "Blog",
     "contacts": "Contacte"
@@ -139,6 +140,17 @@
           "Testare A/B",
           "Lansare rapidă",
           "Analitică"
+        ],
+        "ctaText": "Detalii"
+      },
+      {
+        "title": "Aplicații",
+        "description": "Aplicații mobile și web pentru afaceri. iOS, Android, soluții cross-platform — de la idee la lansare.",
+        "features": [
+          "iOS și Android",
+          "Aplicații web (PWA)",
+          "Cross-platform",
+          "Suport și actualizări"
         ],
         "ctaText": "Detalii"
       }
@@ -754,6 +766,8 @@
         }
       ],
       "detailsButton": "Detalii",
+      "appDevBanner": "Dezvoltăm și aplicații mobile și web",
+      "appDevBannerCta": "Află mai multe",
       "formTitle": "DISCUTA PROIECTUL",
       "formSubtitle": "Nu sunteti sigur ce pachet vi se potriveste? Povestiti despre proiect — vom sugera cea mai buna solutie."
     },
@@ -1095,6 +1109,120 @@
           ]
         }
       ]
+    },
+    "appDev": {
+      "meta": {
+        "title": "Dezvoltare aplicații",
+        "description": "Dezvoltăm aplicații mobile, web și cross-platform. De la idee la lansare — la cheie.",
+        "ogTitle": "Dezvoltare aplicații | NAKO Agency",
+        "ogDescription": "Dezvoltăm aplicații mobile, web și cross-platform. De la idee la lansare — la cheie."
+      },
+      "heroCaption": "Direcție nouă",
+      "heroTitle": "DEZVOLTARE APLICAȚII",
+      "heroDescription": "Creăm aplicații care rezolvă probleme reale de afaceri. Mobile, web, cross-platform — de la idee la lansare.",
+      "whyApp": {
+        "caption": "Avantaje",
+        "title": "DE CE O APLICAȚIE",
+        "items": [
+          {
+            "number": "01",
+            "title": "Disponibilitate 24/7",
+            "description": "Produsul dvs. este mereu în buzunarul clientului. Acces instant fără browser — o singură atingere și utilizatorul este deja înăuntru."
+          },
+          {
+            "number": "02",
+            "title": "Implicare",
+            "description": "Notificări push, personalizare, programe de loialitate. Aplicația construiește un canal direct de comunicare cu audiența."
+          },
+          {
+            "number": "03",
+            "title": "Creșterea afacerii",
+            "description": "Un nou canal de vânzări și interacțiune. Aplicația crește LTV-ul clienților și deschide oportunități de scalare."
+          }
+        ]
+      },
+      "types": {
+        "caption": "Direcții",
+        "title": "CE DEZVOLTĂM",
+        "items": [
+          {
+            "title": "Aplicații mobile",
+            "subtitle": "iOS / Android",
+            "description": "Aplicații native și cross-platform pentru smartphone-uri și tablete cu performanță optimă."
+          },
+          {
+            "title": "Aplicații web",
+            "subtitle": "SPA / PWA",
+            "description": "Aplicații web interactive care funcționează în browser. Rapide, responsive, cu capabilități offline."
+          },
+          {
+            "title": "Cross-platform",
+            "subtitle": "React Native / Flutter",
+            "description": "O singură bază de cod — toate platformele. Economie de buget cu menținerea calității experienței utilizatorului."
+          }
+        ]
+      },
+      "capabilities": {
+        "caption": "Capabilități",
+        "title": "CE PUTEM CONSTRUI",
+        "items": [
+          {
+            "title": "E-commerce",
+            "description": "Magazine mobile cu catalog, coș, plăți și urmărirea comenzilor."
+          },
+          {
+            "title": "Marketplace-uri",
+            "description": "Platforme care conectează vânzătorii și cumpărătorii cu sisteme de rating și recenzii."
+          },
+          {
+            "title": "Rezervări",
+            "description": "Sisteme de programare și rezervare pentru restaurante, hoteluri, clinici și servicii."
+          },
+          {
+            "title": "CRM și instrumente de business",
+            "description": "Aplicații interne pentru gestionarea proceselor, sarcinilor și echipei."
+          },
+          {
+            "title": "Platforme sociale",
+            "description": "Aplicații cu feed, chat-uri, profiluri și sisteme de abonament."
+          },
+          {
+            "title": "Educație și fitness",
+            "description": "Platforme de învățare, trackere de obiceiuri și aplicații pentru un stil de viață sănătos."
+          }
+        ]
+      },
+      "process": {
+        "caption": "Etape",
+        "title": "PROCESUL DE DEZVOLTARE",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Discutarea ideii",
+            "description": "Analizăm ideea dvs., definim publicul țintă, funcțiile cheie și modelul de afaceri."
+          },
+          {
+            "number": "02",
+            "title": "Prototip și design",
+            "description": "Creăm wireframes și UI design. Fiecare ecran este gândit pentru confortul utilizatorului."
+          },
+          {
+            "number": "03",
+            "title": "Dezvoltare",
+            "description": "Scriem cod curat cu focus pe performanță, securitate și scalabilitate."
+          },
+          {
+            "number": "04",
+            "title": "Testare",
+            "description": "Testăm pe dispozitive reale. Teste funcționale, de încărcare și UX."
+          },
+          {
+            "number": "05",
+            "title": "Lansare și suport",
+            "description": "Publicăm în App Store și Google Play. Asigurăm suport tehnic și actualizări."
+          }
+        ]
+      }
     },
     "blog": {
       "caption": "Articole",
