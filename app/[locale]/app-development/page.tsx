@@ -102,7 +102,7 @@ export default async function AppDevelopmentPage() {
 
           <RevealOnScroll direction="up" delay={0.3}>
             <CtaButton variant="primary" size="lg" className="hover-lift">
-              {tForm("cta")}
+              {t("heroCta")}
             </CtaButton>
           </RevealOnScroll>
         </Container>
