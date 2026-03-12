@@ -1,10 +1,10 @@
 {
   "meta": {
     "siteTitle": "NAKO Agency | Turnkey Website Development",
-    "siteDescription": "We create websites and apps for experts, e-commerce, and businesses. Premium-minimal design, speed, SEO.",
-    "ogTitle": "NAKO Agency | Turnkey Website & App Development",
-    "ogDescription": "We create websites and apps for experts, e-commerce, and businesses. Premium-minimal design, speed, SEO.",
-    "keywords": "website development, web design, web studio, turnkey website, landing page, online store, app development, mobile apps"
+    "siteDescription": "We build turnkey websites for experts, businesses and e-commerce that help attract leads, sell services and convert traffic into clients.",
+    "ogTitle": "NAKO Agency | Turnkey Websites for Business & Experts",
+    "ogDescription": "Strategy, design and development in one solution. Websites for experts, businesses, e-commerce, courses and events.",
+    "keywords": "website development, web design, web studio, turnkey website, landing page, online store, expert website, business website, app development"
   },
   "nav": {
     "home": "Home",
@@ -22,7 +22,7 @@
     "ariaCloseMenu": "Close menu"
   },
   "hero": {
-    "caption": "Full-cycle web studio",
+    "caption": "Full-cycle agency",
     "line1": "WEBSITE",
     "line2": "DEVELOPMENT",
     "line3": "TURNKEY",
@@ -30,16 +30,11 @@
     "subtitleExperts": "experts",
     "subtitleEcommerce": "e-commerce",
     "subtitleBusiness": "businesses",
+    "subtitleCourses": "courses",
+    "subtitleEvents": "events",
+    "offer": "Helping attract leads, sell services and convert traffic into clients",
     "cta": "Discuss project",
-    "ctaCases": "View cases",
-    "scroll": "Scroll",
-    "ariaScroll": "Scroll to next section",
-    "visualAlt": "Turnkey website development — web studio",
-    "fullBleedAlt": "Website creation process at NAKO Agency",
-    "fullBleedProcessAlt": "Creative process at NAKO Agency",
-    "fullBleedProcessOverlay": "CRAFT",
-    "fullBleedTeamAlt": "NAKO Agency team workspace",
-    "fullBleedTeamOverlay": "TEAM"
+    "ctaCases": "View cases"
   },
   "benefits": {
     "caption": "Why us",
@@ -47,38 +42,33 @@
     "items": [
       {
         "number": "01",
-        "title": "STRATEGY",
-        "subtitle": "Strategy and structure",
-        "description": "We start with deep analysis of your business, target audience, and competitors. We develop a site structure that guides visitors to the target action.",
-        "imageAlt": "Strategic website structure planning"
+        "title": "RESULTS",
+        "subtitle": "Websites for business results",
+        "description": "We build websites not for beauty, but for leads, sales and trust. Every element works towards conversion and commercial results."
       },
       {
         "number": "02",
-        "title": "DESIGN",
-        "subtitle": "Premium-minimal design",
-        "description": "We create a unique visual style without templates. Lots of whitespace, clear typography, thoughtful animation — a website that stands out and is remembered.",
-        "imageAlt": "Premium-minimal interface design"
+        "title": "FULL CYCLE",
+        "subtitle": "From brief to support",
+        "description": "Strategy, structure, copy, design, development, content, integrations, launch and support — all in one place. No need to find separate contractors."
       },
       {
         "number": "03",
-        "title": "SPEED",
-        "subtitle": "Speed and SEO",
-        "description": "We optimize every page for Core Web Vitals. Fast loading, proper semantics, technical SEO — your site will be loved by both Google and users.",
-        "imageAlt": "High loading speed and optimization"
+        "title": "PRESENTATION",
+        "subtitle": "Premium design + sales logic",
+        "description": "We combine stylish visual presentation with a well-thought-out structure and conversion logic. Premium, calm, modern — without unnecessary noise."
       },
       {
         "number": "04",
         "title": "INTEGRATIONS",
-        "subtitle": "Integrations (payments/CRM/Telegram)",
-        "description": "We connect payment systems, CRM, analytics, Telegram notifications, and any other services needed to automate your business.",
-        "imageAlt": "Payment system and CRM integrations"
+        "subtitle": "We integrate your website into business processes",
+        "description": "CRM, Telegram, email, analytics, payments — we connect everything needed so your website works as part of your system, not just a business card."
       },
       {
         "number": "05",
         "title": "SUPPORT",
-        "subtitle": "Post-launch support",
-        "description": "We don't abandon you after project delivery. Technical support, minor tweaks, consultations — we're here when you need us.",
-        "imageAlt": "Support team always in touch"
+        "subtitle": "We stay after launch",
+        "description": "We don't abandon you after delivery. Bugfixes, minor edits, consultations, monthly support — choose a convenient support format."
       }
     ]
   },
@@ -371,7 +361,7 @@
     "cta": "DISCUSS PROJECT",
     "ctaSubtitle": "Tell us about your project, and we'll suggest the best solution",
     "ctaButton": "Fill out the brief",
-    "description": "We build turnkey websites for experts, e-commerce, and businesses. Premium-minimal design that delivers results.",
+    "description": "We build modern turnkey websites for experts, businesses and digital projects, combining strategy, design and development in one solution.",
     "navTitle": "Navigation",
     "contactsTitle": "Contacts",
     "legalTitle": "Information",
@@ -457,12 +447,12 @@
     "about": {
       "heroCaption": "Introduction",
       "heroTitle": "ABOUT US",
-      "heroDescription": "We are a web studio that builds websites focused on results. Not just beautiful pages, but tools for growing your business.",
+      "heroDescription": "We are an agency that builds modern turnkey websites for experts, businesses and digital projects, combining strategy, design and development in one solution. Our goal is to make websites not just visually beautiful, but commercially strong and working for leads.",
       "approachCaption": "Philosophy",
       "approachTitle": "APPROACH",
-      "approachText1": "Every project starts with understanding your goals. We don't build websites 'like everyone else' — we create solutions for specific tasks.",
-      "approachText2": "Strategy → Design → Development → Results. Every stage is approved, every decision is justified.",
-      "approachText3": "Minimalism not for the sake of minimalism. We remove the unnecessary to leave what matters — what converts visitors into clients.",
+      "approachText1": "We build websites not for the sake of having one, but for business results. Every project starts with understanding your goals and audience.",
+      "approachText2": "Full cycle: from brief and messaging to launch and support. Strategy → Structure → Design → Development → Content → Launch.",
+      "approachText3": "Premium visual presentation with sales and conversion logic. We remove the unnecessary to leave what converts visitors into clients.",
       "approachVisualLabel": "Strategy first",
       "valuesCaption": "What we believe in",
       "valuesTitle": "VALUES",

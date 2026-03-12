@@ -94,15 +94,27 @@ export function Hero({ imageSrc }: HeroProps) {
 
         {/* Subtitle */}
         <motion.p
-          className="text-body-lg text-white/70 max-w-2xl mx-auto mb-10"
+          className="text-body-lg text-white/70 max-w-2xl mx-auto mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: duration.normal, ease, delay: 0.6 }}
         >
           {t("subtitle")}{" "}
           <span className="text-white font-medium">{t("subtitleExperts")}</span>,{" "}
-          <span className="text-white font-medium">{t("subtitleEcommerce")}</span>{" & "}
-          <span className="text-white font-medium">{t("subtitleBusiness")}</span>
+          <span className="text-white font-medium">{t("subtitleBusiness")}</span>,{" "}
+          <span className="text-white font-medium">{t("subtitleEcommerce")}</span>,{" "}
+          <span className="text-white font-medium">{t("subtitleCourses")}</span>{" & "}
+          <span className="text-white font-medium">{t("subtitleEvents")}</span>
+        </motion.p>
+
+        {/* Offer line */}
+        <motion.p
+          className="text-body text-white/50 max-w-xl mx-auto mb-10"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: duration.normal, ease, delay: 0.7 }}
+        >
+          {t("offer")}
         </motion.p>
 
         {/* 2 CTA buttons */}
