@@ -574,202 +574,389 @@
       "briefButton": "Fill out the brief"
     },
     "services": {
-      "caption": "Packages",
+      "caption": "Services & Packages",
       "title": "SERVICES",
-      "description": "Four packages for different tasks. Each includes everything needed for a successful launch — from strategy to support.",
-      "packages": [
+      "description": "Six directions, three packages each. Choose the project type and the right level — from a quick launch to full business packaging.",
+      "regionToggle": {
+        "ukraine": "Ukraine",
+        "europe": "Europe"
+      },
+      "tierLabels": {
+        "start": "Start",
+        "standard": "Standard",
+        "pro": "Pro"
+      },
+      "recommended": "Recommended",
+      "categories": [
         {
-          "id": "expert",
-          "title": "Expert website",
-          "subtitle": "Personal brand",
-          "description": "For specialists, coaches, consultants. A website that sells your expertise and attracts clients through content and trust.",
-          "price": "",
-          "timeline": "up to 21 days",
-          "features": [
-            "Up to 7 pages",
-            "Unique design",
-            "Responsive layout",
-            "Basic SEO",
-            "Contact form",
-            "Analytics setup",
-            "30 days support"
-          ],
-          "idealFor": [
-            "Coaches and consultants",
-            "Psychologists and therapists",
-            "Experts and speakers",
-            "Tutors and mentors"
+          "id": "experts",
+          "title": "Websites for Experts",
+          "description": "We build websites for experts, consultants, mentors, photographers, designers and specialists who need a strong personal brand and a flow of leads.",
+          "tiers": [
+            {
+              "tier": "start",
+              "audience": "For experts, consultants, mentors and specialists who need a quick basic launch",
+              "features": [
+                "1–3 pages",
+                "Basic structure",
+                "Custom design",
+                "Responsive layout",
+                "Contact form",
+                "Telegram/email integration",
+                "Basic analytics",
+                "Basic SEO"
+              ],
+              "timeline": "2–3 weeks",
+              "priceUA": "€500–900",
+              "priceEU": "€1,800–3,000"
+            },
+            {
+              "tier": "standard",
+              "audience": "For experts who need a full website with strong presentation and trust",
+              "features": [
+                "4–7 pages",
+                "Thought-out structure",
+                "Custom design",
+                "CTA blocks",
+                "Contact forms",
+                "Analytics",
+                "Basic SEO",
+                "Content population",
+                "Basic integrations"
+              ],
+              "timeline": "3–5 weeks",
+              "priceUA": "€900–1,800",
+              "priceEU": "€3,000–6,000"
+            },
+            {
+              "tier": "pro",
+              "audience": "For experts and personal brands who need a strong image and sales website",
+              "features": [
+                "6–10+ pages",
+                "UX prototype",
+                "Strong personal brand packaging",
+                "Unique design",
+                "Animations",
+                "Advanced CTAs",
+                "CRM / Telegram / email integrations",
+                "Event analytics",
+                "Ad-ready setup"
+              ],
+              "timeline": "4–6 weeks",
+              "priceUA": "€1,800–3,000",
+              "priceEU": "€6,000–10,000"
+            }
           ]
         },
         {
-          "id": "ecommerce",
-          "title": "Online store",
-          "subtitle": "E-commerce solution",
-          "description": "Full e-commerce with product catalog, cart, online payments, and CRM integration. Automation of sales and customer notifications.",
-          "price": "",
-          "timeline": "up to 45 days",
-          "features": [
-            "Product catalog",
-            "Shopping cart",
-            "Online payments",
-            "CRM integration",
-            "Telegram notifications",
-            "Admin panel",
-            "30 days support"
-          ],
-          "idealFor": [
-            "Clothing and accessories",
-            "Cosmetics and beauty",
-            "Food and drinks",
-            "Digital products"
-          ]
-        },
-        {
-          "id": "corporate",
-          "title": "Corporate website",
-          "subtitle": "Business solution",
-          "description": "Multi-page website for companies focused on image, trust, and client acquisition. Showcasing your team, services, and achievements.",
-          "price": "",
-          "timeline": "up to 30 days",
-          "features": [
-            "Up to 15 pages",
-            "Unique design",
-            "Responsive layout",
-            "Basic SEO",
-            "Contact form",
-            "Team page",
-            "Analytics setup",
-            "30 days support"
-          ],
-          "idealFor": [
-            "Companies and agencies",
-            "Law firms",
-            "Medical clinics",
-            "Construction companies"
+          "id": "business",
+          "title": "Websites for Business",
+          "description": "We create websites for companies, studios, local businesses and service projects to present services, build trust and attract clients.",
+          "tiers": [
+            {
+              "tier": "start",
+              "audience": "For companies, studios and local businesses that need a basic service website",
+              "features": [
+                "5–7 pages",
+                "Basic structure",
+                "Custom design",
+                "Responsive layout",
+                "Contact forms",
+                "Basic analytics",
+                "Basic SEO",
+                "Standard service blocks"
+              ],
+              "timeline": "3–5 weeks",
+              "priceUA": "€650–1,300",
+              "priceEU": "€2,500–5,000"
+            },
+            {
+              "tier": "standard",
+              "audience": "For businesses that need a full website with service presentation and trust",
+              "features": [
+                "8–12 pages",
+                "Unique structure",
+                "CTA blocks",
+                "Service pages",
+                "Cases and reviews",
+                "Contact forms",
+                "Analytics",
+                "Basic SEO",
+                "Basic integrations"
+              ],
+              "timeline": "4–7 weeks",
+              "priceUA": "€1,300–2,800",
+              "priceEU": "€5,000–10,000"
+            },
+            {
+              "tier": "pro",
+              "audience": "For companies with complex structure, multiple directions and advanced functionality",
+              "features": [
+                "10–20+ pages",
+                "UX prototype",
+                "Complex structure",
+                "Blog / news",
+                "Multilingual",
+                "CRM / email / Telegram integrations",
+                "Advanced analytics",
+                "Strong visual presentation"
+              ],
+              "timeline": "6–10 weeks",
+              "priceUA": "€2,800–4,500",
+              "priceEU": "€10,000–20,000"
+            }
           ]
         },
         {
           "id": "landing",
-          "title": "Landing page",
-          "subtitle": "High conversion",
-          "description": "One-page website with high conversion for product launch, service, or advertising campaign. Fast development, maximum impact.",
-          "price": "",
-          "timeline": "up to 14 days",
-          "features": [
-            "One-page design",
-            "A/B testing ready",
-            "Lead forms",
-            "Speed optimized",
-            "Analytics",
-            "Mobile-first",
-            "14 days support"
-          ],
-          "idealFor": [
-            "Product launches",
-            "Ad campaigns",
-            "Events and webinars",
-            "Service promotions"
+          "title": "Landing & Promo Pages",
+          "description": "We create landing pages for services, products, advertising, launches, special offers and events.",
+          "tiers": [
+            {
+              "tier": "start",
+              "audience": "For a quick launch of a simple landing page",
+              "features": [
+                "1 page",
+                "Basic structure",
+                "Responsive layout",
+                "Contact form",
+                "Telegram/email",
+                "Basic analytics"
+              ],
+              "timeline": "1–2 weeks",
+              "priceUA": "€400–700",
+              "priceEU": "€1,500–2,500"
+            },
+            {
+              "tier": "standard",
+              "audience": "For advertising, service launch, product or special offer",
+              "features": [
+                "Full landing page",
+                "Custom design",
+                "CTA blocks",
+                "Contact forms",
+                "CRM/email",
+                "GA4/GTM/Pixel",
+                "Basic SEO"
+              ],
+              "timeline": "2–4 weeks",
+              "priceUA": "€500–1,400",
+              "priceEU": "€1,800–4,500"
+            },
+            {
+              "tier": "pro",
+              "audience": "For strong offer packaging and higher conversion",
+              "features": [
+                "UX prototype",
+                "Enhanced design",
+                "Animations",
+                "Micro-UX",
+                "Advanced event analytics",
+                "A/B test ready",
+                "Deep messaging strategy"
+              ],
+              "timeline": "3–6 weeks",
+              "priceUA": "€1,400–3,000",
+              "priceEU": "€4,500–12,000"
+            }
+          ]
+        },
+        {
+          "id": "ecommerce",
+          "title": "Online Stores",
+          "description": "We build user-friendly online stores with a well-thought-out structure, catalog, product cards and purchase logic.",
+          "tiers": [
+            {
+              "tier": "start",
+              "audience": "For a small store with basic sales functionality",
+              "features": [
+                "Product catalog",
+                "Product card",
+                "Shopping cart",
+                "Standard payment/delivery",
+                "Responsive layout",
+                "Basic analytics",
+                "Basic SEO"
+              ],
+              "timeline": "5–8 weeks",
+              "priceUA": "€2,500–4,500",
+              "priceEU": "€10,000–20,000"
+            },
+            {
+              "tier": "standard",
+              "audience": "For a full-featured online store with convenient purchase logic",
+              "features": [
+                "Catalog with filters",
+                "Product cards",
+                "Cart and payment",
+                "Delivery",
+                "Basic admin panel",
+                "E-commerce analytics",
+                "Integrations as needed"
+              ],
+              "timeline": "6–12 weeks",
+              "priceUA": "€4,500–7,000",
+              "priceEU": "€20,000–40,000"
+            },
+            {
+              "tier": "pro",
+              "audience": "For stores with complex structure and advanced functionality",
+              "features": [
+                "Advanced filters and search",
+                "Personal account",
+                "User roles",
+                "CRM / ERP / PIM integrations",
+                "Performance optimization",
+                "Advanced analytics",
+                "Complex UX"
+              ],
+              "timeline": "10–20+ weeks",
+              "priceUA": "€7,000–18,000",
+              "priceEU": "€40,000–120,000"
+            }
+          ]
+        },
+        {
+          "id": "courses",
+          "title": "Websites for Courses & Online Schools",
+          "description": "We create websites for educational projects, author programs, online courses and schools with clear structure and strong presentation.",
+          "tiers": [
+            {
+              "tier": "start",
+              "audience": "For launching a single course, program or cohort",
+              "features": [
+                "Course landing page",
+                "Program description",
+                "Pricing tiers",
+                "Contact form",
+                "Telegram/email",
+                "Basic analytics"
+              ],
+              "timeline": "2–3 weeks",
+              "priceUA": "€500–1,000",
+              "priceEU": "€1,800–3,500"
+            },
+            {
+              "tier": "standard",
+              "audience": "For courses and educational projects with multiple content blocks",
+              "features": [
+                "4–8 pages",
+                "Course program",
+                "Trust blocks",
+                "FAQ",
+                "Pricing tiers",
+                "Contact forms",
+                "Basic integrations",
+                "Analytics",
+                "Basic SEO"
+              ],
+              "timeline": "3–5 weeks",
+              "priceUA": "€1,000–2,200",
+              "priceEU": "€3,500–7,000"
+            },
+            {
+              "tier": "pro",
+              "audience": "For online schools and educational brands with a more complex funnel",
+              "features": [
+                "Multi-page website",
+                "Strong offer packaging",
+                "UX prototype",
+                "Thought-out funnel",
+                "CRM / email / Telegram / payment integrations",
+                "Event analytics"
+              ],
+              "timeline": "4–7 weeks",
+              "priceUA": "€2,200–4,000",
+              "priceEU": "€7,000–12,000"
+            }
+          ]
+        },
+        {
+          "id": "events",
+          "title": "Event Websites",
+          "description": "We build websites for events, conferences, presentations, workshops and special projects.",
+          "tiers": [
+            {
+              "tier": "start",
+              "audience": "For small events, workshops and local happenings",
+              "features": [
+                "One-page website",
+                "Date and program",
+                "Speakers",
+                "Registration",
+                "Map and contacts"
+              ],
+              "timeline": "1–2 weeks",
+              "priceUA": "€400–800",
+              "priceEU": "€1,500–3,000"
+            },
+            {
+              "tier": "standard",
+              "audience": "For full-scale events, conferences and presentations",
+              "features": [
+                "Event website",
+                "Program",
+                "Speakers and partners",
+                "Registration",
+                "FAQ",
+                "CTA blocks",
+                "Analytics",
+                "Responsive layout"
+              ],
+              "timeline": "2–4 weeks",
+              "priceUA": "€800–1,800",
+              "priceEU": "€3,000–6,000"
+            },
+            {
+              "tier": "pro",
+              "audience": "For events where strong presentation and advanced functionality matter",
+              "features": [
+                "UX prototype",
+                "Animations",
+                "Advanced CTAs",
+                "Registration / email / Telegram integrations",
+                "Event analytics"
+              ],
+              "timeline": "3–5 weeks",
+              "priceUA": "€1,800–3,000",
+              "priceEU": "€6,000–10,000"
+            }
           ]
         }
       ],
-      "priceLabel": "Cost",
       "timelineLabel": "Timeline",
-      "orderButton": "Order",
-      "featuresTitle": "What's included",
-      "idealForTitle": "Ideal for",
-      "comparisonCaption": "Comparison",
-      "comparisonTitle": "PACKAGES",
-      "comparisonRows": [
-        {
-          "label": "Number of pages",
-          "expert": "Up to 7",
-          "ecommerce": "Unlimited",
-          "corporate": "Up to 15",
-          "landing": "1"
-        },
-        {
-          "label": "Unique design",
-          "expert": "✓",
-          "ecommerce": "✓",
-          "corporate": "✓",
-          "landing": "✓"
-        },
-        {
-          "label": "Responsive (mobile)",
-          "expert": "✓",
-          "ecommerce": "✓",
-          "corporate": "✓",
-          "landing": "✓"
-        },
-        {
-          "label": "Product catalog",
-          "expert": "—",
-          "ecommerce": "✓",
-          "corporate": "—",
-          "landing": "—"
-        },
-        {
-          "label": "Online payments",
-          "expert": "—",
-          "ecommerce": "✓",
-          "corporate": "—",
-          "landing": "—"
-        },
-        {
-          "label": "Application form",
-          "expert": "✓",
-          "ecommerce": "✓",
-          "corporate": "✓",
-          "landing": "✓"
-        },
-        {
-          "label": "CRM integration",
-          "expert": "Optional",
-          "ecommerce": "✓",
-          "corporate": "Optional",
-          "landing": "Optional"
-        },
-        {
-          "label": "Blog",
-          "expert": "Optional",
-          "ecommerce": "Optional",
-          "corporate": "Optional",
-          "landing": "—"
-        },
-        {
-          "label": "Basic SEO",
-          "expert": "✓",
-          "ecommerce": "✓",
-          "corporate": "✓",
-          "landing": "✓"
-        },
-        {
-          "label": "Analytics",
-          "expert": "✓",
-          "ecommerce": "✓",
-          "corporate": "✓",
-          "landing": "✓"
-        },
-        {
-          "label": "Timeline",
-          "expert": "up to 21 days",
-          "ecommerce": "up to 45 days",
-          "corporate": "up to 30 days",
-          "landing": "up to 14 days"
-        },
-        {
-          "label": "Support",
-          "expert": "30 days",
-          "ecommerce": "30 days",
-          "corporate": "30 days",
-          "landing": "14 days"
-        }
-      ],
-      "detailsButton": "Learn more",
+      "priceLabel": "Price",
+      "orderButton": "Discuss Project",
+      "featuresTitle": "What's Included",
+      "audienceTitle": "Who It's For",
+      "additionalServices": {
+        "caption": "Additionally",
+        "title": "ADDITIONAL SERVICES",
+        "items": [
+          {
+            "title": "CRM, Telegram, Email & Analytics Integration",
+            "description": "We connect the services you need so your website is integrated into your business processes"
+          },
+          {
+            "title": "Payment & Lead Form Setup",
+            "description": "We set up everything needed for convenient lead capture and payments"
+          },
+          {
+            "title": "Website Content Population",
+            "description": "We help collect, format and place texts, photos and information on your website"
+          },
+          {
+            "title": "Post-Launch Technical Support",
+            "description": "We support the project after release within the agreed support format"
+          }
+        ]
+      },
+      "priceNote": "Final price depends on website structure, number of pages, content volume, design level and required integrations.",
+      "detailsButton": "Learn More",
       "appDevBanner": "We also develop mobile and web applications",
       "appDevBannerCta": "Learn more",
-      "formTitle": "DISCUSS PROJECT",
-      "formSubtitle": "Not sure which package suits you? Tell us about your project — we'll suggest the best solution."
+      "formTitle": "DISCUSS A PROJECT",
+      "formSubtitle": "Not sure which package fits? Tell us about your project — we'll find the best solution."
     },
     "brief": {
       "caption": "Submit request",

@@ -574,202 +574,389 @@
       "briefButton": "Completeaza brieful"
     },
     "services": {
-      "caption": "Pachete",
+      "caption": "Servicii și pachete",
       "title": "SERVICII",
-      "description": "Patru pachete pentru diferite sarcini. Fiecare include tot ce e necesar pentru o lansare de succes — de la strategie la suport.",
-      "packages": [
+      "description": "Șase direcții, trei pachete fiecare. Alegeți tipul proiectului și nivelul potrivit — de la lansare rapidă până la ambalare completă a afacerii.",
+      "regionToggle": {
+        "ukraine": "Ucraina",
+        "europe": "Europa"
+      },
+      "tierLabels": {
+        "start": "Start",
+        "standard": "Standard",
+        "pro": "Pro"
+      },
+      "recommended": "Recomandat",
+      "categories": [
         {
-          "id": "expert",
-          "title": "Site pentru expert",
-          "subtitle": "Brand personal",
-          "description": "Pentru specialisti, coachi, consultanti. Un site care va vinde expertiza si atrage clienti prin continut si incredere.",
-          "price": "",
-          "timeline": "până la 21 zile",
-          "features": [
-            "Pana la 7 pagini",
-            "Design unic",
-            "Layout responsiv",
-            "SEO de baza",
-            "Formular de contact",
-            "Configurare analitica",
-            "30 zile suport"
-          ],
-          "idealFor": [
-            "Coachi si consultanti",
-            "Psihologi si terapeuti",
-            "Experti si speakeri",
-            "Tutori si mentori"
+          "id": "experts",
+          "title": "Site-uri pentru experți",
+          "description": "Dezvoltăm site-uri pentru experți, consultanți, mentori, fotografi, designeri și specialiști care au nevoie de un brand personal puternic și un flux de cereri.",
+          "tiers": [
+            {
+              "tier": "start",
+              "audience": "Pentru experți, consultanți, mentori și specialiști care au nevoie de o lansare rapidă de bază",
+              "features": [
+                "1–3 pagini",
+                "Structură de bază",
+                "Design individual",
+                "Layout responsiv",
+                "Formular de contact",
+                "Conectare Telegram/email",
+                "Analiză de bază",
+                "SEO de bază"
+              ],
+              "timeline": "2–3 săptămâni",
+              "priceUA": "€500–900",
+              "priceEU": "€1 800–3 000"
+            },
+            {
+              "tier": "standard",
+              "audience": "Pentru experți care au nevoie de un site complet cu prezentare puternică și încredere",
+              "features": [
+                "4–7 pagini",
+                "Structură gândită",
+                "Design individual",
+                "Blocuri CTA",
+                "Formulare de contact",
+                "Analiză",
+                "SEO de bază",
+                "Completare cu conținut principal",
+                "Integrări de bază"
+              ],
+              "timeline": "3–5 săptămâni",
+              "priceUA": "€900–1 800",
+              "priceEU": "€3 000–6 000"
+            },
+            {
+              "tier": "pro",
+              "audience": "Pentru experți și branduri personale care au nevoie de un site puternic de imagine și vânzări",
+              "features": [
+                "6–10+ pagini",
+                "Prototip UX",
+                "Ambalare puternică a brandului personal",
+                "Design unic",
+                "Animații",
+                "CTA avansate",
+                "Integrări CRM / Telegram / email",
+                "Analiză de evenimente",
+                "Pregătire pentru publicitate"
+              ],
+              "timeline": "4–6 săptămâni",
+              "priceUA": "€1 800–3 000",
+              "priceEU": "€6 000–10 000"
+            }
           ]
         },
         {
-          "id": "ecommerce",
-          "title": "Magazin online",
-          "subtitle": "Solutie e-commerce",
-          "description": "E-commerce complet cu catalog, cos, plati online si integrare CRM. Automatizare vanzari si notificari clienti.",
-          "price": "",
-          "timeline": "până la 45 zile",
-          "features": [
-            "Catalog produse",
-            "Cos de cumparaturi",
-            "Plati online",
-            "Integrare CRM",
-            "Notificari Telegram",
-            "Panou admin",
-            "30 zile suport"
-          ],
-          "idealFor": [
-            "Imbracaminte si accesorii",
-            "Cosmetice si beauty",
-            "Alimente si bauturi",
-            "Produse digitale"
-          ]
-        },
-        {
-          "id": "corporate",
-          "title": "Site corporativ",
-          "subtitle": "Solutie de afaceri",
-          "description": "Site multi-pagina pentru companii, axat pe imagine, incredere si atragerea clientilor. Prezentarea echipei, serviciilor si realizarilor.",
-          "price": "",
-          "timeline": "până la 30 zile",
-          "features": [
-            "Până la 15 pagini",
-            "Design unic",
-            "Layout responsiv",
-            "SEO de baza",
-            "Formular de contact",
-            "Pagina echipei",
-            "Configurare analitica",
-            "30 zile suport"
-          ],
-          "idealFor": [
-            "Companii si agentii",
-            "Firme de avocatura",
-            "Clinici medicale",
-            "Companii de constructii"
+          "id": "business",
+          "title": "Site-uri pentru afaceri",
+          "description": "Creăm site-uri pentru companii, studiouri, afaceri locale și proiecte de servicii pentru a prezenta serviciile, a inspira încredere și a atrage clienți.",
+          "tiers": [
+            {
+              "tier": "start",
+              "audience": "Pentru companii, studiouri și afaceri locale care au nevoie de un site de bază pentru servicii",
+              "features": [
+                "5–7 pagini",
+                "Structură de bază",
+                "Design individual",
+                "Layout responsiv",
+                "Formulare de contact",
+                "Analiză de bază",
+                "SEO de bază",
+                "Blocuri standard de servicii"
+              ],
+              "timeline": "3–5 săptămâni",
+              "priceUA": "€650–1 300",
+              "priceEU": "€2 500–5 000"
+            },
+            {
+              "tier": "standard",
+              "audience": "Pentru afaceri care au nevoie de un site complet cu prezentarea serviciilor și încredere",
+              "features": [
+                "8–12 pagini",
+                "Structură unică",
+                "Blocuri CTA",
+                "Pagini de servicii",
+                "Cazuri și recenzii",
+                "Formulare de contact",
+                "Analiză",
+                "SEO de bază",
+                "Integrări de bază"
+              ],
+              "timeline": "4–7 săptămâni",
+              "priceUA": "€1 300–2 800",
+              "priceEU": "€5 000–10 000"
+            },
+            {
+              "tier": "pro",
+              "audience": "Pentru companii cu structură mai complexă, mai multe direcții și funcționalitate extinsă",
+              "features": [
+                "10–20+ pagini",
+                "Prototip UX",
+                "Structură complexă",
+                "Blog / știri",
+                "Multilingv",
+                "Integrări CRM / email / Telegram",
+                "Analiză avansată",
+                "Prezentare vizuală puternică"
+              ],
+              "timeline": "6–10 săptămâni",
+              "priceUA": "€2 800–4 500",
+              "priceEU": "€10 000–20 000"
+            }
           ]
         },
         {
           "id": "landing",
-          "title": "Pagina de aterizare",
-          "subtitle": "Conversie ridicata",
-          "description": "Site cu o singura pagina cu conversie ridicata pentru lansarea unui produs, serviciu sau campanie publicitara.",
-          "price": "",
-          "timeline": "până la 14 zile",
-          "features": [
-            "Design o pagina",
-            "Pregatit pentru A/B testing",
-            "Formulare de captare",
-            "Optimizare viteza",
-            "Analitica",
-            "Mobile-first",
-            "14 zile suport"
-          ],
-          "idealFor": [
-            "Lansari de produse",
-            "Campanii publicitare",
-            "Evenimente si webinarii",
-            "Promotii"
+          "title": "Landing și site-uri promo",
+          "description": "Creăm pagini de destinație pentru servicii, produse, publicitate, lansări, oferte speciale și evenimente.",
+          "tiers": [
+            {
+              "tier": "start",
+              "audience": "Pentru lansarea rapidă a unei pagini de destinație simple",
+              "features": [
+                "1 pagină",
+                "Structură de bază",
+                "Layout responsiv",
+                "Formular de contact",
+                "Telegram/email",
+                "Analiză de bază"
+              ],
+              "timeline": "1–2 săptămâni",
+              "priceUA": "€400–700",
+              "priceEU": "€1 500–2 500"
+            },
+            {
+              "tier": "standard",
+              "audience": "Pentru publicitate, lansarea unui serviciu, produs sau ofertă specială",
+              "features": [
+                "Landing complet",
+                "Design individual",
+                "Blocuri CTA",
+                "Formulare de contact",
+                "CRM/email",
+                "GA4/GTM/Pixel",
+                "SEO de bază"
+              ],
+              "timeline": "2–4 săptămâni",
+              "priceUA": "€500–1 400",
+              "priceEU": "€1 800–4 500"
+            },
+            {
+              "tier": "pro",
+              "audience": "Pentru ambalare puternică a ofertei și conversie mai mare",
+              "features": [
+                "Prototip UX",
+                "Design îmbunătățit",
+                "Animații",
+                "Micro-UX",
+                "Analiză avansată de evenimente",
+                "Pregătire pentru A/B",
+                "Strategie profundă de mesaje"
+              ],
+              "timeline": "3–6 săptămâni",
+              "priceUA": "€1 400–3 000",
+              "priceEU": "€4 500–12 000"
+            }
+          ]
+        },
+        {
+          "id": "ecommerce",
+          "title": "Magazine online",
+          "description": "Dezvoltăm magazine online convenabile cu o structură bine gândită, catalog, fișe de produse și logica achiziției.",
+          "tiers": [
+            {
+              "tier": "start",
+              "audience": "Pentru un magazin mic cu funcționalitate de bază pentru vânzări",
+              "features": [
+                "Catalog de produse",
+                "Fișă de produs",
+                "Coș de cumpărături",
+                "Plată/livrare standard",
+                "Layout responsiv",
+                "Analiză de bază",
+                "SEO de bază"
+              ],
+              "timeline": "5–8 săptămâni",
+              "priceUA": "€2 500–4 500",
+              "priceEU": "€10 000–20 000"
+            },
+            {
+              "tier": "standard",
+              "audience": "Pentru un magazin online complet cu logica convenabilă de achiziție",
+              "features": [
+                "Catalog cu filtre",
+                "Fișe de produse",
+                "Coș și plată",
+                "Livrare",
+                "Panou de administrare de bază",
+                "Analiză e-commerce",
+                "Integrări după necesitate"
+              ],
+              "timeline": "6–12 săptămâni",
+              "priceUA": "€4 500–7 000",
+              "priceEU": "€20 000–40 000"
+            },
+            {
+              "tier": "pro",
+              "audience": "Pentru magazine cu structură complexă și funcționalitate extinsă",
+              "features": [
+                "Filtre avansate și căutare",
+                "Cont personal",
+                "Roluri de utilizatori",
+                "Integrări CRM / ERP / PIM",
+                "Performanță",
+                "Analiză avansată",
+                "UX complex"
+              ],
+              "timeline": "10–20+ săptămâni",
+              "priceUA": "€7 000–18 000",
+              "priceEU": "€40 000–120 000"
+            }
+          ]
+        },
+        {
+          "id": "courses",
+          "title": "Site-uri pentru cursuri și școli online",
+          "description": "Creăm site-uri pentru proiecte educaționale, programe de autor, cursuri online și școli cu o structură clară și o prezentare puternică.",
+          "tiers": [
+            {
+              "tier": "start",
+              "audience": "Pentru lansarea unui singur curs, program sau flux",
+              "features": [
+                "Landing de curs",
+                "Descrierea programului",
+                "Tarife",
+                "Formular de contact",
+                "Telegram/email",
+                "Analiză de bază"
+              ],
+              "timeline": "2–3 săptămâni",
+              "priceUA": "€500–1 000",
+              "priceEU": "€1 800–3 500"
+            },
+            {
+              "tier": "standard",
+              "audience": "Pentru cursuri și proiecte educaționale cu mai multe blocuri de conținut",
+              "features": [
+                "4–8 pagini",
+                "Programa cursului",
+                "Blocuri de încredere",
+                "FAQ",
+                "Tarife",
+                "Formulare de contact",
+                "Integrări de bază",
+                "Analiză",
+                "SEO de bază"
+              ],
+              "timeline": "3–5 săptămâni",
+              "priceUA": "€1 000–2 200",
+              "priceEU": "€3 500–7 000"
+            },
+            {
+              "tier": "pro",
+              "audience": "Pentru școli online și branduri educaționale cu o pâlnie mai complexă",
+              "features": [
+                "Site multipagină",
+                "Ambalare puternică a ofertei",
+                "Prototip UX",
+                "Pâlnie gândită",
+                "Integrări CRM / email / Telegram / plăți",
+                "Analiză de evenimente"
+              ],
+              "timeline": "4–7 săptămâni",
+              "priceUA": "€2 200–4 000",
+              "priceEU": "€7 000–12 000"
+            }
+          ]
+        },
+        {
+          "id": "events",
+          "title": "Site-uri pentru evenimente",
+          "description": "Dezvoltăm site-uri pentru evenimente, conferințe, prezentări, ateliere și proiecte speciale.",
+          "tiers": [
+            {
+              "tier": "start",
+              "audience": "Pentru evenimente mici, ateliere și evenimente locale",
+              "features": [
+                "Site de o pagină",
+                "Data și programul",
+                "Speakeri",
+                "Înregistrare",
+                "Hartă și contacte"
+              ],
+              "timeline": "1–2 săptămâni",
+              "priceUA": "€400–800",
+              "priceEU": "€1 500–3 000"
+            },
+            {
+              "tier": "standard",
+              "audience": "Pentru evenimente complete, conferințe și prezentări",
+              "features": [
+                "Site de eveniment",
+                "Program",
+                "Speakeri și parteneri",
+                "Înregistrare",
+                "FAQ",
+                "Blocuri CTA",
+                "Analiză",
+                "Layout responsiv"
+              ],
+              "timeline": "2–4 săptămâni",
+              "priceUA": "€800–1 800",
+              "priceEU": "€3 000–6 000"
+            },
+            {
+              "tier": "pro",
+              "audience": "Pentru evenimente unde prezentarea puternică și funcționalitatea extinsă contează",
+              "features": [
+                "Prototip UX",
+                "Animații",
+                "CTA avansate",
+                "Integrări înregistrare / email / Telegram",
+                "Analiză de evenimente"
+              ],
+              "timeline": "3–5 săptămâni",
+              "priceUA": "€1 800–3 000",
+              "priceEU": "€6 000–10 000"
+            }
           ]
         }
       ],
-      "priceLabel": "Cost",
-      "timelineLabel": "Termene",
-      "orderButton": "Comanda",
-      "featuresTitle": "Ce include",
-      "idealForTitle": "Ideal pentru",
-      "comparisonCaption": "Comparatie",
-      "comparisonTitle": "PACHETE",
-      "comparisonRows": [
-        {
-          "label": "Numar de pagini",
-          "expert": "Pana la 7",
-          "ecommerce": "Nelimitat",
-          "corporate": "Până la 15",
-          "landing": "1"
-        },
-        {
-          "label": "Design unic",
-          "expert": "✓",
-          "ecommerce": "✓",
-          "corporate": "✓",
-          "landing": "✓"
-        },
-        {
-          "label": "Responsive (mobil)",
-          "expert": "✓",
-          "ecommerce": "✓",
-          "corporate": "✓",
-          "landing": "✓"
-        },
-        {
-          "label": "Catalog produse",
-          "expert": "—",
-          "ecommerce": "✓",
-          "corporate": "—",
-          "landing": "—"
-        },
-        {
-          "label": "Plati online",
-          "expert": "—",
-          "ecommerce": "✓",
-          "corporate": "—",
-          "landing": "—"
-        },
-        {
-          "label": "Formular cerere",
-          "expert": "✓",
-          "ecommerce": "✓",
-          "corporate": "✓",
-          "landing": "✓"
-        },
-        {
-          "label": "Integrare CRM",
-          "expert": "Optional",
-          "ecommerce": "✓",
-          "corporate": "Optional",
-          "landing": "Optional"
-        },
-        {
-          "label": "Blog",
-          "expert": "Optional",
-          "ecommerce": "Optional",
-          "corporate": "Optional",
-          "landing": "—"
-        },
-        {
-          "label": "SEO de baza",
-          "expert": "✓",
-          "ecommerce": "✓",
-          "corporate": "✓",
-          "landing": "✓"
-        },
-        {
-          "label": "Analitice",
-          "expert": "✓",
-          "ecommerce": "✓",
-          "corporate": "✓",
-          "landing": "✓"
-        },
-        {
-          "label": "Termene",
-          "expert": "până la 21 zile",
-          "ecommerce": "până la 45 zile",
-          "corporate": "până la 30 zile",
-          "landing": "până la 14 zile"
-        },
-        {
-          "label": "Suport",
-          "expert": "30 zile",
-          "ecommerce": "30 zile",
-          "corporate": "30 zile",
-          "landing": "14 zile"
-        }
-      ],
-      "detailsButton": "Detalii",
-      "appDevBanner": "Dezvoltăm și aplicații mobile și web",
-      "appDevBannerCta": "Află mai multe",
-      "formTitle": "DISCUTA PROIECTUL",
-      "formSubtitle": "Nu sunteti sigur ce pachet vi se potriveste? Povestiti despre proiect — vom sugera cea mai buna solutie."
+      "timelineLabel": "Termen",
+      "priceLabel": "Preț",
+      "orderButton": "Discutați proiectul",
+      "featuresTitle": "Ce este inclus",
+      "audienceTitle": "Pentru cine",
+      "additionalServices": {
+        "caption": "Suplimentar",
+        "title": "SERVICII SUPLIMENTARE",
+        "items": [
+          {
+            "title": "Integrare CRM, Telegram, email și analiză",
+            "description": "Conectăm serviciile necesare pentru ca site-ul să fie integrat în procesele de afaceri"
+          },
+          {
+            "title": "Configurare plăți și formulare de contact",
+            "description": "Configurăm tot ce este necesar pentru primirea convenabilă a cererilor și plăților"
+          },
+          {
+            "title": "Completarea site-ului cu conținut",
+            "description": "Ajutăm la colectarea, formatarea și plasarea textelor, fotografiilor și informațiilor pe site"
+          },
+          {
+            "title": "Suport tehnic după lansare",
+            "description": "Însoțim proiectul după lansare în cadrul formatului convenit de suport"
+          }
+        ]
+      },
+      "priceNote": "Prețul final depinde de structura site-ului, numărul de pagini, volumul conținutului, nivelul designului și integrările necesare.",
+      "detailsButton": "Mai multe detalii",
+      "appDevBanner": "De asemenea, dezvoltăm aplicații mobile și web",
+      "appDevBannerCta": "Aflați mai mult",
+      "formTitle": "DISCUTAȚI UN PROIECT",
+      "formSubtitle": "Nu sunteți sigur care pachet vi se potrivește? Spuneți-ne despre proiect — vom găsi cea mai bună soluție."
     },
     "brief": {
       "caption": "Trimite solicitarea",
