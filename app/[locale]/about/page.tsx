@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { RevealOnScroll, StaggerContainer, StaggerItem, ScrollScrubText } from "@/components/motion";
 import { sectionPresets } from "@/lib/motion";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "О нас",
@@ -31,6 +32,17 @@ export default async function AboutPage() {
 
   return (
     <main>
+      {/* JSON-LD Breadcrumbs */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema([
+            { name: "Home", url: "/" },
+            { name: t("heroTitle"), url: "/about" },
+          ])),
+        }}
+      />
+
       {/* Hero Section */}
       <section className="pt-24 pb-20 lg:pt-40 lg:pb-28 bg-[var(--color-background)]">
         <Container>

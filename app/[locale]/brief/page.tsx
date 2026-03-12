@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { breadcrumbSchema } from "@/lib/schema";
 import BriefContent from "./BriefContent";
 
 export const metadata: Metadata = {
@@ -13,6 +15,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function BriefPage() {
-  return <BriefContent />;
+export default async function BriefPage() {
+  const t = await getTranslations("pages.brief");
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema([
+            { name: "Home", url: "/" },
+            { name: t("title"), url: "/brief" },
+          ])),
+        }}
+      />
+      <BriefContent />
+    </>
+  );
 }

@@ -9,7 +9,7 @@ import { LayoutClient } from "@/components/layout";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { CookieConsent } from "@/components/layout/CookieConsent";
 import { Analytics } from "@vercel/analytics/react";
-import { organizationSchema, webSiteSchema } from "@/lib/schema";
+import { organizationSchema, webSiteSchema, localBusinessSchema } from "@/lib/schema";
 import "../globals.css";
 
 const BASE_URL = "https://nakoagency.com";
@@ -120,6 +120,15 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(webSiteSchema({
+              description: t("siteDescription"),
+              locale,
+            })),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema({
               description: t("siteDescription"),
               locale,
             })),

@@ -83,9 +83,9 @@ export async function generateMetadata({
 export default async function BlogPostPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const t = await getTranslations("pages.blogPost");
   const format = await getFormatter();
   const postsData = t.raw("posts") as Record<string, BlogPostData>;
@@ -132,6 +132,7 @@ export default async function BlogPostPage({
             slug,
             date: post.date,
             author: post.author,
+            locale,
           })),
         }}
       />

@@ -77,6 +77,7 @@ export function articleSchema({
   date,
   author,
   image,
+  locale = "en",
 }: {
   title: string;
   description: string;
@@ -84,15 +85,18 @@ export function articleSchema({
   date: string;
   author: string;
   image?: string;
+  locale?: string;
 }) {
+  const articleUrl = `${BASE_URL}/${locale}/blog/${slug}`;
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description,
-    url: `${BASE_URL}/blog/${slug}`,
+    url: articleUrl,
     datePublished: date,
     dateModified: date,
+    inLanguage: locale,
     author: {
       "@type": "Person",
       name: author,
@@ -113,7 +117,7 @@ export function articleSchema({
     }),
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${BASE_URL}/blog/${slug}`,
+      "@id": articleUrl,
     },
   };
 }
@@ -135,6 +139,38 @@ export function faqSchema(
         text: q.answer,
       },
     })),
+  };
+}
+
+/**
+ * LocalBusiness schema — информация о компании для локального поиска
+ */
+export function localBusinessSchema(options?: {
+  description?: string;
+  locale?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "NAKO Agency",
+    url: BASE_URL,
+    logo: `${BASE_URL}/images/logo.png`,
+    description:
+      options?.description ??
+      "Turnkey website development for experts, businesses and e-commerce.",
+    ...(options?.locale && { inLanguage: options.locale }),
+    priceRange: "€€-€€€",
+    knowsLanguage: ["en", "ru", "uk", "ro"],
+    areaServed: [
+      { "@type": "Country", name: "Ukraine" },
+      { "@type": "Place", name: "Europe" },
+    ],
+    serviceType: [
+      "Website Development",
+      "Web Design",
+      "E-commerce Development",
+      "Landing Page Development",
+    ],
   };
 }
 
