@@ -425,16 +425,17 @@ clsx, tailwind-merge
 ### Цветовые токены (globals.css)
 ```css
 :root {
-  --color-background: #FFFFFF;
-  --color-background-alt: #FAFAFA;
-  --color-text-primary: #1a2a32;
-  --color-text-secondary: #333333;
+  --color-background: #F9F7F2;        /* Soft Ivory */
+  --color-background-alt: #EFEBE0;    /* Warm Sand */
+  --color-text-primary: #1A1A1A;      /* Obsidian Black */
+  --color-text-secondary: rgba(26,26,26,0.8);
   --color-text-muted: #666666;
   --color-text-light: #737373;
-  --color-line: #E5E5E5;
-  --color-line-dark: #CCCCCC;
-  --color-accent: #1a2a32;
-  --color-accent-hover: #2a3a42;
+  --color-line: #D9D4CB;              /* Muted Stroke */
+  --color-line-light: #E5E5E5;        /* Concrete Gray */
+  --color-line-dark: #C4BFB5;         /* Muted Stroke darker */
+  --color-accent: #A67B5B;            /* Terra Clay */
+  --color-accent-hover: #8B6549;      /* Terra Clay darker */
 }
 ```
 

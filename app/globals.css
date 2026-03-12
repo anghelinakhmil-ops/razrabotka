@@ -23,7 +23,8 @@
 
   /* Линии и границы */
   --color-line: #D9D4CB;             /* Muted Stroke */
-  --color-line-dark: #D9D4CB;        /* Muted Stroke */
+  --color-line-light: #E5E5E5;       /* Concrete Gray — тонкие разделители */
+  --color-line-dark: #C4BFB5;        /* Muted Stroke darker — hover */
 
   /* Акцентный цвет (Terra Clay) */
   --color-accent: #A67B5B;           /* Terra Clay */
@@ -142,6 +143,7 @@
   --color-text-muted: var(--color-text-muted);
   --color-text-light: var(--color-text-light);
   --color-line: var(--color-line);
+  --color-line-light: var(--color-line-light);
   --color-line-dark: var(--color-line-dark);
   --color-accent: var(--color-accent);
   --color-accent-hover: var(--color-accent-hover);
