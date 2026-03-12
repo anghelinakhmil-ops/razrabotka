@@ -15,7 +15,7 @@ export default async function Image() {
       <div
         style={{
           fontSize: 64,
-          background: "#1A1A1A",
+          background: "#252321",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -37,13 +37,13 @@ export default async function Image() {
             style={{
               width: "80px",
               height: "80px",
-              background: "#FFFFFF",
+              background: "#A67B5B",
               marginRight: "24px",
             }}
           />
           <span
             style={{
-              color: "#FFFFFF",
+              color: "#F9F7F2",
               fontSize: "48px",
               fontWeight: 700,
               letterSpacing: "0.1em",
@@ -56,7 +56,7 @@ export default async function Image() {
         {/* Main title */}
         <div
           style={{
-            color: "#FFFFFF",
+            color: "#F9F7F2",
             fontSize: "72px",
             fontWeight: 700,
             textAlign: "center",
@@ -69,7 +69,7 @@ export default async function Image() {
 
         <div
           style={{
-            color: "#FFFFFF",
+            color: "#F9F7F2",
             fontSize: "72px",
             fontWeight: 700,
             textAlign: "center",
@@ -83,7 +83,7 @@ export default async function Image() {
         {/* Subtitle */}
         <div
           style={{
-            color: "#999999",
+            color: "#A67B5B",
             fontSize: "32px",
             textAlign: "center",
           }}
