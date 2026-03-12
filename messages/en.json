@@ -147,48 +147,48 @@
     ]
   },
   "process": {
-    "caption": "Stages",
-    "title": "PROCESS",
+    "caption": "Full cycle",
+    "title": "HOW WE WORK",
     "steps": [
       {
         "number": "01",
-        "title": "Brief",
-        "description": "We discuss goals, audience, and project tasks. Fill out the brief and define key success metrics."
+        "title": "Strategy & Brief",
+        "description": "We analyze your goals, audience, and positioning. Fill out the brief, define website objectives and key result metrics."
       },
       {
         "number": "02",
-        "title": "Prototype",
-        "description": "We create site structure, wireframes, and user scenarios. We agree on the logic before design."
+        "title": "Structure & Prototype",
+        "description": "We design site architecture, user scenarios, and wireframes. Align on logic and navigation before moving to design."
       },
       {
         "number": "03",
         "title": "Design",
-        "description": "We develop a unique visual style. Each screen is a separate composition with attention to detail."
+        "description": "We create an individual visual style. Every screen is a thoughtful composition with attention to typography and detail."
       },
       {
         "number": "04",
-        "title": "Development",
-        "description": "We code in Next.js focusing on performance. Clean code, SEO optimization, fast loading."
+        "title": "Development & Integrations",
+        "description": "We build on Next.js with focus on speed and SEO. Connect CRM, Telegram, email, analytics, and payments."
       },
       {
         "number": "05",
-        "title": "Content",
-        "description": "We fill the site with text and media. We help with copywriting and visual content selection."
+        "title": "Content & Copy",
+        "description": "We fill the site with content: text, photos, media. Help with messaging, copywriting, and visual selection."
       },
       {
         "number": "06",
         "title": "Testing",
-        "description": "We test on all devices and browsers. We test forms, integrations, and user scenarios."
+        "description": "We test on all devices and browsers. Check forms, integrations, user scenarios, and performance."
       },
       {
         "number": "07",
         "title": "Launch",
-        "description": "We deploy to production, set up domain, SSL, analytics. We hand over access and documentation."
+        "description": "We deploy to production, set up domain, SSL, and analytics. Hand over access, documentation, and train you on site management."
       },
       {
         "number": "08",
         "title": "Support",
-        "description": "We stay in touch after launch. Technical support, updates, and project development."
+        "description": "We stay in touch after launch. Bug fixes, updates, minor edits, and project development within a support package."
       }
     ]
   },

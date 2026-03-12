@@ -147,48 +147,48 @@
     ]
   },
   "process": {
-    "caption": "Etape",
-    "title": "PROCES",
+    "caption": "Ciclul complet",
+    "title": "CUM LUCRĂM",
     "steps": [
       {
         "number": "01",
-        "title": "Brief",
-        "description": "Discutăm obiectivele, audiența și sarcinile proiectului. Completăm brief-ul și definim metricile cheie de succes."
+        "title": "Strategie și brief",
+        "description": "Analizăm obiectivele, audiența și poziționarea. Completăm brief-ul, definim sarcinile site-ului și metricile cheie de rezultat."
       },
       {
         "number": "02",
-        "title": "Prototip",
-        "description": "Creăm structura site-ului, wireframe-uri și scenarii de utilizare. Aprobăm logica înainte de design."
+        "title": "Structură și prototip",
+        "description": "Proiectăm arhitectura site-ului, scenariile utilizatorilor și wireframe-urile. Aliniem logica și navigarea înainte de design."
       },
       {
         "number": "03",
         "title": "Design",
-        "description": "Dezvoltăm un stil vizual unic. Fiecare ecran este o compoziție separată cu atenție la detalii."
+        "description": "Creăm un stil vizual individual. Fiecare ecran este o compoziție gândită cu atenție la tipografie și detalii."
       },
       {
         "number": "04",
-        "title": "Dezvoltare",
-        "description": "Codăm în Next.js cu focus pe performanță. Cod curat, optimizare SEO, încărcare rapidă."
+        "title": "Dezvoltare și integrări",
+        "description": "Construim pe Next.js cu focus pe viteză și SEO. Conectăm CRM, Telegram, email, analitică și plăți."
       },
       {
         "number": "05",
-        "title": "Conținut",
-        "description": "Umplem site-ul cu texte și media. Ajutăm cu copywriting și selectarea conținutului vizual."
+        "title": "Conținut și texte",
+        "description": "Umplem site-ul cu conținut: texte, fotografii, media. Ajutăm cu mesaje, copywriting și selectarea vizualului."
       },
       {
         "number": "06",
         "title": "Testare",
-        "description": "Testăm pe toate dispozitivele și browserele. Testăm formulare, integrări și scenarii de utilizare."
+        "description": "Testăm pe toate dispozitivele și browserele. Verificăm formulare, integrări, scenarii de utilizare și performanța."
       },
       {
         "number": "07",
         "title": "Lansare",
-        "description": "Implementăm în producție, configurăm domeniu, SSL, analitică. Predăm accesurile și documentația."
+        "description": "Implementăm în producție, configurăm domeniu, SSL și analitică. Predăm accesurile, documentația și instruim privind gestionarea site-ului."
       },
       {
         "number": "08",
         "title": "Suport",
-        "description": "Rămânem în contact după lansare. Suport tehnic, actualizări și dezvoltarea proiectului."
+        "description": "Rămânem în contact după lansare. Remedieri, actualizări, modificări minore și dezvoltarea proiectului în cadrul pachetului de suport."
       }
     ]
   },
