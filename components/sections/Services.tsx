@@ -71,7 +71,7 @@ export function Services({ services }: ServicesProps) {
             <SplitTextReveal
               text={t("caption")}
               as="span"
-              className="text-caption text-[var(--color-text-muted)]"
+              className="text-caption text-[var(--color-accent)]"
               direction="up"
               staggerDelay={sectionPresets.heading.captionStagger}
             />

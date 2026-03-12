@@ -327,7 +327,7 @@ function ResultsSection({
   t: TranslationFn;
 }) {
   return (
-    <section className="py-[var(--section-gap)] bg-[var(--color-text-primary)]">
+    <section className="py-[var(--section-gap)] bg-[var(--color-bg-dark)]">
       <Container>
         <RevealOnScroll direction="up" className="mb-12 text-center">
           <span className="text-caption text-[var(--color-text-muted)] mb-4 block">

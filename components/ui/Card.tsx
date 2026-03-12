@@ -61,8 +61,8 @@ export const Card = forwardRef<HTMLElement, CardProps>(
       ),
       elevated: clsx(
         "bg-[var(--color-background)]",
-        "shadow-md",
-        hover && "hover:shadow-lg"
+        "border border-[var(--color-line)]",
+        hover && "hover:border-[var(--color-accent)]"
       ),
       outlined: clsx(
         "bg-[var(--color-background)]",

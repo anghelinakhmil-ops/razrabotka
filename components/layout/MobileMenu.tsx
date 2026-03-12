@@ -96,7 +96,7 @@ export function MobileMenu({
       className={clsx(
         // Fullscreen overlay
         "fixed inset-0 z-40",
-        "bg-[var(--color-text-primary)]",
+        "bg-[var(--color-bg-dark)]",
         "lg:hidden",
         // CSS transition (opacity + visibility) for 100% reliability
         "transition-[opacity,visibility] duration-300 ease-out",

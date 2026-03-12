@@ -49,7 +49,7 @@ export function Footer({ className }: FooterProps) {
         className={clsx(
           "fixed bottom-0 left-0 right-0",
           "z-0",
-          "bg-[var(--color-text-primary)]",
+          "bg-[var(--color-bg-dark)]",
           "text-white",
           className
         )}

@@ -56,7 +56,7 @@ export function ServiceCard({
         // Hover эффекты
         "hover:border-[var(--color-text-primary)]",
         "hover:-translate-y-1",
-        "hover:shadow-lg",
+        "hover:border-[var(--color-accent)]",
         className
       )}
     >

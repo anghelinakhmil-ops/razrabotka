@@ -44,7 +44,7 @@ export function Hero({ imageSrc }: HeroProps) {
       className="relative h-[100dvh] flex items-center justify-center overflow-hidden"
     >
       {/* Background: fallback color + image + overlay */}
-      <div className="absolute inset-0 bg-[var(--color-text-primary)]" />
+      <div className="absolute inset-0 bg-[var(--color-bg-dark)]" />
       <Image
         src={imageSrc || "/images/hero-bg.jpg"}
         alt=""

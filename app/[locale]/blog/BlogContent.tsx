@@ -243,7 +243,7 @@ function CTASection() {
   const t = useTranslations("pages.blog");
 
   return (
-    <section className="py-[var(--section-gap)] bg-[var(--color-text-primary)]">
+    <section className="py-[var(--section-gap)] bg-[var(--color-bg-dark)]">
       <Container>
         <div className="max-w-2xl mx-auto text-center">
           <RevealOnScroll direction="up">

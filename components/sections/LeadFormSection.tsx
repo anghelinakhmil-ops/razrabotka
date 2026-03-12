@@ -118,7 +118,7 @@ export function LeadFormSection({
   return (
     <section
       id="contact"
-      className="py-[var(--section-gap)] bg-[var(--color-text-primary)]"
+      className="py-[var(--section-gap)] bg-[var(--color-bg-dark)]"
     >
       <Container>
         <div className="max-w-3xl mx-auto text-center">

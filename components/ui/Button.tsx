@@ -116,6 +116,7 @@ function useButtonClasses({
   const baseClasses = [
     "relative",
     "inline-flex items-center justify-center gap-2",
+    "rounded-[3px]",
     "font-medium uppercase",
     "transition-all duration-300 ease-[cubic-bezier(0.2,0.8,0.2,1)]",
     "cursor-pointer",
@@ -125,16 +126,16 @@ function useButtonClasses({
 
   const variantClasses: Record<ButtonVariant, string> = {
     primary: clsx(
-      "bg-[var(--color-accent)] text-white",
-      "border-2 border-[var(--color-accent)]",
-      "hover:bg-[var(--color-accent-hover)] hover:border-[var(--color-accent-hover)]",
+      "bg-[var(--color-text-primary)] text-[var(--color-background)]",
+      "border-2 border-[var(--color-text-primary)]",
+      "hover:bg-[var(--color-accent)] hover:border-[var(--color-accent)] hover:text-[var(--color-background)]",
       "active:scale-[0.98]",
       "tracking-[var(--letter-spacing-extra-wide)]"
     ),
     secondary: clsx(
       "bg-transparent text-[var(--color-text-primary)]",
-      "border-2 border-[var(--color-line-dark)]",
-      "hover:border-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]",
+      "border-2 border-[var(--color-line)]",
+      "hover:border-[var(--color-text-primary)]",
       "active:scale-[0.98]",
       "tracking-[var(--letter-spacing-wide)]"
     ),
@@ -148,7 +149,7 @@ function useButtonClasses({
     outline: clsx(
       "bg-transparent text-[var(--color-text-primary)]",
       "border-2 border-[var(--color-text-primary)]",
-      "hover:bg-[var(--color-accent)] hover:text-white hover:border-[var(--color-accent)]",
+      "hover:bg-[var(--color-accent)] hover:text-[var(--color-background)] hover:border-[var(--color-accent)]",
       "active:scale-[0.98]",
       "tracking-[var(--letter-spacing-extra-wide)]"
     ),

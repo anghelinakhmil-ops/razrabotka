@@ -12,22 +12,25 @@
      ========================================== */
 
   /* Фоновые цвета */
-  --color-background: #FFFFFF;
-  --color-background-alt: #FAFAFA;
+  --color-background: #F9F7F2;       /* Soft Ivory */
+  --color-background-alt: #EFEBE0;   /* Warm Sand */
 
   /* Текстовые цвета */
-  --color-text-primary: #1a2a32;
-  --color-text-secondary: #333333;
+  --color-text-primary: #1A1A1A;     /* Obsidian Black */
+  --color-text-secondary: rgba(26, 26, 26, 0.8); /* Obsidian 80% */
   --color-text-muted: #666666;
   --color-text-light: #737373;
 
   /* Линии и границы */
-  --color-line: #E5E5E5;
-  --color-line-dark: #CCCCCC;
+  --color-line: #D9D4CB;             /* Muted Stroke */
+  --color-line-dark: #D9D4CB;        /* Muted Stroke */
 
-  /* Акцентный цвет (для CTA) */
-  --color-accent: #1a2a32;
-  --color-accent-hover: #2a3a42;
+  /* Акцентный цвет (Terra Clay) */
+  --color-accent: #A67B5B;           /* Terra Clay */
+  --color-accent-hover: #8B6549;     /* Terra Clay darker */
+
+  /* Тёмный фон (Premium секции, футер) */
+  --color-bg-dark: #252321;          /* Deep Espresso */
 
   /* ==========================================
      ТИПОГРАФИКА — Размеры (Desktop)
@@ -142,6 +145,7 @@
   --color-line-dark: var(--color-line-dark);
   --color-accent: var(--color-accent);
   --color-accent-hover: var(--color-accent-hover);
+  --color-bg-dark: var(--color-bg-dark);
 
   /* Шрифты */
   --font-display: var(--font-display);
