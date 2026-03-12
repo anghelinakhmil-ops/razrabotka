@@ -4,16 +4,18 @@ import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { CONTACT } from "@/lib/constants";
 
-export const metadata: Metadata = {
-  title: "Условия использования",
-  description:
-    "Условия использования сайта NAKO Agency. Правила пользования сайтом, ограничения ответственности и порядок разрешения споров.",
-  openGraph: {
-    title: "Условия использования | NAKO Agency",
-    description: "Условия использования сайта и правила пользования услугами.",
-    type: "website",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("pages.terms");
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+    openGraph: {
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+      type: "website",
+    },
+  };
+}
 
 interface TermsSectionData {
   number: string;

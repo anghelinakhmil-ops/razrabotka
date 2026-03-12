@@ -7,17 +7,18 @@ import { LeadFormSection } from "@/components/sections";
 import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
 import { ServicesContent } from "./ServicesContent";
 
-export const metadata: Metadata = {
-  title: "Услуги",
-  description:
-    "Пакеты услуг: сайт для эксперта, интернет-магазин, лендинг, сайт для бизнеса, курсы, мероприятия. Три уровня: Start, Standard, Pro.",
-  openGraph: {
-    title: "Услуги | NAKO Agency",
-    description:
-      "Пакеты услуг: сайт для эксперта, интернет-магазин, лендинг, сайт для бизнеса, курсы, мероприятия.",
-    type: "website",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("pages.services");
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+    openGraph: {
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+      type: "website",
+    },
+  };
+}
 
 /**
  * Services Page — страница услуг

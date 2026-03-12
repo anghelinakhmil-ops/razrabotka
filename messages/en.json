@@ -467,6 +467,8 @@
   },
   "pages": {
     "about": {
+      "metaTitle": "About Us | NAKO Agency",
+      "metaDescription": "A web studio focused on results. We build websites for experts, e-commerce and business. Learn about our approach, values and work principles.",
       "heroCaption": "Introduction",
       "heroTitle": "ABOUT US",
       "heroDescription": "We are an agency that builds modern turnkey websites for experts, businesses and digital projects, combining strategy, design and development in one solution. Our goal is to make websites not just visually beautiful, but commercially strong and working for leads.",
@@ -554,6 +556,8 @@
       "ctaCases": "View cases"
     },
     "contacts": {
+      "metaTitle": "Contacts | NAKO Agency",
+      "metaDescription": "Contact NAKO Agency by email. We respond within 2 hours.",
       "caption": "Contact us",
       "title": "CONTACTS",
       "description": "Ready to discuss your project? Contact us in any convenient way or leave a request — we'll respond within 2 hours.",
@@ -586,6 +590,8 @@
       "briefButton": "Fill out the brief"
     },
     "services": {
+      "metaTitle": "Services | NAKO Agency",
+      "metaDescription": "Service packages: expert websites, online stores, landing pages, business websites, courses, events. Three levels: Start, Standard, Pro.",
       "caption": "Services & Packages",
       "title": "SERVICES",
       "description": "Six directions, three packages each. Choose the project type and the right level — from a quick launch to full business packaging.",
@@ -1050,6 +1056,8 @@
       }
     },
     "brief": {
+      "metaTitle": "Brief — Submit Request | NAKO Agency",
+      "metaDescription": "Fill out the brief for website development. Tell us about your project — we'll prepare a personalized proposal with exact timelines and costs.",
       "caption": "Submit request",
       "title": "BRIEF",
       "description": "Tell us about your project, goals, and preferences. The more details, the more accurate our estimate.",
@@ -1132,6 +1140,8 @@
       "directContactEmail": "Write to us at"
     },
     "privacy": {
+      "metaTitle": "Privacy Policy | NAKO Agency",
+      "metaDescription": "NAKO Agency privacy policy. Information about collection, use and protection of personal data.",
       "caption": "Legal information",
       "heading1": "PRIVACY",
       "heading2": "Policy",
@@ -1253,6 +1263,8 @@
       ]
     },
     "terms": {
+      "metaTitle": "Terms of Use | NAKO Agency",
+      "metaDescription": "Terms of use for NAKO Agency website. Site usage rules, liability limitations and dispute resolution.",
       "caption": "Legal information",
       "heading1": "TERMS",
       "heading2": "of Use",
@@ -1504,6 +1516,8 @@
       }
     },
     "blog": {
+      "metaTitle": "Blog | NAKO Agency",
+      "metaDescription": "Articles about web development, design, SEO and digital marketing from the NAKO Agency team. Useful materials for business and experts.",
       "caption": "Articles",
       "title": "BLOG",
       "description": "We share our expertise in web development, design, and website promotion. Practical tips and case breakdowns.",
@@ -1838,6 +1852,8 @@
       }
     },
     "cases": {
+      "metaTitle": "Cases — Portfolio | NAKO Agency",
+      "metaDescription": "NAKO Agency web studio portfolio. Real projects: online stores, landing pages, corporate sites and personal brands of experts.",
       "caption": "Portfolio",
       "title": "CASES",
       "description": "Real projects with measurable results. Each case is a solution to a specific business challenge.",

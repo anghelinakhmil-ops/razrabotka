@@ -467,6 +467,8 @@
   },
   "pages": {
     "about": {
+      "metaTitle": "Despre noi | NAKO Agency",
+      "metaDescription": "Studio web orientat pe rezultate. Creăm site-uri pentru experți, e-commerce și afaceri. Aflați despre abordarea, valorile și principiile noastre.",
       "heroCaption": "Prezentare",
       "heroTitle": "DESPRE NOI",
       "heroDescription": "Suntem o agenție care creează site-uri moderne la cheie pentru experți, afaceri și proiecte digitale, combinând strategia, designul și dezvoltarea într-o singură soluție. Scopul nostru este să facem site-uri nu doar frumoase vizual, ci puternice comercial și care generează cereri.",
@@ -554,6 +556,8 @@
       "ctaCases": "Vezi cazurile"
     },
     "contacts": {
+      "metaTitle": "Contacte | NAKO Agency",
+      "metaDescription": "Contactați NAKO Agency prin email. Răspundem în 2 ore.",
       "caption": "Contacteaza-ne",
       "title": "CONTACTE",
       "description": "Pregatit sa discutam proiectul tau? Contacteaza-ne in orice mod convenabil sau lasa o solicitare — raspundem in 2 ore.",
@@ -586,6 +590,8 @@
       "briefButton": "Completeaza brieful"
     },
     "services": {
+      "metaTitle": "Servicii | NAKO Agency",
+      "metaDescription": "Pachete de servicii: site-uri pentru experți, magazine online, landing page-uri, site-uri business, cursuri, evenimente. Trei niveluri: Start, Standard, Pro.",
       "caption": "Servicii și pachete",
       "title": "SERVICII",
       "description": "Șase direcții, trei pachete fiecare. Alegeți tipul proiectului și nivelul potrivit — de la lansare rapidă până la ambalare completă a afacerii.",
@@ -1050,6 +1056,8 @@
       }
     },
     "brief": {
+      "metaTitle": "Brief — Trimite solicitarea | NAKO Agency",
+      "metaDescription": "Completați brief-ul pentru dezvoltarea site-ului. Povestiți-ne despre proiect — vom pregăti o propunere personalizată cu termene și costuri exacte.",
       "caption": "Trimite solicitarea",
       "title": "BRIEF",
       "description": "Povestiti-ne despre proiect, obiective si preferinte. Cu cat mai multe detalii, cu atat mai precisa va fi estimarea noastra.",
@@ -1132,6 +1140,8 @@
       "directContactEmail": "Scrieti-ne la"
     },
     "privacy": {
+      "metaTitle": "Politica de confidențialitate | NAKO Agency",
+      "metaDescription": "Politica de confidențialitate NAKO Agency. Informații despre colectarea, utilizarea și protecția datelor personale.",
       "caption": "Informatii juridice",
       "heading1": "POLITICA",
       "heading2": "de confidentialitate",
@@ -1253,6 +1263,8 @@
       ]
     },
     "terms": {
+      "metaTitle": "Termeni de utilizare | NAKO Agency",
+      "metaDescription": "Termeni de utilizare ai site-ului NAKO Agency. Reguli de utilizare, limitări de responsabilitate și rezolvarea disputelor.",
       "caption": "Informatii juridice",
       "heading1": "TERMENI",
       "heading2": "de utilizare",
@@ -1504,6 +1516,8 @@
       }
     },
     "blog": {
+      "metaTitle": "Blog | NAKO Agency",
+      "metaDescription": "Articole despre dezvoltare web, design, SEO și marketing digital de la echipa NAKO Agency. Materiale utile pentru afaceri și experți.",
       "caption": "Articole",
       "title": "BLOG",
       "description": "Împărtășim experiența în dezvoltare, design și promovarea site-urilor. Sfaturi practice și analize de cazuri.",
@@ -1838,6 +1852,8 @@
       }
     },
     "cases": {
+      "metaTitle": "Cazuri — Portofoliu | NAKO Agency",
+      "metaDescription": "Portofoliul studioului web NAKO Agency. Proiecte reale: magazine online, landing page-uri, site-uri corporative și branduri personale.",
       "caption": "Portofoliu",
       "title": "CAZURI",
       "description": "Proiecte reale cu rezultate măsurabile. Fiecare caz — o soluție pentru o sarcină concretă de business.",

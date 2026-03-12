@@ -3,17 +3,18 @@ import { getTranslations } from "next-intl/server";
 import { breadcrumbSchema } from "@/lib/schema";
 import CasesContent from "./CasesContent";
 
-export const metadata: Metadata = {
-  title: "Кейсы — Портфолио",
-  description:
-    "Портфолио веб-студии NAKO Agency. Реальные проекты: интернет-магазины, лендинги, корпоративные сайты и личные бренды экспертов.",
-  openGraph: {
-    title: "Кейсы — Портфолио | NAKO Agency",
-    description:
-      "Смотрите наши работы: сайты для бизнеса, экспертов и e-commerce проектов.",
-    type: "website",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("pages.cases");
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+    openGraph: {
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+      type: "website",
+    },
+  };
+}
 
 export default async function CasesPage() {
   const t = await getTranslations("pages.cases");

@@ -9,16 +9,18 @@ import { RevealOnScroll, StaggerContainer, StaggerItem, ScrollScrubText } from "
 import { sectionPresets } from "@/lib/motion";
 import { breadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "О нас",
-  description:
-    "Веб-студия с фокусом на результат. Создаём сайты для экспертов, e-commerce и бизнеса. Узнайте о нашем подходе, ценностях и принципах работы.",
-  openGraph: {
-    title: "О нас | NAKO Agency",
-    description: "Веб-студия с фокусом на результат. Создаём сайты для экспертов, e-commerce и бизнеса.",
-    type: "website",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("pages.about");
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+    openGraph: {
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+      type: "website",
+    },
+  };
+}
 
 /**
  * About Page — страница «О нас»

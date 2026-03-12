@@ -4,16 +4,18 @@ import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { CONTACT } from "@/lib/constants";
 
-export const metadata: Metadata = {
-  title: "Политика конфиденциальности",
-  description:
-    "Политика конфиденциальности NAKO Agency. Информация о сборе, использовании и защите персональных данных пользователей.",
-  openGraph: {
-    title: "Политика конфиденциальности | NAKO Agency",
-    description: "Политика конфиденциальности и обработки персональных данных.",
-    type: "website",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("pages.privacy");
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+    openGraph: {
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+      type: "website",
+    },
+  };
+}
 
 interface PolicySectionData {
   number: string;
