@@ -45,7 +45,7 @@ interface ServicesProps {
 export function Services({ services }: ServicesProps) {
   const t = useTranslations("services");
 
-  const SERVICE_HREFS = ["/services#expert", "/services#ecommerce", "/services#landing", "/app-development"];
+  const SERVICE_HREFS = ["/services#experts", "/services#business", "/services#landing", "/services#ecommerce", "/services#courses", "/services#events"];
 
   const translatedServices: ServiceData[] = (t.raw("items") as Array<{
     title: string; description: string; features: string[]; ctaText: string;
@@ -92,7 +92,7 @@ export function Services({ services }: ServicesProps) {
 
         {/* Сетка услуг */}
         <StaggerContainer
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
           staggerDelay={sectionPresets.grid.stagger}
         >
           {items.map((service, index) => (

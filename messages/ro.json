@@ -101,46 +101,68 @@
     "title": "SERVICII",
     "items": [
       {
-        "title": "Site pentru expert",
-        "description": "Site personal pentru specialiști, coachi, consultanți. Vinde expertiza dvs. și atrage clienți.",
+        "title": "Site-uri pentru experți",
+        "description": "Site-uri pentru experți, consultanți, mentori și specialiști care au nevoie de un brand personal puternic și un flux de cereri.",
         "features": [
           "Brand personal",
-          "Portofoliu de lucrări",
-          "Programare consultație",
-          "Integrare calendar"
+          "Portofoliu și cazuri",
+          "Formulare de cereri",
+          "CRM și analitică"
         ],
         "ctaText": "Detalii"
       },
       {
-        "title": "Magazin online",
-        "description": "E-commerce complet cu catalog, coș și plăți. Automatizarea vânzărilor și integrări.",
+        "title": "Site-uri pentru afaceri",
+        "description": "Site-uri pentru companii, studiouri și afaceri locale pentru prezentarea serviciilor, construirea încrederii și atragerea clienților.",
         "features": [
-          "Catalog produse",
-          "Plăți online",
-          "Integrare CRM",
-          "Notificări Telegram"
+          "Prezentarea serviciilor",
+          "Pagini de cazuri",
+          "Formulare și integrări",
+          "Optimizare SEO"
         ],
         "ctaText": "Detalii"
       },
       {
-        "title": "Landing page",
-        "description": "Site de o pagină cu conversie înaltă pentru lansarea unui produs, serviciu sau campanie publicitară.",
+        "title": "Landing page-uri",
+        "description": "Pagini de destinație pentru servicii, produse, publicitate, lansări și oferte speciale.",
         "features": [
           "Conversie înaltă",
-          "Testare A/B",
-          "Lansare rapidă",
-          "Analitică"
+          "Blocuri CTA și formulare",
+          "Analitică și Pixel",
+          "Lansare rapidă"
         ],
         "ctaText": "Detalii"
       },
       {
-        "title": "Aplicații",
-        "description": "Aplicații mobile și web pentru afaceri. iOS, Android, soluții cross-platform — de la idee la lansare.",
+        "title": "Magazine online",
+        "description": "Magazine online convenabile cu structură bine gândită, catalog, carduri de produse și logica achiziției.",
         "features": [
-          "iOS și Android",
-          "Aplicații web (PWA)",
-          "Cross-platform",
-          "Suport și actualizări"
+          "Catalog și filtre",
+          "Coș și plăți",
+          "Integrare CRM",
+          "Analitică e-commerce"
+        ],
+        "ctaText": "Detalii"
+      },
+      {
+        "title": "Site-uri pentru cursuri",
+        "description": "Site-uri pentru proiecte educaționale, cursuri online și școli cu structură clară și prezentare puternică.",
+        "features": [
+          "Programul cursului",
+          "Tarife și plăți",
+          "Pâlnie de vânzări",
+          "Email și Telegram"
+        ],
+        "ctaText": "Detalii"
+      },
+      {
+        "title": "Site-uri pentru evenimente",
+        "description": "Site-uri pentru evenimente, conferințe, prezentări, workshop-uri și proiecte speciale.",
+        "features": [
+          "Program și speakeri",
+          "Înregistrare",
+          "CTA-uri extinse",
+          "Analitică evenimente"
         ],
         "ctaText": "Detalii"
       }

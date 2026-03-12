@@ -101,46 +101,68 @@
     "title": "SERVICES",
     "items": [
       {
-        "title": "Expert website",
-        "description": "Personal website for specialists, coaches, consultants. Sells your expertise and attracts clients.",
+        "title": "Expert websites",
+        "description": "Websites for experts, consultants, mentors and specialists who need a strong personal brand and a flow of leads.",
         "features": [
           "Personal brand",
-          "Work portfolio",
-          "Consultation booking",
-          "Calendar integration"
+          "Portfolio & cases",
+          "Lead forms",
+          "CRM & analytics"
         ],
         "ctaText": "Learn more"
       },
       {
-        "title": "Online store",
-        "description": "Full e-commerce with catalog, cart, and payments. Sales automation and integrations.",
+        "title": "Business websites",
+        "description": "Websites for companies, studios and local businesses to present services, build trust and attract clients.",
         "features": [
-          "Product catalog",
-          "Online payments",
-          "CRM integration",
-          "Telegram notifications"
+          "Service presentation",
+          "Case study pages",
+          "Forms & integrations",
+          "SEO optimization"
         ],
         "ctaText": "Learn more"
       },
       {
-        "title": "Landing page",
-        "description": "One-page website with high conversion for launching a product, service, or ad campaign.",
+        "title": "Landing pages",
+        "description": "Landing pages for services, products, advertising, launches and special offers.",
         "features": [
           "High conversion",
-          "A/B testing",
-          "Quick launch",
-          "Analytics"
+          "CTA blocks & forms",
+          "Analytics & Pixel",
+          "Quick launch"
         ],
         "ctaText": "Learn more"
       },
       {
-        "title": "Apps",
-        "description": "Mobile and web applications for business. iOS, Android, cross-platform solutions — from idea to launch.",
+        "title": "Online stores",
+        "description": "User-friendly online stores with well-thought-out structure, catalog, product cards and purchase logic.",
         "features": [
-          "iOS & Android",
-          "Web apps (PWA)",
-          "Cross-platform",
-          "Support & updates"
+          "Catalog & filters",
+          "Cart & payments",
+          "CRM integration",
+          "E-commerce analytics"
+        ],
+        "ctaText": "Learn more"
+      },
+      {
+        "title": "Course websites",
+        "description": "Websites for educational projects, online courses and schools with clear structure and strong presentation.",
+        "features": [
+          "Course program",
+          "Pricing & payments",
+          "Sales funnel",
+          "Email & Telegram"
+        ],
+        "ctaText": "Learn more"
+      },
+      {
+        "title": "Event websites",
+        "description": "Websites for events, conferences, presentations, workshops and special projects.",
+        "features": [
+          "Program & speakers",
+          "Registration",
+          "Extended CTAs",
+          "Event analytics"
         ],
         "ctaText": "Learn more"
       }
