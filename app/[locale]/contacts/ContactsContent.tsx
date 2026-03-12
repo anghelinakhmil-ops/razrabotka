@@ -119,9 +119,19 @@ export default function ContactsContent() {
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.2}>
-              <Button variant="primary" size="lg" as={Link} href="/brief">
-                {t("briefButton")}
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button variant="primary" size="lg" as={Link} href="/brief">
+                  {t("briefButton")}
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  as={Link}
+                  href="/services"
+                >
+                  {t("ctaServices")}
+                </Button>
+              </div>
             </RevealOnScroll>
           </div>
         </Container>

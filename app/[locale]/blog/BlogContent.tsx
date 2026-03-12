@@ -277,6 +277,14 @@ function CTASection() {
                 {t("ctaServicesButton")}
               </Button>
             </div>
+            <p className="mt-4">
+              <Link
+                href="/cases"
+                className="text-body-sm text-[var(--color-text-light)] underline hover:text-[var(--color-background)] transition-colors"
+              >
+                {t("ctaCasesButton")}
+              </Link>
+            </p>
           </RevealOnScroll>
         </div>
       </Container>

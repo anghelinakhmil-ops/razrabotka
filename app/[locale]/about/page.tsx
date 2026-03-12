@@ -277,6 +277,15 @@ export default async function AboutPage() {
                     {t("ctaCases")}
                   </Button>
                 </Link>
+                <Link href="/services">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
+                  >
+                    {t("ctaServices")}
+                  </Button>
+                </Link>
               </div>
             </RevealOnScroll>
           </div>

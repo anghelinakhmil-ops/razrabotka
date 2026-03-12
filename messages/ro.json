@@ -553,7 +553,8 @@
       "ctaTitle": "SA INCEPEM?",
       "ctaDescription": "Povestiti-ne despre proiectul dvs. — vom discuta cum putem ajuta.",
       "ctaCta": "Discuta proiectul",
-      "ctaCases": "Vezi cazurile"
+      "ctaCases": "Vezi cazurile",
+      "ctaServices": "Vezi serviciile"
     },
     "contacts": {
       "metaTitle": "Contacte | NAKO Agency",
@@ -587,7 +588,8 @@
       "errorRetry": "Incearca din nou",
       "briefTitle": "Preferati un brief detaliat?",
       "briefDescription": "Completati formularul extins cu descrierea proiectului — astfel putem pregata o oferta personalizata.",
-      "briefButton": "Completeaza brieful"
+      "briefButton": "Completeaza brieful",
+      "ctaServices": "Vezi serviciile"
     },
     "services": {
       "metaTitle": "Servicii | NAKO Agency",
@@ -973,6 +975,8 @@
       "detailsButton": "Mai multe detalii",
       "appDevBanner": "De asemenea, dezvoltăm aplicații mobile și web",
       "appDevBannerCta": "Aflați mai mult",
+      "casesBanner": "Vedeți proiectele noastre finalizate",
+      "casesBannerCta": "Vezi cazurile",
       "formTitle": "DISCUTAȚI UN PROIECT",
       "formSubtitle": "Nu sunteți sigur care pachet vi se potrivește? Spuneți-ne despre proiect — vom găsi cea mai bună soluție.",
       "support": {
@@ -1260,7 +1264,8 @@
             "Site: nakoagency.com"
           ]
         }
-      ]
+      ],
+      "backLink": "Înapoi la contacte"
     },
     "terms": {
       "metaTitle": "Termeni de utilizare | NAKO Agency",
@@ -1398,7 +1403,8 @@
             "Site: nakoagency.com"
           ]
         }
-      ]
+      ],
+      "backLink": "Înapoi la contacte"
     },
     "appDev": {
       "meta": {
@@ -1533,6 +1539,7 @@
       "ctaText": "Vom aplica toate aceste cunoștințe în practică — pentru proiectul dumneavoastră.",
       "ctaButton": "Discută proiectul",
       "ctaServicesButton": "Vezi serviciile",
+      "ctaCasesButton": "Vezi cazurile",
       "posts": [
         {
           "slug": "why-nextjs-for-business",
@@ -1869,6 +1876,7 @@
       "ctaText": "Doriți ca proiectul dumneavoastră să fie în această listă? Povestiți-ne despre sarcină — vom discuta soluția.",
       "ctaButton": "Discută proiectul",
       "ctaServicesButton": "Vezi serviciile",
+      "ctaBlogButton": "Citește blogul",
       "items": [
         {
           "slug": "expert-coach",

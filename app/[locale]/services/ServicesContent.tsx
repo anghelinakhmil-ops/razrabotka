@@ -224,6 +224,25 @@ export function ServicesContent() {
           </RevealOnScroll>
         </Container>
       </section>
+
+      {/* Cases Banner */}
+      <section className="py-12 lg:py-16 bg-[var(--color-background-alt)] border-b border-[var(--color-line)]">
+        <Container>
+          <RevealOnScroll direction="up">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+              <p className="text-h3 font-display font-bold text-[var(--color-text-primary)] text-center sm:text-left">
+                {t("casesBanner")}
+              </p>
+              <Link
+                href="/cases"
+                className="text-body font-medium text-[var(--color-text-primary)] border-b border-[var(--color-text-primary)] pb-0.5 hover:opacity-70 transition-opacity whitespace-nowrap"
+              >
+                {t("casesBannerCta")} →
+              </Link>
+            </div>
+          </RevealOnScroll>
+        </Container>
+      </section>
     </>
   );
 }

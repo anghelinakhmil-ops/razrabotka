@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { CONTACT } from "@/lib/constants";
@@ -86,6 +87,18 @@ export default async function TermsPage() {
               </div>
             ))}
           </div>
+        </Container>
+      </section>
+
+      {/* Back link */}
+      <section className="py-12 bg-[var(--color-background-alt)] border-t border-[var(--color-line)]">
+        <Container size="sm">
+          <Link
+            href="/contacts"
+            className="text-body font-medium text-[var(--color-text-primary)] border-b border-[var(--color-text-primary)] pb-0.5 hover:opacity-70 transition-opacity"
+          >
+            ← {t("backLink")}
+          </Link>
         </Container>
       </section>
     </main>

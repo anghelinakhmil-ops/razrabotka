@@ -553,7 +553,8 @@
       "ctaTitle": "LET'S START?",
       "ctaDescription": "Tell us about your project — we'll discuss how we can help.",
       "ctaCta": "Discuss project",
-      "ctaCases": "View cases"
+      "ctaCases": "View cases",
+      "ctaServices": "View services"
     },
     "contacts": {
       "metaTitle": "Contacts | NAKO Agency",
@@ -587,7 +588,8 @@
       "errorRetry": "Try again",
       "briefTitle": "Prefer a detailed brief?",
       "briefDescription": "Fill out the extended form with a project description — so we can prepare a personalized offer.",
-      "briefButton": "Fill out the brief"
+      "briefButton": "Fill out the brief",
+      "ctaServices": "View services"
     },
     "services": {
       "metaTitle": "Services | NAKO Agency",
@@ -973,6 +975,8 @@
       "detailsButton": "Learn More",
       "appDevBanner": "We also develop mobile and web applications",
       "appDevBannerCta": "Learn more",
+      "casesBanner": "See our completed projects",
+      "casesBannerCta": "View cases",
       "formTitle": "DISCUSS A PROJECT",
       "formSubtitle": "Not sure which package fits? Tell us about your project — we'll find the best solution.",
       "support": {
@@ -1260,7 +1264,8 @@
             "Website: nakoagency.com"
           ]
         }
-      ]
+      ],
+      "backLink": "Back to contacts"
     },
     "terms": {
       "metaTitle": "Terms of Use | NAKO Agency",
@@ -1398,7 +1403,8 @@
             "Website: nakoagency.com"
           ]
         }
-      ]
+      ],
+      "backLink": "Back to contacts"
     },
     "appDev": {
       "meta": {
@@ -1533,6 +1539,7 @@
       "ctaText": "We'll put all this knowledge into practice — for your project.",
       "ctaButton": "Discuss project",
       "ctaServicesButton": "View services",
+      "ctaCasesButton": "View cases",
       "posts": [
         {
           "slug": "why-nextjs-for-business",
@@ -1869,6 +1876,7 @@
       "ctaText": "Want your project on this list? Tell us about your challenge — we'll discuss the solution.",
       "ctaButton": "Discuss project",
       "ctaServicesButton": "View services",
+      "ctaBlogButton": "Read blog",
       "items": [
         {
           "slug": "expert-coach",
