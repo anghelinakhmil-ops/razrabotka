@@ -956,7 +956,86 @@
       "appDevBanner": "We also develop mobile and web applications",
       "appDevBannerCta": "Learn more",
       "formTitle": "DISCUSS A PROJECT",
-      "formSubtitle": "Not sure which package fits? Tell us about your project — we'll find the best solution."
+      "formSubtitle": "Not sure which package fits? Tell us about your project — we'll find the best solution.",
+      "support": {
+        "caption": "Support",
+        "title": "POST-LAUNCH SUPPORT",
+        "description": "Three monthly support packages — from basic monitoring to active priority support.",
+        "includedTitle": "Included with website package",
+        "includedItems": [
+          {
+            "tier": "Start",
+            "text": "14 days of bugfixes after launch"
+          },
+          {
+            "tier": "Standard",
+            "text": "14–30 days of bugfixes after launch"
+          },
+          {
+            "tier": "Pro",
+            "text": "30 days of bugfixes + priority support in the first month"
+          }
+        ],
+        "monthlyTitle": "Monthly Support",
+        "perMonth": "/ mo",
+        "packages": [
+          {
+            "tier": "start",
+            "name": "Support Start",
+            "audience": "For clients who need basic technical maintenance and occasional small fixes after launch",
+            "features": [
+              "Website uptime monitoring",
+              "Monthly system updates",
+              "Backups and security",
+              "Small text and image edits",
+              "Contact, link, button updates",
+              "Form and submission checks",
+              "1 consultation per month",
+              "Monthly report"
+            ],
+            "limits": "up to 2 hrs / mo, up to 10 edits",
+            "priceUA": "€80–150",
+            "priceEU": "€300–600"
+          },
+          {
+            "tier": "standard",
+            "name": "Support Standard",
+            "audience": "For businesses that need regular maintenance, content updates and stable website operation",
+            "features": [
+              "Everything in Support Start",
+              "Regular technical monitoring",
+              "Integration updates",
+              "Enhanced security monitoring",
+              "Page content updates",
+              "Standard block additions",
+              "News, cases, promotions publishing",
+              "Up to 2 consultations per month",
+              "Report with completed tasks"
+            ],
+            "limits": "up to 5 hrs / mo, up to 20 edits",
+            "priceUA": "€150–300",
+            "priceEU": "€600–1,200"
+          },
+          {
+            "tier": "pro",
+            "name": "Support Pro",
+            "audience": "For companies and projects that need active support, quick fixes and ongoing maintenance",
+            "features": [
+              "Everything in Support Standard",
+              "Priority task processing",
+              "New standard section creation",
+              "Landing page assistance",
+              "CRM, forms, email, Telegram checks",
+              "Website improvement consultations",
+              "Report + recommendations"
+            ],
+            "limits": "up to 10 hrs / mo, up to 40 edits",
+            "priceUA": "€300–500",
+            "priceEU": "€1,200–2,000"
+          }
+        ],
+        "limitsLabel": "Limits"
+      }
     },
     "brief": {
       "caption": "Submit request",

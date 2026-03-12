@@ -956,7 +956,86 @@
       "appDevBanner": "De asemenea, dezvoltăm aplicații mobile și web",
       "appDevBannerCta": "Aflați mai mult",
       "formTitle": "DISCUTAȚI UN PROIECT",
-      "formSubtitle": "Nu sunteți sigur care pachet vi se potrivește? Spuneți-ne despre proiect — vom găsi cea mai bună soluție."
+      "formSubtitle": "Nu sunteți sigur care pachet vi se potrivește? Spuneți-ne despre proiect — vom găsi cea mai bună soluție.",
+      "support": {
+        "caption": "Suport",
+        "title": "SUPORT DUPĂ LANSARE",
+        "description": "Trei pachete lunare de suport — de la monitorizare de bază la suport activ cu prioritate.",
+        "includedTitle": "Inclus în pachetul site-ului",
+        "includedItems": [
+          {
+            "tier": "Start",
+            "text": "14 zile de remediere a erorilor după lansare"
+          },
+          {
+            "tier": "Standard",
+            "text": "14–30 zile de remediere a erorilor după lansare"
+          },
+          {
+            "tier": "Pro",
+            "text": "30 zile de remediere + suport prioritar în prima lună"
+          }
+        ],
+        "monthlyTitle": "Suport lunar",
+        "perMonth": "/ lună",
+        "packages": [
+          {
+            "tier": "start",
+            "name": "Support Start",
+            "audience": "Pentru clienții care au nevoie de mentenanță tehnică de bază și corecții mici rare după lansare",
+            "features": [
+              "Monitorizarea funcționării site-ului",
+              "Actualizări lunare ale sistemului",
+              "Backup-uri și securitate",
+              "Corecții mici de text și imagini",
+              "Actualizare contacte, link-uri, butoane",
+              "Verificarea formularelor",
+              "1 consultație pe lună",
+              "Raport lunar"
+            ],
+            "limits": "până la 2 ore / lună, până la 10 corecții",
+            "priceUA": "€80–150",
+            "priceEU": "€300–600"
+          },
+          {
+            "tier": "standard",
+            "name": "Support Standard",
+            "audience": "Pentru afaceri care au nevoie de mentenanță regulată, actualizări de conținut și funcționare stabilă",
+            "features": [
+              "Tot din Support Start",
+              "Control tehnic regulat",
+              "Actualizări integrări",
+              "Control extins de securitate",
+              "Actualizare conținut pagini",
+              "Adăugare blocuri standard",
+              "Publicare știri, cazuri, promoții",
+              "Până la 2 consultații pe lună",
+              "Raport cu lucrările efectuate"
+            ],
+            "limits": "până la 5 ore / lună, până la 20 corecții",
+            "priceUA": "€150–300",
+            "priceEU": "€600–1 200"
+          },
+          {
+            "tier": "pro",
+            "name": "Support Pro",
+            "audience": "Pentru companii care au nevoie de suport activ, corecții rapide și mentenanță constantă",
+            "features": [
+              "Tot din Support Standard",
+              "Procesare prioritară a sarcinilor",
+              "Crearea de secțiuni noi standard",
+              "Asistență cu pagini de destinație",
+              "Verificare CRM, formulare, email, Telegram",
+              "Consultații pentru îmbunătățirea site-ului",
+              "Raport + recomandări"
+            ],
+            "limits": "până la 10 ore / lună, până la 40 corecții",
+            "priceUA": "€300–500",
+            "priceEU": "€1 200–2 000"
+          }
+        ],
+        "limitsLabel": "Limite"
+      }
     },
     "brief": {
       "caption": "Trimite solicitarea",

@@ -31,6 +31,21 @@ interface AdditionalServiceItem {
   description: string;
 }
 
+interface SupportPackageData {
+  tier: "start" | "standard" | "pro";
+  name: string;
+  audience: string;
+  features: string[];
+  limits: string;
+  priceUA: string;
+  priceEU: string;
+}
+
+interface SupportIncludedItem {
+  tier: string;
+  text: string;
+}
+
 const categoryNumbers = ["01", "02", "03", "04", "05", "06"];
 
 /**
@@ -188,6 +203,9 @@ export function ServicesContent() {
         </Container>
       </section>
 
+      {/* Support Section */}
+      <SupportSection region={region} />
+
       {/* App Development Banner */}
       <section className="py-12 lg:py-16 bg-[var(--color-background)] border-y border-[var(--color-line)]">
         <Container>
@@ -207,6 +225,165 @@ export function ServicesContent() {
         </Container>
       </section>
     </>
+  );
+}
+
+/**
+ * SupportSection — секция пакетов сопровождения
+ */
+function SupportSection({ region }: { region: Region }) {
+  const t = useTranslations("pages.services.support");
+  const tServices = useTranslations("pages.services");
+  const tierLabels = tServices.raw("tierLabels") as Record<string, string>;
+  const recommendedLabel = tServices("recommended");
+
+  const packages = t.raw("packages") as SupportPackageData[];
+  const includedItems = t.raw("includedItems") as SupportIncludedItem[];
+
+  return (
+    <section id="support" className="py-[var(--section-gap)] bg-[var(--color-bg-dark)]">
+      <Container>
+        {/* Header */}
+        <div className="mb-12 lg:mb-16">
+          <RevealOnScroll direction="up">
+            <span className="text-caption text-[var(--color-accent)] mb-4 block">
+              {t("caption")}
+            </span>
+          </RevealOnScroll>
+
+          <RevealOnScroll direction="up" delay={sectionPresets.cascade.step}>
+            <h2 className="mb-4">
+              <BrokenText
+                text={t("title")}
+                spaced
+                className="text-h2 font-display font-bold text-[var(--color-background)]"
+              />
+            </h2>
+          </RevealOnScroll>
+
+          <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 2}>
+            <p className="text-body text-[var(--color-text-muted)] max-w-2xl">
+              {t("description")}
+            </p>
+          </RevealOnScroll>
+        </div>
+
+        {/* Included with package */}
+        <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 3}>
+          <div className="mb-12 lg:mb-16 p-6 lg:p-8 border border-[var(--color-line-dark)]">
+            <h3 className="text-[16px] font-display font-bold text-[var(--color-background)] mb-4 uppercase tracking-[var(--letter-spacing-wide)]">
+              {t("includedTitle")}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {includedItems.map((item, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <span className="text-caption text-[var(--color-accent)] shrink-0">
+                    {item.tier}
+                  </span>
+                  <span className="text-body-sm text-[var(--color-text-muted)]">
+                    {item.text}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </RevealOnScroll>
+
+        {/* Monthly Support Packages */}
+        <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 4}>
+          <h3 className="text-h3 font-display font-bold text-[var(--color-background)] mb-8">
+            {t("monthlyTitle")}
+          </h3>
+        </RevealOnScroll>
+
+        <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 5}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-start">
+            {packages.map((pkg) => {
+              const isStandard = pkg.tier === "standard";
+              const price = region === "ukraine" ? pkg.priceUA : pkg.priceEU;
+
+              return (
+                <div
+                  key={pkg.tier}
+                  className={`relative flex flex-col p-6 lg:p-8 border transition-all duration-300 ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:border-[var(--color-accent)] ${
+                    isStandard
+                      ? "border-[var(--color-background)] lg:scale-[1.02]"
+                      : "border-[var(--color-line-dark)]"
+                  }`}
+                >
+                  {/* Recommended badge */}
+                  {isStandard && (
+                    <div className="absolute -top-3 left-6 px-3 py-1 bg-[var(--color-accent)] text-[var(--color-background)] text-[11px] font-medium uppercase tracking-[var(--letter-spacing-extra-wide)]">
+                      {recommendedLabel}
+                    </div>
+                  )}
+
+                  {/* Tier label */}
+                  <span className="text-[11px] font-medium uppercase tracking-[var(--letter-spacing-extra-wide)] text-[var(--color-accent)] mb-2">
+                    {tierLabels[pkg.tier]}
+                  </span>
+
+                  {/* Package name */}
+                  <h4 className="text-[20px] font-display font-bold text-[var(--color-background)] mb-4">
+                    {pkg.name}
+                  </h4>
+
+                  {/* Price */}
+                  <div className="mb-4">
+                    <span className="text-[24px] lg:text-[28px] font-display font-bold text-[var(--color-background)]">
+                      {price}
+                    </span>
+                    <span className="text-body-sm text-[var(--color-text-muted)] ml-1">
+                      {t("perMonth")}
+                    </span>
+                  </div>
+
+                  {/* Limits */}
+                  <div className="mb-6 pb-6 border-b border-[var(--color-line-dark)]">
+                    <span className="text-[11px] uppercase tracking-[var(--letter-spacing-wide)] text-[var(--color-text-muted)] block mb-1">
+                      {t("limitsLabel")}
+                    </span>
+                    <span className="text-body-sm text-[var(--color-background)]">
+                      {pkg.limits}
+                    </span>
+                  </div>
+
+                  {/* Audience */}
+                  <p className="text-body-sm text-[var(--color-text-muted)] mb-6 leading-relaxed">
+                    {pkg.audience}
+                  </p>
+
+                  {/* Features */}
+                  <ul className="space-y-2 flex-1">
+                    {pkg.features.map((feature, index) => (
+                      <li
+                        key={index}
+                        className="flex items-start gap-2.5 text-[14px] text-[var(--color-text-light)]"
+                      >
+                        <svg
+                          className="w-4 h-4 shrink-0 mt-0.5 text-[var(--color-accent)]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+        </RevealOnScroll>
+      </Container>
+    </section>
   );
 }
 
