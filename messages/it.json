@@ -1163,119 +1163,131 @@
       "caption": "Informazioni legali",
       "heading1": "INFORMATIVA",
       "heading2": "sulla Privacy",
-      "lastUpdated": "Ultimo aggiornamento: 19 gennaio 2026",
+      "lastUpdated": "Ultimo aggiornamento: 13 marzo 2026",
       "sections": [
         {
           "number": "01",
           "title": "Disposizioni Generali",
           "content": [
-            "La presente Informativa sulla Privacy descrive come NAKO Agency (di seguito — \"noi\", \"nostro\", \"Società\") raccoglie, utilizza e protegge i dati personali degli utenti del sito web nakoagency.com (di seguito — \"Sito Web\").",
-            "Utilizzando il Sito Web, Lei accetta i termini della presente Informativa. Se non concorda con i termini, La preghiamo di cessare l'utilizzo del Sito Web."
+            "NAKO Agency (di seguito «noi», «nostro», «Società») agisce in qualità di titolare del trattamento dei dati personali raccolti attraverso il presente sito web.",
+            "Sito web: nakoagency.com.",
+            "La presente Informativa sulla Privacy si applica a tutti gli utenti a livello globale, indipendentemente dalla loro ubicazione.",
+            "Operiamo nelle seguenti giurisdizioni: Moldavia, Romania, Ucraina, Polonia, Germania, Italia, Russia e Kazakistan.",
+            "Le normative applicabili in materia di protezione dei dati personali comprendono: il Regolamento Generale sulla Protezione dei Dati (GDPR) per l'Unione Europea; la Legge n. 195/2024 sulla Protezione dei Dati Personali (Moldavia); la Legge n. 2297-VI sulla Protezione dei Dati Personali (Ucraina); la Legge Federale n. 152-FZ sui Dati Personali (Russia); la Legge n. 94-V sui Dati Personali e la Loro Protezione (Kazakistan)."
           ]
         },
         {
           "number": "02",
           "title": "Dati che Raccogliamo",
           "content": [
-            "Possiamo raccogliere i seguenti dati:",
-            "Dati personali forniti da Lei: nome, indirizzo email, numero di telefono, username Telegram — durante la compilazione dei moduli sul Sito Web.",
-            "Dati raccolti automaticamente: indirizzo IP, tipo di browser, dispositivo, pagine visitate, tempo trascorso sul sito — tramite cookie e analytics.",
-            "Dati da servizi di terze parti: dati analytics da Google Analytics, Vercel Analytics."
+            "Dati personali forniti tramite moduli: nome, indirizzo email, numero di telefono, nome utente Telegram, nome dell'azienda e descrizione del progetto.",
+            "Dati raccolti automaticamente: indirizzo IP (anonimizzato per gli utenti dell'UE), tipo di browser, informazioni sul dispositivo, pagine visitate e URL di provenienza.",
+            "Cookie: utilizziamo cookie necessari, analitici, di marketing e di preferenza. Per i dettagli, consultare la nostra Informativa sui Cookie.",
+            "Servizi di terze parti che possono raccogliere dati: Google Analytics 4 e Vercel Analytics."
           ]
         },
         {
           "number": "03",
-          "title": "Finalità del Trattamento dei Dati",
+          "title": "Finalità e Base Giuridica del Trattamento",
           "content": [
-            "Utilizziamo i Suoi dati per:",
-            "Elaborazione di richieste e domande inviate tramite i moduli del Sito Web.",
-            "Comunicazione con Lei riguardo a progetti e servizi.",
-            "Miglioramento del Sito Web e dell'esperienza utente.",
-            "Analytics e ricerche statistiche.",
-            "Adempimento degli obblighi di legge."
+            "Trattamento delle richieste inviate tramite moduli — base giuridica: il Suo consenso (Art. 6, par. 1, lett. a, GDPR).",
+            "Comunicazione relativa a progetti e servizi — base giuridica: necessità contrattuale (Art. 6, par. 1, lett. b, GDPR).",
+            "Miglioramento del sito web e analisi — base giuridica: interesse legittimo (Art. 6, par. 1, lett. f, GDPR).",
+            "Adempimento degli obblighi di legge — base giuridica: obbligo legale (Art. 6, par. 1, lett. c, GDPR).",
+            "Comunicazioni di marketing (solo con il Suo consenso esplicito) — base giuridica: consenso (Art. 6, par. 1, lett. a, GDPR)."
           ]
         },
         {
           "number": "04",
-          "title": "Base Giuridica del Trattamento",
+          "title": "Cookie e Tracciamento",
           "content": [
-            "Il trattamento dei dati viene effettuato sulla base di:",
-            "Il Suo consenso (durante la compilazione dei moduli).",
-            "Interesse legittimo (miglioramento del servizio e analytics).",
-            "Necessità contrattuale (adempimento degli obblighi di servizio).",
-            "Obbligo di legge (conformità alla normativa applicabile)."
+            "Utilizziamo le seguenti categorie di cookie: necessari (sempre attivi), analitici (opt-in), di marketing (opt-in) e di preferenza (opt-in).",
+            "Google Consent Mode v2 è implementato sul nostro sito web.",
+            "Prima del Suo consenso, nessun cookie non essenziale viene impostato.",
+            "È possibile gestire le preferenze sui cookie tramite il banner visualizzato alla prima visita, oppure attraverso il link «Impostazioni Cookie» nel piè di pagina del sito in qualsiasi momento.",
+            "Per informazioni complete sui cookie utilizzati, le relative finalità e i periodi di conservazione, consultare la nostra pagina Informativa sui Cookie."
           ]
         },
         {
           "number": "05",
-          "title": "Condivisione dei Dati con Terze Parti",
+          "title": "Condivisione dei Dati",
           "content": [
-            "Non vendiamo i Suoi dati personali. I dati possono essere condivisi con:",
-            "Fornitori di servizi: Vercel (hosting), Resend (email), Google (analytics).",
-            "Autorità legali: su richiesta legittima.",
-            "Tutti i servizi di terze parti rispettano gli standard di protezione dei dati."
+            "NON vendiamo i Suoi dati personali in nessuna circostanza.",
+            "Condividiamo i dati con i seguenti fornitori di servizi (responsabili del trattamento): Vercel Inc. (hosting, Stati Uniti — protetto da Clausole Contrattuali Standard dell'UE); Resend Inc. (invio email, Stati Uniti — protetto da Clausole Contrattuali Standard dell'UE); Google LLC (analisi, Stati Uniti — protetto da Clausole Contrattuali Standard dell'UE).",
+            "Possiamo divulgare dati alle autorità competenti su richiesta legittima.",
+            "Tutti i responsabili del trattamento terzi sono vincolati da Accordi sul Trattamento dei Dati (DPA) che garantiscono un livello adeguato di protezione dei dati."
           ]
         },
         {
           "number": "06",
-          "title": "Cookies",
+          "title": "Trasferimenti Internazionali di Dati",
           "content": [
-            "Il Sito utilizza i cookie per:",
-            "Garantire il corretto funzionamento del Sito.",
-            "Analisi e monitoraggio del traffico.",
-            "Miglioramento dell'esperienza utente.",
-            "È possibile disabilitare i cookie nelle impostazioni del browser, ma ciò potrebbe influire sul funzionamento del Sito."
+            "I Suoi dati possono essere trasferiti negli Stati Uniti attraverso l'utilizzo dei servizi Vercel, Google e Resend.",
+            "Le garanzie per i trasferimenti internazionali comprendono: Clausole Contrattuali Standard dell'UE (SCC) e crittografia dei dati in transito.",
+            "Per i residenti in Russia: i dati dei moduli inviati da utenti in Russia sono trattati in conformità ai requisiti della Legge Federale n. 152-FZ.",
+            "Per i residenti in Kazakistan: rispettiamo i requisiti di localizzazione dei dati ai sensi della Legge n. 94-V sui Dati Personali e la Loro Protezione."
           ]
         },
         {
           "number": "07",
-          "title": "Data Protection",
+          "title": "Conservazione dei Dati",
           "content": [
-            "Adottiamo misure ragionevoli per proteggere i Suoi dati:",
-            "Crittografia dei dati in transito (HTTPS/TLS).",
-            "Accesso limitato al solo personale autorizzato.",
-            "Audit di sicurezza regolari.",
-            "Tuttavia, nessun metodo di trasmissione dei dati su Internet è sicuro al 100%."
+            "Richieste tramite moduli: conservate per 2 anni dalla data di invio, quindi eliminate definitivamente.",
+            "Dati analitici: conservati per 14 mesi (periodo di conservazione standard di Google Analytics 4).",
+            "Cookie: la durata di conservazione varia in base alla tipologia; consultare la nostra Informativa sui Cookie per le durate specifiche.",
+            "Registrazioni del consenso ai cookie: conservate per 3 anni come prova di conformità al GDPR.",
+            "Su Sua richiesta: i dati personali saranno cancellati entro 30 giorni."
           ]
         },
         {
           "number": "08",
-          "title": "Data Retention Period",
+          "title": "I Suoi Diritti",
           "content": [
-            "I dati personali vengono conservati per il periodo necessario al raggiungimento delle finalità indicate nella presente Informativa, ma non oltre:",
-            "Dati delle richieste — 2 anni dalla data di invio.",
-            "Dati analitici — 14 mesi (standard Google Analytics).",
-            "Cookie — fino a 1 anno."
+            "Tutti gli utenti hanno il diritto di: accedere ai propri dati personali, richiedere la rettifica di dati inesatti, richiedere la cancellazione dei propri dati e revocare il consenso al trattamento dei dati.",
+            "I residenti nell'UE (ai sensi del GDPR) hanno inoltre il diritto alla: portabilità dei dati, limitazione del trattamento, opposizione al trattamento e il diritto di non essere sottoposti a decisioni automatizzate. Autorità di controllo competenti: ANSPDCP (Romania), UODO (Polonia), BfDI (Germania), Garante per la protezione dei dati personali (Italia).",
+            "I residenti in Russia (ai sensi della Legge 152-FZ) hanno il diritto di: accesso, rettifica, blocco e distruzione dei dati personali, nonché revoca del consenso. Autorità di controllo: Roskomnadzor.",
+            "I residenti in Kazakistan (ai sensi della Legge n. 94-V) hanno il diritto di: accesso, rettifica e cancellazione dei dati personali. Riferimento: Comitato per la Sicurezza Informatica del Ministero dello Sviluppo Digitale.",
+            "I residenti in Moldavia (ai sensi della Legge n. 195/2024) otterranno diritti equivalenti al GDPR a partire da agosto 2026. Autorità di controllo: Centro Nazionale per la Protezione dei Dati Personali (NCPDP).",
+            "I residenti in Ucraina (ai sensi della Legge n. 2297-VI) hanno il diritto di: accesso, rettifica, cancellazione dei dati personali e revoca del consenso. Autorità di controllo: Commissario del Parlamento ucraino per i Diritti Umani (Difensore civico dell'Ucraina).",
+            "Per esercitare i Suoi diritti, La preghiamo di contattarci all'indirizzo: hello@nakoagency.com. Risponderemo entro 30 giorni dal ricevimento della Sua richiesta."
           ]
         },
         {
           "number": "09",
-          "title": "Your Rights",
+          "title": "Sicurezza dei Dati",
           "content": [
-            "Lei ha il diritto di:",
-            "Richiedere l'accesso ai Suoi dati personali.",
-            "Richiedere la correzione di dati inesatti.",
-            "Richiedere la cancellazione dei Suoi dati.",
-            "Revocare il consenso al trattamento dei dati.",
-            "Presentare un reclamo all'autorità di controllo.",
-            "Per esercitare i Suoi diritti, ci contatti all'indirizzo: hello@nakoagency.com"
+            "Tutti i dati sono crittografati in transito mediante protocolli HTTPS/TLS.",
+            "L'accesso ai dati personali è limitato al solo personale autorizzato.",
+            "Effettuiamo regolari verifiche di sicurezza dei nostri sistemi e processi.",
+            "Sebbene nessun metodo di trasmissione elettronica o archiviazione sia sicuro al 100%, in caso di violazione dei dati informeremo gli utenti interessati entro 72 ore come previsto dal GDPR."
           ]
         },
         {
           "number": "10",
-          "title": "Modifiche all'Informativa",
+          "title": "Privacy dei Minori",
           "content": [
-            "Ci riserviamo il diritto di modificare la presente Informativa in qualsiasi momento. Le modifiche entrano in vigore al momento della pubblicazione sul Sito. Si consiglia di consultare periodicamente la versione aggiornata.",
-            "La data dell'ultimo aggiornamento è indicata in cima al documento."
+            "Il presente sito web non è destinato all'uso da parte di minori.",
+            "Le soglie di età per il consenso variano in base alla giurisdizione: sotto i 16 anni in Germania e nei Paesi Bassi; sotto i 14 anni in Italia; sotto i 13 anni in Polonia e per impostazione predefinita nelle altre giurisdizioni.",
+            "Non raccogliamo consapevolmente dati personali di minori. Qualora ritenga che un minore ci abbia fornito dati personali, La preghiamo di contattarci immediatamente."
           ]
         },
         {
           "number": "11",
-          "title": "Informazioni di contatto",
+          "title": "Modifiche alla Presente Informativa",
           "content": [
-            "Per domande relative alla presente Informativa, ci contatti:",
-            "Email: hello@nakoagency.com",
-            "Sito web: nakoagency.com"
+            "Potremmo aggiornare periodicamente la presente Informativa sulla Privacy. Le modifiche entrano in vigore al momento della pubblicazione sul sito web.",
+            "In caso di modifiche sostanziali, gli utenti saranno informati tramite un banner sul sito web.",
+            "La data dell'ultimo aggiornamento è indicata in cima al presente documento."
+          ]
+        },
+        {
+          "number": "12",
+          "title": "Informazioni di Contatto",
+          "content": [
+            "Titolare del trattamento: NAKO Agency.",
+            "Email: hello@nakoagency.com.",
+            "Sito web: nakoagency.com.",
+            "Per richieste specifiche relative al GDPR, scrivere a: hello@nakoagency.com."
           ]
         }
       ],

@@ -1159,123 +1159,135 @@
     },
     "privacy": {
       "metaTitle": "Politica de confidențialitate | NAKO Agency",
-      "metaDescription": "Politica de confidențialitate NAKO Agency. Informații despre colectarea, utilizarea și protecția datelor personale.",
-      "caption": "Informatii juridice",
+      "metaDescription": "Politica de confidențialitate NAKO Agency. Informații despre colectarea, utilizarea și protecția datelor cu caracter personal.",
+      "caption": "Informații juridice",
       "heading1": "POLITICA",
-      "heading2": "de confidentialitate",
-      "lastUpdated": "Ultima actualizare: 19 ianuarie 2026",
+      "heading2": "de confidențialitate",
+      "lastUpdated": "Ultima actualizare: 13 martie 2026",
       "sections": [
         {
           "number": "01",
-          "title": "Dispozitii generale",
+          "title": "Dispoziții generale",
           "content": [
-            "Aceasta Politica de confidentialitate descrie modul in care NAKO Agency (denumita in continuare — \"noi\", \"al nostru\", \"Compania\") colecteaza, utilizeaza si protejeaza datele personale ale utilizatorilor site-ului nakoagency.com (denumit in continuare — \"Site\").",
-            "Utilizand Site-ul, sunteti de acord cu termenii acestei Politici. Daca nu sunteti de acord, va rugam sa incetati utilizarea Site-ului."
+            "NAKO Agency (\"noi\", \"al nostru\", \"Compania\") acționează în calitate de operator de date cu caracter personal colectate prin intermediul acestui site web.",
+            "Site web: nakoagency.com.",
+            "Această Politică de confidențialitate se aplică tuturor utilizatorilor din întreaga lume, indiferent de locație.",
+            "Operăm în următoarele jurisdicții: Moldova, România, Ucraina, Polonia, Germania, Italia, Rusia și Kazahstan.",
+            "Reglementările aplicabile privind protecția datelor includ: Regulamentul General privind Protecția Datelor (GDPR) pentru Uniunea Europeană; Legea nr. 195/2024 privind protecția datelor cu caracter personal (Moldova); Legea nr. 2297-VI privind protecția datelor cu caracter personal (Ucraina); Legea federală nr. 152-FZ privind datele cu caracter personal (Rusia); Legea nr. 94-V privind datele cu caracter personal și protecția acestora (Kazahstan)."
           ]
         },
         {
           "number": "02",
-          "title": "Ce date colectam",
+          "title": "Datele pe care le colectăm",
           "content": [
-            "Putem colecta urmatoarele date:",
-            "Date personale furnizate de dvs.: nume, adresa de email, numar de telefon, Telegram — la completarea formularelor de pe Site.",
-            "Date colectate automat: adresa IP, tipul browserului, dispozitivul, paginile vizitate, timpul petrecut pe site — prin cookies si sisteme de analitica.",
-            "Date de la servicii terte: date analitice Google Analytics, Vercel Analytics."
+            "Date cu caracter personal furnizate prin formulare: nume, adresă de e-mail, număr de telefon, nume de utilizator Telegram, denumirea companiei și descrierea proiectului.",
+            "Date colectate automat: adresa IP (anonimizată pentru utilizatorii din UE), tipul browserului, informații despre dispozitiv, paginile vizitate și URL-ul de referință.",
+            "Cookie-uri: utilizăm cookie-uri necesare, de analiză, de marketing și de preferințe. Pentru detalii, consultați Politica noastră privind cookie-urile.",
+            "Servicii terțe care pot colecta date: Google Analytics 4 și Vercel Analytics."
           ]
         },
         {
           "number": "03",
-          "title": "Scopurile prelucrarii datelor",
+          "title": "Scopurile și temeiul juridic al prelucrării",
           "content": [
-            "Utilizam datele dvs. pentru:",
-            "Procesarea solicitarilor si cererilor trimise prin formularele Site-ului.",
-            "Comunicarea cu dvs. privind proiectele si serviciile.",
-            "Imbunatatirea Site-ului si a experientei utilizatorilor.",
-            "Analitica si cercetari statistice.",
-            "Indeplinirea obligatiilor legale."
+            "Prelucrarea trimiterilor din formulare — temei juridic: consimțământul dumneavoastră (art. 6 alin. (1) lit. (a) GDPR).",
+            "Comunicarea privind proiectele și serviciile — temei juridic: necesitatea contractuală (art. 6 alin. (1) lit. (b) GDPR).",
+            "Îmbunătățirea site-ului web și analiza — temei juridic: interesul legitim (art. 6 alin. (1) lit. (f) GDPR).",
+            "Conformitatea juridică — temei juridic: obligația legală (art. 6 alin. (1) lit. (c) GDPR).",
+            "Comunicări de marketing (numai cu consimțământul dumneavoastră explicit) — temei juridic: consimțământul (art. 6 alin. (1) lit. (a) GDPR)."
           ]
         },
         {
           "number": "04",
-          "title": "Temeiul legal al prelucrarii",
+          "title": "Cookie-uri și urmărire",
           "content": [
-            "Prelucrarea datelor se efectueaza in baza:",
-            "Consimtamantului dvs. (la completarea formularelor).",
-            "Interesului legitim (imbunatatirea serviciului si analitica).",
-            "Necesitatii contractuale (indeplinirea obligatiilor de servicii).",
-            "Obligatiei legale (conformitatea cu legislatia aplicabila)."
+            "Utilizăm următoarele categorii de cookie-uri: necesare (întotdeauna active), de analiză (cu acordul utilizatorului), de marketing (cu acordul utilizatorului) și de preferințe (cu acordul utilizatorului).",
+            "Google Consent Mode v2 este implementat pe site-ul nostru.",
+            "Înainte de a vă exprima consimțământul, nu sunt setate cookie-uri neesențiale.",
+            "Puteți gestiona preferințele privind cookie-urile prin bannerul de cookie-uri afișat la prima vizită sau prin linkul \"Setări cookie-uri\" din subsolul site-ului, în orice moment.",
+            "Pentru detalii complete despre cookie-urile pe care le utilizăm, scopurile și perioadele de retenție, consultați pagina noastră Politica privind cookie-urile."
           ]
         },
         {
           "number": "05",
-          "title": "Transmiterea datelor catre terti",
+          "title": "Partajarea datelor",
           "content": [
-            "Nu vindem datele dvs. personale. Datele pot fi transmise:",
-            "Furnizorilor de servicii: Vercel (hosting), Resend (email), Google (analitica).",
-            "Autoritatilor de stat: la cerere legala.",
-            "Toate serviciile terte respecta standardele de protectie a datelor."
+            "NU vindem datele dumneavoastră cu caracter personal în nicio circumstanță.",
+            "Partajăm date cu următorii furnizori de servicii (persoane împuternicite): Vercel Inc. (hosting, Statele Unite — protejat prin Clauzele Contractuale Standard ale UE); Resend Inc. (livrare e-mail, Statele Unite — protejat prin Clauzele Contractuale Standard ale UE); Google LLC (analiză, Statele Unite — protejat prin Clauzele Contractuale Standard ale UE).",
+            "Putem divulga date autorităților competente la cerere legală.",
+            "Toate persoanele împuternicite terțe sunt obligate prin Acorduri de prelucrare a datelor (DPA) care asigură un nivel adecvat de protecție a datelor."
           ]
         },
         {
           "number": "06",
-          "title": "Fisiere cookie",
+          "title": "Transferuri internaționale de date",
           "content": [
-            "Site-ul utilizeaza cookies pentru:",
-            "Asigurarea functionarii corecte a Site-ului.",
-            "Analitica si analiza traficului.",
-            "Imbunatatirea experientei utilizatorilor.",
-            "Puteti dezactiva cookies in setarile browserului, insa acest lucru poate afecta functionalitatea Site-ului."
+            "Datele dumneavoastră pot fi transferate în Statele Unite prin utilizarea serviciilor Vercel, Google și Resend.",
+            "Garanțiile pentru transferurile internaționale includ: Clauzele Contractuale Standard ale UE (SCC) și criptarea datelor în tranzit.",
+            "Pentru rezidenții din Rusia: datele din formulare trimise de utilizatorii din Rusia sunt prelucrate în conformitate cu cerințele Legii federale nr. 152-FZ.",
+            "Pentru rezidenții din Kazahstan: respectăm cerințele de localizare a datelor conform Legii nr. 94-V privind datele cu caracter personal și protecția acestora."
           ]
         },
         {
           "number": "07",
-          "title": "Protectia datelor",
+          "title": "Păstrarea datelor",
           "content": [
-            "Luam masuri rezonabile pentru a proteja datele dvs.:",
-            "Criptarea datelor in tranzit (HTTPS/TLS).",
-            "Accesul limitat doar la personalul autorizat.",
-            "Audituri regulate de securitate.",
-            "Cu toate acestea, nicio metoda de transmitere a datelor prin Internet nu este 100% sigura."
+            "Trimiteri din formulare: păstrate timp de 2 ani de la data trimiterii, apoi șterse definitiv.",
+            "Date de analiză: păstrate timp de 14 luni (perioada standard de retenție Google Analytics 4).",
+            "Cookie-uri: retenția variază în funcție de tip; consultați Politica noastră privind cookie-urile pentru durate specifice.",
+            "Înregistrări privind consimțământul cookie-urilor: păstrate timp de 3 ani ca dovadă a conformității GDPR.",
+            "La cererea dumneavoastră: datele cu caracter personal vor fi șterse în termen de 30 de zile."
           ]
         },
         {
           "number": "08",
-          "title": "Perioada de stocare a datelor",
+          "title": "Drepturile dumneavoastră",
           "content": [
-            "Datele personale sunt stocate pe perioada necesara indeplinirii scopurilor mentionate in aceasta Politica, dar nu mai mult de:",
-            "Date din solicitari — 2 ani de la trimitere.",
-            "Date analitice — 14 luni (standard Google Analytics).",
-            "Cookies — pana la 1 an."
+            "Toți utilizatorii au dreptul de a: accesa datele lor cu caracter personal, solicita rectificarea datelor inexacte, solicita ștergerea datelor lor și retrage consimțământul pentru prelucrarea datelor.",
+            "Rezidenții UE (conform GDPR) au în plus dreptul la: portabilitatea datelor, restricționarea prelucrării, obiecția la prelucrare și dreptul de a nu fi supus unor decizii automatizate. Autorități de supraveghere relevante: ANSPDCP (România), UODO (Polonia), BfDI (Germania), Garante per la protezione dei dati personali (Italia).",
+            "Rezidenții din Rusia (conform 152-FZ) au dreptul la: acces, corectare, blocare și distrugere a datelor cu caracter personal, precum și retragerea consimțământului. Autoritate de supraveghere: Roskomnadzor.",
+            "Rezidenții din Kazahstan (conform Legii nr. 94-V) au dreptul la: acces, corectare și ștergere a datelor cu caracter personal. Contact: Comitetul pentru Securitatea Informațiilor al Ministerului Dezvoltării Digitale.",
+            "Rezidenții din Moldova (conform Legii nr. 195/2024) vor avea drepturi echivalente cu GDPR din august 2026. Autoritate de supraveghere: Centrul Național pentru Protecția Datelor cu Caracter Personal (CNPDCP).",
+            "Rezidenții din Ucraina (conform Legii nr. 2297-VI) au dreptul la: acces, corectare, ștergere a datelor cu caracter personal și retragerea consimțământului. Autoritate de supraveghere: Împuternicitul Parlamentului Ucrainei pentru Drepturile Omului (Ombudsmanul Ucrainei).",
+            "Pentru exercitarea oricăruia dintre drepturile dumneavoastră, vă rugăm să ne contactați la: hello@nakoagency.com. Vom răspunde în termen de 30 de zile de la primirea cererii dumneavoastră."
           ]
         },
         {
           "number": "09",
-          "title": "Drepturile dvs.",
+          "title": "Securitatea datelor",
           "content": [
-            "Aveti dreptul sa:",
-            "Solicitati acces la datele dvs. personale.",
-            "Solicitati corectarea datelor inexacte.",
-            "Solicitati stergerea datelor dvs.",
-            "Retrageti consimtamantul pentru prelucrarea datelor.",
-            "Depuneti o plangere la autoritatea de supraveghere.",
-            "Pentru exercitarea drepturilor, contactati-ne la: hello@nakoagency.com"
+            "Toate datele sunt criptate în tranzit prin protocoale HTTPS/TLS.",
+            "Accesul la datele cu caracter personal este restricționat doar la personalul autorizat.",
+            "Efectuăm revizuiri periodice de securitate ale sistemelor și proceselor noastre.",
+            "Deși nicio metodă de transmisie electronică sau stocare nu este 100% sigură, în cazul unei încălcări a securității datelor vom notifica utilizatorii afectați în termen de 72 de ore, conform cerințelor GDPR."
           ]
         },
         {
           "number": "10",
-          "title": "Modificari ale Politicii",
+          "title": "Confidențialitatea copiilor",
           "content": [
-            "Ne rezervam dreptul de a modifica aceasta Politica in orice moment. Modificarile intra in vigoare la publicarea pe Site. Recomandam verificarea periodica a versiunii actuale.",
-            "Data ultimei actualizari este indicata la inceputul documentului."
+            "Acest site web nu este destinat utilizării de către copii.",
+            "Pragurile de vârstă pentru consimțământ variază în funcție de jurisdicție: sub 16 ani în Germania și Țările de Jos; sub 14 ani în Italia; sub 13 ani în Polonia și implicit în alte jurisdicții.",
+            "Nu colectăm cu bună știință date cu caracter personal de la copii. Dacă considerați că un copil ne-a furnizat date cu caracter personal, vă rugăm să ne contactați imediat."
           ]
         },
         {
           "number": "11",
-          "title": "Informatii de contact",
+          "title": "Modificări ale acestei Politici",
           "content": [
-            "Daca aveti intrebari privind aceasta Politica, contactati-ne:",
-            "Email: hello@nakoagency.com",
-            "Site: nakoagency.com"
+            "Este posibil să actualizăm periodic această Politică de confidențialitate. Modificările intră în vigoare la publicarea pe site.",
+            "În cazul unor modificări semnificative, utilizatorii vor fi notificați prin intermediul unui banner pe site.",
+            "Data ultimei actualizări este indicată la începutul acestui document."
+          ]
+        },
+        {
+          "number": "12",
+          "title": "Informații de contact",
+          "content": [
+            "Operator de date: NAKO Agency.",
+            "E-mail: hello@nakoagency.com.",
+            "Site web: nakoagency.com.",
+            "Pentru întrebări specifice GDPR, vă rugăm să scrieți la: hello@nakoagency.com."
           ]
         }
       ],

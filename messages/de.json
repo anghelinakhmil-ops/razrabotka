@@ -1163,119 +1163,131 @@
       "caption": "Rechtliche Informationen",
       "heading1": "DATENSCHUTZ",
       "heading2": "Richtlinie",
-      "lastUpdated": "Zuletzt aktualisiert: 19. Januar 2026",
+      "lastUpdated": "Letzte Aktualisierung: 13. März 2026",
       "sections": [
         {
           "number": "01",
           "title": "Allgemeine Bestimmungen",
           "content": [
-            "Diese Datenschutzrichtlinie beschreibt, wie NAKO Agency (nachfolgend — \"wir\", \"unser\", \"Unternehmen\") personenbezogene Daten der Nutzer der Website nakoagency.com (nachfolgend — \"Website\") erhebt, nutzt und schützt.",
-            "Durch die Nutzung der Website stimmen Sie den Bedingungen dieser Richtlinie zu. Wenn Sie mit den Bedingungen nicht einverstanden sind, stellen Sie bitte die Nutzung der Website ein."
+            "NAKO Agency (nachfolgend «wir», «unser», «Unternehmen») ist Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) für die über diese Website erhobenen personenbezogenen Daten.",
+            "Website: nakoagency.com.",
+            "Diese Datenschutzerklärung gilt für alle Nutzer weltweit, unabhängig von ihrem Aufenthaltsort.",
+            "Wir sind in folgenden Rechtsordnungen tätig: Moldau, Rumänien, Ukraine, Polen, Deutschland, Italien, Russland und Kasachstan.",
+            "Anwendbare Datenschutzvorschriften umfassen: die Datenschutz-Grundverordnung (DSGVO) für die Europäische Union; das Gesetz Nr. 195/2024 zum Schutz personenbezogener Daten (Moldau); das Gesetz Nr. 2297-VI zum Schutz personenbezogener Daten (Ukraine); das Bundesgesetz Nr. 152-FZ über personenbezogene Daten (Russland); das Gesetz Nr. 94-V über personenbezogene Daten und deren Schutz (Kasachstan)."
           ]
         },
         {
           "number": "02",
           "title": "Daten, die wir erheben",
           "content": [
-            "Wir können folgende Daten erheben:",
-            "Von Ihnen bereitgestellte personenbezogene Daten: Name, E-Mail-Adresse, Telefonnummer, Telegram-Benutzername — beim Ausfüllen von Formularen auf der Website.",
-            "Automatisch erhobene Daten: IP-Adresse, Browsertyp, Gerät, besuchte Seiten, Verweildauer — durch Cookies und Analytik.",
-            "Daten von Drittanbieterdiensten: Analytikdaten von Google Analytics, Vercel Analytics."
+            "Personenbezogene Daten, die über Formulare bereitgestellt werden: Name, E-Mail-Adresse, Telefonnummer, Telegram-Benutzername, Firmenname und Projektbeschreibung.",
+            "Automatisch erhobene Daten: IP-Adresse (für EU-Nutzer anonymisiert), Browsertyp, Geräteinformationen, besuchte Seiten und Referrer-URL.",
+            "Cookies: Wir verwenden notwendige, Analyse-, Marketing- und Präferenz-Cookies. Einzelheiten entnehmen Sie bitte unserer Cookie-Richtlinie.",
+            "Drittanbieterdienste, die Daten erheben können: Google Analytics 4 und Vercel Analytics."
           ]
         },
         {
           "number": "03",
-          "title": "Zwecke der Datenverarbeitung",
+          "title": "Zwecke und Rechtsgrundlagen der Verarbeitung",
           "content": [
-            "Wir verwenden Ihre Daten für:",
-            "Bearbeitung von Anfragen und Bewerbungen, die über Website-Formulare eingereicht werden.",
-            "Kommunikation mit Ihnen bezüglich Projekten und Dienstleistungen.",
-            "Verbesserung der Website und der Nutzererfahrung.",
-            "Analytik und statistische Auswertungen.",
-            "Erfüllung rechtlicher Verpflichtungen."
+            "Verarbeitung von Formularanfragen — Rechtsgrundlage: Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).",
+            "Kommunikation über Projekte und Dienstleistungen — Rechtsgrundlage: Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).",
+            "Verbesserung der Website und Analyse — Rechtsgrundlage: berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO).",
+            "Einhaltung gesetzlicher Vorschriften — Rechtsgrundlage: rechtliche Verpflichtung (Art. 6 Abs. 1 lit. c DSGVO).",
+            "Marketingkommunikation (nur mit Ihrer ausdrücklichen Einwilligung) — Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)."
           ]
         },
         {
           "number": "04",
-          "title": "Rechtsgrundlage der Verarbeitung",
+          "title": "Cookies und Tracking",
           "content": [
-            "Die Datenverarbeitung erfolgt auf Grundlage von:",
-            "Ihrer Einwilligung (beim Ausfüllen von Formularen).",
-            "Berechtigtem Interesse (Serviceverbesserung und Analytik).",
-            "Vertraglicher Notwendigkeit (Erfüllung von Dienstleistungsverpflichtungen).",
-            "Rechtlicher Verpflichtung (Einhaltung geltenden Rechts)."
+            "Wir verwenden folgende Cookie-Kategorien: notwendige (stets aktiv), Analyse (Opt-in), Marketing (Opt-in) und Präferenzen (Opt-in).",
+            "Google Consent Mode v2 ist auf unserer Website implementiert.",
+            "Vor Erteilung Ihrer Einwilligung werden keine nicht notwendigen Cookies gesetzt.",
+            "Sie können Ihre Cookie-Einstellungen über das Cookie-Banner beim ersten Besuch oder jederzeit über den Link «Cookie-Einstellungen» in der Fußzeile der Website verwalten.",
+            "Ausführliche Informationen zu den von uns verwendeten Cookies, deren Zwecken und Speicherdauer finden Sie in unserer Cookie-Richtlinie."
           ]
         },
         {
           "number": "05",
-          "title": "Weitergabe von Daten an Dritte",
+          "title": "Weitergabe von Daten",
           "content": [
-            "Wir verkaufen Ihre personenbezogenen Daten nicht. Daten können weitergegeben werden an:",
-            "Dienstleister: Vercel (Hosting), Resend (E-Mail), Google (Analytics).",
-            "Behörden: auf rechtmäßige Anfrage.",
-            "Alle Drittanbieter-Dienste erfüllen die Datenschutzstandards."
+            "Wir verkaufen Ihre personenbezogenen Daten unter keinen Umständen.",
+            "Wir geben Daten an folgende Dienstleister (Auftragsverarbeiter) weiter: Vercel Inc. (Hosting, Vereinigte Staaten — geschützt durch EU-Standardvertragsklauseln); Resend Inc. (E-Mail-Zustellung, Vereinigte Staaten — geschützt durch EU-Standardvertragsklauseln); Google LLC (Analyse, Vereinigte Staaten — geschützt durch EU-Standardvertragsklauseln).",
+            "Wir können Daten auf rechtmäßige Anfrage an Behörden offenlegen.",
+            "Alle Drittanbieter-Auftragsverarbeiter sind durch Auftragsverarbeitungsverträge (AVV) gebunden, die ein angemessenes Datenschutzniveau gewährleisten."
           ]
         },
         {
           "number": "06",
-          "title": "Cookies",
+          "title": "Internationale Datenübermittlungen",
           "content": [
-            "Die Website verwendet Cookies für:",
-            "Sicherstellung der ordnungsgemäßen Funktionalität der Website.",
-            "Analyse und Auswertung des Datenverkehrs.",
-            "Verbesserung der Nutzererfahrung.",
-            "Sie können Cookies in Ihren Browsereinstellungen deaktivieren, dies kann jedoch die Funktionalität der Website beeinträchtigen."
+            "Ihre Daten können durch die Nutzung der Dienste von Vercel, Google und Resend in die Vereinigten Staaten übermittelt werden.",
+            "Schutzmaßnahmen für internationale Übermittlungen umfassen: EU-Standardvertragsklauseln (SCCs) und Verschlüsselung der Daten bei der Übertragung.",
+            "Für in Russland ansässige Personen: Über Formulare übermittelte Daten von Nutzern in Russland werden gemäß den Anforderungen des Bundesgesetzes Nr. 152-FZ verarbeitet.",
+            "Für in Kasachstan ansässige Personen: Wir erfüllen die Anforderungen an die Datenlokalisierung gemäß dem Gesetz Nr. 94-V über personenbezogene Daten und deren Schutz."
           ]
         },
         {
           "number": "07",
-          "title": "Datenschutz",
+          "title": "Speicherdauer",
           "content": [
-            "Wir ergreifen angemessene Maßnahmen zum Schutz Ihrer Daten:",
-            "Datenverschlüsselung bei der Übertragung (HTTPS/TLS).",
-            "Zugang nur für autorisiertes Personal.",
-            "Regelmäßige Sicherheitsüberprüfungen.",
-            "Dennoch ist keine Methode der Datenübertragung über das Internet zu 100 % sicher."
+            "Formularanfragen: Speicherung für 2 Jahre ab dem Datum der Übermittlung, anschließend dauerhafte Löschung.",
+            "Analysedaten: Speicherung für 14 Monate (Standard-Aufbewahrungsfrist von Google Analytics 4).",
+            "Cookies: Die Speicherdauer variiert je nach Art; Einzelheiten entnehmen Sie unserer Cookie-Richtlinie.",
+            "Cookie-Einwilligungsnachweise: Speicherung für 3 Jahre als Nachweis der DSGVO-Konformität.",
+            "Auf Ihren Antrag hin: Personenbezogene Daten werden innerhalb von 30 Tagen gelöscht."
           ]
         },
         {
           "number": "08",
-          "title": "Aufbewahrungsfrist",
+          "title": "Ihre Rechte",
           "content": [
-            "Personenbezogene Daten werden für den Zeitraum gespeichert, der zur Erfüllung der in dieser Richtlinie genannten Zwecke erforderlich ist, jedoch nicht länger als:",
-            "Antragsdaten — 2 Jahre ab dem Datum der Einreichung.",
-            "Analysedaten — 14 Monate (Google Analytics Standard).",
-            "Cookies — bis zu 1 Jahr."
+            "Alle Nutzer haben das Recht auf: Auskunft über ihre personenbezogenen Daten, Berichtigung unrichtiger Daten, Löschung ihrer Daten sowie Widerruf der Einwilligung zur Datenverarbeitung.",
+            "In der EU ansässige Personen (gemäß DSGVO) haben zusätzlich das Recht auf: Datenübertragbarkeit, Einschränkung der Verarbeitung, Widerspruch gegen die Verarbeitung sowie das Recht, keiner automatisierten Entscheidungsfindung unterworfen zu werden. Zuständige Aufsichtsbehörden: ANSPDCP (Rumänien), UODO (Polen), BfDI — Bundesbeauftragter für den Datenschutz und die Informationsfreiheit (Deutschland), Garante per la protezione dei dati personali (Italien).",
+            "In Russland ansässige Personen (gemäß 152-FZ) haben das Recht auf: Auskunft, Berichtigung, Sperrung und Löschung personenbezogener Daten sowie Widerruf der Einwilligung. Aufsichtsbehörde: Roskomnadzor.",
+            "In Kasachstan ansässige Personen (gemäß Gesetz Nr. 94-V) haben das Recht auf: Auskunft, Berichtigung und Löschung personenbezogener Daten. Zuständig: Komitee für Informationssicherheit des Ministeriums für digitale Entwicklung.",
+            "In Moldau ansässige Personen (gemäß Gesetz Nr. 195/2024) erhalten ab August 2026 DSGVO-gleichwertige Rechte. Aufsichtsbehörde: Nationales Zentrum für den Schutz personenbezogener Daten (NCPDP).",
+            "In der Ukraine ansässige Personen (gemäß Gesetz Nr. 2297-VI) haben das Recht auf: Auskunft, Berichtigung, Löschung personenbezogener Daten sowie Widerruf der Einwilligung. Aufsichtsbehörde: Beauftragter des ukrainischen Parlaments für Menschenrechte (Ombudsmann der Ukraine).",
+            "Zur Ausübung Ihrer Rechte kontaktieren Sie uns bitte unter: hello@nakoagency.com. Wir werden innerhalb von 30 Tagen nach Eingang Ihres Antrags antworten."
           ]
         },
         {
           "number": "09",
-          "title": "Ihre Rechte",
+          "title": "Datensicherheit",
           "content": [
-            "Sie haben das Recht:",
-            "Auskunft über Ihre personenbezogenen Daten zu verlangen.",
-            "Berichtigung unrichtiger Daten zu verlangen.",
-            "Löschung Ihrer Daten zu verlangen.",
-            "Die Einwilligung zur Datenverarbeitung zu widerrufen.",
-            "Beschwerde bei der Aufsichtsbehörde einzureichen.",
-            "Um Ihre Rechte auszuüben, kontaktieren Sie uns unter: hello@nakoagency.com"
+            "Sämtliche Daten werden bei der Übertragung mittels HTTPS/TLS-Protokollen verschlüsselt.",
+            "Der Zugang zu personenbezogenen Daten ist ausschließlich autorisiertem Personal vorbehalten.",
+            "Wir führen regelmäßige Sicherheitsüberprüfungen unserer Systeme und Prozesse durch.",
+            "Obwohl keine Methode der elektronischen Übertragung oder Speicherung zu 100 % sicher ist, werden wir im Falle einer Datenpanne die betroffenen Nutzer innerhalb von 72 Stunden gemäß den Anforderungen der DSGVO benachrichtigen."
           ]
         },
         {
           "number": "10",
-          "title": "Änderungen der Richtlinie",
+          "title": "Datenschutz von Kindern",
           "content": [
-            "Wir behalten uns das Recht vor, diese Richtlinie jederzeit zu ändern. Änderungen treten mit der Veröffentlichung auf der Website in Kraft. Wir empfehlen, die aktuelle Version regelmäßig zu überprüfen.",
-            "Das Datum der letzten Aktualisierung ist oben im Dokument angegeben."
+            "Diese Website richtet sich nicht an Kinder.",
+            "Die Altersgrenzen für die Einwilligung variieren je nach Rechtsordnung: unter 16 Jahren in Deutschland und den Niederlanden; unter 14 Jahren in Italien; unter 13 Jahren in Polen und standardmäßig in anderen Rechtsordnungen.",
+            "Wir erheben wissentlich keine personenbezogenen Daten von Kindern. Sollten Sie der Meinung sein, dass ein Kind uns personenbezogene Daten übermittelt hat, kontaktieren Sie uns bitte umgehend."
           ]
         },
         {
           "number": "11",
+          "title": "Änderungen dieser Datenschutzerklärung",
+          "content": [
+            "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Änderungen treten mit der Veröffentlichung auf der Website in Kraft.",
+            "Bei wesentlichen Änderungen werden die Nutzer über ein Banner auf der Website informiert.",
+            "Das Datum der letzten Aktualisierung ist am Anfang dieses Dokuments angegeben."
+          ]
+        },
+        {
+          "number": "12",
           "title": "Kontaktinformationen",
           "content": [
-            "Bei Fragen zu dieser Richtlinie kontaktieren Sie uns:",
-            "E-Mail: hello@nakoagency.com",
-            "Website: nakoagency.com"
+            "Verantwortlicher: NAKO Agency.",
+            "E-Mail: hello@nakoagency.com.",
+            "Website: nakoagency.com.",
+            "Für DSGVO-spezifische Anfragen schreiben Sie bitte an: hello@nakoagency.com."
           ]
         }
       ],

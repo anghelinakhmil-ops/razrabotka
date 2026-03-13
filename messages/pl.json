@@ -1163,119 +1163,131 @@
       "caption": "Informacje prawne",
       "heading1": "POLITYKA",
       "heading2": "Prywatności",
-      "lastUpdated": "Ostatnia aktualizacja: 19 stycznia 2026",
+      "lastUpdated": "Ostatnia aktualizacja: 13 marca 2026",
       "sections": [
         {
           "number": "01",
-          "title": "Postanowienia Ogólne",
+          "title": "Postanowienia ogólne",
           "content": [
-            "Niniejsza Polityka Prywatności opisuje, w jaki sposób NAKO Agency (dalej — \"my\", \"nasz\", \"Firma\") zbiera, wykorzystuje i chroni dane osobowe użytkowników strony nakoagency.com (dalej — \"Strona\").",
-            "Korzystając ze Strony, wyrażają Państwo zgodę na warunki niniejszej Polityki. W przypadku braku zgody prosimy o zaprzestanie korzystania ze Strony."
+            "NAKO Agency (\"my\", \"nasz\", \"Firma\") pełni rolę administratora danych osobowych zbieranych za pośrednictwem niniejszej strony internetowej.",
+            "Strona internetowa: nakoagency.com.",
+            "Niniejsza Polityka Prywatności ma zastosowanie do wszystkich użytkowników na całym świecie, niezależnie od ich lokalizacji.",
+            "Prowadzimy działalność w następujących jurysdykcjach: Mołdawia, Rumunia, Ukraina, Polska, Niemcy, Włochy, Rosja i Kazachstan.",
+            "Obowiązujące przepisy o ochronie danych obejmują: Rozporządzenie o Ochronie Danych Osobowych (RODO) dla Unii Europejskiej; Ustawę nr 195/2024 o ochronie danych osobowych (Mołdawia); Ustawę nr 2297-VI o ochronie danych osobowych (Ukraina); Ustawę federalną nr 152-FZ o danych osobowych (Rosja); Ustawę nr 94-V o danych osobowych i ich ochronie (Kazachstan)."
           ]
         },
         {
           "number": "02",
-          "title": "Dane, Które Zbieramy",
+          "title": "Dane, które zbieramy",
           "content": [
-            "Możemy zbierać następujące dane:",
-            "Dane osobowe podane przez Państwa: imię, adres email, numer telefonu, nazwa użytkownika Telegram — przy wypełnianiu formularzy na Stronie.",
-            "Dane zbierane automatycznie: adres IP, typ przeglądarki, urządzenie, odwiedzone strony, czas spędzony na stronie — za pomocą plików cookie i narzędzi analitycznych.",
-            "Dane z usług zewnętrznych: dane analityczne z Google Analytics, Vercel Analytics."
+            "Dane osobowe podane za pośrednictwem formularzy: imię, adres e-mail, numer telefonu, nazwa użytkownika Telegram, nazwa firmy i opis projektu.",
+            "Dane zbierane automatycznie: adres IP (anonimizowany dla użytkowników z UE), typ przeglądarki, informacje o urządzeniu, odwiedzone strony i adres URL odsyłający.",
+            "Pliki cookie: stosujemy pliki cookie niezbędne, analityczne, marketingowe i dotyczące preferencji. Szczegóły znajdują się w naszej Polityce plików cookie.",
+            "Usługi zewnętrzne, które mogą zbierać dane: Google Analytics 4 i Vercel Analytics."
           ]
         },
         {
           "number": "03",
-          "title": "Cele Przetwarzania Danych",
+          "title": "Cele i podstawa prawna przetwarzania",
           "content": [
-            "Wykorzystujemy Państwa dane w celu:",
-            "Obsługi zapytań i zgłoszeń przesłanych przez formularze na Stronie.",
-            "Komunikacji z Państwem w sprawie projektów i usług.",
-            "Ulepszania Strony i doświadczeń użytkownika.",
-            "Analityki i badań statystycznych.",
-            "Wypełniania zobowiązań prawnych."
+            "Przetwarzanie zgłoszeń z formularzy — podstawa prawna: Państwa zgoda (art. 6 ust. 1 lit. a RODO).",
+            "Komunikacja dotycząca projektów i usług — podstawa prawna: niezbędność do wykonania umowy (art. 6 ust. 1 lit. b RODO).",
+            "Ulepszanie strony internetowej i analityka — podstawa prawna: prawnie uzasadniony interes (art. 6 ust. 1 lit. f RODO).",
+            "Zgodność z przepisami prawa — podstawa prawna: obowiązek prawny (art. 6 ust. 1 lit. c RODO).",
+            "Komunikacja marketingowa (wyłącznie za Państwa wyraźną zgodą) — podstawa prawna: zgoda (art. 6 ust. 1 lit. a RODO)."
           ]
         },
         {
           "number": "04",
-          "title": "Podstawa Prawna Przetwarzania",
+          "title": "Pliki cookie i śledzenie",
           "content": [
-            "Przetwarzanie danych odbywa się na podstawie:",
-            "Państwa zgody (przy wypełnianiu formularzy).",
-            "Uzasadnionego interesu (poprawa usług i analityka).",
-            "Konieczności wykonania umowy (realizacja zobowiązań usługowych).",
-            "Obowiązku prawnego (zgodność z obowiązującym prawem)."
+            "Stosujemy następujące kategorie plików cookie: niezbędne (zawsze aktywne), analityczne (za zgodą), marketingowe (za zgodą) i dotyczące preferencji (za zgodą).",
+            "Na naszej stronie internetowej wdrożony jest Google Consent Mode v2.",
+            "Przed wyrażeniem zgody żadne nieistotne pliki cookie nie są ustawiane.",
+            "Mogą Państwo zarządzać preferencjami dotyczącymi plików cookie za pośrednictwem banera cookie wyświetlanego przy pierwszej wizycie lub za pomocą odnośnika \"Ustawienia plików cookie\" w stopce strony w dowolnym momencie.",
+            "Pełne informacje o stosowanych przez nas plikach cookie, ich celach i okresach przechowywania znajdują się na stronie Polityka plików cookie."
           ]
         },
         {
           "number": "05",
-          "title": "Udostępnianie Danych Osobom Trzecim",
+          "title": "Udostępnianie danych",
           "content": [
-            "Nie sprzedajemy Państwa danych osobowych. Dane mogą być udostępniane:",
-            "Dostawcom usług: Vercel (hosting), Resend (email), Google (analityka).",
-            "Organom ścigania: na podstawie zgodnego z prawem żądania.",
-            "Wszystkie usługi zewnętrzne spełniają standardy ochrony danych."
+            "NIE sprzedajemy Państwa danych osobowych w żadnych okolicznościach.",
+            "Udostępniamy dane następującym dostawcom usług (podmiotom przetwarzającym): Vercel Inc. (hosting, Stany Zjednoczone — chronione Standardowymi Klauzulami Umownymi UE); Resend Inc. (dostarczanie wiadomości e-mail, Stany Zjednoczone — chronione Standardowymi Klauzulami Umownymi UE); Google LLC (analityka, Stany Zjednoczone — chronione Standardowymi Klauzulami Umownymi UE).",
+            "Możemy ujawnić dane organom ścigania na podstawie zgodnego z prawem żądania.",
+            "Wszystkie podmioty przetwarzające dane są związane Umowami powierzenia przetwarzania danych (DPA), które zapewniają odpowiedni poziom ochrony danych."
           ]
         },
         {
           "number": "06",
-          "title": "Pliki cookie",
+          "title": "Międzynarodowe transfery danych",
           "content": [
-            "Strona internetowa wykorzystuje pliki cookie w celu:",
-            "Zapewnienia prawidłowego działania Strony.",
-            "Analityki i analizy ruchu.",
-            "Poprawy komfortu użytkowania.",
-            "Mogą Państwo wyłączyć pliki cookie w ustawieniach przeglądarki, jednak może to wpłynąć na funkcjonalność Strony."
+            "Państwa dane mogą być przekazywane do Stanów Zjednoczonych w związku z korzystaniem z usług Vercel, Google i Resend.",
+            "Zabezpieczenia transferów międzynarodowych obejmują: Standardowe Klauzule Umowne UE (SCC) oraz szyfrowanie danych podczas przesyłania.",
+            "Dla rezydentów Rosji: dane z formularzy przesłane przez użytkowników w Rosji są przetwarzane zgodnie z wymogami Ustawy federalnej nr 152-FZ.",
+            "Dla rezydentów Kazachstanu: przestrzegamy wymogów lokalizacji danych wynikających z Ustawy nr 94-V o danych osobowych i ich ochronie."
           ]
         },
         {
           "number": "07",
-          "title": "Ochrona danych",
+          "title": "Okres przechowywania danych",
           "content": [
-            "Podejmujemy odpowiednie środki w celu ochrony Państwa danych:",
-            "Szyfrowanie danych podczas przesyłania (HTTPS/TLS).",
-            "Dostęp ograniczony wyłącznie do upoważnionego personelu.",
-            "Regularne audyty bezpieczeństwa.",
-            "Żadna metoda przesyłania danych przez Internet nie jest jednak w 100% bezpieczna."
+            "Zgłoszenia z formularzy: przechowywane przez 2 lata od daty przesłania, następnie trwale usuwane.",
+            "Dane analityczne: przechowywane przez 14 miesięcy (standardowy okres przechowywania Google Analytics 4).",
+            "Pliki cookie: okres przechowywania zależy od rodzaju; szczegóły znajdują się w naszej Polityce plików cookie.",
+            "Zapisy zgód dotyczących plików cookie: przechowywane przez 3 lata jako dowód zgodności z RODO.",
+            "Na Państwa żądanie: dane osobowe zostaną usunięte w ciągu 30 dni."
           ]
         },
         {
           "number": "08",
-          "title": "Okres przechowywania danych",
+          "title": "Państwa prawa",
           "content": [
-            "Dane osobowe są przechowywane przez okres niezbędny do realizacji celów określonych w niniejszej Polityce, nie dłużej jednak niż:",
-            "Dane z formularzy — 2 lata od daty przesłania.",
-            "Dane analityczne — 14 miesięcy (standard Google Analytics).",
-            "Pliki cookie — do 1 roku."
+            "Wszyscy użytkownicy mają prawo do: dostępu do swoich danych osobowych, żądania sprostowania nieprawidłowych danych, żądania usunięcia swoich danych oraz wycofania zgody na przetwarzanie danych.",
+            "Rezydenci UE (na mocy RODO) mają dodatkowo prawo do: przenoszenia danych, ograniczenia przetwarzania, sprzeciwu wobec przetwarzania oraz prawo do niepodlegania zautomatyzowanemu podejmowaniu decyzji. Właściwe organy nadzorcze: ANSPDCP (Rumunia), UODO — Urząd Ochrony Danych Osobowych (Polska), BfDI (Niemcy), Garante per la protezione dei dati personali (Włochy).",
+            "Rezydenci Rosji (na mocy 152-FZ) mają prawo do: dostępu, poprawiania, blokowania i niszczenia danych osobowych, a także wycofania zgody. Organ nadzorczy: Roskomnadzor.",
+            "Rezydenci Kazachstanu (na mocy Ustawy nr 94-V) mają prawo do: dostępu, poprawiania i usunięcia danych osobowych. Kontakt: Komitet ds. Bezpieczeństwa Informacji Ministerstwa Rozwoju Cyfrowego.",
+            "Rezydenci Mołdawii (na mocy Ustawy nr 195/2024) uzyskają prawa równoważne z RODO od sierpnia 2026 r. Organ nadzorczy: Krajowe Centrum Ochrony Danych Osobowych (NCPDP).",
+            "Rezydenci Ukrainy (na mocy Ustawy nr 2297-VI) mają prawo do: dostępu, poprawiania, usunięcia danych osobowych oraz wycofania zgody. Organ nadzorczy: Rzecznik Praw Obywatelskich Parlamentu Ukrainy (Ombudsman Ukrainy).",
+            "W celu skorzystania z przysługujących Państwu praw prosimy o kontakt pod adresem: hello@nakoagency.com. Odpowiemy w ciągu 30 dni od otrzymania Państwa żądania."
           ]
         },
         {
           "number": "09",
-          "title": "Państwa prawa",
+          "title": "Bezpieczeństwo danych",
           "content": [
-            "Mają Państwo prawo do:",
-            "Żądania dostępu do swoich danych osobowych.",
-            "Żądania sprostowania nieprawidłowych danych.",
-            "Żądania usunięcia swoich danych.",
-            "Wycofania zgody na przetwarzanie danych.",
-            "Złożenia skargi do organu nadzorczego.",
-            "W celu skorzystania ze swoich praw prosimy o kontakt: hello@nakoagency.com"
+            "Wszystkie dane są szyfrowane podczas przesyłania za pomocą protokołów HTTPS/TLS.",
+            "Dostęp do danych osobowych jest ograniczony wyłącznie do upoważnionego personelu.",
+            "Przeprowadzamy regularne przeglądy bezpieczeństwa naszych systemów i procesów.",
+            "Chociaż żadna metoda transmisji elektronicznej ani przechowywania nie jest w 100% bezpieczna, w przypadku naruszenia ochrony danych powiadomimy osoby, których dane dotyczą, w ciągu 72 godzin zgodnie z wymogami RODO."
           ]
         },
         {
           "number": "10",
-          "title": "Zmiany w Polityce",
+          "title": "Prywatność dzieci",
           "content": [
-            "Zastrzegamy sobie prawo do zmiany niniejszej Polityki w dowolnym momencie. Zmiany wchodzą w życie z chwilą publikacji na Stronie. Zalecamy okresowe sprawdzanie aktualnej wersji.",
-            "Data ostatniej aktualizacji jest wskazana na początku dokumentu."
+            "Niniejsza strona internetowa nie jest przeznaczona do użytku przez dzieci.",
+            "Progi wiekowe zgody różnią się w zależności od jurysdykcji: poniżej 16 lat w Niemczech i Holandii; poniżej 14 lat we Włoszech; poniżej 13 lat w Polsce i domyślnie w innych jurysdykcjach.",
+            "Nie zbieramy świadomie danych osobowych od dzieci. Jeśli uważają Państwo, że dziecko przekazało nam dane osobowe, prosimy o niezwłoczny kontakt."
           ]
         },
         {
           "number": "11",
+          "title": "Zmiany w niniejszej Polityce",
+          "content": [
+            "Niniejsza Polityka Prywatności może być okresowo aktualizowana. Zmiany wchodzą w życie z chwilą publikacji na stronie internetowej.",
+            "W przypadku istotnych zmian użytkownicy zostaną powiadomieni za pośrednictwem banera na stronie internetowej.",
+            "Data ostatniej aktualizacji jest wskazana na początku niniejszego dokumentu."
+          ]
+        },
+        {
+          "number": "12",
           "title": "Dane kontaktowe",
           "content": [
-            "W przypadku pytań dotyczących niniejszej Polityki prosimy o kontakt:",
-            "E-mail: hello@nakoagency.com",
-            "Strona internetowa: nakoagency.com"
+            "Administrator danych: NAKO Agency.",
+            "E-mail: hello@nakoagency.com.",
+            "Strona internetowa: nakoagency.com.",
+            "W sprawach dotyczących RODO prosimy o kontakt pod adresem: hello@nakoagency.com."
           ]
         }
       ],

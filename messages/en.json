@@ -1163,119 +1163,131 @@
       "caption": "Legal information",
       "heading1": "PRIVACY",
       "heading2": "Policy",
-      "lastUpdated": "Last updated: January 19, 2026",
+      "lastUpdated": "Last updated: March 13, 2026",
       "sections": [
         {
           "number": "01",
           "title": "General Provisions",
           "content": [
-            "This Privacy Policy describes how NAKO Agency (hereinafter — \"we\", \"our\", \"Company\") collects, uses, and protects personal data of users of the website nakoagency.com (hereinafter — \"Website\").",
-            "By using the Website, you agree to the terms of this Policy. If you do not agree with the terms, please stop using the Website."
+            "NAKO Agency (\"we\", \"our\", \"Company\") acts as the data controller for personal data collected through this website.",
+            "Website: nakoagency.com.",
+            "This Privacy Policy applies to all users worldwide, regardless of location.",
+            "We operate across the following jurisdictions: Moldova, Romania, Ukraine, Poland, Germany, Italy, Russia, and Kazakhstan.",
+            "Applicable data protection regulations include: the General Data Protection Regulation (GDPR) for the European Union; Law No. 195/2024 on Personal Data Protection (Moldova); Law No. 2297-VI on Personal Data Protection (Ukraine); Federal Law No. 152-FZ on Personal Data (Russia); Law No. 94-V on Personal Data and Their Protection (Kazakhstan)."
           ]
         },
         {
           "number": "02",
           "title": "Data We Collect",
           "content": [
-            "We may collect the following data:",
-            "Personal data provided by you: name, email address, phone number, Telegram username — when filling out forms on the Website.",
-            "Automatically collected data: IP address, browser type, device, pages visited, time spent on site — through cookies and analytics.",
-            "Data from third-party services: analytics data from Google Analytics, Vercel Analytics."
+            "Personal data provided through forms: name, email address, phone number, Telegram username, company name, and project description.",
+            "Automatically collected data: IP address (anonymized for EU users), browser type, device information, pages visited, and referrer URL.",
+            "Cookies: we use necessary, analytics, marketing, and preference cookies. For details, please see our Cookie Policy.",
+            "Third-party services that may collect data: Google Analytics 4 and Vercel Analytics."
           ]
         },
         {
           "number": "03",
-          "title": "Purposes of Data Processing",
+          "title": "Purposes and Legal Basis",
           "content": [
-            "We use your data for:",
-            "Processing requests and applications submitted through Website forms.",
-            "Communicating with you regarding projects and services.",
-            "Improving the Website and user experience.",
-            "Analytics and statistical research.",
-            "Fulfilling legal obligations."
+            "Processing form submissions — legal basis: your consent (Art. 6(1)(a) GDPR).",
+            "Communication about projects and services — legal basis: contractual necessity (Art. 6(1)(b) GDPR).",
+            "Website improvement and analytics — legal basis: legitimate interest (Art. 6(1)(f) GDPR).",
+            "Legal compliance — legal basis: legal obligation (Art. 6(1)(c) GDPR).",
+            "Marketing communications (only with your explicit consent) — legal basis: consent (Art. 6(1)(a) GDPR)."
           ]
         },
         {
           "number": "04",
-          "title": "Legal Basis for Processing",
+          "title": "Cookies and Tracking",
           "content": [
-            "Data processing is carried out on the basis of:",
-            "Your consent (when filling out forms).",
-            "Legitimate interest (improving service and analytics).",
-            "Contractual necessity (fulfilling service obligations).",
-            "Legal obligation (compliance with applicable law)."
+            "We use the following categories of cookies: necessary (always active), analytics (opt-in), marketing (opt-in), and preferences (opt-in).",
+            "Google Consent Mode v2 is implemented on our website.",
+            "Before you provide consent, no non-essential cookies are set.",
+            "You can manage your cookie preferences via the cookie banner displayed on your first visit, or through the \"Cookie Settings\" link in the website footer at any time.",
+            "For full details on the cookies we use, their purposes, and retention periods, please see our Cookie Policy page."
           ]
         },
         {
           "number": "05",
-          "title": "Sharing Data with Third Parties",
+          "title": "Data Sharing",
           "content": [
-            "We do not sell your personal data. Data may be shared with:",
-            "Service providers: Vercel (hosting), Resend (email), Google (analytics).",
-            "Legal authorities: upon lawful request.",
-            "All third-party services comply with data protection standards."
+            "We do NOT sell your personal data under any circumstances.",
+            "We share data with the following service providers (data processors): Vercel Inc. (hosting, United States — protected by EU Standard Contractual Clauses); Resend Inc. (email delivery, United States — protected by EU Standard Contractual Clauses); Google LLC (analytics, United States — protected by EU Standard Contractual Clauses).",
+            "We may disclose data to legal authorities upon lawful request.",
+            "All third-party processors are bound by Data Processing Agreements (DPAs) that ensure an adequate level of data protection."
           ]
         },
         {
           "number": "06",
-          "title": "Cookies",
+          "title": "International Data Transfers",
           "content": [
-            "The Website uses cookies for:",
-            "Ensuring proper Website functionality.",
-            "Analytics and traffic analysis.",
-            "Improving user experience.",
-            "You can disable cookies in your browser settings, but this may affect Website functionality."
+            "Your data may be transferred to the United States through our use of Vercel, Google, and Resend services.",
+            "Safeguards for international transfers include: EU Standard Contractual Clauses (SCCs) and encryption of data in transit.",
+            "For Russian residents: form data submitted by users in Russia is processed in accordance with the requirements of Federal Law No. 152-FZ.",
+            "For Kazakh residents: we comply with data localization requirements under Law No. 94-V on Personal Data and Their Protection."
           ]
         },
         {
           "number": "07",
-          "title": "Data Protection",
+          "title": "Data Retention",
           "content": [
-            "We take reasonable measures to protect your data:",
-            "Data encryption in transit (HTTPS/TLS).",
-            "Access restricted to authorized personnel only.",
-            "Regular security audits.",
-            "However, no method of data transmission over the Internet is 100% secure."
+            "Form submissions: retained for 2 years from the date of submission, then permanently deleted.",
+            "Analytics data: retained for 14 months (Google Analytics 4 standard retention period).",
+            "Cookies: retention varies by type; see our Cookie Policy for specific durations.",
+            "Cookie consent records: retained for 3 years as proof of GDPR compliance.",
+            "Upon your request: personal data will be deleted within 30 days."
           ]
         },
         {
           "number": "08",
-          "title": "Data Retention Period",
+          "title": "Your Rights",
           "content": [
-            "Personal data is stored for the period necessary to fulfill the purposes stated in this Policy, but no longer than:",
-            "Application data — 2 years from the date of submission.",
-            "Analytics data — 14 months (Google Analytics standard).",
-            "Cookies — up to 1 year."
+            "All users have the right to: access their personal data, request rectification of inaccurate data, request deletion of their data, and withdraw consent to data processing.",
+            "EU residents (under GDPR) additionally have the right to: data portability, restriction of processing, objection to processing, and the right not to be subject to automated decision-making. Relevant supervisory authorities: ANSPDCP (Romania), UODO (Poland), BfDI (Germany), Garante per la protezione dei dati personali (Italy).",
+            "Russian residents (under 152-FZ) have the right to: access, correction, blocking, and destruction of personal data, as well as withdrawal of consent. Supervisory authority: Roskomnadzor.",
+            "Kazakh residents (under Law No. 94-V) have the right to: access, correction, and deletion of personal data. Contact: Committee on Information Security of the Ministry of Digital Development.",
+            "Moldovan residents (under Law No. 195/2024) will have GDPR-equivalent rights from August 2026. Supervisory authority: National Centre for Personal Data Protection (NCPDP).",
+            "Ukrainian residents (under Law No. 2297-VI) have the right to: access, correction, deletion of personal data, and withdrawal of consent. Supervisory authority: Ukrainian Parliament Commissioner for Human Rights (Ombudsman of Ukraine).",
+            "To exercise any of your rights, please contact us at: hello@nakoagency.com. We will respond within 30 days of receiving your request."
           ]
         },
         {
           "number": "09",
-          "title": "Your Rights",
+          "title": "Data Security",
           "content": [
-            "You have the right to:",
-            "Request access to your personal data.",
-            "Request correction of inaccurate data.",
-            "Request deletion of your data.",
-            "Withdraw consent to data processing.",
-            "File a complaint with the supervisory authority.",
-            "To exercise your rights, contact us at: hello@nakoagency.com"
+            "All data is encrypted in transit using HTTPS/TLS protocols.",
+            "Access to personal data is restricted to authorized personnel only.",
+            "We conduct regular security reviews of our systems and processes.",
+            "While no method of electronic transmission or storage is 100% secure, in the event of a data breach we will notify affected users within 72 hours as required by the GDPR."
           ]
         },
         {
           "number": "10",
-          "title": "Changes to the Policy",
+          "title": "Children's Privacy",
           "content": [
-            "We reserve the right to modify this Policy at any time. Changes take effect upon publication on the Website. We recommend periodically reviewing the current version.",
-            "The date of the last update is indicated at the top of the document."
+            "This website is not intended for use by children.",
+            "Age thresholds for consent vary by jurisdiction: under 16 in Germany and the Netherlands; under 14 in Italy; under 13 in Poland and by default in other jurisdictions.",
+            "We do not knowingly collect personal data from children. If you believe a child has provided us with personal data, please contact us immediately."
           ]
         },
         {
           "number": "11",
+          "title": "Changes to This Policy",
+          "content": [
+            "We may update this Privacy Policy from time to time. Changes become effective upon publication on the website.",
+            "In the event of material changes, users will be notified via a banner on the website.",
+            "The date of the last update is indicated at the top of this document."
+          ]
+        },
+        {
+          "number": "12",
           "title": "Contact Information",
           "content": [
-            "If you have questions regarding this Policy, contact us:",
-            "Email: hello@nakoagency.com",
-            "Website: nakoagency.com"
+            "Data Controller: NAKO Agency.",
+            "Email: hello@nakoagency.com.",
+            "Website: nakoagency.com.",
+            "For GDPR-specific inquiries, please write to: hello@nakoagency.com."
           ]
         }
       ],
