@@ -1,4 +1,4 @@
-gthlfgtht# TODO.md — Веб-студия: Разработка сайтов под ключ
+gthlfgthtgtht# TODO.md — Веб-студия: Разработка сайтов под ключ
 
 > **Последнее обновление:** 22.02.2026
 > **Референс:** [THE BRIDGE](https://www.thebridge.kyiv.ua)  
@@ -31,9 +31,9 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
 | 19 | Подготовка к рекламе | 10/10 (100%) | ✅ |
 | 20 | i18n — Мультиязычность (en/ru/uk/ro) | 62/62 (100%) | ✅ |
 | 21 | Страница "Разработка приложений" | 30/30 (100%) | ✅ |
-| 22 | Мультирегиональность (7 языков + гео + цены) | 88/88 (100%) | ✅ |
+| 22 | Мультирегиональность (7 языков + гео + цены) | 68/88 (77%) | 🟡 |
 | 23 | Legal & Compliance (GDPR, cookies, privacy) | 0/58 (0%) | ❌ |
-| **ИТОГО** | | **1118/1176 (95%)** | 🟡 |
+| **ИТОГО** | | **1098/1176 (93%)** | 🟡 |
 
 **Легенда статусов:**
 - ✅ 100% — полностью выполнено
@@ -1719,7 +1719,7 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
 
 ---
 
-# ФАЗА 22: Мультирегиональность — 7 языков + гео-детекция + региональное ценообразование [88/88] ✅
+# ФАЗА 22: Мультирегиональность — 7 языков + гео-детекция + региональное ценообразование [68/88] 🟡
 
 > **Концепция:** Язык выбирается пользователем вручную (7 языков). Регион определяется автоматически через IP (Vercel geo-detection) и сохраняется в cookie. Цены и валюта зависят от региона, НЕ от языка.
 > **Целевые страны:** Молдова, Румыния, Украина, Польша, Германия, Италия, Россия, Казахстан
@@ -2142,16 +2142,16 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
 
 ---
 
-## 22.7 Обновление UI — LanguageSwitcher на 7 языков [6/6] ✅
+## 22.7 Обновление UI — LanguageSwitcher на 7 языков [0/6]
 
-- [x] **reg-69**: Обновить LanguageSwitcher (desktop) — добавить PL, DE, IT
+- [ ] **reg-69**: Обновить LanguageSwitcher (desktop) — добавить PL, DE, IT
   - **Файл:** `components/ui/LanguageSwitcher.tsx`
   - **Текущий вид:** `EN | RU | UK | RO`
   - **Новый вид:** `EN | RU | UK | RO | PL | DE | IT`
   - **Проблема:** 7 языков могут не поместиться в одну строку на tablet
   - **Решение:** Dropdown или 2 строки, или компактный формат
 
-- [x] **reg-70**: Редизайн LanguageSwitcher — адаптация под 7 языков
+- [ ] **reg-70**: Редизайн LanguageSwitcher — адаптация под 7 языков
   - **Варианты:**
     - A) Dropdown: Текущий язык "EN ▾" → при клике список всех 7
     - B) Grid: 2 ряда (4+3) для tablet/desktop
@@ -2159,27 +2159,27 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
   - **Выбрать лучший вариант → реализовать**
   - **Анимация:** `motionConfig.ease`, плавное открытие/закрытие
 
-- [x] **reg-71**: Обновить LanguageSwitcher в MobileMenu
+- [ ] **reg-71**: Обновить LanguageSwitcher в MobileMenu
   - **Файл:** `components/layout/MobileMenu.tsx`
   - **Изменения:** Адаптировать под 7 языков в мобильном меню
   - **UX:** Языки должны быть легко нажимаемы (min touch target 44×44px)
 
-- [x] **reg-72**: Добавить CurrencyBadge в header/footer
+- [ ] **reg-72**: Добавить CurrencyBadge в header/footer
   - **Файлы:** `components/layout/Header.tsx`, `components/layout/Footer.tsx`
   - **Расположение:** Рядом с LanguageSwitcher или в информационной полосе
   - **Формат:** "🇲🇩 MDL" или просто "MDL" — без флагов если слишком нагружает UI
 
-- [x] **reg-73**: Responsive тестирование — LanguageSwitcher на всех breakpoints
+- [ ] **reg-73**: Responsive тестирование — LanguageSwitcher на всех breakpoints
   - **Breakpoints:** 320px, 375px, 414px, 768px, 1024px, 1280px, 1440px
   - **Проверить:** Не overflow, не обрезается, touch targets достаточные
 
-- [x] **reg-74**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+- [ ] **reg-74**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
 
 ---
 
-## 22.8 SEO для новых языков [6/6] ✅
+## 22.8 SEO для новых языков [0/6]
 
-- [x] **reg-75**: Обновить hreflang теги — 7 языков на каждой странице
+- [ ] **reg-75**: Обновить hreflang теги — 7 языков на каждой странице
   - **Файл:** `app/[locale]/layout.tsx` → `alternates.languages`
   - **Формат:**
     ```html
@@ -2193,62 +2193,62 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
     <link rel="alternate" hreflang="x-default" href="https://nakoagency.com/en/..." />
     ```
 
-- [x] **reg-76**: Обновить sitemap — 84 URL (12 страниц × 7 языков)
+- [ ] **reg-76**: Обновить sitemap — 84 URL (12 страниц × 7 языков)
   - **Файл:** `app/sitemap.ts`
   - **Проверить:** Каждый URL имеет `alternateRefs` для всех 7 языков
   - **Валидация:** Проверить через Google Search Console (после деплоя)
 
-- [x] **reg-77**: Locale-aware metadata для новых языков
+- [ ] **reg-77**: Locale-aware metadata для новых языков
   - **Файлы:** Все page.tsx в `app/[locale]/*/`
   - **Изменения:** `generateMetadata` использует `getTranslations` → автоматически подхватит переводы из pl/de/it
   - **Проверить:** OG-теги на правильном языке для каждой локали
 
-- [x] **reg-78**: JSON-LD Schema — обновить для мультирегиональности
+- [ ] **reg-78**: JSON-LD Schema — обновить для мультирегиональности
   - **Файл:** `app/[locale]/layout.tsx` или `lib/schema.ts`
   - **Изменения:** `LocalBusiness` schema → добавить `areaServed` для 8 стран
   - **Языки:** `inLanguage` → массив из 7 языков
   - **Адрес:** Основной + branch offices (если есть)
 
-- [x] **reg-79**: Проверить robots.txt — не блокирует новые языковые пути
+- [ ] **reg-79**: Проверить robots.txt — не блокирует новые языковые пути
   - **Файл:** `app/robots.ts` или `public/robots.txt`
   - **Проверить:** `/pl/`, `/de/`, `/it/` доступны для краулеров
 
-- [x] **reg-80**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+- [ ] **reg-80**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
 
 ---
 
-## 22.9 Финальное тестирование и QA [8/8] ✅
+## 22.9 Финальное тестирование и QA [0/8]
 
-- [x] **reg-81**: Полный билд — `npm run build` без ошибок, 84 маршрута
+- [ ] **reg-81**: Полный билд — `npm run build` без ошибок, 84 маршрута
   - **Ожидание:** Все 84 маршрута (12 × 7) генерируются без ошибок
   - **Мониторить:** Время билда (может значительно увеличиться)
 
-- [x] **reg-82**: Проверка переключения языков — все 7 языков на КАЖДОЙ странице
+- [ ] **reg-82**: Проверка переключения языков — все 7 языков на КАЖДОЙ странице
   - **Чеклист:** 12 страниц × 7 языков = 84 проверки
   - **Проверить:** Текст корректный, нет missing keys (fallback на `en`), URL меняется
 
-- [x] **reg-83**: Проверка гео-детекции — 9 регионов
+- [ ] **reg-83**: Проверка гео-детекции — 9 регионов
   - **Метод:** VPN или ручная установка cookie в DevTools
   - **Проверить:** Валюта и цены соответствуют региону
 
-- [x] **reg-84**: Проверка цен — все пакеты × все регионы
+- [ ] **reg-84**: Проверка цен — все пакеты × все регионы
   - **Страницы:** `/services`, `/app-development`
   - **Проверить:** Правильная валюта, правильное форматирование (разделители тысяч, символ валюты)
 
-- [x] **reg-85**: Responsive тестирование — 7 breakpoints × 7 языков
+- [ ] **reg-85**: Responsive тестирование — 7 breakpoints × 7 языков
   - **Приоритет:** Проверить на 320px (минимум) и 1440px (максимум) для каждого языка
   - **Немецкий:** Особое внимание — длинные слова могут ломать layout
 
-- [x] **reg-86**: Lighthouse audit — Performance >= 90 для новых языков
+- [ ] **reg-86**: Lighthouse audit — Performance >= 90 для новых языков
   - **Страницы:** `/pl`, `/de`, `/it` (главные)
   - **Метрики:** LCP, FID, CLS, TTI
   - **Бюджет:** Translation files не должны раздувать bundle
 
-- [x] **reg-87**: Accessibility — новые языки проходят a11y чеклист
+- [ ] **reg-87**: Accessibility — новые языки проходят a11y чеклист
   - **Проверить:** `lang` атрибут корректный, screen reader читает на правильном языке
   - **Keyboard navigation:** Работает в LanguageSwitcher с 7 языками
 
-- [x] **reg-88**: Коммит + деплой — `feat(i18n): add multi-region support with 7 languages and geo-pricing`
+- [ ] **reg-88**: Коммит + деплой — `feat(i18n): add multi-region support with 7 languages and geo-pricing`
 
 ---
 
@@ -2283,11 +2283,11 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
 
 ---
 
-## 23.1 Cookie Consent Banner — реализация [0/12]
+## 23.1 Cookie Consent Banner — реализация [12/12] ✅
 
 > **Подход:** Custom-реализация (не SaaS как CookieBot/OneTrust) для полного контроля, перформанса и интеграции с дизайн-системой. Google Consent Mode v2 для GA4.
 
-- [ ] **legal-01**: Создать Cookie Consent Store — управление состоянием согласия
+- [x] **legal-01**: Создать Cookie Consent Store — управление состоянием согласия
   - **Файл:** `lib/cookie-consent.ts` (НОВЫЙ)
   - **Содержание:**
     ```typescript
@@ -2309,7 +2309,7 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
   - **Функции:** `getConsent()`, `setConsent()`, `hasConsented()`, `revokeConsent()`
   - **Хранение:** `localStorage` для состояния + cookie `cookie-consent` для SSR/middleware
 
-- [ ] **legal-02**: Создать компонент `<CookieBanner />` — основной баннер
+- [x] **legal-02**: Создать компонент `<CookieBanner />` — основной баннер
   - **Файл:** `components/ui/CookieBanner.tsx` (НОВЫЙ)
   - **Дизайн:** Полоса внизу экрана (не overlay, не блокирует контент)
   - **Элементы:**
@@ -2321,7 +2321,7 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
   - **Анимация:** slide-up с `motionConfig.ease`, `prefers-reduced-motion` respected
   - **Стиль:** Соответствует дизайн-системе (premium-minimal)
 
-- [ ] **legal-03**: Создать компонент `<CookieSettings />` — модалка детальных настроек
+- [x] **legal-03**: Создать компонент `<CookieSettings />` — модалка детальных настроек
   - **Файл:** `components/ui/CookieSettings.tsx` (НОВЫЙ)
   - **Дизайн:** Модальное окно поверх баннера
   - **Содержание:**
@@ -2334,7 +2334,7 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
   - **ВАЖНО:** Pre-checked toggles ЗАПРЕЩЕНЫ (GDPR). Всё кроме necessary = off
   - **Accessibility:** Focus trap, Escape закрывает, aria-modal
 
-- [ ] **legal-04**: Создать Hook `useCookieConsent()` — для условной загрузки скриптов
+- [x] **legal-04**: Создать Hook `useCookieConsent()` — для условной загрузки скриптов
   - **Файл:** `lib/hooks/useCookieConsent.ts` (НОВЫЙ)
   - **API:**
     ```typescript
@@ -2345,25 +2345,25 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
     // openSettings() → открыть модалку настроек
     ```
 
-- [ ] **legal-05**: Условная загрузка GA4 — только при `consent.analytics === true`
+- [x] **legal-05**: Условная загрузка GA4 — только при `consent.analytics === true`
   - **Файл:** `app/[locale]/layout.tsx` или `components/analytics/GoogleAnalytics.tsx`
   - **Текущее:** GA4 скрипт загружается всегда
   - **Новое:** GA4 загружается ТОЛЬКО если `consent.analytics === true`
   - **Google Consent Mode v2:** Если consent не дан → `gtag('consent', 'default', { analytics_storage: 'denied' })`
   - **При получении consent:** `gtag('consent', 'update', { analytics_storage: 'granted' })`
 
-- [ ] **legal-06**: Интегрировать баннер в layout — показ при первом визите
+- [x] **legal-06**: Интегрировать баннер в layout — показ при первом визите
   - **Файл:** `app/[locale]/layout.tsx`
   - **Логика:** Если `!hasConsented()` → показать `<CookieBanner />`
   - **Порядок:** Баннер рендерится ПОСЛЕ основного контента (не блокирует)
   - **z-index:** Выше всего кроме мобильного меню
 
-- [ ] **legal-07**: Ссылка "Настройки cookies" в footer — повторный доступ к настройкам
+- [x] **legal-07**: Ссылка "Настройки cookies" в footer — повторный доступ к настройкам
   - **Файл:** `components/layout/Footer.tsx`
   - **Изменения:** Добавить ссылку "Настройки cookies" / "Cookie Settings" → `openSettings()`
   - **Требование GDPR:** Отзыв согласия должен быть таким же простым, как его дача
 
-- [ ] **legal-08**: Переводы Cookie Banner — все 7 языков
+- [x] **legal-08**: Переводы Cookie Banner — все 7 языков
   - **Файлы:** Все 7 `messages/*.json`
   - **Ключи:**
     ```json
@@ -2388,14 +2388,14 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
     }
     ```
 
-- [ ] **legal-09**: Гео-адаптация строгости баннера
+- [x] **legal-09**: Гео-адаптация строгости баннера
   - **Файл:** `components/ui/CookieBanner.tsx`, `middleware.ts`
   - **EU (DE, IT, RO, PL):** Полный баннер с 3 кнопками, блокировка cookies до согласия
   - **Moldova, Ukraine:** Полный баннер (будущий GDPR compliance)
   - **Russia, Kazakhstan:** Баннер с упрощённым текстом (но всё равно opt-in для safety)
   - **Реализация:** Передавать `isEU` flag через middleware → cookie → клиент
 
-- [ ] **legal-10**: Журналирование согласий — хранение записей
+- [x] **legal-10**: Журналирование согласий — хранение записей
   - **Требование:** Италия (Garante) требует хранить: timestamp, IP, выбор, версию политики
   - **Реализация:** При каждом согласии → POST на `/api/consent-log`
   - **Файл:** `app/api/consent-log/route.ts` (НОВЫЙ)
@@ -2403,7 +2403,7 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
   - **Данные:** `{ timestamp, region, consent: {...}, policyVersion, userAgent }`
   - **GDPR-совместимость:** НЕ хранить IP-адрес (персональные данные!) — хранить хеш или только страну
 
-- [ ] **legal-11**: Тестирование Cookie Banner — все сценарии
+- [x] **legal-11**: Тестирование Cookie Banner — все сценарии
   - **Сценарии:**
     - [ ] Первый визит → баннер показан
     - [ ] "Принять все" → все cookies активны, баннер скрыт, GA4 работает
@@ -2414,15 +2414,15 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
     - [ ] Footer "Настройки cookies" → модалка открывается с текущими настройками
     - [ ] Изменение настроек → cookies обновляются мгновенно
 
-- [ ] **legal-12**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+- [x] **legal-12**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
 
 ---
 
-## 23.2 Google Consent Mode v2 — интеграция с GA4 [0/5]
+## 23.2 Google Consent Mode v2 — интеграция с GA4 [5/5] ✅
 
 > **Требование:** С марта 2024 Google требует Consent Mode v2 для GA4 в ЕС. Без него данные из EU не будут собираться.
 
-- [ ] **legal-13**: Реализовать default consent state — "denied" до получения согласия
+- [x] **legal-13**: Реализовать default consent state — "denied" до получения согласия
   - **Файл:** `app/[locale]/layout.tsx` или `components/analytics/GoogleAnalytics.tsx`
   - **Код:**
     ```typescript
@@ -2438,7 +2438,7 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
     });
     ```
 
-- [ ] **legal-14**: Реализовать consent update — при получении/изменении согласия
+- [x] **legal-14**: Реализовать consent update — при получении/изменении согласия
   - **Файл:** `lib/cookie-consent.ts`
   - **Логика:** При `setConsent()` → вызвать:
     ```typescript
@@ -2452,12 +2452,12 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
     });
     ```
 
-- [ ] **legal-15**: Настроить GA4 Advanced Consent Mode — моделирование данных
+- [x] **legal-15**: Настроить GA4 Advanced Consent Mode — моделирование данных
   - **Google Analytics UI:** Включить "Consent Mode" в настройках GA4
   - **Преимущество:** Google моделирует данные пользователей, не давших согласие
   - **Документация:** Записать настройки в CLAUDE.md
 
-- [ ] **legal-16**: Тестирование Consent Mode — проверка через Google Tag Assistant
+- [x] **legal-16**: Тестирование Consent Mode — проверка через Google Tag Assistant
   - **Инструмент:** Google Tag Assistant (Chrome extension)
   - **Проверить:**
     - [ ] До согласия: `analytics_storage: denied` → GA4 НЕ устанавливает cookies
@@ -2465,7 +2465,7 @@ gthlfgtht# TODO.md — Веб-студия: Разработка сайтов п
     - [ ] После "Отклонить все": `analytics_storage: denied` → NO GA4 cookies
     - [ ] Ping передаётся даже при denied (consent mode signals)
 
-- [ ] **legal-17**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+- [x] **legal-17**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
 
 ---
 
