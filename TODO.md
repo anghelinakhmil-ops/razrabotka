@@ -31,7 +31,9 @@
 | 19 | Подготовка к рекламе | 10/10 (100%) | ✅ |
 | 20 | i18n — Мультиязычность (en/ru/uk/ro) | 50/62 (81%) | 🟡 |
 | 21 | Страница "Разработка приложений" | 30/30 (100%) | ✅ |
-| **ИТОГО** | | **1018/1030 (99%)** | 🟡 |
+| 22 | Мультирегиональность (7 языков + гео + цены) | 0/88 (0%) | ❌ |
+| 23 | Legal & Compliance (GDPR, cookies, privacy) | 0/58 (0%) | ❌ |
+| **ИТОГО** | | **1018/1176 (87%)** | 🟡 |
 
 **Легенда статусов:**
 - ✅ 100% — полностью выполнено
@@ -1593,23 +1595,23 @@
 - [x] **i18n-36**: LeadFormSection.tsx — useTranslations("leadForm")
 - [x] **i18n-37**: HeroVisual.tsx — alt из переводов
 
-## 20.6 Миграция внутренних страниц [0/8]
+## 20.6 Миграция внутренних страниц [8/8] ✅
 
-- [ ] **i18n-38**: About page — getTranslations("pages.about")
-- [ ] **i18n-39**: Services page — getTranslations("pages.services")
-- [ ] **i18n-40**: Contacts page + ContactsContent — useTranslations("pages.contacts")
-- [ ] **i18n-41**: Brief page + BriefContent — useTranslations("pages.brief")
-- [ ] **i18n-42**: Privacy page — getTranslations("pages.privacy")
-- [ ] **i18n-43**: Terms page — getTranslations("pages.terms")
-- [ ] **i18n-44**: Error page — useTranslations
-- [ ] **i18n-45**: Not-found page — useTranslations
+- [x] **i18n-38**: About page — getTranslations("pages.about")
+- [x] **i18n-39**: Services page — getTranslations("pages.services")
+- [x] **i18n-40**: Contacts page + ContactsContent — useTranslations("pages.contacts")
+- [x] **i18n-41**: Brief page + BriefContent — useTranslations("pages.brief")
+- [x] **i18n-42**: Privacy page — getTranslations("pages.privacy")
+- [x] **i18n-43**: Terms page — getTranslations("pages.terms")
+- [x] **i18n-44**: Error page — useTranslations
+- [x] **i18n-45**: Not-found page — useTranslations
 
-## 20.7 Миграция блога и кейсов [0/4]
+## 20.7 Миграция блога и кейсов [4/4] ✅
 
-- [ ] **i18n-46**: Blog listing (BlogContent.tsx) — карточки с переведёнными данными
-- [ ] **i18n-47**: Blog article (blog/[slug]/page.tsx) — контент из переводов по locale
-- [ ] **i18n-48**: Cases listing (CasesContent.tsx) — карточки с переведёнными данными
-- [ ] **i18n-49**: Case detail (cases/[slug]/page.tsx) — контент из переводов по locale
+- [x] **i18n-46**: Blog listing (BlogContent.tsx) — карточки с переведёнными данными
+- [x] **i18n-47**: Blog article (blog/[slug]/page.tsx) — контент из переводов по locale
+- [x] **i18n-48**: Cases listing (CasesContent.tsx) — карточки с переведёнными данными
+- [x] **i18n-49**: Case detail (cases/[slug]/page.tsx) — контент из переводов по locale
 
 ## 20.8 Переключатель языка [3/3] ✅
 
@@ -1717,6 +1719,1079 @@
 
 ---
 
+# ФАЗА 22: Мультирегиональность — 7 языков + гео-детекция + региональное ценообразование [0/88]
+
+> **Концепция:** Язык выбирается пользователем вручную (7 языков). Регион определяется автоматически через IP (Vercel geo-detection) и сохраняется в cookie. Цены и валюта зависят от региона, НЕ от языка.
+> **Целевые страны:** Молдова, Румыния, Украина, Польша, Германия, Италия, Россия, Казахстан
+> **Новые языки:** Польский (pl), Немецкий (de), Итальянский (it)
+> **Существующие языки:** Английский (en), Русский (ru), Украинский (uk), Румынский (ro)
+> **Принцип:** Все 7 языков доступны из любой страны. Регион нельзя сменить вручную.
+>
+> **Регионы и валюты:**
+> | Страна | Код | Валюта | Символ |
+> |--------|-----|--------|--------|
+> | Молдова | MD | MDL | lei |
+> | Румыния | RO | RON | lei |
+> | Украина | UA | UAH | ₴ |
+> | Польша | PL | PLN | zł |
+> | Германия | DE | EUR | € |
+> | Италия | IT | EUR | € |
+> | Россия | RU | RUB | ₽ |
+> | Казахстан | KZ | KZT | ₸ |
+> | Остальные | XX | USD | $ |
+>
+> **Источники research (март 2026):**
+> - Vercel geo-detection: `x-vercel-ip-country` header, `geolocation()` from `@vercel/functions`
+> - Точность geo на уровне страны: 99%+, VPN-пользователи получат регион VPN-сервера
+> - next-intl: поддержка namespace splitting для оптимизации bundle
+> - Рекомендуемая TMS: Crowdin (бесплатный tier, AI-перевод, GitHub integration)
+> - Форматирование валют: `useFormatter()` из next-intl + `Intl.NumberFormat`
+
+---
+
+## 22.1 Инфраструктура — подключение 3 новых языков [0/10]
+
+- [ ] **reg-01**: Обновить конфигурацию next-intl — добавить `pl`, `de`, `it` в список поддерживаемых локалей
+  - **Файл:** `i18n/routing.ts`
+  - **Изменения:** `locales: ['en', 'ru', 'uk', 'ro', 'pl', 'de', 'it']`
+  - **Default locale:** остаётся `en`
+  - **Проверить:** `pathnames`, `localePrefix` — совместимость с 7 локалями
+
+- [ ] **reg-02**: Обновить middleware — добавить новые локали в маппинг и обработку
+  - **Файл:** `middleware.ts`
+  - **Изменения:** Убедиться что `createMiddleware` из `next-intl/middleware` корректно обрабатывает 7 локалей
+  - **Проверить:** redirect логику, locale detection из Accept-Language header
+
+- [ ] **reg-03**: Создать файлы переводов — пустые JSON-структуры для 3 новых языков
+  - **Файлы:** `messages/pl.json`, `messages/de.json`, `messages/it.json`
+  - **Метод:** Скопировать структуру ключей из `messages/en.json`, значения оставить на английском (будут переведены в 22.2–22.4)
+  - **ВАЖНО:** Структура ключей ИДЕНТИЧНА `en.json` — ни одного пропущенного ключа
+
+- [ ] **reg-04**: Обновить `generateStaticParams` — генерация маршрутов для 7 локалей
+  - **Файл:** `app/[locale]/layout.tsx`
+  - **Изменения:** `params: [{ locale: 'en' }, { locale: 'ru' }, { locale: 'uk' }, { locale: 'ro' }, { locale: 'pl' }, { locale: 'de' }, { locale: 'it' }]`
+  - **Результат:** 7 × 12 страниц = 84 статических маршрута
+
+- [ ] **reg-05**: Обновить `i18n/request.ts` — загрузка сообщений для новых локалей
+  - **Файл:** `i18n/request.ts`
+  - **Проверить:** динамический import `messages/${locale}.json` работает для всех 7 локалей
+  - **Edge case:** Fallback на `en.json` если файл не найден
+
+- [ ] **reg-06**: Обновить тип `Locale` — добавить `'pl' | 'de' | 'it'`
+  - **Файлы:** Найти все места где определён тип Locale (может быть в `i18n/routing.ts`, `lib/types.ts`, или inline)
+  - **Grep:** `type Locale`, `Locale =`, `'en' | 'ru'`
+
+- [ ] **reg-07**: Обновить `sitemap.ts` — генерация URL для 7 локалей × все страницы
+  - **Файл:** `app/sitemap.ts`
+  - **Изменения:** Добавить `pl`, `de`, `it` в массив локалей для генерации
+  - **Результат:** 84 URL в sitemap (12 страниц × 7 языков)
+
+- [ ] **reg-08**: Обновить `robots.txt` — если есть динамическая генерация
+  - **Файл:** `app/robots.ts` или `public/robots.txt`
+  - **Проверить:** sitemap URL корректный
+
+- [ ] **reg-09**: Обновить `<html lang>` — корректный lang атрибут для каждой локали
+  - **Файл:** `app/[locale]/layout.tsx`
+  - **Маппинг:** `pl → "pl"`, `de → "de"`, `it → "it"`
+  - **Проверить:** уже работает динамически через `params.locale`
+
+- [ ] **reg-10**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+  - **Ожидание:** 84 маршрута генерируются успешно
+  - **Время билда:** может увеличиться (мониторить)
+
+---
+
+## 22.2 Переводы — Польский язык (pl) [0/12]
+
+> **Стратегия перевода:** Базой служит `en.json`. Перевод должен быть нативным (не "гугл-переводчик"), с учётом маркетингового тона сайта. Рекомендуется привлечь нативного спикера для ревью или использовать Crowdin с AI + human review.
+
+- [ ] **reg-11**: Перевод `common` — навигация, footer, CTA, кнопки общие
+  - **Файл:** `messages/pl.json` → секция `nav`, `footer`, `cta`, `buttons`, `common`
+  - **Ключи:** ~50 (nav items, footer links, CTA тексты, "Подробнее", "Отправить", "Назад" и т.д.)
+  - **Контекст:** UI элементы — короткие, ёмкие переводы
+
+- [ ] **reg-12**: Перевод `pages.home` — главная страница (hero, services, process, benefits, FAQ, CTA)
+  - **Файл:** `messages/pl.json` → секция `pages.home`
+  - **Ключи:** ~80 (hero title/description, 6 услуг, 5 шагов процесса, benefits, FAQ items)
+  - **ВАЖНО:** Hero title — маркетинговый, адаптировать под польский рынок, не дословный перевод
+
+- [ ] **reg-13**: Перевод `pages.about` — страница "О нас"
+  - **Файл:** `messages/pl.json` → секция `pages.about`
+  - **Ключи:** ~30 (hero, approach, values array, principles array, achievements array, CTA)
+
+- [ ] **reg-14**: Перевод `pages.services` — страница услуг (пакеты, сравнение)
+  - **Файл:** `messages/pl.json` → секция `pages.services`
+  - **Ключи:** ~60 (caption, title, 4 пакета × features[], idealFor[], timeline, comparison table)
+  - **ВАЖНО:** Названия пакетов адаптировать (Expert → Expert, E-commerce → E-commerce — оставить англ. или перевести?)
+
+- [ ] **reg-15**: Перевод `pages.contacts` — контакты + форма
+  - **Файл:** `messages/pl.json` → секция `pages.contacts`
+  - **Ключи:** ~25 (описание, поля формы, placeholders, success/error messages, brief CTA)
+
+- [ ] **reg-16**: Перевод `pages.brief` — бриф-форма
+  - **Файл:** `messages/pl.json` → секция `pages.brief`
+  - **Ключи:** ~30 (steps array, поля формы, placeholders, success/error, consent текст)
+
+- [ ] **reg-17**: Перевод `pages.privacy` — политика конфиденциальности
+  - **Файл:** `messages/pl.json` → секция `pages.privacy`
+  - **Ключи:** ~40 (заголовки, sections array с content[] — юридический текст)
+  - **ВАЖНО:** Юридические формулировки должны соответствовать польскому праву (RODO — польская имплементация GDPR)
+
+- [ ] **reg-18**: Перевод `pages.terms` — условия использования
+  - **Файл:** `messages/pl.json` → секция `pages.terms`
+  - **Ключи:** ~40 (заголовки, sections array с content[])
+  - **ВАЖНО:** Юридические формулировки для польской юрисдикции
+
+- [ ] **reg-19**: Перевод `pages.appDev` — страница разработки приложений
+  - **Файл:** `messages/pl.json` → секция `pages.appDev`
+  - **Ключи:** ~50 (hero, 3 блока "зачем", 3 типа приложений, 6 направлений, 5 шагов процесса)
+
+- [ ] **reg-20**: Перевод `error` + `notFound` — страницы ошибок
+  - **Файл:** `messages/pl.json` → секции `error`, `notFound`
+  - **Ключи:** ~15 (заголовки, описания, кнопки, ссылки)
+
+- [ ] **reg-21**: Перевод `blog` + `cases` — листинги блога и кейсов
+  - **Файл:** `messages/pl.json` → секции `pages.blog`, `pages.cases`
+  - **Ключи:** ~20 (заголовки, фильтры, "Читать далее", "Все кейсы" и т.д.)
+
+- [ ] **reg-22**: Перевод metadata — SEO title + description для ВСЕХ страниц
+  - **Файл:** `messages/pl.json` → секция `metadata` (или inline в каждой странице)
+  - **Ключи:** 12 страниц × 2 (title + description) = ~24 ключа
+  - **Требования:** title до 60 символов, description до 160 символов, с ключевыми словами для польского рынка
+
+---
+
+## 22.3 Переводы — Немецкий язык (de) [0/12]
+
+> **Особенности немецкого:** Формальное обращение (Sie), длинные составные слова, точная юридическая терминология (DSGVO = GDPR по-немецки).
+
+- [ ] **reg-23**: Перевод `common` — навигация, footer, CTA, кнопки
+  - **Файл:** `messages/de.json` → секция `nav`, `footer`, `cta`, `buttons`, `common`
+  - **Ключи:** ~50
+  - **Тон:** Формальный (Sie-Form), профессиональный
+
+- [ ] **reg-24**: Перевод `pages.home` — главная страница
+  - **Файл:** `messages/de.json` → секция `pages.home`
+  - **Ключи:** ~80
+  - **ВАЖНО:** Немецкий рынок ценит надёжность и качество — адаптировать messaging
+
+- [ ] **reg-25**: Перевод `pages.about` — "Über uns"
+  - **Файл:** `messages/de.json` → секция `pages.about`
+  - **Ключи:** ~30
+
+- [ ] **reg-26**: Перевод `pages.services` — "Leistungen"
+  - **Файл:** `messages/de.json` → секция `pages.services`
+  - **Ключи:** ~60
+  - **ВАЖНО:** Цены будут подставляться динамически из pricing config — НЕ хардкодить валюту в переводах
+
+- [ ] **reg-27**: Перевод `pages.contacts` — "Kontakt"
+  - **Файл:** `messages/de.json` → секция `pages.contacts`
+  - **Ключи:** ~25
+
+- [ ] **reg-28**: Перевод `pages.brief` — "Briefing"
+  - **Файл:** `messages/de.json` → секция `pages.brief`
+  - **Ключи:** ~30
+
+- [ ] **reg-29**: Перевод `pages.privacy` — "Datenschutzerklärung"
+  - **Файл:** `messages/de.json` → секция `pages.privacy`
+  - **Ключи:** ~40
+  - **КРИТИЧЕСКИ ВАЖНО:** Немецкие Datenschutzerklärung имеют СТРОГИЕ юридические требования. Упоминать DSGVO (не GDPR), BfDI как надзорный орган, TDDDG для cookies
+
+- [ ] **reg-30**: Перевод `pages.terms` — "Nutzungsbedingungen"
+  - **Файл:** `messages/de.json` → секция `pages.terms`
+  - **Ключи:** ~40
+  - **Требования:** Немецкое право, Impressum-требования
+
+- [ ] **reg-31**: Перевод `pages.appDev` — "App-Entwicklung"
+  - **Файл:** `messages/de.json` → секция `pages.appDev`
+  - **Ключи:** ~50
+
+- [ ] **reg-32**: Перевод `error` + `notFound` — "Fehler" / "Seite nicht gefunden"
+  - **Файл:** `messages/de.json` → секции `error`, `notFound`
+  - **Ключи:** ~15
+
+- [ ] **reg-33**: Перевод `blog` + `cases` — "Blog" / "Referenzen"
+  - **Файл:** `messages/de.json` → секции `pages.blog`, `pages.cases`
+  - **Ключи:** ~20
+
+- [ ] **reg-34**: Перевод metadata — SEO для немецкого рынка
+  - **Файл:** `messages/de.json` → секция `metadata`
+  - **Ключи:** ~24
+  - **SEO:** Немецкие ключевые слова: "Webentwicklung", "Webdesign Agentur", "Website erstellen lassen"
+
+---
+
+## 22.4 Переводы — Итальянский язык (it) [0/12]
+
+> **Особенности итальянского:** Формальное обращение (Lei), эмоциональный маркетинговый тон, юридическая терминология (Garante per la protezione dei dati personali).
+
+- [ ] **reg-35**: Перевод `common` — навигация, footer, CTA, кнопки
+  - **Файл:** `messages/it.json` → секция `nav`, `footer`, `cta`, `buttons`, `common`
+  - **Ключи:** ~50
+
+- [ ] **reg-36**: Перевод `pages.home` — "Home" / "Pagina principale"
+  - **Файл:** `messages/it.json` → секция `pages.home`
+  - **Ключи:** ~80
+  - **ВАЖНО:** Итальянский маркетинг — более эмоциональный и вдохновляющий тон
+
+- [ ] **reg-37**: Перевод `pages.about` — "Chi siamo"
+  - **Файл:** `messages/it.json` → секция `pages.about`
+  - **Ключи:** ~30
+
+- [ ] **reg-38**: Перевод `pages.services` — "Servizi"
+  - **Файл:** `messages/it.json` → секция `pages.services`
+  - **Ключи:** ~60
+
+- [ ] **reg-39**: Перевод `pages.contacts` — "Contatti"
+  - **Файл:** `messages/it.json` → секция `pages.contacts`
+  - **Ключи:** ~25
+
+- [ ] **reg-40**: Перевод `pages.brief` — "Brief"
+  - **Файл:** `messages/it.json` → секция `pages.brief`
+  - **Ключи:** ~30
+
+- [ ] **reg-41**: Перевод `pages.privacy` — "Informativa sulla privacy"
+  - **Файл:** `messages/it.json` → секция `pages.privacy`
+  - **Ключи:** ~40
+  - **ВАЖНО:** Ссылка на Garante, итальянские требования Codice Privacy (D.Lgs. 196/2003)
+
+- [ ] **reg-42**: Перевод `pages.terms` — "Termini di utilizzo"
+  - **Файл:** `messages/it.json` → секция `pages.terms`
+  - **Ключи:** ~40
+
+- [ ] **reg-43**: Перевод `pages.appDev` — "Sviluppo app"
+  - **Файл:** `messages/it.json` → секция `pages.appDev`
+  - **Ключи:** ~50
+
+- [ ] **reg-44**: Перевод `error` + `notFound` — "Errore" / "Pagina non trovata"
+  - **Файл:** `messages/it.json` → секции `error`, `notFound`
+  - **Ключи:** ~15
+
+- [ ] **reg-45**: Перевод `blog` + `cases` — "Blog" / "Casi studio"
+  - **Файл:** `messages/it.json` → секции `pages.blog`, `pages.cases`
+  - **Ключи:** ~20
+
+- [ ] **reg-46**: Перевод metadata — SEO для итальянского рынка
+  - **Файл:** `messages/it.json` → секция `metadata`
+  - **Ключи:** ~24
+  - **SEO:** Итальянские ключевые слова: "sviluppo siti web", "agenzia web", "creazione siti internet"
+
+---
+
+## 22.5 Гео-детекция — определение региона по IP [0/10]
+
+> **Технология:** Vercel Edge Middleware автоматически добавляет заголовок `x-vercel-ip-country` (ISO 3166-1 alpha-2). Точность на уровне страны — 99%+. VPN-пользователи получат регион VPN-сервера — это ожидаемое поведение, не баг.
+> **Принцип:** Регион определяется ОДИН раз при первом визите и сохраняется в cookie на 1 год. Пользователь НЕ может сменить регион вручную.
+
+- [ ] **reg-47**: Создать конфигурацию регионов — маппинг стран к регионам и валютам
+  - **Файл:** `lib/regions.ts` (НОВЫЙ)
+  - **Содержание:**
+    ```typescript
+    type RegionCode = 'MD' | 'RO' | 'UA' | 'PL' | 'DE' | 'IT' | 'RU' | 'KZ' | 'DEFAULT';
+
+    interface RegionConfig {
+      code: RegionCode;
+      country: string;
+      currency: string;
+      currencySymbol: string;
+      currencyLocale: string; // для Intl.NumberFormat
+    }
+
+    const COUNTRY_TO_REGION: Record<string, RegionCode>;
+    // 'MD' → 'MD', 'RO' → 'RO', 'UA' → 'UA', 'PL' → 'PL',
+    // 'DE' → 'DE', 'AT' → 'DE', 'CH' → 'DE', // немецкоязычные → DE
+    // 'IT' → 'IT',
+    // 'RU' → 'RU', 'BY' → 'RU', // Беларусь → RU регион
+    // 'KZ' → 'KZ',
+    // остальные → 'DEFAULT'
+    ```
+  - **Экспорт:** `getRegionByCountry()`, `REGIONS`, `RegionCode` тип
+
+- [ ] **reg-48**: Обновить middleware — гео-детекция и установка cookie региона
+  - **Файл:** `middleware.ts`
+  - **Логика:**
+    1. Проверить наличие cookie `user-region`
+    2. Если нет → прочитать `x-vercel-ip-country` header
+    3. Маппинг: `countryCode → RegionCode` через `getRegionByCountry()`
+    4. Установить cookie `user-region` = `RegionCode`
+  - **Cookie атрибуты:**
+    - `maxAge`: 31536000 (1 год)
+    - `path`: `/`
+    - `sameSite`: `lax`
+    - `secure`: `true`
+    - `httpOnly`: `false` (нужен доступ из клиентского JS)
+  - **ВАЖНО:** НЕ перезаписывать существующий cookie (регион не меняется)
+
+- [ ] **reg-49**: Создать RegionProvider — React Context для доступа к региону в компонентах
+  - **Файл:** `components/providers/RegionProvider.tsx` (НОВЫЙ)
+  - **Содержание:**
+    ```typescript
+    // RegionContext → { region: RegionConfig, currency: string, formatPrice: (amount: number) => string }
+    // Читает cookie 'user-region' через js-cookie или document.cookie
+    // Если cookie нет → fallback на 'DEFAULT' (USD)
+    ```
+  - **Экспорт:** `RegionProvider`, `useRegion()` hook
+
+- [ ] **reg-50**: Интегрировать RegionProvider в корневой layout
+  - **Файл:** `app/[locale]/layout.tsx`
+  - **Изменения:** Обернуть children в `<RegionProvider>`
+  - **Порядок провайдеров:** `NextIntlClientProvider` → `RegionProvider` → children
+
+- [ ] **reg-51**: Создать утилиту форматирования цен — `formatPrice(amount, region)`
+  - **Файл:** `lib/format-price.ts` (НОВЫЙ)
+  - **Содержание:**
+    ```typescript
+    // Использует Intl.NumberFormat с правильной локалью и валютой
+    // formatPrice(1500, 'MD') → "1 500 lei"
+    // formatPrice(1500, 'DE') → "1.500 €"
+    // formatPrice(1500, 'RU') → "1 500 ₽"
+    // formatPrice(1500, 'UA') → "1 500 ₴"
+    ```
+  - **Edge cases:** Нулевая цена → "Бесплатно" / "Free" (по локали), отрицательная → ошибка
+
+- [ ] **reg-52**: Создать компонент `<Price />` — отображение цены с валютой
+  - **Файл:** `components/ui/Price.tsx` (НОВЫЙ)
+  - **Props:** `amount: number | Record<RegionCode, number>`, `className?: string`
+  - **Логика:** Берёт регион из `useRegion()`, форматирует через `formatPrice()`
+  - **Fallback:** Если цена для региона не задана → показать USD
+  - **Доступность:** `aria-label="Цена: 1500 евро"` (на языке пользователя)
+
+- [ ] **reg-53**: Тестирование гео-детекции — проверка через Vercel Preview
+  - **Метод:** Деплой на Vercel Preview → тестирование через VPN (разные страны)
+  - **Чеклист:**
+    - [ ] Молдова → cookie `user-region=MD`, валюта MDL
+    - [ ] Румыния → cookie `user-region=RO`, валюта RON
+    - [ ] Украина → cookie `user-region=UA`, валюта UAH
+    - [ ] Польша → cookie `user-region=PL`, валюта PLN
+    - [ ] Германия → cookie `user-region=DE`, валюта EUR
+    - [ ] Италия → cookie `user-region=IT`, валюта EUR
+    - [ ] Россия → cookie `user-region=RU`, валюта RUB
+    - [ ] Казахстан → cookie `user-region=KZ`, валюта KZT
+    - [ ] США (fallback) → cookie `user-region=DEFAULT`, валюта USD
+
+- [ ] **reg-54**: Локальная разработка — mock гео-детекции для `npm run dev`
+  - **Файл:** `middleware.ts`
+  - **Логика:** В dev-режиме (`process.env.NODE_ENV === 'development'`) использовать `NEXT_PUBLIC_DEV_REGION` из `.env.local`
+  - **Пример:** `NEXT_PUBLIC_DEV_REGION=MD` → эмулирует визит из Молдовы
+  - **Без переменной:** fallback на `DEFAULT`
+
+- [ ] **reg-55**: Обработка edge cases — что если гео недоступна
+  - **Файл:** `middleware.ts`, `lib/regions.ts`
+  - **Случаи:**
+    - `x-vercel-ip-country` = `undefined` → `DEFAULT` (USD)
+    - `x-vercel-ip-country` = неизвестный код → `DEFAULT` (USD)
+    - Cookie повреждён → пересоздать из geo
+    - Bot / crawler → `DEFAULT` (USD), не устанавливать cookie
+
+- [ ] **reg-56**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+
+---
+
+## 22.6 Система ценообразования — цены per регион [0/12]
+
+> **Архитектура:** Config-файл (TypeScript) с ценами для каждого региона × каждого пакета услуг. Цены задаются вручную (НЕ автоконверсия), т.к. pricing strategy различается по рынкам.
+> **ВАЖНО:** Цены пока заглушки (placeholder) — реальные будут заполнены позже. Инфраструктура и компоненты должны быть полностью готовы.
+
+- [ ] **reg-57**: Создать конфигурацию цен — все пакеты × все регионы
+  - **Файл:** `lib/pricing.ts` (НОВЫЙ)
+  - **Структура:**
+    ```typescript
+    interface PackagePricing {
+      starter: number;    // Пакет "Эксперт" / Starter
+      business: number;   // Пакет "E-commerce" / Business
+      corporate: number;  // Пакет "Корпоративный" / Corporate
+      landing: number;    // Пакет "Лендинг" / Landing
+    }
+
+    interface RegionPricing {
+      currency: string;
+      packages: PackagePricing;
+      appDev: {
+        mobile: number;
+        web: number;
+        cross: number;
+      };
+    }
+
+    const PRICING: Record<RegionCode, RegionPricing>;
+    ```
+  - **Placeholder цены:** Проставить реалистичные заглушки (можно будет легко заменить)
+  - **Экспорт:** `getPricing(region: RegionCode)`, `getPackagePrice(region, packageId)`
+
+- [ ] **reg-58**: Создать компонент `<PriceTag />` — отображение цены пакета
+  - **Файл:** `components/ui/PriceTag.tsx` (НОВЫЙ)
+  - **Props:** `packageId: string`, `prefix?: string` (например "от"), `className?: string`
+  - **Логика:** `useRegion()` → `getPricing(region)` → `formatPrice(price, region)`
+  - **Рендер:** "от 2 500 €" или "від 45 000 ₴"
+  - **Prefix:** Берётся из переводов (`t('pricing.from')` → "от" / "from" / "od" / "ab" / "da")
+
+- [ ] **reg-59**: Интегрировать `<PriceTag />` в страницу услуг
+  - **Файл:** `app/[locale]/services/page.tsx`
+  - **Изменения:** Заменить статические цены (если есть) на `<PriceTag packageId="starter" />`
+  - **Каждый пакет:** starter, business, corporate, landing → `<PriceTag />`
+  - **Таблица сравнения:** Цены в строках таблицы тоже через `<PriceTag />`
+
+- [ ] **reg-60**: Интегрировать `<PriceTag />` в страницу разработки приложений
+  - **Файл:** `app/[locale]/app-development/page.tsx`
+  - **Изменения:** Если есть цены в секциях типов приложений → `<PriceTag />`
+  - **Если цен нет:** Добавить "от X" в карточки типов (mobile, web, cross-platform)
+
+- [ ] **reg-61**: Создать компонент `<CurrencyBadge />` — индикатор текущей валюты
+  - **Файл:** `components/ui/CurrencyBadge.tsx` (НОВЫЙ)
+  - **Рендер:** Маленький бейдж "EUR €" или "UAH ₴" — показывает текущую валюту/регион
+  - **Расположение:** В header рядом с LanguageSwitcher или в footer
+  - **Стиль:** Subtle, не отвлекающий — text-muted, мелкий шрифт
+
+- [ ] **reg-62**: Добавить переводы для ценообразования — "от", "в месяц", "разово" и т.д.
+  - **Файлы:** Все 7 `messages/*.json`
+  - **Ключи:**
+    ```json
+    "pricing": {
+      "from": "от / from / od / ab / da / від / de la",
+      "perProject": "за проект / per project / ...",
+      "perMonth": "в месяц / per month / ...",
+      "currency": "Валюта / Currency / ...",
+      "free": "Бесплатно / Free / ..."
+    }
+    ```
+
+- [ ] **reg-63**: SSR-совместимость — цены должны рендериться корректно при SSR
+  - **Проблема:** Cookie доступен только на клиенте → SSR может показать неправильную валюту
+  - **Решение:** Читать cookie региона в middleware → передавать через header → Server Component получает регион
+  - **Альтернатива:** Client Component с `useRegion()` + skeleton/placeholder до гидрации
+  - **Выбрать подход и реализовать**
+
+- [ ] **reg-64**: Избежать CLS (Cumulative Layout Shift) при загрузке цен
+  - **Проблема:** Если цены загружаются на клиенте, может быть "прыжок" текста
+  - **Решение:** Placeholder с одинаковой шириной, или SSR с правильным регионом
+  - **Метрика:** CLS < 0.1 на страницах с ценами
+
+- [ ] **reg-65**: Создать admin-friendly формат для обновления цен
+  - **Файл:** `lib/pricing.ts`
+  - **Комментарии:** Чёткие комментарии возле каждого значения
+    ```typescript
+    // Молдова — цены в MDL (Молдавский лей)
+    MD: {
+      currency: 'MDL',
+      packages: {
+        starter: 25000,    // ~1 250 EUR
+        business: 50000,   // ~2 500 EUR
+        // ...
+      }
+    }
+    ```
+  - **Документация:** Как обновить цены (в комментарии в начале файла)
+
+- [ ] **reg-66**: Unit-тесты — форматирование цен для всех регионов
+  - **Проверки:**
+    - `formatPrice(1500, 'MD')` → содержит "MDL" или "lei"
+    - `formatPrice(1500, 'DE')` → содержит "€" или "EUR"
+    - `formatPrice(0, 'RU')` → "Бесплатно" (на русском)
+    - Все 9 регионов возвращают корректную строку
+
+- [ ] **reg-67**: Страница `/services` — проверить отображение цен для всех 9 регионов
+  - **Метод:** Менять cookie `user-region` в DevTools → проверять цены
+  - **Чеклист:** Каждый из 9 регионов × 4 пакета = 36 комбинаций
+
+- [ ] **reg-68**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+
+---
+
+## 22.7 Обновление UI — LanguageSwitcher на 7 языков [0/6]
+
+- [ ] **reg-69**: Обновить LanguageSwitcher (desktop) — добавить PL, DE, IT
+  - **Файл:** `components/ui/LanguageSwitcher.tsx`
+  - **Текущий вид:** `EN | RU | UK | RO`
+  - **Новый вид:** `EN | RU | UK | RO | PL | DE | IT`
+  - **Проблема:** 7 языков могут не поместиться в одну строку на tablet
+  - **Решение:** Dropdown или 2 строки, или компактный формат
+
+- [ ] **reg-70**: Редизайн LanguageSwitcher — адаптация под 7 языков
+  - **Варианты:**
+    - A) Dropdown: Текущий язык "EN ▾" → при клике список всех 7
+    - B) Grid: 2 ряда (4+3) для tablet/desktop
+    - C) Scrollable row для мобильных
+  - **Выбрать лучший вариант → реализовать**
+  - **Анимация:** `motionConfig.ease`, плавное открытие/закрытие
+
+- [ ] **reg-71**: Обновить LanguageSwitcher в MobileMenu
+  - **Файл:** `components/layout/MobileMenu.tsx`
+  - **Изменения:** Адаптировать под 7 языков в мобильном меню
+  - **UX:** Языки должны быть легко нажимаемы (min touch target 44×44px)
+
+- [ ] **reg-72**: Добавить CurrencyBadge в header/footer
+  - **Файлы:** `components/layout/Header.tsx`, `components/layout/Footer.tsx`
+  - **Расположение:** Рядом с LanguageSwitcher или в информационной полосе
+  - **Формат:** "🇲🇩 MDL" или просто "MDL" — без флагов если слишком нагружает UI
+
+- [ ] **reg-73**: Responsive тестирование — LanguageSwitcher на всех breakpoints
+  - **Breakpoints:** 320px, 375px, 414px, 768px, 1024px, 1280px, 1440px
+  - **Проверить:** Не overflow, не обрезается, touch targets достаточные
+
+- [ ] **reg-74**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+
+---
+
+## 22.8 SEO для новых языков [0/6]
+
+- [ ] **reg-75**: Обновить hreflang теги — 7 языков на каждой странице
+  - **Файл:** `app/[locale]/layout.tsx` → `alternates.languages`
+  - **Формат:**
+    ```html
+    <link rel="alternate" hreflang="en" href="https://nakoagency.com/en/..." />
+    <link rel="alternate" hreflang="ru" href="https://nakoagency.com/ru/..." />
+    <link rel="alternate" hreflang="pl" href="https://nakoagency.com/pl/..." />
+    <link rel="alternate" hreflang="de" href="https://nakoagency.com/de/..." />
+    <link rel="alternate" hreflang="it" href="https://nakoagency.com/it/..." />
+    <link rel="alternate" hreflang="uk" href="https://nakoagency.com/uk/..." />
+    <link rel="alternate" hreflang="ro" href="https://nakoagency.com/ro/..." />
+    <link rel="alternate" hreflang="x-default" href="https://nakoagency.com/en/..." />
+    ```
+
+- [ ] **reg-76**: Обновить sitemap — 84 URL (12 страниц × 7 языков)
+  - **Файл:** `app/sitemap.ts`
+  - **Проверить:** Каждый URL имеет `alternateRefs` для всех 7 языков
+  - **Валидация:** Проверить через Google Search Console (после деплоя)
+
+- [ ] **reg-77**: Locale-aware metadata для новых языков
+  - **Файлы:** Все page.tsx в `app/[locale]/*/`
+  - **Изменения:** `generateMetadata` использует `getTranslations` → автоматически подхватит переводы из pl/de/it
+  - **Проверить:** OG-теги на правильном языке для каждой локали
+
+- [ ] **reg-78**: JSON-LD Schema — обновить для мультирегиональности
+  - **Файл:** `app/[locale]/layout.tsx` или `lib/schema.ts`
+  - **Изменения:** `LocalBusiness` schema → добавить `areaServed` для 8 стран
+  - **Языки:** `inLanguage` → массив из 7 языков
+  - **Адрес:** Основной + branch offices (если есть)
+
+- [ ] **reg-79**: Проверить robots.txt — не блокирует новые языковые пути
+  - **Файл:** `app/robots.ts` или `public/robots.txt`
+  - **Проверить:** `/pl/`, `/de/`, `/it/` доступны для краулеров
+
+- [ ] **reg-80**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+
+---
+
+## 22.9 Финальное тестирование и QA [0/8]
+
+- [ ] **reg-81**: Полный билд — `npm run build` без ошибок, 84 маршрута
+  - **Ожидание:** Все 84 маршрута (12 × 7) генерируются без ошибок
+  - **Мониторить:** Время билда (может значительно увеличиться)
+
+- [ ] **reg-82**: Проверка переключения языков — все 7 языков на КАЖДОЙ странице
+  - **Чеклист:** 12 страниц × 7 языков = 84 проверки
+  - **Проверить:** Текст корректный, нет missing keys (fallback на `en`), URL меняется
+
+- [ ] **reg-83**: Проверка гео-детекции — 9 регионов
+  - **Метод:** VPN или ручная установка cookie в DevTools
+  - **Проверить:** Валюта и цены соответствуют региону
+
+- [ ] **reg-84**: Проверка цен — все пакеты × все регионы
+  - **Страницы:** `/services`, `/app-development`
+  - **Проверить:** Правильная валюта, правильное форматирование (разделители тысяч, символ валюты)
+
+- [ ] **reg-85**: Responsive тестирование — 7 breakpoints × 7 языков
+  - **Приоритет:** Проверить на 320px (минимум) и 1440px (максимум) для каждого языка
+  - **Немецкий:** Особое внимание — длинные слова могут ломать layout
+
+- [ ] **reg-86**: Lighthouse audit — Performance >= 90 для новых языков
+  - **Страницы:** `/pl`, `/de`, `/it` (главные)
+  - **Метрики:** LCP, FID, CLS, TTI
+  - **Бюджет:** Translation files не должны раздувать bundle
+
+- [ ] **reg-87**: Accessibility — новые языки проходят a11y чеклист
+  - **Проверить:** `lang` атрибут корректный, screen reader читает на правильном языке
+  - **Keyboard navigation:** Работает в LanguageSwitcher с 7 языками
+
+- [ ] **reg-88**: Коммит + деплой — `feat(i18n): add multi-region support with 7 languages and geo-pricing`
+
+---
+
+# ФАЗА 23: Legal & Compliance — GDPR, cookies, privacy per юрисдикция [0/58]
+
+> **Концепция:** Полное юридическое соответствие для 8 стран работы. Стратегия "Strictest by default" — показываем GDPR-compliant cookie banner ВСЕМ, адаптируем юридические тексты per юрисдикция.
+>
+> **Регуляторные фреймворки:**
+> | Группа | Страны | Фреймворк | Строгость |
+> |--------|--------|-----------|-----------|
+> | EU/GDPR | Румыния, Польша, Германия, Италия | GDPR + ePrivacy Directive | МАКСИМАЛЬНАЯ |
+> | EU-adjacent | Молдова | Закон №195/2024 (транспонирует GDPR, с 08.2026) | ВЫСОКАЯ |
+> | EU-adjacent | Украина | Закон №2297-VI + новый проект | СРЕДНЯЯ → ВЫСОКАЯ |
+> | CIS | Россия | 152-ФЗ + поправки 420-ФЗ | ВЫСОКАЯ (+ локализация данных!) |
+> | CIS | Казахстан | Закон №94-V (обновлён 2024) | СРЕДНЯЯ (+ локализация данных!) |
+>
+> **Критические требования:**
+> - 🔴 **Россия:** Персональные данные граждан РФ ОБЯЗАНЫ храниться на серверах в РФ (с 01.07.2025). Штраф до 18 000 000 ₽.
+> - 🔴 **Россия:** С 01.09.2025 согласие на обработку ПД должно быть ОТДЕЛЬНЫМ документом.
+> - 🔴 **Казахстан:** Данные должны храниться на серверах в КЗ (с 08.01.2025).
+> - 🔴 **Германия:** Строжайшие cookie-требования (TDDDG). Штраф до 300 000 €.
+> - 🟡 **Италия:** Cookie wall запрещён. Scroll ≠ согласие. Garante требует журналирование.
+>
+> **Источники research (март 2026):**
+> - GDPR Cookie Consent Requirements 2025 (secureprivacy.ai)
+> - Cookie Banner Requirements by Country EU 2026 (cookiebanner.com)
+> - Russia 152-FZ Guide (secureprivacy.ai)
+> - Russia Data Localization July 2025 (lidings.com)
+> - Kazakhstan Data Protection Law (globalprivacylaws.com)
+> - Moldova Law 195/2024 (consentmo.com)
+> - Ukraine Data Protection 2025-2026 (iclg.com)
+
+---
+
+## 23.1 Cookie Consent Banner — реализация [0/12]
+
+> **Подход:** Custom-реализация (не SaaS как CookieBot/OneTrust) для полного контроля, перформанса и интеграции с дизайн-системой. Google Consent Mode v2 для GA4.
+
+- [ ] **legal-01**: Создать Cookie Consent Store — управление состоянием согласия
+  - **Файл:** `lib/cookie-consent.ts` (НОВЫЙ)
+  - **Содержание:**
+    ```typescript
+    interface CookieConsent {
+      necessary: true;        // Всегда true, нельзя отключить
+      analytics: boolean;     // GA4, Vercel Analytics
+      marketing: boolean;     // Будущие рекламные пиксели
+      preferences: boolean;   // Язык, регион, тема
+    }
+
+    interface ConsentRecord {
+      consent: CookieConsent;
+      timestamp: string;      // ISO 8601
+      version: string;        // Версия политики
+      region: string;         // Регион пользователя
+      method: 'banner' | 'settings'; // Как дано согласие
+    }
+    ```
+  - **Функции:** `getConsent()`, `setConsent()`, `hasConsented()`, `revokeConsent()`
+  - **Хранение:** `localStorage` для состояния + cookie `cookie-consent` для SSR/middleware
+
+- [ ] **legal-02**: Создать компонент `<CookieBanner />` — основной баннер
+  - **Файл:** `components/ui/CookieBanner.tsx` (НОВЫЙ)
+  - **Дизайн:** Полоса внизу экрана (не overlay, не блокирует контент)
+  - **Элементы:**
+    - Текст: "Мы используем cookies..." (переведённый)
+    - Кнопка "Принять все" — `bg-accent text-white`
+    - Кнопка "Отклонить все" — **РАВНОЗНАЧНАЯ по размеру** (требование GDPR/Германия!)
+    - Кнопка "Настроить" — ссылка-стиль, открывает модалку настроек
+    - Ссылка "Политика cookies" → `/cookie-policy`
+  - **Анимация:** slide-up с `motionConfig.ease`, `prefers-reduced-motion` respected
+  - **Стиль:** Соответствует дизайн-системе (premium-minimal)
+
+- [ ] **legal-03**: Создать компонент `<CookieSettings />` — модалка детальных настроек
+  - **Файл:** `components/ui/CookieSettings.tsx` (НОВЫЙ)
+  - **Дизайн:** Модальное окно поверх баннера
+  - **Содержание:**
+    - Категория "Необходимые" — toggle ЗАБЛОКИРОВАН (always on), описание
+    - Категория "Аналитика" — toggle (off по умолчанию!), описание, список cookies
+    - Категория "Маркетинг" — toggle (off по умолчанию!), описание
+    - Категория "Предпочтения" — toggle (off по умолчанию!), описание
+    - Кнопка "Сохранить настройки"
+    - Кнопка "Принять все"
+  - **ВАЖНО:** Pre-checked toggles ЗАПРЕЩЕНЫ (GDPR). Всё кроме necessary = off
+  - **Accessibility:** Focus trap, Escape закрывает, aria-modal
+
+- [ ] **legal-04**: Создать Hook `useCookieConsent()` — для условной загрузки скриптов
+  - **Файл:** `lib/hooks/useCookieConsent.ts` (НОВЫЙ)
+  - **API:**
+    ```typescript
+    const { consent, hasConsented, updateConsent, openSettings } = useCookieConsent();
+    // consent.analytics → true/false
+    // hasConsented → баннер уже показывался?
+    // updateConsent({ analytics: true }) → обновить согласие
+    // openSettings() → открыть модалку настроек
+    ```
+
+- [ ] **legal-05**: Условная загрузка GA4 — только при `consent.analytics === true`
+  - **Файл:** `app/[locale]/layout.tsx` или `components/analytics/GoogleAnalytics.tsx`
+  - **Текущее:** GA4 скрипт загружается всегда
+  - **Новое:** GA4 загружается ТОЛЬКО если `consent.analytics === true`
+  - **Google Consent Mode v2:** Если consent не дан → `gtag('consent', 'default', { analytics_storage: 'denied' })`
+  - **При получении consent:** `gtag('consent', 'update', { analytics_storage: 'granted' })`
+
+- [ ] **legal-06**: Интегрировать баннер в layout — показ при первом визите
+  - **Файл:** `app/[locale]/layout.tsx`
+  - **Логика:** Если `!hasConsented()` → показать `<CookieBanner />`
+  - **Порядок:** Баннер рендерится ПОСЛЕ основного контента (не блокирует)
+  - **z-index:** Выше всего кроме мобильного меню
+
+- [ ] **legal-07**: Ссылка "Настройки cookies" в footer — повторный доступ к настройкам
+  - **Файл:** `components/layout/Footer.tsx`
+  - **Изменения:** Добавить ссылку "Настройки cookies" / "Cookie Settings" → `openSettings()`
+  - **Требование GDPR:** Отзыв согласия должен быть таким же простым, как его дача
+
+- [ ] **legal-08**: Переводы Cookie Banner — все 7 языков
+  - **Файлы:** Все 7 `messages/*.json`
+  - **Ключи:**
+    ```json
+    "cookies": {
+      "bannerTitle": "Мы используем файлы cookie",
+      "bannerText": "Мы используем cookies для улучшения...",
+      "acceptAll": "Принять все",
+      "rejectAll": "Отклонить все",
+      "customize": "Настроить",
+      "policyLink": "Политика cookies",
+      "settingsTitle": "Настройки cookies",
+      "necessary": "Необходимые",
+      "necessaryDesc": "Обеспечивают базовую работу сайта...",
+      "analytics": "Аналитика",
+      "analyticsDesc": "Помогают понять как используется сайт...",
+      "marketing": "Маркетинг",
+      "marketingDesc": "Используются для персонализации рекламы...",
+      "preferences": "Предпочтения",
+      "preferencesDesc": "Запоминают ваш выбор языка и региона...",
+      "save": "Сохранить настройки",
+      "alwaysActive": "Всегда активны"
+    }
+    ```
+
+- [ ] **legal-09**: Гео-адаптация строгости баннера
+  - **Файл:** `components/ui/CookieBanner.tsx`, `middleware.ts`
+  - **EU (DE, IT, RO, PL):** Полный баннер с 3 кнопками, блокировка cookies до согласия
+  - **Moldova, Ukraine:** Полный баннер (будущий GDPR compliance)
+  - **Russia, Kazakhstan:** Баннер с упрощённым текстом (но всё равно opt-in для safety)
+  - **Реализация:** Передавать `isEU` flag через middleware → cookie → клиент
+
+- [ ] **legal-10**: Журналирование согласий — хранение записей
+  - **Требование:** Италия (Garante) требует хранить: timestamp, IP, выбор, версию политики
+  - **Реализация:** При каждом согласии → POST на `/api/consent-log`
+  - **Файл:** `app/api/consent-log/route.ts` (НОВЫЙ)
+  - **Хранение:** В JSON-файле / Vercel KV / или отправка на email (обсудить)
+  - **Данные:** `{ timestamp, region, consent: {...}, policyVersion, userAgent }`
+  - **GDPR-совместимость:** НЕ хранить IP-адрес (персональные данные!) — хранить хеш или только страну
+
+- [ ] **legal-11**: Тестирование Cookie Banner — все сценарии
+  - **Сценарии:**
+    - [ ] Первый визит → баннер показан
+    - [ ] "Принять все" → все cookies активны, баннер скрыт, GA4 работает
+    - [ ] "Отклонить все" → только necessary cookies, GA4 НЕ работает
+    - [ ] "Настроить" → модалка открывается, toggles off по умолчанию
+    - [ ] Сохранить частичные настройки → соответствующие cookies активны/неактивны
+    - [ ] Повторный визит → баннер НЕ показан (cookie сохранён)
+    - [ ] Footer "Настройки cookies" → модалка открывается с текущими настройками
+    - [ ] Изменение настроек → cookies обновляются мгновенно
+
+- [ ] **legal-12**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+
+---
+
+## 23.2 Google Consent Mode v2 — интеграция с GA4 [0/5]
+
+> **Требование:** С марта 2024 Google требует Consent Mode v2 для GA4 в ЕС. Без него данные из EU не будут собираться.
+
+- [ ] **legal-13**: Реализовать default consent state — "denied" до получения согласия
+  - **Файл:** `app/[locale]/layout.tsx` или `components/analytics/GoogleAnalytics.tsx`
+  - **Код:**
+    ```typescript
+    // ДО загрузки GA4:
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      functionality_storage: 'denied',
+      personalization_storage: 'denied',
+      security_storage: 'granted', // всегда granted
+    });
+    ```
+
+- [ ] **legal-14**: Реализовать consent update — при получении/изменении согласия
+  - **Файл:** `lib/cookie-consent.ts`
+  - **Логика:** При `setConsent()` → вызвать:
+    ```typescript
+    gtag('consent', 'update', {
+      analytics_storage: consent.analytics ? 'granted' : 'denied',
+      ad_storage: consent.marketing ? 'granted' : 'denied',
+      ad_user_data: consent.marketing ? 'granted' : 'denied',
+      ad_personalization: consent.marketing ? 'granted' : 'denied',
+      functionality_storage: consent.preferences ? 'granted' : 'denied',
+      personalization_storage: consent.preferences ? 'granted' : 'denied',
+    });
+    ```
+
+- [ ] **legal-15**: Настроить GA4 Advanced Consent Mode — моделирование данных
+  - **Google Analytics UI:** Включить "Consent Mode" в настройках GA4
+  - **Преимущество:** Google моделирует данные пользователей, не давших согласие
+  - **Документация:** Записать настройки в CLAUDE.md
+
+- [ ] **legal-16**: Тестирование Consent Mode — проверка через Google Tag Assistant
+  - **Инструмент:** Google Tag Assistant (Chrome extension)
+  - **Проверить:**
+    - [ ] До согласия: `analytics_storage: denied` → GA4 НЕ устанавливает cookies
+    - [ ] После "Принять все": `analytics_storage: granted` → GA4 cookies появляются
+    - [ ] После "Отклонить все": `analytics_storage: denied` → NO GA4 cookies
+    - [ ] Ping передаётся даже при denied (consent mode signals)
+
+- [ ] **legal-17**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+
+---
+
+## 23.3 Политика конфиденциальности — мультиюрисдикционная [0/10]
+
+> **Стратегия:** Единая политика, покрывающая ВСЕ юрисдикции, с отдельными секциями для каждой. Не 8 отдельных документов, а 1 структурированный документ с geo-specific секциями.
+
+- [ ] **legal-18**: Определить структуру мультиюрисдикционной Privacy Policy
+  - **Секции:**
+    1. Общие положения (кто мы, что собираем)
+    2. Цели обработки и правовые основания
+    3. Какие данные собираем (формы, cookies, аналитика)
+    4. Как используем данные
+    5. Кому передаём данные (Vercel, Resend, GA4)
+    6. Международная передача данных
+    7. Сроки хранения
+    8. Ваши права
+       - 8a. Для резидентов ЕС (GDPR): доступ, исправление, удаление, портабельность, ограничение, возражение
+       - 8b. Для резидентов РФ (152-ФЗ): доступ, уничтожение, отзыв согласия
+       - 8c. Для резидентов Казахстана: доступ, исправление, удаление
+       - 8d. Для резидентов Молдовы: права по Закону №195/2024
+       - 8e. Для резидентов Украины: права по Закону №2297-VI
+    9. Безопасность данных
+    10. Контактная информация (DPO если назначен)
+    11. Изменения политики
+    12. Надзорные органы per юрисдикция
+
+- [ ] **legal-19**: Написать текст Privacy Policy — русский (базовый)
+  - **Файл:** `messages/ru.json` → `pages.privacy.sections`
+  - **Объём:** ~2000-3000 слов
+  - **ВАЖНО:** Юридически корректные формулировки (не маркетинговые)
+  - **Упомянуть:** NAKO Agency как контроллер данных, email для запросов
+
+- [ ] **legal-20**: Перевод Privacy Policy — английский
+  - **Файл:** `messages/en.json` → `pages.privacy`
+
+- [ ] **legal-21**: Перевод Privacy Policy — украинский
+  - **Файл:** `messages/uk.json` → `pages.privacy`
+
+- [ ] **legal-22**: Перевод Privacy Policy — румынский
+  - **Файл:** `messages/ro.json` → `pages.privacy`
+
+- [ ] **legal-23**: Перевод Privacy Policy — польский
+  - **Файл:** `messages/pl.json` → `pages.privacy`
+  - **Терминология:** RODO (польское название GDPR), UODO (регулятор)
+
+- [ ] **legal-24**: Перевод Privacy Policy — немецкий
+  - **Файл:** `messages/de.json` → `pages.privacy`
+  - **Терминология:** DSGVO (немецкое название GDPR), BfDI (регулятор), Datenschutzerklärung
+  - **КРИТИЧЕСКИ ВАЖНО:** Немецкие Datenschutzerklärung — самые проверяемые в EU
+
+- [ ] **legal-25**: Перевод Privacy Policy — итальянский
+  - **Файл:** `messages/it.json` → `pages.privacy`
+  - **Терминология:** Garante per la protezione dei dati personali (регулятор)
+
+- [ ] **legal-26**: Обновить страницу `/privacy` — отображение мультиюрисдикционного контента
+  - **Файл:** `app/[locale]/privacy/page.tsx`
+  - **Изменения:** Geo-specific секции (если регион = RU → показать доп. секцию про 152-ФЗ)
+  - **Или:** Показывать ВСЕ секции всем (прозрачность) — рекомендуемый подход
+
+- [ ] **legal-27**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+
+---
+
+## 23.4 Cookie Policy — отдельная страница [0/6]
+
+> **Зачем отдельно от Privacy Policy:** GDPR требует детальную информацию о каждом cookie. Это слишком объёмно для Privacy Policy.
+
+- [ ] **legal-28**: Создать страницу `/cookie-policy` — роутинг и layout
+  - **Файл:** `app/[locale]/cookie-policy/page.tsx` (НОВЫЙ)
+  - **SEO:** metadata с переводами
+  - **Стиль:** Как Privacy/Terms — серьёзный, юридический layout
+
+- [ ] **legal-29**: Провести Cookie Audit — составить полный список cookies
+  - **Документ:** Внутренний список (потом в переводы)
+  - **Формат для каждого cookie:**
+    | Cookie | Провайдер | Цель | Категория | Срок | Тип |
+    |--------|-----------|------|-----------|------|-----|
+    | `_ga` | Google Analytics | Идентификация пользователя | Аналитика | 2 года | HTTP |
+    | `_ga_*` | Google Analytics | Сессия | Аналитика | 2 года | HTTP |
+    | `NEXT_LOCALE` | next-intl | Язык | Необходимые | Сессия | HTTP |
+    | `user-region` | NAKO Agency | Регион/валюта | Предпочтения | 1 год | HTTP |
+    | `cookie-consent` | NAKO Agency | Выбор cookies | Необходимые | 1 год | HTTP |
+    | `_vercel_*` | Vercel | Аналитика деплоя | Аналитика | — | HTTP |
+
+- [ ] **legal-30**: Написать Cookie Policy текст + переводы 7 языков
+  - **Файлы:** Все 7 `messages/*.json` → `pages.cookiePolicy`
+  - **Секции:** Что такое cookies, какие используем (таблица), как управлять, контакт
+
+- [ ] **legal-31**: Добавить ссылку на Cookie Policy в footer
+  - **Файл:** `components/layout/Footer.tsx`
+  - **Рядом с:** "Политика конфиденциальности" и "Условия использования"
+
+- [ ] **legal-32**: Добавить Cookie Policy в навигацию и sitemap
+  - **Файлы:** `lib/constants.tsx` (footer links), `app/sitemap.ts`
+  - **НЕ добавлять:** В основную навигацию (header) — только в footer
+
+- [ ] **legal-33**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+
+---
+
+## 23.5 Terms of Use — обновление per юрисдикция [0/5]
+
+- [ ] **legal-34**: Обновить Terms of Use — добавить мультиюрисдикционные секции
+  - **Файлы:** Все 7 `messages/*.json` → `pages.terms`
+  - **Добавить секции:**
+    - Применимое право (какой юрисдикции подчиняется)
+    - Разрешение споров (суд/арбитраж)
+    - Ограничение ответственности
+    - Возрастные ограничения per страну (DE: 16, PL: 13, IT: 14)
+
+- [ ] **legal-35**: Перевод обновлённых Terms — все 7 языков
+  - **Файлы:** `messages/pl.json`, `messages/de.json`, `messages/it.json` (новые), обновить остальные 4
+
+- [ ] **legal-36**: Добавить "Дата последнего обновления" — динамическую
+  - **Файлы:** `pages.terms.lastUpdated`, `pages.privacy.lastUpdated`
+  - **Формат:** Локализованная дата через `useFormatter()`
+
+- [ ] **legal-37**: Impressum для Германии — ОБЯЗАТЕЛЬНАЯ страница
+  - **Файл:** `app/[locale]/impressum/page.tsx` (НОВЫЙ) — или секция в footer
+  - **Содержание:** Название компании, адрес, email, телефон, регистрационный номер
+  - **Требование:** TMG §5 — обязательно для всех коммерческих сайтов, доступных из Германии
+  - **Переводы:** 7 языков (но содержание одинаковое — фактические данные)
+
+- [ ] **legal-38**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+
+---
+
+## 23.6 Формы — GDPR consent и compliance [0/8]
+
+> **Требования:** Все формы (Contact, Brief) должны иметь чекбокс согласия с ссылкой на Privacy Policy. Для России — отдельная форма согласия (с 01.09.2025).
+
+- [ ] **legal-39**: Обновить Contact форму — добавить consent checkbox
+  - **Файл:** `app/[locale]/contacts/ContactsContent.tsx`
+  - **Добавить:**
+    ```
+    ☐ Я согласен(на) на обработку персональных данных в соответствии
+      с [Политикой конфиденциальности](/privacy)
+    ```
+  - **Валидация:** checkbox ОБЯЗАТЕЛЕН для отправки (Zod: `.refine()`)
+  - **Стиль:** Мелкий текст под кнопкой отправки, ссылка подчёркнута
+
+- [ ] **legal-40**: Обновить Brief форму — добавить consent checkbox
+  - **Файл:** `app/[locale]/brief/BriefContent.tsx`
+  - **Аналогично Contact форме**
+
+- [ ] **legal-41**: Для РФ — отдельная форма согласия (152-ФЗ, с сентября 2025)
+  - **Требование:** Согласие НЕ может быть частью другого документа
+  - **Реализация:** При `region === 'RU'` → показать отдельный модальный документ "Согласие на обработку ПД"
+  - **Содержание:** Полный текст согласия: кто обрабатывает, какие данные, цели, сроки, способы обработки
+  - **Файл:** `components/ui/RussianConsentModal.tsx` (НОВЫЙ)
+  - **Checkbox:** "Я ознакомился и даю согласие на обработку ПД" → ссылка на полный текст
+
+- [ ] **legal-42**: LeadFormSection — добавить consent checkbox (homepage CTA)
+  - **Файл:** `components/sections/LeadFormSection.tsx`
+  - **Проверить:** Если есть форма на главной странице → добавить чекбокс
+
+- [ ] **legal-43**: Переводы consent текстов — 7 языков
+  - **Файлы:** Все 7 `messages/*.json`
+  - **Ключи:**
+    ```json
+    "consent": {
+      "checkbox": "Я согласен(на) на обработку...",
+      "checkboxRequired": "Необходимо дать согласие...",
+      "ruTitle": "Согласие на обработку персональных данных",
+      "ruText": "Полный текст согласия для 152-ФЗ...",
+      "ruAccept": "Даю согласие",
+      "marketingCheckbox": "Я согласен(на) получать новости..."
+    }
+    ```
+
+- [ ] **legal-44**: API route — сохранение consent record при отправке формы
+  - **Файл:** `app/api/lead/route.ts`
+  - **Изменения:** При каждой заявке сохранять: `{ consentGiven: true, consentTimestamp, policyVersion, region }`
+  - **ВАЖНО для audit:** Доказательство что согласие было получено
+
+- [ ] **legal-45**: Маркетинговый checkbox (опционально) — отдельный от основного
+  - **GDPR требует:** Отдельное согласие на маркетинговые коммуникации
+  - **Текст:** "Я хочу получать новости и специальные предложения от NAKO Agency"
+  - **Этот checkbox НЕ обязателен для отправки формы**
+
+- [ ] **legal-46**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+
+---
+
+## 23.7 Локализация данных — Россия и Казахстан [0/6]
+
+> **КРИТИЧЕСКАЯ ПРОБЛЕМА:** Vercel хранит данные в США/ЕС. Россия (152-ФЗ) и Казахстан требуют локализацию ПД на своей территории.
+> **Контекст:** Сайт собирает: имя, email, телефон, сообщение через формы Contact/Brief.
+
+- [ ] **legal-47**: Определить стратегию для РФ/КЗ — выбор подхода
+  - **Варианты:**
+    - **A) Email-only (РЕКОМЕНДУЕМЫЙ):** Не хранить данные на сервере. Форма → email (Resend API) → данные в почтовом ящике. Vercel не хранит ПД, только транзитно обрабатывает.
+      - ✅ Плюсы: Простейшая реализация, минимум рисков
+      - ⚠️ Минусы: Roskomnadzor может считать даже транзитную обработку нарушением
+    - **B) Dual API:** Для РФ/КЗ → отправлять данные на сервер в соответствующей стране (VPS в РФ/КЗ). Для остальных → через Vercel.
+      - ✅ Плюсы: Полный compliance
+      - ⚠️ Минусы: Доп. инфраструктура и стоимость
+    - **C) Disclaimer:** Уведомление "Данные обрабатываются на серверах в ЕС/США" + явное согласие пользователя.
+      - ✅ Плюсы: Прозрачность
+      - ⚠️ Минусы: Может не соответствовать закону
+  - **РЕШЕНИЕ:** Обсудить с пользователем и зафиксировать выбор
+
+- [ ] **legal-48**: Реализовать выбранную стратегию для России
+  - **Зависит от решения в legal-47**
+  - **Если Вариант A:** Убедиться что `/api/lead` не сохраняет данные в БД/файлы, только отправляет email
+  - **Если Вариант B:** Создать прокси-endpoint для РФ → перенаправление на российский сервер
+  - **Добавить:** В Privacy Policy секцию о месте обработки данных
+
+- [ ] **legal-49**: Реализовать выбранную стратегию для Казахстана
+  - **Аналогично России**
+  - **Особенность КЗ:** Допускается хранение за рубежом ПРИ УСЛОВИИ наличия копии в КЗ
+
+- [ ] **legal-50**: Уведомление Roskomnadzor — если требуется
+  - **152-ФЗ ст. 22:** Оператор обязан уведомить Roskomnadzor о начале обработки ПД
+  - **Форма уведомления:** На сайте Roskomnadzor
+  - **Задача:** Определить нужно ли уведомление для NAKO Agency → если да, подготовить
+
+- [ ] **legal-51**: Добавить disclaimer о трансграничной передаче данных
+  - **Файлы:** Privacy Policy (все 7 языков)
+  - **Текст:** "Ваши данные могут обрабатываться на серверах, расположенных в [страны]. Отправляя форму, вы даёте согласие на трансграничную передачу данных."
+  - **Для ЕС:** Упомянуть SCC (Standard Contractual Clauses) с Vercel
+
+- [ ] **legal-52**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+
+---
+
+## 23.8 Финальное тестирование и QA [0/6]
+
+- [ ] **legal-53**: Cookie Banner — E2E тестирование на всех 7 языках
+  - **Проверить:**
+    - [ ] Баннер появляется на первом визите (каждый язык)
+    - [ ] "Принять все" / "Отклонить все" / "Настроить" работают
+    - [ ] GA4 НЕ загружается до consent
+    - [ ] GA4 загружается после consent
+    - [ ] Footer ссылка "Настройки cookies" открывает модалку
+    - [ ] Consent сохраняется между визитами
+
+- [ ] **legal-54**: Формы — consent checkbox на всех страницах с формами
+  - **Проверить:**
+    - [ ] Contact форма → checkbox обязателен
+    - [ ] Brief форма → checkbox обязателен
+    - [ ] LeadFormSection → checkbox обязателен
+    - [ ] Форма НЕ отправляется без checkbox
+    - [ ] Ссылка на Privacy Policy корректная (на текущем языке)
+    - [ ] Для RU региона → отдельная форма согласия показывается
+
+- [ ] **legal-55**: Privacy Policy + Cookie Policy + Terms — контент проверка
+  - **Проверить:**
+    - [ ] Все 7 языков отображаются корректно
+    - [ ] Нет placeholder текстов
+    - [ ] Юридические термины корректны per язык
+    - [ ] Даты обновления актуальны
+    - [ ] Все ссылки работают
+
+- [ ] **legal-56**: Accessibility — cookie баннер и модалки
+  - **Проверить:**
+    - [ ] Keyboard navigation (Tab, Escape, Enter/Space)
+    - [ ] Screen reader корректно читает баннер
+    - [ ] Focus trap в модалке настроек
+    - [ ] Contrast WCAG AA для текста баннера
+    - [ ] Touch targets >= 44×44px на мобильных
+
+- [ ] **legal-57**: Responsive — cookie баннер на всех breakpoints
+  - **Breakpoints:** 320px, 375px, 414px, 768px, 1024px, 1280px, 1440px
+  - **Проверить:** Баннер не перекрывает CTA, кнопки не обрезаются, модалка скроллится
+
+- [ ] **legal-58**: Коммит + деплой — `feat(legal): add GDPR cookie consent, multi-jurisdiction privacy policy and compliance`
+
+---
+
 # 📌 Nice-to-have (после MVP) [0/24]
 
 ## Дополнительный функционал
@@ -1775,6 +2850,8 @@
 | 12.02.2026 | Добавлена Фаза 18: Аудит исправления F0→F3 (33 задачи) по результатам 3-pass аудита | Claude |
 | 13.02.2026 | Добавлена Фаза 20: i18n — Мультиязычность en/ru/uk/ro (62 задачи) | Claude |
 | 22.02.2026 | Добавлена Фаза 21: Страница "Разработка приложений" (30 задач) | Claude |
+| 12.03.2026 | Добавлена Фаза 22: Мультирегиональность — 7 языков + гео-детекция + ценообразование (88 задач). Research: Vercel geo, next-intl, GDPR | Claude |
+| 12.03.2026 | Добавлена Фаза 23: Legal & Compliance — GDPR, cookies, privacy per юрисдикция (58 задач). Research: 8 стран, 152-ФЗ, TDDDG | Claude |
 
 ---
 

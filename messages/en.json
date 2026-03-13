@@ -437,6 +437,7 @@
     "retry": "Try again",
     "home": "Go to home",
     "devDetails": "Error details (development mode only)",
+    "digestLabel": "Digest",
     "helpText": "If the error persists, contact us:"
   },
   "common": {

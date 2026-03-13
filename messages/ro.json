@@ -437,6 +437,7 @@
     "retry": "Încearcă din nou",
     "home": "Pagina principală",
     "devDetails": "Detalii eroare (doar în modul de dezvoltare)",
+    "digestLabel": "Identificator",
     "helpText": "Dacă eroarea persistă, contactați-ne:"
   },
   "common": {

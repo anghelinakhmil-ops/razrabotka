@@ -96,7 +96,7 @@ export default function Error({
                 </code>
                 {error.digest && (
                   <p className="text-caption text-[var(--color-text-muted)] mt-2">
-                    Digest: {error.digest}
+                    {t("digestLabel")}: {error.digest}
                   </p>
                 )}
               </div>
