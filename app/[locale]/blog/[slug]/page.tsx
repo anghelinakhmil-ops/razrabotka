@@ -7,6 +7,7 @@ import { CtaButton } from "@/components/ui/CtaButton";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { TrackPageView } from "@/components/analytics/TrackPageView";
+import { getPageAlternates } from "@/lib/seo";
 
 /**
  * Секция оглавления
@@ -53,10 +54,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const t = await getTranslations("pages.blogPost");
+  const { locale, slug } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.blogPost" });
   const postsData = t.raw("posts") as Record<string, BlogPostData>;
   const post = postsData[slug];
 
@@ -74,6 +75,7 @@ export async function generateMetadata({
       publishedTime: post.date,
       authors: [post.author],
     },
+    alternates: getPageAlternates(`/blog/${slug}`, locale),
   };
 }
 

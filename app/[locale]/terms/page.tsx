@@ -4,9 +4,11 @@ import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { CONTACT } from "@/lib/constants";
+import { getPageAlternates } from "@/lib/seo";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("pages.terms");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.terms" });
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
@@ -15,6 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description: t("metaDescription"),
       type: "website",
     },
+    alternates: getPageAlternates("/terms", locale),
   };
 }
 

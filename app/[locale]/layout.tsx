@@ -39,7 +39,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
 
-  const languages: Record<string, string> = {};
+  const languages: Record<string, string> = { "x-default": `${BASE_URL}/en` };
   for (const loc of locales) {
     languages[loc] = `${BASE_URL}/${loc}`;
   }

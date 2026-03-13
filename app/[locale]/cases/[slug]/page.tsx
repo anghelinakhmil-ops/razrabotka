@@ -8,6 +8,7 @@ import { BrokenText } from "@/components/ui/BrokenText";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { TrackPageView } from "@/components/analytics/TrackPageView";
+import { getPageAlternates } from "@/lib/seo";
 
 /**
  * Данные кейса
@@ -51,10 +52,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const t = await getTranslations("pages.caseDetail");
+  const { locale, slug } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.caseDetail" });
   const casesData = t.raw("cases") as Record<string, CaseData>;
   const caseData = casesData[slug];
 
@@ -70,6 +71,7 @@ export async function generateMetadata({
       description: caseData.description,
       type: "article",
     },
+    alternates: getPageAlternates(`/cases/${slug}`, locale),
   };
 }
 

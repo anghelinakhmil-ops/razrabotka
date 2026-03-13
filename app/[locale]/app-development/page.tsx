@@ -6,6 +6,7 @@ import { CtaButton } from "@/components/ui/CtaButton";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { LeadFormSection } from "@/components/sections";
 import { breadcrumbSchema } from "@/lib/schema";
+import { getPageAlternates } from "@/lib/seo";
 import { sectionPresets } from "@/lib/motion";
 
 interface WhyAppItem {
@@ -47,6 +48,7 @@ export async function generateMetadata({
       description: t("ogDescription"),
       type: "website",
     },
+    alternates: getPageAlternates("/app-development", locale),
   };
 }
 
@@ -55,6 +57,7 @@ export async function generateMetadata({
  */
 export default async function AppDevelopmentPage() {
   const t = await getTranslations("pages.appDev");
+  const tNav = await getTranslations("nav");
   const tForm = await getTranslations("leadForm");
 
   const whyItems = t.raw("whyApp.items") as WhyAppItem[];
@@ -69,7 +72,7 @@ export default async function AppDevelopmentPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema([
-            { name: "Home", url: "/" },
+            { name: tNav("home"), url: "/" },
             { name: t("meta.title"), url: "/app-development" },
           ])),
         }}

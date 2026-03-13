@@ -6,9 +6,11 @@ import { RevealOnScroll } from "@/components/motion";
 import { LeadFormSection } from "@/components/sections";
 import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
 import { ServicesContent } from "./ServicesContent";
+import { getPageAlternates } from "@/lib/seo";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("pages.services");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.services" });
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
@@ -17,6 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description: t("metaDescription"),
       type: "website",
     },
+    alternates: getPageAlternates("/services", locale),
   };
 }
 
@@ -28,6 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
  */
 export default async function ServicesPage() {
   const t = await getTranslations("pages.services");
+  const tNav = await getTranslations("nav");
 
   const categories = t.raw("categories") as { title: string; description: string }[];
   const services = categories.map((cat) => ({
@@ -49,7 +53,7 @@ export default async function ServicesPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             breadcrumbSchema([
-              { name: "Home", url: "/" },
+              { name: tNav("home"), url: "/" },
               { name: t("title"), url: "/services" },
             ])
           ),
