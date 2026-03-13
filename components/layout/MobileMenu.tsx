@@ -152,7 +152,7 @@ export function MobileMenu({
             transitionDelay: isOpen ? `${100 + NAV_ITEMS.length * 50}ms` : "0ms",
           }}
         >
-          <LanguageSwitcher variant="dark" className="mb-6" />
+          <LanguageSwitcher variant="dark" mode="inline" className="mb-6" />
           <a
             href={`mailto:${CONTACT.email}`}
             tabIndex={isOpen ? 0 : -1}
