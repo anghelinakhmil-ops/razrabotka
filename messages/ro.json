@@ -1242,12 +1242,15 @@
         },
         {
           "number": "06",
-          "title": "Transferuri internaționale de date",
+          "title": "Transferul internațional al datelor",
           "content": [
-            "Datele dumneavoastră pot fi transferate în Statele Unite prin utilizarea serviciilor Vercel, Google și Resend.",
-            "Garanțiile pentru transferurile internaționale includ: Clauzele Contractuale Standard ale UE (SCC) și criptarea datelor în tranzit.",
-            "Pentru rezidenții din Rusia: datele din formulare trimise de utilizatorii din Rusia sunt prelucrate în conformitate cu cerințele Legii federale nr. 152-FZ.",
-            "Pentru rezidenții din Kazahstan: respectăm cerințele de localizare a datelor conform Legii nr. 94-V privind datele cu caracter personal și protecția acestora."
+            "Site-ul nostru este găzduit pe platforma Vercel Inc. (SUA). La trimiterea unui formular, datele dvs. sunt procesate tranzitoriu de serverele Vercel situate în SUA și UE și transmise imediat la adresa noastră de e-mail și în Telegram. Datele personale nu sunt stocate pe serverele Vercel și nu sunt păstrate în baze de date.",
+            "Prin trimiterea unui formular, consimțiți la transferul transfrontalier al datelor dvs. în jurisdicțiile specificate.",
+            "Servicii terțe utilizate și locația lor: Vercel Inc. (SUA/UE) — găzduire și procesare tranzitorie a formularelor; Google LLC (SUA) — analiză (Google Analytics 4); Resend Inc. (SUA) — expediere e-mail.",
+            "Garanții pentru rezidenții UE: transferul datelor în SUA se realizează pe baza Clauzelor Contractuale Standard ale UE (SCC). Toate datele sunt criptate în tranzit (TLS 1.2+).",
+            "Pentru rezidenții Rusiei (152-FZ): datele personale transmise prin formularele site-ului sunt procesate tranzitoriu și nu sunt stocate pe servere din afara Federației Ruse. Datele sunt transmise la e-mailul și mesagerul operatorului. Prin trimiterea formularului, confirmați acordul pentru transferul transfrontalier al datelor conform art. 12 din Legea federală nr. 152-FZ.",
+            "Pentru rezidenții Kazahstanului (Legea nr. 94-V): datele personale sunt procesate tranzitoriu și nu sunt stocate pe servere. Prin trimiterea formularului, confirmați acordul pentru transferul transfrontalier al datelor conform legislației Republicii Kazahstan privind datele personale.",
+            "Pentru rezidenții Moldovei, Ucrainei, Poloniei, Germaniei, Italiei și României: se aplică garanțiile prevăzute de GDPR (Regulamentul UE 2016/679) și legislația națională respectivă."
           ]
         },
         {

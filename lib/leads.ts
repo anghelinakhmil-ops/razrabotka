@@ -112,8 +112,8 @@ export async function logLead(
   console.log(`   Time: ${record.receivedAt}`);
   console.log(`   Data:`, JSON.stringify(record.data, null, 2));
 
-  // Сохраняем в файл (только в development или если явно включено)
-  if (process.env.NODE_ENV === "development" || process.env.LOG_LEADS_TO_FILE === "true") {
+  // Сохраняем в файл ТОЛЬКО в development (GDPR/152-FZ: на production ПД не хранятся)
+  if (process.env.NODE_ENV === "development") {
     try {
       const leadsFile = await readLeadsFile();
       leadsFile.leads.push(record);

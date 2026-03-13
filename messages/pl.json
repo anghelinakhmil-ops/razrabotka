@@ -1242,12 +1242,15 @@
         },
         {
           "number": "06",
-          "title": "Międzynarodowe transfery danych",
+          "title": "Międzynarodowy transfer danych",
           "content": [
-            "Państwa dane mogą być przekazywane do Stanów Zjednoczonych w związku z korzystaniem z usług Vercel, Google i Resend.",
-            "Zabezpieczenia transferów międzynarodowych obejmują: Standardowe Klauzule Umowne UE (SCC) oraz szyfrowanie danych podczas przesyłania.",
-            "Dla rezydentów Rosji: dane z formularzy przesłane przez użytkowników w Rosji są przetwarzane zgodnie z wymogami Ustawy federalnej nr 152-FZ.",
-            "Dla rezydentów Kazachstanu: przestrzegamy wymogów lokalizacji danych wynikających z Ustawy nr 94-V o danych osobowych i ich ochronie."
+            "Nasza strona internetowa jest hostowana na platformie Vercel Inc. (USA). Przy wysyłaniu formularza Twoje dane są przetwarzane tranzytowo przez serwery Vercel zlokalizowane w USA i UE, a następnie natychmiast przekazywane na nasz adres e-mail i do Telegramu. Dane osobowe nie są przechowywane na serwerach Vercel ani w bazach danych.",
+            "Wysyłając formularz, wyrażasz zgodę na transgraniczne przekazywanie Twoich danych do wskazanych jurysdykcji.",
+            "Wykorzystywane usługi zewnętrzne i ich lokalizacja: Vercel Inc. (USA/UE) — hosting i tranzytowe przetwarzanie formularzy; Google LLC (USA) — analityka (Google Analytics 4); Resend Inc. (USA) — wysyłka e-maili.",
+            "Zabezpieczenia dla rezydentów UE: transfer danych do USA odbywa się na podstawie Standardowych Klauzul Umownych UE (SCC). Wszystkie dane są szyfrowane podczas transmisji (TLS 1.2+).",
+            "Dla rezydentów Rosji (152-FZ): dane osobowe przekazane za pośrednictwem formularzy strony są przetwarzane tranzytowo i nie są przechowywane na serwerach poza Federacją Rosyjską. Dane przekazywane są na pocztę elektroniczną i komunikator operatora. Wysyłając formularz, potwierdzasz zgodę na transgraniczne przekazywanie danych zgodnie z art. 12 Ustawy federalnej nr 152-FZ.",
+            "Dla rezydentów Kazachstanu (Ustawa nr 94-V): dane osobowe są przetwarzane tranzytowo i nie są przechowywane na serwerach. Wysyłając formularz, potwierdzasz zgodę na transgraniczne przekazywanie danych zgodnie z ustawodawstwem Republiki Kazachstanu o danych osobowych.",
+            "Dla rezydentów Mołdawii, Ukrainy, Polski, Niemiec, Włoch i Rumunii: obowiązują zabezpieczenia przewidziane przez RODO (Rozporządzenie UE 2016/679) i odpowiednie ustawodawstwo krajowe."
           ]
         },
         {

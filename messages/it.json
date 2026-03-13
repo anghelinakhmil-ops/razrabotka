@@ -1242,12 +1242,15 @@
         },
         {
           "number": "06",
-          "title": "Trasferimenti Internazionali di Dati",
+          "title": "Trasferimento internazionale dei dati",
           "content": [
-            "I Suoi dati possono essere trasferiti negli Stati Uniti attraverso l'utilizzo dei servizi Vercel, Google e Resend.",
-            "Le garanzie per i trasferimenti internazionali comprendono: Clausole Contrattuali Standard dell'UE (SCC) e crittografia dei dati in transito.",
-            "Per i residenti in Russia: i dati dei moduli inviati da utenti in Russia sono trattati in conformità ai requisiti della Legge Federale n. 152-FZ.",
-            "Per i residenti in Kazakistan: rispettiamo i requisiti di localizzazione dei dati ai sensi della Legge n. 94-V sui Dati Personali e la Loro Protezione."
+            "Il nostro sito web è ospitato sulla piattaforma Vercel Inc. (USA). Quando si invia un modulo, i dati vengono elaborati in transito dai server Vercel situati negli USA e nell'UE e immediatamente inoltrati al nostro indirizzo e-mail e a Telegram. I dati personali non vengono archiviati sui server Vercel né conservati in database.",
+            "Inviando un modulo, Lei acconsente al trasferimento transfrontaliero dei Suoi dati nelle giurisdizioni indicate.",
+            "Servizi di terze parti utilizzati e la loro ubicazione: Vercel Inc. (USA/UE) — hosting ed elaborazione transitoria dei moduli; Google LLC (USA) — analisi (Google Analytics 4); Resend Inc. (USA) — invio di e-mail.",
+            "Garanzie per i residenti UE: il trasferimento dei dati negli USA avviene sulla base delle Clausole Contrattuali Standard dell'UE (SCC). Tutti i dati sono crittografati durante il transito (TLS 1.2+).",
+            "Per i residenti della Russia (152-FZ): i dati personali inviati tramite i moduli del sito vengono elaborati in transito e non vengono archiviati su server al di fuori della Federazione Russa. I dati vengono inoltrati all'e-mail e al messenger dell'operatore. Inviando il modulo, Lei conferma il Suo consenso al trasferimento transfrontaliero dei dati ai sensi dell'art. 12 della Legge federale n. 152-FZ.",
+            "Per i residenti del Kazakistan (Legge n. 94-V): i dati personali vengono elaborati in transito e non vengono archiviati su server. Inviando il modulo, Lei conferma il Suo consenso al trasferimento transfrontaliero dei dati in conformità con la legislazione della Repubblica del Kazakistan sui dati personali.",
+            "Per i residenti di Moldova, Ucraina, Polonia, Germania, Italia e Romania: si applicano le garanzie previste dal GDPR (Regolamento UE 2016/679) e dalla rispettiva legislazione nazionale."
           ]
         },
         {

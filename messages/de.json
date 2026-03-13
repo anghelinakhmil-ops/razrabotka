@@ -1242,12 +1242,15 @@
         },
         {
           "number": "06",
-          "title": "Internationale Datenübermittlungen",
+          "title": "Internationale Datenübermittlung",
           "content": [
-            "Ihre Daten können durch die Nutzung der Dienste von Vercel, Google und Resend in die Vereinigten Staaten übermittelt werden.",
-            "Schutzmaßnahmen für internationale Übermittlungen umfassen: EU-Standardvertragsklauseln (SCCs) und Verschlüsselung der Daten bei der Übertragung.",
-            "Für in Russland ansässige Personen: Über Formulare übermittelte Daten von Nutzern in Russland werden gemäß den Anforderungen des Bundesgesetzes Nr. 152-FZ verarbeitet.",
-            "Für in Kasachstan ansässige Personen: Wir erfüllen die Anforderungen an die Datenlokalisierung gemäß dem Gesetz Nr. 94-V über personenbezogene Daten und deren Schutz."
+            "Unsere Website wird auf der Plattform Vercel Inc. (USA) gehostet. Bei der Übermittlung eines Formulars werden Ihre Daten von Vercel-Servern in den USA und der EU transitiv verarbeitet und sofort an unsere E-Mail-Adresse und Telegram weitergeleitet. Personenbezogene Daten werden nicht auf Vercel-Servern gespeichert und nicht in Datenbanken aufbewahrt.",
+            "Mit dem Absenden eines Formulars stimmen Sie der grenzüberschreitenden Übermittlung Ihrer Daten in die genannten Jurisdiktionen zu.",
+            "Genutzte Drittanbieterdienste und deren Standorte: Vercel Inc. (USA/EU) — Hosting und transitive Formularverarbeitung; Google LLC (USA) — Analyse (Google Analytics 4); Resend Inc. (USA) — E-Mail-Versand.",
+            "Garantien für EU-Einwohner: Die Datenübermittlung in die USA erfolgt auf Grundlage der EU-Standardvertragsklauseln (SCC). Alle Daten werden bei der Übertragung verschlüsselt (TLS 1.2+).",
+            "Für Einwohner Russlands (152-FZ): Über Website-Formulare übermittelte personenbezogene Daten werden transitiv verarbeitet und nicht auf Servern außerhalb der Russischen Föderation gespeichert. Die Daten werden an die E-Mail und den Messenger des Betreibers weitergeleitet. Mit dem Absenden des Formulars bestätigen Sie Ihre Zustimmung zur grenzüberschreitenden Datenübermittlung gemäß Art. 12 des Bundesgesetzes Nr. 152-FZ.",
+            "Für Einwohner Kasachstans (Gesetz Nr. 94-V): Personenbezogene Daten werden transitiv verarbeitet und nicht auf Servern gespeichert. Mit dem Absenden des Formulars bestätigen Sie Ihre Zustimmung zur grenzüberschreitenden Datenübermittlung gemäß den Gesetzen der Republik Kasachstan zum Schutz personenbezogener Daten.",
+            "Für Einwohner Moldawiens, der Ukraine, Polens, Deutschlands, Italiens und Rumäniens: Es gelten die Garantien der DSGVO (EU-Verordnung 2016/679) und der jeweiligen nationalen Gesetzgebung."
           ]
         },
         {

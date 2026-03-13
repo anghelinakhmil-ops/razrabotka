@@ -1244,10 +1244,13 @@
           "number": "06",
           "title": "International Data Transfers",
           "content": [
-            "Your data may be transferred to the United States through our use of Vercel, Google, and Resend services.",
-            "Safeguards for international transfers include: EU Standard Contractual Clauses (SCCs) and encryption of data in transit.",
-            "For Russian residents: form data submitted by users in Russia is processed in accordance with the requirements of Federal Law No. 152-FZ.",
-            "For Kazakh residents: we comply with data localization requirements under Law No. 94-V on Personal Data and Their Protection."
+            "Our website is hosted on the Vercel Inc. platform (USA). When you submit a form, your data is processed in transit by Vercel servers located in the USA and EU, and immediately forwarded to our email and Telegram. Personal data is not stored on Vercel servers or in any databases.",
+            "By submitting a form, you consent to the cross-border transfer of your data to the specified jurisdictions.",
+            "Third-party services and their locations: Vercel Inc. (USA/EU) — hosting and transit form processing; Google LLC (USA) — analytics (Google Analytics 4); Resend Inc. (USA) — email delivery.",
+            "Safeguards for EU residents: data transfers to the USA are based on EU Standard Contractual Clauses (SCCs) concluded between us and our service providers. All data is encrypted in transit (TLS 1.2+).",
+            "For Russian residents (152-FZ): personal data submitted through website forms is processed in transit and is not stored on servers outside the Russian Federation. Data is forwarded to the operator's email and messenger. By submitting a form, you confirm your consent to cross-border data transfer in accordance with Art. 12 of Federal Law No. 152-FZ.",
+            "For Kazakh residents (Law No. 94-V): personal data is processed in transit and is not stored on servers. By submitting a form, you confirm your consent to cross-border data transfer in accordance with the legislation of the Republic of Kazakhstan on personal data.",
+            "For residents of Moldova, Ukraine, Poland, Germany, Italy, and Romania: safeguards provided by the GDPR (EU Regulation 2016/679) and the respective national legislation apply."
           ]
         },
         {
