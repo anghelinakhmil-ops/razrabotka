@@ -9,6 +9,7 @@ import { LayoutClient } from "@/components/layout";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { CookieConsent } from "@/components/layout/CookieConsent";
 import { Analytics } from "@vercel/analytics/react";
+import { RegionProvider } from "@/components/providers/RegionProvider";
 import { organizationSchema, webSiteSchema, localBusinessSchema } from "@/lib/schema";
 import "../globals.css";
 
@@ -139,10 +140,12 @@ export default async function LocaleLayout({
         className={`${manrope.variable} ${inter.variable} antialiased bg-[var(--color-background)] text-[var(--color-text-primary)]`}
       >
         <NextIntlClientProvider messages={messages}>
-          <GoogleAnalytics />
-          <Analytics />
-          <LayoutClient>{children}</LayoutClient>
-          <CookieConsent />
+          <RegionProvider>
+            <GoogleAnalytics />
+            <Analytics />
+            <LayoutClient>{children}</LayoutClient>
+            <CookieConsent />
+          </RegionProvider>
         </NextIntlClientProvider>
       </body>
     </html>
