@@ -393,7 +393,8 @@
     "privacyLink": "Politica de confidențialitate",
     "termsLink": "Termeni de utilizare",
     "cookieSettings": "Setări cookies",
-    "cookiePolicyLink": "Politica cookies"
+    "cookiePolicyLink": "Politica cookies",
+    "impressumLink": "Impressum"
   },
   "cookies": {
     "bannerTitle": "Consimțământ cookies",
@@ -1300,7 +1301,7 @@
       "caption": "Informatii juridice",
       "heading1": "TERMENI",
       "heading2": "de utilizare",
-      "lastUpdated": "Ultima actualizare: 19 ianuarie 2026",
+      "lastUpdated": "Ultima actualizare: 13 martie 2026",
       "sections": [
         {
           "number": "01",
@@ -1416,13 +1417,32 @@
         },
         {
           "number": "11",
-          "title": "Legea aplicabila",
+          "title": "Legea aplicabilă și jurisdicția",
           "content": [
-            "Acesti Termeni sunt guvernati de legislatia aplicabila. Orice dispute aparute in legatura cu utilizarea Site-ului se solutioneaza prin negocieri, iar in cazul neajungerii la un acord — pe cale judecatoreasca in conformitate cu legislatia aplicabila."
+            "Acești Termeni sunt reglementați de legislația aplicabilă în jurisdicția utilizatorului.",
+            "Pentru rezidenții UE (România, Polonia, Germania, Italia): litigiile sunt supuse GDPR și instanțelor din statul membru UE în care locuiește utilizatorul.",
+            "Pentru rezidenții Republicii Moldova: reglementați de legislația Republicii Moldova.",
+            "Pentru rezidenții Ucrainei: reglementați de legislația Ucrainei.",
+            "Pentru rezidenții Rusiei: reglementați de legislația Federației Ruse. Litigiile se soluționează în instanțele Federației Ruse.",
+            "Pentru rezidenții Kazahstanului: reglementați de legislația Republicii Kazahstan.",
+            "În toate celelalte cazuri: reglementați de legislația României ca sediu principal de activitate al Companiei."
           ]
         },
         {
           "number": "12",
+          "title": "Restricții de vârstă",
+          "content": [
+            "Prin utilizarea acestui Site, confirmați că îndepliniți cerința de vârstă minimă din jurisdicția dumneavoastră:",
+            "Germania, Olanda: 16 ani.",
+            "Italia, Franța: 14 ani.",
+            "Polonia, România, Moldova, Ucraina: 13 ani.",
+            "Rusia, Kazahstan: 14 ani.",
+            "Toate celelalte țări: 13 ani.",
+            "Dacă nu ați atins vârsta necesară, trebuie să obțineți consimțământul părinților înainte de a utiliza acest Site."
+          ]
+        },
+        {
+          "number": "13",
           "title": "Informatii de contact",
           "content": [
             "Daca aveti intrebari privind acesti Termeni, contactati-ne:",
@@ -1544,6 +1564,43 @@
         }
       ],
       "backLink": "Înapoi la politica de confidențialitate"
+    },
+    "impressum": {
+      "metaTitle": "Impressum | NAKO Agency",
+      "metaDescription": "Informații juridice și date despre compania NAKO Agency conform legii germane privind telemedia (TMG §5).",
+      "caption": "Informații juridice",
+      "heading1": "IMPRESSUM",
+      "subtitle": "Informații juridice conform legislației germane (TMG §5)",
+      "sections": [
+        {
+          "title": "Informații despre companie",
+          "content": [
+            "NAKO Agency",
+            "Agenție digitală pentru dezvoltare web"
+          ]
+        },
+        {
+          "title": "Contact",
+          "content": [
+            "Email: hello@nakoagency.com",
+            "Website: nakoagency.com"
+          ]
+        },
+        {
+          "title": "Responsabil pentru conținut",
+          "content": [
+            "NAKO Agency",
+            "hello@nakoagency.com"
+          ]
+        },
+        {
+          "title": "Declinarea responsabilității",
+          "content": [
+            "În ciuda verificării atente a conținutului, nu ne asumăm responsabilitatea pentru conținutul linkurilor externe. Operatorii paginilor legate sunt singurii responsabili pentru conținutul acestora."
+          ]
+        }
+      ],
+      "backLink": "Înapoi la contacte"
     },
     "appDev": {
       "meta": {

@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
     { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
     { path: "/cookie-policy", changeFrequency: "yearly", priority: 0.3 },
+    { path: "/impressum", changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const staticPages: MetadataRoute.Sitemap = staticPaths.flatMap((page) =>

@@ -393,7 +393,8 @@
     "privacyLink": "Datenschutzerklärung",
     "termsLink": "Nutzungsbedingungen",
     "cookieSettings": "Cookie-Einstellungen",
-    "cookiePolicyLink": "Cookie-Richtlinie"
+    "cookiePolicyLink": "Cookie-Richtlinie",
+    "impressumLink": "Impressum"
   },
   "cookies": {
     "bannerTitle": "Cookie-Einwilligung",
@@ -1300,7 +1301,7 @@
       "caption": "Rechtliche Informationen",
       "heading1": "NUTZUNGS",
       "heading2": "bedingungen",
-      "lastUpdated": "Letzte Aktualisierung: 19. Januar 2026",
+      "lastUpdated": "Letzte Aktualisierung: 13. März 2026",
       "sections": [
         {
           "number": "01",
@@ -1416,13 +1417,32 @@
         },
         {
           "number": "11",
-          "title": "Anwendbares Recht",
+          "title": "Anwendbares Recht und Gerichtsstand",
           "content": [
-            "Diese Bedingungen unterliegen dem geltenden Recht. Streitigkeiten, die im Zusammenhang mit der Nutzung der Website entstehen, werden durch Verhandlungen beigelegt, und falls keine Einigung erzielt wird — gerichtlich gemäß geltendem Recht."
+            "Diese Bedingungen unterliegen dem in der Rechtsordnung des Nutzers geltenden Recht.",
+            "Für EU-Ansässige (Rumänien, Polen, Deutschland, Italien): Streitigkeiten unterliegen der DSGVO und den Gerichten des EU-Mitgliedstaates, in dem der Nutzer ansässig ist.",
+            "Für Einwohner der Republik Moldau: es gilt das Recht der Republik Moldau.",
+            "Für Einwohner der Ukraine: es gilt das Recht der Ukraine.",
+            "Für Einwohner Russlands: es gilt das Recht der Russischen Föderation. Streitigkeiten werden vor den Gerichten der Russischen Föderation beigelegt.",
+            "Für Einwohner Kasachstans: es gilt das Recht der Republik Kasachstan.",
+            "In allen anderen Fällen: es gilt das Recht Rumäniens als Hauptgeschäftssitz des Unternehmens."
           ]
         },
         {
           "number": "12",
+          "title": "Altersbeschränkungen",
+          "content": [
+            "Durch die Nutzung dieser Website bestätigen Sie, dass Sie das in Ihrer Rechtsordnung geltende Mindestalter erfüllen:",
+            "Deutschland, Niederlande: 16 Jahre.",
+            "Italien, Frankreich: 14 Jahre.",
+            "Polen, Rumänien, Moldau, Ukraine: 13 Jahre.",
+            "Russland, Kasachstan: 14 Jahre.",
+            "Alle anderen Länder: 13 Jahre.",
+            "Wenn Sie das erforderliche Alter nicht erreicht haben, müssen Sie vor der Nutzung dieser Website die Einwilligung eines Erziehungsberechtigten einholen."
+          ]
+        },
+        {
+          "number": "13",
           "title": "Kontaktinformationen",
           "content": [
             "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns:",
@@ -1544,6 +1564,43 @@
         }
       ],
       "backLink": "Zurück zur Datenschutzerklärung"
+    },
+    "impressum": {
+      "metaTitle": "Impressum | NAKO Agency",
+      "metaDescription": "Impressum und Unternehmensinformationen der NAKO Agency gemäß Telemediengesetz (TMG §5).",
+      "caption": "Rechtliche Informationen",
+      "heading1": "IMPRESSUM",
+      "subtitle": "Angaben gemäß § 5 TMG",
+      "sections": [
+        {
+          "title": "Angaben zum Unternehmen",
+          "content": [
+            "NAKO Agency",
+            "Digitalagentur für Webentwicklung"
+          ]
+        },
+        {
+          "title": "Kontakt",
+          "content": [
+            "E-Mail: hello@nakoagency.com",
+            "Website: nakoagency.com"
+          ]
+        },
+        {
+          "title": "Verantwortlich für den Inhalt",
+          "content": [
+            "NAKO Agency",
+            "hello@nakoagency.com"
+          ]
+        },
+        {
+          "title": "Haftungsausschluss",
+          "content": [
+            "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
+          ]
+        }
+      ],
+      "backLink": "Zurück zu Kontakte"
     },
     "appDev": {
       "meta": {

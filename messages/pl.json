@@ -393,7 +393,8 @@
     "privacyLink": "Polityka prywatności",
     "termsLink": "Regulamin",
     "cookieSettings": "Ustawienia cookies",
-    "cookiePolicyLink": "Polityka cookies"
+    "cookiePolicyLink": "Polityka cookies",
+    "impressumLink": "Impressum"
   },
   "cookies": {
     "bannerTitle": "Zgoda na cookies",
@@ -1300,7 +1301,7 @@
       "caption": "Informacje prawne",
       "heading1": "REGULAMIN",
       "heading2": "korzystania",
-      "lastUpdated": "Ostatnia aktualizacja: 19 stycznia 2026",
+      "lastUpdated": "Ostatnia aktualizacja: 13 marca 2026",
       "sections": [
         {
           "number": "01",
@@ -1416,13 +1417,32 @@
         },
         {
           "number": "11",
-          "title": "Prawo właściwe",
+          "title": "Prawo właściwe i jurysdykcja",
           "content": [
-            "Niniejszy Regulamin podlega obowiązującemu prawu. Wszelkie spory związane z korzystaniem ze Strony rozstrzygane są w drodze negocjacji, a w przypadku braku porozumienia — na drodze sądowej zgodnie z obowiązującym prawem."
+            "Niniejszy Regulamin podlega prawu właściwemu dla jurysdykcji użytkownika.",
+            "Dla rezydentów UE (Rumunia, Polska, Niemcy, Włochy): spory podlegają RODO oraz sądom państwa członkowskiego UE, w którym zamieszkuje użytkownik.",
+            "Dla rezydentów Mołdawii: podlega prawu Republiki Mołdawii.",
+            "Dla rezydentów Ukrainy: podlega prawu Ukrainy.",
+            "Dla rezydentów Rosji: podlega prawu Federacji Rosyjskiej. Spory rozstrzygane są przed sądami Federacji Rosyjskiej.",
+            "Dla rezydentów Kazachstanu: podlega prawu Republiki Kazachstanu.",
+            "We wszystkich pozostałych przypadkach: podlega prawu Rumunii jako głównego miejsca prowadzenia działalności Spółki."
           ]
         },
         {
           "number": "12",
+          "title": "Ograniczenia wiekowe",
+          "content": [
+            "Korzystając z niniejszej Strony, potwierdzasz, że spełniasz minimalne wymagania wiekowe obowiązujące w Twojej jurysdykcji:",
+            "Niemcy, Holandia: 16 lat.",
+            "Włochy, Francja: 14 lat.",
+            "Polska, Rumunia, Mołdawia, Ukraina: 13 lat.",
+            "Rosja, Kazachstan: 14 lat.",
+            "Wszystkie pozostałe kraje: 13 lat.",
+            "Jeśli nie osiągnąłeś wymaganego wieku, musisz uzyskać zgodę rodzica przed korzystaniem z niniejszej Strony."
+          ]
+        },
+        {
+          "number": "13",
           "title": "Dane kontaktowe",
           "content": [
             "W przypadku pytań dotyczących niniejszego Regulaminu prosimy o kontakt:",
@@ -1544,6 +1564,43 @@
         }
       ],
       "backLink": "Powrót do polityki prywatności"
+    },
+    "impressum": {
+      "metaTitle": "Impressum | NAKO Agency",
+      "metaDescription": "Informacje prawne i dane firmy NAKO Agency zgodnie z niemiecką ustawą o telemediach (TMG §5).",
+      "caption": "Informacje prawne",
+      "heading1": "IMPRESSUM",
+      "subtitle": "Informacje prawne zgodnie z prawem niemieckim (TMG §5)",
+      "sections": [
+        {
+          "title": "Informacje o firmie",
+          "content": [
+            "NAKO Agency",
+            "Agencja cyfrowa zajmująca się tworzeniem stron internetowych"
+          ]
+        },
+        {
+          "title": "Kontakt",
+          "content": [
+            "Email: hello@nakoagency.com",
+            "Strona internetowa: nakoagency.com"
+          ]
+        },
+        {
+          "title": "Odpowiedzialny za treść",
+          "content": [
+            "NAKO Agency",
+            "hello@nakoagency.com"
+          ]
+        },
+        {
+          "title": "Wyłączenie odpowiedzialności",
+          "content": [
+            "Pomimo starannej kontroli treści nie ponosimy odpowiedzialności za treść linków zewnętrznych. Za treść linkowanych stron odpowiedzialni są wyłącznie ich operatorzy."
+          ]
+        }
+      ],
+      "backLink": "Powrót do kontaktów"
     },
     "appDev": {
       "meta": {

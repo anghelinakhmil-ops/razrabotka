@@ -393,7 +393,8 @@
     "privacyLink": "Privacy Policy",
     "termsLink": "Terms of Use",
     "cookieSettings": "Cookie Settings",
-    "cookiePolicyLink": "Cookie Policy"
+    "cookiePolicyLink": "Cookie Policy",
+    "impressumLink": "Impressum"
   },
   "cookies": {
     "bannerTitle": "Cookie Consent",
@@ -1300,7 +1301,7 @@
       "caption": "Legal information",
       "heading1": "TERMS",
       "heading2": "of Use",
-      "lastUpdated": "Last updated: January 19, 2026",
+      "lastUpdated": "Last updated: March 13, 2026",
       "sections": [
         {
           "number": "01",
@@ -1416,13 +1417,32 @@
         },
         {
           "number": "11",
-          "title": "Applicable Law",
+          "title": "Applicable Law and Jurisdiction",
           "content": [
-            "These Terms are governed by applicable law. Any disputes arising in connection with the use of the Website are resolved through negotiations, and if no agreement is reached — in court in accordance with applicable law."
+            "These Terms are governed by the laws applicable in the user's jurisdiction.",
+            "For EU residents (Romania, Poland, Germany, Italy): disputes are subject to GDPR and the courts of the user's EU member state.",
+            "For Moldovan residents: governed by the laws of the Republic of Moldova.",
+            "For Ukrainian residents: governed by the laws of Ukraine.",
+            "For Russian residents: governed by the laws of the Russian Federation. Disputes are resolved in courts of the Russian Federation.",
+            "For Kazakh residents: governed by the laws of the Republic of Kazakhstan.",
+            "In all other cases: governed by the laws of Romania as the Company's principal place of operation."
           ]
         },
         {
           "number": "12",
+          "title": "Age Restrictions",
+          "content": [
+            "By using this Website, you confirm that you meet the minimum age requirement in your jurisdiction:",
+            "Germany, Netherlands: 16 years.",
+            "Italy, France: 14 years.",
+            "Poland, Romania, Moldova, Ukraine: 13 years.",
+            "Russia, Kazakhstan: 14 years.",
+            "All other countries: 13 years.",
+            "If you are under the required age, you must obtain parental consent before using this Website."
+          ]
+        },
+        {
+          "number": "13",
           "title": "Contact Information",
           "content": [
             "If you have questions regarding these Terms, contact us:",
@@ -1544,6 +1564,43 @@
         }
       ],
       "backLink": "Back to privacy policy"
+    },
+    "impressum": {
+      "metaTitle": "Impressum | NAKO Agency",
+      "metaDescription": "Legal disclosure and company information for NAKO Agency as required by German Telemediengesetz (TMG §5).",
+      "caption": "Legal information",
+      "heading1": "IMPRESSUM",
+      "subtitle": "Legal disclosure as required by German law (TMG §5)",
+      "sections": [
+        {
+          "title": "Company Information",
+          "content": [
+            "NAKO Agency",
+            "Digital agency for web development"
+          ]
+        },
+        {
+          "title": "Contact",
+          "content": [
+            "Email: hello@nakoagency.com",
+            "Website: nakoagency.com"
+          ]
+        },
+        {
+          "title": "Responsible for Content",
+          "content": [
+            "NAKO Agency",
+            "hello@nakoagency.com"
+          ]
+        },
+        {
+          "title": "Disclaimer",
+          "content": [
+            "Despite careful content review, we assume no liability for the content of external links. The operators of linked pages are solely responsible for their content."
+          ]
+        }
+      ],
+      "backLink": "Back to contacts"
     },
     "appDev": {
       "meta": {

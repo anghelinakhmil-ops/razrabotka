@@ -393,7 +393,8 @@
     "privacyLink": "Politica sulla Privacy",
     "termsLink": "Termini di Utilizzo",
     "cookieSettings": "Impostazioni cookie",
-    "cookiePolicyLink": "Politica dei cookie"
+    "cookiePolicyLink": "Politica dei cookie",
+    "impressumLink": "Impressum"
   },
   "cookies": {
     "bannerTitle": "Consenso cookie",
@@ -1300,7 +1301,7 @@
       "caption": "Informazioni legali",
       "heading1": "CONDIZIONI",
       "heading2": "d'Uso",
-      "lastUpdated": "Ultimo aggiornamento: 19 gennaio 2026",
+      "lastUpdated": "Ultimo aggiornamento: 13 marzo 2026",
       "sections": [
         {
           "number": "01",
@@ -1416,13 +1417,32 @@
         },
         {
           "number": "11",
-          "title": "Legge applicabile",
+          "title": "Legge applicabile e giurisdizione",
           "content": [
-            "Le presenti Condizioni sono regolate dalla legge applicabile. Eventuali controversie derivanti dall'utilizzo del Sito vengono risolte tramite negoziazione e, in caso di mancato accordo, in sede giudiziaria in conformità alla legge applicabile."
+            "Le presenti Condizioni sono regolate dalla legge applicabile nella giurisdizione dell'utente.",
+            "Per i residenti dell'UE (Romania, Polonia, Germania, Italia): le controversie sono soggette al GDPR e ai tribunali dello Stato membro dell'UE in cui risiede l'utente.",
+            "Per i residenti della Moldova: regolate dalla legge della Repubblica di Moldova.",
+            "Per i residenti dell'Ucraina: regolate dalla legge dell'Ucraina.",
+            "Per i residenti della Russia: regolate dalla legge della Federazione Russa. Le controversie vengono risolte presso i tribunali della Federazione Russa.",
+            "Per i residenti del Kazakistan: regolate dalla legge della Repubblica del Kazakistan.",
+            "In tutti gli altri casi: regolate dalla legge della Romania in quanto sede principale di attività della Società."
           ]
         },
         {
           "number": "12",
+          "title": "Limitazioni di età",
+          "content": [
+            "Utilizzando questo Sito, l'utente conferma di soddisfare il requisito di età minima previsto nella propria giurisdizione:",
+            "Germania, Paesi Bassi: 16 anni.",
+            "Italia, Francia: 14 anni.",
+            "Polonia, Romania, Moldova, Ucraina: 13 anni.",
+            "Russia, Kazakistan: 14 anni.",
+            "Tutti gli altri Paesi: 13 anni.",
+            "Se l'utente non ha raggiunto l'età richiesta, deve ottenere il consenso dei genitori prima di utilizzare questo Sito."
+          ]
+        },
+        {
+          "number": "13",
           "title": "Informazioni di contatto",
           "content": [
             "Per domande relative alle presenti Condizioni, ci contatti:",
@@ -1544,6 +1564,43 @@
         }
       ],
       "backLink": "Torna all'informativa sulla privacy"
+    },
+    "impressum": {
+      "metaTitle": "Impressum | NAKO Agency",
+      "metaDescription": "Informazioni legali e dati aziendali di NAKO Agency ai sensi della legge tedesca sui media telematici (TMG §5).",
+      "caption": "Informazioni legali",
+      "heading1": "IMPRESSUM",
+      "subtitle": "Informazioni legali ai sensi della legge tedesca (TMG §5)",
+      "sections": [
+        {
+          "title": "Informazioni sull'azienda",
+          "content": [
+            "NAKO Agency",
+            "Agenzia digitale per lo sviluppo web"
+          ]
+        },
+        {
+          "title": "Contatto",
+          "content": [
+            "Email: hello@nakoagency.com",
+            "Sito web: nakoagency.com"
+          ]
+        },
+        {
+          "title": "Responsabile del contenuto",
+          "content": [
+            "NAKO Agency",
+            "hello@nakoagency.com"
+          ]
+        },
+        {
+          "title": "Esclusione di responsabilità",
+          "content": [
+            "Nonostante un'attenta verifica dei contenuti, non ci assumiamo alcuna responsabilità per i contenuti dei link esterni. I gestori delle pagine collegate sono gli unici responsabili dei loro contenuti."
+          ]
+        }
+      ],
+      "backLink": "Torna ai contatti"
     },
     "appDev": {
       "meta": {
