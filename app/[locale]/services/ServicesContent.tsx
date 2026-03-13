@@ -1,14 +1,14 @@
 "use client";
 
-import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
-import { PricingToggle, type Region } from "@/components/ui/PricingToggle";
 import { TierCard } from "@/components/ui/TierCard";
 import { RevealOnScroll } from "@/components/motion";
 import { sectionPresets } from "@/lib/motion";
+import { useRegion } from "@/components/providers/RegionProvider";
+import type { RegionCode } from "@/lib/regions";
 
 interface TierData {
   tier: "start" | "standard" | "pro";
@@ -48,49 +48,46 @@ interface SupportIncludedItem {
 
 const categoryNumbers = ["01", "02", "03", "04", "05", "06"];
 
+/** Регионы с ценообразованием СНГ (priceUA) */
+const CIS_REGIONS: RegionCode[] = ["UA", "RU", "KZ", "MD"];
+
+function usePriceTier(): "priceUA" | "priceEU" {
+  const { regionCode } = useRegion();
+  return CIS_REGIONS.includes(regionCode) ? "priceUA" : "priceEU";
+}
+
 /**
  * ServicesContent — клиентская интерактивная часть страницы услуг
  *
- * Содержит переключатель региона, 6 категорий с 3 тирами,
- * дополнительные услуги.
+ * Содержит 6 категорий с 3 тирами, дополнительные услуги.
+ * Ценовая группа определяется автоматически по гео-детекции.
  */
 export function ServicesContent() {
   const t = useTranslations("pages.services");
-  const [region, setRegion] = useState<Region>("europe");
+  const priceTier = usePriceTier();
 
   const categories = t.raw("categories") as CategoryData[];
-  const regionToggle = t.raw("regionToggle") as { ukraine: string; europe: string };
   const tierLabels = t.raw("tierLabels") as Record<string, string>;
   const additionalItems = t.raw("additionalServices.items") as AdditionalServiceItem[];
 
   return (
     <>
-      {/* Quick Nav + Region Toggle */}
+      {/* Quick Nav */}
       <section className="py-8 bg-[var(--color-background-alt)] border-y border-[var(--color-line)]">
         <Container>
-          <div className="flex flex-col gap-6 items-center">
-            {/* Region Toggle */}
-            <PricingToggle
-              region={region}
-              onChange={setRegion}
-              labels={regionToggle}
-            />
-
-            {/* Category Nav */}
-            <div className="flex flex-wrap justify-center gap-3 lg:gap-6">
-              {categories.map((cat, index) => (
-                <a
-                  key={cat.id}
-                  href={`#${cat.id}`}
-                  className="flex items-center gap-2 text-body-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors"
-                >
-                  <span className="text-caption text-[var(--color-accent)]">
-                    {categoryNumbers[index]}
-                  </span>
-                  {cat.title}
-                </a>
-              ))}
-            </div>
+          <div className="flex flex-wrap justify-center gap-3 lg:gap-6">
+            {categories.map((cat, index) => (
+              <a
+                key={cat.id}
+                href={`#${cat.id}`}
+                className="flex items-center gap-2 text-body-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors"
+              >
+                <span className="text-caption text-[var(--color-accent)]">
+                  {categoryNumbers[index]}
+                </span>
+                {cat.title}
+              </a>
+            ))}
           </div>
         </Container>
       </section>
@@ -138,7 +135,7 @@ export function ServicesContent() {
                       audience={tier.audience}
                       features={tier.features}
                       timeline={tier.timeline}
-                      price={region === "ukraine" ? tier.priceUA : tier.priceEU}
+                      price={tier[priceTier]}
                       timelineLabel={t("timelineLabel")}
                       priceLabel={t("priceLabel")}
                       orderButton={t("orderButton")}
@@ -204,7 +201,7 @@ export function ServicesContent() {
       </section>
 
       {/* Support Section */}
-      <SupportSection region={region} />
+      <SupportSection />
 
       {/* App Development Banner */}
       <section className="py-12 lg:py-16 bg-[var(--color-background)] border-y border-[var(--color-line)]">
@@ -250,9 +247,10 @@ export function ServicesContent() {
 /**
  * SupportSection — секция пакетов сопровождения
  */
-function SupportSection({ region }: { region: Region }) {
+function SupportSection() {
   const t = useTranslations("pages.services.support");
   const tServices = useTranslations("pages.services");
+  const priceTier = usePriceTier();
   const tierLabels = tServices.raw("tierLabels") as Record<string, string>;
   const recommendedLabel = tServices("recommended");
 
@@ -319,7 +317,7 @@ function SupportSection({ region }: { region: Region }) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-start">
             {packages.map((pkg) => {
               const isStandard = pkg.tier === "standard";
-              const price = region === "ukraine" ? pkg.priceUA : pkg.priceEU;
+              const price = pkg[priceTier];
 
               return (
                 <div
