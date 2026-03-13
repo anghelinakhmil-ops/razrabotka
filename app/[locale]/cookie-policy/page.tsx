@@ -1,0 +1,166 @@
+import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import { Container } from "@/components/ui/Container";
+import { BrokenText } from "@/components/ui/BrokenText";
+import { CONTACT } from "@/lib/constants";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("pages.cookiePolicy");
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+    openGraph: {
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+      type: "website",
+    },
+  };
+}
+
+interface CookieItem {
+  name: string;
+  provider: string;
+  purpose: string;
+  category: string;
+  duration: string;
+}
+
+interface PolicySectionData {
+  number: string;
+  title: string;
+  content: string[];
+}
+
+/**
+ * Cookie Policy Page — детальная информация о cookies (GDPR requirement)
+ */
+export default async function CookiePolicyPage() {
+  const t = await getTranslations("pages.cookiePolicy");
+  const sections = t.raw("sections") as PolicySectionData[];
+  const cookieTable = t.raw("cookieTable") as CookieItem[];
+
+  return (
+    <main>
+      {/* Hero Section */}
+      <section className="pt-24 pb-12 lg:pt-40 lg:pb-16 bg-[var(--color-background)]">
+        <Container size="sm">
+          <span className="text-caption text-[var(--color-text-muted)] mb-4 block">
+            {t("caption")}
+          </span>
+
+          <h1 className="mb-6">
+            <BrokenText
+              text={t("heading1")}
+              spaced
+              className="text-h1 font-display font-bold text-[var(--color-text-primary)]"
+            />
+            <span className="block text-h2 font-display font-bold text-[var(--color-text-secondary)] mt-2">
+              {t("heading2")}
+            </span>
+          </h1>
+
+          <p className="text-body text-[var(--color-text-muted)]">
+            {t("lastUpdated")}
+          </p>
+        </Container>
+      </section>
+
+      {/* Content Section */}
+      <section className="py-[var(--section-gap)] bg-[var(--color-background)]">
+        <Container size="sm">
+          <div className="prose prose-lg max-w-none">
+            {sections.map((section) => (
+              <div key={section.number} className="mb-12 last:mb-0">
+                <div className="flex items-start gap-4 mb-4">
+                  <span className="text-h3 font-display font-bold text-[var(--color-line-dark)]">
+                    {section.number}
+                  </span>
+                  <h2 className="text-h3 font-display font-bold text-[var(--color-text-primary)]">
+                    {section.title}
+                  </h2>
+                </div>
+                <div className="pl-0 lg:pl-16 space-y-4 text-body text-[var(--color-text-secondary)]">
+                  {section.content.map((paragraph, index) => (
+                    <p
+                      key={index}
+                      dangerouslySetInnerHTML={{
+                        __html: paragraph.replace(
+                          CONTACT.email,
+                          `<a href="mailto:${CONTACT.email}" class="text-[var(--color-text-primary)] underline hover:no-underline">${CONTACT.email}</a>`,
+                        ),
+                      }}
+                    />
+                  ))}
+                </div>
+              </div>
+            ))}
+
+            {/* Cookie Table */}
+            <div className="mb-12">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="text-h3 font-display font-bold text-[var(--color-line-dark)]">
+                  {String(sections.length + 1).padStart(2, "0")}
+                </span>
+                <h2 className="text-h3 font-display font-bold text-[var(--color-text-primary)]">
+                  {t("tableTitle")}
+                </h2>
+              </div>
+              <div className="pl-0 lg:pl-16 overflow-x-auto">
+                <table className="w-full text-body-sm text-[var(--color-text-secondary)] border-collapse">
+                  <thead>
+                    <tr className="border-b border-[var(--color-line)]">
+                      <th className="text-left py-3 pr-4 font-medium text-[var(--color-text-primary)]">
+                        {t("tableHeaders.name")}
+                      </th>
+                      <th className="text-left py-3 pr-4 font-medium text-[var(--color-text-primary)]">
+                        {t("tableHeaders.provider")}
+                      </th>
+                      <th className="text-left py-3 pr-4 font-medium text-[var(--color-text-primary)]">
+                        {t("tableHeaders.purpose")}
+                      </th>
+                      <th className="text-left py-3 pr-4 font-medium text-[var(--color-text-primary)]">
+                        {t("tableHeaders.category")}
+                      </th>
+                      <th className="text-left py-3 font-medium text-[var(--color-text-primary)]">
+                        {t("tableHeaders.duration")}
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {cookieTable.map((cookie) => (
+                      <tr
+                        key={cookie.name}
+                        className="border-b border-[var(--color-line)] last:border-0"
+                      >
+                        <td className="py-3 pr-4 font-mono text-[13px]">
+                          {cookie.name}
+                        </td>
+                        <td className="py-3 pr-4">{cookie.provider}</td>
+                        <td className="py-3 pr-4">{cookie.purpose}</td>
+                        <td className="py-3 pr-4">{cookie.category}</td>
+                        <td className="py-3">{cookie.duration}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Back link */}
+      <section className="py-12 bg-[var(--color-background-alt)] border-t border-[var(--color-line)]">
+        <Container size="sm">
+          <Link
+            href="/privacy"
+            className="text-body font-medium text-[var(--color-text-primary)] border-b border-[var(--color-text-primary)] pb-0.5 hover:opacity-70 transition-opacity"
+          >
+            ← {t("backLink")}
+          </Link>
+        </Container>
+      </section>
+    </main>
+  );
+}

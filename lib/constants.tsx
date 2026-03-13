@@ -40,4 +40,5 @@ export const NAV_ITEMS: NavItem[] = [
 export const LEGAL_LINKS: NavItem[] = [
   { key: "privacyLink", href: "/privacy" },
   { key: "termsLink", href: "/terms" },
+  { key: "cookiePolicyLink", href: "/cookie-policy" },
 ];

@@ -392,7 +392,8 @@
     "madeIn": "w",
     "privacyLink": "Polityka prywatności",
     "termsLink": "Regulamin",
-    "cookieSettings": "Ustawienia cookies"
+    "cookieSettings": "Ustawienia cookies",
+    "cookiePolicyLink": "Polityka cookies"
   },
   "cookies": {
     "bannerTitle": "Zgoda na cookies",
@@ -1431,6 +1432,118 @@
         }
       ],
       "backLink": "Powrót do kontaktów"
+    },
+    "cookiePolicy": {
+      "metaTitle": "Polityka Cookie | NAKO Agency",
+      "metaDescription": "Polityka plików cookie na stronie NAKO Agency. Szczegółowe informacje o plikach cookie, których używamy, ich celach i sposobach zarządzania nimi.",
+      "caption": "Informacje prawne",
+      "heading1": "COOKIE",
+      "heading2": "Polityka",
+      "lastUpdated": "Ostatnia aktualizacja: 13 marca 2026",
+      "tableTitle": "Pliki cookie, których używamy",
+      "tableHeaders": {
+        "name": "Nazwa",
+        "provider": "Dostawca",
+        "purpose": "Cel",
+        "category": "Kategoria",
+        "duration": "Czas trwania"
+      },
+      "cookieTable": [
+        {
+          "name": "_ga",
+          "provider": "Google Analytics",
+          "purpose": "Rozróżnia unikalnych użytkowników poprzez przypisanie losowo wygenerowanego numeru jako identyfikatora klienta",
+          "category": "Analityczne",
+          "duration": "2 lata"
+        },
+        {
+          "name": "_ga_*",
+          "provider": "Google Analytics",
+          "purpose": "Utrzymuje stan sesji i śledzi interakcje użytkowników między stronami",
+          "category": "Analityczne",
+          "duration": "2 lata"
+        },
+        {
+          "name": "NEXT_LOCALE",
+          "provider": "next-intl",
+          "purpose": "Przechowuje preferowany język użytkownika dla interfejsu strony",
+          "category": "Niezbędne",
+          "duration": "Sesja"
+        },
+        {
+          "name": "user-region",
+          "provider": "NAKO Agency",
+          "purpose": "Przechowuje wykryty lub wybrany region użytkownika dla zlokalizowanej treści i cen",
+          "category": "Preferencje",
+          "duration": "1 rok"
+        },
+        {
+          "name": "cc_status",
+          "provider": "NAKO Agency",
+          "purpose": "Przechowuje preferencje i wybory użytkownika dotyczące zgody na pliki cookie",
+          "category": "Niezbędne",
+          "duration": "1 rok"
+        },
+        {
+          "name": "_vercel_*",
+          "provider": "Vercel",
+          "purpose": "Wykorzystywany do analityki platformy, monitorowania wydajności i optymalizacji wdrożenia",
+          "category": "Niezbędne",
+          "duration": "Sesja"
+        }
+      ],
+      "sections": [
+        {
+          "number": "01",
+          "title": "Czym są pliki cookie",
+          "content": [
+            "Pliki cookie to małe pliki tekstowe, które są przechowywane na Twoim urządzeniu podczas odwiedzania strony internetowej. Pomagają stronie zapamiętać Twoje preferencje i poprawić jakość przeglądania.",
+            "Pliki cookie mogą być „sesyjne”, które są usuwane po zamknięciu przeglądarki, lub „trwałe”, które pozostają na Twoim urządzeniu przez określony czas."
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Jak używamy plików cookie",
+          "content": [
+            "Używamy plików cookie w celu zapewnienia prawidłowego funkcjonowania naszej strony, analizy ruchu i zachowań użytkowników oraz zapamiętywania preferencji językowych i regionalnych.",
+            "Pliki cookie pomagają nam również zrozumieć, które strony są najpopularniejsze i jak odwiedzający poruszają się po witrynie, co pozwala nam stale ulepszać nasze usługi."
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Kategorie plików cookie",
+          "content": [
+            "Niezbędne pliki cookie są kluczowe dla prawidłowego funkcjonowania strony. Umożliwiają podstawowe funkcje, takie jak wybór języka, przechowywanie zgody na cookie i bezpieczeństwo.",
+            "Analityczne pliki cookie pomagają nam zrozumieć, jak odwiedzający wchodzą w interakcję z naszą stroną, zbierając i przekazując informacje anonimowo.",
+            "Pliki cookie preferencji pozwalają stronie zapamiętać Twoje wybory, takie jak region i ustawienia wyświetlania, dla bardziej spersonalizowanego doświadczenia.",
+            "Marketingowe pliki cookie służą do śledzenia odwiedzających na różnych stronach w celu wyświetlania odpowiednich reklam. Obecnie nie używamy marketingowych plików cookie."
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Zarządzanie plikami cookie",
+          "content": [
+            "Podczas pierwszej wizyty na naszej stronie pojawi się baner cookie, pozwalający zaakceptować lub odrzucić nieistotne pliki cookie. Możesz zmienić swoje preferencje w dowolnym momencie za pomocą linku ustawień cookie w stopce strony.",
+            "Możesz również zarządzać plikami cookie poprzez ustawienia przeglądarki. Większość przeglądarek pozwala blokować lub usuwać pliki cookie. Pamiętaj, że wyłączenie niektórych plików cookie może wpłynąć na funkcjonalność strony."
+          ]
+        },
+        {
+          "number": "05",
+          "title": "Pliki cookie stron trzecich",
+          "content": [
+            "Używamy Google Analytics do analizy ruchu na stronie. Google może ustawiać pliki cookie na Twoim urządzeniu w celu zbierania anonimowych danych o użytkowaniu. Więcej informacji znajdziesz w polityce prywatności Google.",
+            "Nasza strona jest hostowana na platformie Vercel, która może ustawiać techniczne pliki cookie niezbędne do dostarczania treści i wydajności platformy."
+          ]
+        },
+        {
+          "number": "06",
+          "title": "Kontakt",
+          "content": [
+            "Jeśli masz pytania dotyczące naszego wykorzystania plików cookie, skontaktuj się z nami pod adresem hello@nakoagency.com. Chętnie udzielimy dodatkowych informacji o naszych praktykach przetwarzania danych."
+          ]
+        }
+      ],
+      "backLink": "Powrót do polityki prywatności"
     },
     "appDev": {
       "meta": {

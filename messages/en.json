@@ -392,7 +392,8 @@
     "madeIn": "at",
     "privacyLink": "Privacy Policy",
     "termsLink": "Terms of Use",
-    "cookieSettings": "Cookie Settings"
+    "cookieSettings": "Cookie Settings",
+    "cookiePolicyLink": "Cookie Policy"
   },
   "cookies": {
     "bannerTitle": "Cookie Consent",
@@ -1431,6 +1432,118 @@
         }
       ],
       "backLink": "Back to contacts"
+    },
+    "cookiePolicy": {
+      "metaTitle": "Cookie Policy | NAKO Agency",
+      "metaDescription": "NAKO Agency cookie policy. Detailed information about cookies we use, their purposes and how to manage them.",
+      "caption": "Legal information",
+      "heading1": "COOKIE",
+      "heading2": "Policy",
+      "lastUpdated": "Last updated: March 13, 2026",
+      "tableTitle": "Cookies We Use",
+      "tableHeaders": {
+        "name": "Name",
+        "provider": "Provider",
+        "purpose": "Purpose",
+        "category": "Category",
+        "duration": "Duration"
+      },
+      "cookieTable": [
+        {
+          "name": "_ga",
+          "provider": "Google Analytics",
+          "purpose": "Distinguishes unique users by assigning a randomly generated number as a client identifier",
+          "category": "Analytics",
+          "duration": "2 years"
+        },
+        {
+          "name": "_ga_*",
+          "provider": "Google Analytics",
+          "purpose": "Maintains session state and tracks user interactions across pages",
+          "category": "Analytics",
+          "duration": "2 years"
+        },
+        {
+          "name": "NEXT_LOCALE",
+          "provider": "next-intl",
+          "purpose": "Stores the user's preferred language for the website interface",
+          "category": "Necessary",
+          "duration": "Session"
+        },
+        {
+          "name": "user-region",
+          "provider": "NAKO Agency",
+          "purpose": "Stores the detected or selected user region for localized content and pricing",
+          "category": "Preferences",
+          "duration": "1 year"
+        },
+        {
+          "name": "cc_status",
+          "provider": "NAKO Agency",
+          "purpose": "Stores the user's cookie consent preferences and choices",
+          "category": "Necessary",
+          "duration": "1 year"
+        },
+        {
+          "name": "_vercel_*",
+          "provider": "Vercel",
+          "purpose": "Used for platform analytics, performance monitoring and deployment optimization",
+          "category": "Necessary",
+          "duration": "Session"
+        }
+      ],
+      "sections": [
+        {
+          "number": "01",
+          "title": "What Are Cookies",
+          "content": [
+            "Cookies are small text files that are stored on your device when you visit a website. They help the website remember your preferences and improve your browsing experience.",
+            "Cookies can be \"session\" cookies, which are deleted when you close your browser, or \"persistent\" cookies, which remain on your device for a set period of time."
+          ]
+        },
+        {
+          "number": "02",
+          "title": "How We Use Cookies",
+          "content": [
+            "We use cookies to ensure the proper functioning of our website, to analyze traffic and user behavior, and to remember your language and region preferences.",
+            "Cookies also help us understand which pages are most popular and how visitors navigate the site, allowing us to continuously improve our services."
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Cookie Categories",
+          "content": [
+            "Necessary cookies are essential for the website to function properly. They enable core features such as language selection, cookie consent storage, and security.",
+            "Analytics cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.",
+            "Preferences cookies allow the website to remember your choices such as region and display settings to provide a more personalized experience.",
+            "Marketing cookies are used to track visitors across websites to display relevant advertisements. We currently do not use marketing cookies."
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Managing Cookies",
+          "content": [
+            "When you first visit our website, a cookie banner will appear allowing you to accept or reject non-essential cookies. You can change your preferences at any time through the cookie settings link in the footer.",
+            "You can also manage cookies through your browser settings. Most browsers allow you to block or delete cookies. Please note that disabling certain cookies may affect website functionality."
+          ]
+        },
+        {
+          "number": "05",
+          "title": "Third-Party Cookies",
+          "content": [
+            "We use Google Analytics to analyze website traffic. Google may set cookies on your device to collect anonymous usage data. For more information, visit Google's privacy policy.",
+            "Our website is hosted on Vercel, which may set technical cookies necessary for content delivery and platform performance."
+          ]
+        },
+        {
+          "number": "06",
+          "title": "Contact",
+          "content": [
+            "If you have any questions about our use of cookies, please contact us at hello@nakoagency.com. We are happy to provide additional information about our data practices."
+          ]
+        }
+      ],
+      "backLink": "Back to privacy policy"
     },
     "appDev": {
       "meta": {

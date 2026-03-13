@@ -392,7 +392,8 @@
     "madeIn": "da",
     "privacyLink": "Politica sulla Privacy",
     "termsLink": "Termini di Utilizzo",
-    "cookieSettings": "Impostazioni cookie"
+    "cookieSettings": "Impostazioni cookie",
+    "cookiePolicyLink": "Politica dei cookie"
   },
   "cookies": {
     "bannerTitle": "Consenso cookie",
@@ -1431,6 +1432,118 @@
         }
       ],
       "backLink": "Torna ai contatti"
+    },
+    "cookiePolicy": {
+      "metaTitle": "Politica dei Cookie | NAKO Agency",
+      "metaDescription": "Politica dei cookie del sito NAKO Agency. Informazioni dettagliate sui cookie che utilizziamo, i loro scopi e come gestirli.",
+      "caption": "Informazioni legali",
+      "heading1": "COOKIE",
+      "heading2": "Politica",
+      "lastUpdated": "Ultimo aggiornamento: 13 marzo 2026",
+      "tableTitle": "Cookie che utilizziamo",
+      "tableHeaders": {
+        "name": "Nome",
+        "provider": "Fornitore",
+        "purpose": "Scopo",
+        "category": "Categoria",
+        "duration": "Durata"
+      },
+      "cookieTable": [
+        {
+          "name": "_ga",
+          "provider": "Google Analytics",
+          "purpose": "Distingue gli utenti unici assegnando un numero generato casualmente come identificatore del client",
+          "category": "Analisi",
+          "duration": "2 anni"
+        },
+        {
+          "name": "_ga_*",
+          "provider": "Google Analytics",
+          "purpose": "Mantiene lo stato della sessione e traccia le interazioni degli utenti tra le pagine",
+          "category": "Analisi",
+          "duration": "2 anni"
+        },
+        {
+          "name": "NEXT_LOCALE",
+          "provider": "next-intl",
+          "purpose": "Memorizza la lingua preferita dell'utente per l'interfaccia del sito",
+          "category": "Necessari",
+          "duration": "Sessione"
+        },
+        {
+          "name": "user-region",
+          "provider": "NAKO Agency",
+          "purpose": "Memorizza la regione rilevata o selezionata dell'utente per contenuti e prezzi localizzati",
+          "category": "Preferenze",
+          "duration": "1 anno"
+        },
+        {
+          "name": "cc_status",
+          "provider": "NAKO Agency",
+          "purpose": "Memorizza le preferenze e le scelte dell'utente relative al consenso dei cookie",
+          "category": "Necessari",
+          "duration": "1 anno"
+        },
+        {
+          "name": "_vercel_*",
+          "provider": "Vercel",
+          "purpose": "Utilizzato per l'analisi della piattaforma, il monitoraggio delle prestazioni e l'ottimizzazione della distribuzione",
+          "category": "Necessari",
+          "duration": "Sessione"
+        }
+      ],
+      "sections": [
+        {
+          "number": "01",
+          "title": "Cosa sono i cookie",
+          "content": [
+            "I cookie sono piccoli file di testo che vengono memorizzati sul tuo dispositivo quando visiti un sito web. Aiutano il sito a ricordare le tue preferenze e a migliorare la tua esperienza di navigazione.",
+            "I cookie possono essere \"di sessione\", che vengono eliminati quando chiudi il browser, o \"persistenti\", che rimangono sul tuo dispositivo per un periodo di tempo stabilito."
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Come utilizziamo i cookie",
+          "content": [
+            "Utilizziamo i cookie per garantire il corretto funzionamento del nostro sito, per analizzare il traffico e il comportamento degli utenti e per ricordare le tue preferenze di lingua e regione.",
+            "I cookie ci aiutano anche a capire quali pagine sono più popolari e come i visitatori navigano nel sito, permettendoci di migliorare continuamente i nostri servizi."
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Categorie di cookie",
+          "content": [
+            "I cookie necessari sono essenziali per il corretto funzionamento del sito. Abilitano funzioni di base come la selezione della lingua, la memorizzazione del consenso ai cookie e la sicurezza.",
+            "I cookie analitici ci aiutano a capire come i visitatori interagiscono con il nostro sito, raccogliendo e segnalando informazioni in modo anonimo.",
+            "I cookie di preferenza consentono al sito di ricordare le tue scelte come la regione e le impostazioni di visualizzazione per un'esperienza più personalizzata.",
+            "I cookie di marketing vengono utilizzati per tracciare i visitatori su diversi siti web per mostrare pubblicità pertinenti. Attualmente non utilizziamo cookie di marketing."
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Gestione dei cookie",
+          "content": [
+            "Quando visiti il nostro sito per la prima volta, apparirà un banner cookie che ti consentirà di accettare o rifiutare i cookie non essenziali. Puoi modificare le tue preferenze in qualsiasi momento tramite il link delle impostazioni cookie nel piè di pagina.",
+            "Puoi anche gestire i cookie attraverso le impostazioni del tuo browser. La maggior parte dei browser consente di bloccare o eliminare i cookie. Tieni presente che la disattivazione di alcuni cookie potrebbe influire sulla funzionalità del sito."
+          ]
+        },
+        {
+          "number": "05",
+          "title": "Cookie di terze parti",
+          "content": [
+            "Utilizziamo Google Analytics per analizzare il traffico del sito. Google potrebbe impostare cookie sul tuo dispositivo per raccogliere dati anonimi sull'utilizzo. Per ulteriori informazioni, consulta l'informativa sulla privacy di Google.",
+            "Il nostro sito è ospitato su Vercel, che potrebbe impostare cookie tecnici necessari per la distribuzione dei contenuti e le prestazioni della piattaforma."
+          ]
+        },
+        {
+          "number": "06",
+          "title": "Contatti",
+          "content": [
+            "Se hai domande sull'utilizzo dei cookie da parte nostra, contattaci all'indirizzo hello@nakoagency.com. Saremo lieti di fornire informazioni aggiuntive sulle nostre pratiche di trattamento dei dati."
+          ]
+        }
+      ],
+      "backLink": "Torna all'informativa sulla privacy"
     },
     "appDev": {
       "meta": {

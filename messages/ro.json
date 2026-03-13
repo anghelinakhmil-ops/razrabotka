@@ -392,7 +392,8 @@
     "madeIn": "la",
     "privacyLink": "Politica de confidențialitate",
     "termsLink": "Termeni de utilizare",
-    "cookieSettings": "Setări cookies"
+    "cookieSettings": "Setări cookies",
+    "cookiePolicyLink": "Politica cookies"
   },
   "cookies": {
     "bannerTitle": "Consimțământ cookies",
@@ -1431,6 +1432,118 @@
         }
       ],
       "backLink": "Înapoi la contacte"
+    },
+    "cookiePolicy": {
+      "metaTitle": "Politica Cookie | NAKO Agency",
+      "metaDescription": "Politica de utilizare a cookie-urilor pe site-ul NAKO Agency. Informații detaliate despre cookie-urile pe care le folosim, scopurile lor și cum să le gestionați.",
+      "caption": "Informații juridice",
+      "heading1": "COOKIE",
+      "heading2": "Politica",
+      "lastUpdated": "Ultima actualizare: 13 martie 2026",
+      "tableTitle": "Cookie-urile pe care le folosim",
+      "tableHeaders": {
+        "name": "Nume",
+        "provider": "Furnizor",
+        "purpose": "Scop",
+        "category": "Categorie",
+        "duration": "Durată"
+      },
+      "cookieTable": [
+        {
+          "name": "_ga",
+          "provider": "Google Analytics",
+          "purpose": "Distinge utilizatorii unici prin atribuirea unui număr generat aleatoriu ca identificator de client",
+          "category": "Analitice",
+          "duration": "2 ani"
+        },
+        {
+          "name": "_ga_*",
+          "provider": "Google Analytics",
+          "purpose": "Menține starea sesiunii și urmărește interacțiunile utilizatorilor între pagini",
+          "category": "Analitice",
+          "duration": "2 ani"
+        },
+        {
+          "name": "NEXT_LOCALE",
+          "provider": "next-intl",
+          "purpose": "Stochează limba preferată a utilizatorului pentru interfața site-ului",
+          "category": "Necesare",
+          "duration": "Sesiune"
+        },
+        {
+          "name": "user-region",
+          "provider": "NAKO Agency",
+          "purpose": "Stochează regiunea detectată sau selectată a utilizatorului pentru conținut și prețuri localizate",
+          "category": "Preferințe",
+          "duration": "1 an"
+        },
+        {
+          "name": "cc_status",
+          "provider": "NAKO Agency",
+          "purpose": "Stochează preferințele și alegerile utilizatorului privind consimțământul cookie",
+          "category": "Necesare",
+          "duration": "1 an"
+        },
+        {
+          "name": "_vercel_*",
+          "provider": "Vercel",
+          "purpose": "Utilizat pentru analitica platformei, monitorizarea performanței și optimizarea implementării",
+          "category": "Necesare",
+          "duration": "Sesiune"
+        }
+      ],
+      "sections": [
+        {
+          "number": "01",
+          "title": "Ce sunt cookie-urile",
+          "content": [
+            "Cookie-urile sunt fișiere text mici care sunt stocate pe dispozitivul dvs. atunci când vizitați un site web. Ele ajută site-ul să rețină preferințele dvs. și să îmbunătățească experiența de navigare.",
+            "Cookie-urile pot fi „de sesiune”, care sunt șterse când închideți browserul, sau „persistente”, care rămân pe dispozitivul dvs. pentru o perioadă de timp stabilită."
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Cum folosim cookie-urile",
+          "content": [
+            "Folosim cookie-uri pentru a asigura funcționarea corectă a site-ului nostru, pentru a analiza traficul și comportamentul utilizatorilor și pentru a reține preferințele dvs. de limbă și regiune.",
+            "Cookie-urile ne ajută, de asemenea, să înțelegem care pagini sunt cele mai populare și cum navighează vizitatorii pe site, permițându-ne să îmbunătățim continuu serviciile noastre."
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Categorii de cookie-uri",
+          "content": [
+            "Cookie-urile necesare sunt esențiale pentru funcționarea corectă a site-ului. Ele permit funcții de bază precum selectarea limbii, stocarea consimțământului cookie și securitatea.",
+            "Cookie-urile analitice ne ajută să înțelegem cum interacționează vizitatorii cu site-ul nostru, colectând și raportând informații în mod anonim.",
+            "Cookie-urile de preferințe permit site-ului să rețină alegerile dvs., cum ar fi regiunea și setările de afișare, pentru o experiență mai personalizată.",
+            "Cookie-urile de marketing sunt utilizate pentru a urmări vizitatorii pe diferite site-uri web pentru a afișa reclame relevante. În prezent, nu folosim cookie-uri de marketing."
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Gestionarea cookie-urilor",
+          "content": [
+            "Când vizitați site-ul nostru pentru prima dată, va apărea un banner cookie care vă permite să acceptați sau să refuzați cookie-urile neesențiale. Puteți modifica preferințele în orice moment prin link-ul de setări cookie din subsol.",
+            "De asemenea, puteți gestiona cookie-urile prin setările browserului dvs. Majoritatea browserelor vă permit să blocați sau să ștergeți cookie-urile. Vă rugăm să rețineți că dezactivarea anumitor cookie-uri poate afecta funcționalitatea site-ului."
+          ]
+        },
+        {
+          "number": "05",
+          "title": "Cookie-uri terțe",
+          "content": [
+            "Folosim Google Analytics pentru a analiza traficul site-ului. Google poate seta cookie-uri pe dispozitivul dvs. pentru a colecta date anonime de utilizare. Pentru mai multe informații, vizitați politica de confidențialitate Google.",
+            "Site-ul nostru este găzduit pe Vercel, care poate seta cookie-uri tehnice necesare pentru livrarea conținutului și performanța platformei."
+          ]
+        },
+        {
+          "number": "06",
+          "title": "Contact",
+          "content": [
+            "Dacă aveți întrebări despre utilizarea cookie-urilor de către noi, contactați-ne la hello@nakoagency.com. Suntem bucuroși să oferim informații suplimentare despre practicile noastre de prelucrare a datelor."
+          ]
+        }
+      ],
+      "backLink": "Înapoi la politica de confidențialitate"
     },
     "appDev": {
       "meta": {
