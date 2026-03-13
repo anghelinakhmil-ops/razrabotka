@@ -376,7 +376,8 @@
     "briefButton": "Briefing ausfüllen",
     "validation": {
       "nameMin": "Der Name muss mindestens 2 Zeichen lang sein",
-      "contactMin": "Geben Sie Telefon oder Telegram ein"
+      "contactMin": "Geben Sie Telefon oder Telegram ein",
+      "consentRequired": "Sie müssen der Datenverarbeitung zustimmen"
     }
   },
   "footer": {
@@ -414,6 +415,25 @@
     "preferencesDesc": "Merken sich Ihre Sprach-, Regions- und Anzeigeeinstellungen.",
     "save": "Einstellungen speichern",
     "alwaysActive": "Immer aktiv"
+  },
+  "consent": {
+    "checkbox": "Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß der",
+    "privacyLink": "Datenschutzerklärung zu",
+    "checkboxRequired": "Sie müssen der Verarbeitung personenbezogener Daten zustimmen",
+    "marketingCheckbox": "Ich möchte Neuigkeiten und Sonderangebote von NAKO Agency erhalten",
+    "ru152fz": {
+      "title": "Einwilligung in die Verarbeitung personenbezogener Daten",
+      "sections": [
+        "Hiermit erteile ich, die betroffene Person, freiwillig, aus eigenem Willen und im eigenen Interesse meine Einwilligung an NAKO Agency (nachfolgend — der Betreiber) zur Verarbeitung meiner personenbezogenen Daten gemäß dem Bundesgesetz Nr. 152-FZ vom 27.07.2006 'Über personenbezogene Daten'.",
+        "Folgende personenbezogene Daten unterliegen der Verarbeitung: Nachname, Vorname, E-Mail-Adresse, Telefonnummer, Messenger-Benutzername sowie weitere Daten, die ich freiwillig beim Ausfüllen von Formularen auf der Website angegeben habe.",
+        "Zwecke der Verarbeitung personenbezogener Daten: Bearbeitung eingehender Anfragen; Kontaktaufnahme mit der betroffenen Person zur Besprechung eines Projekts; Versand von Informations- und Werbemitteilungen (bei gesonderter Einwilligung).",
+        "Verarbeitungsmethoden: Erhebung, Aufzeichnung, Systematisierung, Akkumulation, Speicherung, Aktualisierung, Extraktion, Nutzung, Übertragung (Bereitstellung, Zugang), Anonymisierung, Sperrung, Löschung, Vernichtung personenbezogener Daten — mit und ohne Einsatz von Automatisierungsmitteln.",
+        "Gültigkeitsdauer: ab dem Zeitpunkt der Erteilung bis zum Widerruf. Die Einwilligung kann durch Zusendung einer schriftlichen Benachrichtigung an hello@nakoagency.com widerrufen werden.",
+        "Der Betreiber verpflichtet sich, die Sicherheit der personenbezogenen Daten zu gewährleisten und die erforderlichen Maßnahmen zur Verhinderung unbefugten Zugriffs zu ergreifen."
+      ],
+      "accept": "Ich erteile meine Einwilligung",
+      "decline": "Ablehnen"
+    }
   },
   "callbackModal": {
     "title": "Rückruf anfordern",

@@ -14,6 +14,7 @@ import { getUtmData } from "@/lib/utm";
 import { RevealOnScroll } from "@/components/motion";
 import { sectionPresets } from "@/lib/motion";
 import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
+import { ConsentCheckbox } from "@/components/ui/ConsentCheckbox";
 
 interface LeadFormSectionProps {
   /** Заголовок секции */
@@ -60,6 +61,7 @@ export function LeadFormSection({
   const quickFormSchema = z.object({
     name: z.string().min(2, t("validation.nameMin")),
     contact: z.string().min(3, t("validation.contactMin")),
+    consent: z.literal(true, { message: t("validation.consentRequired") }),
   });
 
   type QuickFormData = z.infer<typeof quickFormSchema>;
@@ -98,6 +100,8 @@ export function LeadFormSection({
           name: data.name,
           ...contactFields,
           timestamp: new Date().toISOString(),
+          consentGiven: true,
+          consentTimestamp: new Date().toISOString(),
           ...getUtmData(),
         }),
       });
@@ -166,6 +170,14 @@ export function LeadFormSection({
                   />
                 </div>
 
+                {/* GDPR Consent */}
+                <ConsentCheckbox
+                  error={errors.consent?.message}
+                  disabled={formState === "loading"}
+                  inverted
+                  {...register("consent")}
+                />
+
                 {/* Submit Button */}
                 <Button
                   type="submit"
@@ -176,17 +188,6 @@ export function LeadFormSection({
                 >
                   {t("submit")}
                 </Button>
-
-                {/* Privacy notice */}
-                <p className="text-caption text-[var(--color-text-muted)]">
-                  {t("privacy")}{" "}
-                  <Link
-                    href="/privacy"
-                    className="underline hover:text-[var(--color-background)] transition-colors"
-                  >
-                    {t("privacyLink")}
-                  </Link>
-                </p>
               </form>
             )}
           </RevealOnScroll>

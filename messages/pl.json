@@ -376,7 +376,8 @@
     "briefButton": "Wypełnij brief",
     "validation": {
       "nameMin": "Imię musi mieć co najmniej 2 znaki",
-      "contactMin": "Podaj telefon lub Telegram"
+      "contactMin": "Podaj telefon lub Telegram",
+      "consentRequired": "Musisz wyrazić zgodę na przetwarzanie danych"
     }
   },
   "footer": {
@@ -414,6 +415,25 @@
     "preferencesDesc": "Zapamiętują wybór języka, regionu i preferencje wyświetlania.",
     "save": "Zapisz ustawienia",
     "alwaysActive": "Zawsze aktywne"
+  },
+  "consent": {
+    "checkbox": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z",
+    "privacyLink": "Polityką prywatności",
+    "checkboxRequired": "Musisz wyrazić zgodę na przetwarzanie danych osobowych",
+    "marketingCheckbox": "Chcę otrzymywać wiadomości i oferty specjalne od NAKO Agency",
+    "ru152fz": {
+      "title": "Zgoda na przetwarzanie danych osobowych",
+      "sections": [
+        "Niniejszym ja, podmiot danych osobowych, dobrowolnie, z własnej woli i we własnym interesie wyrażam zgodę NAKO Agency (dalej — Operator) na przetwarzanie moich danych osobowych zgodnie z Ustawą federalną nr 152-FZ z dnia 27.07.2006 'O danych osobowych'.",
+        "Następujące dane osobowe podlegają przetwarzaniu: nazwisko, imię, adres e-mail, numer telefonu, nazwa użytkownika w komunikatorach oraz inne dane dobrowolnie podane przeze mnie podczas wypełniania formularzy na stronie.",
+        "Cele przetwarzania danych osobowych: obsługa przychodzących zapytań; kontakt z podmiotem danych w celu omówienia projektu; wysyłanie wiadomości informacyjnych i handlowych (za odrębną zgodą).",
+        "Metody przetwarzania: zbieranie, rejestrowanie, systematyzacja, gromadzenie, przechowywanie, uściślanie, wydobywanie, wykorzystywanie, przekazywanie (udostępnianie, dostęp), anonimizacja, blokowanie, usuwanie, niszczenie danych osobowych — z wykorzystaniem i bez wykorzystania narzędzi automatyzacji.",
+        "Okres ważności zgody: od momentu udzielenia do momentu wycofania. Zgoda może zostać wycofana poprzez wysłanie pisemnego powiadomienia na adres hello@nakoagency.com.",
+        "Operator zobowiązuje się zapewnić bezpieczeństwo danych osobowych i podjąć niezbędne środki w celu zapobieżenia nieautoryzowanemu dostępowi."
+      ],
+      "accept": "Wyrażam zgodę",
+      "decline": "Odmawiam"
+    }
   },
   "callbackModal": {
     "title": "Zamów rozmowę",

@@ -376,7 +376,8 @@
     "briefButton": "Fill out the brief",
     "validation": {
       "nameMin": "Name must be at least 2 characters",
-      "contactMin": "Enter phone or Telegram"
+      "contactMin": "Enter phone or Telegram",
+      "consentRequired": "You must consent to data processing"
     }
   },
   "footer": {
@@ -414,6 +415,25 @@
     "preferencesDesc": "Remember your language, region, and display preferences.",
     "save": "Save Settings",
     "alwaysActive": "Always active"
+  },
+  "consent": {
+    "checkbox": "I consent to the processing of my personal data in accordance with the",
+    "privacyLink": "Privacy Policy",
+    "checkboxRequired": "You must consent to the processing of personal data",
+    "marketingCheckbox": "I would like to receive news and special offers from NAKO Agency",
+    "ru152fz": {
+      "title": "Consent to Personal Data Processing",
+      "sections": [
+        "I, the data subject, hereby freely, voluntarily and in my own interest give my consent to NAKO Agency (hereinafter — the Operator) for the processing of my personal data in accordance with Federal Law No. 152-FZ of 27.07.2006 'On Personal Data'.",
+        "The following personal data is subject to processing: surname, first name, email address, telephone number, messenger username, and other data voluntarily provided by me when filling out forms on the website.",
+        "Purposes of personal data processing: processing incoming requests; contacting the data subject to discuss a project; sending informational and commercial messages (with separate consent).",
+        "Processing methods: collection, recording, systematisation, accumulation, storage, clarification, extraction, use, transfer (provision, access), anonymisation, blocking, deletion, destruction of personal data — with and without the use of automation tools.",
+        "Validity period: from the moment of provision until withdrawal. Consent may be withdrawn by sending a written notification to hello@nakoagency.com.",
+        "The Operator undertakes to ensure the security of personal data and take necessary measures to prevent unauthorised access."
+      ],
+      "accept": "I give my consent",
+      "decline": "Decline"
+    }
   },
   "callbackModal": {
     "title": "Request a call",

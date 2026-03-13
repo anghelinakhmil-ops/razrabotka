@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 import { Modal } from "@/components/ui/Modal";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
@@ -13,6 +12,7 @@ import { PhoneInput } from "@/components/ui/PhoneInput";
 import { getUtmData } from "@/lib/utm";
 import { callbackFormSchema, type CallbackFormData } from "@/lib/validation";
 import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
+import { ConsentCheckbox } from "@/components/ui/ConsentCheckbox";
 
 /**
  * Состояния формы
@@ -92,6 +92,8 @@ export function CallbackModal({
           source,
           type: "callback",
           timestamp: new Date().toISOString(),
+          consentGiven: true,
+          consentTimestamp: new Date().toISOString(),
           ...getUtmData(),
         }),
       });
@@ -267,6 +269,12 @@ export function CallbackModal({
             required
           />
 
+          <ConsentCheckbox
+            error={errors.consent?.message}
+            disabled={formState === "loading"}
+            {...register("consent")}
+          />
+
           <Button
             type="submit"
             variant="primary"
@@ -276,13 +284,6 @@ export function CallbackModal({
           >
             {t("submit")}
           </Button>
-
-          <p className="text-caption text-[var(--color-text-muted)] text-center">
-            {t("privacy")}{" "}
-            <Link href="/privacy" className="underline hover:no-underline">
-              {t("privacyLink")}
-            </Link>
-          </p>
         </motion.form>
       )}
     </Modal>

@@ -16,6 +16,11 @@ const baseLeadSchema = z.object({
   source: z.string().optional(),
   type: z.enum(["quick", "brief", "callback"]),
   timestamp: z.string().optional(),
+  // GDPR consent tracking
+  consentGiven: z.boolean().optional(),
+  consentTimestamp: z.string().optional(),
+  marketingConsent: z.boolean().optional(),
+  region: z.string().optional(),
   // UTM-метки из рекламных ссылок
   utm_source: z.string().optional(),
   utm_medium: z.string().optional(),
@@ -33,6 +38,8 @@ const quickLeadSchema = baseLeadSchema.extend({
   phone: z.string().optional(),
   email: z.string().email().optional(),
   message: z.string().optional(),
+  consent: z.boolean().optional(),
+  marketing: z.boolean().optional(),
 }).refine((data) => data.phone || data.email, {
   message: "Требуется телефон или email",
 });
@@ -44,6 +51,7 @@ const callbackLeadSchema = baseLeadSchema.extend({
   type: z.literal("callback"),
   name: z.string().optional(),
   phone: z.string().min(10, "Некорректный телефон"),
+  consent: z.boolean().optional(),
 });
 
 /**
@@ -61,6 +69,8 @@ const briefLeadSchema = baseLeadSchema.extend({
   phone: z.string().min(10, "Некорректный телефон"),
   telegram: z.string().optional(),
   comment: z.string().optional(),
+  consent: z.boolean().optional(),
+  marketing: z.boolean().optional(),
 });
 
 /**

@@ -15,6 +15,10 @@ import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/moti
 import { CONTACT } from "@/lib/constants";
 import { contactFormSchema, type ContactFormData } from "@/lib/validation";
 import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
+import { ConsentCheckbox } from "@/components/ui/ConsentCheckbox";
+import { MarketingCheckbox } from "@/components/ui/MarketingCheckbox";
+import { useRegion } from "@/components/providers/RegionProvider";
+import { RussianConsentModal } from "@/components/ui/RussianConsentModal";
 
 /**
  * Contacts Page — страница контактов
@@ -182,11 +186,15 @@ function ContactForm() {
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [formStarted, setFormStarted] = useState(false);
+  const [showRuConsent, setShowRuConsent] = useState(false);
+  const { regionCode } = useRegion();
+  const isRussia = regionCode === "RU";
 
   const {
     register,
     handleSubmit,
     reset,
+    setValue,
     formState: { errors },
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
@@ -216,6 +224,10 @@ function ContactForm() {
           phone: data.phone || undefined,
           message: data.message,
           timestamp: new Date().toISOString(),
+          consentGiven: true,
+          consentTimestamp: new Date().toISOString(),
+          marketingConsent: data.marketing || false,
+          region: regionCode,
           ...getUtmData(),
         }),
       });
@@ -350,6 +362,19 @@ function ContactForm() {
           {...register("message")}
         />
 
+        {/* GDPR Consent Checkboxes */}
+        <div className="space-y-3">
+          <ConsentCheckbox
+            error={errors.consent?.message}
+            disabled={formState === "loading"}
+            {...register("consent")}
+          />
+          <MarketingCheckbox
+            disabled={formState === "loading"}
+            {...register("marketing")}
+          />
+        </div>
+
         <Button
           type="submit"
           variant="primary"
@@ -360,12 +385,17 @@ function ContactForm() {
           {t("formSubmit")}
         </Button>
 
-        <p className="text-caption text-[var(--color-text-muted)] text-center">
-          {t("formPrivacy")}{" "}
-          <Link href="/privacy" className="underline hover:no-underline">
-            {t("formPrivacyLink")}
-          </Link>
-        </p>
+        {/* Russian 152-FZ separate consent modal */}
+        {isRussia && (
+          <RussianConsentModal
+            isOpen={showRuConsent}
+            onClose={() => setShowRuConsent(false)}
+            onAccept={() => {
+              setValue("consent", true, { shouldValidate: true });
+              setShowRuConsent(false);
+            }}
+          />
+        )}
       </form>
     </div>
   );

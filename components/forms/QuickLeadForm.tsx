@@ -5,13 +5,13 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 import { quickLeadSchema, type QuickLeadFormData } from "@/lib/validation";
 import { getUtmData } from "@/lib/utm";
 import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
+import { ConsentCheckbox } from "@/components/ui/ConsentCheckbox";
 
 /**
  * Анимации для переходов состояний
@@ -113,6 +113,8 @@ export function QuickLeadForm({
           source,
           type: "quick",
           timestamp: new Date().toISOString(),
+          consentGiven: true,
+          consentTimestamp: new Date().toISOString(),
           ...getUtmData(),
         }),
       });
@@ -392,12 +394,12 @@ export function QuickLeadForm({
           )}
         </AnimatePresence>
 
-        <p className="text-caption text-[var(--color-text-muted)] text-center">
-          {t("privacy")}{" "}
-          <Link href="/privacy" className="underline hover:no-underline">
-            {t("privacyLink")}
-          </Link>
-        </p>
+        <ConsentCheckbox
+          error={errors.consent?.message}
+          disabled={formState === "loading"}
+          inverted={inverted}
+          {...register("consent")}
+        />
       </motion.form>
     );
   }
@@ -478,17 +480,18 @@ export function QuickLeadForm({
         </Button>
       </motion.div>
 
-      <motion.p
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
-        className="text-caption text-[var(--color-text-muted)] text-center"
       >
-        {t("privacy")}{" "}
-        <Link href="/privacy" className="underline hover:no-underline">
-          {t("privacyLink")}
-        </Link>
-      </motion.p>
+        <ConsentCheckbox
+          error={errors.consent?.message}
+          disabled={formState === "loading"}
+          inverted={inverted}
+          {...register("consent")}
+        />
+      </motion.div>
     </motion.form>
   );
 }

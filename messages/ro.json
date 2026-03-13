@@ -376,7 +376,8 @@
     "briefButton": "Completează brief-ul",
     "validation": {
       "nameMin": "Numele trebuie să conțină cel puțin 2 caractere",
-      "contactMin": "Introduceți telefonul sau Telegram"
+      "contactMin": "Introduceți telefonul sau Telegram",
+      "consentRequired": "Trebuie să consimțiți la prelucrarea datelor"
     }
   },
   "footer": {
@@ -414,6 +415,25 @@
     "preferencesDesc": "Rețin alegerea dvs. de limbă, regiune și preferințe de afișare.",
     "save": "Salvează setările",
     "alwaysActive": "Mereu active"
+  },
+  "consent": {
+    "checkbox": "Sunt de acord cu prelucrarea datelor mele personale în conformitate cu",
+    "privacyLink": "Politica de confidențialitate",
+    "checkboxRequired": "Trebuie să vă dați acordul pentru prelucrarea datelor personale",
+    "marketingCheckbox": "Doresc să primesc noutăți și oferte speciale de la NAKO Agency",
+    "ru152fz": {
+      "title": "Consimțământ pentru prelucrarea datelor personale",
+      "sections": [
+        "Prin prezenta, eu, subiectul datelor cu caracter personal, în mod liber, din propria voință și în propriul interes, îmi dau consimțământul către NAKO Agency (denumit în continuare — Operatorul) pentru prelucrarea datelor mele personale în conformitate cu Legea federală nr. 152-FZ din 27.07.2006 'Cu privire la datele personale'.",
+        "Următoarele date personale sunt supuse prelucrării: numele, prenumele, adresa de e-mail, numărul de telefon, username-ul din mesageri și alte date furnizate voluntar la completarea formularelor de pe site.",
+        "Scopurile prelucrării datelor personale: procesarea cererilor primite; contactarea subiectului datelor pentru discutarea unui proiect; trimiterea de mesaje informative și comerciale (cu consimțământ separat).",
+        "Metode de prelucrare: colectarea, înregistrarea, sistematizarea, acumularea, stocarea, clarificarea, extragerea, utilizarea, transferul (furnizarea, accesul), anonimizarea, blocarea, ștergerea, distrugerea datelor personale — cu și fără utilizarea mijloacelor de automatizare.",
+        "Perioada de valabilitate: din momentul acordării până la retragere. Consimțământul poate fi retras prin trimiterea unei notificări scrise la hello@nakoagency.com.",
+        "Operatorul se angajează să asigure securitatea datelor personale și să ia măsurile necesare pentru prevenirea accesului neautorizat."
+      ],
+      "accept": "Îmi dau consimțământul",
+      "decline": "Refuz"
+    }
   },
   "callbackModal": {
     "title": "Solicită un apel",

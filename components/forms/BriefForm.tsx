@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
@@ -13,6 +12,10 @@ import { getUtmData } from "@/lib/utm";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 import { briefFormSchema, type BriefFormData } from "@/lib/validation";
 import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
+import { ConsentCheckbox } from "@/components/ui/ConsentCheckbox";
+import { MarketingCheckbox } from "@/components/ui/MarketingCheckbox";
+import { useRegion } from "@/components/providers/RegionProvider";
+import { RussianConsentModal } from "@/components/ui/RussianConsentModal";
 
 /**
  * Ключ для хранения черновика в localStorage
@@ -96,6 +99,9 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [draftLoaded, setDraftLoaded] = useState(false);
   const [formStarted, setFormStarted] = useState(false);
+  const [showRuConsent, setShowRuConsent] = useState(false);
+  const { regionCode } = useRegion();
+  const isRussia = regionCode === "RU";
 
   const handleFormFocus = () => {
     if (!formStarted) {
@@ -147,7 +153,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
     if (formState === "success") return;
 
     // Проверяем, есть ли данные для сохранения
-    const hasData = Object.values(formValues).some((v) => v && v.trim() !== "");
+    const hasData = Object.values(formValues).some((v) => v && (typeof v === "string" ? v.trim() !== "" : true));
     if (hasData) {
       saveDraft(formValues);
     }
@@ -178,6 +184,10 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
           source,
           type: "brief",
           timestamp: new Date().toISOString(),
+          consentGiven: true,
+          consentTimestamp: new Date().toISOString(),
+          marketingConsent: data.marketing || false,
+          region: regionCode,
           ...getUtmData(),
         }),
       });
@@ -418,6 +428,24 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
           />
         </motion.section>
 
+        {/* GDPR Consent Checkboxes */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.25, duration: 0.4 }}
+          className="space-y-3"
+        >
+          <ConsentCheckbox
+            error={errors.consent?.message}
+            disabled={formState === "loading"}
+            {...register("consent")}
+          />
+          <MarketingCheckbox
+            disabled={formState === "loading"}
+            {...register("marketing")}
+          />
+        </motion.div>
+
         {/* Submit */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -434,14 +462,19 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
           >
             {t("submit")}
           </Button>
-
-          <p className="text-caption text-[var(--color-text-muted)] text-center mt-4">
-            {t("privacy")}{" "}
-            <Link href="/privacy" className="underline hover:no-underline">
-              {t("privacyLink")}
-            </Link>
-          </p>
         </motion.div>
+
+        {/* Russian 152-FZ separate consent modal */}
+        {isRussia && (
+          <RussianConsentModal
+            isOpen={showRuConsent}
+            onClose={() => setShowRuConsent(false)}
+            onAccept={() => {
+              setValue("consent" as keyof BriefFormData, true as never, { shouldValidate: true });
+              setShowRuConsent(false);
+            }}
+          />
+        )}
       </form>
     </motion.div>
   );

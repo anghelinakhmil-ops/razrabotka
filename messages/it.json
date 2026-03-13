@@ -376,7 +376,8 @@
     "briefButton": "Compili il brief",
     "validation": {
       "nameMin": "Il nome deve contenere almeno 2 caratteri",
-      "contactMin": "Inserisca telefono o Telegram"
+      "contactMin": "Inserisca telefono o Telegram",
+      "consentRequired": "È necessario acconsentire al trattamento dei dati"
     }
   },
   "footer": {
@@ -414,6 +415,25 @@
     "preferencesDesc": "Ricordano la tua scelta di lingua, regione e preferenze di visualizzazione.",
     "save": "Salva impostazioni",
     "alwaysActive": "Sempre attivo"
+  },
+  "consent": {
+    "checkbox": "Acconsento al trattamento dei miei dati personali in conformità con la",
+    "privacyLink": "Informativa sulla privacy",
+    "checkboxRequired": "È necessario acconsentire al trattamento dei dati personali",
+    "marketingCheckbox": "Desidero ricevere notizie e offerte speciali da NAKO Agency",
+    "ru152fz": {
+      "title": "Consenso al trattamento dei dati personali",
+      "sections": [
+        "Con la presente, io, soggetto dei dati personali, liberamente, di mia spontanea volontà e nel mio interesse, presto il mio consenso a NAKO Agency (di seguito — l'Operatore) per il trattamento dei miei dati personali ai sensi della Legge federale n. 152-FZ del 27.07.2006 «Sui dati personali».",
+        "I seguenti dati personali sono soggetti a trattamento: cognome, nome, indirizzo e-mail, numero di telefono, username nei messenger e altri dati forniti volontariamente durante la compilazione dei moduli sul sito.",
+        "Finalità del trattamento dei dati personali: elaborazione delle richieste in arrivo; contatto con il soggetto dei dati per discutere un progetto; invio di messaggi informativi e commerciali (con consenso separato).",
+        "Metodi di trattamento: raccolta, registrazione, sistematizzazione, accumulo, conservazione, chiarimento, estrazione, utilizzo, trasferimento (fornitura, accesso), anonimizzazione, blocco, cancellazione, distruzione dei dati personali — con e senza l'uso di strumenti di automazione.",
+        "Periodo di validità: dal momento della concessione fino alla revoca. Il consenso può essere revocato inviando una comunicazione scritta a hello@nakoagency.com.",
+        "L'Operatore si impegna a garantire la sicurezza dei dati personali e ad adottare le misure necessarie per prevenire l'accesso non autorizzato."
+      ],
+      "accept": "Do il mio consenso",
+      "decline": "Rifiuto"
+    }
   },
   "callbackModal": {
     "title": "Richiedi una chiamata",

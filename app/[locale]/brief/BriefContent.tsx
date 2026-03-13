@@ -16,6 +16,10 @@ import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/moti
 import { CONTACT } from "@/lib/constants";
 import { briefFormSchema, type BriefFormData } from "@/lib/validation";
 import { trackFormStart, trackFormSubmit, trackFormError, trackConversion } from "@/lib/analytics";
+import { ConsentCheckbox } from "@/components/ui/ConsentCheckbox";
+import { MarketingCheckbox } from "@/components/ui/MarketingCheckbox";
+import { useRegion } from "@/components/providers/RegionProvider";
+import { RussianConsentModal } from "@/components/ui/RussianConsentModal";
 
 /**
  * Brief Page — страница брифа
@@ -133,11 +137,15 @@ function BriefForm() {
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [formStarted, setFormStarted] = useState(false);
+  const [showRuConsent, setShowRuConsent] = useState(false);
+  const { regionCode } = useRegion();
+  const isRussia = regionCode === "RU";
 
   const {
     register,
     handleSubmit,
     control,
+    setValue,
     formState: { errors },
   } = useForm<BriefFormData>({
     resolver: zodResolver(briefFormSchema),
@@ -171,6 +179,10 @@ function BriefForm() {
           source: "brief_form",
           ...data,
           timestamp: new Date().toISOString(),
+          consentGiven: true,
+          consentTimestamp: new Date().toISOString(),
+          marketingConsent: data.marketing || false,
+          region: regionCode,
           ...getUtmData(),
         }),
       });
@@ -331,6 +343,19 @@ function BriefForm() {
           />
         </div>
 
+        {/* GDPR Consent Checkboxes */}
+        <div className="space-y-3">
+          <ConsentCheckbox
+            error={errors.consent?.message}
+            disabled={formState === "loading"}
+            {...register("consent")}
+          />
+          <MarketingCheckbox
+            disabled={formState === "loading"}
+            {...register("marketing")}
+          />
+        </div>
+
         {/* Submit */}
         <div className="pt-4">
           <Button
@@ -342,14 +367,19 @@ function BriefForm() {
           >
             {t("submit")}
           </Button>
-
-          <p className="text-caption text-[var(--color-text-muted)] text-center mt-4">
-            {t("privacy")}{" "}
-            <Link href="/privacy" className="underline hover:no-underline">
-              {t("privacyLink")}
-            </Link>
-          </p>
         </div>
+
+        {/* Russian 152-FZ separate consent modal */}
+        {isRussia && (
+          <RussianConsentModal
+            isOpen={showRuConsent}
+            onClose={() => setShowRuConsent(false)}
+            onAccept={() => {
+              setValue("consent", true, { shouldValidate: true });
+              setShowRuConsent(false);
+            }}
+          />
+        )}
       </form>
     </div>
   );

@@ -91,6 +91,7 @@ export const quickLeadSchema = z
     name: nameSchema.optional().or(z.literal("")),
     phone: phoneSchema.optional().or(z.literal("")),
     email: emailSchema.optional().or(z.literal("")),
+    consent: z.literal(true, { message: "Необходимо дать согласие на обработку данных" }),
   })
   .refine((data) => data.phone || data.email, {
     message: "Укажите телефон или email для связи",
@@ -108,6 +109,8 @@ export const contactFormSchema = z.object({
     .string()
     .min(10, "Сообщение должно содержать минимум 10 символов")
     .max(2000, "Сообщение слишком длинное"),
+  consent: z.literal(true, { message: "Необходимо дать согласие на обработку данных" }),
+  marketing: z.boolean().optional(),
 });
 
 export type ContactFormData = z.infer<typeof contactFormSchema>;
@@ -122,6 +125,10 @@ export const briefFormSchema = z.object({
 
   // Дополнительно
   comment: messageSchema,
+
+  // GDPR consent
+  consent: z.literal(true, { message: "Необходимо дать согласие на обработку данных" }),
+  marketing: z.boolean().optional(),
 });
 
 export type BriefFormData = z.infer<typeof briefFormSchema>;
@@ -130,6 +137,7 @@ export type BriefFormData = z.infer<typeof briefFormSchema>;
 export const callbackFormSchema = z.object({
   name: nameSchema.optional().or(z.literal("")),
   phone: phoneSchema,
+  consent: z.literal(true, { message: "Необходимо дать согласие на обработку данных" }),
 });
 
 export type CallbackFormData = z.infer<typeof callbackFormSchema>;
