@@ -1749,229 +1749,229 @@
 
 ---
 
-## 22.1 Инфраструктура — подключение 3 новых языков [0/10]
+## 22.1 Инфраструктура — подключение 3 новых языков [10/10] ✅
 
-- [ ] **reg-01**: Обновить конфигурацию next-intl — добавить `pl`, `de`, `it` в список поддерживаемых локалей
+- [x] **reg-01**: Обновить конфигурацию next-intl — добавить `pl`, `de`, `it` в список поддерживаемых локалей
   - **Файл:** `i18n/routing.ts`
   - **Изменения:** `locales: ['en', 'ru', 'uk', 'ro', 'pl', 'de', 'it']`
   - **Default locale:** остаётся `en`
   - **Проверить:** `pathnames`, `localePrefix` — совместимость с 7 локалями
 
-- [ ] **reg-02**: Обновить middleware — добавить новые локали в маппинг и обработку
+- [x] **reg-02**: Обновить middleware — добавить новые локали в маппинг и обработку
   - **Файл:** `middleware.ts`
   - **Изменения:** Убедиться что `createMiddleware` из `next-intl/middleware` корректно обрабатывает 7 локалей
   - **Проверить:** redirect логику, locale detection из Accept-Language header
 
-- [ ] **reg-03**: Создать файлы переводов — пустые JSON-структуры для 3 новых языков
+- [x] **reg-03**: Создать файлы переводов — пустые JSON-структуры для 3 новых языков
   - **Файлы:** `messages/pl.json`, `messages/de.json`, `messages/it.json`
   - **Метод:** Скопировать структуру ключей из `messages/en.json`, значения оставить на английском (будут переведены в 22.2–22.4)
   - **ВАЖНО:** Структура ключей ИДЕНТИЧНА `en.json` — ни одного пропущенного ключа
 
-- [ ] **reg-04**: Обновить `generateStaticParams` — генерация маршрутов для 7 локалей
+- [x] **reg-04**: Обновить `generateStaticParams` — генерация маршрутов для 7 локалей
   - **Файл:** `app/[locale]/layout.tsx`
   - **Изменения:** `params: [{ locale: 'en' }, { locale: 'ru' }, { locale: 'uk' }, { locale: 'ro' }, { locale: 'pl' }, { locale: 'de' }, { locale: 'it' }]`
   - **Результат:** 7 × 12 страниц = 84 статических маршрута
 
-- [ ] **reg-05**: Обновить `i18n/request.ts` — загрузка сообщений для новых локалей
+- [x] **reg-05**: Обновить `i18n/request.ts` — загрузка сообщений для новых локалей
   - **Файл:** `i18n/request.ts`
   - **Проверить:** динамический import `messages/${locale}.json` работает для всех 7 локалей
   - **Edge case:** Fallback на `en.json` если файл не найден
 
-- [ ] **reg-06**: Обновить тип `Locale` — добавить `'pl' | 'de' | 'it'`
+- [x] **reg-06**: Обновить тип `Locale` — добавить `'pl' | 'de' | 'it'`
   - **Файлы:** Найти все места где определён тип Locale (может быть в `i18n/routing.ts`, `lib/types.ts`, или inline)
   - **Grep:** `type Locale`, `Locale =`, `'en' | 'ru'`
 
-- [ ] **reg-07**: Обновить `sitemap.ts` — генерация URL для 7 локалей × все страницы
+- [x] **reg-07**: Обновить `sitemap.ts` — генерация URL для 7 локалей × все страницы
   - **Файл:** `app/sitemap.ts`
   - **Изменения:** Добавить `pl`, `de`, `it` в массив локалей для генерации
   - **Результат:** 84 URL в sitemap (12 страниц × 7 языков)
 
-- [ ] **reg-08**: Обновить `robots.txt` — если есть динамическая генерация
+- [x] **reg-08**: Обновить `robots.txt` — если есть динамическая генерация
   - **Файл:** `app/robots.ts` или `public/robots.txt`
   - **Проверить:** sitemap URL корректный
 
-- [ ] **reg-09**: Обновить `<html lang>` — корректный lang атрибут для каждой локали
+- [x] **reg-09**: Обновить `<html lang>` — корректный lang атрибут для каждой локали
   - **Файл:** `app/[locale]/layout.tsx`
   - **Маппинг:** `pl → "pl"`, `de → "de"`, `it → "it"`
   - **Проверить:** уже работает динамически через `params.locale`
 
-- [ ] **reg-10**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
+- [x] **reg-10**: Билд-проверка — `npm run build` + `npm run lint` без ошибок
   - **Ожидание:** 84 маршрута генерируются успешно
   - **Время билда:** может увеличиться (мониторить)
 
 ---
 
-## 22.2 Переводы — Польский язык (pl) [0/12]
+## 22.2 Переводы — Польский язык (pl) [12/12] ✅
 
 > **Стратегия перевода:** Базой служит `en.json`. Перевод должен быть нативным (не "гугл-переводчик"), с учётом маркетингового тона сайта. Рекомендуется привлечь нативного спикера для ревью или использовать Crowdin с AI + human review.
 
-- [ ] **reg-11**: Перевод `common` — навигация, footer, CTA, кнопки общие
+- [x] **reg-11**: Перевод `common` — навигация, footer, CTA, кнопки общие
   - **Файл:** `messages/pl.json` → секция `nav`, `footer`, `cta`, `buttons`, `common`
   - **Ключи:** ~50 (nav items, footer links, CTA тексты, "Подробнее", "Отправить", "Назад" и т.д.)
   - **Контекст:** UI элементы — короткие, ёмкие переводы
 
-- [ ] **reg-12**: Перевод `pages.home` — главная страница (hero, services, process, benefits, FAQ, CTA)
+- [x] **reg-12**: Перевод `pages.home` — главная страница (hero, services, process, benefits, FAQ, CTA)
   - **Файл:** `messages/pl.json` → секция `pages.home`
   - **Ключи:** ~80 (hero title/description, 6 услуг, 5 шагов процесса, benefits, FAQ items)
   - **ВАЖНО:** Hero title — маркетинговый, адаптировать под польский рынок, не дословный перевод
 
-- [ ] **reg-13**: Перевод `pages.about` — страница "О нас"
+- [x] **reg-13**: Перевод `pages.about` — страница "О нас"
   - **Файл:** `messages/pl.json` → секция `pages.about`
   - **Ключи:** ~30 (hero, approach, values array, principles array, achievements array, CTA)
 
-- [ ] **reg-14**: Перевод `pages.services` — страница услуг (пакеты, сравнение)
+- [x] **reg-14**: Перевод `pages.services` — страница услуг (пакеты, сравнение)
   - **Файл:** `messages/pl.json` → секция `pages.services`
   - **Ключи:** ~60 (caption, title, 4 пакета × features[], idealFor[], timeline, comparison table)
   - **ВАЖНО:** Названия пакетов адаптировать (Expert → Expert, E-commerce → E-commerce — оставить англ. или перевести?)
 
-- [ ] **reg-15**: Перевод `pages.contacts` — контакты + форма
+- [x] **reg-15**: Перевод `pages.contacts` — контакты + форма
   - **Файл:** `messages/pl.json` → секция `pages.contacts`
   - **Ключи:** ~25 (описание, поля формы, placeholders, success/error messages, brief CTA)
 
-- [ ] **reg-16**: Перевод `pages.brief` — бриф-форма
+- [x] **reg-16**: Перевод `pages.brief` — бриф-форма
   - **Файл:** `messages/pl.json` → секция `pages.brief`
   - **Ключи:** ~30 (steps array, поля формы, placeholders, success/error, consent текст)
 
-- [ ] **reg-17**: Перевод `pages.privacy` — политика конфиденциальности
+- [x] **reg-17**: Перевод `pages.privacy` — политика конфиденциальности
   - **Файл:** `messages/pl.json` → секция `pages.privacy`
   - **Ключи:** ~40 (заголовки, sections array с content[] — юридический текст)
   - **ВАЖНО:** Юридические формулировки должны соответствовать польскому праву (RODO — польская имплементация GDPR)
 
-- [ ] **reg-18**: Перевод `pages.terms` — условия использования
+- [x] **reg-18**: Перевод `pages.terms` — условия использования
   - **Файл:** `messages/pl.json` → секция `pages.terms`
   - **Ключи:** ~40 (заголовки, sections array с content[])
   - **ВАЖНО:** Юридические формулировки для польской юрисдикции
 
-- [ ] **reg-19**: Перевод `pages.appDev` — страница разработки приложений
+- [x] **reg-19**: Перевод `pages.appDev` — страница разработки приложений
   - **Файл:** `messages/pl.json` → секция `pages.appDev`
   - **Ключи:** ~50 (hero, 3 блока "зачем", 3 типа приложений, 6 направлений, 5 шагов процесса)
 
-- [ ] **reg-20**: Перевод `error` + `notFound` — страницы ошибок
+- [x] **reg-20**: Перевод `error` + `notFound` — страницы ошибок
   - **Файл:** `messages/pl.json` → секции `error`, `notFound`
   - **Ключи:** ~15 (заголовки, описания, кнопки, ссылки)
 
-- [ ] **reg-21**: Перевод `blog` + `cases` — листинги блога и кейсов
+- [x] **reg-21**: Перевод `blog` + `cases` — листинги блога и кейсов
   - **Файл:** `messages/pl.json` → секции `pages.blog`, `pages.cases`
   - **Ключи:** ~20 (заголовки, фильтры, "Читать далее", "Все кейсы" и т.д.)
 
-- [ ] **reg-22**: Перевод metadata — SEO title + description для ВСЕХ страниц
+- [x] **reg-22**: Перевод metadata — SEO title + description для ВСЕХ страниц
   - **Файл:** `messages/pl.json` → секция `metadata` (или inline в каждой странице)
   - **Ключи:** 12 страниц × 2 (title + description) = ~24 ключа
   - **Требования:** title до 60 символов, description до 160 символов, с ключевыми словами для польского рынка
 
 ---
 
-## 22.3 Переводы — Немецкий язык (de) [0/12]
+## 22.3 Переводы — Немецкий язык (de) [12/12] ✅
 
 > **Особенности немецкого:** Формальное обращение (Sie), длинные составные слова, точная юридическая терминология (DSGVO = GDPR по-немецки).
 
-- [ ] **reg-23**: Перевод `common` — навигация, footer, CTA, кнопки
+- [x] **reg-23**: Перевод `common` — навигация, footer, CTA, кнопки
   - **Файл:** `messages/de.json` → секция `nav`, `footer`, `cta`, `buttons`, `common`
   - **Ключи:** ~50
   - **Тон:** Формальный (Sie-Form), профессиональный
 
-- [ ] **reg-24**: Перевод `pages.home` — главная страница
+- [x] **reg-24**: Перевод `pages.home` — главная страница
   - **Файл:** `messages/de.json` → секция `pages.home`
   - **Ключи:** ~80
   - **ВАЖНО:** Немецкий рынок ценит надёжность и качество — адаптировать messaging
 
-- [ ] **reg-25**: Перевод `pages.about` — "Über uns"
+- [x] **reg-25**: Перевод `pages.about` — "Über uns"
   - **Файл:** `messages/de.json` → секция `pages.about`
   - **Ключи:** ~30
 
-- [ ] **reg-26**: Перевод `pages.services` — "Leistungen"
+- [x] **reg-26**: Перевод `pages.services` — "Leistungen"
   - **Файл:** `messages/de.json` → секция `pages.services`
   - **Ключи:** ~60
   - **ВАЖНО:** Цены будут подставляться динамически из pricing config — НЕ хардкодить валюту в переводах
 
-- [ ] **reg-27**: Перевод `pages.contacts` — "Kontakt"
+- [x] **reg-27**: Перевод `pages.contacts` — "Kontakt"
   - **Файл:** `messages/de.json` → секция `pages.contacts`
   - **Ключи:** ~25
 
-- [ ] **reg-28**: Перевод `pages.brief` — "Briefing"
+- [x] **reg-28**: Перевод `pages.brief` — "Briefing"
   - **Файл:** `messages/de.json` → секция `pages.brief`
   - **Ключи:** ~30
 
-- [ ] **reg-29**: Перевод `pages.privacy` — "Datenschutzerklärung"
+- [x] **reg-29**: Перевод `pages.privacy` — "Datenschutzerklärung"
   - **Файл:** `messages/de.json` → секция `pages.privacy`
   - **Ключи:** ~40
   - **КРИТИЧЕСКИ ВАЖНО:** Немецкие Datenschutzerklärung имеют СТРОГИЕ юридические требования. Упоминать DSGVO (не GDPR), BfDI как надзорный орган, TDDDG для cookies
 
-- [ ] **reg-30**: Перевод `pages.terms` — "Nutzungsbedingungen"
+- [x] **reg-30**: Перевод `pages.terms` — "Nutzungsbedingungen"
   - **Файл:** `messages/de.json` → секция `pages.terms`
   - **Ключи:** ~40
   - **Требования:** Немецкое право, Impressum-требования
 
-- [ ] **reg-31**: Перевод `pages.appDev` — "App-Entwicklung"
+- [x] **reg-31**: Перевод `pages.appDev` — "App-Entwicklung"
   - **Файл:** `messages/de.json` → секция `pages.appDev`
   - **Ключи:** ~50
 
-- [ ] **reg-32**: Перевод `error` + `notFound` — "Fehler" / "Seite nicht gefunden"
+- [x] **reg-32**: Перевод `error` + `notFound` — "Fehler" / "Seite nicht gefunden"
   - **Файл:** `messages/de.json` → секции `error`, `notFound`
   - **Ключи:** ~15
 
-- [ ] **reg-33**: Перевод `blog` + `cases` — "Blog" / "Referenzen"
+- [x] **reg-33**: Перевод `blog` + `cases` — "Blog" / "Referenzen"
   - **Файл:** `messages/de.json` → секции `pages.blog`, `pages.cases`
   - **Ключи:** ~20
 
-- [ ] **reg-34**: Перевод metadata — SEO для немецкого рынка
+- [x] **reg-34**: Перевод metadata — SEO для немецкого рынка
   - **Файл:** `messages/de.json` → секция `metadata`
   - **Ключи:** ~24
   - **SEO:** Немецкие ключевые слова: "Webentwicklung", "Webdesign Agentur", "Website erstellen lassen"
 
 ---
 
-## 22.4 Переводы — Итальянский язык (it) [0/12]
+## 22.4 Переводы — Итальянский язык (it) [12/12] ✅
 
 > **Особенности итальянского:** Формальное обращение (Lei), эмоциональный маркетинговый тон, юридическая терминология (Garante per la protezione dei dati personali).
 
-- [ ] **reg-35**: Перевод `common` — навигация, footer, CTA, кнопки
+- [x] **reg-35**: Перевод `common` — навигация, footer, CTA, кнопки
   - **Файл:** `messages/it.json` → секция `nav`, `footer`, `cta`, `buttons`, `common`
   - **Ключи:** ~50
 
-- [ ] **reg-36**: Перевод `pages.home` — "Home" / "Pagina principale"
+- [x] **reg-36**: Перевод `pages.home` — "Home" / "Pagina principale"
   - **Файл:** `messages/it.json` → секция `pages.home`
   - **Ключи:** ~80
   - **ВАЖНО:** Итальянский маркетинг — более эмоциональный и вдохновляющий тон
 
-- [ ] **reg-37**: Перевод `pages.about` — "Chi siamo"
+- [x] **reg-37**: Перевод `pages.about` — "Chi siamo"
   - **Файл:** `messages/it.json` → секция `pages.about`
   - **Ключи:** ~30
 
-- [ ] **reg-38**: Перевод `pages.services` — "Servizi"
+- [x] **reg-38**: Перевод `pages.services` — "Servizi"
   - **Файл:** `messages/it.json` → секция `pages.services`
   - **Ключи:** ~60
 
-- [ ] **reg-39**: Перевод `pages.contacts` — "Contatti"
+- [x] **reg-39**: Перевод `pages.contacts` — "Contatti"
   - **Файл:** `messages/it.json` → секция `pages.contacts`
   - **Ключи:** ~25
 
-- [ ] **reg-40**: Перевод `pages.brief` — "Brief"
+- [x] **reg-40**: Перевод `pages.brief` — "Brief"
   - **Файл:** `messages/it.json` → секция `pages.brief`
   - **Ключи:** ~30
 
-- [ ] **reg-41**: Перевод `pages.privacy` — "Informativa sulla privacy"
+- [x] **reg-41**: Перевод `pages.privacy` — "Informativa sulla privacy"
   - **Файл:** `messages/it.json` → секция `pages.privacy`
   - **Ключи:** ~40
   - **ВАЖНО:** Ссылка на Garante, итальянские требования Codice Privacy (D.Lgs. 196/2003)
 
-- [ ] **reg-42**: Перевод `pages.terms` — "Termini di utilizzo"
+- [x] **reg-42**: Перевод `pages.terms` — "Termini di utilizzo"
   - **Файл:** `messages/it.json` → секция `pages.terms`
   - **Ключи:** ~40
 
-- [ ] **reg-43**: Перевод `pages.appDev` — "Sviluppo app"
+- [x] **reg-43**: Перевод `pages.appDev` — "Sviluppo app"
   - **Файл:** `messages/it.json` → секция `pages.appDev`
   - **Ключи:** ~50
 
-- [ ] **reg-44**: Перевод `error` + `notFound` — "Errore" / "Pagina non trovata"
+- [x] **reg-44**: Перевод `error` + `notFound` — "Errore" / "Pagina non trovata"
   - **Файл:** `messages/it.json` → секции `error`, `notFound`
   - **Ключи:** ~15
 
-- [ ] **reg-45**: Перевод `blog` + `cases` — "Blog" / "Casi studio"
+- [x] **reg-45**: Перевод `blog` + `cases` — "Blog" / "Casi studio"
   - **Файл:** `messages/it.json` → секции `pages.blog`, `pages.cases`
   - **Ключи:** ~20
 
-- [ ] **reg-46**: Перевод metadata — SEO для итальянского рынка
+- [x] **reg-46**: Перевод metadata — SEO для итальянского рынка
   - **Файл:** `messages/it.json` → секция `metadata`
   - **Ключи:** ~24
   - **SEO:** Итальянские ключевые слова: "sviluppo siti web", "agenzia web", "creazione siti internet"
@@ -1983,7 +1983,7 @@
 > **Технология:** Vercel Edge Middleware автоматически добавляет заголовок `x-vercel-ip-country` (ISO 3166-1 alpha-2). Точность на уровне страны — 99%+. VPN-пользователи получат регион VPN-сервера — это ожидаемое поведение, не баг.
 > **Принцип:** Регион определяется ОДИН раз при первом визите и сохраняется в cookie на 1 год. Пользователь НЕ может сменить регион вручную.
 
-- [ ] **reg-47**: Создать конфигурацию регионов — маппинг стран к регионам и валютам
+- [x] **reg-47**: Создать конфигурацию регионов — маппинг стран к регионам и валютам
   - **Файл:** `lib/regions.ts` (НОВЫЙ)
   - **Содержание:**
     ```typescript
@@ -2007,7 +2007,7 @@
     ```
   - **Экспорт:** `getRegionByCountry()`, `REGIONS`, `RegionCode` тип
 
-- [ ] **reg-48**: Обновить middleware — гео-детекция и установка cookie региона
+- [x] **reg-48**: Обновить middleware — гео-детекция и установка cookie региона
   - **Файл:** `middleware.ts`
   - **Логика:**
     1. Проверить наличие cookie `user-region`
@@ -2022,7 +2022,7 @@
     - `httpOnly`: `false` (нужен доступ из клиентского JS)
   - **ВАЖНО:** НЕ перезаписывать существующий cookie (регион не меняется)
 
-- [ ] **reg-49**: Создать RegionProvider — React Context для доступа к региону в компонентах
+- [x] **reg-49**: Создать RegionProvider — React Context для доступа к региону в компонентах
   - **Файл:** `components/providers/RegionProvider.tsx` (НОВЫЙ)
   - **Содержание:**
     ```typescript
