@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { BrokenText } from "../ui/BrokenText";
 import { LanguageSwitcher } from "../ui/LanguageSwitcher";
+import { CurrencyBadge } from "../ui/CurrencyBadge";
 import { NavLink } from "./NavLink";
 import { NAV_ITEMS, CONTACT } from "@/lib/constants";
 
@@ -124,6 +125,12 @@ export function Header({
 
           {/* Right side: lang switcher + email + menu toggle */}
           <div className="flex items-center gap-6">
+            {/* Currency Badge — desktop only */}
+            <CurrencyBadge
+              variant={isMenuOpen ? "dark" : "light"}
+              className="hidden lg:inline-flex"
+            />
+
             {/* Language Switcher — desktop only */}
             <LanguageSwitcher
               variant={isMenuOpen ? "dark" : "light"}

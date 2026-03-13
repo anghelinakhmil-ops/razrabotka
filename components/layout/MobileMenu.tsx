@@ -5,6 +5,7 @@ import { useEffect, useCallback, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "../ui/LanguageSwitcher";
+import { CurrencyBadge } from "../ui/CurrencyBadge";
 import { NAV_ITEMS, CONTACT } from "@/lib/constants";
 
 interface MobileMenuProps {
@@ -152,7 +153,10 @@ export function MobileMenu({
             transitionDelay: isOpen ? `${100 + NAV_ITEMS.length * 50}ms` : "0ms",
           }}
         >
-          <LanguageSwitcher variant="dark" mode="inline" className="mb-6" />
+          <div className="flex items-center gap-4 mb-6">
+            <LanguageSwitcher variant="dark" mode="inline" />
+            <CurrencyBadge variant="dark" />
+          </div>
           <a
             href={`mailto:${CONTACT.email}`}
             tabIndex={isOpen ? 0 : -1}
