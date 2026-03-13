@@ -1,88 +1,88 @@
 {
   "meta": {
-    "siteTitle": "NAKO Agency | Turnkey Website Development",
-    "siteDescription": "We build turnkey websites for experts, businesses and e-commerce that help attract leads, sell services and convert traffic into clients.",
-    "ogTitle": "NAKO Agency | Turnkey Websites for Business & Experts",
-    "ogDescription": "Strategy, design and development in one solution. Websites for experts, businesses, e-commerce, courses and events.",
-    "keywords": "website development, web design, web studio, turnkey website, landing page, online store, expert website, business website, app development"
+    "siteTitle": "NAKO Agency | Tworzenie stron internetowych pod klucz",
+    "siteDescription": "Tworzymy strony internetowe pod klucz dla ekspertów, firm i e-commerce, które pomagają pozyskiwać leady, sprzedawać usługi i zamieniać ruch w klientów.",
+    "ogTitle": "NAKO Agency | Strony internetowe pod klucz dla biznesu i ekspertów",
+    "ogDescription": "Strategia, design i rozwój w jednym rozwiązaniu. Strony dla ekspertów, firm, e-commerce, kursów i wydarzeń.",
+    "keywords": "tworzenie stron internetowych, projektowanie stron, studio webowe, strona pod klucz, landing page, sklep internetowy, strona eksperta, strona firmowa, tworzenie aplikacji"
   },
   "nav": {
-    "home": "Home",
-    "about": "About",
-    "services": "Services",
-    "appDev": "Apps",
-    "cases": "Cases",
+    "home": "Strona główna",
+    "about": "O nas",
+    "services": "Usługi",
+    "appDev": "Aplikacje",
+    "cases": "Realizacje",
     "blog": "Blog",
-    "contacts": "Contacts"
+    "contacts": "Kontakt"
   },
   "header": {
     "menuOpen": "Menu",
-    "menuClose": "Close",
-    "ariaOpenMenu": "Open menu",
-    "ariaCloseMenu": "Close menu"
+    "menuClose": "Zamknij",
+    "ariaOpenMenu": "Otwórz menu",
+    "ariaCloseMenu": "Zamknij menu"
   },
   "hero": {
-    "caption": "Full-cycle agency",
-    "line1": "WEBSITE",
-    "line2": "DEVELOPMENT",
-    "line3": "TURNKEY",
-    "subtitle": "We build websites for",
-    "subtitleExperts": "experts",
+    "caption": "Agencja pełnego cyklu",
+    "line1": "TWORZENIE",
+    "line2": "STRON",
+    "line3": "POD KLUCZ",
+    "subtitle": "Tworzymy strony dla",
+    "subtitleExperts": "ekspertów",
     "subtitleEcommerce": "e-commerce",
-    "subtitleBusiness": "businesses",
-    "subtitleCourses": "courses",
-    "subtitleEvents": "events",
-    "offer": "Helping attract leads, sell services and convert traffic into clients",
-    "cta": "Discuss project",
-    "ctaCases": "View cases"
+    "subtitleBusiness": "firm",
+    "subtitleCourses": "kursów",
+    "subtitleEvents": "wydarzeń",
+    "offer": "Pomagamy pozyskiwać leady, sprzedawać usługi i zamieniać ruch w klientów",
+    "cta": "Omów projekt",
+    "ctaCases": "Zobacz realizacje"
   },
   "benefits": {
-    "caption": "Why us",
-    "title": "BENEFITS",
+    "caption": "Dlaczego my",
+    "title": "ZALETY",
     "items": [
       {
         "number": "01",
-        "title": "RESULTS",
-        "subtitle": "Websites for business results",
-        "description": "We build websites not for beauty, but for leads, sales and trust. Every element works towards conversion and commercial results."
+        "title": "REZULTATY",
+        "subtitle": "Strony nastawione na wyniki biznesowe",
+        "description": "Tworzymy strony nie dla piękna, lecz dla leadów, sprzedaży i zaufania. Każdy element pracuje na konwersję i wyniki komercyjne."
       },
       {
         "number": "02",
-        "title": "FULL CYCLE",
-        "subtitle": "From brief to support",
-        "description": "Strategy, structure, copy, design, development, content, integrations, launch and support — all in one place. No need to find separate contractors."
+        "title": "PEŁNY CYKL",
+        "subtitle": "Od briefu do wsparcia",
+        "description": "Strategia, struktura, teksty, design, rozwój, treści, integracje, uruchomienie i wsparcie — wszystko w jednym miejscu. Nie trzeba szukać osobnych wykonawców."
       },
       {
         "number": "03",
-        "title": "PRESENTATION",
-        "subtitle": "Premium design + sales logic",
-        "description": "We combine stylish visual presentation with a well-thought-out structure and conversion logic. Premium, calm, modern — without unnecessary noise."
+        "title": "PREZENTACJA",
+        "subtitle": "Premium design + logika sprzedaży",
+        "description": "Łączymy stylową prezentację wizualną z przemyślaną strukturą i logiką konwersji. Premium, spokojny, nowoczesny — bez zbędnego szumu."
       },
       {
         "number": "04",
-        "title": "INTEGRATIONS",
-        "subtitle": "We integrate your website into business processes",
-        "description": "CRM, Telegram, email, analytics, payments — we connect everything needed so your website works as part of your system, not just a business card."
+        "title": "INTEGRACJE",
+        "subtitle": "Integrujemy stronę z procesami biznesowymi",
+        "description": "CRM, Telegram, email, analityka, płatności — podłączamy wszystko, co potrzebne, aby strona działała jako część systemu, a nie tylko wizytówka."
       },
       {
         "number": "05",
-        "title": "SUPPORT",
-        "subtitle": "We stay after launch",
-        "description": "We don't abandon you after delivery. Bugfixes, minor edits, consultations, monthly support — choose a convenient support format."
+        "title": "WSPARCIE",
+        "subtitle": "Zostajemy po uruchomieniu",
+        "description": "Nie zostawiamy Państwa po oddaniu projektu. Poprawki, drobne zmiany, konsultacje, wsparcie miesięczne — wybierz wygodny format współpracy."
       }
     ]
   },
   "metrics": {
-    "caption": "In numbers",
-    "title": "RESULTS",
+    "caption": "W liczbach",
+    "title": "REZULTATY",
     "items": [
       {
         "value": "7–21",
-        "label": "days to launch"
+        "label": "dni do uruchomienia"
       },
       {
         "value": "30–120",
-        "label": "to conversion",
+        "label": "do konwersji",
         "prefix": "+",
         "suffix": "%"
       },
@@ -92,578 +92,578 @@
       },
       {
         "value": "0",
-        "label": "templates used"
+        "label": "użytych szablonów"
       }
     ]
   },
   "services": {
-    "caption": "Directions",
-    "title": "SERVICES",
+    "caption": "Kierunki",
+    "title": "USŁUGI",
     "items": [
       {
-        "title": "Expert websites",
-        "description": "Websites for experts, consultants, mentors and specialists who need a strong personal brand and a flow of leads.",
+        "title": "Strony dla ekspertów",
+        "description": "Strony dla ekspertów, konsultantów, mentorów i specjalistów, którzy potrzebują silnej marki osobistej i stałego przepływu leadów.",
         "features": [
-          "Personal brand",
-          "Portfolio & cases",
-          "Lead forms",
-          "CRM & analytics"
+          "Marka osobista",
+          "Portfolio i realizacje",
+          "Formularze leadowe",
+          "CRM i analityka"
         ],
-        "ctaText": "Learn more"
+        "ctaText": "Dowiedz się więcej"
       },
       {
-        "title": "Business websites",
-        "description": "Websites for companies, studios and local businesses to present services, build trust and attract clients.",
+        "title": "Strony firmowe",
+        "description": "Strony dla firm, studiów i lokalnych biznesów do prezentacji usług, budowania zaufania i pozyskiwania klientów.",
         "features": [
-          "Service presentation",
-          "Case study pages",
-          "Forms & integrations",
-          "SEO optimization"
+          "Prezentacja usług",
+          "Strony realizacji",
+          "Formularze i integracje",
+          "Optymalizacja SEO"
         ],
-        "ctaText": "Learn more"
+        "ctaText": "Dowiedz się więcej"
       },
       {
-        "title": "Landing pages",
-        "description": "Landing pages for services, products, advertising, launches and special offers.",
+        "title": "Landing page",
+        "description": "Strony docelowe dla usług, produktów, reklamy, premier i ofert specjalnych.",
         "features": [
-          "High conversion",
-          "CTA blocks & forms",
+          "Wysoka konwersja",
+          "Bloki CTA i formularze",
           "Analytics & Pixel",
-          "Quick launch"
+          "Szybki start"
         ],
-        "ctaText": "Learn more"
+        "ctaText": "Dowiedz się więcej"
       },
       {
-        "title": "Online stores",
-        "description": "User-friendly online stores with well-thought-out structure, catalog, product cards and purchase logic.",
+        "title": "Sklepy internetowe",
+        "description": "Wygodne sklepy internetowe z przemyślaną strukturą, katalogiem, kartami produktów i logiką zakupów.",
         "features": [
-          "Catalog & filters",
-          "Cart & payments",
-          "CRM integration",
-          "E-commerce analytics"
+          "Katalog i filtry",
+          "Koszyk i płatności",
+          "Integracja z CRM",
+          "Analityka e-commerce"
         ],
-        "ctaText": "Learn more"
+        "ctaText": "Dowiedz się więcej"
       },
       {
-        "title": "Course websites",
-        "description": "Websites for educational projects, online courses and schools with clear structure and strong presentation.",
+        "title": "Strony kursów",
+        "description": "Strony dla projektów edukacyjnych, kursów online i szkół z klarowną strukturą i mocną prezentacją.",
         "features": [
-          "Course program",
-          "Pricing & payments",
-          "Sales funnel",
-          "Email & Telegram"
+          "Program kursu",
+          "Cennik i płatności",
+          "Lejek sprzedażowy",
+          "Email i Telegram"
         ],
-        "ctaText": "Learn more"
+        "ctaText": "Dowiedz się więcej"
       },
       {
-        "title": "Event websites",
-        "description": "Websites for events, conferences, presentations, workshops and special projects.",
+        "title": "Strony wydarzeń",
+        "description": "Strony dla wydarzeń, konferencji, prezentacji, warsztatów i projektów specjalnych.",
         "features": [
-          "Program & speakers",
-          "Registration",
-          "Extended CTAs",
-          "Event analytics"
+          "Program i prelegenci",
+          "Rejestracja",
+          "Rozbudowane CTA",
+          "Analityka wydarzeń"
         ],
-        "ctaText": "Learn more"
+        "ctaText": "Dowiedz się więcej"
       }
     ]
   },
   "process": {
-    "caption": "Full cycle",
-    "title": "HOW WE WORK",
+    "caption": "Pełny cykl",
+    "title": "JAK PRACUJEMY",
     "steps": [
       {
         "number": "01",
-        "title": "Strategy & Brief",
-        "description": "We analyze your goals, audience, and positioning. Fill out the brief, define website objectives and key result metrics."
+        "title": "Strategia i brief",
+        "description": "Analizujemy cele, grupę docelową i pozycjonowanie. Wypełniamy brief, określamy cele strony i kluczowe wskaźniki efektywności."
       },
       {
         "number": "02",
-        "title": "Structure & Prototype",
-        "description": "We design site architecture, user scenarios, and wireframes. Align on logic and navigation before moving to design."
+        "title": "Struktura i prototyp",
+        "description": "Projektujemy architekturę strony, scenariusze użytkownika i wireframe. Uzgadniamy logikę i nawigację przed przejściem do designu."
       },
       {
         "number": "03",
         "title": "Design",
-        "description": "We create an individual visual style. Every screen is a thoughtful composition with attention to typography and detail."
+        "description": "Tworzymy indywidualny styl wizualny. Każdy ekran to przemyślana kompozycja z dbałością o typografię i detale."
       },
       {
         "number": "04",
-        "title": "Development & Integrations",
-        "description": "We build on Next.js with focus on speed and SEO. Connect CRM, Telegram, email, analytics, and payments."
+        "title": "Rozwój i integracje",
+        "description": "Budujemy na Next.js z naciskiem na szybkość i SEO. Podłączamy CRM, Telegram, email, analitykę i płatności."
       },
       {
         "number": "05",
-        "title": "Content & Copy",
-        "description": "We fill the site with content: text, photos, media. Help with messaging, copywriting, and visual selection."
+        "title": "Treści i teksty",
+        "description": "Wypełniamy stronę treścią: teksty, zdjęcia, media. Pomagamy z komunikacją, copywritingiem i doborem wizualizacji."
       },
       {
         "number": "06",
-        "title": "Testing",
-        "description": "We test on all devices and browsers. Check forms, integrations, user scenarios, and performance."
+        "title": "Testowanie",
+        "description": "Testujemy na wszystkich urządzeniach i przeglądarkach. Sprawdzamy formularze, integracje, scenariusze użytkownika i wydajność."
       },
       {
         "number": "07",
-        "title": "Launch",
-        "description": "We deploy to production, set up domain, SSL, and analytics. Hand over access, documentation, and train you on site management."
+        "title": "Uruchomienie",
+        "description": "Wdrażamy na produkcję, konfigurujemy domenę, SSL i analitykę. Przekazujemy dostępy, dokumentację i szkolimy z zarządzania stroną."
       },
       {
         "number": "08",
-        "title": "Support",
-        "description": "We stay in touch after launch. Bug fixes, updates, minor edits, and project development within a support package."
+        "title": "Wsparcie",
+        "description": "Pozostajemy w kontakcie po uruchomieniu. Poprawki, aktualizacje, drobne zmiany i rozwój projektu w ramach pakietu wsparcia."
       }
     ]
   },
   "casesPreview": {
     "caption": "Portfolio",
-    "title": "CASES",
-    "viewAll": "All cases",
-    "viewCase": "View case",
+    "title": "REALIZACJE",
+    "viewAll": "Wszystkie realizacje",
+    "viewCase": "Zobacz realizację",
     "items": [
       {
         "slug": "expert-coach",
-        "title": "Personal coach website",
-        "category": "Expert",
-        "result": "+180% leads",
-        "imageAlt": "Personal coach website — project preview"
+        "title": "Strona coacha personalnego",
+        "category": "Ekspert",
+        "result": "+180% leadów",
+        "imageAlt": "Strona coacha personalnego — podgląd projektu"
       },
       {
         "slug": "ecommerce-fashion",
-        "title": "Fashion online store",
+        "title": "Sklep z modą online",
         "category": "E-commerce",
         "result": "3.2s LCP",
-        "imageAlt": "Fashion online store — project preview"
+        "imageAlt": "Sklep z modą online — podgląd projektu"
       },
       {
         "slug": "landing-saas",
-        "title": "SaaS product landing",
+        "title": "Landing produktu SaaS",
         "category": "Landing",
-        "result": "8.5% conversion",
-        "imageAlt": "SaaS product landing — project preview"
+        "result": "8.5% konwersji",
+        "imageAlt": "Landing produktu SaaS — podgląd projektu"
       },
       {
         "slug": "expert-psychologist",
-        "title": "Psychologist website",
-        "category": "Expert",
-        "result": "+240% bookings",
-        "imageAlt": "Psychologist website — project preview"
+        "title": "Strona psychologa",
+        "category": "Ekspert",
+        "result": "+240% rezerwacji",
+        "imageAlt": "Strona psychologa — podgląd projektu"
       },
       {
         "slug": "ecommerce-cosmetics",
-        "title": "Cosmetics store",
+        "title": "Sklep kosmetyczny",
         "category": "E-commerce",
         "result": "95 Lighthouse",
-        "imageAlt": "Cosmetics store — project preview"
+        "imageAlt": "Sklep kosmetyczny — podgląd projektu"
       },
       {
         "slug": "landing-event",
-        "title": "Event promo page",
+        "title": "Strona promocyjna wydarzenia",
         "category": "Landing",
-        "result": "1200+ registrations",
-        "imageAlt": "Event promo page — project preview"
+        "result": "1200+ rejestracji",
+        "imageAlt": "Strona promocyjna wydarzenia — podgląd projektu"
       }
     ]
   },
   "testimonials": {
-    "caption": "Clients",
-    "title": "REVIEWS",
-    "cta": "Become the next satisfied client",
-    "projectLabel": "Project",
+    "caption": "Klienci",
+    "title": "OPINIE",
+    "cta": "Zostań kolejnym zadowolonym klientem",
+    "projectLabel": "Projekt",
     "items": [
       {
         "name": "Anna Kovaleva",
-        "role": "Psychologist, private practice",
-        "quote": "The website paid for itself in the first month. Bookings tripled, and clients come already 'warm' — they've read everything about me on the site.",
-        "project": "Psychologist website"
+        "role": "Psycholog, praktyka prywatna",
+        "quote": "Strona zwróciła się w pierwszym miesiącu. Rezerwacji przybyło trzykrotnie, a klienci przychodzą już \"rozgrzani\" — przeczytali o mnie wszystko na stronie.",
+        "project": "Strona psychologa"
       },
       {
         "name": "Maxim Petrov",
-        "role": "Founder, FLAVOR cosmetics",
-        "quote": "Finally the store works fast. Before, clients left because of slow loading. Now conversion has grown by 40%.",
-        "project": "Online store"
+        "role": "Założyciel, kosmetyki FLAVOR",
+        "quote": "Wreszcie sklep działa szybko. Wcześniej klienci odchodzili z powodu wolnego ładowania. Teraz konwersja wzrosła o 40%.",
+        "project": "Sklep internetowy"
       },
       {
         "name": "Elena Sokolova",
-        "role": "Business coach",
-        "quote": "Really liked the approach — not just a pretty picture, but a thought-out structure. Every block works for conversion.",
-        "project": "Personal website"
+        "role": "Coach biznesowy",
+        "quote": "Bardzo spodobało mi się podejście — nie tylko ładny obrazek, ale przemyślana struktura. Każdy blok pracuje na konwersję.",
+        "project": "Strona osobista"
       },
       {
         "name": "Dmitry Volkov",
         "role": "CEO, TechStart",
-        "quote": "Launched the landing in 2 weeks. Quality on par with top agencies, but without their budgets and bureaucracy.",
+        "quote": "Landing uruchomiony w 2 tygodnie. Jakość na poziomie czołowych agencji, ale bez ich budżetów i biurokracji.",
         "project": "SaaS Landing"
       },
       {
         "name": "Olga Mironova",
-        "role": "Owner, yoga studio",
-        "quote": "The website captures the studio atmosphere perfectly. Minimalism, space, calm — exactly what was needed.",
-        "project": "Studio website"
+        "role": "Właścicielka, studio jogi",
+        "quote": "Strona doskonale oddaje atmosferę studia. Minimalizm, przestrzeń, spokój — dokładnie to, czego potrzebowaliśmy.",
+        "project": "Strona studia"
       }
     ]
   },
   "trustedBy": {
-    "title": "Trusted by"
+    "title": "Zaufali nam"
   },
   "faq": {
-    "caption": "Answers",
+    "caption": "Odpowiedzi",
     "title": "FAQ",
-    "ctaTitle": "Still have questions?",
-    "ctaSubtitle": "Contact us — we'll reply within an hour",
-    "ctaButton": "Submit request",
+    "ctaTitle": "Masz jeszcze pytania?",
+    "ctaSubtitle": "Skontaktuj się z nami — odpowiemy w ciągu godziny",
+    "ctaButton": "Wyślij zapytanie",
     "items": [
       {
-        "question": "How long does development take?",
-        "answer": "Timelines depend on project complexity. Landing page — up to 14 days, expert website — up to 21 days, online store — up to 45 days. Exact timelines are discussed after filling out the brief."
+        "question": "Ile trwa realizacja?",
+        "answer": "Terminy zależą od złożoności projektu. Landing page — do 14 dni, strona eksperta — do 21 dni, sklep internetowy — do 45 dni. Dokładne terminy ustalamy po wypełnieniu briefu."
       },
       {
-        "question": "How much does a website cost? What affects the price?",
-        "answer": "Cost depends on website type, number of pages, design complexity, and integrations. Exact cost is calculated individually after filling out the brief."
+        "question": "Ile kosztuje strona? Co wpływa na cenę?",
+        "answer": "Koszt zależy od typu strony, liczby podstron, złożoności designu i integracji. Dokładna wycena jest przygotowywana indywidualnie po wypełnieniu briefu."
       },
       {
-        "question": "What's included in turnkey development?",
-        "answer": "Full cycle: brief and analytics, prototyping, unique design, responsive coding, basic SEO, analytics setup, testing and launch. You get a website ready to work."
+        "question": "Co wchodzi w skład realizacji pod klucz?",
+        "answer": "Pełny cykl: brief i analityka, prototypowanie, unikalny design, responsywne kodowanie, podstawowe SEO, konfiguracja analityki, testowanie i uruchomienie. Otrzymujesz stronę gotową do działania."
       },
       {
-        "question": "Do I need a domain and hosting?",
-        "answer": "Domain needs to be registered in advance or we'll help with selection and registration. Hosting — we use modern platforms (Vercel, Netlify) with free tiers for most projects."
+        "question": "Czy potrzebuję domeny i hostingu?",
+        "answer": "Domenę należy zarejestrować wcześniej lub pomożemy z wyborem i rejestracją. Hosting — korzystamy z nowoczesnych platform (Vercel, Netlify) z darmowymi planami dla większości projektów."
       },
       {
-        "question": "How many revisions are included?",
-        "answer": "Each stage includes a round of revisions: prototype, design, coding. Minor corrections — unlimited. Major concept changes are quoted separately."
+        "question": "Ile poprawek jest w cenie?",
+        "answer": "Każdy etap obejmuje rundę poprawek: prototyp, design, kodowanie. Drobne korekty — bez limitu. Większe zmiany koncepcyjne wyceniamy osobno."
       },
       {
-        "question": "Is there support after launch?",
-        "answer": "Yes, 30 days of free support after launch: bug fixes, minor edits, consultations. After that — by support agreement or on-demand."
+        "question": "Czy jest wsparcie po uruchomieniu?",
+        "answer": "Tak, 30 dni bezpłatnego wsparcia po uruchomieniu: poprawki błędów, drobne zmiany, konsultacje. Później — na podstawie umowy wsparcia lub na żądanie."
       },
       {
-        "question": "Will the website be SEO-optimized?",
-        "answer": "Basic SEO is included: semantic markup, meta tags, sitemap, robots.txt, image optimization, loading speed. Promotion and content marketing — separate service."
+        "question": "Czy strona będzie zoptymalizowana pod SEO?",
+        "answer": "Podstawowe SEO jest w cenie: semantyczny markup, meta tagi, sitemap, robots.txt, optymalizacja obrazów, szybkość ładowania. Promocja i content marketing — osobna usługa."
       },
       {
-        "question": "What integrations are possible?",
-        "answer": "Any: CRM (amoCRM, Bitrix24), payment systems (Stripe, PayPal), email newsletters, Telegram bots, booking calendars, analytics (GA4, etc.) and others on request."
+        "question": "Jakie integracje są możliwe?",
+        "answer": "Dowolne: CRM (amoCRM, Bitrix24), systemy płatności (Stripe, PayPal), newslettery email, boty Telegram, kalendarze rezerwacji, analityka (GA4 itp.) i inne na życzenie."
       },
       {
-        "question": "How does payment work?",
-        "answer": "In stages: 50% prepayment before starting, 50% after completion and acceptance. For large projects, splitting into 3 stages is possible. We work by contract."
+        "question": "Jak wygląda płatność?",
+        "answer": "Etapowo: 50% zaliczki przed rozpoczęciem, 50% po ukończeniu i odbiorze. Przy dużych projektach możliwy podział na 3 etapy. Pracujemy na podstawie umowy."
       },
       {
-        "question": "What if I don't like the design?",
-        "answer": "We approve each stage before moving to the next. If the design doesn't suit after the first iteration — we offer 2 alternative concepts. In case of complete disagreement — refund per contract."
+        "question": "Co jeśli design mi się nie spodoba?",
+        "answer": "Zatwierdzamy każdy etap przed przejściem do następnego. Jeśli design nie odpowiada po pierwszej iteracji — proponujemy 2 alternatywne koncepcje. W przypadku całkowitej niezgodności — zwrot zgodnie z umową."
       }
     ]
   },
   "leadForm": {
-    "title": "DISCUSS PROJECT",
-    "subtitle": "Leave your contacts — we'll get in touch within 2 hours during business hours",
-    "name": "Name",
-    "namePlaceholder": "Your name",
-    "phone": "Phone",
-    "phonePlaceholder": "+1 (___) ___-____",
+    "title": "OMÓW PROJEKT",
+    "subtitle": "Zostaw swoje dane kontaktowe — odezwiemy się w ciągu 2 godzin w godzinach pracy",
+    "name": "Imię",
+    "namePlaceholder": "Twoje imię",
+    "phone": "Telefon",
+    "phonePlaceholder": "+48 (___) ___-___",
     "email": "Email",
-    "emailHelper": "Or provide your email instead of phone",
-    "contactPlaceholder": "Phone or Telegram",
-    "submit": "Submit request",
-    "privacy": "By clicking the button, you agree to the",
-    "privacyLink": "privacy policy",
-    "successTitle": "Request sent!",
-    "successText": "We'll contact you shortly to discuss the project.",
-    "errorTitle": "Sending error",
-    "retry": "Try again",
-    "errorMessage": "Something went wrong. Please try again later.",
-    "briefCta": "Want to tell more about your project?",
-    "briefButton": "Fill out the brief",
+    "emailHelper": "Lub podaj email zamiast telefonu",
+    "contactPlaceholder": "Telefon lub Telegram",
+    "submit": "Wyślij zapytanie",
+    "privacy": "Klikając przycisk, wyrażasz zgodę na",
+    "privacyLink": "politykę prywatności",
+    "successTitle": "Zapytanie wysłane!",
+    "successText": "Skontaktujemy się wkrótce, aby omówić projekt.",
+    "errorTitle": "Błąd wysyłania",
+    "retry": "Spróbuj ponownie",
+    "errorMessage": "Coś poszło nie tak. Spróbuj ponownie później.",
+    "briefCta": "Chcesz opowiedzieć więcej o swoim projekcie?",
+    "briefButton": "Wypełnij brief",
     "validation": {
-      "nameMin": "Name must be at least 2 characters",
-      "contactMin": "Enter phone or Telegram"
+      "nameMin": "Imię musi mieć co najmniej 2 znaki",
+      "contactMin": "Podaj telefon lub Telegram"
     }
   },
   "footer": {
-    "cta": "DISCUSS PROJECT",
-    "ctaSubtitle": "Tell us about your project, and we'll suggest the best solution",
-    "ctaButton": "Fill out the brief",
-    "description": "We build modern turnkey websites for experts, businesses and digital projects, combining strategy, design and development in one solution.",
-    "navTitle": "Navigation",
-    "contactsTitle": "Contacts",
-    "legalTitle": "Information",
-    "copyright": "All rights reserved.",
-    "madeWith": "Made with",
-    "madeIn": "at",
-    "privacyLink": "Privacy Policy",
-    "termsLink": "Terms of Use"
+    "cta": "OMÓW PROJEKT",
+    "ctaSubtitle": "Opowiedz o swoim projekcie, a my zaproponujemy najlepsze rozwiązanie",
+    "ctaButton": "Wypełnij brief",
+    "description": "Tworzymy nowoczesne strony internetowe pod klucz dla ekspertów, firm i projektów cyfrowych, łącząc strategię, design i rozwój w jednym rozwiązaniu.",
+    "navTitle": "Nawigacja",
+    "contactsTitle": "Kontakt",
+    "legalTitle": "Informacje",
+    "copyright": "Wszelkie prawa zastrzeżone.",
+    "madeWith": "Wykonano z",
+    "madeIn": "w",
+    "privacyLink": "Polityka prywatności",
+    "termsLink": "Regulamin"
   },
   "cookieConsent": {
-    "text": "We use cookies for analytics and site improvement.",
-    "link": "Learn more",
-    "accept": "Accept",
-    "decline": "Decline",
-    "ariaLabel": "Cookie consent"
+    "text": "Używamy plików cookie do analityki i ulepszania strony.",
+    "link": "Dowiedz się więcej",
+    "accept": "Akceptuję",
+    "decline": "Odmawiam",
+    "ariaLabel": "Zgoda na pliki cookie"
   },
   "callbackModal": {
-    "title": "Request a call",
-    "description": "Leave your phone number and we'll call you back shortly to discuss your project.",
-    "name": "Name",
-    "namePlaceholder": "How should we address you",
-    "phone": "Phone",
-    "phonePlaceholder": "+1 (___) ___-____",
-    "submit": "Request a call",
-    "privacy": "By clicking the button, you agree to the",
-    "privacyLink": "privacy policy",
-    "successTitle": "Request sent!",
-    "successText": "We'll call you back shortly",
-    "close": "Close",
-    "newRequest": "New request",
-    "errorTitle": "Sending error",
-    "errorRetry": "Try again",
-    "errorMessage": "Something went wrong. Please try again later.",
-    "errorGeneric": "An error occurred. Please try again later."
+    "title": "Zamów rozmowę",
+    "description": "Zostaw numer telefonu, a oddzwonimy wkrótce, aby omówić projekt.",
+    "name": "Imię",
+    "namePlaceholder": "Jak się do Pana/Pani zwracać",
+    "phone": "Telefon",
+    "phonePlaceholder": "+48 (___) ___-___",
+    "submit": "Zamów rozmowę",
+    "privacy": "Klikając przycisk, wyrażasz zgodę na",
+    "privacyLink": "politykę prywatności",
+    "successTitle": "Zapytanie wysłane!",
+    "successText": "Oddzwonimy wkrótce",
+    "close": "Zamknij",
+    "newRequest": "Nowe zapytanie",
+    "errorTitle": "Błąd wysyłania",
+    "errorRetry": "Spróbuj ponownie",
+    "errorMessage": "Coś poszło nie tak. Spróbuj ponownie później.",
+    "errorGeneric": "Wystąpił błąd. Spróbuj ponownie później."
   },
   "notFound": {
-    "title": "Page not found",
-    "description": "The page may have been deleted or you followed an incorrect link. Check the address or return to the home page.",
-    "home": "Go to home",
-    "contact": "Contact us",
-    "lookingFor": "You might be looking for:",
-    "linkServices": "Services",
-    "linkCases": "Cases",
+    "title": "Strona nie znaleziona",
+    "description": "Strona mogła zostać usunięta lub podążyłeś za nieprawidłowym linkiem. Sprawdź adres lub wróć na stronę główną.",
+    "home": "Na stronę główną",
+    "contact": "Skontaktuj się z nami",
+    "lookingFor": "Być może szukasz:",
+    "linkServices": "Usługi",
+    "linkCases": "Realizacje",
     "linkBlog": "Blog",
-    "linkAbout": "About us"
+    "linkAbout": "O nas"
   },
   "error": {
-    "heading": "ERROR",
-    "title": "Something went wrong",
-    "description": "An unexpected error occurred. Try refreshing the page or go back to the home page.",
-    "retry": "Try again",
-    "home": "Go to home",
-    "devDetails": "Error details (development mode only)",
+    "heading": "BŁĄD",
+    "title": "Coś poszło nie tak",
+    "description": "Wystąpił nieoczekiwany błąd. Spróbuj odświeżyć stronę lub wróć na stronę główną.",
+    "retry": "Spróbuj ponownie",
+    "home": "Na stronę główną",
+    "devDetails": "Szczegóły błędu (tylko tryb deweloperski)",
     "digestLabel": "Digest",
-    "helpText": "If the error persists, contact us:"
+    "helpText": "Jeśli błąd się powtarza, skontaktuj się z nami:"
   },
   "common": {
-    "cta": "Discuss project",
-    "readMore": "Read more",
-    "back": "Back",
-    "submit": "Submit",
-    "loading": "Loading...",
-    "allArticles": "All articles",
-    "previousArticle": "Previous",
-    "nextArticle": "Next",
-    "readAlso": "Read more",
-    "needHelp": "Need help with a project?",
-    "needHelpSubtitle": "We'll apply this knowledge to your business. Want to discuss?",
-    "tableOfContents": "Contents",
+    "cta": "Omów projekt",
+    "readMore": "Czytaj więcej",
+    "back": "Wróć",
+    "submit": "Wyślij",
+    "loading": "Ładowanie...",
+    "allArticles": "Wszystkie artykuły",
+    "previousArticle": "Poprzedni",
+    "nextArticle": "Następny",
+    "readAlso": "Czytaj także",
+    "needHelp": "Potrzebujesz pomocy z projektem?",
+    "needHelpSubtitle": "Zastosujemy tę wiedzę w Twoim biznesie. Chcesz porozmawiać?",
+    "tableOfContents": "Spis treści",
     "filters": {
-      "all": "All",
-      "expert": "Expert",
+      "all": "Wszystko",
+      "expert": "Ekspert",
       "ecommerce": "E-commerce",
       "landing": "Landing",
-      "development": "Development",
+      "development": "Rozwój",
       "design": "Design",
       "marketing": "Marketing",
-      "business": "Business"
+      "business": "Biznes"
     },
-    "noResults": "No results found",
-    "close": "Close"
+    "noResults": "Brak wyników",
+    "close": "Zamknij"
   },
   "pages": {
     "about": {
-      "metaTitle": "About Us | NAKO Agency",
-      "metaDescription": "A web studio focused on results. We build websites for experts, e-commerce and business. Learn about our approach, values and work principles.",
-      "heroCaption": "Introduction",
-      "heroTitle": "ABOUT US",
-      "heroDescription": "We are an agency that builds modern turnkey websites for experts, businesses and digital projects, combining strategy, design and development in one solution. Our goal is to make websites not just visually beautiful, but commercially strong and working for leads.",
-      "approachCaption": "Philosophy",
-      "approachTitle": "APPROACH",
-      "approachText1": "We build websites not for the sake of having one, but for business results. Every project starts with understanding your goals and audience.",
-      "approachText2": "Full cycle: from brief and messaging to launch and support. Strategy → Structure → Design → Development → Content → Launch.",
-      "approachText3": "Premium visual presentation with sales and conversion logic. We remove the unnecessary to leave what converts visitors into clients.",
-      "approachVisualLabel": "Strategy first",
-      "valuesCaption": "What we believe in",
-      "valuesTitle": "VALUES",
+      "metaTitle": "O nas | NAKO Agency",
+      "metaDescription": "Studio webowe nastawione na wyniki. Tworzymy strony dla ekspertów, e-commerce i biznesu. Poznaj nasze podejście, wartości i zasady pracy.",
+      "heroCaption": "Wprowadzenie",
+      "heroTitle": "O NAS",
+      "heroDescription": "Jesteśmy agencją, która tworzy nowoczesne strony internetowe pod klucz dla ekspertów, firm i projektów cyfrowych, łącząc strategię, design i rozwój w jednym rozwiązaniu. Naszym celem jest tworzenie stron nie tylko wizualnie pięknych, ale komercyjnie silnych i pracujących na leady.",
+      "approachCaption": "Filozofia",
+      "approachTitle": "PODEJŚCIE",
+      "approachText1": "Tworzymy strony nie po to, żeby były, ale dla wyników biznesowych. Każdy projekt zaczyna się od zrozumienia celów i grupy docelowej.",
+      "approachText2": "Pełny cykl: od briefu i komunikacji po uruchomienie i wsparcie. Strategia → Struktura → Design → Rozwój → Treści → Uruchomienie.",
+      "approachText3": "Premium prezentacja wizualna z logiką sprzedaży i konwersji. Usuwamy zbędne, aby pozostało to, co zamienia odwiedzających w klientów.",
+      "approachVisualLabel": "Strategia na pierwszym miejscu",
+      "valuesCaption": "W co wierzymy",
+      "valuesTitle": "WARTOŚCI",
       "values": [
         {
           "number": "01",
-          "title": "Results",
-          "description": "A website is a tool. Beauty without conversion is meaningless. We create what works."
+          "title": "Rezultaty",
+          "description": "Strona to narzędzie. Piękno bez konwersji nie ma sensu. Tworzymy to, co działa."
         },
         {
           "number": "02",
-          "title": "Transparency",
-          "description": "Fixed timelines, clear stages, regular reports. You always know where the project stands."
+          "title": "Przejrzystość",
+          "description": "Ustalone terminy, jasne etapy, regularne raporty. Zawsze wiesz, na jakim etapie jest projekt."
         },
         {
           "number": "03",
-          "title": "Quality",
-          "description": "Clean code, fast loading, SEO out of the box. We do it right so it doesn't need redoing."
+          "title": "Jakość",
+          "description": "Czysty kod, szybkie ładowanie, SEO od razu. Robimy dobrze, żeby nie trzeba było przerabiać."
         },
         {
           "number": "04",
-          "title": "Partnership",
-          "description": "Not contractors, but partners. We advise, suggest, and debate — if it's in the project's interest."
+          "title": "Partnerstwo",
+          "description": "Nie wykonawcy, a partnerzy. Doradzamy, proponujemy i dyskutujemy — jeśli to w interesie projektu."
         }
       ],
-      "principlesCaption": "How we work",
-      "principlesTitle": "PRINCIPLES",
+      "principlesCaption": "Jak pracujemy",
+      "principlesTitle": "ZASADY",
       "principles": [
         {
-          "title": "Strategy first",
-          "description": "We don't start design until we understand goals and audience."
+          "title": "Strategia na pierwszym miejscu",
+          "description": "Nie zaczynamy designu, dopóki nie zrozumiemy celów i grupy docelowej."
         },
         {
-          "title": "Less is more",
-          "description": "Every element must work. Decoration for decoration's sake is not our way."
+          "title": "Mniej znaczy więcej",
+          "description": "Każdy element musi pracować. Dekoracja dla samej dekoracji to nie nasza droga."
         },
         {
           "title": "Mobile-first",
-          "description": "60%+ traffic is mobile. Phone first, then desktop."
+          "description": "60%+ ruchu to urządzenia mobilne. Najpierw telefon, potem desktop."
         },
         {
-          "title": "Speed is critical",
-          "description": "Lighthouse 90+ is the standard. Fast site = more conversions."
+          "title": "Szybkość jest kluczowa",
+          "description": "Lighthouse 90+ to standard. Szybka strona = więcej konwersji."
         },
         {
-          "title": "SEO from day one",
-          "description": "Not 'we'll fix it later', but right away: semantics, meta tags, structure."
+          "title": "SEO od pierwszego dnia",
+          "description": "Nie \"poprawimy później\", ale od razu: semantyka, meta tagi, struktura."
         },
         {
-          "title": "Support included",
-          "description": "30 days after launch. Bugs, edits, questions — we handle it."
+          "title": "Wsparcie w cenie",
+          "description": "30 dni po uruchomieniu. Błędy, poprawki, pytania — zajmujemy się tym."
         }
       ],
-      "achievementsCaption": "In numbers",
-      "achievementsTitle": "ACHIEVEMENTS",
+      "achievementsCaption": "W liczbach",
+      "achievementsTitle": "OSIĄGNIĘCIA",
       "achievements": [
         {
           "value": "50+",
-          "label": "Projects"
+          "label": "Projektów"
         },
         {
           "value": "3",
-          "label": "Years of experience"
+          "label": "Lata doświadczenia"
         },
         {
           "value": "95%",
-          "label": "Satisfied clients"
+          "label": "Zadowolonych klientów"
         },
         {
           "value": "90+",
           "label": "Lighthouse Score"
         }
       ],
-      "ctaTitle": "LET'S START?",
-      "ctaDescription": "Tell us about your project — we'll discuss how we can help.",
-      "ctaCta": "Discuss project",
-      "ctaCases": "View cases",
-      "ctaServices": "View services"
+      "ctaTitle": "ZACZYNAMY?",
+      "ctaDescription": "Opowiedz o swoim projekcie — omówimy, jak możemy pomóc.",
+      "ctaCta": "Omów projekt",
+      "ctaCases": "Zobacz realizacje",
+      "ctaServices": "Zobacz usługi"
     },
     "contacts": {
-      "metaTitle": "Contacts | NAKO Agency",
-      "metaDescription": "Contact NAKO Agency by email. We respond within 2 hours.",
-      "caption": "Contact us",
-      "title": "CONTACTS",
-      "description": "Ready to discuss your project? Contact us in any convenient way or leave a request — we'll respond within 2 hours.",
+      "metaTitle": "Kontakt | NAKO Agency",
+      "metaDescription": "Skontaktuj się z NAKO Agency przez email. Odpowiadamy w ciągu 2 godzin.",
+      "caption": "Skontaktuj się",
+      "title": "KONTAKT",
+      "description": "Gotowy omówić swój projekt? Skontaktuj się z nami w dowolny wygodny sposób lub zostaw zapytanie — odpowiemy w ciągu 2 godzin.",
       "emailTitle": "Email",
-      "emailDescription": "For inquiries and proposals",
-      "responseTitle": "Response time",
-      "responseDescription": "We're in touch",
-      "responseTime": "Within 2 hours",
-      "responseNote": "We respond to all requests during business hours",
-      "formTitle": "Write to us",
-      "formDescription": "Describe your project — we'll respond within 2 hours",
-      "formName": "Name",
-      "formNamePlaceholder": "How should we address you",
+      "emailDescription": "Zapytania i propozycje",
+      "responseTitle": "Czas odpowiedzi",
+      "responseDescription": "Jesteśmy w kontakcie",
+      "responseTime": "W ciągu 2 godzin",
+      "responseNote": "Odpowiadamy na wszystkie zapytania w godzinach pracy",
+      "formTitle": "Napisz do nas",
+      "formDescription": "Opisz swój projekt — odpowiemy w ciągu 2 godzin",
+      "formName": "Imię",
+      "formNamePlaceholder": "Jak się do Pana/Pani zwracać",
       "formEmail": "Email",
       "formEmailPlaceholder": "email@example.com",
-      "formPhone": "Phone",
-      "formPhonePlaceholder": "+1 (___) ___-____",
-      "formMessage": "Message",
-      "formMessagePlaceholder": "Tell us about your project...",
-      "formSubmit": "Send message",
-      "formPrivacy": "By clicking the button, you agree to the",
-      "formPrivacyLink": "privacy policy",
-      "successTitle": "Message sent",
-      "successText": "We'll contact you shortly",
-      "successRetry": "Send another",
-      "errorTitle": "Sending error",
-      "errorRetry": "Try again",
-      "briefTitle": "Prefer a detailed brief?",
-      "briefDescription": "Fill out the extended form with a project description — so we can prepare a personalized offer.",
-      "briefButton": "Fill out the brief",
-      "ctaServices": "View services"
+      "formPhone": "Telefon",
+      "formPhonePlaceholder": "+48 (___) ___-___",
+      "formMessage": "Wiadomość",
+      "formMessagePlaceholder": "Opowiedz o swoim projekcie...",
+      "formSubmit": "Wyślij wiadomość",
+      "formPrivacy": "Klikając przycisk, wyrażasz zgodę na",
+      "formPrivacyLink": "politykę prywatności",
+      "successTitle": "Wiadomość wysłana",
+      "successText": "Skontaktujemy się wkrótce",
+      "successRetry": "Wyślij kolejną",
+      "errorTitle": "Błąd wysyłania",
+      "errorRetry": "Spróbuj ponownie",
+      "briefTitle": "Wolisz szczegółowy brief?",
+      "briefDescription": "Wypełnij rozszerzony formularz z opisem projektu — dzięki temu przygotujemy spersonalizowaną ofertę.",
+      "briefButton": "Wypełnij brief",
+      "ctaServices": "Zobacz usługi"
     },
     "services": {
-      "metaTitle": "Services | NAKO Agency",
-      "metaDescription": "Service packages: expert websites, online stores, landing pages, business websites, courses, events. Three levels: Start, Standard, Pro.",
-      "caption": "Services & Packages",
-      "title": "SERVICES",
-      "description": "Six directions, three packages each. Choose the project type and the right level — from a quick launch to full business packaging.",
+      "metaTitle": "Usługi | NAKO Agency",
+      "metaDescription": "Pakiety usług: strony dla ekspertów, sklepy internetowe, landing page, strony firmowe, kursy, wydarzenia. Trzy poziomy: Start, Standard, Pro.",
+      "caption": "Usługi i Pakiety",
+      "title": "USŁUGI",
+      "description": "Sześć kierunków, trzy pakiety w każdym. Wybierz typ projektu i odpowiedni poziom — od szybkiego startu po pełne opakowanie biznesowe.",
       "regionToggle": {
-        "ukraine": "Ukraine",
-        "europe": "Europe"
+        "ukraine": "Ukraina",
+        "europe": "Europa"
       },
       "tierLabels": {
         "start": "Start",
         "standard": "Standard",
         "pro": "Pro"
       },
-      "recommended": "Recommended",
+      "recommended": "Rekomendowany",
       "categories": [
         {
           "id": "experts",
-          "title": "Websites for Experts",
-          "description": "We build websites for experts, consultants, mentors, photographers, designers and specialists who need a strong personal brand and a flow of leads.",
+          "title": "Strony dla Ekspertów",
+          "description": "Tworzymy strony internetowe dla ekspertów, konsultantów, mentorów, fotografów, projektantów i specjalistów, którzy potrzebują silnej marki osobistej i stałego przepływu leadów.",
           "tiers": [
             {
               "tier": "start",
-              "audience": "For experts, consultants, mentors and specialists who need a quick basic launch",
+              "audience": "Dla ekspertów, konsultantów, mentorów i specjalistów, którzy potrzebują szybkiego podstawowego startu",
               "features": [
-                "1–3 pages",
-                "Basic structure",
-                "Custom design",
-                "Responsive layout",
-                "Contact form",
-                "Telegram/email integration",
-                "Basic analytics",
-                "Basic SEO"
+                "1–3 strony",
+                "Podstawowa struktura",
+                "Indywidualny design",
+                "Responsywny layout",
+                "Formularz kontaktowy",
+                "Integracja z Telegram/email",
+                "Podstawowa analityka",
+                "Podstawowe SEO"
               ],
-              "timeline": "2–3 weeks",
+              "timeline": "2–3 tygodnie",
               "priceUA": "€500–900",
               "priceEU": "€1,800–3,000"
             },
             {
               "tier": "standard",
-              "audience": "For experts who need a full website with strong presentation and trust",
+              "audience": "Dla ekspertów, którzy potrzebują pełnej strony z mocną prezentacją i budowaniem zaufania",
               "features": [
-                "4–7 pages",
-                "Thought-out structure",
-                "Custom design",
-                "CTA blocks",
-                "Contact forms",
-                "Analytics",
-                "Basic SEO",
-                "Content population",
-                "Basic integrations"
+                "4–7 stron",
+                "Przemyślana struktura",
+                "Indywidualny design",
+                "Bloki CTA",
+                "Formularze kontaktowe",
+                "Analityka",
+                "Podstawowe SEO",
+                "Wypełnienie treścią",
+                "Podstawowe integracje"
               ],
-              "timeline": "3–5 weeks",
+              "timeline": "3–5 tygodni",
               "priceUA": "€900–1,800",
               "priceEU": "€3,000–6,000"
             },
             {
               "tier": "pro",
-              "audience": "For experts and personal brands who need a strong image and sales website",
+              "audience": "Dla ekspertów i marek osobistych, które potrzebują mocnej wizerunkowej strony sprzedażowej",
               "features": [
-                "6–10+ pages",
-                "UX prototype",
-                "Strong personal brand packaging",
-                "Unique design",
-                "Animations",
-                "Advanced CTAs",
-                "CRM / Telegram / email integrations",
-                "Event analytics",
-                "Ad-ready setup"
+                "6–10+ stron",
+                "Prototyp UX",
+                "Mocne opakowanie marki osobistej",
+                "Unikalny design",
+                "Animacje",
+                "Zaawansowane CTA",
+                "Integracje CRM / Telegram / email",
+                "Analityka zdarzeń",
+                "Gotowość pod reklamy"
               ],
-              "timeline": "4–6 weeks",
+              "timeline": "4–6 tygodni",
               "priceUA": "€1,800–3,000",
               "priceEU": "€6,000–10,000"
             }
@@ -671,58 +671,58 @@
         },
         {
           "id": "business",
-          "title": "Websites for Business",
-          "description": "We create websites for companies, studios, local businesses and service projects to present services, build trust and attract clients.",
+          "title": "Strony dla Biznesu",
+          "description": "Tworzymy strony internetowe dla firm, studiów, lokalnych biznesów i projektów usługowych — do prezentacji oferty, budowania zaufania i pozyskiwania klientów.",
           "tiers": [
             {
               "tier": "start",
-              "audience": "For companies, studios and local businesses that need a basic service website",
+              "audience": "Dla firm, studiów i lokalnych biznesów, które potrzebują podstawowej strony usługowej",
               "features": [
-                "5–7 pages",
-                "Basic structure",
-                "Custom design",
-                "Responsive layout",
-                "Contact forms",
-                "Basic analytics",
-                "Basic SEO",
-                "Standard service blocks"
+                "5–7 stron",
+                "Podstawowa struktura",
+                "Indywidualny design",
+                "Responsywny layout",
+                "Formularze kontaktowe",
+                "Podstawowa analityka",
+                "Podstawowe SEO",
+                "Standardowe bloki usług"
               ],
-              "timeline": "3–5 weeks",
+              "timeline": "3–5 tygodni",
               "priceUA": "€650–1,300",
               "priceEU": "€2,500–5,000"
             },
             {
               "tier": "standard",
-              "audience": "For businesses that need a full website with service presentation and trust",
+              "audience": "Dla firm, które potrzebują pełnej strony z prezentacją usług i budowaniem zaufania",
               "features": [
-                "8–12 pages",
-                "Unique structure",
-                "CTA blocks",
-                "Service pages",
-                "Cases and reviews",
-                "Contact forms",
-                "Analytics",
-                "Basic SEO",
-                "Basic integrations"
+                "8–12 stron",
+                "Unikalna struktura",
+                "Bloki CTA",
+                "Strony usług",
+                "Realizacje i opinie",
+                "Formularze kontaktowe",
+                "Analityka",
+                "Podstawowe SEO",
+                "Podstawowe integracje"
               ],
-              "timeline": "4–7 weeks",
+              "timeline": "4–7 tygodni",
               "priceUA": "€1,300–2,800",
               "priceEU": "€5,000–10,000"
             },
             {
               "tier": "pro",
-              "audience": "For companies with complex structure, multiple directions and advanced functionality",
+              "audience": "Dla firm o złożonej strukturze, wielu kierunkach działalności i zaawansowanej funkcjonalności",
               "features": [
-                "10–20+ pages",
-                "UX prototype",
-                "Complex structure",
-                "Blog / news",
-                "Multilingual",
-                "CRM / email / Telegram integrations",
-                "Advanced analytics",
-                "Strong visual presentation"
+                "10–20+ stron",
+                "Prototyp UX",
+                "Złożona struktura",
+                "Blog / aktualności",
+                "Wielojęzyczność",
+                "Integracje CRM / email / Telegram",
+                "Zaawansowana analityka",
+                "Mocna prezentacja wizualna"
               ],
-              "timeline": "6–10 weeks",
+              "timeline": "6–10 tygodni",
               "priceUA": "€2,800–4,500",
               "priceEU": "€10,000–20,000"
             }
@@ -730,53 +730,53 @@
         },
         {
           "id": "landing",
-          "title": "Landing & Promo Pages",
-          "description": "We create landing pages for services, products, advertising, launches, special offers and events.",
+          "title": "Landing i Strony Promocyjne",
+          "description": "Tworzymy strony landing page dla usług, produktów, reklam, premier, ofert specjalnych i wydarzeń.",
           "tiers": [
             {
               "tier": "start",
-              "audience": "For a quick launch of a simple landing page",
+              "audience": "Do szybkiego uruchomienia prostego landing page",
               "features": [
-                "1 page",
-                "Basic structure",
-                "Responsive layout",
-                "Contact form",
+                "1 strona",
+                "Podstawowa struktura",
+                "Responsywny layout",
+                "Formularz kontaktowy",
                 "Telegram/email",
-                "Basic analytics"
+                "Podstawowa analityka"
               ],
-              "timeline": "1–2 weeks",
+              "timeline": "1–2 tygodnie",
               "priceUA": "€400–700",
               "priceEU": "€1,500–2,500"
             },
             {
               "tier": "standard",
-              "audience": "For advertising, service launch, product or special offer",
+              "audience": "Do reklamy, premiery usługi, produktu lub oferty specjalnej",
               "features": [
-                "Full landing page",
-                "Custom design",
-                "CTA blocks",
-                "Contact forms",
+                "Pełny landing page",
+                "Indywidualny design",
+                "Bloki CTA",
+                "Formularze kontaktowe",
                 "CRM/email",
                 "GA4/GTM/Pixel",
-                "Basic SEO"
+                "Podstawowe SEO"
               ],
-              "timeline": "2–4 weeks",
+              "timeline": "2–4 tygodnie",
               "priceUA": "€500–1,400",
               "priceEU": "€1,800–4,500"
             },
             {
               "tier": "pro",
-              "audience": "For strong offer packaging and higher conversion",
+              "audience": "Dla mocnego opakowania oferty i wyższej konwersji",
               "features": [
-                "UX prototype",
-                "Enhanced design",
-                "Animations",
+                "Prototyp UX",
+                "Rozbudowany design",
+                "Animacje",
                 "Micro-UX",
-                "Advanced event analytics",
-                "A/B test ready",
-                "Deep messaging strategy"
+                "Zaawansowana analityka zdarzeń",
+                "Gotowość pod testy A/B",
+                "Pogłębiona strategia komunikacji"
               ],
-              "timeline": "3–6 weeks",
+              "timeline": "3–6 tygodni",
               "priceUA": "€1,400–3,000",
               "priceEU": "€4,500–12,000"
             }
@@ -784,54 +784,54 @@
         },
         {
           "id": "ecommerce",
-          "title": "Online Stores",
-          "description": "We build user-friendly online stores with a well-thought-out structure, catalog, product cards and purchase logic.",
+          "title": "Sklepy Internetowe",
+          "description": "Budujemy przyjazne sklepy internetowe z przemyślaną strukturą, katalogiem, kartami produktów i logiką zakupową.",
           "tiers": [
             {
               "tier": "start",
-              "audience": "For a small store with basic sales functionality",
+              "audience": "Dla małego sklepu z podstawową funkcjonalnością sprzedaży",
               "features": [
-                "Product catalog",
-                "Product card",
-                "Shopping cart",
-                "Standard payment/delivery",
-                "Responsive layout",
-                "Basic analytics",
-                "Basic SEO"
+                "Katalog produktów",
+                "Karta produktu",
+                "Koszyk zakupowy",
+                "Standardowe płatności/dostawa",
+                "Responsywny layout",
+                "Podstawowa analityka",
+                "Podstawowe SEO"
               ],
-              "timeline": "5–8 weeks",
+              "timeline": "5–8 tygodni",
               "priceUA": "€2,500–4,500",
               "priceEU": "€10,000–20,000"
             },
             {
               "tier": "standard",
-              "audience": "For a full-featured online store with convenient purchase logic",
+              "audience": "Dla pełnowartościowego sklepu internetowego z wygodną logiką zakupową",
               "features": [
-                "Catalog with filters",
-                "Product cards",
-                "Cart and payment",
-                "Delivery",
-                "Basic admin panel",
-                "E-commerce analytics",
-                "Integrations as needed"
+                "Katalog z filtrami",
+                "Karty produktów",
+                "Koszyk i płatności",
+                "Dostawa",
+                "Podstawowy panel administracyjny",
+                "Analityka e-commerce",
+                "Integracje wg potrzeb"
               ],
-              "timeline": "6–12 weeks",
+              "timeline": "6–12 tygodni",
               "priceUA": "€4,500–7,000",
               "priceEU": "€20,000–40,000"
             },
             {
               "tier": "pro",
-              "audience": "For stores with complex structure and advanced functionality",
+              "audience": "Dla sklepów o złożonej strukturze i zaawansowanej funkcjonalności",
               "features": [
-                "Advanced filters and search",
-                "Personal account",
-                "User roles",
-                "CRM / ERP / PIM integrations",
-                "Performance optimization",
-                "Advanced analytics",
-                "Complex UX"
+                "Zaawansowane filtry i wyszukiwanie",
+                "Konto osobiste",
+                "Role użytkowników",
+                "Integracje CRM / ERP / PIM",
+                "Optymalizacja wydajności",
+                "Zaawansowana analityka",
+                "Złożony UX"
               ],
-              "timeline": "10–20+ weeks",
+              "timeline": "10–20+ tygodni",
               "priceUA": "€7,000–18,000",
               "priceEU": "€40,000–120,000"
             }
@@ -839,54 +839,54 @@
         },
         {
           "id": "courses",
-          "title": "Websites for Courses & Online Schools",
-          "description": "We create websites for educational projects, author programs, online courses and schools with clear structure and strong presentation.",
+          "title": "Strony dla Kursów i Szkół Online",
+          "description": "Tworzymy strony internetowe dla projektów edukacyjnych, autorskich programów, kursów online i szkół z czytelną strukturą i mocną prezentacją.",
           "tiers": [
             {
               "tier": "start",
-              "audience": "For launching a single course, program or cohort",
+              "audience": "Do uruchomienia pojedynczego kursu, programu lub edycji",
               "features": [
-                "Course landing page",
-                "Program description",
-                "Pricing tiers",
-                "Contact form",
+                "Landing page kursu",
+                "Opis programu",
+                "Pakiety cenowe",
+                "Formularz kontaktowy",
                 "Telegram/email",
-                "Basic analytics"
+                "Podstawowa analityka"
               ],
-              "timeline": "2–3 weeks",
+              "timeline": "2–3 tygodnie",
               "priceUA": "€500–1,000",
               "priceEU": "€1,800–3,500"
             },
             {
               "tier": "standard",
-              "audience": "For courses and educational projects with multiple content blocks",
+              "audience": "Dla kursów i projektów edukacyjnych z wieloma blokami treści",
               "features": [
-                "4–8 pages",
-                "Course program",
-                "Trust blocks",
+                "4–8 stron",
+                "Program kursu",
+                "Bloki zaufania",
                 "FAQ",
-                "Pricing tiers",
-                "Contact forms",
-                "Basic integrations",
-                "Analytics",
-                "Basic SEO"
+                "Pakiety cenowe",
+                "Formularze kontaktowe",
+                "Podstawowe integracje",
+                "Analityka",
+                "Podstawowe SEO"
               ],
-              "timeline": "3–5 weeks",
+              "timeline": "3–5 tygodni",
               "priceUA": "€1,000–2,200",
               "priceEU": "€3,500–7,000"
             },
             {
               "tier": "pro",
-              "audience": "For online schools and educational brands with a more complex funnel",
+              "audience": "Dla szkół online i marek edukacyjnych z bardziej złożonym lejkiem sprzedażowym",
               "features": [
-                "Multi-page website",
-                "Strong offer packaging",
-                "UX prototype",
-                "Thought-out funnel",
-                "CRM / email / Telegram / payment integrations",
-                "Event analytics"
+                "Wielostronicowa witryna",
+                "Mocne opakowanie oferty",
+                "Prototyp UX",
+                "Przemyślany lejek",
+                "Integracje CRM / email / Telegram / płatności",
+                "Analityka zdarzeń"
               ],
-              "timeline": "4–7 weeks",
+              "timeline": "4–7 tygodni",
               "priceUA": "€2,200–4,000",
               "priceEU": "€7,000–12,000"
             }
@@ -894,668 +894,668 @@
         },
         {
           "id": "events",
-          "title": "Event Websites",
-          "description": "We build websites for events, conferences, presentations, workshops and special projects.",
+          "title": "Strony Wydarzeń",
+          "description": "Budujemy strony internetowe dla wydarzeń, konferencji, prezentacji, warsztatów i projektów specjalnych.",
           "tiers": [
             {
               "tier": "start",
-              "audience": "For small events, workshops and local happenings",
+              "audience": "Dla małych wydarzeń, warsztatów i lokalnych imprez",
               "features": [
-                "One-page website",
-                "Date and program",
-                "Speakers",
-                "Registration",
-                "Map and contacts"
+                "Strona jednopodstronicowa",
+                "Data i program",
+                "Prelegenci",
+                "Rejestracja",
+                "Mapa i kontakty"
               ],
-              "timeline": "1–2 weeks",
+              "timeline": "1–2 tygodnie",
               "priceUA": "€400–800",
               "priceEU": "€1,500–3,000"
             },
             {
               "tier": "standard",
-              "audience": "For full-scale events, conferences and presentations",
+              "audience": "Dla pełnowymiarowych wydarzeń, konferencji i prezentacji",
               "features": [
-                "Event website",
+                "Strona wydarzenia",
                 "Program",
-                "Speakers and partners",
-                "Registration",
+                "Prelegenci i partnerzy",
+                "Rejestracja",
                 "FAQ",
-                "CTA blocks",
-                "Analytics",
-                "Responsive layout"
+                "Bloki CTA",
+                "Analityka",
+                "Responsywny layout"
               ],
-              "timeline": "2–4 weeks",
+              "timeline": "2–4 tygodnie",
               "priceUA": "€800–1,800",
               "priceEU": "€3,000–6,000"
             },
             {
               "tier": "pro",
-              "audience": "For events where strong presentation and advanced functionality matter",
+              "audience": "Dla wydarzeń, gdzie liczy się mocna prezentacja i zaawansowana funkcjonalność",
               "features": [
-                "UX prototype",
-                "Animations",
-                "Advanced CTAs",
-                "Registration / email / Telegram integrations",
-                "Event analytics"
+                "Prototyp UX",
+                "Animacje",
+                "Zaawansowane CTA",
+                "Integracje rejestracji / email / Telegram",
+                "Analityka zdarzeń"
               ],
-              "timeline": "3–5 weeks",
+              "timeline": "3–5 tygodni",
               "priceUA": "€1,800–3,000",
               "priceEU": "€6,000–10,000"
             }
           ]
         }
       ],
-      "timelineLabel": "Timeline",
-      "priceLabel": "Price",
-      "orderButton": "Discuss Project",
-      "featuresTitle": "What's Included",
-      "audienceTitle": "Who It's For",
+      "timelineLabel": "Termin realizacji",
+      "priceLabel": "Cena",
+      "orderButton": "Omów projekt",
+      "featuresTitle": "Co zawiera",
+      "audienceTitle": "Dla kogo",
       "additionalServices": {
-        "caption": "Additionally",
-        "title": "ADDITIONAL SERVICES",
+        "caption": "Dodatkowo",
+        "title": "USŁUGI DODATKOWE",
         "items": [
           {
-            "title": "CRM, Telegram, Email & Analytics Integration",
-            "description": "We connect the services you need so your website is integrated into your business processes"
+            "title": "Integracja CRM, Telegram, Email i Analityki",
+            "description": "Podłączamy potrzebne usługi, aby strona była zintegrowana z procesami biznesowymi"
           },
           {
-            "title": "Payment & Lead Form Setup",
-            "description": "We set up everything needed for convenient lead capture and payments"
+            "title": "Konfiguracja Płatności i Formularzy",
+            "description": "Ustawiamy wszystko, co potrzebne do wygodnego pozyskiwania leadów i przyjmowania płatności"
           },
           {
-            "title": "Website Content Population",
-            "description": "We help collect, format and place texts, photos and information on your website"
+            "title": "Wypełnienie Strony Treścią",
+            "description": "Pomagamy zebrać, sformatować i umieścić teksty, zdjęcia i informacje na stronie"
           },
           {
-            "title": "Post-Launch Technical Support",
-            "description": "We support the project after release within the agreed support format"
+            "title": "Wsparcie Techniczne po Uruchomieniu",
+            "description": "Wspieramy projekt po premierze w ramach ustalonego formatu wsparcia"
           }
         ]
       },
-      "priceNote": "Final price depends on website structure, number of pages, content volume, design level and required integrations.",
-      "detailsButton": "Learn More",
-      "appDevBanner": "We also develop mobile and web applications",
-      "appDevBannerCta": "Learn more",
-      "casesBanner": "See our completed projects",
-      "casesBannerCta": "View cases",
-      "formTitle": "DISCUSS A PROJECT",
-      "formSubtitle": "Not sure which package fits? Tell us about your project — we'll find the best solution.",
+      "priceNote": "Ostateczna cena zależy od struktury strony, liczby podstron, objętości treści, poziomu designu i wymaganych integracji.",
+      "detailsButton": "Dowiedz się więcej",
+      "appDevBanner": "Tworzymy również aplikacje mobilne i webowe",
+      "appDevBannerCta": "Dowiedz się więcej",
+      "casesBanner": "Zobacz nasze zrealizowane projekty",
+      "casesBannerCta": "Zobacz realizacje",
+      "formTitle": "OMÓW PROJEKT",
+      "formSubtitle": "Nie wiesz, który pakiet pasuje? Opowiedz nam o swoim projekcie — znajdziemy najlepsze rozwiązanie.",
       "support": {
-        "caption": "Support",
-        "title": "POST-LAUNCH SUPPORT",
-        "description": "Three monthly support packages — from basic monitoring to active priority support.",
-        "includedTitle": "Included with website package",
+        "caption": "Wsparcie",
+        "title": "WSPARCIE PO URUCHOMIENIU",
+        "description": "Trzy miesięczne pakiety wsparcia — od podstawowego monitoringu po aktywne wsparcie priorytetowe.",
+        "includedTitle": "W cenie pakietu strony",
         "includedItems": [
           {
             "tier": "Start",
-            "text": "14 days of bugfixes after launch"
+            "text": "14 dni poprawek po uruchomieniu"
           },
           {
             "tier": "Standard",
-            "text": "14–30 days of bugfixes after launch"
+            "text": "14–30 dni poprawek po uruchomieniu"
           },
           {
             "tier": "Pro",
-            "text": "30 days of bugfixes + priority support in the first month"
+            "text": "30 dni poprawek + priorytetowe wsparcie w pierwszym miesiącu"
           }
         ],
-        "monthlyTitle": "Monthly Support",
-        "perMonth": "/ mo",
+        "monthlyTitle": "Wsparcie Miesięczne",
+        "perMonth": "/ mies.",
         "packages": [
           {
             "tier": "start",
-            "name": "Support Start",
-            "audience": "For clients who need basic technical maintenance and occasional small fixes after launch",
+            "name": "Wsparcie Start",
+            "audience": "Dla klientów, którzy potrzebują podstawowej obsługi technicznej i drobnych poprawek po uruchomieniu",
             "features": [
-              "Website uptime monitoring",
-              "Monthly system updates",
-              "Backups and security",
-              "Small text and image edits",
-              "Contact, link, button updates",
-              "Form and submission checks",
-              "1 consultation per month",
-              "Monthly report"
+              "Monitoring dostępności strony",
+              "Comiesięczne aktualizacje systemu",
+              "Kopie zapasowe i bezpieczeństwo",
+              "Drobne zmiany tekstów i zdjęć",
+              "Aktualizacja kontaktów, linków, przycisków",
+              "Sprawdzanie formularzy i zgłoszeń",
+              "1 konsultacja miesięcznie",
+              "Raport miesięczny"
             ],
-            "limits": "up to 2 hrs / mo, up to 10 edits",
+            "limits": "do 2 godz. / mies., do 10 zmian",
             "priceUA": "€80–150",
             "priceEU": "€300–600"
           },
           {
             "tier": "standard",
-            "name": "Support Standard",
-            "audience": "For businesses that need regular maintenance, content updates and stable website operation",
+            "name": "Wsparcie Standard",
+            "audience": "Dla firm, które potrzebują regularnej konserwacji, aktualizacji treści i stabilnego działania strony",
             "features": [
-              "Everything in Support Start",
-              "Regular technical monitoring",
-              "Integration updates",
-              "Enhanced security monitoring",
-              "Page content updates",
-              "Standard block additions",
-              "News, cases, promotions publishing",
-              "Up to 2 consultations per month",
-              "Report with completed tasks"
+              "Wszystko z Wsparcia Start",
+              "Regularny monitoring techniczny",
+              "Aktualizacje integracji",
+              "Rozszerzone monitorowanie bezpieczeństwa",
+              "Aktualizacja treści na stronach",
+              "Dodawanie standardowych bloków",
+              "Publikacja aktualności, realizacji, promocji",
+              "Do 2 konsultacji miesięcznie",
+              "Raport z wykonanych zadań"
             ],
-            "limits": "up to 5 hrs / mo, up to 20 edits",
+            "limits": "do 5 godz. / mies., do 20 zmian",
             "priceUA": "€150–300",
             "priceEU": "€600–1,200"
           },
           {
             "tier": "pro",
-            "name": "Support Pro",
-            "audience": "For companies and projects that need active support, quick fixes and ongoing maintenance",
+            "name": "Wsparcie Pro",
+            "audience": "Dla firm i projektów wymagających aktywnego wsparcia, szybkich poprawek i bieżącej obsługi",
             "features": [
-              "Everything in Support Standard",
-              "Priority task processing",
-              "New standard section creation",
-              "Landing page assistance",
-              "CRM, forms, email, Telegram checks",
-              "Website improvement consultations",
-              "Report + recommendations"
+              "Wszystko z Wsparcia Standard",
+              "Priorytetowa realizacja zadań",
+              "Tworzenie nowych standardowych sekcji",
+              "Pomoc przy landing page",
+              "Sprawdzanie CRM, formularzy, email, Telegram",
+              "Konsultacje dotyczące ulepszania strony",
+              "Raport + rekomendacje"
             ],
-            "limits": "up to 10 hrs / mo, up to 40 edits",
+            "limits": "do 10 godz. / mies., do 40 zmian",
             "priceUA": "€300–500",
             "priceEU": "€1,200–2,000"
           }
         ],
-        "limitsLabel": "Limits"
+        "limitsLabel": "Limity"
       }
     },
     "brief": {
-      "metaTitle": "Brief — Submit Request | NAKO Agency",
-      "metaDescription": "Fill out the brief for website development. Tell us about your project — we'll prepare a personalized proposal with exact timelines and costs.",
-      "caption": "Submit request",
+      "metaTitle": "Brief — Złóż zapytanie | NAKO Agency",
+      "metaDescription": "Wypełnij brief na realizację strony internetowej. Opowiedz nam o swoim projekcie — przygotujemy spersonalizowaną ofertę z dokładnymi terminami i kosztami.",
+      "caption": "Złóż zapytanie",
       "title": "BRIEF",
-      "description": "Tell us about your project, goals, and preferences. The more details, the more accurate our estimate.",
+      "description": "Opowiedz nam o swoim projekcie, celach i preferencjach. Im więcej szczegółów, tym dokładniejsza wycena.",
       "steps": [
         {
-          "title": "Fill out the brief",
-          "description": "Tell us about the project, goals, and preferences"
+          "title": "Wypełnij brief",
+          "description": "Opowiedz o projekcie, celach i preferencjach"
         },
         {
-          "title": "We'll discuss details",
-          "description": "We'll contact you within 2 hours for clarification"
+          "title": "Omówimy szczegóły",
+          "description": "Skontaktujemy się w ciągu 2 godzin w celu doprecyzowania"
         },
         {
-          "title": "Get a proposal",
-          "description": "We'll prepare a personalized offer with prices and timelines"
+          "title": "Otrzymaj ofertę",
+          "description": "Przygotujemy spersonalizowaną propozycję z cenami i terminami"
         }
       ],
-      "sectionProject": "About the project",
-      "sectionContacts": "Contact details",
-      "sectionAdditional": "Additional",
-      "siteType": "Website type",
+      "sectionProject": "O projekcie",
+      "sectionContacts": "Dane kontaktowe",
+      "sectionAdditional": "Dodatkowe informacje",
+      "siteType": "Typ strony",
       "siteTypeOptions": [
-        "Select website type",
-        "Expert website / personal brand",
-        "Online store",
-        "Landing / promo page",
-        "Corporate website",
-        "Other"
+        "Wybierz typ strony",
+        "Strona eksperta / marka osobista",
+        "Sklep internetowy",
+        "Landing / strona promocyjna",
+        "Strona firmowa",
+        "Inny"
       ],
-      "goal": "Main goal",
+      "goal": "Główny cel",
       "goalOptions": [
-        "Website's main goal",
-        "Product/service sales",
-        "Lead collection",
-        "Image and brand awareness",
-        "Audience engagement",
-        "Other"
+        "Główny cel strony",
+        "Sprzedaż produktów/usług",
+        "Pozyskiwanie leadów",
+        "Wizerunek i rozpoznawalność marki",
+        "Angażowanie odbiorców",
+        "Inny"
       ],
-      "timeline": "Timeline",
+      "timeline": "Termin",
       "timelineOptions": [
-        "Desired timeline",
-        "Urgent (up to 2 weeks)",
-        "2–4 weeks",
-        "1–2 months",
-        "Not urgent, flexible"
+        "Pożądany termin",
+        "Pilne (do 2 tygodni)",
+        "2–4 tygodnie",
+        "1–2 miesiące",
+        "Niespiesznie, elastycznie"
       ],
-      "budget": "Budget",
+      "budget": "Budżet",
       "budgetOptions": [
-        "Approximate budget",
-        "Small",
-        "Medium",
-        "Large",
-        "Let's discuss"
+        "Przybliżony budżet",
+        "Mały",
+        "Średni",
+        "Duży",
+        "Do uzgodnienia"
       ],
-      "references": "References / competitors",
-      "referencesPlaceholder": "Links to websites you like...",
-      "referencesHelper": "Optional, but helps us better understand...",
-      "name": "Name",
-      "namePlaceholder": "How should we address you",
+      "references": "Referencje / konkurencja",
+      "referencesPlaceholder": "Linki do stron, które się Państwu podobają...",
+      "referencesHelper": "Opcjonalnie, ale pomoże nam lepiej zrozumieć...",
+      "name": "Imię",
+      "namePlaceholder": "Jak się do Państwa zwracać",
       "email": "Email",
       "emailPlaceholder": "email@example.com",
-      "phone": "Phone",
-      "phonePlaceholder": "+1 (___) ___-____",
+      "phone": "Telefon",
+      "phonePlaceholder": "+48 (___) ___-___",
       "telegram": "Telegram",
       "telegramPlaceholder": "@username",
-      "telegramHelper": "Optional — for quick communication",
-      "comment": "Comment",
-      "commentPlaceholder": "Tell us more about the project...",
-      "submit": "Submit brief",
-      "privacy": "By clicking the button, you agree to the",
-      "privacyLink": "privacy policy",
-      "successTitle": "Brief submitted!",
-      "successText1": "Thank you for your request. We'll review your project and contact you",
-      "successText2": "within 2 business hours.",
-      "successHome": "Go to home",
-      "errorTitle": "Sending error",
-      "errorRetry": "Try again",
-      "directContact": "Prefer direct communication?",
-      "directContactDescription": "Contact us in any convenient way — we're always in touch.",
-      "directContactEmail": "Write to us at"
+      "telegramHelper": "Opcjonalnie — dla szybszej komunikacji",
+      "comment": "Komentarz",
+      "commentPlaceholder": "Proszę opowiedzieć więcej o projekcie...",
+      "submit": "Wyślij brief",
+      "privacy": "Klikając przycisk, wyrażają Państwo zgodę na",
+      "privacyLink": "politykę prywatności",
+      "successTitle": "Brief wysłany!",
+      "successText1": "Dziękujemy za zapytanie. Przeanalizujemy Państwa projekt i skontaktujemy się",
+      "successText2": "w ciągu 2 godzin roboczych.",
+      "successHome": "Przejdź na stronę główną",
+      "errorTitle": "Błąd wysyłki",
+      "errorRetry": "Spróbuj ponownie",
+      "directContact": "Wolą Państwo bezpośredni kontakt?",
+      "directContactDescription": "Proszę się z nami skontaktować w dowolny wygodny sposób — zawsze jesteśmy w kontakcie.",
+      "directContactEmail": "Napisz do nas na"
     },
     "privacy": {
-      "metaTitle": "Privacy Policy | NAKO Agency",
-      "metaDescription": "NAKO Agency privacy policy. Information about collection, use and protection of personal data.",
-      "caption": "Legal information",
-      "heading1": "PRIVACY",
-      "heading2": "Policy",
-      "lastUpdated": "Last updated: January 19, 2026",
+      "metaTitle": "Polityka Prywatności | NAKO Agency",
+      "metaDescription": "Polityka prywatności NAKO Agency. Informacje o zbieraniu, wykorzystywaniu i ochronie danych osobowych.",
+      "caption": "Informacje prawne",
+      "heading1": "POLITYKA",
+      "heading2": "Prywatności",
+      "lastUpdated": "Ostatnia aktualizacja: 19 stycznia 2026",
       "sections": [
         {
           "number": "01",
-          "title": "General Provisions",
+          "title": "Postanowienia Ogólne",
           "content": [
-            "This Privacy Policy describes how NAKO Agency (hereinafter — \"we\", \"our\", \"Company\") collects, uses, and protects personal data of users of the website nakoagency.com (hereinafter — \"Website\").",
-            "By using the Website, you agree to the terms of this Policy. If you do not agree with the terms, please stop using the Website."
+            "Niniejsza Polityka Prywatności opisuje, w jaki sposób NAKO Agency (dalej — \"my\", \"nasz\", \"Firma\") zbiera, wykorzystuje i chroni dane osobowe użytkowników strony nakoagency.com (dalej — \"Strona\").",
+            "Korzystając ze Strony, wyrażają Państwo zgodę na warunki niniejszej Polityki. W przypadku braku zgody prosimy o zaprzestanie korzystania ze Strony."
           ]
         },
         {
           "number": "02",
-          "title": "Data We Collect",
+          "title": "Dane, Które Zbieramy",
           "content": [
-            "We may collect the following data:",
-            "Personal data provided by you: name, email address, phone number, Telegram username — when filling out forms on the Website.",
-            "Automatically collected data: IP address, browser type, device, pages visited, time spent on site — through cookies and analytics.",
-            "Data from third-party services: analytics data from Google Analytics, Vercel Analytics."
+            "Możemy zbierać następujące dane:",
+            "Dane osobowe podane przez Państwa: imię, adres email, numer telefonu, nazwa użytkownika Telegram — przy wypełnianiu formularzy na Stronie.",
+            "Dane zbierane automatycznie: adres IP, typ przeglądarki, urządzenie, odwiedzone strony, czas spędzony na stronie — za pomocą plików cookie i narzędzi analitycznych.",
+            "Dane z usług zewnętrznych: dane analityczne z Google Analytics, Vercel Analytics."
           ]
         },
         {
           "number": "03",
-          "title": "Purposes of Data Processing",
+          "title": "Cele Przetwarzania Danych",
           "content": [
-            "We use your data for:",
-            "Processing requests and applications submitted through Website forms.",
-            "Communicating with you regarding projects and services.",
-            "Improving the Website and user experience.",
-            "Analytics and statistical research.",
-            "Fulfilling legal obligations."
+            "Wykorzystujemy Państwa dane w celu:",
+            "Obsługi zapytań i zgłoszeń przesłanych przez formularze na Stronie.",
+            "Komunikacji z Państwem w sprawie projektów i usług.",
+            "Ulepszania Strony i doświadczeń użytkownika.",
+            "Analityki i badań statystycznych.",
+            "Wypełniania zobowiązań prawnych."
           ]
         },
         {
           "number": "04",
-          "title": "Legal Basis for Processing",
+          "title": "Podstawa Prawna Przetwarzania",
           "content": [
-            "Data processing is carried out on the basis of:",
-            "Your consent (when filling out forms).",
-            "Legitimate interest (improving service and analytics).",
-            "Contractual necessity (fulfilling service obligations).",
-            "Legal obligation (compliance with applicable law)."
+            "Przetwarzanie danych odbywa się na podstawie:",
+            "Państwa zgody (przy wypełnianiu formularzy).",
+            "Uzasadnionego interesu (poprawa usług i analityka).",
+            "Konieczności wykonania umowy (realizacja zobowiązań usługowych).",
+            "Obowiązku prawnego (zgodność z obowiązującym prawem)."
           ]
         },
         {
           "number": "05",
-          "title": "Sharing Data with Third Parties",
+          "title": "Udostępnianie Danych Osobom Trzecim",
           "content": [
-            "We do not sell your personal data. Data may be shared with:",
-            "Service providers: Vercel (hosting), Resend (email), Google (analytics).",
-            "Legal authorities: upon lawful request.",
-            "All third-party services comply with data protection standards."
+            "Nie sprzedajemy Państwa danych osobowych. Dane mogą być udostępniane:",
+            "Dostawcom usług: Vercel (hosting), Resend (email), Google (analityka).",
+            "Organom ścigania: na podstawie zgodnego z prawem żądania.",
+            "Wszystkie usługi zewnętrzne spełniają standardy ochrony danych."
           ]
         },
         {
           "number": "06",
-          "title": "Cookies",
+          "title": "Pliki cookie",
           "content": [
-            "The Website uses cookies for:",
-            "Ensuring proper Website functionality.",
-            "Analytics and traffic analysis.",
-            "Improving user experience.",
-            "You can disable cookies in your browser settings, but this may affect Website functionality."
+            "Strona internetowa wykorzystuje pliki cookie w celu:",
+            "Zapewnienia prawidłowego działania Strony.",
+            "Analityki i analizy ruchu.",
+            "Poprawy komfortu użytkowania.",
+            "Mogą Państwo wyłączyć pliki cookie w ustawieniach przeglądarki, jednak może to wpłynąć na funkcjonalność Strony."
           ]
         },
         {
           "number": "07",
-          "title": "Data Protection",
+          "title": "Ochrona danych",
           "content": [
-            "We take reasonable measures to protect your data:",
-            "Data encryption in transit (HTTPS/TLS).",
-            "Access restricted to authorized personnel only.",
-            "Regular security audits.",
-            "However, no method of data transmission over the Internet is 100% secure."
+            "Podejmujemy odpowiednie środki w celu ochrony Państwa danych:",
+            "Szyfrowanie danych podczas przesyłania (HTTPS/TLS).",
+            "Dostęp ograniczony wyłącznie do upoważnionego personelu.",
+            "Regularne audyty bezpieczeństwa.",
+            "Żadna metoda przesyłania danych przez Internet nie jest jednak w 100% bezpieczna."
           ]
         },
         {
           "number": "08",
-          "title": "Data Retention Period",
+          "title": "Okres przechowywania danych",
           "content": [
-            "Personal data is stored for the period necessary to fulfill the purposes stated in this Policy, but no longer than:",
-            "Application data — 2 years from the date of submission.",
-            "Analytics data — 14 months (Google Analytics standard).",
-            "Cookies — up to 1 year."
+            "Dane osobowe są przechowywane przez okres niezbędny do realizacji celów określonych w niniejszej Polityce, nie dłużej jednak niż:",
+            "Dane z formularzy — 2 lata od daty przesłania.",
+            "Dane analityczne — 14 miesięcy (standard Google Analytics).",
+            "Pliki cookie — do 1 roku."
           ]
         },
         {
           "number": "09",
-          "title": "Your Rights",
+          "title": "Państwa prawa",
           "content": [
-            "You have the right to:",
-            "Request access to your personal data.",
-            "Request correction of inaccurate data.",
-            "Request deletion of your data.",
-            "Withdraw consent to data processing.",
-            "File a complaint with the supervisory authority.",
-            "To exercise your rights, contact us at: hello@nakoagency.com"
+            "Mają Państwo prawo do:",
+            "Żądania dostępu do swoich danych osobowych.",
+            "Żądania sprostowania nieprawidłowych danych.",
+            "Żądania usunięcia swoich danych.",
+            "Wycofania zgody na przetwarzanie danych.",
+            "Złożenia skargi do organu nadzorczego.",
+            "W celu skorzystania ze swoich praw prosimy o kontakt: hello@nakoagency.com"
           ]
         },
         {
           "number": "10",
-          "title": "Changes to the Policy",
+          "title": "Zmiany w Polityce",
           "content": [
-            "We reserve the right to modify this Policy at any time. Changes take effect upon publication on the Website. We recommend periodically reviewing the current version.",
-            "The date of the last update is indicated at the top of the document."
+            "Zastrzegamy sobie prawo do zmiany niniejszej Polityki w dowolnym momencie. Zmiany wchodzą w życie z chwilą publikacji na Stronie. Zalecamy okresowe sprawdzanie aktualnej wersji.",
+            "Data ostatniej aktualizacji jest wskazana na początku dokumentu."
           ]
         },
         {
           "number": "11",
-          "title": "Contact Information",
+          "title": "Dane kontaktowe",
           "content": [
-            "If you have questions regarding this Policy, contact us:",
-            "Email: hello@nakoagency.com",
-            "Website: nakoagency.com"
+            "W przypadku pytań dotyczących niniejszej Polityki prosimy o kontakt:",
+            "E-mail: hello@nakoagency.com",
+            "Strona internetowa: nakoagency.com"
           ]
         }
       ],
-      "backLink": "Back to contacts"
+      "backLink": "Powrót do kontaktów"
     },
     "terms": {
-      "metaTitle": "Terms of Use | NAKO Agency",
-      "metaDescription": "Terms of use for NAKO Agency website. Site usage rules, liability limitations and dispute resolution.",
-      "caption": "Legal information",
-      "heading1": "TERMS",
-      "heading2": "of Use",
-      "lastUpdated": "Last updated: January 19, 2026",
+      "metaTitle": "Regulamin | NAKO Agency",
+      "metaDescription": "Regulamin korzystania ze strony NAKO Agency. Zasady korzystania, ograniczenia odpowiedzialności i rozstrzyganie sporów.",
+      "caption": "Informacje prawne",
+      "heading1": "REGULAMIN",
+      "heading2": "korzystania",
+      "lastUpdated": "Ostatnia aktualizacja: 19 stycznia 2026",
       "sections": [
         {
           "number": "01",
-          "title": "General Provisions",
+          "title": "Postanowienia ogólne",
           "content": [
-            "These Terms of Use (hereinafter — \"Terms\") govern the use of the website nakoagency.com (hereinafter — \"Website\") operated by NAKO Agency (hereinafter — \"Company\", \"we\", \"our\").",
-            "By accessing and using the Website, you agree to these Terms. If you do not agree, please stop using the Website."
+            "Niniejszy Regulamin korzystania (dalej — \"Regulamin\") określa zasady korzystania ze strony internetowej nakoagency.com (dalej — \"Strona\") prowadzonej przez NAKO Agency (dalej — \"Firma\", \"my\", \"nasz\").",
+            "Korzystając ze Strony, wyrażają Państwo zgodę na niniejszy Regulamin. W przypadku braku akceptacji prosimy o zaprzestanie korzystania ze Strony."
           ]
         },
         {
           "number": "02",
-          "title": "Description of Services",
+          "title": "Opis usług",
           "content": [
-            "The Company provides turnkey website development services, including:",
-            "Website strategy and planning.",
-            "UI/UX design.",
-            "Frontend and backend development.",
-            "SEO optimization.",
-            "Technical support and maintenance.",
-            "Detailed description of services and conditions is provided during individual consultation."
+            "Firma świadczy kompleksowe usługi tworzenia stron internetowych, w tym:",
+            "Strategia i planowanie strony internetowej.",
+            "Projektowanie UI/UX.",
+            "Programowanie frontend i backend.",
+            "Optymalizacja SEO.",
+            "Wsparcie techniczne i utrzymanie.",
+            "Szczegółowy opis usług i warunków jest przedstawiany podczas indywidualnej konsultacji."
           ]
         },
         {
           "number": "03",
-          "title": "Website Usage",
+          "title": "Korzystanie ze Strony",
           "content": [
-            "When using the Website, you agree to:",
-            "Provide accurate information when filling out forms.",
-            "Not use the Website for illegal purposes.",
-            "Not attempt to gain unauthorized access to the Website or its systems.",
-            "Not distribute malicious software through the Website.",
-            "Not copy, modify, or distribute Website content without written permission."
+            "Korzystając ze Strony, zobowiązują się Państwo do:",
+            "Podawania prawdziwych informacji podczas wypełniania formularzy.",
+            "Niekorzystania ze Strony w celach niezgodnych z prawem.",
+            "Niepodejmowania prób uzyskania nieautoryzowanego dostępu do Strony lub jej systemów.",
+            "Nierozpowszechniania złośliwego oprogramowania za pośrednictwem Strony.",
+            "Niekopiowania, niemodyfikowania ani nierozpowszechniania treści Strony bez pisemnej zgody."
           ]
         },
         {
           "number": "04",
-          "title": "Intellectual Property",
+          "title": "Własność intelektualna",
           "content": [
-            "All Website content is the intellectual property of NAKO Agency:",
-            "Design, layout, and visual elements.",
-            "Texts, images, and graphics.",
-            "Source code and software solutions.",
-            "Logos and trademarks.",
-            "Using Website materials without written permission from the Company is prohibited."
+            "Wszelkie treści Strony stanowią własność intelektualną NAKO Agency:",
+            "Projekt graficzny, układ i elementy wizualne.",
+            "Teksty, obrazy i grafiki.",
+            "Kod źródłowy i rozwiązania programistyczne.",
+            "Logotypy i znaki towarowe.",
+            "Wykorzystywanie materiałów Strony bez pisemnej zgody Firmy jest zabronione."
           ]
         },
         {
           "number": "05",
-          "title": "Service Delivery Procedure",
+          "title": "Procedura realizacji usług",
           "content": [
-            "Services are provided on the basis of:",
-            "Application through the Website form or email.",
-            "Discussion of requirements and approval of the brief.",
-            "Signing of the service agreement.",
-            "Stage-by-stage delivery and approval.",
-            "Specific conditions, timelines, and costs are determined individually for each project."
+            "Usługi są świadczone na podstawie:",
+            "Zgłoszenia przez formularz na Stronie lub e-mail.",
+            "Omówienia wymagań i zatwierdzenia briefu.",
+            "Podpisania umowy o świadczenie usług.",
+            "Etapowej realizacji i odbioru.",
+            "Szczegółowe warunki, terminy i koszty są ustalane indywidualnie dla każdego projektu."
           ]
         },
         {
           "number": "06",
-          "title": "Payment for Services",
+          "title": "Płatność za usługi",
           "content": [
-            "Payment terms:",
-            "Payment is made according to the terms specified in the agreement.",
-            "Standard payment scheme: 50% prepayment, 50% upon completion.",
-            "For large projects, payment may be split into 3 stages.",
-            "Payment methods are agreed upon individually.",
-            "Refund terms are specified in the agreement."
+            "Warunki płatności:",
+            "Płatność realizowana jest zgodnie z warunkami określonymi w umowie.",
+            "Standardowy schemat płatności: 50% zaliczki, 50% po zakończeniu.",
+            "W przypadku dużych projektów płatność może być podzielona na 3 etapy.",
+            "Metody płatności są ustalane indywidualnie.",
+            "Warunki zwrotu są określone w umowie."
           ]
         },
         {
           "number": "07",
-          "title": "Limitation of Liability",
+          "title": "Ograniczenie odpowiedzialności",
           "content": [
-            "The Company shall not be liable for:",
-            "Temporary unavailability of the Website due to technical maintenance.",
-            "Losses arising from the use or inability to use the Website.",
-            "Actions of third parties, including hosting providers and payment systems.",
-            "Force majeure circumstances.",
-            "The Company's total liability is limited to the amount paid by the client under the agreement."
+            "Firma nie ponosi odpowiedzialności za:",
+            "Tymczasową niedostępność Strony z powodu prac technicznych.",
+            "Straty wynikające z korzystania lub niemożności korzystania ze Strony.",
+            "Działania osób trzecich, w tym dostawców hostingu i systemów płatności.",
+            "Okoliczności siły wyższej.",
+            "Łączna odpowiedzialność Firmy jest ograniczona do kwoty zapłaconej przez klienta na podstawie umowy."
           ]
         },
         {
           "number": "08",
-          "title": "Disclaimer of Warranties",
+          "title": "Wyłączenie gwarancji",
           "content": [
-            "The Website is provided \"as is\". The Company does not guarantee:",
-            "Uninterrupted Website operation.",
-            "Absence of technical errors.",
-            "Compliance of the Website with your specific requirements.",
-            "Accuracy and completeness of information posted on the Website.",
-            "We strive to ensure the highest quality but cannot guarantee the absence of any defects."
+            "Strona jest udostępniana w stanie \"takim, jaki jest\". Firma nie gwarantuje:",
+            "Nieprzerwanego działania Strony.",
+            "Braku błędów technicznych.",
+            "Zgodności Strony z Państwa konkretnymi wymaganiami.",
+            "Dokładności i kompletności informacji zamieszczonych na Stronie.",
+            "Dążymy do zapewnienia najwyższej jakości, lecz nie możemy zagwarantować braku jakichkolwiek wad."
           ]
         },
         {
           "number": "09",
-          "title": "Links to Third-Party Resources",
+          "title": "Odnośniki do zasobów osób trzecich",
           "content": [
-            "The Website may contain links to third-party websites. We are not responsible for:",
-            "Content of third-party websites.",
-            "Privacy policies of third-party resources.",
-            "Any losses arising from the use of third-party resources."
+            "Strona może zawierać odnośniki do stron internetowych osób trzecich. Nie ponosimy odpowiedzialności za:",
+            "Treści stron internetowych osób trzecich.",
+            "Polityki prywatności zasobów osób trzecich.",
+            "Wszelkie straty wynikające z korzystania z zasobów osób trzecich."
           ]
         },
         {
           "number": "10",
-          "title": "Changes to Terms",
+          "title": "Zmiany Regulaminu",
           "content": [
-            "We reserve the right to modify these Terms at any time without prior notice. Changes take effect upon publication on the Website.",
-            "Continued use of the Website after changes have been made constitutes your acceptance of the new Terms.",
-            "The date of the last update is indicated at the top of the document."
+            "Zastrzegamy sobie prawo do zmiany niniejszego Regulaminu w dowolnym momencie bez wcześniejszego powiadomienia. Zmiany wchodzą w życie z chwilą publikacji na Stronie.",
+            "Dalsze korzystanie ze Strony po wprowadzeniu zmian oznacza akceptację nowego Regulaminu.",
+            "Data ostatniej aktualizacji jest wskazana na początku dokumentu."
           ]
         },
         {
           "number": "11",
-          "title": "Applicable Law",
+          "title": "Prawo właściwe",
           "content": [
-            "These Terms are governed by applicable law. Any disputes arising in connection with the use of the Website are resolved through negotiations, and if no agreement is reached — in court in accordance with applicable law."
+            "Niniejszy Regulamin podlega obowiązującemu prawu. Wszelkie spory związane z korzystaniem ze Strony rozstrzygane są w drodze negocjacji, a w przypadku braku porozumienia — na drodze sądowej zgodnie z obowiązującym prawem."
           ]
         },
         {
           "number": "12",
-          "title": "Contact Information",
+          "title": "Dane kontaktowe",
           "content": [
-            "If you have questions regarding these Terms, contact us:",
-            "Email: hello@nakoagency.com",
-            "Website: nakoagency.com"
+            "W przypadku pytań dotyczących niniejszego Regulaminu prosimy o kontakt:",
+            "E-mail: hello@nakoagency.com",
+            "Strona internetowa: nakoagency.com"
           ]
         }
       ],
-      "backLink": "Back to contacts"
+      "backLink": "Powrót do kontaktów"
     },
     "appDev": {
       "meta": {
-        "title": "App Development",
-        "description": "We develop mobile apps, web apps, and cross-platform solutions. From idea to launch — turnkey.",
-        "ogTitle": "App Development | NAKO Agency",
-        "ogDescription": "We develop mobile apps, web apps, and cross-platform solutions. From idea to launch — turnkey."
+        "title": "Tworzenie aplikacji",
+        "description": "Tworzymy aplikacje mobilne, webowe i wieloplatformowe. Od pomysłu do uruchomienia — pod klucz.",
+        "ogTitle": "Tworzenie aplikacji | NAKO Agency",
+        "ogDescription": "Tworzymy aplikacje mobilne, webowe i wieloplatformowe. Od pomysłu do uruchomienia — pod klucz."
       },
-      "heroCaption": "New direction",
-      "heroTitle": "APP DEVELOPMENT",
-      "heroDescription": "We create apps that solve real business problems. Mobile, web, cross-platform — from idea to launch.",
-      "heroCta": "Discuss your app",
+      "heroCaption": "Nowy kierunek",
+      "heroTitle": "TWORZENIE APLIKACJI",
+      "heroDescription": "Tworzymy aplikacje rozwiązujące realne problemy biznesowe. Mobilne, webowe, wieloplatformowe — od pomysłu do wdrożenia.",
+      "heroCta": "Omów swoją aplikację",
       "whyApp": {
-        "caption": "Advantages",
-        "title": "WHY AN APP",
+        "caption": "Zalety",
+        "title": "DLACZEGO APLIKACJA",
         "items": [
           {
             "number": "01",
-            "title": "Available 24/7",
-            "description": "Your product is always in the client's pocket. Instant access without a browser — one tap and the user is already inside."
+            "title": "Dostępna 24/7",
+            "description": "Państwa produkt zawsze w kieszeni klienta. Natychmiastowy dostęp bez przeglądarki — jedno dotknięcie i użytkownik jest w środku."
           },
           {
             "number": "02",
-            "title": "Engagement",
-            "description": "Push notifications, personalization, loyalty programs. An app builds a direct communication channel with your audience."
+            "title": "Zaangażowanie",
+            "description": "Powiadomienia push, personalizacja, programy lojalnościowe. Aplikacja buduje bezpośredni kanał komunikacji z odbiorcami."
           },
           {
             "number": "03",
-            "title": "Business Growth",
-            "description": "A new sales and interaction channel. An app increases customer LTV and opens opportunities for scaling."
+            "title": "Rozwój biznesu",
+            "description": "Nowy kanał sprzedaży i interakcji. Aplikacja zwiększa LTV klientów i otwiera możliwości skalowania."
           }
         ]
       },
       "types": {
-        "caption": "Directions",
-        "title": "WHAT WE BUILD",
+        "caption": "Kierunki",
+        "title": "CO TWORZYMY",
         "items": [
           {
-            "title": "Mobile Apps",
+            "title": "Aplikacje mobilne",
             "subtitle": "iOS / Android",
-            "description": "Native and cross-platform apps for smartphones and tablets with optimal performance."
+            "description": "Natywne i wieloplatformowe aplikacje na smartfony i tablety z optymalną wydajnością."
           },
           {
-            "title": "Web Apps",
+            "title": "Aplikacje webowe",
             "subtitle": "SPA / PWA",
-            "description": "Interactive web applications that work in the browser. Fast, responsive, with offline capabilities."
+            "description": "Interaktywne aplikacje internetowe działające w przeglądarce. Szybkie, responsywne, z obsługą trybu offline."
           },
           {
-            "title": "Cross-platform",
+            "title": "Wieloplatformowe",
             "subtitle": "React Native / Flutter",
-            "description": "One codebase — all platforms. Budget savings while maintaining user experience quality."
+            "description": "Jedna baza kodu — wszystkie platformy. Oszczędność budżetu przy zachowaniu jakości doświadczenia użytkownika."
           }
         ]
       },
       "capabilities": {
-        "caption": "Capabilities",
-        "title": "WHAT WE CAN BUILD",
+        "caption": "Możliwości",
+        "title": "CO MOŻEMY ZBUDOWAĆ",
         "items": [
           {
             "title": "E-commerce",
-            "description": "Mobile stores with catalog, cart, payments, and order tracking."
+            "description": "Mobilne sklepy z katalogiem, koszykiem, płatnościami i śledzeniem zamówień."
           },
           {
-            "title": "Marketplaces",
-            "description": "Platforms connecting sellers and buyers with rating and review systems."
+            "title": "Marketplace",
+            "description": "Platformy łączące sprzedawców i kupujących z systemami ocen i recenzji."
           },
           {
-            "title": "Booking",
-            "description": "Scheduling and booking systems for restaurants, hotels, clinics, and services."
+            "title": "Rezerwacje",
+            "description": "Systemy harmonogramowania i rezerwacji dla restauracji, hoteli, klinik i usług."
           },
           {
-            "title": "CRM & Business Tools",
-            "description": "Internal apps for managing processes, tasks, and teams."
+            "title": "CRM i narzędzia biznesowe",
+            "description": "Wewnętrzne aplikacje do zarządzania procesami, zadaniami i zespołami."
           },
           {
-            "title": "Social Platforms",
-            "description": "Apps with feeds, chats, profiles, and subscription systems."
+            "title": "Platformy społecznościowe",
+            "description": "Aplikacje z aktualnościami, czatem, profilami i systemami subskrypcji."
           },
           {
-            "title": "Education & Fitness",
-            "description": "Learning platforms, habit trackers, and healthy lifestyle apps."
+            "title": "Edukacja i fitness",
+            "description": "Platformy edukacyjne, trackery nawyków i aplikacje zdrowego stylu życia."
           }
         ]
       },
       "process": {
-        "caption": "Stages",
-        "title": "DEVELOPMENT PROCESS",
+        "caption": "Etapy",
+        "title": "PROCES TWORZENIA",
         "steps": [
           {
             "number": "01",
-            "title": "Idea Discussion",
-            "description": "We analyze your idea, define the target audience, key features, and business model."
+            "title": "Omówienie pomysłu",
+            "description": "Analizujemy Państwa pomysł, definiujemy grupę docelową, kluczowe funkcje i model biznesowy."
           },
           {
             "number": "02",
-            "title": "Prototype & Design",
-            "description": "We create wireframes and UI design. Every screen is crafted for user convenience."
+            "title": "Prototyp i projekt",
+            "description": "Tworzymy wireframe'y i projekt UI. Każdy ekran jest zaprojektowany z myślą o wygodzie użytkownika."
           },
           {
             "number": "03",
-            "title": "Development",
-            "description": "We write clean code with focus on performance, security, and scalability."
+            "title": "Programowanie",
+            "description": "Piszemy czysty kod z naciskiem na wydajność, bezpieczeństwo i skalowalność."
           },
           {
             "number": "04",
             "title": "Testing",
-            "description": "We test on real devices. Functional, load, and UX testing."
+            "description": "Testujemy na rzeczywistych urządzeniach. Testy funkcjonalne, obciążeniowe i UX."
           },
           {
             "number": "05",
-            "title": "Launch & Support",
-            "description": "We publish to App Store and Google Play. We provide technical support and updates."
+            "title": "Uruchomienie i wsparcie",
+            "description": "Publikujemy w App Store i Google Play. Zapewniamy wsparcie techniczne i aktualizacje."
           }
         ]
       }
     },
     "blog": {
       "metaTitle": "Blog | NAKO Agency",
-      "metaDescription": "Articles about web development, design, SEO and digital marketing from the NAKO Agency team. Useful materials for business and experts.",
-      "caption": "Articles",
+      "metaDescription": "Artykuły o tworzeniu stron, designie, SEO i marketingu cyfrowym od zespołu NAKO Agency. Przydatne materiały dla biznesu i ekspertów.",
+      "caption": "Artykuły",
       "title": "BLOG",
-      "description": "We share our expertise in web development, design, and website promotion. Practical tips and case breakdowns.",
-      "filterAll": "All articles",
-      "filterDevelopment": "Development",
+      "description": "Dzielimy się naszą wiedzą z zakresu tworzenia stron, designu i promocji. Praktyczne wskazówki i analizy realizacji.",
+      "filterAll": "Wszystkie artykuły",
+      "filterDevelopment": "Programowanie",
       "filterDesign": "Design",
       "filterMarketing": "Marketing",
-      "filterBusiness": "Business",
-      "noResultsTitle": "No articles",
-      "noResultsText": "There are no publications in this category yet",
-      "noResultsButton": "Show all articles",
-      "ctaTitle": "Need a website?",
-      "ctaText": "We'll put all this knowledge into practice — for your project.",
-      "ctaButton": "Discuss project",
-      "ctaServicesButton": "View services",
-      "ctaCasesButton": "View cases",
+      "filterBusiness": "Biznes",
+      "noResultsTitle": "Brak artykułów",
+      "noResultsText": "W tej kategorii nie ma jeszcze publikacji",
+      "noResultsButton": "Pokaż wszystkie artykuły",
+      "ctaTitle": "Potrzebujesz strony?",
+      "ctaText": "Całą tę wiedzę zastosujemy w praktyce — dla Państwa projektu.",
+      "ctaButton": "Omów projekt",
+      "ctaServicesButton": "Zobacz usługi",
+      "ctaCasesButton": "Zobacz realizacje",
       "posts": [
         {
           "slug": "why-nextjs-for-business",
-          "title": "Why Next.js Is the Best Choice for a Business Website in 2024",
-          "excerpt": "We break down the advantages of Next.js for commercial projects: SEO, performance, scalability.",
+          "title": "Dlaczego Next.js to najlepszy wybór dla strony biznesowej w 2024",
+          "excerpt": "Analizujemy zalety Next.js dla projektów komercyjnych: SEO, wydajność, skalowalność.",
           "category": "development",
-          "categoryLabel": "Development",
+          "categoryLabel": "Programowanie",
           "date": "2026-01-20",
           "readTime": "8 min",
           "author": "NAKO Agency Team"
         },
         {
           "slug": "conversion-design-principles",
-          "title": "7 Principles of Conversion-Driven Design",
-          "excerpt": "How design impacts sales. Practical techniques that boost conversion.",
+          "title": "7 zasad designu nastawionego na konwersję",
+          "excerpt": "Jak design wpływa na sprzedaż. Praktyczne techniki zwiększające konwersję.",
           "category": "design",
           "categoryLabel": "Design",
           "date": "2026-01-12",
@@ -1564,8 +1564,8 @@
         },
         {
           "slug": "seo-for-new-websites",
-          "title": "SEO for a New Website: Step-by-Step Checklist",
-          "excerpt": "What you need to do for SEO before launch and in the first months of your website.",
+          "title": "SEO dla nowej strony: lista kontrolna krok po kroku",
+          "excerpt": "Co należy zrobić dla SEO przed uruchomieniem i w pierwszych miesiącach działania strony.",
           "category": "marketing",
           "categoryLabel": "Marketing",
           "date": "2025-12-28",
@@ -1574,103 +1574,106 @@
         },
         {
           "slug": "expert-website-roi",
-          "title": "Website ROI for Experts: Real Numbers",
-          "excerpt": "How much a website costs, how many clients it brings, and when it pays for itself. A breakdown with examples.",
+          "title": "ROI strony internetowej dla ekspertów: realne liczby",
+          "excerpt": "Ile kosztuje strona, ilu klientów przynosi i kiedy się zwraca. Analiza z przykładami.",
           "category": "business",
-          "categoryLabel": "Business",
+          "categoryLabel": "Biznes",
           "date": "2025-12-15",
           "readTime": "7 min",
           "author": "NAKO Agency Team"
         },
         {
           "slug": "tailwind-vs-css-modules",
-          "title": "Tailwind CSS vs CSS Modules: Which to Choose",
-          "excerpt": "Comparing two styling approaches in React projects. Pros, cons, and when to use each.",
+          "title": "Tailwind CSS vs CSS Modules: co wybrać",
+          "excerpt": "Porównanie dwóch podejść do stylowania w projektach React. Zalety, wady i kiedy stosować.",
           "category": "development",
-          "categoryLabel": "Development",
+          "categoryLabel": "Programowanie",
           "date": "2025-11-25",
           "readTime": "9 min",
           "author": "NAKO Agency Team"
         },
         {
           "slug": "minimalism-in-web-design",
-          "title": "Minimalism in Web Design: Trend or Necessity",
-          "excerpt": "Why less is more. How minimalist design affects UX and conversion.",
+          "title": "Minimalizm w web designie: trend czy konieczność",
+          "excerpt": "Dlaczego mniej znaczy więcej. Jak minimalistyczny design wpływa na UX i konwersję.",
           "category": "design",
           "categoryLabel": "Design",
           "date": "2025-11-10",
           "readTime": "5 min",
-          "author": "NAKO Agency Team"
+          "author": "NAKO Agency Team",
+          "content": "<h2 id=\"why\">Dlaczego minimalizm działa</h2><p>Minimalizm to nie pustka — to skupienie. Gdy na stronie nie ma nic zbędnego, użytkownik widzi to, co najważniejsze.</p><p>Badania pokazują: proste strony są postrzegane jako bardziej wiarygodne i profesjonalne.</p><h2 id=\"principles\">Zasady minimalizmu</h2><ul><li>Jeden główny punkt skupienia na ekranie</li><li>Maksymalnie 2–3 kolory</li><li>Dużo białej przestrzeni między elementami</li><li>Czytelna typografia</li></ul><h2 id=\"mistakes\">Typowe błędy</h2><p>Minimalizm to nie znaczy nudno. Pusta strona bez punktów przyciągających uwagę to nie minimalizm — to zły design.</p><p>Każdy element powinien pracować. Jeśli coś nie niesie znaczenia — usuń to.</p>"
         },
         {
           "slug": "lighthouse-score-optimization",
-          "title": "How to Boost Lighthouse Score to 90+",
-          "excerpt": "A practical guide to website performance optimization. Core Web Vitals, images, code.",
+          "title": "Jak podnieść wynik Lighthouse do 90+",
+          "excerpt": "Praktyczny przewodnik po optymalizacji wydajności strony. Core Web Vitals, obrazy, kod.",
           "category": "development",
-          "categoryLabel": "Development",
+          "categoryLabel": "Rozwój",
           "date": "2025-10-20",
           "readTime": "12 min",
-          "author": "NAKO Agency Team"
+          "author": "Zespół NAKO Agency",
+          "content": "<h2 id=\"cwv\">Core Web Vitals</h2><p>Trzy główne metryki Google:</p><ul><li>LCP (Largest Contentful Paint) &lt; 2,5 sek.</li><li>FID (First Input Delay) &lt; 100 ms</li><li>CLS (Cumulative Layout Shift) &lt; 0,1</li></ul><h2 id=\"images\">Obrazy</h2><p>Główne źródło problemów z wydajnością:</p><ul><li>Formaty WebP/AVIF</li><li>Lazy loading</li><li>Odpowiednie rozmiary (srcset)</li><li>Blur placeholder</li></ul><h2 id=\"code\">Optymalizacja kodu</h2><ul><li>Code splitting</li><li>Tree shaking</li><li>Minifikacja</li><li>Usuwanie nieużywanego CSS</li></ul><h2 id=\"fonts\">Czcionki</h2><p>Czcionki często blokują renderowanie:</p><ul><li>font-display: swap</li><li>Preloading kluczowych czcionek</li><li>Subsetting znaków</li></ul>"
         },
         {
           "slug": "landing-page-anatomy",
-          "title": "Anatomy of a Perfect Landing Page",
-          "excerpt": "What blocks a landing page should have and in what order. A structure that sells.",
+          "title": "Anatomia idealnego landing page'a",
+          "excerpt": "Jakie bloki powinien mieć landing page i w jakiej kolejności. Struktura, która sprzedaje.",
           "category": "marketing",
           "categoryLabel": "Marketing",
           "date": "2025-10-05",
           "readTime": "8 min",
-          "author": "NAKO Agency Team"
+          "author": "Zespół NAKO Agency",
+          "content": "<h2 id=\"hero\">Sekcja Hero</h2><p>Pierwszy ekran decyduje o wszystkim. W 5 sekund użytkownik powinien zrozumieć:</p><ul><li>Co oferujesz</li><li>Dla kogo to jest</li><li>Dlaczego warto zostać</li></ul><h2 id=\"benefits\">Korzyści</h2><p>Nie cechy, ale korzyści. Nie „10 lat doświadczenia”, ale „Rozwiążemy Państwa problem w 3 dni”.</p><p>3–5 kluczowych korzyści z ikonami lub ilustracjami.</p><h2 id=\"social-proof\">Dowód społeczny</h2><p>Opinie, case study, logotypy klientów, liczby — wszystko, co potwierdza Państwa słowa.</p><p>Umieść je bliżej CTA — to zmniejsza wątpliwości.</p><h2 id=\"cta\">Blok CTA</h2><p>Ostateczne wezwanie do działania. Krótko powtórz ofertę i dodaj formularz lub przycisk.</p><p>Usuń wszystko zbędne — tylko działanie.</p>"
         }
       ]
     },
     "blogPost": {
-      "backLink": "All articles",
-      "tocTitle": "Table of Contents",
-      "prevPost": "← Previous",
-      "nextPost": "Next →",
-      "relatedTitle": "Read more",
-      "ctaTitle": "Need help with a project?",
-      "ctaText": "We'll apply this knowledge to your business. Shall we discuss?",
-      "ctaButton": "Discuss project",
-      "notFound": "Article not found",
-      "breadcrumbHome": "Home",
+      "backLink": "Wszystkie artykuły",
+      "tocTitle": "Spis treści",
+      "prevPost": "← Poprzedni",
+      "nextPost": "Następny →",
+      "relatedTitle": "Czytaj dalej",
+      "ctaTitle": "Potrzebujesz pomocy z projektem?",
+      "ctaText": "Zastosujemy tę wiedzę w Państwa biznesie. Porozmawiamy?",
+      "ctaButton": "Omów projekt",
+      "notFound": "Artykuł nie został znaleziony",
+      "breadcrumbHome": "Strona główna",
       "breadcrumbBlog": "Blog",
       "posts": {
         "why-nextjs-for-business": {
-          "title": "Why Next.js Is the Best Choice for a Business Website in 2024",
-          "excerpt": "We break down the advantages of Next.js for commercial projects: SEO, performance, scalability.",
-          "categoryLabel": "Development",
+          "title": "Dlaczego Next.js to najlepszy wybór dla strony biznesowej w 2024",
+          "excerpt": "Analizujemy zalety Next.js dla projektów komercyjnych: SEO, wydajność, skalowalność.",
+          "categoryLabel": "Programowanie",
           "date": "2026-01-20",
           "readTime": "8 min",
           "author": "NAKO Agency Team",
           "toc": [
             {
               "id": "intro",
-              "title": "Introduction"
+              "title": "Wprowadzenie"
             },
             {
               "id": "seo",
-              "title": "Built-in SEO"
+              "title": "Wbudowane SEO"
             },
             {
               "id": "performance",
-              "title": "Performance"
+              "title": "Wydajność"
             },
             {
               "id": "dx",
-              "title": "Developer Experience"
+              "title": "Doświadczenie programisty"
             },
             {
               "id": "conclusion",
-              "title": "Conclusions"
+              "title": "Wnioski"
             }
           ],
-          "content": "<h2 id=\"intro\">Introduction</h2><p>Next.js has become the standard for building modern web applications. In 2024, this is especially relevant for business websites where SEO, loading speed, and scalability matter.</p><p>In this article, we'll break down why we choose Next.js for commercial projects and what advantages it gives our clients.</p><h2 id=\"seo\">Built-in SEO</h2><p>The main advantage of Next.js for business is excellent SEO. Unlike regular React applications, Next.js supports server-side rendering (SSR) and static site generation (SSG).</p><p>This means search engines see a fully rendered page rather than empty HTML with JavaScript. The result is fast indexing and high search rankings.</p><ul><li>Automatic meta tag generation</li><li>Built-in Open Graph support</li><li>Automatic sitemap.xml</li><li>Core Web Vitals optimization</li></ul><h2 id=\"performance\">Performance</h2><p>Next.js optimizes performance at the framework level. Automatic code splitting, image optimization, link prefetching — all of this works out of the box.</p><p>For business, this is critical: every second of loading delay can cost conversions. With Next.js, we consistently achieve Lighthouse Scores of 90+.</p><h2 id=\"dx\">Developer Experience</h2><p>Good DX means fast development and fewer bugs. Next.js provides:</p><ul><li>Hot Module Replacement for instant changes</li><li>TypeScript out of the box</li><li>Built-in API Routes</li><li>Excellent documentation and community</li></ul><h2 id=\"conclusion\">Conclusions</h2><p>Next.js isn't just a trendy framework — it's a tool that solves real business problems. SEO, performance, scalability — all out of the box.</p><p>If you're planning to build a website that needs to bring clients from search and convert visitors — Next.js is the right choice.</p>"
+          "content": "<h2 id=\"intro\">Wprowadzenie</h2><p>Next.js stał się standardem w budowaniu nowoczesnych aplikacji internetowych. W 2024 roku jest to szczególnie istotne dla stron biznesowych, gdzie liczy się SEO, szybkość ładowania i skalowalność.</p><p>W tym artykule wyjaśniamy, dlaczego wybieramy Next.js dla projektów komercyjnych i jakie korzyści daje to naszym klientom.</p><h2 id=\"seo\">Wbudowane SEO</h2><p>Główną zaletą Next.js dla biznesu jest doskonałe SEO. W przeciwieństwie do zwykłych aplikacji React, Next.js obsługuje renderowanie po stronie serwera (SSR) i generowanie stron statycznych (SSG).</p><p>Oznacza to, że wyszukiwarki widzą w pełni wyrenderowaną stronę zamiast pustego HTML z JavaScriptem. Efekt — szybkie indeksowanie i wysokie pozycje w wynikach wyszukiwania.</p><ul><li>Automatyczne generowanie meta tagów</li><li>Wbudowana obsługa Open Graph</li><li>Automatyczna mapa witryny sitemap.xml</li><li>Optymalizacja Core Web Vitals</li></ul><h2 id=\"performance\">Wydajność</h2><p>Next.js optymalizuje wydajność na poziomie frameworka. Automatyczny code splitting, optymalizacja obrazów, prefetching linków — to wszystko działa od razu.</p><p>Dla biznesu to kluczowe: każda sekunda opóźnienia ładowania może kosztować konwersje. Dzięki Next.js konsekwentnie osiągamy Lighthouse Score 90+.</p><h2 id=\"dx\">Doświadczenie programisty</h2><p>Dobre DX oznacza szybsze programowanie i mniej błędów. Next.js zapewnia:</p><ul><li>Hot Module Replacement — natychmiastowe zmiany</li><li>TypeScript od razu</li><li>Wbudowane API Routes</li><li>Doskonałą dokumentację i społeczność</li></ul><h2 id=\"conclusion\">Wnioski</h2><p>Next.js to nie tylko modny framework — to narzędzie rozwiązujące realne problemy biznesowe. SEO, wydajność, skalowalność — wszystko od razu.</p><p>Jeśli planujesz stronę, która ma przyciągać klientów z wyszukiwarek i konwertować odwiedzających — Next.js to właściwy wybór.</p>"
         },
         "conversion-design-principles": {
-          "title": "7 Principles of Conversion-Driven Design",
-          "excerpt": "How design impacts sales. Practical techniques that boost conversion.",
+          "title": "7 zasad designu nastawionego na konwersję",
+          "excerpt": "Jak design wpływa na sprzedaż. Praktyczne techniki zwiększające konwersję.",
           "categoryLabel": "Design",
           "date": "2026-01-12",
           "readTime": "6 min",
@@ -1678,30 +1681,30 @@
           "toc": [
             {
               "id": "hierarchy",
-              "title": "Visual Hierarchy"
+              "title": "Hierarchia wizualna"
             },
             {
               "id": "cta",
-              "title": "Clear CTA"
+              "title": "Wyraźne CTA"
             },
             {
               "id": "whitespace",
-              "title": "Whitespace in Design"
+              "title": "Przestrzeń w designie"
             },
             {
               "id": "trust",
-              "title": "Trust Elements"
+              "title": "Elementy zaufania"
             },
             {
               "id": "speed",
-              "title": "Loading Speed"
+              "title": "Szybkość ładowania"
             }
           ],
-          "content": "<h2 id=\"hierarchy\">1. Visual Hierarchy</h2><p>The user's eye should move across the page in the right direction. Size, color, contrast — these are tools for managing attention.</p><p>The main offer should be immediately noticeable. Secondary information — smaller and lighter.</p><h2 id=\"cta\">2. Clear CTA</h2><p>The call-to-action button should be obvious. Contrasting color, clear text, sufficient size.</p><p>One main CTA per screen. Don't force the user to choose between multiple equally weighted actions.</p><h2 id=\"whitespace\">3. Whitespace in Design</h2><p>Empty space is not wasted space. It's a tool that helps highlight what's important and improve readability.</p><p>An overloaded design tires users and reduces conversion. Let the content breathe.</p><h2 id=\"trust\">4. Trust Elements</h2><p>Reviews, client logos, certificates, guarantees — everything that confirms your reliability.</p><p>Place them near the CTA — this reduces anxiety before making a decision.</p><h2 id=\"speed\">5. Loading Speed</h2><p>Beautiful design is useless if the page takes 10 seconds to load. Optimization is part of design.</p><p>Lighthouse Score 90+ is the minimum standard for a commercial website.</p>"
+          "content": "<h2 id=\"hierarchy\">1. Hierarchia wizualna</h2><p>Wzrok użytkownika powinien przemieszczać się po stronie we właściwym kierunku. Rozmiar, kolor, kontrast — to narzędzia zarządzania uwagą.</p><p>Główna oferta powinna być od razu widoczna. Informacje drugorzędne — mniejsze i lżejsze.</p><h2 id=\"cta\">2. Wyraźne CTA</h2><p>Przycisk wezwania do działania musi być oczywisty. Kontrastowy kolor, zrozumiały tekst, odpowiedni rozmiar.</p><p>Jedno główne CTA na ekran. Nie zmuszaj użytkownika do wyboru między kilkoma równoważnymi akcjami.</p><h2 id=\"whitespace\">3. Przestrzeń w designie</h2><p>Pusta przestrzeń to nie zmarnowane miejsce. To narzędzie, które pomaga wyeksponować to, co ważne, i poprawić czytelność.</p><p>Przeładowany design męczy użytkowników i obniża konwersję. Pozwól treści oddychać.</p><h2 id=\"trust\">4. Elementy zaufania</h2><p>Opinie, logotypy klientów, certyfikaty, gwarancje — wszystko, co potwierdza Państwa wiarygodność.</p><p>Umieść je w pobliżu CTA — to zmniejsza obawy przed podjęciem decyzji.</p><h2 id=\"speed\">5. Szybkość ładowania</h2><p>Piękny design jest bezużyteczny, jeśli strona ładuje się 10 sekund. Optymalizacja to część designu.</p><p>Lighthouse Score 90+ to minimalny standard dla strony komercyjnej.</p>"
         },
         "seo-for-new-websites": {
-          "title": "SEO for a New Website: Step-by-Step Checklist",
-          "excerpt": "What you need to do for SEO before launch and in the first months of your website.",
+          "title": "SEO dla nowej strony: lista kontrolna krok po kroku",
+          "excerpt": "Co należy zrobić dla SEO przed uruchomieniem i w pierwszych miesiącach działania strony.",
           "categoryLabel": "Marketing",
           "date": "2025-12-28",
           "readTime": "10 min",
@@ -1709,80 +1712,80 @@
           "toc": [
             {
               "id": "before-launch",
-              "title": "Before Launch"
+              "title": "Przed uruchomieniem"
             },
             {
               "id": "technical",
-              "title": "Technical SEO"
+              "title": "Techniczne SEO"
             },
             {
               "id": "content",
-              "title": "Content"
+              "title": "Treść"
             },
             {
               "id": "first-months",
-              "title": "First Months"
+              "title": "Pierwsze miesiące"
             }
           ],
-          "content": "<h2 id=\"before-launch\">Before Launch</h2><p>SEO starts before the website goes live. Preparation at this stage will save months of work.</p><ul><li>Keyword research</li><li>URL structure</li><li>Content planning</li><li>Analytics setup</li></ul><h2 id=\"technical\">Technical SEO</h2><p>The foundation without which other efforts are meaningless:</p><ul><li>HTTPS is mandatory</li><li>Mobile version</li><li>Loading speed &lt; 3 sec</li><li>Proper heading structure</li><li>XML sitemap</li><li>robots.txt</li></ul><h2 id=\"content\">Content</h2><p>Unique, useful content is the foundation of SEO. Every page should answer a specific user query.</p><p>Meta title and description for every page. Alt text for images. Internal linking.</p><h2 id=\"first-months\">First Months</h2><p>After launch — monitoring and improvements:</p><ul><li>Search Console registration</li><li>Position tracking</li><li>User behavior analysis</li><li>Regular content additions</li></ul>"
+          "content": "<h2 id=\"before-launch\">Przed uruchomieniem</h2><p>SEO zaczyna się jeszcze przed uruchomieniem strony. Przygotowanie na tym etapie pozwoli zaoszczędzić miesiące pracy.</p><ul><li>Badanie słów kluczowych</li><li>Struktura URL</li><li>Planowanie treści</li><li>Konfiguracja analityki</li></ul><h2 id=\"technical\">Techniczne SEO</h2><p>Fundament, bez którego inne działania nie mają sensu:</p><ul><li>HTTPS jest obowiązkowy</li><li>Wersja mobilna</li><li>Czas ładowania &lt; 3 sek.</li><li>Prawidłowa struktura nagłówków</li><li>Mapa witryny XML</li><li>robots.txt</li></ul><h2 id=\"content\">Treść</h2><p>Unikalna, wartościowa treść to podstawa SEO. Każda strona powinna odpowiadać na konkretne zapytanie użytkownika.</p><p>Meta title i description dla każdej strony. Tekst alternatywny dla obrazów. Linkowanie wewnętrzne.</p><h2 id=\"first-months\">Pierwsze miesiące</h2><p>Po uruchomieniu — monitoring i usprawnienia:</p><ul><li>Rejestracja w Search Console</li><li>Śledzenie pozycji</li><li>Analiza zachowań użytkowników</li><li>Regularne dodawanie treści</li></ul>"
         },
         "expert-website-roi": {
-          "title": "Website ROI for Experts: Real Numbers",
-          "excerpt": "How much a website costs, how many clients it brings, and when it pays for itself. A breakdown with examples.",
-          "categoryLabel": "Business",
+          "title": "ROI strony internetowej dla ekspertów: realne liczby",
+          "excerpt": "Ile kosztuje strona, ilu klientów przynosi i kiedy się zwraca. Analiza z przykładami.",
+          "categoryLabel": "Biznes",
           "date": "2025-12-15",
           "readTime": "7 min",
           "author": "NAKO Agency Team",
           "toc": [
             {
               "id": "costs",
-              "title": "Website Cost"
+              "title": "Koszt strony"
             },
             {
               "id": "traffic",
-              "title": "Traffic Sources"
+              "title": "Źródła ruchu"
             },
             {
               "id": "conversion",
-              "title": "Conversion"
+              "title": "Konwersja"
             },
             {
               "id": "roi",
-              "title": "ROI Calculation"
+              "title": "Obliczenie ROI"
             }
           ],
-          "content": "<h2 id=\"costs\">Website Cost</h2><p>A website for an expert costs from €1,000 to €3,000 depending on complexity. It's a one-time investment that works for years.</p><h2 id=\"traffic\">Traffic Sources</h2><p>Where clients come from to an expert's website:</p><ul><li>Organic search (SEO) — 40-60%</li><li>Social media — 20-30%</li><li>Referrals — 10-20%</li><li>Advertising — 10-15%</li></ul><h2 id=\"conversion\">Conversion</h2><p>Average conversion for an expert's website is 3-7%. With 1,000 visitors per month, that's 30-70 leads.</p><p>Conversion to client is about 30%. Total: 9-21 new clients per month.</p><h2 id=\"roi\">ROI Calculation</h2><p>Example: average consultation fee — €100. 15 clients x €100 = €1,500/month.</p><p>With a website cost of €2,000, the payback period is about 1.5 months. After that — pure profit.</p>"
+          "content": "<h2 id=\"costs\">Koszt strony</h2><p>Strona internetowa dla eksperta kosztuje od 1 000 € do 3 000 € w zależności od złożoności. To jednorazowa inwestycja, która pracuje latami.</p><h2 id=\"traffic\">Źródła ruchu</h2><p>Skąd przychodzą klienci na stronę eksperta:</p><ul><li>Wyszukiwanie organiczne (SEO) — 40-60%</li><li>Media społecznościowe — 20-30%</li><li>Polecenia — 10-20%</li><li>Reklama — 10-15%</li></ul><h2 id=\"conversion\">Konwersja</h2><p>Średnia konwersja dla strony eksperta wynosi 3-7%. Przy 1000 odwiedzających miesięcznie to 30-70 leadów.</p><p>Konwersja na klienta wynosi około 30%. Łącznie: 9-21 nowych klientów miesięcznie.</p><h2 id=\"roi\">Obliczenie ROI</h2><p>Przykład: średnia opłata za konsultację — 100 €. 15 klientów x 100 € = 1 500 €/miesiąc.</p><p>Przy koszcie strony 2 000 € okres zwrotu wynosi około 1,5 miesiąca. Potem — czysty zysk.</p>"
         },
         "tailwind-vs-css-modules": {
-          "title": "Tailwind CSS vs CSS Modules: Which to Choose",
-          "excerpt": "Comparing two styling approaches in React projects. Pros, cons, and when to use each.",
-          "categoryLabel": "Development",
+          "title": "Tailwind CSS vs CSS Modules: co wybrać",
+          "excerpt": "Porównanie dwóch podejść do stylowania w projektach React. Zalety, wady i kiedy stosować.",
+          "categoryLabel": "Programowanie",
           "date": "2025-11-25",
           "readTime": "9 min",
           "author": "NAKO Agency Team",
           "toc": [
             {
               "id": "tailwind-pros",
-              "title": "Tailwind Pros"
+              "title": "Zalety Tailwind"
             },
             {
               "id": "tailwind-cons",
-              "title": "Tailwind Cons"
+              "title": "Wady Tailwind"
             },
             {
               "id": "modules-pros",
-              "title": "CSS Modules Pros"
+              "title": "Zalety CSS Modules"
             },
             {
               "id": "when-to-use",
-              "title": "When to Use Each"
+              "title": "Kiedy stosować"
             }
           ],
-          "content": "<h2 id=\"tailwind-pros\">Tailwind Pros</h2><ul><li>Fast development — no need to invent class names</li><li>Consistency — design tokens out of the box</li><li>Small final CSS — only used styles</li><li>Easy theme customization</li></ul><h2 id=\"tailwind-cons\">Tailwind Cons</h2><ul><li>Long class strings in markup</li><li>Learning curve</li><li>Complex states require many classes</li></ul><h2 id=\"modules-pros\">CSS Modules Pros</h2><ul><li>Familiar CSS syntax</li><li>Style isolation by default</li><li>Easy to migrate existing CSS</li></ul><h2 id=\"when-to-use\">When to Use Each</h2><p>Tailwind — for new projects where development speed and consistency matter.</p><p>CSS Modules — for projects with an existing design system or a team accustomed to classic CSS.</p>"
+          "content": "<h2 id=\"tailwind-pros\">Zalety Tailwind</h2><ul><li>Szybkie programowanie — nie trzeba wymyślać nazw klas</li><li>Spójność — design tokeny od razu</li><li>Mały końcowy CSS — tylko użyte style</li><li>Łatwa personalizacja motywu</li></ul><h2 id=\"tailwind-cons\">Wady Tailwind</h2><ul><li>Długie ciągi klas w kodzie</li><li>Krzywa uczenia się</li><li>Złożone stany wymagają wielu klas</li></ul><h2 id=\"modules-pros\">Zalety CSS Modules</h2><ul><li>Znajoma składnia CSS</li><li>Domyślna izolacja stylów</li><li>Łatwa migracja istniejącego CSS</li></ul><h2 id=\"when-to-use\">Kiedy stosować</h2><p>Tailwind — do nowych projektów, w których liczy się szybkość programowania i spójność.</p><p>CSS Modules — do projektów z istniejącym design systemem lub zespołem przyzwyczajonym do klasycznego CSS.</p>"
         },
         "minimalism-in-web-design": {
-          "title": "Minimalism in Web Design: Trend or Necessity",
-          "excerpt": "Why less is more. How minimalist design affects UX and conversion.",
+          "title": "Minimalizm w web designie: trend czy konieczność",
+          "excerpt": "Dlaczego mniej znaczy więcej. Jak minimalistyczny design wpływa na UX i konwersję.",
           "categoryLabel": "Design",
           "date": "2025-11-10",
           "readTime": "5 min",
@@ -1790,26 +1793,26 @@
           "toc": [
             {
               "id": "why",
-              "title": "Why Minimalism Works"
+              "title": "Dlaczego minimalizm działa"
             },
             {
               "id": "principles",
-              "title": "Principles"
+              "title": "Zasady"
             },
             {
               "id": "mistakes",
-              "title": "Mistakes"
+              "title": "Błędy"
             }
           ],
-          "content": "<h2 id=\"why\">Why Minimalism Works</h2><p>Minimalism isn't about emptiness — it's about focus. When there's nothing extra on the page, the user sees what matters.</p><p>Research shows: simple pages are perceived as more reliable and professional.</p><h2 id=\"principles\">Principles of Minimalism</h2><ul><li>One main focus point per screen</li><li>Maximum 2-3 colors</li><li>Plenty of whitespace between elements</li><li>Clear typography</li></ul><h2 id=\"mistakes\">Common Mistakes</h2><p>Minimalism does not equal boring. An empty page without focal points isn't minimalism — it's bad design.</p><p>Every element should work. If something doesn't carry meaning — remove it.</p>"
+          "content": "<h2 id=\"why\">Dlaczego minimalizm działa</h2><p>Minimalizm to nie pustka — to skupienie. Gdy na stronie nie ma nic zbędnego, użytkownik widzi to, co najważniejsze.</p><p>Badania pokazują: proste strony są postrzegane jako bardziej wiarygodne i profesjonalne.</p><h2 id=\"principles\">Zasady minimalizmu</h2><ul><li>Jeden główny punkt skupienia na ekranie</li><li>Maksymalnie 2–3 kolory</li><li>Dużo białej przestrzeni między elementami</li><li>Czytelna typografia</li></ul><h2 id=\"mistakes\">Typowe błędy</h2><p>Minimalizm to nie znaczy nudno. Pusta strona bez punktów przyciągających uwagę to nie minimalizm — to zły design.</p><p>Każdy element powinien pracować. Jeśli coś nie niesie znaczenia — usuń to.</p>"
         },
         "lighthouse-score-optimization": {
-          "title": "How to Boost Lighthouse Score to 90+",
-          "excerpt": "A practical guide to website performance optimization. Core Web Vitals, images, code.",
-          "categoryLabel": "Development",
+          "title": "Jak podnieść wynik Lighthouse do 90+",
+          "excerpt": "Praktyczny przewodnik po optymalizacji wydajności strony. Core Web Vitals, obrazy, kod.",
+          "categoryLabel": "Rozwój",
           "date": "2025-10-20",
           "readTime": "12 min",
-          "author": "NAKO Agency Team",
+          "author": "Zespół NAKO Agency",
           "toc": [
             {
               "id": "cwv",
@@ -1817,191 +1820,191 @@
             },
             {
               "id": "images",
-              "title": "Images"
+              "title": "Obrazy"
             },
             {
               "id": "code",
-              "title": "Code Optimization"
+              "title": "Optymalizacja kodu"
             },
             {
               "id": "fonts",
-              "title": "Fonts"
+              "title": "Czcionki"
             }
           ],
-          "content": "<h2 id=\"cwv\">Core Web Vitals</h2><p>Google's three main metrics:</p><ul><li>LCP (Largest Contentful Paint) &lt; 2.5 sec</li><li>FID (First Input Delay) &lt; 100 ms</li><li>CLS (Cumulative Layout Shift) &lt; 0.1</li></ul><h2 id=\"images\">Images</h2><p>The main source of performance issues:</p><ul><li>WebP/AVIF formats</li><li>Lazy loading</li><li>Proper sizes (srcset)</li><li>Blur placeholder</li></ul><h2 id=\"code\">Code Optimization</h2><ul><li>Code splitting</li><li>Tree shaking</li><li>Minification</li><li>Removing unused CSS</li></ul><h2 id=\"fonts\">Fonts</h2><p>Fonts often block rendering:</p><ul><li>font-display: swap</li><li>Preloading critical fonts</li><li>Character subsetting</li></ul>"
+          "content": "<h2 id=\"cwv\">Core Web Vitals</h2><p>Trzy główne metryki Google:</p><ul><li>LCP (Largest Contentful Paint) &lt; 2,5 sek.</li><li>FID (First Input Delay) &lt; 100 ms</li><li>CLS (Cumulative Layout Shift) &lt; 0,1</li></ul><h2 id=\"images\">Obrazy</h2><p>Główne źródło problemów z wydajnością:</p><ul><li>Formaty WebP/AVIF</li><li>Lazy loading</li><li>Odpowiednie rozmiary (srcset)</li><li>Blur placeholder</li></ul><h2 id=\"code\">Optymalizacja kodu</h2><ul><li>Code splitting</li><li>Tree shaking</li><li>Minifikacja</li><li>Usuwanie nieużywanego CSS</li></ul><h2 id=\"fonts\">Czcionki</h2><p>Czcionki często blokują renderowanie:</p><ul><li>font-display: swap</li><li>Preloading kluczowych czcionek</li><li>Subsetting znaków</li></ul>"
         },
         "landing-page-anatomy": {
-          "title": "Anatomy of a Perfect Landing Page",
-          "excerpt": "What blocks a landing page should have and in what order. A structure that sells.",
+          "title": "Anatomia idealnego landing page'a",
+          "excerpt": "Jakie bloki powinien mieć landing page i w jakiej kolejności. Struktura, która sprzedaje.",
           "categoryLabel": "Marketing",
           "date": "2025-10-05",
           "readTime": "8 min",
-          "author": "NAKO Agency Team",
+          "author": "Zespół NAKO Agency",
           "toc": [
             {
               "id": "hero",
-              "title": "Hero Section"
+              "title": "Sekcja Hero"
             },
             {
               "id": "benefits",
-              "title": "Benefits"
+              "title": "Korzyści"
             },
             {
               "id": "social-proof",
-              "title": "Social Proof"
+              "title": "Dowód społeczny"
             },
             {
               "id": "cta",
-              "title": "CTA Block"
+              "title": "Blok CTA"
             }
           ],
-          "content": "<h2 id=\"hero\">Hero Section</h2><p>The first screen decides everything. In 5 seconds, the user should understand:</p><ul><li>What you offer</li><li>Who it's for</li><li>Why they should stay</li></ul><h2 id=\"benefits\">Benefits</h2><p>Not features, but benefits. Not '10 years of experience', but 'We'll solve your problem in 3 days'.</p><p>3-5 key benefits with icons or illustrations.</p><h2 id=\"social-proof\">Social Proof</h2><p>Reviews, case studies, client logos, numbers — everything that backs up your claims.</p><p>Place them closer to the CTA — this reduces doubt.</p><h2 id=\"cta\">CTA Block</h2><p>The final call to action. Briefly restate the offer and add a form or button.</p><p>Remove everything unnecessary — just the action.</p>"
+          "content": "<h2 id=\"hero\">Sekcja Hero</h2><p>Pierwszy ekran decyduje o wszystkim. W 5 sekund użytkownik powinien zrozumieć:</p><ul><li>Co oferujesz</li><li>Dla kogo to jest</li><li>Dlaczego warto zostać</li></ul><h2 id=\"benefits\">Korzyści</h2><p>Nie cechy, ale korzyści. Nie „10 lat doświadczenia”, ale „Rozwiążemy Państwa problem w 3 dni”.</p><p>3–5 kluczowych korzyści z ikonami lub ilustracjami.</p><h2 id=\"social-proof\">Dowód społeczny</h2><p>Opinie, case study, logotypy klientów, liczby — wszystko, co potwierdza Państwa słowa.</p><p>Umieść je bliżej CTA — to zmniejsza wątpliwości.</p><h2 id=\"cta\">Blok CTA</h2><p>Ostateczne wezwanie do działania. Krótko powtórz ofertę i dodaj formularz lub przycisk.</p><p>Usuń wszystko zbędne — tylko działanie.</p>"
         }
       }
     },
     "cases": {
-      "metaTitle": "Cases — Portfolio | NAKO Agency",
-      "metaDescription": "NAKO Agency web studio portfolio. Real projects: online stores, landing pages, corporate sites and personal brands of experts.",
+      "metaTitle": "Realizacje — Portfolio | NAKO Agency",
+      "metaDescription": "Portfolio studia internetowego NAKO Agency. Prawdziwe projekty: sklepy internetowe, landing page’e, strony firmowe i marki osobiste ekspertów.",
       "caption": "Portfolio",
-      "title": "CASES",
-      "description": "Real projects with measurable results. Each case is a solution to a specific business challenge.",
-      "filterAll": "All projects",
-      "filterExpert": "Expert",
+      "title": "REALIZACJE",
+      "description": "Prawdziwe projekty z mierzalnymi wynikami. Każda realizacja to rozwiązanie konkretnego wyzwania biznesowego.",
+      "filterAll": "Wszystkie projekty",
+      "filterExpert": "Ekspert",
       "filterEcommerce": "E-commerce",
       "filterLanding": "Landing",
-      "noResultsTitle": "No projects",
-      "noResultsText": "There are no cases in this category yet",
-      "noResultsButton": "Show all projects",
-      "viewCase": "View case",
-      "ctaTitle": "YOUR PROJECT",
-      "ctaText": "Want your project on this list? Tell us about your challenge — we'll discuss the solution.",
-      "ctaButton": "Discuss project",
-      "ctaServicesButton": "View services",
-      "ctaBlogButton": "Read blog",
+      "noResultsTitle": "Brak projektów",
+      "noResultsText": "W tej kategorii nie ma jeszcze żadnych realizacji",
+      "noResultsButton": "Pokaż wszystkie projekty",
+      "viewCase": "Zobacz realizację",
+      "ctaTitle": "PAŃSTWA PROJEKT",
+      "ctaText": "Chcą Państwo zobaczyć swój projekt na tej liście? Opowiedzcie nam o swoim wyzwaniu — omówimy rozwiązanie.",
+      "ctaButton": "Omów projekt",
+      "ctaServicesButton": "Zobacz usługi",
+      "ctaBlogButton": "Czytaj blog",
       "items": [
         {
           "slug": "expert-coach",
-          "title": "Personal Coach Website",
+          "title": "Strona coacha personalnego",
           "category": "expert",
-          "categoryLabel": "Expert",
-          "description": "Website for a business coach with consultation booking and blog.",
-          "result": "+180% leads",
+          "categoryLabel": "Ekspert",
+          "description": "Strona dla coacha biznesowego z rezerwacją konsultacji i blogiem.",
+          "result": "+180% leadów",
           "imageSrc": "/images/cases/case-expert-coach.jpg"
         },
         {
           "slug": "ecommerce-fashion",
-          "title": "Fashion Online Store",
+          "title": "Sklep z modą online",
           "category": "ecommerce",
           "categoryLabel": "E-commerce",
-          "description": "Women's clothing store with a catalog of 500+ products.",
+          "description": "Sklep z odzieżą damską z katalogiem 500+ produktów.",
           "result": "3.2s LCP",
           "imageSrc": "/images/cases/case-ecommerce-fashion.jpg"
         },
         {
           "slug": "landing-saas",
-          "title": "SaaS Product Landing",
+          "title": "Landing produktu SaaS",
           "category": "landing",
           "categoryLabel": "Landing",
-          "description": "Conversion page for a cloud analytics service.",
-          "result": "8.5% conversion",
+          "description": "Strona konwersyjna dla usługi analityki chmurowej.",
+          "result": "8,5% konwersji",
           "imageSrc": "/images/cases/case-landing-saas.jpg"
         },
         {
           "slug": "expert-psychologist",
-          "title": "Psychologist Website",
+          "title": "Strona psychologa",
           "category": "expert",
-          "categoryLabel": "Expert",
-          "description": "Personal website with online booking and calendar integration.",
-          "result": "+240% bookings",
+          "categoryLabel": "Ekspert",
+          "description": "Strona osobista z rezerwacją online i integracją kalendarza.",
+          "result": "+240% rezerwacji",
           "imageSrc": "/images/cases/case-expert-psychologist.jpg"
         },
         {
           "slug": "ecommerce-cosmetics",
-          "title": "Cosmetics Store",
+          "title": "Sklep z kosmetykami",
           "category": "ecommerce",
           "categoryLabel": "E-commerce",
-          "description": "Online store for natural cosmetics with subscription model.",
+          "description": "Sklep internetowy z kosmetykami naturalnymi z modelem subskrypcji.",
           "result": "95 Lighthouse",
           "imageSrc": "/images/cases/case-ecommerce-cosmetics.jpg"
         },
         {
           "slug": "landing-event",
-          "title": "Event Promo Page",
+          "title": "Strona promocyjna wydarzenia",
           "category": "landing",
           "categoryLabel": "Landing",
-          "description": "Landing page for a business conference with online registration.",
-          "result": "1200+ registrations",
+          "description": "Landing page konferencji biznesowej z rejestracją online.",
+          "result": "1200+ rejestracji",
           "imageSrc": "/images/cases/case-landing-event.jpg"
         },
         {
           "slug": "expert-lawyer",
-          "title": "Law Practice Website",
+          "title": "Strona kancelarii prawnej",
           "category": "expert",
-          "categoryLabel": "Expert",
-          "description": "Corporate website for a lawyer with case portfolio and booking.",
-          "result": "+150% inquiries",
+          "categoryLabel": "Ekspert",
+          "description": "Strona firmowa dla prawnika z portfolio spraw i rezerwacją.",
+          "result": "+150% zapytań",
           "imageSrc": "/images/cases/case-corporate-it.jpg"
         },
         {
           "slug": "ecommerce-electronics",
-          "title": "Electronics Store",
+          "title": "Sklep z elektroniką",
           "category": "ecommerce",
           "categoryLabel": "E-commerce",
-          "description": "Online gadget store with smart search and filters.",
-          "result": "+85% conversion",
+          "description": "Sklep internetowy z gadżetami z inteligentnym wyszukiwaniem i filtrami.",
+          "result": "+85% konwersji",
           "imageSrc": "/images/cases/case-ecommerce-electronics.jpg"
         },
         {
           "slug": "landing-app",
-          "title": "Mobile App Landing",
+          "title": "Landing aplikacji mobilnej",
           "category": "landing",
           "categoryLabel": "Landing",
-          "description": "Promo page for a fitness app with App Store links.",
-          "result": "12K installs",
+          "description": "Strona promocyjna aplikacji fitness z linkami do App Store.",
+          "result": "12K instalacji",
           "imageSrc": "/images/cases/case-expert-nutrition.jpg"
         }
       ]
     },
     "caseDetail": {
-      "backLink": "All cases",
-      "taskTitle": "TASK",
-      "solutionTitle": "SOLUTION",
-      "resultsTitle": "RESULTS",
-      "techTitle": "Technologies",
-      "galleryTitle": "Gallery",
-      "otherCasesTitle": "OTHER CASES",
-      "previewAlt": "Project preview",
-      "clientLabel": "Client",
-      "yearLabel": "Year",
-      "durationLabel": "Duration",
-      "siteLabel": "Website",
-      "openLink": "Open →",
-      "ctaTitle": "Want the same result?",
-      "ctaText": "Tell us about your project — we will discuss how to achieve your goals.",
-      "ctaButton": "Discuss project",
-      "notFound": "Case not found",
-      "breadcrumbHome": "Home",
-      "breadcrumbCases": "Cases",
+      "backLink": "Wszystkie realizacje",
+      "taskTitle": "ZADANIE",
+      "solutionTitle": "ROZWIĄZANIE",
+      "resultsTitle": "WYNIKI",
+      "techTitle": "Technologie",
+      "galleryTitle": "Galeria",
+      "otherCasesTitle": "INNE REALIZACJE",
+      "previewAlt": "Podgląd projektu",
+      "clientLabel": "Klient",
+      "yearLabel": "Rok",
+      "durationLabel": "Czas realizacji",
+      "siteLabel": "Strona",
+      "openLink": "Otwórz →",
+      "ctaTitle": "Chcą Państwo taki sam wynik?",
+      "ctaText": "Opowiedzcie nam o swoim projekcie — omówimy, jak osiągnąć Państwa cele.",
+      "ctaButton": "Omów projekt",
+      "notFound": "Realizacja nie znaleziona",
+      "breadcrumbHome": "Strona główna",
+      "breadcrumbCases": "Realizacje",
       "cases": {
         "expert-coach": {
-          "title": "Personal Coach Website",
-          "categoryLabel": "Expert",
-          "description": "Website for a business coach with consultation booking and blog.",
-          "client": "Anna Smirnova, business coach",
+          "title": "Strona coacha personalnego",
+          "categoryLabel": "Ekspert",
+          "description": "Strona dla coacha biznesowego z rezerwacją konsultacji i blogiem.",
+          "client": "Anna Smirnova, coach biznesowy",
           "year": "2024",
-          "duration": "3 weeks",
-          "task": "Create a personal website for a business coach that will sell consultation services and online courses. The site should convey expertise, build trust, and convert visitors into clients. Calendar integration for booking consultations.",
+          "duration": "3 tygodnie",
+          "task": "Stworzyć stronę osobistą dla coacha biznesowego, która będzie sprzedawać usługi konsultingowe i kursy online. Strona powinna przekazywać ekspertyzę, budować zaufanie i przekształcać odwiedzających w klientów. Integracja kalendarza do rezerwacji konsultacji.",
           "solution": [
-            "Developed content strategy focused on client case studies",
-            "Created minimalist design with personal brand focus",
-            "Integrated Calendly for online booking",
-            "Added blog for SEO and expertise showcase",
-            "Set up analytics and conversion goals"
+            "Opracowanie strategii treści skupionej na case study klientów",
+            "Stworzenie minimalistycznego designu z naciskiem na markę osobistą",
+            "Integracja Calendly do rezerwacji online",
+            "Dodanie bloga dla SEO i prezentacji ekspertyzy",
+            "Konfiguracja analityki i celów konwersji"
           ],
           "results": [
             {
               "value": "+180%",
-              "label": "Lead growth"
+              "label": "Wzrost leadów"
             },
             {
               "value": "2.1 sec",
@@ -2013,7 +2016,7 @@
             },
             {
               "value": "45%",
-              "label": "Booking conversion"
+              "label": "Konwersja rezerwacji"
             }
           ],
           "technologies": [
@@ -2025,19 +2028,19 @@
           ]
         },
         "ecommerce-fashion": {
-          "title": "Fashion Online Store",
+          "title": "Sklep z modą online",
           "categoryLabel": "E-commerce",
-          "description": "Women's clothing store with 500+ product catalog.",
+          "description": "Sklep z odzieżą damską z katalogiem 500+ produktów.",
           "client": "MODA Store",
           "year": "2024",
-          "duration": "6 weeks",
-          "task": "Create a modern women's clothing online store with convenient catalog, filtering, cart, and online payment. Loading speed and mobile version are critical as 70% of traffic comes from phones.",
+          "duration": "6 tygodni",
+          "task": "Stworzyć nowoczesny sklep internetowy z odzieżą damską z wygodnym katalogiem, filtrowaniem, koszykiem i płatnościami online. Szybkość ładowania i wersja mobilna są kluczowe, ponieważ 70% ruchu pochodzi z telefonów.",
           "solution": [
-            "Designed UX with mobile-first focus",
-            "Implemented smart filters and autocomplete search",
-            "Integrated YuKassa for online payment",
-            "Set up Telegram notifications for orders",
-            "Optimized images and added lazy loading"
+            "Zaprojektowanie UX z podejściem mobile-first",
+            "Wdrożenie inteligentnych filtrów i autouzupełniania wyszukiwania",
+            "Integracja YuKassa do płatności online",
+            "Konfiguracja powiadomień Telegram dla zamówień",
+            "Optymalizacja obrazów i dodanie lazy loading"
           ],
           "results": [
             {
@@ -2046,11 +2049,11 @@
             },
             {
               "value": "+65%",
-              "label": "Conversion"
+              "label": "Konwersja"
             },
             {
               "value": "500+",
-              "label": "Products"
+              "label": "Produktów"
             },
             {
               "value": "92",
@@ -2066,24 +2069,24 @@
           ]
         },
         "landing-saas": {
-          "title": "SaaS Product Landing",
+          "title": "Landing produktu SaaS",
           "categoryLabel": "Landing",
-          "description": "Conversion page for a cloud analytics service.",
+          "description": "Strona konwersyjna dla usługi analityki chmurowej.",
           "client": "DataFlow Analytics",
           "year": "2024",
-          "duration": "2 weeks",
-          "task": "Create a high-conversion landing page for a SaaS product in business analytics. The page should explain a complex product in simple terms and motivate free trial registration.",
+          "duration": "2 tygodnie",
+          "task": "Stworzyć wysokokonwersyjny landing page dla produktu SaaS z zakresu analityki biznesowej. Strona powinna wyjaśniać złożony produkt prostym językiem i motywować do rejestracji na bezpłatny okres próbny.",
           "solution": [
-            "Developed structure with progressive information disclosure",
-            "Created animated product demo blocks",
-            "Added social proof and testimonials",
-            "Implemented A/B testing of CTA blocks",
-            "Integrated with CRM for lead tracking"
+            "Opracowanie struktury z progresywnym ujawnianiem informacji",
+            "Stworzenie animowanych bloków demo produktu",
+            "Dodanie dowodów społecznych i opinii klientów",
+            "Wdrożenie testów A/B bloków CTA",
+            "Integracja z CRM do śledzenia leadów"
           ],
           "results": [
             {
               "value": "8.5%",
-              "label": "Conversion"
+              "label": "Konwersja"
             },
             {
               "value": "1.8 sec",
@@ -2106,24 +2109,24 @@
           ]
         },
         "expert-psychologist": {
-          "title": "Psychologist Website",
-          "categoryLabel": "Expert",
-          "description": "Personal website with online booking and calendar integration.",
-          "client": "Elena Volkova, psychologist",
+          "title": "Strona psychologa",
+          "categoryLabel": "Ekspert",
+          "description": "Strona osobista z rezerwacją online i integracją kalendarza.",
+          "client": "Elena Volkova, psycholog",
           "year": "2024",
-          "duration": "3 weeks",
-          "task": "Develop a website for a practicing psychologist with online booking capability. Design should create a sense of calm and trust. Privacy and booking simplicity are important.",
+          "duration": "3 tygodnie",
+          "task": "Opracować stronę dla praktykującego psychologa z możliwością rezerwacji online. Design powinien tworzyć poczucie spokoju i zaufania. Ważna jest prywatność i prostota rezerwacji.",
           "solution": [
-            "Created calm, minimalist design",
-            "Integrated online booking system",
-            "Added section with therapy specializations",
-            "Implemented initial consultation form",
-            "Set up email notifications for bookings"
+            "Stworzenie spokojnego, minimalistycznego designu",
+            "Integracja systemu rezerwacji online",
+            "Dodanie sekcji ze specjalizacjami terapeutycznymi",
+            "Wdrożenie formularza wstępnej konsultacji",
+            "Konfiguracja powiadomień e-mail o rezerwacjach"
           ],
           "results": [
             {
               "value": "+240%",
-              "label": "Booking growth"
+              "label": "Wzrost rezerwacji"
             },
             {
               "value": "2.4 sec",
@@ -2135,7 +2138,7 @@
             },
             {
               "value": "60%",
-              "label": "Online booking"
+              "label": "Rezerwacje online"
             }
           ],
           "technologies": [
@@ -2147,19 +2150,19 @@
           ]
         },
         "ecommerce-cosmetics": {
-          "title": "Cosmetics Store",
+          "title": "Sklep z kosmetykami",
           "categoryLabel": "E-commerce",
-          "description": "Online store for natural cosmetics with subscription.",
+          "description": "Sklep internetowy z kosmetykami naturalnymi z subskrypcją.",
           "client": "NaturaCare",
           "year": "2024",
-          "duration": "5 weeks",
-          "task": "Create a premium online store for natural cosmetics with visual and storytelling focus. Add subscription option for regular delivery.",
+          "duration": "5 tygodni",
+          "task": "Stworzyć premium sklep internetowy z kosmetykami naturalnymi z naciskiem na wizualność i storytelling. Dodać opcję subskrypcji na regularne dostawy.",
           "solution": [
-            "Developed visually rich design with photo emphasis",
-            "Implemented subscription system with flexible intervals",
-            "Integrated recommendation engine",
-            "Added loyalty program",
-            "Optimized for SEO in cosmetics niche"
+            "Opracowanie bogatego wizualnie designu z naciskiem na zdjęcia",
+            "Wdrożenie systemu subskrypcji z elastycznymi interwałami",
+            "Integracja silnika rekomendacji",
+            "Dodanie programu lojalnościowego",
+            "Optymalizacja SEO w niszy kosmetycznej"
           ],
           "results": [
             {
@@ -2168,15 +2171,15 @@
             },
             {
               "value": "+120%",
-              "label": "Subscriptions"
+              "label": "Subskrypcje"
             },
             {
               "value": "4.2%",
-              "label": "Conversion"
+              "label": "Konwersja"
             },
             {
               "value": "35%",
-              "label": "Repeat purchases"
+              "label": "Ponowne zakupy"
             }
           ],
           "technologies": [
@@ -2187,28 +2190,28 @@
           ]
         },
         "landing-event": {
-          "title": "Event Promo Page",
+          "title": "Strona promocyjna wydarzenia",
           "categoryLabel": "Landing",
-          "description": "Landing page for a business conference with online registration.",
+          "description": "Landing page konferencji biznesowej z rejestracją online.",
           "client": "TechConf 2024",
           "year": "2024",
-          "duration": "10 days",
-          "task": "Create a promo page for an IT conference with online registration and ticket payment. The page should create hype and FOMO effect.",
+          "duration": "10 dni",
+          "task": "Stworzyć stronę promocyjną konferencji IT z rejestracją online i płatnością za bilety. Strona powinna budować ekscytację i efekt FOMO.",
           "solution": [
-            "Created dynamic design with countdown timer",
-            "Implemented different ticket types with pricing",
-            "Integrated online payment",
-            "Added program and speakers section",
-            "Set up email marketing for registrants"
+            "Stworzenie dynamicznego designu z odliczaniem czasu",
+            "Wdrożenie różnych typów biletów z cennikiem",
+            "Integracja płatności online",
+            "Dodanie sekcji z programem i prelegentami",
+            "Konfiguracja email marketingu dla zarejestrowanych"
           ],
           "results": [
             {
               "value": "1200+",
-              "label": "Registrations"
+              "label": "Rejestracji"
             },
             {
               "value": "12%",
-              "label": "Conversion"
+              "label": "Konwersja"
             },
             {
               "value": "1.5 sec",
@@ -2228,24 +2231,24 @@
           ]
         },
         "expert-lawyer": {
-          "title": "Law Practice Website",
-          "categoryLabel": "Expert",
-          "description": "Corporate website for a lawyer with case portfolio and booking.",
-          "client": "Attorney Petrov I.S.",
+          "title": "Strona kancelarii prawnej",
+          "categoryLabel": "Ekspert",
+          "description": "Strona firmowa dla prawnika z portfolio spraw i rezerwacją.",
+          "client": "Adwokat Petrov I.S.",
           "year": "2024",
-          "duration": "4 weeks",
-          "task": "Develop a prestigious website for a lawyer that demonstrates experience and expertise. Trust, professionalism, and quick contact capability are important.",
+          "duration": "4 tygodnie",
+          "task": "Opracować prestiżową stronę dla prawnika, która demonstruje doświadczenie i ekspertyzę. Ważne są zaufanie, profesjonalizm i możliwość szybkiego kontaktu.",
           "solution": [
-            "Created strict, professional design",
-            "Structured services by legal areas",
-            "Added section with won cases (anonymized)",
-            "Implemented emergency consultation form",
-            "Integrated online chat for quick communication"
+            "Stworzenie surowego, profesjonalnego designu",
+            "Strukturyzacja usług według dziedzin prawa",
+            "Dodanie sekcji z wygranymi sprawami (zanonimizowanymi)",
+            "Wdrożenie formularza pilnej konsultacji",
+            "Integracja czatu online do szybkiej komunikacji"
           ],
           "results": [
             {
               "value": "+150%",
-              "label": "Inquiries"
+              "label": "Zapytań"
             },
             {
               "value": "2.8 sec",
@@ -2257,7 +2260,7 @@
             },
             {
               "value": "70%",
-              "label": "From search"
+              "label": "Z wyszukiwarki"
             }
           ],
           "technologies": [
@@ -2268,24 +2271,24 @@
           ]
         },
         "ecommerce-electronics": {
-          "title": "Electronics Store",
+          "title": "Sklep z elektroniką",
           "categoryLabel": "E-commerce",
-          "description": "Online gadget store with smart search and filters.",
+          "description": "Sklep internetowy z gadżetami z inteligentnym wyszukiwaniem i filtrami.",
           "client": "GadgetHub",
           "year": "2024",
-          "duration": "7 weeks",
-          "task": "Create a modern electronics online store with UX focus and fast search. Catalog of 2000+ products with many specifications.",
+          "duration": "7 tygodni",
+          "task": "Stworzyć nowoczesny sklep internetowy z elektroniką z naciskiem na UX i szybkie wyszukiwanie. Katalog 2000+ produktów z wieloma specyfikacjami.",
           "solution": [
-            "Implemented Algolia for instant search",
-            "Created faceted filter system",
-            "Added product comparison",
-            "Integrated with 1C for inventory sync",
-            "Implemented wishlist and price drop notifications"
+            "Wdrożenie Algolia do natychmiastowego wyszukiwania",
+            "Stworzenie systemu filtrów fasetowych",
+            "Dodanie porównywania produktów",
+            "Integracja z 1C do synchronizacji stanów magazynowych",
+            "Wdrożenie listy życzeń i powiadomień o obniżkach cen"
           ],
           "results": [
             {
               "value": "+85%",
-              "label": "Conversion"
+              "label": "Konwersja"
             },
             {
               "value": "2.9 sec",
@@ -2297,7 +2300,7 @@
             },
             {
               "value": "2000+",
-              "label": "Products"
+              "label": "Produktów"
             }
           ],
           "technologies": [
@@ -2309,28 +2312,28 @@
           ]
         },
         "landing-app": {
-          "title": "Mobile App Landing",
+          "title": "Landing aplikacji mobilnej",
           "categoryLabel": "Landing",
-          "description": "Promo page for a fitness app with App Store links.",
+          "description": "Strona promocyjna aplikacji fitness z linkami do App Store.",
           "client": "FitLife App",
           "year": "2024",
-          "duration": "2 weeks",
-          "task": "Create a landing page for a mobile fitness app that motivates downloads. Show functionality and benefits, integrate App Store and Google Play links.",
+          "duration": "2 tygodnie",
+          "task": "Stworzyć landing page dla mobilnej aplikacji fitness, który motywuje do pobrania. Pokazać funkcjonalność i korzyści, zintegrować linki do App Store i Google Play.",
           "solution": [
-            "Created bright, energetic design",
-            "Added interactive demo screenshots",
-            "Implemented feature video previews",
-            "Integrated smart app banners",
-            "Added user reviews and ratings"
+            "Stworzenie jasnego, energetycznego designu",
+            "Dodanie interaktywnych zrzutów ekranu demo",
+            "Wdrożenie podglądów wideo funkcji",
+            "Integracja smart app banners",
+            "Dodanie opinii użytkowników i ocen"
           ],
           "results": [
             {
               "value": "12K",
-              "label": "Installs"
+              "label": "Instalacji"
             },
             {
               "value": "15%",
-              "label": "Conversion"
+              "label": "Konwersja"
             },
             {
               "value": "1.2 sec",
@@ -2352,7 +2355,7 @@
     }
   },
   "preloader": {
-    "loading": "Loading resources...",
-    "progress": "Loading: {progress}%"
+    "loading": "Ładowanie zasobów...",
+    "progress": "Ładowanie: {progress}%"
   }
 }
