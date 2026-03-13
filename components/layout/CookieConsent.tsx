@@ -57,6 +57,15 @@ export function CookieConsent() {
     [regionCode],
   );
 
+  useEffect(() => {
+    if (!visible || showSettings) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") handleRejectAll();
+    };
+    document.addEventListener("keydown", handleKey);
+    return () => document.removeEventListener("keydown", handleKey);
+  }, [visible, showSettings, handleRejectAll]);
+
   return (
     <AnimatePresence>
       {visible && !showSettings && (
@@ -237,6 +246,7 @@ function CookieSettings({
                   type="button"
                   role="switch"
                   aria-checked={cat.checked}
+                  aria-label={cat.label}
                   onClick={() => cat.onChange?.(!cat.checked)}
                   className={`relative shrink-0 mt-0.5 w-10 h-5 rounded-full transition-colors duration-200 ${
                     cat.checked
