@@ -391,14 +391,27 @@
     "madeWith": "Realizat cu",
     "madeIn": "la",
     "privacyLink": "Politica de confidențialitate",
-    "termsLink": "Termeni de utilizare"
+    "termsLink": "Termeni de utilizare",
+    "cookieSettings": "Setări cookies"
   },
-  "cookieConsent": {
-    "text": "Folosim cookie-uri pentru analitică și îmbunătățirea site-ului.",
-    "link": "Detalii",
-    "accept": "Accept",
-    "decline": "Refuz",
-    "ariaLabel": "Consimțământ cookie-uri"
+  "cookies": {
+    "bannerTitle": "Consimțământ cookies",
+    "bannerText": "Folosim cookie-uri pentru a îmbunătăți experiența dvs., a analiza traficul și a personaliza conținutul. Puteți alege ce cookie-uri să permiteți.",
+    "acceptAll": "Acceptă toate",
+    "rejectAll": "Respinge toate",
+    "customize": "Personalizează",
+    "policyLink": "Politica cookies",
+    "settingsTitle": "Setări cookies",
+    "necessary": "Necesare",
+    "necessaryDesc": "Esențiale pentru funcționarea site-ului. Nu pot fi dezactivate.",
+    "analytics": "Analitice",
+    "analyticsDesc": "Ne ajută să înțelegem cum vizitatorii folosesc site-ul pentru a-l îmbunătăți.",
+    "marketing": "Marketing",
+    "marketingDesc": "Folosite pentru publicitate personalizată și remarketing.",
+    "preferences": "Preferințe",
+    "preferencesDesc": "Rețin alegerea dvs. de limbă, regiune și preferințe de afișare.",
+    "save": "Salvează setările",
+    "alwaysActive": "Mereu active"
   },
   "callbackModal": {
     "title": "Solicită un apel",

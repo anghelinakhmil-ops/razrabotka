@@ -135,6 +135,12 @@ export default async function LocaleLayout({
             })),
           }}
         />
+        {/* Google Consent Mode v2 — default: all denied */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','functionality_storage':'denied','personalization_storage':'denied','security_storage':'granted'});`,
+          }}
+        />
       </head>
       <body
         className={`${manrope.variable} ${inter.variable} antialiased bg-[var(--color-background)] text-[var(--color-text-primary)]`}

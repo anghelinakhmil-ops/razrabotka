@@ -391,14 +391,27 @@
     "madeWith": "Realizzato con",
     "madeIn": "da",
     "privacyLink": "Politica sulla Privacy",
-    "termsLink": "Termini di Utilizzo"
+    "termsLink": "Termini di Utilizzo",
+    "cookieSettings": "Impostazioni cookie"
   },
-  "cookieConsent": {
-    "text": "Utilizziamo i cookie per analytics e miglioramento del sito.",
-    "link": "Scopri di più",
-    "accept": "Accetta",
-    "decline": "Rifiuta",
-    "ariaLabel": "Consenso cookie"
+  "cookies": {
+    "bannerTitle": "Consenso cookie",
+    "bannerText": "Utilizziamo i cookie per migliorare la tua esperienza, analizzare il traffico e personalizzare i contenuti. Puoi scegliere quali cookie consentire.",
+    "acceptAll": "Accetta tutti",
+    "rejectAll": "Rifiuta tutti",
+    "customize": "Personalizza",
+    "policyLink": "Politica dei cookie",
+    "settingsTitle": "Impostazioni cookie",
+    "necessary": "Necessari",
+    "necessaryDesc": "Essenziali per il funzionamento del sito. Non possono essere disattivati.",
+    "analytics": "Analisi",
+    "analyticsDesc": "Ci aiutano a capire come i visitatori utilizzano il sito per migliorarlo.",
+    "marketing": "Marketing",
+    "marketingDesc": "Utilizzati per pubblicità personalizzata e remarketing.",
+    "preferences": "Preferenze",
+    "preferencesDesc": "Ricordano la tua scelta di lingua, regione e preferenze di visualizzazione.",
+    "save": "Salva impostazioni",
+    "alwaysActive": "Sempre attivo"
   },
   "callbackModal": {
     "title": "Richiedi una chiamata",

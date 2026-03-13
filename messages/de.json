@@ -391,14 +391,27 @@
     "madeWith": "Erstellt mit",
     "madeIn": "bei",
     "privacyLink": "Datenschutzerklärung",
-    "termsLink": "Nutzungsbedingungen"
+    "termsLink": "Nutzungsbedingungen",
+    "cookieSettings": "Cookie-Einstellungen"
   },
-  "cookieConsent": {
-    "text": "Wir verwenden Cookies für Analytics und die Verbesserung der Website.",
-    "link": "Mehr erfahren",
-    "accept": "Akzeptieren",
-    "decline": "Ablehnen",
-    "ariaLabel": "Cookie-Einwilligung"
+  "cookies": {
+    "bannerTitle": "Cookie-Einwilligung",
+    "bannerText": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern, den Datenverkehr zu analysieren und Inhalte zu personalisieren. Sie können wählen, welche Cookies Sie zulassen möchten.",
+    "acceptAll": "Alle akzeptieren",
+    "rejectAll": "Alle ablehnen",
+    "customize": "Anpassen",
+    "policyLink": "Cookie-Richtlinie",
+    "settingsTitle": "Cookie-Einstellungen",
+    "necessary": "Notwendig",
+    "necessaryDesc": "Für die Funktion der Website unerlässlich. Können nicht deaktiviert werden.",
+    "analytics": "Analyse",
+    "analyticsDesc": "Helfen uns zu verstehen, wie Besucher die Website nutzen, um sie zu verbessern.",
+    "marketing": "Marketing",
+    "marketingDesc": "Werden für personalisierte Werbung und Remarketing verwendet.",
+    "preferences": "Präferenzen",
+    "preferencesDesc": "Merken sich Ihre Sprach-, Regions- und Anzeigeeinstellungen.",
+    "save": "Einstellungen speichern",
+    "alwaysActive": "Immer aktiv"
   },
   "callbackModal": {
     "title": "Rückruf anfordern",

@@ -193,6 +193,26 @@ export function Footer({ className }: FooterProps) {
                     </Link>
                   </li>
                 ))}
+                <li>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (typeof window !== "undefined") {
+                        localStorage.removeItem("cookie_consent_v2");
+                        document.cookie = "cc_status=; path=/; max-age=0";
+                        window.location.reload();
+                      }
+                    }}
+                    className={clsx(
+                      "text-[14px]",
+                      "text-white/40",
+                      "hover:text-white",
+                      "transition-colors duration-200"
+                    )}
+                  >
+                    {t("cookieSettings")}
+                  </button>
+                </li>
               </ul>
             </div>
           </div>

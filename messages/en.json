@@ -391,14 +391,27 @@
     "madeWith": "Made with",
     "madeIn": "at",
     "privacyLink": "Privacy Policy",
-    "termsLink": "Terms of Use"
+    "termsLink": "Terms of Use",
+    "cookieSettings": "Cookie Settings"
   },
-  "cookieConsent": {
-    "text": "We use cookies for analytics and site improvement.",
-    "link": "Learn more",
-    "accept": "Accept",
-    "decline": "Decline",
-    "ariaLabel": "Cookie consent"
+  "cookies": {
+    "bannerTitle": "Cookie Consent",
+    "bannerText": "We use cookies to improve your experience, analyze traffic, and personalize content. You can choose which cookies to allow.",
+    "acceptAll": "Accept All",
+    "rejectAll": "Reject All",
+    "customize": "Customize",
+    "policyLink": "Cookie Policy",
+    "settingsTitle": "Cookie Settings",
+    "necessary": "Necessary",
+    "necessaryDesc": "Essential for the website to function. Cannot be disabled.",
+    "analytics": "Analytics",
+    "analyticsDesc": "Help us understand how visitors use the site to improve it.",
+    "marketing": "Marketing",
+    "marketingDesc": "Used for personalized advertising and remarketing.",
+    "preferences": "Preferences",
+    "preferencesDesc": "Remember your language, region, and display preferences.",
+    "save": "Save Settings",
+    "alwaysActive": "Always active"
   },
   "callbackModal": {
     "title": "Request a call",

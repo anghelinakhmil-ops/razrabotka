@@ -391,14 +391,27 @@
     "madeWith": "Wykonano z",
     "madeIn": "w",
     "privacyLink": "Polityka prywatności",
-    "termsLink": "Regulamin"
+    "termsLink": "Regulamin",
+    "cookieSettings": "Ustawienia cookies"
   },
-  "cookieConsent": {
-    "text": "Używamy plików cookie do analityki i ulepszania strony.",
-    "link": "Dowiedz się więcej",
-    "accept": "Akceptuję",
-    "decline": "Odmawiam",
-    "ariaLabel": "Zgoda na pliki cookie"
+  "cookies": {
+    "bannerTitle": "Zgoda na cookies",
+    "bannerText": "Używamy plików cookie, aby poprawić Twoje doświadczenie, analizować ruch i personalizować treści. Możesz wybrać, które pliki cookie chcesz zezwolić.",
+    "acceptAll": "Akceptuj wszystkie",
+    "rejectAll": "Odrzuć wszystkie",
+    "customize": "Dostosuj",
+    "policyLink": "Polityka cookies",
+    "settingsTitle": "Ustawienia cookies",
+    "necessary": "Niezbędne",
+    "necessaryDesc": "Niezbędne do funkcjonowania strony. Nie można wyłączyć.",
+    "analytics": "Analityczne",
+    "analyticsDesc": "Pomagają nam zrozumieć, jak odwiedzający korzystają ze strony, aby ją ulepszyć.",
+    "marketing": "Marketingowe",
+    "marketingDesc": "Używane do personalizacji reklam i remarketingu.",
+    "preferences": "Preferencje",
+    "preferencesDesc": "Zapamiętują wybór języka, regionu i preferencje wyświetlania.",
+    "save": "Zapisz ustawienia",
+    "alwaysActive": "Zawsze aktywne"
   },
   "callbackModal": {
     "title": "Zamów rozmowę",
