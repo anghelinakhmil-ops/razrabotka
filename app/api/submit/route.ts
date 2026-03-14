@@ -59,13 +59,7 @@ const callbackLeadSchema = baseLeadSchema.extend({
  */
 const briefLeadSchema = baseLeadSchema.extend({
   type: z.literal("brief"),
-  siteType: z.string().min(1, "Выберите тип сайта"),
-  goal: z.string().min(1, "Выберите цель"),
-  timeline: z.string().optional(),
-  budget: z.string().optional(),
-  references: z.string().optional(),
   name: z.string().min(2, "Введите имя"),
-  email: z.string().email("Некорректный email"),
   phone: z.string().min(10, "Некорректный телефон"),
   telegram: z.string().optional(),
   comment: z.string().optional(),
@@ -169,15 +163,8 @@ export async function POST(request: NextRequest): Promise<NextResponse<ApiRespon
       email: "email" in leadData ? leadData.email : undefined,
       message: "message" in leadData ? leadData.message : undefined,
       // Brief specific fields
-      ...("siteType" in leadData && {
-        siteType: leadData.siteType,
-        goal: leadData.goal,
-        timeline: leadData.timeline,
-        budget: leadData.budget,
-        references: leadData.references,
-        telegram: leadData.telegram,
-        comment: leadData.comment,
-      }),
+      ...("telegram" in leadData && { telegram: leadData.telegram }),
+      ...("comment" in leadData && { comment: leadData.comment }),
       ...utmData,
     });
 
@@ -198,15 +185,8 @@ export async function POST(request: NextRequest): Promise<NextResponse<ApiRespon
       email: "email" in leadData ? leadData.email : undefined,
       message: "message" in leadData ? leadData.message : undefined,
       // Brief specific fields
-      ...("siteType" in leadData && {
-        siteType: leadData.siteType,
-        goal: leadData.goal,
-        timeline: leadData.timeline,
-        budget: leadData.budget,
-        references: leadData.references,
-        telegram: leadData.telegram,
-        comment: leadData.comment,
-      }),
+      ...("telegram" in leadData && { telegram: leadData.telegram }),
+      ...("comment" in leadData && { comment: leadData.comment }),
       ...utmData,
     });
 
