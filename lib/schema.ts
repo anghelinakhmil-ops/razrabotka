@@ -12,7 +12,7 @@ export function organizationSchema(options?: {
     "@type": "Organization",
     name: "NAKO Agency",
     url: BASE_URL,
-    logo: `${BASE_URL}/images/logo.png`,
+    logo: `${BASE_URL}/images/logo/logo-square.jpg`,
     description:
       options?.description ??
       "We create websites for experts, e-commerce, and businesses. Premium-minimal design, speed, SEO.",
@@ -109,7 +109,7 @@ export function articleSchema({
       name: "NAKO Agency",
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/images/logo.png`,
+        url: `${BASE_URL}/images/logo/logo-square.jpg`,
       },
     },
     ...(image && {
@@ -157,7 +157,7 @@ export function localBusinessSchema(options?: {
     "@type": "ProfessionalService",
     name: "NAKO Agency",
     url: BASE_URL,
-    logo: `${BASE_URL}/images/logo.png`,
+    logo: `${BASE_URL}/images/logo/logo-square.jpg`,
     description:
       options?.description ??
       "Turnkey website development for experts, businesses and e-commerce.",
