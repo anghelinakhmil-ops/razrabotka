@@ -36,7 +36,9 @@
     "offerLine1": "Wir helfen Leads zu generieren, Dienstleistungen zu verkaufen",
     "offerLine2": " und Traffic in Kunden zu verwandeln",
     "cta": "Projekt besprechen",
-    "ctaCases": "Referenzen ansehen"
+    "ctaCases": "Referenzen ansehen",
+    "scroll": "Nach unten scrollen",
+    "ariaScroll": "Zum nächsten Abschnitt scrollen"
   },
   "benefits": {
     "caption": "Warum wir",

@@ -36,7 +36,9 @@
     "offerLine1": "Helping attract leads, sell services",
     "offerLine2": " and convert traffic into clients",
     "cta": "Discuss project",
-    "ctaCases": "View cases"
+    "ctaCases": "View cases",
+    "scroll": "Scroll down",
+    "ariaScroll": "Scroll to next section"
   },
   "benefits": {
     "caption": "Why us",

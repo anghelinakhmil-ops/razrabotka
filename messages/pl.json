@@ -36,7 +36,9 @@
     "offerLine1": "Pomagamy pozyskiwać leady, sprzedawać usługi",
     "offerLine2": " i zamieniać ruch w klientów",
     "cta": "Omów projekt",
-    "ctaCases": "Zobacz realizacje"
+    "ctaCases": "Zobacz realizacje",
+    "scroll": "Przewiń w dół",
+    "ariaScroll": "Przewiń do następnej sekcji"
   },
   "benefits": {
     "caption": "Dlaczego my",

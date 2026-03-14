@@ -36,7 +36,9 @@
     "offerLine1": "Attirer des leads, vendre des services",
     "offerLine2": " et convertir le trafic en clients",
     "cta": "Discuter du projet",
-    "ctaCases": "Voir les projets"
+    "ctaCases": "Voir les projets",
+    "scroll": "Défiler vers le bas",
+    "ariaScroll": "Défiler vers la section suivante"
   },
   "benefits": {
     "caption": "Pourquoi nous",

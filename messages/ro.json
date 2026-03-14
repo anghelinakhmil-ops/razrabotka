@@ -36,7 +36,9 @@
     "offerLine1": "Ajutăm la atragerea cererilor, vânzarea serviciilor",
     "offerLine2": " și conversia traficului în clienți",
     "cta": "Discutați proiectul",
-    "ctaCases": "Vezi cazuri"
+    "ctaCases": "Vezi cazuri",
+    "scroll": "Derulează în jos",
+    "ariaScroll": "Derulează la secțiunea următoare"
   },
   "benefits": {
     "caption": "De ce noi",
