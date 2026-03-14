@@ -33,7 +33,8 @@
     "subtitleCourses": "formations",
     "subtitleAnd": "et",
     "subtitleEvents": "événements",
-    "offer": "Attirer des leads, vendre des services et convertir le trafic en clients",
+    "offerLine1": "Attirer des leads, vendre des services",
+    "offerLine2": " et convertir le trafic en clients",
     "cta": "Discuter du projet",
     "ctaCases": "Voir les projets"
   },

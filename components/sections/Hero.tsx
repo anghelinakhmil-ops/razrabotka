@@ -75,8 +75,9 @@ export function Hero() {
         >
           {t("subtitle")}{" "}
           <span className="text-white font-medium">{t("subtitleExperts")}</span>,{" "}
-          <span className="text-white font-medium">{t("subtitleBusiness")}</span>,{" "}
-          <span className="text-white font-medium">{t("subtitleEcommerce")}</span>,{" "}
+          <span className="text-white font-medium">{t("subtitleBusiness")}</span>,
+          <br className="lg:hidden" />
+          <span className="text-white font-medium"> {t("subtitleEcommerce")}</span>,{" "}
           <span className="text-white font-medium">{t("subtitleCourses")}</span>{" "}
           {t("subtitleAnd")}{" "}
           <span className="text-white font-medium">{t("subtitleEvents")}</span>
@@ -89,7 +90,9 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: duration.normal, ease, delay: 0.7 }}
         >
-          {t("offer")}
+          {t("offerLine1")}
+          <br className="lg:hidden" />
+          {t("offerLine2")}
         </motion.p>
 
         {/* 2 CTA buttons */}
