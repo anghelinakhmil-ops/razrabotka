@@ -2,64 +2,70 @@
 
 import { useEffect, useRef, useCallback } from "react";
 
-interface Particle {
+interface Frame {
   x: number;
   y: number;
+  width: number;
+  height: number;
   vx: number;
   vy: number;
-  radius: number;
-  baseRadius: number;
+  rotation: number;
+  rotationSpeed: number;
   color: string;
-  glowColor: string;
-  pulse: number;
-  pulseSpeed: number;
+  lineWidth: number;
+  hasCornerMarks: boolean;
 }
 
 /**
- * ParticleField — эффектные плавающие частицы в цветах бренда
+ * ParticleField — анимированные геометрические рамки
  *
- * Крупные светящиеся точки с glow-эффектом, соединения между ними,
- * и интерактивная реакция на мышь. Canvas-based, 60fps.
+ * Пересекающиеся прямоугольные рамки в стиле логотипа NAKO Agency.
+ * Символизируют индивидуальный подход — каждая рамка уникальна.
+ * Canvas-based, 60fps.
  */
 export function ParticleField() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const particlesRef = useRef<Particle[]>([]);
+  const framesRef = useRef<Frame[]>([]);
   const animationRef = useRef<number>(0);
   const mouseRef = useRef({ x: -1000, y: -1000 });
-  const timeRef = useRef(0);
 
-  const initParticles = useCallback((width: number, height: number) => {
-    const count = Math.min(Math.floor((width * height) / 8000), 120);
-    const particles: Particle[] = [];
+  const initFrames = useCallback((width: number, height: number) => {
+    const frames: Frame[] = [];
+    const count = width < 768 ? 6 : 10;
 
-    const colorSets = [
-      { color: "rgba(166, 123, 91, 0.8)", glow: "rgba(166, 123, 91, 0.3)" },   // Terra Clay
-      { color: "rgba(166, 123, 91, 0.5)", glow: "rgba(166, 123, 91, 0.15)" },  // Terra Clay soft
-      { color: "rgba(217, 212, 203, 0.6)", glow: "rgba(217, 212, 203, 0.2)" }, // Muted Stroke
-      { color: "rgba(239, 235, 224, 0.4)", glow: "rgba(239, 235, 224, 0.1)" }, // Warm Sand
-      { color: "rgba(249, 247, 242, 0.5)", glow: "rgba(249, 247, 242, 0.15)" }, // Soft Ivory
-      { color: "rgba(196, 191, 181, 0.5)", glow: "rgba(196, 191, 181, 0.15)" }, // Line Dark
+    const colors = [
+      "rgba(217, 212, 203, 0.25)", // Muted Stroke
+      "rgba(217, 212, 203, 0.15)", // Muted Stroke lighter
+      "rgba(196, 191, 181, 0.2)",  // Line Dark
+      "rgba(166, 123, 91, 0.35)",  // Terra Clay
+      "rgba(166, 123, 91, 0.2)",   // Terra Clay lighter
+      "rgba(239, 235, 224, 0.12)", // Warm Sand
     ];
 
     for (let i = 0; i < count; i++) {
-      const colorSet = colorSets[Math.floor(Math.random() * colorSets.length)];
-      const baseRadius = Math.random() * 2.5 + 1;
+      const isTerra = i < 3;
+      const colorIndex = isTerra
+        ? 3 + Math.floor(Math.random() * 2)
+        : Math.floor(Math.random() * 3);
 
-      particles.push({
+      const scale = 0.15 + Math.random() * 0.35;
+
+      frames.push({
         x: Math.random() * width,
         y: Math.random() * height,
-        vx: (Math.random() - 0.5) * 0.4,
-        vy: (Math.random() - 0.5) * 0.4,
-        radius: baseRadius,
-        baseRadius,
-        color: colorSet.color,
-        glowColor: colorSet.glow,
-        pulse: Math.random() * Math.PI * 2,
-        pulseSpeed: Math.random() * 0.02 + 0.005,
+        width: width * scale * (0.8 + Math.random() * 0.6),
+        height: height * scale * (0.5 + Math.random() * 0.5),
+        vx: (Math.random() - 0.5) * 0.15,
+        vy: (Math.random() - 0.5) * 0.1,
+        rotation: (Math.random() - 0.5) * 0.08,
+        rotationSpeed: (Math.random() - 0.5) * 0.0002,
+        color: colors[colorIndex],
+        lineWidth: isTerra ? 1.5 : 1,
+        hasCornerMarks: Math.random() > 0.5,
       });
     }
 
-    particlesRef.current = particles;
+    framesRef.current = frames;
   }, []);
 
   useEffect(() => {
@@ -75,7 +81,7 @@ export function ParticleField() {
       canvas.width = rect.width * dpr;
       canvas.height = rect.height * dpr;
       ctx.scale(dpr, dpr);
-      initParticles(rect.width, rect.height);
+      initFrames(rect.width, rect.height);
     };
 
     const handleMouseMove = (e: MouseEvent) => {
@@ -95,143 +101,185 @@ export function ParticleField() {
     canvas.addEventListener("mousemove", handleMouseMove);
     canvas.addEventListener("mouseleave", handleMouseLeave);
 
-    const connectionDistance = 180;
-    const mouseRadius = 200;
+    const cornerSize = 12;
+
+    const drawCornerMarks = (
+      cx: number,
+      cy: number,
+      fw: number,
+      fh: number,
+      color: string,
+      lineWidth: number
+    ) => {
+      ctx.strokeStyle = color;
+      ctx.lineWidth = lineWidth;
+      const halfW = fw / 2;
+      const halfH = fh / 2;
+
+      // Top-left
+      ctx.beginPath();
+      ctx.moveTo(cx - halfW, cy - halfH + cornerSize);
+      ctx.lineTo(cx - halfW, cy - halfH);
+      ctx.lineTo(cx - halfW + cornerSize, cy - halfH);
+      ctx.stroke();
+
+      // Top-right
+      ctx.beginPath();
+      ctx.moveTo(cx + halfW - cornerSize, cy - halfH);
+      ctx.lineTo(cx + halfW, cy - halfH);
+      ctx.lineTo(cx + halfW, cy - halfH + cornerSize);
+      ctx.stroke();
+
+      // Bottom-right
+      ctx.beginPath();
+      ctx.moveTo(cx + halfW, cy + halfH - cornerSize);
+      ctx.lineTo(cx + halfW, cy + halfH);
+      ctx.lineTo(cx + halfW - cornerSize, cy + halfH);
+      ctx.stroke();
+
+      // Bottom-left
+      ctx.beginPath();
+      ctx.moveTo(cx - halfW + cornerSize, cy + halfH);
+      ctx.lineTo(cx - halfW, cy + halfH);
+      ctx.lineTo(cx - halfW, cy + halfH - cornerSize);
+      ctx.stroke();
+    };
+
+    const drawCrossMarks = (
+      cx: number,
+      cy: number,
+      fw: number,
+      fh: number,
+      color: string,
+      lineWidth: number
+    ) => {
+      const size = 6;
+      ctx.strokeStyle = color;
+      ctx.lineWidth = lineWidth * 0.8;
+      const halfW = fw / 2;
+      const halfH = fh / 2;
+
+      const points = [
+        { x: cx - halfW, y: cy - halfH },
+        { x: cx + halfW, y: cy + halfH },
+      ];
+
+      for (const p of points) {
+        ctx.beginPath();
+        ctx.moveTo(p.x - size, p.y);
+        ctx.lineTo(p.x + size, p.y);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y - size);
+        ctx.lineTo(p.x, p.y + size);
+        ctx.stroke();
+      }
+    };
 
     const animate = () => {
       const rect = canvas.getBoundingClientRect();
       const w = rect.width;
       const h = rect.height;
-      timeRef.current += 1;
 
       ctx.clearRect(0, 0, w, h);
 
-      const particles = particlesRef.current;
+      const frames = framesRef.current;
       const mouse = mouseRef.current;
 
-      // Draw connections first (behind particles)
-      for (let i = 0; i < particles.length; i++) {
-        const p = particles[i];
-        for (let j = i + 1; j < particles.length; j++) {
-          const p2 = particles[j];
-          const cdx = p.x - p2.x;
-          const cdy = p.y - p2.y;
-          const cdist = Math.sqrt(cdx * cdx + cdy * cdy);
+      for (let i = 0; i < frames.length; i++) {
+        const f = frames[i];
 
-          if (cdist < connectionDistance) {
-            const alpha = (1 - cdist / connectionDistance) * 0.2;
-            ctx.beginPath();
-            ctx.moveTo(p.x, p.y);
-            ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(166, 123, 91, ${alpha})`;
-            ctx.lineWidth = 0.8;
-            ctx.stroke();
-          }
-        }
-      }
+        // Update position — slow drift
+        f.x += f.vx;
+        f.y += f.vy;
+        f.rotation += f.rotationSpeed;
 
-      // Draw mouse connections
-      if (mouse.x > 0 && mouse.y > 0) {
-        for (let i = 0; i < particles.length; i++) {
-          const p = particles[i];
-          const dx = mouse.x - p.x;
-          const dy = mouse.y - p.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
+        // Soft bounce at edges
+        const margin = 100;
+        if (f.x < -margin) f.vx = Math.abs(f.vx) * 0.8;
+        if (f.x > w + margin) f.vx = -Math.abs(f.vx) * 0.8;
+        if (f.y < -margin) f.vy = Math.abs(f.vy) * 0.8;
+        if (f.y > h + margin) f.vy = -Math.abs(f.vy) * 0.8;
 
-          if (dist < mouseRadius) {
-            const alpha = (1 - dist / mouseRadius) * 0.35;
-            ctx.beginPath();
-            ctx.moveTo(p.x, p.y);
-            ctx.lineTo(mouse.x, mouse.y);
-            ctx.strokeStyle = `rgba(166, 123, 91, ${alpha})`;
-            ctx.lineWidth = 0.6;
-            ctx.stroke();
-          }
-        }
-      }
-
-      // Update and draw particles
-      for (let i = 0; i < particles.length; i++) {
-        const p = particles[i];
-
-        // Pulse animation
-        p.pulse += p.pulseSpeed;
-        p.radius = p.baseRadius + Math.sin(p.pulse) * 0.8;
-
-        // Update position
-        p.x += p.vx;
-        p.y += p.vy;
-
-        // Wrap around edges
-        if (p.x < -10) p.x = w + 10;
-        if (p.x > w + 10) p.x = -10;
-        if (p.y < -10) p.y = h + 10;
-        if (p.y > h + 10) p.y = -10;
-
-        // Mouse interaction — attract gently, repel when too close
-        const dx = mouse.x - p.x;
-        const dy = mouse.y - p.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-
-        if (dist < mouseRadius && dist > 0) {
-          if (dist < 60) {
-            // Repel when very close
-            const force = (60 - dist) / 60 * 0.04;
-            p.vx -= dx / dist * force;
-            p.vy -= dy / dist * force;
-          } else {
-            // Attract gently
-            const force = (mouseRadius - dist) / mouseRadius * 0.008;
-            p.vx += dx / dist * force;
-            p.vy += dy / dist * force;
-          }
+        // Mouse parallax — frames shift slightly toward cursor
+        if (mouse.x > 0 && mouse.y > 0) {
+          const dx = mouse.x - w / 2;
+          const dy = mouse.y - h / 2;
+          const parallaxStrength = (i + 1) / frames.length * 0.008;
+          f.x += dx * parallaxStrength * 0.02;
+          f.y += dy * parallaxStrength * 0.02;
         }
 
-        // Speed limit
-        const speed = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
-        if (speed > 1.5) {
-          p.vx = (p.vx / speed) * 1.5;
-          p.vy = (p.vy / speed) * 1.5;
-        }
+        // Draw frame
+        ctx.save();
+        ctx.translate(f.x, f.y);
+        ctx.rotate(f.rotation);
 
-        // Damping
-        p.vx *= 0.995;
-        p.vy *= 0.995;
+        // Main rectangle
+        ctx.strokeStyle = f.color;
+        ctx.lineWidth = f.lineWidth;
+        ctx.strokeRect(-f.width / 2, -f.height / 2, f.width, f.height);
 
-        // Glow effect
-        const glowRadius = p.radius * 4;
-        const gradient = ctx.createRadialGradient(
-          p.x, p.y, 0,
-          p.x, p.y, glowRadius
-        );
-        gradient.addColorStop(0, p.glowColor);
-        gradient.addColorStop(1, "transparent");
+        // Extending lines (like the logo — lines that go beyond the frame)
+        const extendLength = 30 + Math.random() * 0.1;
+        ctx.globalAlpha = 0.5;
+
+        // Top-right extending line (horizontal)
         ctx.beginPath();
-        ctx.arc(p.x, p.y, glowRadius, 0, Math.PI * 2);
-        ctx.fillStyle = gradient;
-        ctx.fill();
+        ctx.moveTo(f.width / 2, -f.height / 2);
+        ctx.lineTo(f.width / 2 + extendLength, -f.height / 2);
+        ctx.stroke();
 
-        // Core particle
+        // Bottom-left extending line (horizontal)
         ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = p.color;
-        ctx.fill();
+        ctx.moveTo(-f.width / 2, f.height / 2);
+        ctx.lineTo(-f.width / 2 - extendLength, f.height / 2);
+        ctx.stroke();
+
+        // Top-left extending line (vertical)
+        ctx.beginPath();
+        ctx.moveTo(-f.width / 2, -f.height / 2);
+        ctx.lineTo(-f.width / 2, -f.height / 2 - extendLength);
+        ctx.stroke();
+
+        // Bottom-right extending line (vertical)
+        ctx.beginPath();
+        ctx.moveTo(f.width / 2, f.height / 2);
+        ctx.lineTo(f.width / 2, f.height / 2 + extendLength);
+        ctx.stroke();
+
+        ctx.globalAlpha = 1;
+
+        // Corner marks or cross marks
+        if (f.hasCornerMarks) {
+          drawCornerMarks(0, 0, f.width, f.height, f.color, f.lineWidth);
+        } else {
+          drawCrossMarks(0, 0, f.width, f.height, f.color, f.lineWidth);
+        }
+
+        ctx.restore();
       }
 
       animationRef.current = requestAnimationFrame(animate);
     };
 
-    // Respect reduced motion preference
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!prefersReducedMotion) {
       animationRef.current = requestAnimationFrame(animate);
     } else {
-      const particles = particlesRef.current;
-      for (const p of particles) {
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = p.color;
-        ctx.fill();
+      // Static render
+      const frames = framesRef.current;
+      for (const f of frames) {
+        ctx.save();
+        ctx.translate(f.x, f.y);
+        ctx.rotate(f.rotation);
+        ctx.strokeStyle = f.color;
+        ctx.lineWidth = f.lineWidth;
+        ctx.strokeRect(-f.width / 2, -f.height / 2, f.width, f.height);
+        if (f.hasCornerMarks) {
+          drawCornerMarks(0, 0, f.width, f.height, f.color, f.lineWidth);
+        }
+        ctx.restore();
       }
     }
 
@@ -241,7 +289,7 @@ export function ParticleField() {
       canvas.removeEventListener("mousemove", handleMouseMove);
       canvas.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, [initParticles]);
+  }, [initFrames]);
 
   return (
     <canvas
