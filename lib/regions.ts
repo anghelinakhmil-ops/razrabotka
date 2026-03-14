@@ -1,11 +1,11 @@
 /**
  * Конфигурация регионов для гео-детекции и ценообразования
  *
- * 9 регионов: MD, RO, UA, PL, DE, IT, RU, KZ, DEFAULT (USD)
+ * 12 регионов: UA, MD, RU, KZ, RO, PL, IT, DE, GB, SE, CH, DEFAULT
  * Регион определяется по x-vercel-ip-country header в middleware
  */
 
-export type RegionCode = "MD" | "RO" | "UA" | "PL" | "DE" | "IT" | "RU" | "KZ" | "DEFAULT";
+export type RegionCode = "UA" | "MD" | "RU" | "KZ" | "RO" | "PL" | "IT" | "DE" | "GB" | "SE" | "CH" | "DEFAULT";
 
 export interface RegionConfig {
   code: RegionCode;
@@ -15,33 +15,38 @@ export interface RegionConfig {
 }
 
 export const REGIONS: Record<RegionCode, RegionConfig> = {
-  MD: { code: "MD", currency: "MDL", currencySymbol: "lei", currencyLocale: "ro-MD" },
-  RO: { code: "RO", currency: "RON", currencySymbol: "lei", currencyLocale: "ro-RO" },
   UA: { code: "UA", currency: "UAH", currencySymbol: "₴", currencyLocale: "uk-UA" },
-  PL: { code: "PL", currency: "PLN", currencySymbol: "zł", currencyLocale: "pl-PL" },
-  DE: { code: "DE", currency: "EUR", currencySymbol: "€", currencyLocale: "de-DE" },
-  IT: { code: "IT", currency: "EUR", currencySymbol: "€", currencyLocale: "it-IT" },
+  MD: { code: "MD", currency: "MDL", currencySymbol: "lei", currencyLocale: "ro-MD" },
   RU: { code: "RU", currency: "RUB", currencySymbol: "₽", currencyLocale: "ru-RU" },
   KZ: { code: "KZ", currency: "KZT", currencySymbol: "₸", currencyLocale: "ru-KZ" },
-  DEFAULT: { code: "DEFAULT", currency: "USD", currencySymbol: "$", currencyLocale: "en-US" },
+  RO: { code: "RO", currency: "RON", currencySymbol: "lei", currencyLocale: "ro-RO" },
+  PL: { code: "PL", currency: "PLN", currencySymbol: "zł", currencyLocale: "pl-PL" },
+  IT: { code: "IT", currency: "EUR", currencySymbol: "€", currencyLocale: "it-IT" },
+  DE: { code: "DE", currency: "EUR", currencySymbol: "€", currencyLocale: "de-DE" },
+  GB: { code: "GB", currency: "GBP", currencySymbol: "£", currencyLocale: "en-GB" },
+  SE: { code: "SE", currency: "SEK", currencySymbol: "kr", currencyLocale: "sv-SE" },
+  CH: { code: "CH", currency: "EUR", currencySymbol: "€", currencyLocale: "fr-CH" },
+  DEFAULT: { code: "DEFAULT", currency: "EUR", currencySymbol: "€", currencyLocale: "en-US" },
 };
 
 /**
  * Маппинг ISO 3166-1 alpha-2 кода страны → RegionCode
- * Немецкоязычные (AT, CH) → DE, Беларусь → RU
+ * AT (Австрия) → DE, BY (Беларусь) → RU
  */
 const COUNTRY_TO_REGION: Record<string, RegionCode> = {
-  MD: "MD",
-  RO: "RO",
   UA: "UA",
-  PL: "PL",
-  DE: "DE",
-  AT: "DE",
-  CH: "DE",
-  IT: "IT",
+  MD: "MD",
   RU: "RU",
   BY: "RU",
   KZ: "KZ",
+  RO: "RO",
+  PL: "PL",
+  IT: "IT",
+  DE: "DE",
+  AT: "DE",
+  GB: "GB",
+  SE: "SE",
+  CH: "CH",
 };
 
 export function getRegionByCountry(countryCode: string | undefined | null): RegionCode {

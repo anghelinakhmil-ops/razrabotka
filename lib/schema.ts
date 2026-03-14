@@ -170,6 +170,8 @@ export function localBusinessSchema(options?: {
       { "@type": "Country", name: "Italy" },
       { "@type": "Country", name: "Russia" },
       { "@type": "Country", name: "Kazakhstan" },
+      { "@type": "Country", name: "United Kingdom" },
+      { "@type": "Country", name: "Sweden" },
       { "@type": "Country", name: "Switzerland" },
     ],
     serviceType: [

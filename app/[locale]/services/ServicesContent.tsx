@@ -8,15 +8,14 @@ import { TierCard } from "@/components/ui/TierCard";
 import { RevealOnScroll } from "@/components/motion";
 import { sectionPresets } from "@/lib/motion";
 import { useRegion } from "@/components/providers/RegionProvider";
-import type { RegionCode } from "@/lib/regions";
+import { getFormattedPrice } from "@/lib/pricing";
+import type { PriceId } from "@/lib/pricing";
 
 interface TierData {
   tier: "start" | "standard" | "pro";
   audience: string;
   features: string[];
   timeline: string;
-  priceUA: string;
-  priceEU: string;
 }
 
 interface CategoryData {
@@ -37,8 +36,6 @@ interface SupportPackageData {
   audience: string;
   features: string[];
   limits: string;
-  priceUA: string;
-  priceEU: string;
 }
 
 interface SupportIncludedItem {
@@ -48,14 +45,6 @@ interface SupportIncludedItem {
 
 const categoryNumbers = ["01", "02", "03", "04", "05", "06"];
 
-/** Регионы с ценообразованием СНГ (priceUA) */
-const CIS_REGIONS: RegionCode[] = ["UA", "RU", "KZ", "MD"];
-
-function usePriceTier(): "priceUA" | "priceEU" {
-  const { regionCode } = useRegion();
-  return CIS_REGIONS.includes(regionCode) ? "priceUA" : "priceEU";
-}
-
 /**
  * ServicesContent — клиентская интерактивная часть страницы услуг
  *
@@ -64,7 +53,7 @@ function usePriceTier(): "priceUA" | "priceEU" {
  */
 export function ServicesContent() {
   const t = useTranslations("pages.services");
-  const priceTier = usePriceTier();
+  const { regionCode } = useRegion();
 
   const categories = t.raw("categories") as CategoryData[];
   const tierLabels = t.raw("tierLabels") as Record<string, string>;
@@ -135,7 +124,7 @@ export function ServicesContent() {
                       audience={tier.audience}
                       features={tier.features}
                       timeline={tier.timeline}
-                      price={tier[priceTier]}
+                      price={getFormattedPrice(regionCode, `${category.id}-${tier.tier}` as PriceId)}
                       timelineLabel={t("timelineLabel")}
                       priceLabel={t("priceLabel")}
                       orderButton={t("orderButton")}
@@ -250,7 +239,7 @@ export function ServicesContent() {
 function SupportSection() {
   const t = useTranslations("pages.services.support");
   const tServices = useTranslations("pages.services");
-  const priceTier = usePriceTier();
+  const { regionCode } = useRegion();
   const tierLabels = tServices.raw("tierLabels") as Record<string, string>;
   const recommendedLabel = tServices("recommended");
 
@@ -317,7 +306,7 @@ function SupportSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-start">
             {packages.map((pkg) => {
               const isStandard = pkg.tier === "standard";
-              const price = pkg[priceTier];
+              const price = getFormattedPrice(regionCode, `support-${pkg.tier}` as PriceId);
 
               return (
                 <div

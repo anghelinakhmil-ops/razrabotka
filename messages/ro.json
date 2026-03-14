@@ -662,9 +662,7 @@
                 "Analiză de bază",
                 "SEO de bază"
               ],
-              "timeline": "2–3 săptămâni",
-              "priceUA": "€500–900",
-              "priceEU": "€1 800–3 000"
+              "timeline": "2–3 săptămâni"
             },
             {
               "tier": "standard",
@@ -680,9 +678,7 @@
                 "Completare cu conținut principal",
                 "Integrări de bază"
               ],
-              "timeline": "3–5 săptămâni",
-              "priceUA": "€900–1 800",
-              "priceEU": "€3 000–6 000"
+              "timeline": "3–5 săptămâni"
             },
             {
               "tier": "pro",
@@ -698,9 +694,7 @@
                 "Analiză de evenimente",
                 "Pregătire pentru publicitate"
               ],
-              "timeline": "4–6 săptămâni",
-              "priceUA": "€1 800–3 000",
-              "priceEU": "€6 000–10 000"
+              "timeline": "4–6 săptămâni"
             }
           ]
         },
@@ -722,9 +716,7 @@
                 "SEO de bază",
                 "Blocuri standard de servicii"
               ],
-              "timeline": "3–5 săptămâni",
-              "priceUA": "€650–1 300",
-              "priceEU": "€2 500–5 000"
+              "timeline": "3–5 săptămâni"
             },
             {
               "tier": "standard",
@@ -740,9 +732,7 @@
                 "SEO de bază",
                 "Integrări de bază"
               ],
-              "timeline": "4–7 săptămâni",
-              "priceUA": "€1 300–2 800",
-              "priceEU": "€5 000–10 000"
+              "timeline": "4–7 săptămâni"
             },
             {
               "tier": "pro",
@@ -757,9 +747,7 @@
                 "Analiză avansată",
                 "Prezentare vizuală puternică"
               ],
-              "timeline": "6–10 săptămâni",
-              "priceUA": "€2 800–4 500",
-              "priceEU": "€10 000–20 000"
+              "timeline": "6–10 săptămâni"
             }
           ]
         },
@@ -779,9 +767,7 @@
                 "Telegram/email",
                 "Analiză de bază"
               ],
-              "timeline": "1–2 săptămâni",
-              "priceUA": "€400–700",
-              "priceEU": "€1 500–2 500"
+              "timeline": "1–2 săptămâni"
             },
             {
               "tier": "standard",
@@ -795,9 +781,7 @@
                 "GA4/GTM/Pixel",
                 "SEO de bază"
               ],
-              "timeline": "2–4 săptămâni",
-              "priceUA": "€500–1 400",
-              "priceEU": "€1 800–4 500"
+              "timeline": "2–4 săptămâni"
             },
             {
               "tier": "pro",
@@ -811,9 +795,7 @@
                 "Pregătire pentru A/B",
                 "Strategie profundă de mesaje"
               ],
-              "timeline": "3–6 săptămâni",
-              "priceUA": "€1 400–3 000",
-              "priceEU": "€4 500–12 000"
+              "timeline": "3–6 săptămâni"
             }
           ]
         },
@@ -834,9 +816,7 @@
                 "Analiză de bază",
                 "SEO de bază"
               ],
-              "timeline": "5–8 săptămâni",
-              "priceUA": "€2 500–4 500",
-              "priceEU": "€10 000–20 000"
+              "timeline": "5–8 săptămâni"
             },
             {
               "tier": "standard",
@@ -850,9 +830,7 @@
                 "Analiză e-commerce",
                 "Integrări după necesitate"
               ],
-              "timeline": "6–12 săptămâni",
-              "priceUA": "€4 500–7 000",
-              "priceEU": "€20 000–40 000"
+              "timeline": "6–12 săptămâni"
             },
             {
               "tier": "pro",
@@ -866,9 +844,7 @@
                 "Analiză avansată",
                 "UX complex"
               ],
-              "timeline": "10–20+ săptămâni",
-              "priceUA": "€7 000–18 000",
-              "priceEU": "€40 000–120 000"
+              "timeline": "10–20+ săptămâni"
             }
           ]
         },
@@ -888,9 +864,7 @@
                 "Telegram/email",
                 "Analiză de bază"
               ],
-              "timeline": "2–3 săptămâni",
-              "priceUA": "€500–1 000",
-              "priceEU": "€1 800–3 500"
+              "timeline": "2–3 săptămâni"
             },
             {
               "tier": "standard",
@@ -906,9 +880,7 @@
                 "Analiză",
                 "SEO de bază"
               ],
-              "timeline": "3–5 săptămâni",
-              "priceUA": "€1 000–2 200",
-              "priceEU": "€3 500–7 000"
+              "timeline": "3–5 săptămâni"
             },
             {
               "tier": "pro",
@@ -921,9 +893,7 @@
                 "Integrări CRM / email / Telegram / plăți",
                 "Analiză de evenimente"
               ],
-              "timeline": "4–7 săptămâni",
-              "priceUA": "€2 200–4 000",
-              "priceEU": "€7 000–12 000"
+              "timeline": "4–7 săptămâni"
             }
           ]
         },
@@ -942,9 +912,7 @@
                 "Înregistrare",
                 "Hartă și contacte"
               ],
-              "timeline": "1–2 săptămâni",
-              "priceUA": "€400–800",
-              "priceEU": "€1 500–3 000"
+              "timeline": "1–2 săptămâni"
             },
             {
               "tier": "standard",
@@ -959,9 +927,7 @@
                 "Analiză",
                 "Layout responsiv"
               ],
-              "timeline": "2–4 săptămâni",
-              "priceUA": "€800–1 800",
-              "priceEU": "€3 000–6 000"
+              "timeline": "2–4 săptămâni"
             },
             {
               "tier": "pro",
@@ -973,9 +939,7 @@
                 "Integrări înregistrare / email / Telegram",
                 "Analiză de evenimente"
               ],
-              "timeline": "3–5 săptămâni",
-              "priceUA": "€1 800–3 000",
-              "priceEU": "€6 000–10 000"
+              "timeline": "3–5 săptămâni"
             }
           ]
         }
@@ -1051,9 +1015,7 @@
               "1 consultație pe lună",
               "Raport lunar"
             ],
-            "limits": "până la 2 ore / lună, până la 10 corecții",
-            "priceUA": "€80–150",
-            "priceEU": "€300–600"
+            "limits": "până la 2 ore / lună, până la 10 corecții"
           },
           {
             "tier": "standard",
@@ -1070,9 +1032,7 @@
               "Până la 2 consultații pe lună",
               "Raport cu lucrările efectuate"
             ],
-            "limits": "până la 5 ore / lună, până la 20 corecții",
-            "priceUA": "€150–300",
-            "priceEU": "€600–1 200"
+            "limits": "până la 5 ore / lună, până la 20 corecții"
           },
           {
             "tier": "pro",
@@ -1087,9 +1047,7 @@
               "Consultații pentru îmbunătățirea site-ului",
               "Raport + recomandări"
             ],
-            "limits": "până la 10 ore / lună, până la 40 corecții",
-            "priceUA": "€300–500",
-            "priceEU": "€1 200–2 000"
+            "limits": "până la 10 ore / lună, până la 40 corecții"
           }
         ],
         "limitsLabel": "Limite"
