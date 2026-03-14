@@ -22,7 +22,10 @@ export function organizationSchema(options?: {
       contactType: "customer service",
       availableLanguage: ["English", "Russian", "Ukrainian", "Romanian", "Polish", "German", "Italian", "French"],
     },
-    sameAs: [],
+    sameAs: [
+      "https://www.instagram.com/nakoagency/",
+      "https://t.me/nakoagency",
+    ],
   };
 }
 

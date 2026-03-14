@@ -25,6 +25,12 @@ export const CONTACT = {
   email: "hello@nakoagency.com",
 } as const;
 
+export const SOCIAL_LINKS = {
+  instagram: "https://www.instagram.com/nakoagency/",
+  telegram: "https://t.me/nakoagency",
+  whatsapp: "https://wa.me/37376870810",
+} as const;
+
 // ─── Навигация ──────────────────────────────────────────
 
 export const NAV_ITEMS: NavItem[] = [

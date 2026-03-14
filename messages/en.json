@@ -604,6 +604,8 @@
       "responseDescription": "We're in touch",
       "responseTime": "Within 2 hours",
       "responseNote": "We respond to all requests during business hours",
+      "socialTitle": "Social media",
+      "socialDescription": "Follow us and write directly",
       "formTitle": "Write to us",
       "formDescription": "Describe your project — we'll respond within 2 hours",
       "formName": "Name",
