@@ -10,6 +10,7 @@ import {
   useCallback,
   useMemo,
 } from "react";
+import { useRegion } from "@/components/providers/RegionProvider";
 
 /** Код страны */
 export interface CountryCode {
@@ -205,13 +206,16 @@ export const PhoneInput = forwardRef<HTMLInputElement, PhoneInputProps>(
       helperText,
       required = false,
       disabled = false,
-      defaultCountry = "RU",
+      defaultCountry: defaultCountryProp,
       countries = DEFAULT_COUNTRIES,
       className,
       containerClassName,
     },
     ref
   ) => {
+    const { regionCode } = useRegion();
+    const defaultCountry = defaultCountryProp ?? (regionCode === "DEFAULT" ? "" : regionCode);
+
     const generatedId = useId();
     const errorId = `${generatedId}-error`;
     const helperId = `${generatedId}-helper`;

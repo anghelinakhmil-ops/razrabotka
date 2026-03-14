@@ -387,7 +387,7 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
               error={errors.phone?.message}
               disabled={formState === "loading"}
               required
-            />
+/>
 
             <Input
               label={t("telegram")}
