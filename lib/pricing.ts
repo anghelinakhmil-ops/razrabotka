@@ -45,6 +45,7 @@ const BASE_PRICES: Record<PriceId, [number, number]> = {
   "support-start": [80, 150],
   "support-standard": [150, 300],
   "support-pro": [300, 500],
+
 };
 
 /** Множители относительно базовой цены (Украина = 1.00) */
@@ -89,9 +90,10 @@ const CURRENCY_FORMAT: Record<RegionCode, { symbol: string; position: "before" |
   CH: { symbol: "€", position: "before", separator: "," },
 };
 
-/** Округление до 50 */
-function roundTo50(value: number): number {
-  return Math.round(value / 50) * 50;
+/** Округление: до 10 при значении < 200, иначе до 50 */
+function roundPrice(value: number): number {
+  const step = value < 200 ? 10 : 50;
+  return Math.round(value / step) * step;
 }
 
 /** Форматирование числа с разделителем тысяч */
@@ -112,8 +114,8 @@ export function getFormattedPrice(regionCode: RegionCode, priceId: PriceId): str
   const currencyRate = CURRENCY_RATES[regionCode] ?? 1;
   const format = CURRENCY_FORMAT[regionCode] ?? CURRENCY_FORMAT.DEFAULT;
 
-  const min = roundTo50(baseMin * multiplier * currencyRate);
-  const max = roundTo50(baseMax * multiplier * currencyRate);
+  const min = roundPrice(baseMin * multiplier * currencyRate);
+  const max = roundPrice(baseMax * multiplier * currencyRate);
 
   const minStr = formatNumber(min, format.separator);
   const maxStr = formatNumber(max, format.separator);
