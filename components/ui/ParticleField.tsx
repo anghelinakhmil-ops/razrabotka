@@ -31,7 +31,7 @@ export function ParticleField() {
 
   const initFrames = useCallback((width: number, height: number) => {
     const frames: Frame[] = [];
-    const count = width < 768 ? 6 : 10;
+    const count = width < 768 ? 12 : 20;
 
     const colors = [
       "rgba(217, 212, 203, 0.25)", // Muted Stroke
@@ -43,7 +43,7 @@ export function ParticleField() {
     ];
 
     for (let i = 0; i < count; i++) {
-      const isTerra = i < 3;
+      const isTerra = i < 6;
       const colorIndex = isTerra
         ? 3 + Math.floor(Math.random() * 2)
         : Math.floor(Math.random() * 3);
@@ -55,10 +55,10 @@ export function ParticleField() {
         y: Math.random() * height,
         width: width * scale * (0.8 + Math.random() * 0.6),
         height: height * scale * (0.5 + Math.random() * 0.5),
-        vx: (Math.random() - 0.5) * 0.15,
-        vy: (Math.random() - 0.5) * 0.1,
-        rotation: (Math.random() - 0.5) * 0.08,
-        rotationSpeed: (Math.random() - 0.5) * 0.0002,
+        vx: (Math.random() - 0.5) * 0.5,
+        vy: (Math.random() - 0.5) * 0.35,
+        rotation: (Math.random() - 0.5) * 0.12,
+        rotationSpeed: (Math.random() - 0.5) * 0.0005,
         color: colors[colorIndex],
         lineWidth: isTerra ? 1.5 : 1,
         hasCornerMarks: Math.random() > 0.5,
