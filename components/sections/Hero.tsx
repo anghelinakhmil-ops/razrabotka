@@ -1,29 +1,22 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { BrokenText } from "@/components/ui/BrokenText";
+import { ParticleField } from "@/components/ui/ParticleField";
 import { ease, duration } from "@/lib/motion";
 import { trackCtaClick } from "@/lib/analytics";
 import { useLenis } from "@/components/motion/LenisProvider";
 
-interface HeroProps {
-  /** Callback для CTA кнопки */
-  onCtaClick?: () => void;
-  /** URL фонового изображения */
-  imageSrc?: string;
-}
-
 /**
- * Hero — fullscreen секция с фоновым изображением
+ * Hero — fullscreen секция с анимированными частицами
  *
- * Стиль: Premium-minimal / Architectural (референс: THE BRIDGE)
- * Текст по центру поверх тёмного overlay на фото.
+ * Стиль: Premium-minimal / Architectural
+ * Текст по центру поверх тёмного фона с плавающими частицами в цветах бренда.
  */
-export function Hero({ imageSrc }: HeroProps) {
+export function Hero() {
   const t = useTranslations("hero");
   const lenis = useLenis();
 
@@ -43,18 +36,9 @@ export function Hero({ imageSrc }: HeroProps) {
       id="hero"
       className="relative h-[100dvh] flex items-center justify-center overflow-hidden"
     >
-      {/* Background: fallback color + image + overlay */}
-      <div className="absolute inset-0 bg-[var(--color-bg-dark)]" />
-      <Image
-        src={imageSrc || "/images/hero-bg.jpg"}
-        alt=""
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover"
-      />
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/40" />
+      {/* Background: Deep Espresso + particle animation */}
+      <div className="absolute inset-0 bg-[#252321]" />
+      <ParticleField />
 
       {/* Content — centered */}
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 text-center">
