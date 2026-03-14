@@ -20,7 +20,7 @@ export function organizationSchema(options?: {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
-      availableLanguage: ["English", "Russian", "Ukrainian", "Romanian", "Polish", "German", "Italian"],
+      availableLanguage: ["English", "Russian", "Ukrainian", "Romanian", "Polish", "German", "Italian", "French"],
     },
     sameAs: [],
   };
@@ -160,7 +160,7 @@ export function localBusinessSchema(options?: {
       "Turnkey website development for experts, businesses and e-commerce.",
     ...(options?.locale && { inLanguage: options.locale }),
     priceRange: "€€-€€€",
-    knowsLanguage: ["en", "ru", "uk", "ro", "pl", "de", "it"],
+    knowsLanguage: ["en", "ru", "uk", "ro", "pl", "de", "it", "fr"],
     areaServed: [
       { "@type": "Country", name: "Moldova" },
       { "@type": "Country", name: "Romania" },
@@ -170,6 +170,7 @@ export function localBusinessSchema(options?: {
       { "@type": "Country", name: "Italy" },
       { "@type": "Country", name: "Russia" },
       { "@type": "Country", name: "Kazakhstan" },
+      { "@type": "Country", name: "Switzerland" },
     ],
     serviceType: [
       "Website Development",
