@@ -57,6 +57,38 @@ export function LanguageSwitcher({
     (e: KeyboardEvent) => {
       if (e.key === "Escape" && isOpen) {
         setIsOpen(false);
+        return;
+      }
+
+      if (!isOpen) return;
+
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        e.preventDefault();
+        const options = containerRef.current?.querySelectorAll<HTMLButtonElement>('[role="option"]');
+        if (!options?.length) return;
+
+        const focused = document.activeElement as HTMLElement;
+        const currentIndex = Array.from(options).indexOf(focused as HTMLButtonElement);
+        let nextIndex: number;
+
+        if (e.key === "ArrowDown") {
+          nextIndex = currentIndex < options.length - 1 ? currentIndex + 1 : 0;
+        } else {
+          nextIndex = currentIndex > 0 ? currentIndex - 1 : options.length - 1;
+        }
+        options[nextIndex].focus();
+      }
+
+      if (e.key === "Home") {
+        e.preventDefault();
+        const first = containerRef.current?.querySelector<HTMLButtonElement>('[role="option"]');
+        first?.focus();
+      }
+
+      if (e.key === "End") {
+        e.preventDefault();
+        const options = containerRef.current?.querySelectorAll<HTMLButtonElement>('[role="option"]');
+        options?.[options.length - 1]?.focus();
       }
     },
     [isOpen],
@@ -73,6 +105,10 @@ export function LanguageSwitcher({
         setIsOpen(false);
       }
     };
+
+    // Focus first option when dropdown opens
+    const firstOption = containerRef.current?.querySelector<HTMLButtonElement>('[role="option"]');
+    firstOption?.focus();
 
     document.addEventListener("mousedown", handleClickOutside);
     document.addEventListener("keydown", handleKeyDown);
