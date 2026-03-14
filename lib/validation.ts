@@ -119,7 +119,6 @@ export type ContactFormData = z.infer<typeof contactFormSchema>;
 export const briefFormSchema = z.object({
   // Контакты
   name: nameSchema,
-  email: emailSchema,
   phone: phoneSchema,
   telegram: telegramSchema,
 

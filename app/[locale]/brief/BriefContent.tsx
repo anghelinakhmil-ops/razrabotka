@@ -152,7 +152,6 @@ function BriefForm() {
     mode: "onBlur",
     defaultValues: {
       name: "",
-      email: "",
       phone: "",
       telegram: "",
       comment: "",
@@ -291,31 +290,20 @@ function BriefForm() {
               {...register("name")}
             />
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <Input
-                label={t("email")}
-                type="email"
-                placeholder={t("emailPlaceholder")}
-                error={errors.email?.message}
-                disabled={formState === "loading"}
-                {...register("email")}
-              />
-
-              <Controller
-                name="phone"
-                control={control}
-                render={({ field }) => (
-                  <PhoneInput
-                    label={t("phone")}
-                    value={field.value}
-                    onChange={field.onChange}
-                    onBlur={field.onBlur}
-                    error={errors.phone?.message}
-                    disabled={formState === "loading"}
-                  />
-                )}
-              />
-            </div>
+            <Controller
+              name="phone"
+              control={control}
+              render={({ field }) => (
+                <PhoneInput
+                  label={t("phone")}
+                  value={field.value}
+                  onChange={field.onChange}
+                  onBlur={field.onBlur}
+                  error={errors.phone?.message}
+                  disabled={formState === "loading"}
+                />
+              )}
+            />
 
             <Input
               label={t("telegram")}

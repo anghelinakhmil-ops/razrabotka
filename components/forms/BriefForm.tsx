@@ -123,7 +123,6 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
     reValidateMode: "onChange",
     defaultValues: {
       name: "",
-      email: "",
       phone: "",
       telegram: "",
       comment: "",
@@ -379,28 +378,16 @@ export function BriefForm({ onSuccess, source = "brief" }: BriefFormProps) {
               {...register("name")}
             />
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <Input
-                label={t("email")}
-                type="email"
-                placeholder={t("emailPlaceholder")}
-                error={errors.email?.message}
-                disabled={formState === "loading"}
-                required
-                {...register("email")}
-              />
-
-              <PhoneInput
-                label={t("phone")}
-                value={phoneValue || ""}
-                onChange={handlePhoneChange}
-                onBlur={handlePhoneBlur}
-                placeholder={t("phonePlaceholder")}
-                error={errors.phone?.message}
-                disabled={formState === "loading"}
-                required
-              />
-            </div>
+            <PhoneInput
+              label={t("phone")}
+              value={phoneValue || ""}
+              onChange={handlePhoneChange}
+              onBlur={handlePhoneBlur}
+              placeholder={t("phonePlaceholder")}
+              error={errors.phone?.message}
+              disabled={formState === "loading"}
+              required
+            />
 
             <Input
               label={t("telegram")}
