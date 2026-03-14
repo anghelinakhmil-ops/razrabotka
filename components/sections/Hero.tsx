@@ -42,16 +42,6 @@ export function Hero() {
 
       {/* Content — centered */}
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 text-center">
-        {/* Caption */}
-        <motion.p
-          className="text-caption text-white/60 mb-6"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: duration.normal, ease, delay: 0.2 }}
-        >
-          {t("caption")}
-        </motion.p>
-
         {/* H1 — Headline */}
         <motion.h1
           className="flex flex-col items-center gap-2 mb-8"
@@ -87,7 +77,8 @@ export function Hero() {
           <span className="text-white font-medium">{t("subtitleExperts")}</span>,{" "}
           <span className="text-white font-medium">{t("subtitleBusiness")}</span>,{" "}
           <span className="text-white font-medium">{t("subtitleEcommerce")}</span>,{" "}
-          <span className="text-white font-medium">{t("subtitleCourses")}</span>{" & "}
+          <span className="text-white font-medium">{t("subtitleCourses")}</span>{" "}
+          {t("subtitleAnd")}{" "}
           <span className="text-white font-medium">{t("subtitleEvents")}</span>
         </motion.p>
 
