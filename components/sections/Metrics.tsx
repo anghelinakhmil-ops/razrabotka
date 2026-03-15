@@ -130,19 +130,9 @@ function MetricItem({
     >
       {/* Значение */}
       <div className="flex items-baseline gap-1 whitespace-nowrap">
-        {prefix && (
-          <span className="text-2xl lg:text-3xl font-display font-medium text-[var(--color-text-muted)]">
-            {prefix}
-          </span>
-        )}
         <span className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-[var(--color-text-primary)] leading-none">
-          {value}
+          {prefix}{value}{suffix}
         </span>
-        {suffix && (
-          <span className="text-2xl lg:text-3xl font-display font-medium text-[var(--color-text-muted)]">
-            {suffix}
-          </span>
-        )}
       </div>
 
       {/* Подпись */}
