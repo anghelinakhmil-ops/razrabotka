@@ -158,14 +158,14 @@ export function LeadFormSection({
                     placeholder={t("namePlaceholder")}
                     error={errors.name?.message}
                     disabled={formState === "loading"}
-                    className="bg-transparent border-[#D9D4CB] text-[#F9F7F2] placeholder:text-[#D9D4CB]"
+                    className="!bg-transparent !border-[#D9D4CB] !text-[#F9F7F2] !placeholder:text-[#D9D4CB] placeholder:!text-[#D9D4CB]"
                     {...register("name")}
                   />
                   <Input
                     placeholder={t("contactPlaceholder")}
                     error={errors.contact?.message}
                     disabled={formState === "loading"}
-                    className="bg-transparent border-[#D9D4CB] text-[#F9F7F2] placeholder:text-[#D9D4CB]"
+                    className="!bg-transparent !border-[#D9D4CB] !text-[#F9F7F2] !placeholder:text-[#D9D4CB] placeholder:!text-[#D9D4CB]"
                     {...register("contact")}
                   />
                 </div>
