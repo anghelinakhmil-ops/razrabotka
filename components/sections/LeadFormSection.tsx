@@ -158,14 +158,14 @@ export function LeadFormSection({
                     placeholder={t("namePlaceholder")}
                     error={errors.name?.message}
                     disabled={formState === "loading"}
-                    className="bg-transparent border-[var(--color-line-dark)] text-[var(--color-background)] placeholder:text-[var(--color-text-muted)]"
+                    className="bg-transparent border-[#D9D4CB] text-[#F9F7F2] placeholder:text-[#D9D4CB]"
                     {...register("name")}
                   />
                   <Input
                     placeholder={t("contactPlaceholder")}
                     error={errors.contact?.message}
                     disabled={formState === "loading"}
-                    className="bg-transparent border-[var(--color-line-dark)] text-[var(--color-background)] placeholder:text-[var(--color-text-muted)]"
+                    className="bg-transparent border-[#D9D4CB] text-[#F9F7F2] placeholder:text-[#D9D4CB]"
                     {...register("contact")}
                   />
                 </div>
@@ -184,7 +184,7 @@ export function LeadFormSection({
                   variant="primary"
                   size="lg"
                   loading={formState === "loading"}
-                  className="w-full md:w-auto md:min-w-[200px] bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
+                  className="w-full md:w-auto md:min-w-[200px] !bg-[#F9F7F2] !text-[#1A1A1A] hover:!bg-[#EFEBE0]"
                 >
                   {t("submit")}
                 </Button>
