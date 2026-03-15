@@ -135,7 +135,7 @@ function MetricItem({
             {prefix}
           </span>
         )}
-        <span className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-display font-bold text-[var(--color-text-primary)] leading-none">
+        <span className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-[var(--color-text-primary)] leading-none">
           {value}
         </span>
         {suffix && (
