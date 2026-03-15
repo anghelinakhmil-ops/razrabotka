@@ -253,7 +253,7 @@ export default async function AboutPage() {
                 <CtaButton
                   variant="primary"
                   size="lg"
-                  className="bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
+                  className="!bg-[#F9F7F2] !text-[#1A1A1A] hover:!bg-[#EFEBE0]"
                 >
                   {t("ctaCta")}
                 </CtaButton>
@@ -261,7 +261,7 @@ export default async function AboutPage() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
+                    className="!border-[#F9F7F2] !text-[#F9F7F2] hover:!bg-[#F9F7F2] hover:!text-[#1A1A1A]"
                   >
                     {t("ctaCases")}
                   </Button>
@@ -270,7 +270,7 @@ export default async function AboutPage() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
+                    className="!border-[#F9F7F2] !text-[#F9F7F2] hover:!bg-[#F9F7F2] hover:!text-[#1A1A1A]"
                   >
                     {t("ctaServices")}
                   </Button>
