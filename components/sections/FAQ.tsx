@@ -124,20 +124,6 @@ export function FAQ({ items }: FAQProps) {
           </RevealOnScroll>
         </div>
 
-        {/* CTA после FAQ */}
-        <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 3}>
-          <div className="mt-16 lg:mt-20 pt-12 border-t border-[var(--color-line)] text-center">
-            <p className="text-h4 font-display font-bold text-[var(--color-text-primary)] mb-3">
-              {t("ctaTitle")}
-            </p>
-            <p className="text-body text-[var(--color-text-muted)] mb-6">
-              {t("ctaSubtitle")}
-            </p>
-            <Button variant="primary" size="lg" as={Link} href="/brief">
-              {t("ctaButton")}
-            </Button>
-          </div>
-        </RevealOnScroll>
       </Container>
     </section>
   );

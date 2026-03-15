@@ -54,39 +54,6 @@ export function Footer({ className }: FooterProps) {
           className
         )}
       >
-        {/* Lead block — CTA section */}
-        <div className="border-b border-white/10">
-          <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 py-16 lg:py-24">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-              <div className="text-center lg:text-left">
-                <BrokenText
-                  text={t("cta")}
-                  spaced
-                  className={clsx(
-                    "text-[16px] sm:text-[32px] md:text-[40px] lg:text-[48px]",
-                    "font-bold",
-                    "tracking-[0.1em]",
-                    "text-white",
-                    "mb-4"
-                  )}
-                />
-                <p className="text-[16px] lg:text-[18px] text-white/50 max-w-xl">
-                  {t("ctaSubtitle")}
-                </p>
-              </div>
-              <Button
-                as={Link}
-                href="/brief"
-                variant="outline"
-                size="lg"
-                className="border-white text-white hover:bg-white hover:text-[var(--color-text-primary)]"
-              >
-                {t("ctaButton")}
-              </Button>
-            </div>
-          </div>
-        </div>
-
         {/* Main footer content — all dark */}
         <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 py-16 lg:py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8">

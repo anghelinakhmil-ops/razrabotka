@@ -192,23 +192,6 @@ export function LeadFormSection({
             )}
           </RevealOnScroll>
 
-          {/* Альтернативный CTA */}
-          <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 3}>
-            <div className="mt-10 pt-10 border-t border-[var(--color-line-dark)]">
-              <p className="text-body-sm text-[var(--color-text-muted)] mb-4">
-                {t("briefCta")}
-              </p>
-              <Button
-                variant="outline"
-                size="md"
-                as={Link}
-                href="/brief"
-                className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
-              >
-                {t("briefButton")}
-              </Button>
-            </div>
-          </RevealOnScroll>
         </div>
       </Container>
     </section>
