@@ -5,9 +5,6 @@ import FullBleedImage from "@/components/sections/FullBleedImage";
 import Metrics from "@/components/sections/Metrics";
 import Services from "@/components/sections/Services";
 import Process from "@/components/sections/Process";
-import CasesPreview from "@/components/sections/CasesPreview";
-import Testimonials from "@/components/sections/Testimonials";
-import TrustedBy from "@/components/sections/TrustedBy";
 import FAQ from "@/components/sections/FAQ";
 import LeadFormSection from "@/components/sections/LeadFormSection";
 
@@ -29,14 +26,6 @@ export default async function Home() {
         alt={t("fullBleedProcessAlt")}
       />
       <Process />
-      <CasesPreview />
-      <Testimonials />
-      <TrustedBy />
-      <FullBleedImage
-        src="/images/fullbleed-team.jpg"
-        alt={t("fullBleedTeamAlt")}
-        overlayText={t("fullBleedTeamOverlay")}
-      />
       <FAQ />
       <LeadFormSection />
     </>
