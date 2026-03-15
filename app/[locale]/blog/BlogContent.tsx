@@ -263,7 +263,7 @@ function CTASection() {
               <CtaButton
                 variant="primary"
                 size="lg"
-                className="bg-[var(--color-background)] text-[var(--color-text-primary)] hover:bg-[var(--color-background-alt)]"
+                style={{ backgroundColor: "#F9F7F2", color: "#1A1A1A", borderColor: "#F9F7F2" }}
               >
                 {t("ctaButton")}
               </CtaButton>
@@ -272,7 +272,7 @@ function CTASection() {
                 size="lg"
                 as={Link}
                 href="/services"
-                className="border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-text-primary)]"
+                style={{ backgroundColor: "transparent", color: "#F9F7F2", borderColor: "#F9F7F2" }}
               >
                 {t("ctaServicesButton")}
               </Button>

@@ -12,6 +12,8 @@ interface CtaButtonProps {
   size?: "sm" | "md" | "lg";
   /** Дополнительные классы */
   className?: string;
+  /** Inline styles (for dark section overrides) */
+  style?: React.CSSProperties;
 }
 
 /**
@@ -22,6 +24,7 @@ export function CtaButton({
   variant = "primary",
   size = "lg",
   className,
+  style,
 }: CtaButtonProps) {
   return (
     <Button
@@ -30,6 +33,7 @@ export function CtaButton({
       as={Link}
       href="/brief"
       className={className}
+      style={style}
     >
       {children}
     </Button>

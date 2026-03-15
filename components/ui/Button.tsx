@@ -27,6 +27,8 @@ interface ButtonBaseProps {
   children: React.ReactNode;
   /** Дополнительные CSS классы */
   className?: string;
+  /** Inline styles (for dark section overrides) */
+  style?: React.CSSProperties;
 }
 
 // Пропсы для button элемента
@@ -233,6 +235,7 @@ export const Button = forwardRef<
     rightIcon,
     children,
     className,
+    style,
     ...restProps
   } = props;
 
@@ -267,6 +270,7 @@ export const Button = forwardRef<
         ref={ref as React.Ref<HTMLAnchorElement>}
         href={href}
         className={classes}
+        style={style}
         {...linkProps}
       >
         {content}
@@ -284,6 +288,7 @@ export const Button = forwardRef<
         target={target}
         rel={target === "_blank" ? rel || "noopener noreferrer" : rel}
         className={classes}
+        style={style}
         {...anchorProps}
       >
         {content}
@@ -300,6 +305,7 @@ export const Button = forwardRef<
       ref={ref as React.Ref<HTMLButtonElement>}
       type="button"
       className={classes}
+      style={style}
       disabled={isDisabled}
       aria-busy={loading}
       {...buttonProps}
