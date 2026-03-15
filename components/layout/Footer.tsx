@@ -26,8 +26,15 @@ export function Footer({ className }: FooterProps) {
   const currentYear = new Date().getFullYear();
   const footerRef = useRef<HTMLElement>(null);
   const [footerHeight, setFooterHeight] = useState(0);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
+    const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+    setIsTouchDevice(isTouch);
+  }, []);
+
+  useEffect(() => {
+    if (isTouchDevice) return;
     const updateHeight = () => {
       if (footerRef.current) {
         setFooterHeight(footerRef.current.offsetHeight);
@@ -37,17 +44,17 @@ export function Footer({ className }: FooterProps) {
     updateHeight();
     window.addEventListener("resize", updateHeight);
     return () => window.removeEventListener("resize", updateHeight);
-  }, []);
+  }, [isTouchDevice]);
 
   return (
     <>
-      {/* Spacer — reserves space for the fixed footer */}
-      <div style={{ height: footerHeight }} aria-hidden="true" />
+      {/* Spacer — reserves space for the fixed footer (desktop only) */}
+      {!isTouchDevice && <div style={{ height: footerHeight }} aria-hidden="true" />}
 
       <footer
         ref={footerRef}
         className={clsx(
-          "fixed bottom-0 left-0 right-0",
+          isTouchDevice ? "relative" : "fixed bottom-0 left-0 right-0",
           "z-0",
           "bg-[var(--color-bg-dark)]",
           "text-white",
