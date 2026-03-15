@@ -129,7 +129,7 @@ function MetricItem({
       `}
     >
       {/* Значение */}
-      <div className="flex items-baseline gap-1">
+      <div className="flex items-baseline gap-1 whitespace-nowrap">
         {prefix && (
           <span className="text-2xl lg:text-3xl font-display font-medium text-[var(--color-text-muted)]">
             {prefix}
