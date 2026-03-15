@@ -294,7 +294,8 @@ export function ParticleField() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full"
+      className="absolute inset-0 w-full h-full pointer-events-none lg:pointer-events-auto touch-action-auto"
+      style={{ touchAction: "auto" }}
       aria-hidden="true"
     />
   );

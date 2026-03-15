@@ -205,8 +205,6 @@ html {
 html,
 body {
   overflow-x: hidden;
-  overscroll-behavior: none;
-  touch-action: manipulation;
 }
 
 /* ----------------------------------------
