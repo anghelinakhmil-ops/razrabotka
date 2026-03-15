@@ -78,49 +78,34 @@ export default async function AboutPage() {
       {/* Approach Section */}
       <section className="py-[var(--section-gap)] bg-[var(--color-background-alt)]">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div>
-              <RevealOnScroll direction="up">
-                <span className="text-caption text-[var(--color-text-muted)] mb-4 block">
-                  {t("approachCaption")}
-                </span>
-                <h2 className="mb-6">
-                  <BrokenText
-                    text={t("approachTitle")}
-                    spaced
-                    className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
-                  />
-                </h2>
-              </RevealOnScroll>
-
-              <div className="space-y-4 text-body">
-                <ScrollScrubText
-                  text={t("approachText1")}
-                  className="text-[var(--color-text-muted)]"
+          <div className="max-w-3xl">
+            <RevealOnScroll direction="up">
+              <span className="text-caption text-[var(--color-text-muted)] mb-4 block">
+                {t("approachCaption")}
+              </span>
+              <h2 className="mb-6">
+                <BrokenText
+                  text={t("approachTitle")}
+                  spaced
+                  className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
                 />
-                <ScrollScrubText
-                  text={t("approachText2")}
-                  className="text-[var(--color-text-muted)]"
-                />
-                <ScrollScrubText
-                  text={t("approachText3")}
-                  className="text-[var(--color-text-muted)]"
-                />
-              </div>
-            </div>
-
-            <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 2}>
-              <div className="aspect-[4/3] bg-[var(--color-background)] border border-[var(--color-line)] flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-6xl sm:text-8xl font-display font-bold text-[var(--color-line)]">
-                    01
-                  </span>
-                  <p className="text-caption text-[var(--color-text-muted)] mt-4">
-                    {t("approachVisualLabel")}
-                  </p>
-                </div>
-              </div>
+              </h2>
             </RevealOnScroll>
+
+            <div className="space-y-4 text-body">
+              <ScrollScrubText
+                text={t("approachText1")}
+                className="text-[var(--color-text-muted)]"
+              />
+              <ScrollScrubText
+                text={t("approachText2")}
+                className="text-[var(--color-text-muted)]"
+              />
+              <ScrollScrubText
+                text={t("approachText3")}
+                className="text-[var(--color-text-muted)]"
+              />
+            </div>
           </div>
         </Container>
       </section>
