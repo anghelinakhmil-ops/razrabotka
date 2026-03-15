@@ -41,10 +41,13 @@ function getServerSnapshot() { return null; }
  */
 export function LenisProvider({ children }: LenisProviderProps) {
   useEffect(() => {
+    // Disable Lenis on touch devices — native scroll works better
+    const isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+    if (isTouchDevice) return;
+
     const instance = new Lenis({
       duration: 1.7,
       easing: (t: number) => Math.min(1, 1 - Math.pow(2, -10 * t)),
-      touchMultiplier: 1.5,
       infinite: false,
     });
 
