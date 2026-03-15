@@ -27,7 +27,6 @@ export default async function Home() {
       <FullBleedImage
         src="/images/fullbleed-process.jpg"
         alt={t("fullBleedProcessAlt")}
-        overlayText={t("fullBleedProcessOverlay")}
       />
       <Process />
       <CasesPreview />
