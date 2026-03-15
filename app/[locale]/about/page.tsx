@@ -250,18 +250,20 @@ export default async function AboutPage() {
 
             <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 2}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <CtaButton
-                  variant="primary"
-                  size="lg"
-                  className="!bg-[#F9F7F2] !text-[#1A1A1A] hover:!bg-[#EFEBE0]"
-                >
-                  {t("ctaCta")}
-                </CtaButton>
+                <Link href="/brief">
+                  <Button
+                    variant="primary"
+                    size="lg"
+                    style={{ backgroundColor: "#F9F7F2", color: "#1A1A1A", borderColor: "#F9F7F2" }}
+                  >
+                    {t("ctaCta")}
+                  </Button>
+                </Link>
                 <Link href="/cases">
                   <Button
                     variant="outline"
                     size="lg"
-                    className="!border-[#F9F7F2] !text-[#F9F7F2] hover:!bg-[#F9F7F2] hover:!text-[#1A1A1A]"
+                    style={{ backgroundColor: "transparent", color: "#F9F7F2", borderColor: "#F9F7F2" }}
                   >
                     {t("ctaCases")}
                   </Button>
@@ -270,7 +272,7 @@ export default async function AboutPage() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="!border-[#F9F7F2] !text-[#F9F7F2] hover:!bg-[#F9F7F2] hover:!text-[#1A1A1A]"
+                    style={{ backgroundColor: "transparent", color: "#F9F7F2", borderColor: "#F9F7F2" }}
                   >
                     {t("ctaServices")}
                   </Button>
