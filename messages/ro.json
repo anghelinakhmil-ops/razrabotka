@@ -98,10 +98,8 @@
         "label": "Lighthouse Score"
       },
       {
-        "value": "30",
-        "label": "suport după lansare",
-        "prefix": "până la ",
-        "suffix": " zile"
+        "value": "30 zile",
+        "label": "suport după lansare"
       },
       {
         "value": "4+",

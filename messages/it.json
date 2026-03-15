@@ -98,10 +98,8 @@
         "label": "Lighthouse Score"
       },
       {
-        "value": "30",
-        "label": "supporto dopo il lancio",
-        "prefix": "fino a ",
-        "suffix": " giorni"
+        "value": "30 giorni",
+        "label": "supporto dopo il lancio"
       },
       {
         "value": "4+",
