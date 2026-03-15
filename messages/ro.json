@@ -83,16 +83,13 @@
     ]
   },
   "metrics": {
-    "caption": "În cifre",
-    "title": "REZULTATE",
+    "caption": "Rezultate",
+    "title": "PE CARE LE OBȚINE AFACEREA",
     "items": [
-      {
-        "value": "7–21",
-        "label": "zile până la lansare"
-      },
       {
         "value": "30–120",
         "label": "la conversie",
+        "description": "datorită structurii, mesajelor și UX-ului bine gândite",
         "prefix": "+",
         "suffix": "%"
       },
@@ -101,8 +98,15 @@
         "label": "Lighthouse Score"
       },
       {
-        "value": "0",
-        "label": "șabloane folosite"
+        "value": "30",
+        "label": "suport după lansare",
+        "prefix": "până la ",
+        "suffix": " zile"
+      },
+      {
+        "value": "4+",
+        "label": "integrări",
+        "description": "CRM, Telegram, analitică, plăți"
       }
     ]
   },

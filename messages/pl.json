@@ -83,16 +83,13 @@
     ]
   },
   "metrics": {
-    "caption": "W liczbach",
-    "title": "REZULTATY",
+    "caption": "Wyniki",
+    "title": "KTÓRE OTRZYMUJE BIZNES",
     "items": [
-      {
-        "value": "7–21",
-        "label": "dni do uruchomienia"
-      },
       {
         "value": "30–120",
         "label": "do konwersji",
+        "description": "dzięki przemyślanej strukturze, przekazom i UX",
         "prefix": "+",
         "suffix": "%"
       },
@@ -101,8 +98,15 @@
         "label": "Lighthouse Score"
       },
       {
-        "value": "0",
-        "label": "użytych szablonów"
+        "value": "30",
+        "label": "wsparcie po uruchomieniu",
+        "prefix": "do ",
+        "suffix": " dni"
+      },
+      {
+        "value": "4+",
+        "label": "integracje",
+        "description": "CRM, Telegram, analityka, płatności"
       }
     ]
   },

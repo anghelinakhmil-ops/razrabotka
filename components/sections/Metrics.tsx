@@ -19,6 +19,8 @@ export interface MetricData {
   suffix?: string;
   /** Префикс */
   prefix?: string;
+  /** Дополнительное описание */
+  description?: string;
 }
 
 interface MetricsProps {
@@ -39,12 +41,13 @@ export function Metrics({ metrics }: MetricsProps) {
   const t = useTranslations("metrics");
 
   const translatedMetrics: MetricData[] = (t.raw("items") as Array<{
-    value: string; label: string; prefix?: string; suffix?: string;
+    value: string; label: string; prefix?: string; suffix?: string; description?: string;
   }>).map((item) => ({
     value: item.value,
     label: item.label,
     prefix: item.prefix,
     suffix: item.suffix,
+    description: item.description,
   }));
 
   const items = metrics || translatedMetrics;
@@ -115,6 +118,7 @@ function MetricItem({
   label,
   prefix,
   suffix,
+  description,
   showDivider = false,
 }: MetricItemProps) {
   return (
@@ -145,6 +149,13 @@ function MetricItem({
       <p className="mt-4 text-body text-[var(--color-text-muted)] max-w-[200px]">
         {label}
       </p>
+
+      {/* Описание */}
+      {description && (
+        <p className="mt-2 text-[13px] text-[var(--color-text-light)] max-w-[220px]">
+          {description}
+        </p>
+      )}
     </div>
   );
 }

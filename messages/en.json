@@ -83,16 +83,13 @@
     ]
   },
   "metrics": {
-    "caption": "In numbers",
-    "title": "RESULTS",
+    "caption": "Results",
+    "title": "YOUR BUSINESS GETS",
     "items": [
       {
-        "value": "7–21",
-        "label": "days to launch"
-      },
-      {
         "value": "30–120",
-        "label": "to conversion",
+        "label": "conversion boost",
+        "description": "through thoughtful structure, messaging and UX",
         "prefix": "+",
         "suffix": "%"
       },
@@ -101,8 +98,15 @@
         "label": "Lighthouse Score"
       },
       {
-        "value": "0",
-        "label": "templates used"
+        "value": "30",
+        "label": "post-launch support",
+        "prefix": "up to ",
+        "suffix": " days"
+      },
+      {
+        "value": "4+",
+        "label": "integrations",
+        "description": "CRM, Telegram, analytics, payments"
       }
     ]
   },
