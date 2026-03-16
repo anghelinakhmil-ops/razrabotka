@@ -1,13 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { MobileMenu } from "./MobileMenu";
 import { Preloader } from "./Preloader";
 import { CallbackModal } from "@/components/forms/CallbackModal";
-import { LenisProvider } from "@/components/motion/LenisProvider";
+import { LenisProvider, scrollToTop } from "@/components/motion/LenisProvider";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 import { captureUtm } from "@/lib/utm";
 
@@ -52,8 +52,13 @@ export function LayoutClient({ children }: LayoutClientProps) {
 
   // Scroll to top on route change
   const pathname = usePathname();
+  const isFirstRender = useRef(true);
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    scrollToTop();
   }, [pathname]);
 
   return (

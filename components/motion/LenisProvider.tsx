@@ -32,6 +32,18 @@ function getSnapshot() { return lenisInstance; }
 function getServerSnapshot() { return null; }
 
 /**
+ * Scroll to top — works with Lenis or native scroll
+ */
+export function scrollToTop() {
+  if (lenisInstance) {
+    lenisInstance.scrollTo(0, { immediate: true });
+  }
+  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+}
+
+/**
  * LenisProvider — провайдер smooth scroll
  *
  * Настройки приближены к референсу THE BRIDGE:
