@@ -2070,85 +2070,13 @@
       "ctaBlogButton": "Blog lesen",
       "items": [
         {
-          "slug": "expert-coach",
-          "title": "Website für Personal Coach",
+          "slug": "ceramo-lab",
+          "title": "Ceramo Lab — Feinsteinzeug-Labor",
           "category": "expert",
-          "categoryLabel": "Experte",
-          "description": "Website für einen Business-Coach mit Beratungsbuchung und Blog.",
-          "result": "+180% Leads",
-          "imageSrc": "/images/cases/case-expert-coach.jpg"
-        },
-        {
-          "slug": "ecommerce-fashion",
-          "title": "Fashion-Onlineshop",
-          "category": "ecommerce",
-          "categoryLabel": "E-Commerce",
-          "description": "Damenbekleidungsgeschäft mit einem Katalog von über 500 Produkten.",
-          "result": "3.2s LCP",
-          "imageSrc": "/images/cases/case-ecommerce-fashion.jpg"
-        },
-        {
-          "slug": "landing-saas",
-          "title": "SaaS-Produkt Landing",
-          "category": "landing",
-          "categoryLabel": "Landing",
-          "description": "Conversion-Seite für einen Cloud-Analyse-Dienst.",
-          "result": "8,5% Conversion",
-          "imageSrc": "/images/cases/case-landing-saas.jpg"
-        },
-        {
-          "slug": "expert-psychologist",
-          "title": "Website für Psychologen",
-          "category": "expert",
-          "categoryLabel": "Experte",
-          "description": "Persönliche Website mit Online-Buchung und Kalenderintegration.",
-          "result": "+240% Buchungen",
-          "imageSrc": "/images/cases/case-expert-psychologist.jpg"
-        },
-        {
-          "slug": "ecommerce-cosmetics",
-          "title": "Kosmetik-Onlineshop",
-          "category": "ecommerce",
-          "categoryLabel": "E-Commerce",
-          "description": "Onlineshop für Naturkosmetik mit Abo-Modell.",
-          "result": "95 Lighthouse",
-          "imageSrc": "/images/cases/case-ecommerce-cosmetics.jpg"
-        },
-        {
-          "slug": "landing-event",
-          "title": "Event-Promo-Seite",
-          "category": "landing",
-          "categoryLabel": "Landing",
-          "description": "Landing Page für eine Business-Konferenz mit Online-Registrierung.",
-          "result": "1200+ Registrierungen",
-          "imageSrc": "/images/cases/case-landing-event.jpg"
-        },
-        {
-          "slug": "expert-lawyer",
-          "title": "Website für Anwaltskanzlei",
-          "category": "expert",
-          "categoryLabel": "Experte",
-          "description": "Unternehmenswebsite für einen Anwalt mit Fall-Portfolio und Terminbuchung.",
-          "result": "+150% Anfragen",
-          "imageSrc": "/images/cases/case-corporate-it.jpg"
-        },
-        {
-          "slug": "ecommerce-electronics",
-          "title": "Elektronik-Onlineshop",
-          "category": "ecommerce",
-          "categoryLabel": "E-Commerce",
-          "description": "Online-Gadget-Shop mit intelligenter Suche und Filtern.",
-          "result": "+85% Conversion",
-          "imageSrc": "/images/cases/case-ecommerce-electronics.jpg"
-        },
-        {
-          "slug": "landing-app",
-          "title": "Mobile-App Landing",
-          "category": "landing",
-          "categoryLabel": "Landing",
-          "description": "Promo-Seite für eine Fitness-App mit App-Store-Links.",
-          "result": "12K Installationen",
-          "imageSrc": "/images/cases/case-expert-nutrition.jpg"
+          "categoryLabel": "Unternehmen",
+          "description": "Unternehmenswebsite für Feinsteinzeugproduktion. Minimalistisches Design, Video-Hintergründe, GSAP-Animationen.",
+          "result": "95+ Lighthouse",
+          "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
         }
       ]
     },

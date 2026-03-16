@@ -2070,85 +2070,13 @@
       "ctaBlogButton": "Читати блог",
       "items": [
         {
-          "slug": "expert-coach",
-          "title": "Персональний сайт коуча",
+          "slug": "ceramo-lab",
+          "title": "Ceramo Lab — Лабораторія керамограніту",
           "category": "expert",
-          "categoryLabel": "Експерт",
-          "description": "Сайт для бізнес-коуча із записом на консультації та блогом.",
-          "result": "+180% заявок",
-          "imageSrc": "/images/cases/case-expert-coach.jpg"
-        },
-        {
-          "slug": "ecommerce-fashion",
-          "title": "Інтернет-магазин одягу",
-          "category": "ecommerce",
-          "categoryLabel": "E-commerce",
-          "description": "Магазин жіночого одягу з каталогом 500+ товарів.",
-          "result": "3.2 сек LCP",
-          "imageSrc": "/images/cases/case-ecommerce-fashion.jpg"
-        },
-        {
-          "slug": "landing-saas",
-          "title": "Лендінг SaaS-продукту",
-          "category": "landing",
-          "categoryLabel": "Лендінг",
-          "description": "Конверсійна сторінка для хмарного сервісу аналітики.",
-          "result": "8.5% конверсія",
-          "imageSrc": "/images/cases/case-landing-saas.jpg"
-        },
-        {
-          "slug": "expert-psychologist",
-          "title": "Сайт психолога",
-          "category": "expert",
-          "categoryLabel": "Експерт",
-          "description": "Персональний сайт з онлайн-записом та інтеграцією з календарем.",
-          "result": "+240% записів",
-          "imageSrc": "/images/cases/case-expert-psychologist.jpg"
-        },
-        {
-          "slug": "ecommerce-cosmetics",
-          "title": "Магазин косметики",
-          "category": "ecommerce",
-          "categoryLabel": "E-commerce",
-          "description": "Інтернет-магазин натуральної косметики з підпискою.",
-          "result": "95 Lighthouse",
-          "imageSrc": "/images/cases/case-ecommerce-cosmetics.jpg"
-        },
-        {
-          "slug": "landing-event",
-          "title": "Промосторінка заходу",
-          "category": "landing",
-          "categoryLabel": "Лендінг",
-          "description": "Лендінг для бізнес-конференції з онлайн-реєстрацією.",
-          "result": "1200+ реєстрацій",
-          "imageSrc": "/images/cases/case-landing-event.jpg"
-        },
-        {
-          "slug": "expert-lawyer",
-          "title": "Сайт юридичної практики",
-          "category": "expert",
-          "categoryLabel": "Експерт",
-          "description": "Корпоративний сайт юриста з портфоліо справ та записом.",
-          "result": "+150% звернень",
-          "imageSrc": "/images/cases/case-corporate-it.jpg"
-        },
-        {
-          "slug": "ecommerce-electronics",
-          "title": "Магазин електроніки",
-          "category": "ecommerce",
-          "categoryLabel": "E-commerce",
-          "description": "Інтернет-магазин ґаджетів з розумним пошуком та фільтрами.",
-          "result": "+85% конверсії",
-          "imageSrc": "/images/cases/case-ecommerce-electronics.jpg"
-        },
-        {
-          "slug": "landing-app",
-          "title": "Лендінг мобільного додатку",
-          "category": "landing",
-          "categoryLabel": "Лендінг",
-          "description": "Промосторінка для fitness-додатку з посиланнями на App Store.",
-          "result": "12K встановлень",
-          "imageSrc": "/images/cases/case-expert-nutrition.jpg"
+          "categoryLabel": "Корпоративний",
+          "description": "Корпоративний сайт-візитка для виробництва керамограніту. Мінімалістичний дизайн, відео-фони, GSAP-анімації.",
+          "result": "95+ Lighthouse",
+          "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
         }
       ]
     },

@@ -2070,85 +2070,13 @@
       "ctaBlogButton": "Citește blogul",
       "items": [
         {
-          "slug": "expert-coach",
-          "title": "Site personal de coach",
+          "slug": "ceramo-lab",
+          "title": "Ceramo Lab — Laboratorul de gresie",
           "category": "expert",
-          "categoryLabel": "Expert",
-          "description": "Site pentru un coach de business cu programare la consultații și blog.",
-          "result": "+180% cereri",
-          "imageSrc": "/images/cases/case-expert-coach.jpg"
-        },
-        {
-          "slug": "ecommerce-fashion",
-          "title": "Magazin online de îmbrăcăminte",
-          "category": "ecommerce",
-          "categoryLabel": "E-commerce",
-          "description": "Magazin de îmbrăcăminte pentru femei cu catalog de 500+ produse.",
-          "result": "3.2 sec LCP",
-          "imageSrc": "/images/cases/case-ecommerce-fashion.jpg"
-        },
-        {
-          "slug": "landing-saas",
-          "title": "Landing produs SaaS",
-          "category": "landing",
-          "categoryLabel": "Landing",
-          "description": "Pagină de conversie pentru un serviciu cloud de analiză.",
-          "result": "8.5% conversie",
-          "imageSrc": "/images/cases/case-landing-saas.jpg"
-        },
-        {
-          "slug": "expert-psychologist",
-          "title": "Site de psiholog",
-          "category": "expert",
-          "categoryLabel": "Expert",
-          "description": "Site personal cu programare online și integrare cu calendarul.",
-          "result": "+240% programări",
-          "imageSrc": "/images/cases/case-expert-psychologist.jpg"
-        },
-        {
-          "slug": "ecommerce-cosmetics",
-          "title": "Magazin de cosmetice",
-          "category": "ecommerce",
-          "categoryLabel": "E-commerce",
-          "description": "Magazin online de cosmetice naturale cu abonament.",
-          "result": "95 Lighthouse",
-          "imageSrc": "/images/cases/case-ecommerce-cosmetics.jpg"
-        },
-        {
-          "slug": "landing-event",
-          "title": "Pagină promoțională eveniment",
-          "category": "landing",
-          "categoryLabel": "Landing",
-          "description": "Landing pentru o conferință de business cu înregistrare online.",
-          "result": "1200+ înregistrări",
-          "imageSrc": "/images/cases/case-landing-event.jpg"
-        },
-        {
-          "slug": "expert-lawyer",
-          "title": "Site de practică juridică",
-          "category": "expert",
-          "categoryLabel": "Expert",
-          "description": "Site corporativ de avocat cu portofoliu de cazuri și programare.",
-          "result": "+150% solicitări",
-          "imageSrc": "/images/cases/case-corporate-it.jpg"
-        },
-        {
-          "slug": "ecommerce-electronics",
-          "title": "Magazin de electronică",
-          "category": "ecommerce",
-          "categoryLabel": "E-commerce",
-          "description": "Magazin online de gadgeturi cu căutare inteligentă și filtre.",
-          "result": "+85% conversie",
-          "imageSrc": "/images/cases/case-ecommerce-electronics.jpg"
-        },
-        {
-          "slug": "landing-app",
-          "title": "Landing aplicație mobilă",
-          "category": "landing",
-          "categoryLabel": "Landing",
-          "description": "Pagină promoțională pentru o aplicație de fitness cu link-uri App Store.",
-          "result": "12K instalări",
-          "imageSrc": "/images/cases/case-expert-nutrition.jpg"
+          "categoryLabel": "Corporativ",
+          "description": "Site corporativ pentru producția de gresie porțelanată. Design minimalist, fundaluri video, animații GSAP.",
+          "result": "95+ Lighthouse",
+          "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
         }
       ]
     },

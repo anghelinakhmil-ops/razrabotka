@@ -2070,85 +2070,13 @@
       "ctaBlogButton": "Read blog",
       "items": [
         {
-          "slug": "expert-coach",
-          "title": "Personal Coach Website",
+          "slug": "ceramo-lab",
+          "title": "Ceramo Lab — Ceramic Material Laboratory",
           "category": "expert",
-          "categoryLabel": "Expert",
-          "description": "Website for a business coach with consultation booking and blog.",
-          "result": "+180% leads",
-          "imageSrc": "/images/cases/case-expert-coach.jpg"
-        },
-        {
-          "slug": "ecommerce-fashion",
-          "title": "Fashion Online Store",
-          "category": "ecommerce",
-          "categoryLabel": "E-commerce",
-          "description": "Women's clothing store with a catalog of 500+ products.",
-          "result": "3.2s LCP",
-          "imageSrc": "/images/cases/case-ecommerce-fashion.jpg"
-        },
-        {
-          "slug": "landing-saas",
-          "title": "SaaS Product Landing",
-          "category": "landing",
-          "categoryLabel": "Landing",
-          "description": "Conversion page for a cloud analytics service.",
-          "result": "8.5% conversion",
-          "imageSrc": "/images/cases/case-landing-saas.jpg"
-        },
-        {
-          "slug": "expert-psychologist",
-          "title": "Psychologist Website",
-          "category": "expert",
-          "categoryLabel": "Expert",
-          "description": "Personal website with online booking and calendar integration.",
-          "result": "+240% bookings",
-          "imageSrc": "/images/cases/case-expert-psychologist.jpg"
-        },
-        {
-          "slug": "ecommerce-cosmetics",
-          "title": "Cosmetics Store",
-          "category": "ecommerce",
-          "categoryLabel": "E-commerce",
-          "description": "Online store for natural cosmetics with subscription model.",
-          "result": "95 Lighthouse",
-          "imageSrc": "/images/cases/case-ecommerce-cosmetics.jpg"
-        },
-        {
-          "slug": "landing-event",
-          "title": "Event Promo Page",
-          "category": "landing",
-          "categoryLabel": "Landing",
-          "description": "Landing page for a business conference with online registration.",
-          "result": "1200+ registrations",
-          "imageSrc": "/images/cases/case-landing-event.jpg"
-        },
-        {
-          "slug": "expert-lawyer",
-          "title": "Law Practice Website",
-          "category": "expert",
-          "categoryLabel": "Expert",
-          "description": "Corporate website for a lawyer with case portfolio and booking.",
-          "result": "+150% inquiries",
-          "imageSrc": "/images/cases/case-corporate-it.jpg"
-        },
-        {
-          "slug": "ecommerce-electronics",
-          "title": "Electronics Store",
-          "category": "ecommerce",
-          "categoryLabel": "E-commerce",
-          "description": "Online gadget store with smart search and filters.",
-          "result": "+85% conversion",
-          "imageSrc": "/images/cases/case-ecommerce-electronics.jpg"
-        },
-        {
-          "slug": "landing-app",
-          "title": "Mobile App Landing",
-          "category": "landing",
-          "categoryLabel": "Landing",
-          "description": "Promo page for a fitness app with App Store links.",
-          "result": "12K installs",
-          "imageSrc": "/images/cases/case-expert-nutrition.jpg"
+          "categoryLabel": "Corporate",
+          "description": "Corporate website for ceramic tile manufacturing. Minimalist design, video backgrounds, GSAP animations.",
+          "result": "95+ Lighthouse",
+          "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
         }
       ]
     },

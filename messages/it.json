@@ -2070,85 +2070,13 @@
       "ctaBlogButton": "Leggi il blog",
       "items": [
         {
-          "slug": "expert-coach",
-          "title": "Sito web per coach personale",
+          "slug": "ceramo-lab",
+          "title": "Ceramo Lab — Laboratorio di gres porcellanato",
           "category": "expert",
-          "categoryLabel": "Esperto",
-          "description": "Sito web per un business coach con prenotazione consulenze e blog.",
-          "result": "+180% contatti",
-          "imageSrc": "/images/cases/case-expert-coach.jpg"
-        },
-        {
-          "slug": "ecommerce-fashion",
-          "title": "Negozio di moda online",
-          "category": "ecommerce",
-          "categoryLabel": "E-commerce",
-          "description": "Negozio di abbigliamento donna con catalogo di 500+ prodotti.",
-          "result": "3.2s LCP",
-          "imageSrc": "/images/cases/case-ecommerce-fashion.jpg"
-        },
-        {
-          "slug": "landing-saas",
-          "title": "Landing per prodotto SaaS",
-          "category": "landing",
-          "categoryLabel": "Landing",
-          "description": "Pagina di conversione per un servizio di analisi cloud.",
-          "result": "8,5% conversione",
-          "imageSrc": "/images/cases/case-landing-saas.jpg"
-        },
-        {
-          "slug": "expert-psychologist",
-          "title": "Sito web per psicologo",
-          "category": "expert",
-          "categoryLabel": "Esperto",
-          "description": "Sito personale con prenotazione online e integrazione calendario.",
-          "result": "+240% prenotazioni",
-          "imageSrc": "/images/cases/case-expert-psychologist.jpg"
-        },
-        {
-          "slug": "ecommerce-cosmetics",
-          "title": "Negozio di cosmetici",
-          "category": "ecommerce",
-          "categoryLabel": "E-commerce",
-          "description": "Negozio online di cosmetici naturali con modello in abbonamento.",
-          "result": "95 Lighthouse",
-          "imageSrc": "/images/cases/case-ecommerce-cosmetics.jpg"
-        },
-        {
-          "slug": "landing-event",
-          "title": "Pagina promo evento",
-          "category": "landing",
-          "categoryLabel": "Landing",
-          "description": "Landing page per una conferenza business con registrazione online.",
-          "result": "1200+ registrazioni",
-          "imageSrc": "/images/cases/case-landing-event.jpg"
-        },
-        {
-          "slug": "expert-lawyer",
-          "title": "Sito web per studio legale",
-          "category": "expert",
-          "categoryLabel": "Esperto",
-          "description": "Sito aziendale per avvocato con portfolio casi e prenotazione.",
-          "result": "+150% richieste",
-          "imageSrc": "/images/cases/case-corporate-it.jpg"
-        },
-        {
-          "slug": "ecommerce-electronics",
-          "title": "Negozio di elettronica",
-          "category": "ecommerce",
-          "categoryLabel": "E-commerce",
-          "description": "Negozio online di gadget con ricerca intelligente e filtri.",
-          "result": "+85% conversione",
-          "imageSrc": "/images/cases/case-ecommerce-electronics.jpg"
-        },
-        {
-          "slug": "landing-app",
-          "title": "Landing per app mobile",
-          "category": "landing",
-          "categoryLabel": "Landing",
-          "description": "Pagina promo per un'app fitness con link App Store.",
-          "result": "12K installazioni",
-          "imageSrc": "/images/cases/case-expert-nutrition.jpg"
+          "categoryLabel": "Aziendale",
+          "description": "Sito aziendale per la produzione di gres porcellanato. Design minimalista, sfondi video, animazioni GSAP.",
+          "result": "95+ Lighthouse",
+          "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
         }
       ]
     },
