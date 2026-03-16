@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { MobileMenu } from "./MobileMenu";
@@ -48,6 +49,12 @@ export function LayoutClient({ children }: LayoutClientProps) {
   useEffect(() => {
     captureUtm();
   }, []);
+
+  // Scroll to top on route change
+  const pathname = usePathname();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <LenisProvider>
