@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useMemo } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
@@ -12,17 +11,12 @@ import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/moti
 import { sectionPresets } from "@/lib/motion";
 
 /**
- * Типы категорий
- */
-type CategoryFilter = "all" | "expert" | "ecommerce" | "landing";
-
-/**
  * Данные кейса
  */
 interface CaseItem {
   slug: string;
   title: string;
-  category: CategoryFilter;
+  category: string;
   categoryLabel: string;
   description: string;
   result: string;
@@ -34,20 +28,7 @@ interface CaseItem {
  */
 export default function CasesContent() {
   const t = useTranslations("pages.cases");
-  const [activeFilter, setActiveFilter] = useState<CategoryFilter>("all");
-
   const allCases = t.raw("items") as CaseItem[];
-  const filters: { value: CategoryFilter; label: string }[] = [
-    { value: "all", label: t("filterAll") },
-    { value: "expert", label: t("filterExpert") },
-    { value: "ecommerce", label: t("filterEcommerce") },
-    { value: "landing", label: t("filterLanding") },
-  ];
-
-  const filteredCases = useMemo(() => {
-    if (activeFilter === "all") return allCases;
-    return allCases.filter((c) => c.category === activeFilter);
-  }, [activeFilter, allCases]);
 
   return (
     <main>
@@ -78,49 +59,19 @@ export default function CasesContent() {
         </Container>
       </section>
 
-      {/* Filters */}
-      <section className="py-6 bg-[var(--color-background)] border-b border-[var(--color-line)] sticky top-16 z-40">
-        <Container>
-          <RevealOnScroll direction="up">
-            <div className="flex flex-wrap gap-2 lg:gap-4">
-              {filters.map((filter) => (
-                <button
-                  key={filter.value}
-                  onClick={() => setActiveFilter(filter.value)}
-                  className={`
-                    px-4 py-2 text-body-sm font-medium rounded-sm transition-all duration-300
-                    ${
-                      activeFilter === filter.value
-                        ? "bg-[var(--color-text-primary)] text-[var(--color-background)]"
-                        : "bg-[var(--color-background-alt)] text-[var(--color-text-secondary)] hover:bg-[var(--color-line)] hover:text-[var(--color-text-primary)]"
-                    }
-                  `}
-                >
-                  {filter.label}
-                </button>
-              ))}
-            </div>
-          </RevealOnScroll>
-        </Container>
-      </section>
-
       {/* Cases Grid */}
       <section className="py-[var(--section-gap)] bg-[var(--color-background)]">
         <Container>
-          {filteredCases.length > 0 ? (
-            <StaggerContainer
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
-              staggerDelay={sectionPresets.grid.stagger}
-            >
-              {filteredCases.map((caseItem) => (
-                <StaggerItem key={caseItem.slug}>
-                  <CaseCard caseItem={caseItem} />
-                </StaggerItem>
-              ))}
-            </StaggerContainer>
-          ) : (
-            <NoResults onReset={() => setActiveFilter("all")} />
-          )}
+          <StaggerContainer
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+            staggerDelay={sectionPresets.grid.stagger}
+          >
+            {allCases.map((caseItem) => (
+              <StaggerItem key={caseItem.slug}>
+                <CaseCard caseItem={caseItem} />
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
         </Container>
       </section>
 
@@ -212,44 +163,6 @@ function CaseCard({ caseItem }: { caseItem: CaseItem }) {
         </div>
       </div>
     </Link>
-  );
-}
-
-/**
- * NoResults — состояние «Нет результатов»
- */
-function NoResults({ onReset }: { onReset: () => void }) {
-  const t = useTranslations("pages.cases");
-
-  return (
-    <div className="text-center py-20">
-      <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[var(--color-background-alt)] flex items-center justify-center">
-        <svg
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-          className="text-[var(--color-text-muted)]"
-        >
-          <path
-            d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </div>
-      <h3 className="text-h3 font-display font-bold text-[var(--color-text-primary)] mb-2">
-        {t("noResultsTitle")}
-      </h3>
-      <p className="text-body text-[var(--color-text-muted)] mb-6">
-        {t("noResultsText")}
-      </p>
-      <Button variant="outline" size="md" onClick={onReset}>
-        {t("noResultsButton")}
-      </Button>
-    </div>
   );
 }
 
