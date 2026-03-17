@@ -71,7 +71,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   /* Динамические страницы — блог */
-  const blogSlugs: string[] = [];
+  const blogSlugs = [
+    "website-cost-for-business-2026",
+    "what-website-your-business-needs",
+    "why-ads-fail-without-good-website",
+    "how-many-leads-your-business-loses",
+    "how-to-choose-web-contractor",
+  ];
 
   const blogPages: MetadataRoute.Sitemap = blogSlugs.flatMap((slug) =>
     locales.map((locale) => ({

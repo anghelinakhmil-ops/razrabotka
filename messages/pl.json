@@ -1731,7 +1731,58 @@
       "ctaButton": "Omów projekt",
       "ctaServicesButton": "Zobacz usługi",
       "ctaCasesButton": "Zobacz realizacje",
-      "posts": []
+      "posts": [
+        {
+          "slug": "website-cost-for-business-2026",
+          "title": "How Much Does a Business Website Cost in 2026",
+          "excerpt": "We break down what affects website pricing, why the range is so wide, and how to avoid overpaying — without losing money on a cheap solution.",
+          "category": "business",
+          "categoryLabel": "Biznes",
+          "date": "2026-03-10",
+          "readTime": "8 min",
+          "author": "NAKO Agency"
+        },
+        {
+          "slug": "what-website-your-business-needs",
+          "title": "What Website Does Your Business Need: Landing Page, Multi-Page Site, or Online Store",
+          "excerpt": "Not every business needs a complex website. But a landing page isn't a universal solution either. Let's figure out which format is right for you.",
+          "category": "business",
+          "categoryLabel": "Biznes",
+          "date": "2026-03-07",
+          "readTime": "7 min",
+          "author": "NAKO Agency"
+        },
+        {
+          "slug": "why-ads-fail-without-good-website",
+          "title": "Why Your Ads Don't Work Without a Proper Website",
+          "excerpt": "Spending on ads but getting few leads? The problem might not be your ad settings — but where the traffic lands.",
+          "category": "marketing",
+          "categoryLabel": "Marketing",
+          "date": "2026-03-04",
+          "readTime": "6 min",
+          "author": "NAKO Agency"
+        },
+        {
+          "slug": "how-many-leads-your-business-loses",
+          "title": "How Many Leads Your Business Loses Because of a Weak Website",
+          "excerpt": "Every day your website either generates leads or pushes potential clients away. Let's calculate how much money you're losing and why.",
+          "category": "business",
+          "categoryLabel": "Biznes",
+          "date": "2026-03-01",
+          "readTime": "7 min",
+          "author": "NAKO Agency"
+        },
+        {
+          "slug": "how-to-choose-web-contractor",
+          "title": "How to Choose a Web Contractor Without Losing Money, Time, and Nerves",
+          "excerpt": "Freelancer, studio, or agency? How to evaluate portfolios, what to look for in contracts, and which red flags you can't ignore.",
+          "category": "business",
+          "categoryLabel": "Biznes",
+          "date": "2026-02-26",
+          "readTime": "9 min",
+          "author": "NAKO Agency"
+        }
+      ]
     },
     "blogPost": {
       "backLink": "Wszystkie artykuły",
@@ -1745,7 +1796,187 @@
       "notFound": "Artykuł nie został znaleziony",
       "breadcrumbHome": "Strona główna",
       "breadcrumbBlog": "Blog",
-      "posts": {}
+      "posts": {
+        "website-cost-for-business-2026": {
+          "title": "How Much Does a Business Website Cost in 2026",
+          "excerpt": "We break down what affects website pricing, why the range is so wide, and how to avoid overpaying — without losing money on a cheap solution.",
+          "categoryLabel": "Biznes",
+          "date": "2026-03-10",
+          "readTime": "8 min",
+          "author": "NAKO Agency",
+          "toc": [
+            {
+              "id": "price-range",
+              "title": "Price Range: From $500 to $50,000"
+            },
+            {
+              "id": "what-affects-price",
+              "title": "What Affects the Cost"
+            },
+            {
+              "id": "hidden-costs",
+              "title": "Hidden Costs"
+            },
+            {
+              "id": "cheap-vs-expensive",
+              "title": "Cheap vs Expensive: Real Consequences"
+            },
+            {
+              "id": "how-to-budget",
+              "title": "How to Budget Properly"
+            },
+            {
+              "id": "when-invest",
+              "title": "When It's Time to Invest"
+            }
+          ],
+          "content": "<h2 id=\"price-range\">Price Range: From $500 to $50,000</h2><p>Google \"how much does a website cost\" and you'll get numbers from $300 to $100,000. All of them are true. Because \"website\" is like \"car\" — there's a used Daewoo and a new Mercedes. Both drive. But the experience — and results — are different.</p><p>The problem is that most business owners don't understand what they're paying for. They end up either overpaying for unnecessary features or saving where they shouldn't.</p><h2 id=\"what-affects-price\">What Affects the Cost</h2><p><strong>Website type.</strong> A single-page landing is one thing. A corporate site with 10–15 pages is another. An online store with catalog, filters, and payments is a third. Each format requires different amounts of work.</p><p><strong>Design.</strong> A $50 template vs custom design isn't about aesthetics — it's about conversion. Templates don't account for your audience, product, or goals. Custom design is built around specific business objectives.</p><p><strong>Functionality.</strong> Forms, CRM integrations, online payments, user accounts, multilingual support — each adds development hours. But not every feature is necessary for your case.</p><p><strong>Content.</strong> Text, photos, video. Often clients think content \"already exists,\" then discover phone photos won't work and nobody wrote the copy. Quality content is a separate budget line.</p><h2 id=\"hidden-costs\">Hidden Costs Nobody Warns You About</h2><ul><li><strong>Hosting and domain</strong> — $50 to $300/year. Sounds small, but adds up over 3 years.</li><li><strong>SSL certificate</strong> — without it, browsers show \"not secure.\" Free ones exist, but e-commerce needs extended validation.</li><li><strong>Maintenance and updates</strong> — a website isn't \"build and forget.\" CMS needs updating, bugs need fixing, content needs refreshing.</li><li><strong>SEO optimization</strong> — a website without SEO is like a store in a basement with no sign. Basic optimization starts at $500.</li></ul><h2 id=\"cheap-vs-expensive\">Cheap vs Expensive: Real Consequences</h2><p>Real scenario. A business orders a $800 website from a freelancer. Six months later:</p><ul><li>Site loads in 6 seconds — 53% of mobile users leave</li><li>No responsive design — buttons overlap on phones</li><li>No SEO — site doesn't appear in search</li><li>Freelancer disappeared — nobody to fix bugs</li></ul><p>Total: $800 spent, zero leads, need to rebuild. Rebuilding costs more than doing it right the first time.</p><p>Another scenario. A business invests $5,000 in a thoughtful website. Six months later:</p><ul><li>Site ranks in top 10 for key queries</li><li>4–6% conversion — every 20th visitor submits a lead</li><li>Cost per lead from website is 3x lower than from ads</li></ul><p>The difference isn't the budget. It's the approach.</p><h2 id=\"how-to-budget\">How to Budget Properly</h2><p>Forget \"how much does a website cost.\" Ask: <strong>\"how much will one client from the website cost me?\"</strong></p><p>If your average deal is $2,000, and the site brings 10 leads/month with every 5th closing — that's $4,000/month revenue. A $5,000 website pays for itself in 2 months.</p><p>Calculate ROI, not expenses. A website isn't a cost — it's a sales tool.</p><p><strong>Approximate prices in 2026:</strong></p><ul><li>Landing page (1 page) — $1,500–3,000</li><li>Corporate site (5–15 pages) — $3,000–8,000</li><li>Online store — $5,000–15,000</li><li>Complex project with integrations — $10,000+</li></ul><h2 id=\"when-invest\">When It's Time to Invest</h2><p>If you recognize yourself in any of these:</p><ul><li>You have no website and clients come only through word of mouth</li><li>You have a website but are embarrassed to share the link</li><li>You spend on ads but get few leads</li><li>Competitors look more professional online</li><li>You don't know how many clients you're losing because of your site</li></ul><p>— then your website is already costing you money. Not because you're paying for it, but because you're <em>not getting</em> what you could.</p><p>Want to understand what website your business needs and what it will cost? Leave a request. We'll analyze your situation and give an honest estimate with no obligations.</p>"
+        },
+        "what-website-your-business-needs": {
+          "title": "What Website Does Your Business Need: Landing Page, Multi-Page Site, or Online Store",
+          "excerpt": "Not every business needs a complex website. But a landing page isn't a universal solution either. Let's figure out which format is right for you.",
+          "categoryLabel": "Biznes",
+          "date": "2026-03-07",
+          "readTime": "7 min",
+          "author": "NAKO Agency",
+          "toc": [
+            {
+              "id": "wrong-choice",
+              "title": "The Cost of the Wrong Choice"
+            },
+            {
+              "id": "landing",
+              "title": "Landing Page: When One Page Is Enough"
+            },
+            {
+              "id": "multipage",
+              "title": "Multi-Page Site: When You Need More Trust"
+            },
+            {
+              "id": "ecommerce",
+              "title": "Online Store: When You Sell Products"
+            },
+            {
+              "id": "how-to-choose",
+              "title": "How to Determine Your Format"
+            },
+            {
+              "id": "next-step",
+              "title": "What to Do Next"
+            }
+          ],
+          "content": "<h2 id=\"wrong-choice\">The Cost of the Wrong Choice</h2><p>One of the most expensive mistakes is building the wrong type of website. A business with 50 products orders a landing page. A consultant with one service builds a 20-page multi-page site. The result is the same: money spent, but the site doesn't work for the business.</p><p>The website format isn't a matter of taste. It's a strategic decision that depends on your sales model, audience, and goals.</p><h2 id=\"landing\">Landing Page: When One Page Is Enough</h2><p><strong>For whom:</strong> one product or service, clear offer, traffic from ads.</p><p>A landing page is one page with one goal: get a lead. No menus, no navigation distractions. The visitor arrives, understands the offer, leaves their contact.</p><p><strong>Works when:</strong></p><ul><li>You're promoting a specific product or promotion</li><li>Traffic comes from ads (Google Ads, social)</li><li>Decision cycle is short</li><li>Client doesn't need to research you extensively</li></ul><p><strong>Doesn't work when:</strong></p><ul><li>You have 5+ services or product categories</li><li>Clients take weeks to decide</li><li>You need to show expertise, cases, team</li></ul><h2 id=\"multipage\">Multi-Page Site: When You Need More Trust</h2><p><strong>For whom:</strong> services, B2B, experts, companies with multiple directions.</p><p>When clients need time to decide, one page isn't enough. They need to see your cases, read about your approach, meet the team, study your services.</p><p><strong>Works when:</strong></p><ul><li>High average check — client compares options</li><li>Multiple services or directions</li><li>Expertise matters: legal, consulting, medical, education</li><li>You need SEO traffic (each page = search entry point)</li></ul><p><strong>How many pages you actually need:</strong></p><ul><li>Home — first impression and navigation</li><li>Services — what you do and for whom</li><li>Cases/portfolio — proof of results</li><li>About — people behind the business</li><li>Contacts — how to reach you</li><li>Blog (optional) — SEO and expertise</li></ul><h2 id=\"ecommerce\">Online Store: When You Sell Products</h2><p><strong>For whom:</strong> retail, products with delivery, digital products.</p><p>If you sell physical or digital products — you need a store. Not a landing page with a \"message us on WhatsApp\" button, but a full system: catalog, cart, payments, inventory.</p><p><strong>Signs you need a store:</strong></p><ul><li>More than 10 products</li><li>Clients buy without consultation</li><li>Need online payments</li><li>Want to scale without growing staff</li></ul><h2 id=\"how-to-choose\">How to Determine Your Format: 5 Questions</h2><ol><li><strong>How many products/services?</strong> 1–2 → landing. 3–10 → multi-page. 10+ products → store.</li><li><strong>How do clients decide?</strong> Quickly → landing. Slowly (compare, research) → multi-page.</li><li><strong>Where does traffic come from?</strong> Ads → landing. Search → multi-page. Marketplaces + own channel → store.</li><li><strong>Need online payments?</strong> Yes → store. No → landing or multi-page.</li><li><strong>What's your budget?</strong> Minimal → landing. Medium → multi-page. Large → store.</li></ol><h2 id=\"next-step\">What to Do Next</h2><p>If you know your format after these questions — great. If you're unsure — that's normal. Website format depends on dozens of factors that don't fit in one checklist.</p><p>We help businesses determine the right format before development begins. It's free and commits you to nothing. Tell us about your business — and we'll suggest which website will bring you more leads.</p>"
+        },
+        "why-ads-fail-without-good-website": {
+          "title": "Why Your Ads Don't Work Without a Proper Website",
+          "excerpt": "Spending on ads but getting few leads? The problem might not be your ad settings — but where the traffic lands.",
+          "categoryLabel": "Marketing",
+          "date": "2026-03-04",
+          "readTime": "6 min",
+          "author": "NAKO Agency",
+          "toc": [
+            {
+              "id": "money-drain",
+              "title": "Where Your Ad Budget Goes"
+            },
+            {
+              "id": "website-kills-ads",
+              "title": "5 Ways Your Website Kills Your Ads"
+            },
+            {
+              "id": "real-numbers",
+              "title": "Real Loss Numbers"
+            },
+            {
+              "id": "what-good-site-does",
+              "title": "What a Good Website Does for Ads"
+            },
+            {
+              "id": "checklist",
+              "title": "Checklist: Is Your Site Ad-Ready?"
+            },
+            {
+              "id": "what-to-do",
+              "title": "What to Do If Your Site Isn't Ready"
+            }
+          ],
+          "content": "<h2 id=\"money-drain\">Where Your Ad Budget Goes</h2><p>Imagine: you spend $2,000/month on ads. Google Ads is set up, targeting is running, clicks are coming. But leads — only 5–10. Cost per lead — $200–400. With an average deal of $1,000, it barely breaks even.</p><p>First reaction: \"ads don't work\" or \"the marketer is bad.\" But often the problem is deeper: ads bring people in, but the website scares them away.</p><p>It's like renting a billboard on the highway, but instead of a store — a locked door with a \"call this number\" sign. Traffic exists, but sales don't.</p><h2 id=\"website-kills-ads\">5 Ways Your Website Kills Your Ads</h2><p><strong>1. Slow loading.</strong> If the site takes longer than 3 seconds, 53% of mobile users leave. You already paid for their click — but they didn't even see your offer.</p><p><strong>2. No mobile version.</strong> 70–80% of ad traffic is mobile. If the site looks broken on phones, small buttons, unreadable text — the visitor closes the tab in 3 seconds.</p><p><strong>3. Unclear offer.</strong> Person came from an ad saying \"Custom kitchens from $3,000.\" The site says \"comprehensive solutions for your interior.\" No prices, no examples, no specifics. Gap between ad promise and site reality = lost client.</p><p><strong>4. No clear call to action.</strong> Person read everything, got interested — what next? If there's no visible \"Submit request\" button or form — they just leave.</p><p><strong>5. No trust signals.</strong> No reviews, no cases, no team photos, no legal information. For a new visitor, your site is a stranger. People don't give their contacts to strangers.</p><h2 id=\"real-numbers\">Real Loss Numbers</h2><p>Let's say your ad traffic is 1,000 people/month.</p><p><strong>Problem site (1% conversion):</strong></p><ul><li>Leads: 10</li><li>At $2/click → spent $2,000</li><li>Cost per lead: $200</li></ul><p><strong>Good site (4% conversion):</strong></p><ul><li>Leads: 40</li><li>At $2/click → spent $2,000</li><li>Cost per lead: $50</li></ul><p>Difference — <strong>4x</strong>. Same ad spend. Only variable — website quality.</p><p>Over a year: 120 vs 480 leads. At 20% close rate — 24 vs 96 clients. At $2,000 average deal — $48,000 vs $192,000 revenue.</p><h2 id=\"what-good-site-does\">What a Good Website Does for Ads</h2><p><strong>Loads fast.</strong> Under 2 seconds on mobile. Every extra second = minus 7% conversion.</p><p><strong>Continues the ad conversation.</strong> If the ad says \"Custom kitchens from $3,000\" — the site should show kitchens, prices, and examples.</p><p><strong>Has clear structure.</strong> Headline → benefits → proof → action. Visitor should understand in 10 seconds: what you offer, why trust you, what to do next.</p><p><strong>Builds trust.</strong> Real reviews, cases with numbers, team photos, legal details, SSL certificate.</p><p><strong>Has visible CTA.</strong> \"Submit request\" button on every screen. Form — simple, 3–4 fields max.</p><h2 id=\"checklist\">Checklist: Is Your Site Ad-Ready?</h2><ul><li>☐ Loads in 2–3 seconds on mobile</li><li>☐ Looks correct on phones</li><li>☐ Headline matches ad promise</li><li>☐ Has prices or price ranges</li><li>☐ Has reviews or cases</li><li>☐ CTA button on every screen</li><li>☐ Lead form is simple and works</li><li>☐ Contact info and legal entity visible</li></ul><p>If more than 3 items are unchecked — your site isn't ready for ads. Every dollar you invest in advertising is working at half capacity.</p><h2 id=\"what-to-do\">What to Do If Your Site Isn't Ready</h2><p>You don't need to \"redo everything\" right away. Sometimes targeted improvements are enough: speed up loading, rewrite the headline, add a form. Sometimes — yes, you need a new site.</p><p>We can run a quick audit of your site and show exactly where leads are being lost. It's free and takes 15 minutes of your time. Write to us — let's figure it out together.</p>"
+        },
+        "how-many-leads-your-business-loses": {
+          "title": "How Many Leads Your Business Loses Because of a Weak Website",
+          "excerpt": "Every day your website either generates leads or pushes potential clients away. Let's calculate how much money you're losing and why.",
+          "categoryLabel": "Biznes",
+          "date": "2026-03-01",
+          "readTime": "7 min",
+          "author": "NAKO Agency",
+          "toc": [
+            {
+              "id": "invisible-losses",
+              "title": "Losses You Don't See"
+            },
+            {
+              "id": "why-people-leave",
+              "title": "Why People Leave Your Website"
+            },
+            {
+              "id": "calculate-losses",
+              "title": "How to Calculate Your Losses"
+            },
+            {
+              "id": "weak-site-signs",
+              "title": "7 Signs of a Weak Website"
+            },
+            {
+              "id": "what-strong-site-gives",
+              "title": "What a Strong Website Delivers"
+            },
+            {
+              "id": "first-step",
+              "title": "The First Step"
+            }
+          ],
+          "content": "<h2 id=\"invisible-losses\">Losses You Don't See</h2><p>When a store has no customers — it's visible. When a salesperson performs poorly — it's audible. But when a website loses clients — it happens silently. Nobody calls to say: \"I wanted to buy from you, but your website turned me off.\"</p><p>People just close the tab. And you never know they were there.</p><p>On average, a small business website loses 70–90% of potential clients. This isn't an exaggeration — it's analytics data. Out of 100 visitors, only 2–5 submit a lead. The other 95 left. And some left not because they don't need your product, but because the website didn't convince them.</p><h2 id=\"why-people-leave\">Why People Leave Your Website</h2><p><strong>The first 3 seconds.</strong> That's how long you have. A person opens the site — and in 3 seconds decides: stay or leave. If they don't understand your offer in that time — they leave.</p><p><strong>Appearance.</strong> Stanford research shows: 75% of people judge a company's credibility by website design. Outdated design = \"this company isn't growing.\" Or worse: \"these are scammers.\"</p><p><strong>Speed.</strong> Every extra second of loading reduces conversion by 7%. A site that loads in 5 seconds instead of 2 loses 21% of potential leads. Simply because people don't want to wait.</p><p><strong>Mobile version.</strong> Over 60% of traffic is from phones. If the site isn't responsive — you're losing more than half your audience.</p><p><strong>Lack of trust.</strong> No reviews, no cases, no faces. For a new visitor, you're one of thousands. Why should they give you their number?</p><h2 id=\"calculate-losses\">How to Calculate Your Losses</h2><p>Simple formula. You need three numbers:</p><ol><li><strong>Traffic</strong> — how many people visit monthly (check Google Analytics)</li><li><strong>Conversion</strong> — what percentage submits a lead (usually 1–5%)</li><li><strong>Average deal</strong> — how much one client brings</li></ol><p><strong>Example:</strong></p><ul><li>Traffic: 500 people/month</li><li>Conversion: 1% (5 leads)</li><li>Every 3rd closes → 1–2 clients</li><li>Average deal: $3,000</li><li>Revenue: $3,000–6,000/month</li></ul><p>Now imagine 4% conversion (20 leads):</p><ul><li>Every 3rd closes → 6–7 clients</li><li>Revenue: $18,000–21,000/month</li></ul><p>Difference — <strong>$12,000–15,000/month</strong>. Same traffic. Only change — website quality.</p><h2 id=\"weak-site-signs\">7 Signs of a Weak Website</h2><ol><li><strong>You're embarrassed to share your site link.</strong> If you know the site is \"meh\" — clients feel it ten times more.</li><li><strong>Site is 3+ years old and hasn't been updated.</strong> The web changes fast. What looked fine in 2023 looks outdated in 2026.</li><li><strong>Uncomfortable on mobile.</strong> Small text, horizontal scrolling, unclickable buttons.</li><li><strong>No clear offer on the first screen.</strong> If in 5 seconds the visitor doesn't understand what you do — they'll go to a competitor.</li><li><strong>No cases or reviews.</strong> \"We're professionals\" without proof doesn't work.</li><li><strong>Lead form is hidden or broken.</strong> If it takes 10 screens to reach the form or it doesn't submit — you're losing ready clients.</li><li><strong>You don't know your conversion rate.</strong> If you don't measure how many leads the site generates — you're not managing sales.</li></ol><h2 id=\"what-strong-site-gives\">What a Strong Website Delivers</h2><p>A strong website isn't a \"beautiful\" website. It's a website that <strong>sells</strong>. It:</p><ul><li>Loads fast and works on any device</li><li>Explains in 5 seconds what you do and for whom</li><li>Shows proof: cases, reviews, numbers</li><li>Has a simple path to lead: form, button, chat</li><li>Builds trust: design, content, legal details</li></ul><p>This isn't about budget. It's about approach.</p><h2 id=\"first-step\">The First Step</h2><p>Start simple: look at your site through a new client's eyes. Open it on your phone. Time the loading. Try to understand the offer in 5 seconds. Try to submit a lead.</p><p>If something's wrong — you already know where you're losing money.</p><p>Want us to look at your site and show specific loss points? Write to us — it's free and takes 15 minutes.</p>"
+        },
+        "how-to-choose-web-contractor": {
+          "title": "How to Choose a Web Contractor Without Losing Money, Time, and Nerves",
+          "excerpt": "Freelancer, studio, or agency? How to evaluate portfolios, what to look for in contracts, and which red flags you can't ignore.",
+          "categoryLabel": "Biznes",
+          "date": "2026-02-26",
+          "readTime": "9 min",
+          "author": "NAKO Agency",
+          "toc": [
+            {
+              "id": "why-hard",
+              "title": "Why Choosing a Contractor Is Hard"
+            },
+            {
+              "id": "formats",
+              "title": "Freelancer, Studio, or Agency"
+            },
+            {
+              "id": "portfolio",
+              "title": "How to Evaluate a Portfolio"
+            },
+            {
+              "id": "red-flags",
+              "title": "Red Flags: When to Run"
+            },
+            {
+              "id": "contract",
+              "title": "What to Check in the Contract"
+            },
+            {
+              "id": "good-signs",
+              "title": "Signs of a Good Contractor"
+            },
+            {
+              "id": "next-step",
+              "title": "Next Step"
+            }
+          ],
+          "content": "<h2 id=\"why-hard\">Why Choosing a Contractor Is Hard</h2><p>The web development market has thousands of contractors with similar portfolios and promises. Everyone says \"we'll make it beautiful, fast, affordable.\" But reality is often different: missed deadlines, unclear results, extra charges for every small thing. And the biggest cost — lost time, which is more expensive than any website.</p><p>The problem is that clients usually don't know how to evaluate a contractor. You don't buy websites every month — it's a one-time purchase. And mistakes here are expensive.</p><h2 id=\"formats\">Freelancer, Studio, or Agency: What to Choose</h2><p><strong>Freelancer ($500–3,000).</strong></p><ul><li>Pros: cheapest, quick start, direct communication</li><li>Cons: may disappear, no team (one person does design, code, content), no guarantees</li><li>Good for: simple landing pages, MVPs, minimal budget</li></ul><p><strong>Studio ($3,000–15,000).</strong></p><ul><li>Pros: team (designer + developer + manager), processes, portfolio</li><li>Cons: more expensive than freelancer, sometimes \"assembly line\" approach</li><li>Good for: corporate sites, online stores, businesses with clear requirements</li></ul><p><strong>Agency ($10,000+).</strong></p><ul><li>Pros: strategy + marketing + development, deep business immersion, analytics</li><li>Cons: expensive, long approval processes</li><li>Good for: complex projects, rebranding, when you need a marketing tool, not just a site</li></ul><h2 id=\"portfolio\">How to Evaluate a Portfolio (Without Being Fooled)</h2><p><strong>1. Open actual sites.</strong> Not screenshots — real sites. Do they work? Load fast? Look good on mobile? If a contractor shows screenshots but real sites are broken — that's a problem.</p><p><strong>2. Look for diversity.</strong> All sites look the same? You'll get the same thing. Good contractors adapt their approach to the task.</p><p><strong>3. Evaluate results, not beauty.</strong> A beautiful site doesn't mean an effective one. Ask: what results did this site bring the client? If the contractor doesn't know — they think about design, not business.</p><p><strong>4. Ask about the process.</strong> How was the work structured? How long did it take? Were there problems and how were they solved?</p><h2 id=\"red-flags\">Red Flags: When to Run</h2><ul><li><strong>\"We'll do it in 3 days.\"</strong> A proper site isn't built in 3 days. If they promise that — it'll be a template with swapped text.</li><li><strong>No contract.</strong> \"Let's skip the paperwork, we trust each other\" — no. A contract protects both sides.</li><li><strong>100% upfront payment.</strong> Standard is 50/50 or milestone-based. 100% upfront = risk of losing everything.</li><li><strong>They don't ask questions.</strong> If a contractor doesn't ask about your audience, competitors, and goals — they'll make \"a website\" instead of a website for your business.</li><li><strong>No fixed timelines.</strong> \"About a month or so\" isn't a timeline. There should be stages with specific dates.</li><li><strong>They guarantee results.</strong> \"Guaranteed #1 in Google\" or \"100 leads in the first month\" — that's a lie.</li></ul><h2 id=\"contract\">What to Check in the Contract</h2><ul><li><strong>Timelines.</strong> Specific start and end dates. What happens if delayed?</li><li><strong>Scope.</strong> Clear list: how many pages, what features, what's included, what's not.</li><li><strong>Cost and payment.</strong> Fixed price or hourly? What's included? What's extra?</li><li><strong>IP rights.</strong> Who owns the code, design, content after payment? It should be you.</li><li><strong>Support.</strong> What happens after launch? Warranty period? Cost of changes?</li><li><strong>Acceptance.</strong> How do you accept work? How many revision rounds? What counts as \"done\"?</li></ul><h2 id=\"good-signs\">Signs of a Good Contractor</h2><ul><li>Asks many questions before starting</li><li>Shows real, working websites</li><li>Explains what's included in the price and what's not</li><li>Names specific timelines and stages</li><li>Says \"no\" when the task can't be done within your budget</li><li>Thinks about your business, not just design</li><li>Has reviews or recommendations from real clients</li></ul><h2 id=\"next-step\">Next Step</h2><p>Choosing a contractor isn't about price. It's about trust, communication, and understanding your goals. A cheap contractor who builds the wrong thing is more expensive than a good contractor who builds it right.</p><p>If you're choosing a contractor right now — write to us. We won't sell — we'll just discuss your task and suggest what to pay attention to. Even if you don't choose us — this consultation will save you money and nerves.</p>"
+        }
+      }
     },
     "cases": {
       "metaTitle": "Realizacje — Portfolio | NAKO Agency",
@@ -1842,7 +2073,8 @@
             "Vercel"
           ],
           "liveUrl": "https://keramolab.ru",
-          "previewImage": "/images/cases/ceramo-lab-preview.jpg"
+          "previewImage": "/images/cases/ceramo-lab-preview.jpg",
+          "fullpageImage": "/images/cases/ceramo-lab-fullpage.jpg"
         }
       }
     }

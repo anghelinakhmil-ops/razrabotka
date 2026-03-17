@@ -35,7 +35,13 @@ interface BlogPostData {
  * Генерация статических путей
  */
 export function generateStaticParams() {
-  const slugs: string[] = [];
+  const slugs = [
+    "website-cost-for-business-2026",
+    "what-website-your-business-needs",
+    "why-ads-fail-without-good-website",
+    "how-many-leads-your-business-loses",
+    "how-to-choose-web-contractor",
+  ];
   return slugs.map((slug) => ({ slug }));
 }
 
