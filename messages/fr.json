@@ -33,8 +33,8 @@
     "subtitleCourses": "formations",
     "subtitleAnd": "et",
     "subtitleEvents": "événements",
-    "offerLine1": "Conversion dès 4%, Lighthouse 95+, lancement en 2–6 semaines.",
-    "offerLine2": " Métriques réelles — dans nos études de cas",
+    "offerLine1": "Lighthouse 95+, lancement en 2–6 semaines, 30 jours de support.",
+    "offerLine2": " Tout clé en main — de la stratégie à la maintenance",
     "cta": "Discuter du projet",
     "ctaCases": "Voir les projets",
     "scroll": "Défiler vers le bas",
@@ -87,24 +87,25 @@
     "title": "QUE VOTRE ENTREPRISE OBTIENT",
     "items": [
       {
-        "value": "30–120",
-        "label": "de conversion",
-        "description": "grâce à une structure, des messages et un UX réfléchis",
-        "prefix": "+",
-        "suffix": "%"
+        "value": "95+",
+        "label": "Lighthouse Score",
+        "description": "performance, SEO, accessibilité"
       },
       {
-        "value": "90+",
-        "label": "Lighthouse Score"
+        "value": "2–6",
+        "label": "semaines avant le lancement",
+        "description": "du brief au site en ligne",
+        "suffix": ""
       },
       {
-        "value": "30 jours",
-        "label": "support après lancement"
+        "value": "30",
+        "label": "jours de support",
+        "description": "corrections et modifications après lancement"
       },
       {
         "value": "4+",
         "label": "intégrations",
-        "description": "CRM, Telegram, analytique, paiements"
+        "description": "CRM, Telegram, analytics, paiements"
       }
     ]
   },

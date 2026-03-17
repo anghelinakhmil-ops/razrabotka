@@ -33,8 +33,8 @@
     "subtitleCourses": "courses",
     "subtitleAnd": "and",
     "subtitleEvents": "events",
-    "offerLine1": "Conversion from 4%, Lighthouse 95+, launch in 2–6 weeks.",
-    "offerLine2": " Real metrics — in our case studies",
+    "offerLine1": "Lighthouse 95+, launch in 2–6 weeks, 30 days of support.",
+    "offerLine2": " Everything turnkey — from strategy to maintenance",
     "cta": "Discuss project",
     "ctaCases": "View cases",
     "scroll": "Scroll down",
@@ -87,19 +87,20 @@
     "title": "YOUR BUSINESS GETS",
     "items": [
       {
-        "value": "30–120",
-        "label": "conversion boost",
-        "description": "through thoughtful structure, messaging and UX",
-        "prefix": "+",
-        "suffix": "%"
+        "value": "95+",
+        "label": "Lighthouse Score",
+        "description": "performance, SEO, accessibility"
       },
       {
-        "value": "90+",
-        "label": "Lighthouse Score"
+        "value": "2–6",
+        "label": "weeks to launch",
+        "description": "from brief to live website",
+        "suffix": ""
       },
       {
-        "value": "30 days",
-        "label": "post-launch support"
+        "value": "30",
+        "label": "days of support",
+        "description": "bug fixes and edits after launch"
       },
       {
         "value": "4+",

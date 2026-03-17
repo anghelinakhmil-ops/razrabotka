@@ -33,8 +33,8 @@
     "subtitleCourses": "cursuri",
     "subtitleAnd": "și",
     "subtitleEvents": "evenimente",
-    "offerLine1": "Conversie de la 4%, Lighthouse 95+, lansare în 2–6 săptămâni.",
-    "offerLine2": " Metrici reale — în studiile noastre de caz",
+    "offerLine1": "Lighthouse 95+, lansare în 2–6 săptămâni, 30 zile suport.",
+    "offerLine2": " Totul la cheie — de la strategie la mentenanță",
     "cta": "Discutați proiectul",
     "ctaCases": "Vezi cazuri",
     "scroll": "Derulează în jos",
@@ -87,24 +87,25 @@
     "title": "PE CARE LE OBȚINE AFACEREA",
     "items": [
       {
-        "value": "30–120",
-        "label": "la conversie",
-        "description": "datorită structurii, mesajelor și UX-ului bine gândite",
-        "prefix": "+",
-        "suffix": "%"
+        "value": "95+",
+        "label": "Lighthouse Score",
+        "description": "performanță, SEO, accesibilitate"
       },
       {
-        "value": "90+",
-        "label": "Lighthouse Score"
+        "value": "2–6",
+        "label": "săptămâni până la lansare",
+        "description": "de la brief la site funcțional",
+        "suffix": ""
       },
       {
-        "value": "30 zile",
-        "label": "suport după lansare"
+        "value": "30",
+        "label": "zile de suport",
+        "description": "remedieri și editări după lansare"
       },
       {
         "value": "4+",
         "label": "integrări",
-        "description": "CRM, Telegram, analitică, plăți"
+        "description": "CRM, Telegram, analiză, plăți"
       }
     ]
   },

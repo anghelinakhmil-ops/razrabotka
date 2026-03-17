@@ -33,8 +33,8 @@
     "subtitleCourses": "kursów",
     "subtitleAnd": "i",
     "subtitleEvents": "wydarzeń",
-    "offerLine1": "Konwersja od 4%, Lighthouse 95+, start w 2–6 tygodni.",
-    "offerLine2": " Realne metryki — w naszych case studies",
+    "offerLine1": "Lighthouse 95+, start w 2–6 tygodni, 30 dni wsparcia.",
+    "offerLine2": " Wszystko pod klucz — od strategii po opiekę",
     "cta": "Omów projekt",
     "ctaCases": "Zobacz realizacje",
     "scroll": "Przewiń w dół",
@@ -87,19 +87,20 @@
     "title": "KTÓRE OTRZYMUJE BIZNES",
     "items": [
       {
-        "value": "30–120",
-        "label": "do konwersji",
-        "description": "dzięki przemyślanej strukturze, przekazom i UX",
-        "prefix": "+",
-        "suffix": "%"
+        "value": "95+",
+        "label": "Lighthouse Score",
+        "description": "wydajność, SEO, dostępność"
       },
       {
-        "value": "90+",
-        "label": "Lighthouse Score"
+        "value": "2–6",
+        "label": "tygodni do startu",
+        "description": "od briefu do działającej strony",
+        "suffix": ""
       },
       {
-        "value": "30 dni",
-        "label": "wsparcie po uruchomieniu"
+        "value": "30",
+        "label": "dni wsparcia",
+        "description": "poprawki i zmiany po uruchomieniu"
       },
       {
         "value": "4+",

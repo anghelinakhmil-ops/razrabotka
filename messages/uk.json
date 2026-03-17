@@ -33,8 +33,8 @@
     "subtitleCourses": "курсів",
     "subtitleAnd": "та",
     "subtitleEvents": "заходів",
-    "offerLine1": "Конверсія від 4%, Lighthouse 95+, запуск за 2–6 тижнів.",
-    "offerLine2": " Реальні метрики — у наших кейсах",
+    "offerLine1": "Lighthouse 95+, запуск за 2–6 тижнів, 30 днів підтримки.",
+    "offerLine2": " Все під ключ — від стратегії до супроводу",
     "cta": "Обговорити проєкт",
     "ctaCases": "Дивитись кейси",
     "scroll": "Гортати вниз",
@@ -87,19 +87,20 @@
     "title": "ЯКІ ОТРИМУЄ БІЗНЕС",
     "items": [
       {
-        "value": "30–120",
-        "label": "до конверсії",
-        "description": "завдяки продуманій структурі, смислам та UX",
-        "prefix": "+",
-        "suffix": "%"
+        "value": "95+",
+        "label": "Lighthouse Score",
+        "description": "продуктивність, SEO, доступність"
       },
       {
-        "value": "90+",
-        "label": "Lighthouse Score"
+        "value": "2–6",
+        "label": "тижнів до запуску",
+        "description": "від брифу до працюючого сайту",
+        "suffix": ""
       },
       {
-        "value": "30 днів",
-        "label": "супровід після запуску"
+        "value": "30",
+        "label": "днів підтримки",
+        "description": "багфікс і правки після запуску"
       },
       {
         "value": "4+",
