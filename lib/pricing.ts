@@ -31,7 +31,7 @@ const BASE_PRICES: Record<PriceId, [number, number]> = {
   "business-standard": [1300, 2800],
   "business-pro": [2800, 4500],
   "landing-start": [400, 700],
-  "landing-standard": [500, 1400],
+  "landing-standard": [650, 1400],
   "landing-pro": [1400, 3000],
   "ecommerce-start": [2500, 4500],
   "ecommerce-standard": [4500, 7000],
