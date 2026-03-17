@@ -491,7 +491,7 @@
   "pages": {
     "about": {
       "metaTitle": "Über uns | NAKO Agency",
-      "metaDescription": "Eine ergebnisorientierte Webagentur. Wir erstellen Websites für Experten, E-Commerce und Unternehmen. Erfahren Sie mehr über unseren Ansatz, unsere Werte und Arbeitsprinzipien.",
+      "metaDescription": "Eine ergebnisorientierte Webagentur. Wir erstellen Websites für Experten, E-Commerce und Unternehmen. Erfahren Sie mehr über unseren Ansatz und unsere Werte.",
       "heroCaption": "Vorstellung",
       "heroTitle": "ÜBER UNS",
       "heroDescription": "Wir sind eine Agentur, die moderne schlüsselfertige Websites für Experten, Unternehmen und digitale Projekte erstellt und Strategie, Design und Entwicklung in einer Lösung vereint. Unser Ziel ist es, Websites nicht nur visuell ansprechend, sondern kommerziell stark und auf Leadgenerierung ausgerichtet zu gestalten.",
@@ -581,7 +581,7 @@
     },
     "contacts": {
       "metaTitle": "Kontakt | NAKO Agency",
-      "metaDescription": "Kontaktieren Sie NAKO Agency per E-Mail. Wir antworten innerhalb von 2 Stunden.",
+      "metaDescription": "Kontaktieren Sie NAKO Agency per Formular, E-Mail oder Messenger. Erzählen Sie uns von Ihrem Projekt — wir antworten innerhalb von 2 Stunden mit einem Angebot.",
       "caption": "Kontaktieren Sie uns",
       "title": "KONTAKT",
       "description": "Bereit, Ihr Projekt zu besprechen? Kontaktieren Sie uns auf jedem bequemen Weg oder hinterlassen Sie eine Anfrage — wir antworten innerhalb von 2 Stunden.",
@@ -968,6 +968,8 @@
       "casesBannerCta": "Referenzen ansehen",
       "formTitle": "PROJEKT BESPRECHEN",
       "formSubtitle": "Nicht sicher, welches Paket passt? Erzählen Sie uns von Ihrem Projekt — wir finden die beste Lösung.",
+      "casesLinkText": "Sehen Sie unsere Arbeiten",
+      "casesLinkLabel": "Fallstudien ansehen",
       "support": {
         "caption": "Support",
         "title": "SUPPORT NACH DEM LAUNCH",
@@ -1208,7 +1210,7 @@
     },
     "brief": {
       "metaTitle": "Briefing — Anfrage senden | NAKO Agency",
-      "metaDescription": "Füllen Sie das Briefing für die Website-Entwicklung aus. Erzählen Sie uns von Ihrem Projekt — wir erstellen ein individuelles Angebot mit genauen Zeitrahmen und Kosten.",
+      "metaDescription": "Füllen Sie das Briefing für die Website-Entwicklung aus. Erzählen Sie uns von Ihrem Projekt — wir erstellen ein individuelles Angebot mit genauen Kosten.",
       "caption": "Anfrage senden",
       "title": "BRIEFING",
       "description": "Erzählen Sie uns von Ihrem Projekt, Ihren Zielen und Wünschen. Je mehr Details, desto genauer unsere Einschätzung.",
@@ -1292,7 +1294,7 @@
     },
     "privacy": {
       "metaTitle": "Datenschutzrichtlinie | NAKO Agency",
-      "metaDescription": "Datenschutzrichtlinie von NAKO Agency. Informationen über die Erhebung, Nutzung und den Schutz personenbezogener Daten.",
+      "metaDescription": "Datenschutzrichtlinie von NAKO Agency. Erfahren Sie, wie wir Ihre personenbezogenen Daten erheben, nutzen, schützen und welche Rechte Sie als Nutzer haben.",
       "caption": "Rechtliche Informationen",
       "heading1": "DATENSCHUTZ",
       "heading2": "Richtlinie",
@@ -1431,7 +1433,7 @@
     },
     "terms": {
       "metaTitle": "Nutzungsbedingungen | NAKO Agency",
-      "metaDescription": "Nutzungsbedingungen der Website von NAKO Agency. Nutzungsregeln, Haftungsbeschränkungen und Streitbeilegung.",
+      "metaDescription": "Nutzungsbedingungen der Website von NAKO Agency. Regeln zur Nutzung, geistiges Eigentum, Haftungsbeschränkungen und Verfahren zur Streitbeilegung.",
       "caption": "Rechtliche Informationen",
       "heading1": "NUTZUNGS",
       "heading2": "bedingungen",
@@ -1701,7 +1703,7 @@
     },
     "impressum": {
       "metaTitle": "Impressum | NAKO Agency",
-      "metaDescription": "Impressum und Unternehmensinformationen der NAKO Agency gemäß Telemediengesetz (TMG §5).",
+      "metaDescription": "Impressum der NAKO Agency gemäß TMG §5. Kontaktdaten, Handelsregistereintrag, verantwortliche Personen und rechtliche Angaben zum Unternehmen.",
       "caption": "Rechtliche Informationen",
       "heading1": "IMPRESSUM",
       "subtitle": "Angaben gemäß § 5 TMG",
@@ -1932,6 +1934,8 @@
       "ctaTitle": "Brauchen Sie Hilfe bei einem Projekt?",
       "ctaText": "Wir setzen dieses Wissen für Ihr Unternehmen ein. Sollen wir darüber sprechen?",
       "ctaButton": "Projekt besprechen",
+      "servicesLinkText": "Brauchen Sie eine Website für Ihr Unternehmen?",
+      "servicesLinkLabel": "Unsere Leistungen",
       "notFound": "Artikel nicht gefunden",
       "breadcrumbHome": "Startseite",
       "breadcrumbBlog": "Blog",
@@ -2174,6 +2178,8 @@
       "ctaTitle": "Möchten Sie das gleiche Ergebnis?",
       "ctaText": "Erzählen Sie uns von Ihrem Projekt — wir besprechen, wie wir Ihre Ziele erreichen können.",
       "ctaButton": "Projekt besprechen",
+      "servicesLinkText": "Interesse an einem ähnlichen Projekt?",
+      "servicesLinkLabel": "Unsere Leistungen",
       "notFound": "Case nicht gefunden",
       "breadcrumbHome": "Startseite",
       "breadcrumbCases": "Cases",

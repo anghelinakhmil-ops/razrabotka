@@ -581,7 +581,7 @@
     },
     "contacts": {
       "metaTitle": "Contacte | NAKO Agency",
-      "metaDescription": "Contactați NAKO Agency prin email. Răspundem în 2 ore.",
+      "metaDescription": "Contactați NAKO Agency prin formularul de contact, email sau mesagerie. Spuneți-ne despre proiectul dvs. — răspundem în 2 ore cu o propunere personalizată.",
       "caption": "Contacteaza-ne",
       "title": "CONTACTE",
       "description": "Pregatit sa discutam proiectul tau? Contacteaza-ne in orice mod convenabil sau lasa o solicitare — raspundem in 2 ore.",
@@ -968,6 +968,8 @@
       "casesBannerCta": "Vezi cazurile",
       "formTitle": "DISCUTAȚI UN PROIECT",
       "formSubtitle": "Nu sunteți sigur care pachet vi se potrivește? Spuneți-ne despre proiect — vom găsi cea mai bună soluție.",
+      "casesLinkText": "Vedeți lucrările noastre",
+      "casesLinkLabel": "Vezi studii de caz",
       "support": {
         "caption": "Suport",
         "title": "SUPORT DUPĂ LANSARE",
@@ -1589,7 +1591,7 @@
     },
     "cookiePolicy": {
       "metaTitle": "Politica Cookie | NAKO Agency",
-      "metaDescription": "Politica de utilizare a cookie-urilor pe site-ul NAKO Agency. Informații detaliate despre cookie-urile pe care le folosim, scopurile lor și cum să le gestionați.",
+      "metaDescription": "Politica de cookie-uri a NAKO Agency. Informații detaliate despre cookie-urile pe care le folosim, scopurile lor și cum să le gestionați.",
       "caption": "Informații juridice",
       "heading1": "COOKIE",
       "heading2": "Politica",
@@ -1701,7 +1703,7 @@
     },
     "impressum": {
       "metaTitle": "Impressum | NAKO Agency",
-      "metaDescription": "Informații juridice și date despre compania NAKO Agency conform legii germane privind telemedia (TMG §5).",
+      "metaDescription": "Impressum NAKO Agency conform TMG §5. Date de contact, informații de înregistrare, persoane responsabile și detalii juridice despre companie.",
       "caption": "Informații juridice",
       "heading1": "IMPRESSUM",
       "subtitle": "Informații juridice conform legislației germane (TMG §5)",
@@ -1932,6 +1934,8 @@
       "ctaTitle": "Aveți nevoie de ajutor cu proiectul?",
       "ctaText": "Vom aplica aceste cunoștințe pentru afacerea dumneavoastră. Discutăm sarcina?",
       "ctaButton": "Discută proiectul",
+      "servicesLinkText": "Aveți nevoie de un site pentru afacere?",
+      "servicesLinkLabel": "Vezi serviciile",
       "notFound": "Articolul nu a fost găsit",
       "breadcrumbHome": "Acasă",
       "breadcrumbBlog": "Blog",
@@ -2174,6 +2178,8 @@
       "ctaTitle": "Doriți un rezultat similar?",
       "ctaText": "Povestiți-ne despre proiectul dumneavoastră — vom discuta cum să vă atingeți obiectivele.",
       "ctaButton": "Discută proiectul",
+      "servicesLinkText": "Interesat de un proiect similar?",
+      "servicesLinkLabel": "Vezi serviciile",
       "notFound": "Cazul nu a fost găsit",
       "breadcrumbHome": "Acasă",
       "breadcrumbCases": "Cazuri",

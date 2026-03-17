@@ -581,7 +581,7 @@
     },
     "contacts": {
       "metaTitle": "Kontakt | NAKO Agency",
-      "metaDescription": "Skontaktuj się z NAKO Agency przez email. Odpowiadamy w ciągu 2 godzin.",
+      "metaDescription": "Skontaktuj się z NAKO Agency przez formularz kontaktowy, e-mail lub komunikatory. Opowiedz o swoim projekcie — odpowiemy w ciągu 2 godzin z ofertą.",
       "caption": "Skontaktuj się",
       "title": "KONTAKT",
       "description": "Gotowy omówić swój projekt? Skontaktuj się z nami w dowolny wygodny sposób lub zostaw zapytanie — odpowiemy w ciągu 2 godzin.",
@@ -968,6 +968,8 @@
       "casesBannerCta": "Zobacz realizacje",
       "formTitle": "OMÓW PROJEKT",
       "formSubtitle": "Nie wiesz, który pakiet pasuje? Opowiedz nam o swoim projekcie — znajdziemy najlepsze rozwiązanie.",
+      "casesLinkText": "Zobacz nasze realizacje",
+      "casesLinkLabel": "Zobacz case study",
       "support": {
         "caption": "Wsparcie",
         "title": "WSPARCIE PO URUCHOMIENIU",
@@ -1292,7 +1294,7 @@
     },
     "privacy": {
       "metaTitle": "Polityka Prywatności | NAKO Agency",
-      "metaDescription": "Polityka prywatności NAKO Agency. Informacje o zbieraniu, wykorzystywaniu i ochronie danych osobowych.",
+      "metaDescription": "Polityka prywatności NAKO Agency. Dowiedz się, jak zbieramy, przechowujemy, wykorzystujemy i chronimy Twoje dane osobowe oraz jakie masz prawa jako użytkownik.",
       "caption": "Informacje prawne",
       "heading1": "POLITYKA",
       "heading2": "Prywatności",
@@ -1431,7 +1433,7 @@
     },
     "terms": {
       "metaTitle": "Regulamin | NAKO Agency",
-      "metaDescription": "Regulamin korzystania ze strony NAKO Agency. Zasady korzystania, ograniczenia odpowiedzialności i rozstrzyganie sporów.",
+      "metaDescription": "Regulamin korzystania ze strony NAKO Agency. Zasady korzystania z serwisu, ograniczenia odpowiedzialności i rozstrzyganie sporów.",
       "caption": "Informacje prawne",
       "heading1": "REGULAMIN",
       "heading2": "korzystania",
@@ -1701,7 +1703,7 @@
     },
     "impressum": {
       "metaTitle": "Impressum | NAKO Agency",
-      "metaDescription": "Informacje prawne i dane firmy NAKO Agency zgodnie z niemiecką ustawą o telemediach (TMG §5).",
+      "metaDescription": "Impressum NAKO Agency zgodnie z TMG §5. Dane kontaktowe, informacje rejestrowe, osoby odpowiedzialne i informacje prawne dotyczące firmy.",
       "caption": "Informacje prawne",
       "heading1": "IMPRESSUM",
       "subtitle": "Informacje prawne zgodnie z prawem niemieckim (TMG §5)",
@@ -1932,6 +1934,8 @@
       "ctaTitle": "Potrzebujesz pomocy z projektem?",
       "ctaText": "Zastosujemy tę wiedzę w Państwa biznesie. Porozmawiamy?",
       "ctaButton": "Omów projekt",
+      "servicesLinkText": "Potrzebujesz strony dla biznesu?",
+      "servicesLinkLabel": "Zobacz usługi",
       "notFound": "Artykuł nie został znaleziony",
       "breadcrumbHome": "Strona główna",
       "breadcrumbBlog": "Blog",
@@ -2174,6 +2178,8 @@
       "ctaTitle": "Chcą Państwo taki sam wynik?",
       "ctaText": "Opowiedzcie nam o swoim projekcie — omówimy, jak osiągnąć Państwa cele.",
       "ctaButton": "Omów projekt",
+      "servicesLinkText": "Zainteresowany podobnym projektem?",
+      "servicesLinkLabel": "Zobacz usługi",
       "notFound": "Realizacja nie znaleziona",
       "breadcrumbHome": "Strona główna",
       "breadcrumbCases": "Realizacje",

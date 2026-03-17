@@ -581,7 +581,7 @@
     },
     "contacts": {
       "metaTitle": "Contatti | NAKO Agency",
-      "metaDescription": "Contatti NAKO Agency via email. Rispondiamo entro 2 ore.",
+      "metaDescription": "Contatti NAKO Agency tramite modulo, email o messenger. Raccontaci il tuo progetto — rispondiamo entro 2 ore con una proposta personalizzata su misura.",
       "caption": "Contattaci",
       "title": "CONTATTI",
       "description": "Pronto a discutere il Suo progetto? Ci contatti nel modo più comodo o lasci una richiesta — rispondiamo entro 2 ore.",
@@ -968,6 +968,8 @@
       "casesBannerCta": "Vedi i progetti",
       "formTitle": "DISCUTIAMO UN PROGETTO",
       "formSubtitle": "Non sa quale pacchetto sia adatto? Ci racconti del Suo progetto — troveremo la soluzione migliore.",
+      "casesLinkText": "Scopri i nostri lavori",
+      "casesLinkLabel": "Vedi casi studio",
       "support": {
         "caption": "Supporto",
         "title": "SUPPORTO POST-LANCIO",
@@ -1292,7 +1294,7 @@
     },
     "privacy": {
       "metaTitle": "Informativa sulla Privacy | NAKO Agency",
-      "metaDescription": "Informativa sulla privacy di NAKO Agency. Informazioni sulla raccolta, l'utilizzo e la protezione dei dati personali.",
+      "metaDescription": "Informativa sulla privacy di NAKO Agency. Scopra come raccogliamo, conserviamo, utilizziamo e proteggiamo i Suoi dati personali e quali sono i Suoi diritti.",
       "caption": "Informazioni legali",
       "heading1": "INFORMATIVA",
       "heading2": "sulla Privacy",
@@ -1701,7 +1703,7 @@
     },
     "impressum": {
       "metaTitle": "Impressum | NAKO Agency",
-      "metaDescription": "Informazioni legali e dati aziendali di NAKO Agency ai sensi della legge tedesca sui media telematici (TMG §5).",
+      "metaDescription": "Impressum di NAKO Agency ai sensi del TMG §5. Dati di contatto, informazioni di registrazione, persone responsabili e informazioni legali sull'azienda.",
       "caption": "Informazioni legali",
       "heading1": "IMPRESSUM",
       "subtitle": "Informazioni legali ai sensi della legge tedesca (TMG §5)",
@@ -1932,6 +1934,8 @@
       "ctaTitle": "Ha bisogno di aiuto con un progetto?",
       "ctaText": "Applicheremo queste conoscenze alla Sua attività. Ne parliamo?",
       "ctaButton": "Discuta il progetto",
+      "servicesLinkText": "Hai bisogno di un sito per la tua azienda?",
+      "servicesLinkLabel": "Vedi i servizi",
       "notFound": "Articolo non trovato",
       "breadcrumbHome": "Home",
       "breadcrumbBlog": "Blog",
@@ -2174,6 +2178,8 @@
       "ctaTitle": "Desidera lo stesso risultato?",
       "ctaText": "Ci racconti il Suo progetto — discuteremo come raggiungere i Suoi obiettivi.",
       "ctaButton": "Discutere il progetto",
+      "servicesLinkText": "Interessato a un progetto simile?",
+      "servicesLinkLabel": "Vedi i servizi",
       "notFound": "Caso non trovato",
       "breadcrumbHome": "Home",
       "breadcrumbCases": "Casi",

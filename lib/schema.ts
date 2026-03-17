@@ -187,6 +187,65 @@ export function localBusinessSchema(options?: {
 }
 
 /**
+ * CreativeWork schema — для детальных страниц кейсов
+ */
+export function creativeWorkSchema({
+  title,
+  description,
+  slug,
+  client,
+  year,
+  image,
+  technologies,
+  locale = "en",
+}: {
+  title: string;
+  description: string;
+  slug: string;
+  client: string;
+  year: string;
+  image?: string;
+  technologies?: string[];
+  locale?: string;
+}) {
+  const caseUrl = `${BASE_URL}/${locale}/cases/${slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: title,
+    description,
+    url: caseUrl,
+    dateCreated: year,
+    inLanguage: locale,
+    creator: {
+      "@type": "Organization",
+      name: "NAKO Agency",
+      url: BASE_URL,
+    },
+    ...(client && {
+      about: {
+        "@type": "Organization",
+        name: client,
+      },
+    }),
+    ...(image && {
+      image: {
+        "@type": "ImageObject",
+        url: image.startsWith("http") ? image : `${BASE_URL}${image}`,
+      },
+    }),
+    ...(technologies &&
+      technologies.length > 0 && {
+        keywords: technologies.join(", "),
+      }),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": caseUrl,
+    },
+  };
+}
+
+/**
  * Service schema — для страницы услуг
  */
 export function serviceSchema(

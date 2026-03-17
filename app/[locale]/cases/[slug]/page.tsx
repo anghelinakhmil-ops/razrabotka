@@ -9,6 +9,7 @@ import { CtaButton } from "@/components/ui/CtaButton";
 import { RevealOnScroll, StaggerContainer, StaggerItem } from "@/components/motion";
 import { TrackPageView } from "@/components/analytics/TrackPageView";
 import { getPageAlternates } from "@/lib/seo";
+import { breadcrumbSchema, creativeWorkSchema } from "@/lib/schema";
 
 /**
  * Данные кейса
@@ -76,10 +77,11 @@ export async function generateMetadata({
 export default async function CaseDetailPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const t = await getTranslations("pages.caseDetail");
+  const tNav = await getTranslations("nav");
   const casesData = t.raw("cases") as Record<string, CaseData>;
   const caseData = casesData[slug];
 
@@ -95,6 +97,35 @@ export default async function CaseDetailPage({
 
   return (
     <main>
+      {/* JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(creativeWorkSchema({
+            title: caseData.title,
+            description: caseData.description,
+            slug,
+            client: caseData.client,
+            year: caseData.year,
+            image: caseData.previewImage,
+            technologies: caseData.technologies,
+            locale,
+          })),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([
+              { name: tNav("home"), url: `/${locale}` },
+              { name: t("breadcrumbCases"), url: `/${locale}/cases` },
+              { name: caseData.title, url: `/${locale}/cases/${slug}` },
+            ])
+          ),
+        }}
+      />
+
       <TrackPageView event="case_view" params={{ case_slug: slug }} />
 
       {/* Hero */}
@@ -544,6 +575,15 @@ function CTASection({ t }: { t: TranslationFn }) {
               {t("ctaButton")}
             </CtaButton>
           </RevealOnScroll>
+
+          <RevealOnScroll direction="up" delay={0.3}>
+              <Link
+                href="/services"
+                className="inline-block mt-4 text-body-sm text-[var(--color-text-muted)] underline underline-offset-4 hover:text-[var(--color-text-primary)] transition-colors"
+              >
+                {t("servicesLinkLabel")} →
+              </Link>
+            </RevealOnScroll>
         </div>
       </Container>
     </section>

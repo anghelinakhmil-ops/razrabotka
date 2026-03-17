@@ -581,7 +581,7 @@
     },
     "contacts": {
       "metaTitle": "Contacts | NAKO Agency",
-      "metaDescription": "Contact NAKO Agency by email. We respond within 2 hours.",
+      "metaDescription": "Get in touch with NAKO Agency via contact form, email or messengers. Tell us about your project and we will respond within 2 hours with a tailored proposal.",
       "caption": "Contact us",
       "title": "CONTACTS",
       "description": "Ready to discuss your project? Contact us in any convenient way or leave a request — we'll respond within 2 hours.",
@@ -968,6 +968,8 @@
       "casesBannerCta": "View cases",
       "formTitle": "DISCUSS A PROJECT",
       "formSubtitle": "Not sure which package fits? Tell us about your project — we'll find the best solution.",
+      "casesLinkText": "See our work in action",
+      "casesLinkLabel": "View case studies",
       "support": {
         "caption": "Support",
         "title": "POST-LAUNCH SUPPORT",
@@ -1292,7 +1294,7 @@
     },
     "privacy": {
       "metaTitle": "Privacy Policy | NAKO Agency",
-      "metaDescription": "NAKO Agency privacy policy. Information about collection, use and protection of personal data.",
+      "metaDescription": "NAKO Agency privacy policy. Learn how we collect, store, use and protect your personal data, your rights as a user and how to contact us about data requests.",
       "caption": "Legal information",
       "heading1": "PRIVACY",
       "heading2": "Policy",
@@ -1431,7 +1433,7 @@
     },
     "terms": {
       "metaTitle": "Terms of Use | NAKO Agency",
-      "metaDescription": "Terms of use for NAKO Agency website. Site usage rules, liability limitations and dispute resolution.",
+      "metaDescription": "Terms of use for the NAKO Agency website. Read about site usage rules, intellectual property rights, liability limitations and dispute resolution procedures.",
       "caption": "Legal information",
       "heading1": "TERMS",
       "heading2": "of Use",
@@ -1589,7 +1591,7 @@
     },
     "cookiePolicy": {
       "metaTitle": "Cookie Policy | NAKO Agency",
-      "metaDescription": "NAKO Agency cookie policy. Detailed information about cookies we use, their purposes and how to manage them.",
+      "metaDescription": "NAKO Agency cookie policy. Detailed information about the types of cookies we use, their purposes, retention periods and how to manage your preferences.",
       "caption": "Legal information",
       "heading1": "COOKIE",
       "heading2": "Policy",
@@ -1701,7 +1703,7 @@
     },
     "impressum": {
       "metaTitle": "Impressum | NAKO Agency",
-      "metaDescription": "Legal disclosure and company information for NAKO Agency as required by German Telemediengesetz (TMG §5).",
+      "metaDescription": "Impressum — legal disclosure and company information for NAKO Agency. Contact details, registration data and responsible persons as required by TMG §5.",
       "caption": "Legal information",
       "heading1": "IMPRESSUM",
       "subtitle": "Legal disclosure as required by German law (TMG §5)",
@@ -1932,6 +1934,8 @@
       "ctaTitle": "Need help with a project?",
       "ctaText": "We'll apply this knowledge to your business. Shall we discuss?",
       "ctaButton": "Discuss project",
+      "servicesLinkText": "Need a website for your business?",
+      "servicesLinkLabel": "View our services",
       "notFound": "Article not found",
       "breadcrumbHome": "Home",
       "breadcrumbBlog": "Blog",
@@ -2174,6 +2178,8 @@
       "ctaTitle": "Want the same result?",
       "ctaText": "Tell us about your project — we will discuss how to achieve your goals.",
       "ctaButton": "Discuss project",
+      "servicesLinkText": "Interested in a similar project?",
+      "servicesLinkLabel": "View our services",
       "notFound": "Case not found",
       "breadcrumbHome": "Home",
       "breadcrumbCases": "Cases",

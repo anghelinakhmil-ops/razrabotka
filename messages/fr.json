@@ -491,7 +491,7 @@
   "pages": {
     "about": {
       "metaTitle": "À propos | NAKO Agency",
-      "metaDescription": "Un studio web axé sur les résultats. Nous créons des sites web pour les experts, le e-commerce et les entreprises. Découvrez notre approche, nos valeurs et nos principes de travail.",
+      "metaDescription": "Un studio web axé sur les résultats. Nous créons des sites pour les experts, le e-commerce et les entreprises. Découvrez notre approche et nos valeurs.",
       "heroCaption": "Introduction",
       "heroTitle": "À NOTRE SUJET",
       "heroDescription": "Nous sommes une agence qui crée des sites web modernes clé en main pour les experts, les entreprises et les projets numériques, en combinant stratégie, design et développement en une seule solution. Notre objectif est de créer des sites web non seulement visuellement beaux, mais aussi commercialement solides et générateurs de leads.",
@@ -581,7 +581,7 @@
     },
     "contacts": {
       "metaTitle": "Contacts | NAKO Agency",
-      "metaDescription": "Contactez NAKO Agency par e-mail. Nous répondons dans les 2 heures.",
+      "metaDescription": "Contactez NAKO Agency via le formulaire, par e-mail ou messagerie. Parlez-nous de votre projet — nous répondons dans les 2 heures avec une proposition adaptée.",
       "caption": "Contactez-nous",
       "title": "CONTACTS",
       "description": "Prêt à discuter de votre projet ? Contactez-nous de la façon qui vous convient le mieux ou laissez une demande — nous répondrons dans les 2 heures.",
@@ -618,7 +618,7 @@
     },
     "services": {
       "metaTitle": "Services | NAKO Agency",
-      "metaDescription": "Forfaits de services : sites web pour experts, boutiques en ligne, pages d'atterrissage, sites d'entreprise, cours, événements. Trois niveaux : Start, Standard, Pro.",
+      "metaDescription": "Forfaits de services : sites pour experts, boutiques en ligne, landing pages, sites d'entreprise, cours, événements. Trois niveaux : Start, Standard, Pro.",
       "caption": "Services & Forfaits",
       "title": "SERVICES",
       "description": "Six directions, trois forfaits chacune. Choisissez le type de projet et le niveau adapté — d'un lancement rapide à un packaging commercial complet.",
@@ -968,6 +968,8 @@
       "casesBannerCta": "Voir les réalisations",
       "formTitle": "DISCUTER D'UN PROJET",
       "formSubtitle": "Vous ne savez pas quel forfait vous convient ? Parlez-nous de votre projet — nous trouverons la meilleure solution.",
+      "casesLinkText": "Découvrez nos réalisations",
+      "casesLinkLabel": "Voir les études de cas",
       "support": {
         "caption": "Support",
         "title": "SUPPORT POST-LANCEMENT",
@@ -1208,7 +1210,7 @@
     },
     "brief": {
       "metaTitle": "Brief — Soumettre une demande | NAKO Agency",
-      "metaDescription": "Remplissez le brief pour le développement de votre site web. Parlez-nous de votre projet — nous préparerons une proposition personnalisée avec des délais et des coûts précis.",
+      "metaDescription": "Remplissez le brief pour le développement de votre site. Parlez-nous de votre projet — nous préparerons une proposition personnalisée avec des coûts précis.",
       "caption": "Soumettre une demande",
       "title": "BRIEF",
       "description": "Parlez-nous de votre projet, de vos objectifs et de vos préférences. Plus il y a de détails, plus notre estimation sera précise.",
@@ -1932,6 +1934,8 @@
       "ctaTitle": "Besoin d'aide pour un projet ?",
       "ctaText": "Nous appliquerons ces connaissances à votre entreprise. Voulez-vous en discuter ?",
       "ctaButton": "Discuter du projet",
+      "servicesLinkText": "Besoin d'un site pour votre entreprise ?",
+      "servicesLinkLabel": "Voir nos services",
       "notFound": "Article introuvable",
       "breadcrumbHome": "Accueil",
       "breadcrumbBlog": "Blog",
@@ -2174,6 +2178,8 @@
       "ctaTitle": "Vous voulez le même résultat ?",
       "ctaText": "Parlez-nous de votre projet — nous discuterons de la façon d'atteindre vos objectifs.",
       "ctaButton": "Discuter du projet",
+      "servicesLinkText": "Intéressé par un projet similaire ?",
+      "servicesLinkLabel": "Voir nos services",
       "notFound": "Projet introuvable",
       "breadcrumbHome": "Accueil",
       "breadcrumbCases": "Projets",

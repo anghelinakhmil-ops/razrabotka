@@ -333,6 +333,15 @@ export default async function BlogPostPage({
                 {t("ctaButton")}
               </CtaButton>
             </RevealOnScroll>
+
+            <RevealOnScroll direction="up" delay={0.3}>
+              <Link
+                href="/services"
+                className="inline-block mt-4 text-body-sm text-[var(--color-text-muted)] underline underline-offset-4 hover:text-[var(--color-text-primary)] transition-colors"
+              >
+                {t("servicesLinkLabel")} →
+              </Link>
+            </RevealOnScroll>
           </div>
         </Container>
       </section>
