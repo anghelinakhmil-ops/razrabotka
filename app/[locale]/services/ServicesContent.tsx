@@ -437,16 +437,6 @@ function SupportSection() {
                     </span>
                   </div>
 
-                  {/* Limits */}
-                  <div className="mb-6 pb-6 border-b border-[var(--color-line-dark)]">
-                    <span className="text-[11px] uppercase tracking-[var(--letter-spacing-wide)] text-[var(--color-text-muted)] block mb-1">
-                      {t("limitsLabel")}
-                    </span>
-                    <span className="text-body-sm text-[var(--color-background)]">
-                      {pkg.limits}
-                    </span>
-                  </div>
-
                   {/* Audience */}
                   <p className="text-body-sm text-[var(--color-text-muted)] mb-6 leading-relaxed">
                     {pkg.audience}
