@@ -42,13 +42,8 @@ export function Hero() {
 
       {/* Content — centered */}
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 text-center">
-        {/* H1 — Headline */}
-        <motion.h1
-          className="flex flex-col items-center gap-2 mb-8"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: duration.slow, ease, delay: 0.4 }}
-        >
+        {/* H1 — Headline: rendered immediately for LCP, animated as enhancement */}
+        <h1 className="flex flex-col items-center gap-2 mb-8 animate-hero-fade-in">
           <BrokenText
             text={t("line1")}
             spaced
@@ -64,7 +59,7 @@ export function Hero() {
             spaced
             className="text-white/60 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-medium mt-2"
           />
-        </motion.h1>
+        </h1>
 
         {/* Subtitle */}
         <motion.p
