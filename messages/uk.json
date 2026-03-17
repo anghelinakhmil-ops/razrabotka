@@ -1066,7 +1066,92 @@
         ],
         "limitsLabel": "Ліміти"
       },
-      "priceFrom": "від"
+      "priceFrom": "від",
+      "comparison": {
+        "caption": "Порівняння",
+        "title": "ПОРІВНЯЙТЕ ПАКЕТИ",
+        "description": "Усі три рівні одним поглядом — оберіть підходящий.",
+        "features": [
+          {
+            "name": "Сторінок",
+            "start": "1–5",
+            "standard": "4–10",
+            "pro": "6–20+"
+          },
+          {
+            "name": "Дизайн",
+            "start": "Індивідуальний",
+            "standard": "Індивідуальний",
+            "pro": "Унікальний"
+          },
+          {
+            "name": "UX-прототип",
+            "start": "—",
+            "standard": "—",
+            "pro": "✓"
+          },
+          {
+            "name": "Адаптивна верстка",
+            "start": "✓",
+            "standard": "✓",
+            "pro": "✓"
+          },
+          {
+            "name": "Анімації",
+            "start": "—",
+            "standard": "Базові",
+            "pro": "Преміум"
+          },
+          {
+            "name": "CTA-блоки",
+            "start": "✓",
+            "standard": "✓",
+            "pro": "Розширені"
+          },
+          {
+            "name": "Форми заявок",
+            "start": "✓",
+            "standard": "✓",
+            "pro": "✓"
+          },
+          {
+            "name": "Інтеграції",
+            "start": "Telegram / пошта",
+            "standard": "CRM + email",
+            "pro": "Повні"
+          },
+          {
+            "name": "Аналітика",
+            "start": "Базова",
+            "standard": "GA4",
+            "pro": "GA4 + події"
+          },
+          {
+            "name": "SEO",
+            "start": "Базове",
+            "standard": "Повне",
+            "pro": "Повне + Schema"
+          },
+          {
+            "name": "Контент",
+            "start": "—",
+            "standard": "Допомога",
+            "pro": "Під ключ"
+          },
+          {
+            "name": "Підтримка",
+            "start": "14 днів",
+            "standard": "21 день",
+            "pro": "30 днів"
+          },
+          {
+            "name": "Терміни",
+            "start": "1–3 тиж",
+            "standard": "2–5 тиж",
+            "pro": "3–6 тиж"
+          }
+        ]
+      }
     },
     "brief": {
       "metaTitle": "Бриф — Залишити заявку | NAKO Agency",

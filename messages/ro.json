@@ -1066,7 +1066,92 @@
         ],
         "limitsLabel": "Limite"
       },
-      "priceFrom": "de la"
+      "priceFrom": "de la",
+      "comparison": {
+        "caption": "Comparație",
+        "title": "COMPARAȚI PACHETELE",
+        "description": "Toate cele trei niveluri dintr-o privire — alegeți cel potrivit.",
+        "features": [
+          {
+            "name": "Pagini",
+            "start": "1–5",
+            "standard": "4–10",
+            "pro": "6–20+"
+          },
+          {
+            "name": "Design",
+            "start": "Personalizat",
+            "standard": "Personalizat",
+            "pro": "Unic"
+          },
+          {
+            "name": "Prototip UX",
+            "start": "—",
+            "standard": "—",
+            "pro": "✓"
+          },
+          {
+            "name": "Responsiv",
+            "start": "✓",
+            "standard": "✓",
+            "pro": "✓"
+          },
+          {
+            "name": "Animații",
+            "start": "—",
+            "standard": "De bază",
+            "pro": "Premium"
+          },
+          {
+            "name": "Blocuri CTA",
+            "start": "✓",
+            "standard": "✓",
+            "pro": "Extinse"
+          },
+          {
+            "name": "Formulare",
+            "start": "✓",
+            "standard": "✓",
+            "pro": "✓"
+          },
+          {
+            "name": "Integrări",
+            "start": "Telegram / email",
+            "standard": "CRM + email",
+            "pro": "Complete"
+          },
+          {
+            "name": "Analiză",
+            "start": "De bază",
+            "standard": "GA4",
+            "pro": "GA4 + evenimente"
+          },
+          {
+            "name": "SEO",
+            "start": "De bază",
+            "standard": "Complet",
+            "pro": "Complet + Schema"
+          },
+          {
+            "name": "Conținut",
+            "start": "—",
+            "standard": "Asistență",
+            "pro": "La cheie"
+          },
+          {
+            "name": "Suport",
+            "start": "14 zile",
+            "standard": "21 zile",
+            "pro": "30 zile"
+          },
+          {
+            "name": "Termene",
+            "start": "1–3 săpt",
+            "standard": "2–5 săpt",
+            "pro": "3–6 săpt"
+          }
+        ]
+      }
     },
     "brief": {
       "metaTitle": "Brief — Trimite solicitarea | NAKO Agency",

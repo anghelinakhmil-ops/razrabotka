@@ -11,6 +11,13 @@ import { useRegion } from "@/components/providers/RegionProvider";
 import { getFormattedPrice } from "@/lib/pricing";
 import type { PriceId } from "@/lib/pricing";
 
+interface ComparisonFeature {
+  name: string;
+  start: string;
+  standard: string;
+  pro: string;
+}
+
 interface TierData {
   tier: "start" | "standard" | "pro";
   audience: string;
@@ -149,6 +156,9 @@ export function ServicesContent() {
         </Container>
       </section>
 
+      {/* Comparison Table */}
+      <ComparisonSection />
+
       {/* Additional Services */}
       <section className="py-[var(--section-gap)] bg-[var(--color-background-alt)]">
         <Container>
@@ -230,6 +240,85 @@ export function ServicesContent() {
         </Container>
       </section>
     </>
+  );
+}
+
+/**
+ * ComparisonSection — сравнительная таблица пакетов
+ */
+function ComparisonSection() {
+  const t = useTranslations("pages.services");
+  const tierLabels = t.raw("tierLabels") as Record<string, string>;
+  const features = t.raw("comparison.features") as ComparisonFeature[];
+
+  return (
+    <section className="py-[var(--section-gap)] bg-[var(--color-background)]">
+      <Container>
+        <RevealOnScroll direction="up">
+          <span className="text-caption text-[var(--color-accent)] mb-4 block">
+            {t("comparison.caption")}
+          </span>
+        </RevealOnScroll>
+
+        <RevealOnScroll direction="up" delay={sectionPresets.cascade.step}>
+          <h2 className="mb-4">
+            <BrokenText
+              text={t("comparison.title")}
+              spaced
+              className="text-h2 font-display font-bold text-[var(--color-text-primary)]"
+            />
+          </h2>
+        </RevealOnScroll>
+
+        <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 2}>
+          <p className="text-body text-[var(--color-text-secondary)] max-w-2xl mb-12 lg:mb-16">
+            {t("comparison.description")}
+          </p>
+        </RevealOnScroll>
+
+        <RevealOnScroll direction="up" delay={sectionPresets.cascade.step * 3}>
+          <div className="overflow-x-auto -mx-6 px-6 lg:mx-0 lg:px-0">
+            <table className="w-full min-w-[640px] border-collapse">
+              <thead>
+                <tr>
+                  <th className="text-left py-4 pr-4 text-caption text-[var(--color-text-muted)] font-normal border-b border-[var(--color-line)]" />
+                  <th className="py-4 px-4 text-center text-body-sm font-display font-bold text-[var(--color-text-primary)] border-b border-[var(--color-line)] w-1/4">
+                    {tierLabels.start}
+                  </th>
+                  <th className="py-4 px-4 text-center text-body-sm font-display font-bold border-b-2 border-[var(--color-accent)] w-1/4 bg-[var(--color-background-alt)] rounded-t-sm">
+                    <span className="text-[var(--color-accent)] text-[10px] uppercase tracking-widest block mb-1">
+                      {t("recommended")}
+                    </span>
+                    <span className="text-[var(--color-text-primary)]">{tierLabels.standard}</span>
+                  </th>
+                  <th className="py-4 px-4 text-center text-body-sm font-display font-bold text-[var(--color-text-primary)] border-b border-[var(--color-line)] w-1/4">
+                    {tierLabels.pro}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {features.map((feature, index) => (
+                  <tr key={index} className="border-b border-[var(--color-line)] last:border-b-0">
+                    <td className="py-3.5 pr-4 text-body-sm text-[var(--color-text-primary)] font-medium">
+                      {feature.name}
+                    </td>
+                    <td className="py-3.5 px-4 text-center text-body-sm text-[var(--color-text-secondary)]">
+                      {feature.start}
+                    </td>
+                    <td className="py-3.5 px-4 text-center text-body-sm text-[var(--color-text-primary)] bg-[var(--color-background-alt)] font-medium">
+                      {feature.standard}
+                    </td>
+                    <td className="py-3.5 px-4 text-center text-body-sm text-[var(--color-text-secondary)]">
+                      {feature.pro}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </RevealOnScroll>
+      </Container>
+    </section>
   );
 }
 

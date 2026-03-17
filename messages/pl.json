@@ -1066,7 +1066,92 @@
         ],
         "limitsLabel": "Limity"
       },
-      "priceFrom": "od"
+      "priceFrom": "od",
+      "comparison": {
+        "caption": "Porównanie",
+        "title": "PORÓWNAJ PAKIETY",
+        "description": "Wszystkie trzy poziomy na jeden rzut oka — wybierz odpowiedni.",
+        "features": [
+          {
+            "name": "Stron",
+            "start": "1–5",
+            "standard": "4–10",
+            "pro": "6–20+"
+          },
+          {
+            "name": "Design",
+            "start": "Indywidualny",
+            "standard": "Indywidualny",
+            "pro": "Unikalny"
+          },
+          {
+            "name": "Prototyp UX",
+            "start": "—",
+            "standard": "—",
+            "pro": "✓"
+          },
+          {
+            "name": "Responsywność",
+            "start": "✓",
+            "standard": "✓",
+            "pro": "✓"
+          },
+          {
+            "name": "Animacje",
+            "start": "—",
+            "standard": "Podstawowe",
+            "pro": "Premium"
+          },
+          {
+            "name": "Bloki CTA",
+            "start": "✓",
+            "standard": "✓",
+            "pro": "Rozszerzone"
+          },
+          {
+            "name": "Formularze",
+            "start": "✓",
+            "standard": "✓",
+            "pro": "✓"
+          },
+          {
+            "name": "Integracje",
+            "start": "Telegram / email",
+            "standard": "CRM + email",
+            "pro": "Pełne"
+          },
+          {
+            "name": "Analityka",
+            "start": "Podstawowa",
+            "standard": "GA4",
+            "pro": "GA4 + zdarzenia"
+          },
+          {
+            "name": "SEO",
+            "start": "Podstawowe",
+            "standard": "Pełne",
+            "pro": "Pełne + Schema"
+          },
+          {
+            "name": "Treść",
+            "start": "—",
+            "standard": "Pomoc",
+            "pro": "Pod klucz"
+          },
+          {
+            "name": "Wsparcie",
+            "start": "14 dni",
+            "standard": "21 dni",
+            "pro": "30 dni"
+          },
+          {
+            "name": "Terminy",
+            "start": "1–3 tyg",
+            "standard": "2–5 tyg",
+            "pro": "3–6 tyg"
+          }
+        ]
+      }
     },
     "brief": {
       "metaTitle": "Brief — Złóż zapytanie | NAKO Agency",
