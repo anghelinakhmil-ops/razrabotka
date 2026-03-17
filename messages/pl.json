@@ -2094,12 +2094,12 @@
           "duration": "6 tygodni",
           "task": "Stworzenie strony docelowej dla platformy edukacyjnej MindJoy, która zamienia naukę dzieci w wieku 4–14 lat w ekscytujące przygody. Strona ma przekonać rodziców o bezpieczeństwie i skuteczności podejścia, zaprezentować kluczowe funkcje i zachęcić do instalacji aplikacji.",
           "solution": [
-            "Opracowanie ciemnego, premiumowego designu z jasnymi akcentami",
-            "Stworzenie bloku 6 kluczowych zalet z ikonami i opisami",
-            "Implementacja 3-etapowego procesu «Jak to działa» z przejrzystą wizualizacją",
-            "Dodanie sekcji opinii rodziców jako dowodu społecznego",
-            "Integracja statystyk: 10 000+ rodzin, 500 000+ misji, 50M+ XP",
-            "Optymalizacja wielojęzyczności: rosyjski i angielski"
+            "Zaprojektowano ciemny system UI z gradientami i neonowymi akcentami — oddaje atmosferę cyfrowej przygody i wyróżnia platformę na tle konkurencji",
+            "Zaimplementowano responsywną siatkę 6 kart funkcji z ikonografią i mikro-animacjami przy najechaniu — każda karta ujawnia kluczową funkcję produktu",
+            "Zbudowano interaktywny 3-etapowy blok onboardingowy z wizualnymi znacznikami i płynnymi przejściami — obniża barierę wejścia dla nowych użytkowników",
+            "Zintegrowano blok dowodu społecznego: oceny, awatary i prawdziwe opinie rodziców z animacjami pojawiania się",
+            "Opracowano sekcję statystyk na żywo z animowanymi licznikami (10 000+ rodzin, 500 000+ misji, 50M+ XP, 45+ krajów) — buduje zaufanie poprzez skalę",
+            "Skonfigurowano pełne wsparcie wielojęzyczne (RU/EN) z lokalizacją po stronie serwera i optymalizacją SEO dla każdego języka"
           ],
           "results": [
             {

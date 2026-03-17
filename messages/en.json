@@ -2094,12 +2094,12 @@
           "duration": "6 weeks",
           "task": "Create a landing page for MindJoy, an educational platform that turns learning for kids aged 4–14 into exciting adventures. The site should convince parents of the safety and effectiveness of the approach, showcase key features, and convert visitors into app installations.",
           "solution": [
-            "Developed a dark premium design with bright accents to capture attention",
-            "Created a block of 6 key benefits with icons and descriptions",
-            "Implemented a 3-step \"How It Works\" process with clear visualization",
-            "Added a parent testimonials section for social proof",
-            "Integrated statistics: 10,000+ families, 500,000+ missions, 50M+ XP",
-            "Optimized multilingual support: Russian and English"
+            "Designed a dark UI system with gradients and neon accents — conveys a digital adventure atmosphere and differentiates the platform from competitors",
+            "Implemented a responsive grid of 6 feature cards with iconography and micro-animations on hover — each card reveals a key product function",
+            "Built an interactive 3-step onboarding block with visual markers and smooth transitions — lowers the entry barrier for new users",
+            "Integrated a social proof block: ratings, avatars, and real parent testimonials with reveal animations",
+            "Developed a live statistics section with animated counters (10,000+ families, 500,000+ missions, 50M+ XP, 45+ countries) — builds trust through scale",
+            "Configured full multilingual support (RU/EN) with server-side localization and SEO optimization for each language"
           ],
           "results": [
             {
