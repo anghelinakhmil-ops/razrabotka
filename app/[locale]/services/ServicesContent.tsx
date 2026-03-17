@@ -399,7 +399,7 @@ function SupportSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-start">
             {packages.map((pkg) => {
               const isStandard = pkg.tier === "standard";
-              const price = `${t("priceFrom")} ${getFormattedPrice(regionCode, `support-${pkg.tier}` as PriceId)}`;
+              const price = `${tServices("priceFrom")} ${getFormattedPrice(regionCode, `support-${pkg.tier}` as PriceId)}`;
 
               return (
                 <div
