@@ -2266,14 +2266,6 @@
             {
               "value": "+220%",
               "label": "Croissance inscriptions"
-            },
-            {
-              "value": "10",
-              "label": "Pages"
-            },
-            {
-              "value": "4",
-              "label": "Langues"
             }
           ],
           "technologies": [

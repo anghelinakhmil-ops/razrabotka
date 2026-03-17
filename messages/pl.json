@@ -2266,14 +2266,6 @@
             {
               "value": "+220%",
               "label": "Wzrost rejestracji"
-            },
-            {
-              "value": "10",
-              "label": "Stron"
-            },
-            {
-              "value": "4",
-              "label": "Języki"
             }
           ],
           "technologies": [

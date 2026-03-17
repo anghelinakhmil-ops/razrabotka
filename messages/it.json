@@ -2266,14 +2266,6 @@
             {
               "value": "+220%",
               "label": "Crescita registrazioni"
-            },
-            {
-              "value": "10",
-              "label": "Pagine"
-            },
-            {
-              "value": "4",
-              "label": "Lingue"
             }
           ],
           "technologies": [

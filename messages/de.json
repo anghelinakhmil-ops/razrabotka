@@ -2266,14 +2266,6 @@
             {
               "value": "+220%",
               "label": "Registrierungswachstum"
-            },
-            {
-              "value": "10",
-              "label": "Seiten"
-            },
-            {
-              "value": "4",
-              "label": "Sprachen"
             }
           ],
           "technologies": [
