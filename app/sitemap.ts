@@ -71,16 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   /* Динамические страницы — блог */
-  const blogSlugs = [
-    "why-nextjs-for-business",
-    "conversion-design-principles",
-    "seo-for-new-websites",
-    "expert-website-roi",
-    "tailwind-vs-css-modules",
-    "minimalism-in-web-design",
-    "lighthouse-score-optimization",
-    "landing-page-anatomy",
-  ];
+  const blogSlugs: string[] = [];
 
   const blogPages: MetadataRoute.Sitemap = blogSlugs.flatMap((slug) =>
     locales.map((locale) => ({

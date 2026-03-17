@@ -35,16 +35,7 @@ interface BlogPostData {
  * Генерация статических путей
  */
 export function generateStaticParams() {
-  const slugs = [
-    "why-nextjs-for-business",
-    "conversion-design-principles",
-    "seo-for-new-websites",
-    "expert-website-roi",
-    "tailwind-vs-css-modules",
-    "minimalism-in-web-design",
-    "lighthouse-score-optimization",
-    "landing-page-anatomy",
-  ];
+  const slugs: string[] = [];
   return slugs.map((slug) => ({ slug }));
 }
 
