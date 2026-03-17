@@ -1,14 +1,18 @@
 "use client";
 
+import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { BrokenText } from "@/components/ui/BrokenText";
-import { ParticleField } from "@/components/ui/ParticleField";
 import { ease, duration } from "@/lib/motion";
 import { trackCtaClick } from "@/lib/analytics";
 import { useLenis } from "@/components/motion/LenisProvider";
+
+const ParticleField = lazy(() =>
+  import("@/components/ui/ParticleField").then((m) => ({ default: m.ParticleField }))
+);
 
 /**
  * Hero — fullscreen секция с анимированными частицами
@@ -38,7 +42,9 @@ export function Hero() {
     >
       {/* Background: Deep Espresso + particle animation */}
       <div className="absolute inset-0 bg-[#252321]" />
-      <ParticleField />
+      <Suspense fallback={null}>
+        <ParticleField />
+      </Suspense>
 
       {/* Content — centered */}
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 text-center">

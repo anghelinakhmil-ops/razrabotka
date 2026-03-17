@@ -1,13 +1,15 @@
+import dynamic from "next/dynamic";
 import { getTranslations } from "next-intl/server";
 import Hero from "@/components/sections/Hero";
 import Benefits from "@/components/sections/Benefits";
 import FullBleedImage from "@/components/sections/FullBleedImage";
-import Metrics from "@/components/sections/Metrics";
-import Services from "@/components/sections/Services";
-import CasesPreview from "@/components/sections/CasesPreview";
-import Process from "@/components/sections/Process";
-import FAQ from "@/components/sections/FAQ";
-import LeadFormSection from "@/components/sections/LeadFormSection";
+
+const Metrics = dynamic(() => import("@/components/sections/Metrics"));
+const Services = dynamic(() => import("@/components/sections/Services"));
+const CasesPreview = dynamic(() => import("@/components/sections/CasesPreview"));
+const Process = dynamic(() => import("@/components/sections/Process"));
+const FAQ = dynamic(() => import("@/components/sections/FAQ"));
+const LeadFormSection = dynamic(() => import("@/components/sections/LeadFormSection"));
 
 export default async function Home() {
   const t = await getTranslations("hero");
