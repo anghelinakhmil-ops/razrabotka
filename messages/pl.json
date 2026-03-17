@@ -2094,12 +2094,16 @@
           "duration": "6 tygodni",
           "task": "Stworzenie strony docelowej dla platformy edukacyjnej MindJoy, która zamienia naukę dzieci w wieku 4–14 lat w ekscytujące przygody. Strona ma przekonać rodziców o bezpieczeństwie i skuteczności podejścia, zaprezentować kluczowe funkcje i zachęcić do instalacji aplikacji.",
           "solution": [
-            "Zaprojektowano ciemny system UI z gradientami i neonowymi akcentami — oddaje atmosferę cyfrowej przygody i wyróżnia platformę na tle konkurencji",
-            "Zaimplementowano responsywną siatkę 6 kart funkcji z ikonografią i mikro-animacjami przy najechaniu — każda karta ujawnia kluczową funkcję produktu",
-            "Zbudowano interaktywny 3-etapowy blok onboardingowy z wizualnymi znacznikami i płynnymi przejściami — obniża barierę wejścia dla nowych użytkowników",
-            "Zintegrowano blok dowodu społecznego: oceny, awatary i prawdziwe opinie rodziców z animacjami pojawiania się",
-            "Opracowano sekcję statystyk na żywo z animowanymi licznikami (10 000+ rodzin, 500 000+ misji, 50M+ XP, 45+ krajów) — buduje zaufanie poprzez skalę",
-            "Skonfigurowano pełne wsparcie wielojęzyczne (EN/RU/UK/RO) z lokalizacją po stronie serwera i optymalizacją SEO dla każdego języka"
+            "Przeprowadzono badania UX i prototypowanie: mapowanie ścieżki użytkownika, wireframes kluczowych ekranów, testowanie hipotez przed fazą projektowania",
+            "Opracowano premiumowy ciemny system UI z gradientami, neonowymi akcentami i responsywną siatką kart funkcji z mikro-animacjami przy najechaniu",
+            "Zaimplementowano pełny motion design: animacje pojawiania się sekcji przy scrollu, animowane liczniki statystyk, płynne przejścia i efekty hover na kartach i CTA",
+            "Napisano cały kontent: sprzedażowe nagłówki, opisy funkcji, opinie, FAQ — i zbudowano architekturę informacji skupioną na konwersji",
+            "Zaprojektowano rozszerzone bloki CTA z wariantami A/B: formularz subskrypcji email, przyciski «Pobierz aplikację» z deep links, sekcja dowodu społecznego z ocenami i recenzjami",
+            "Zintegrowano rejestrację, kampanie email i powiadomienia Telegram: zwalidowane formularze kontaktowe, auto-odpowiedzi, przekierowanie leadów do CRM",
+            "Skonfigurowano analitykę zdarzeń (GA4): śledzenie kliknięć CTA, głębokości scrollu, konwersji formularzy, wyświetleń sekcji — z dashboardem dla zespołu",
+            "Zaimplementowano wielojęzyczność (EN/RU/UK/RO) z lokalizacją po stronie serwera, tagami hreflang i optymalizacją SEO per język",
+            "Wykonano pełną konfigurację SEO: meta tagi, Open Graph, Schema.org, sitemap, robots.txt, optymalizacja Core Web Vitals do 95+ Lighthouse",
+            "Zapewniono wsparcie techniczne po uruchomieniu: monitoring, poprawki błędów, aktualizacje zależności i doradztwo w zakresie poprawy konwersji"
           ],
           "results": [
             {

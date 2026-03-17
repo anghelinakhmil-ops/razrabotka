@@ -2094,12 +2094,16 @@
           "duration": "6 săptămâni",
           "task": "Crearea unui landing page pentru platforma educațională MindJoy, care transformă învățarea copiilor de 4–14 ani în aventuri captivante. Site-ul trebuie să convingă părinții de siguranța și eficacitatea abordării, să prezinte funcțiile cheie și să convertească vizitatorii în instalări de aplicație.",
           "solution": [
-            "Am proiectat un sistem UI întunecat cu gradienți și accente neon — transmite atmosfera unei aventuri digitale și diferențiază platforma de concurenți",
-            "Am implementat o grilă responsivă de 6 carduri de caracteristici cu iconografie și micro-animații la hover — fiecare card dezvăluie o funcție cheie a produsului",
-            "Am construit un bloc interactiv de onboarding în 3 pași cu marcaje vizuale și tranziții fluide — reduce bariera de intrare pentru utilizatorii noi",
-            "Am integrat un bloc de dovadă socială: evaluări, avatare și testimoniale reale ale părinților cu animații de apariție",
-            "Am dezvoltat o secțiune de statistici live cu contoare animate (10.000+ familii, 500.000+ misiuni, 50M+ XP, 45+ țări) — construiește încredere prin amploare",
-            "Am configurat suport multilingv complet (EN/RU/UK/RO) cu localizare server-side și optimizare SEO pentru fiecare limbă"
+            "Am realizat cercetare UX și prototipuri: cartografierea parcursului utilizatorului, wireframes pentru ecranele cheie, testarea ipotezelor înainte de faza de design",
+            "Am dezvoltat un sistem UI premium întunecat cu gradienți, accente neon și o grilă responsivă de carduri feature cu micro-animații la hover",
+            "Am implementat design complet de mișcare: animații de apariție a secțiunilor la scroll, contoare statistice animate, tranziții fluide și efecte hover pe carduri și CTA-uri",
+            "Am scris tot conținutul: titluri de vânzare, descrieri de funcționalități, testimoniale, FAQ — și am construit arhitectura informațională concentrată pe conversie",
+            "Am proiectat blocuri CTA extinse cu variante A/B: formular de abonare email, butoane «Descarcă aplicația» cu deep links, secțiune de dovadă socială cu evaluări și recenzii",
+            "Am integrat înregistrarea, campaniile email și notificările Telegram: formulare de contact validate, auto-răspunsuri, trimiterea lead-urilor către CRM",
+            "Am configurat analiza evenimentelor (GA4): urmărirea clicurilor CTA, adâncimea de scroll, conversiile formularelor, vizualizările secțiunilor — cu dashboard pentru echipă",
+            "Am implementat suport multilingv (EN/RU/UK/RO) cu localizare server-side, etichete hreflang și optimizare SEO per limbă",
+            "Am efectuat configurarea completă SEO: meta-taguri, Open Graph, Schema.org, sitemap, robots.txt, optimizare Core Web Vitals la 95+ Lighthouse",
+            "Am asigurat suport tehnic post-lansare: monitorizare, remedieri de erori, actualizări de dependențe și consultanță pentru îmbunătățirea conversiei"
           ],
           "results": [
             {

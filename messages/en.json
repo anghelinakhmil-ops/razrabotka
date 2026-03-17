@@ -2094,12 +2094,16 @@
           "duration": "6 weeks",
           "task": "Create a landing page for MindJoy, an educational platform that turns learning for kids aged 4–14 into exciting adventures. The site should convince parents of the safety and effectiveness of the approach, showcase key features, and convert visitors into app installations.",
           "solution": [
-            "Designed a dark UI system with gradients and neon accents — conveys a digital adventure atmosphere and differentiates the platform from competitors",
-            "Implemented a responsive grid of 6 feature cards with iconography and micro-animations on hover — each card reveals a key product function",
-            "Built an interactive 3-step onboarding block with visual markers and smooth transitions — lowers the entry barrier for new users",
-            "Integrated a social proof block: ratings, avatars, and real parent testimonials with reveal animations",
-            "Developed a live statistics section with animated counters (10,000+ families, 500,000+ missions, 50M+ XP, 45+ countries) — builds trust through scale",
-            "Configured full multilingual support (EN/RU/UK/RO) with server-side localization and SEO optimization for each language"
+            "Conducted UX research and created prototypes: user journey mapping, key screen wireframes, hypothesis testing before the design phase",
+            "Developed a premium dark UI system with gradients, neon accents, and a responsive grid of feature cards with micro-animations on hover",
+            "Implemented full motion design: scroll-triggered section reveals, animated statistics counters, smooth transitions and hover effects on cards and CTAs",
+            "Wrote all content: selling headlines, feature descriptions, testimonials, FAQ — and built information architecture focused on conversion",
+            "Designed extended CTA blocks with A/B variants: email subscription forms, \"Download App\" buttons with deep links, social proof section with ratings and reviews",
+            "Integrated registration, email campaigns, and Telegram notifications: validated contact forms, auto-replies, lead forwarding to CRM",
+            "Set up event analytics (GA4): tracking CTA clicks, scroll depth, form conversions, section views — with a dashboard for the team",
+            "Implemented multilingual support (EN/RU/UK/RO) with server-side localization, hreflang tags, and SEO optimization per language",
+            "Performed full SEO setup: meta tags, Open Graph, Schema.org, sitemap, robots.txt, Core Web Vitals optimization to 95+ Lighthouse",
+            "Provided post-launch technical support: monitoring, bug fixes, dependency updates, and conversion improvement consulting"
           ],
           "results": [
             {

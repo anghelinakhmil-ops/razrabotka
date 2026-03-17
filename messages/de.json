@@ -2094,12 +2094,16 @@
           "duration": "6 Wochen",
           "task": "Erstellung einer Landingpage für die Bildungsplattform MindJoy, die das Lernen für Kinder von 4–14 Jahren in spannende Abenteuer verwandelt. Die Website soll Eltern von der Sicherheit und Wirksamkeit des Ansatzes überzeugen, Schlüsselfunktionen präsentieren und zur App-Installation konvertieren.",
           "solution": [
-            "Dunkles UI-System mit Verläufen und Neon-Akzenten entworfen — vermittelt eine Atmosphäre digitaler Abenteuer und hebt die Plattform von der Konkurrenz ab",
-            "Responsives Grid mit 6 Feature-Karten mit Ikonografie und Mikro-Animationen bei Hover implementiert — jede Karte enthüllt eine Schlüsselfunktion des Produkts",
-            "Interaktiven 3-Schritte-Onboarding-Block mit visuellen Markern und sanften Übergängen gebaut — senkt die Einstiegshürde für neue Nutzer",
-            "Social-Proof-Block integriert: Bewertungen, Avatare und echte Eltern-Testimonials mit Reveal-Animationen",
-            "Live-Statistik-Sektion mit animierten Zählern entwickelt (10.000+ Familien, 500.000+ Missionen, 50M+ XP, 45+ Länder) — baut Vertrauen durch Größe auf",
-            "Vollständige Mehrsprachigkeit (EN/RU/UK/RO) mit serverseitiger Lokalisierung und SEO-Optimierung für jede Sprache konfiguriert"
+            "UX-Forschung und Prototyping durchgeführt: User Journey Mapping, Wireframes der Schlüsselseiten, Hypothesentests vor der Designphase",
+            "Premium-Dark-UI-System mit Verläufen, Neon-Akzenten und responsivem Grid von Feature-Karten mit Mikro-Animationen bei Hover entwickelt",
+            "Vollständiges Motion-Design implementiert: Scroll-getriggerte Sektions-Animationen, animierte Statistik-Zähler, sanfte Übergänge und Hover-Effekte auf Karten und CTAs",
+            "Gesamten Content geschrieben: verkaufende Headlines, Feature-Beschreibungen, Testimonials, FAQ — und Informationsarchitektur mit Fokus auf Konversion aufgebaut",
+            "Erweiterte CTA-Blöcke mit A/B-Varianten gestaltet: E-Mail-Abo-Formulare, «App herunterladen»-Buttons mit Deep Links, Social-Proof-Sektion mit Bewertungen und Reviews",
+            "Registrierung, E-Mail-Kampagnen und Telegram-Benachrichtigungen integriert: validierte Kontaktformulare, Auto-Antworten, Lead-Weiterleitung an CRM",
+            "Event-Analytics (GA4) eingerichtet: Tracking von CTA-Klicks, Scroll-Tiefe, Formular-Konversionen, Sektions-Aufrufen — mit Dashboard für das Team",
+            "Mehrsprachigkeit (EN/RU/UK/RO) mit serverseitiger Lokalisierung, hreflang-Tags und SEO-Optimierung pro Sprache implementiert",
+            "Vollständiges SEO-Setup durchgeführt: Meta-Tags, Open Graph, Schema.org, Sitemap, robots.txt, Core Web Vitals Optimierung auf 95+ Lighthouse",
+            "Technischen Support nach Launch bereitgestellt: Monitoring, Bugfixes, Dependency-Updates und Beratung zur Konversionsverbesserung"
           ],
           "results": [
             {
