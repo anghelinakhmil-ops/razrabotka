@@ -26,6 +26,7 @@ interface CaseData {
   technologies: string[];
   screenshots?: string[];
   liveUrl?: string;
+  previewImage?: string;
 }
 
 /**
@@ -98,7 +99,7 @@ export default async function CaseDetailPage({
       <HeroSection caseData={caseData} t={t} />
 
       {/* Preview Image */}
-      <PreviewSection liveUrl={caseData.liveUrl} t={t} />
+      <PreviewSection liveUrl={caseData.liveUrl} previewImage={caseData.previewImage} t={t} />
 
       {/* Task */}
       <TaskSection task={caseData.task} t={t} />
@@ -215,14 +216,32 @@ function HeroSection({ caseData, t }: { caseData: CaseData; t: TranslationFn }) 
 /**
  * Preview Section
  */
-function PreviewSection({ liveUrl, t }: { liveUrl?: string; t: TranslationFn }) {
+function PreviewSection({ liveUrl, previewImage, t }: { liveUrl?: string; previewImage?: string; t: TranslationFn }) {
   return (
     <section className="pb-[var(--section-gap)] bg-[var(--color-background)]">
       <Container>
         <RevealOnScroll direction="up">
-          <div className="aspect-[16/9] bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm overflow-hidden relative">
-            {liveUrl ? (
-              <>
+          <div className="bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm overflow-hidden relative group">
+            {previewImage ? (
+              <a
+                href={liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block relative"
+                aria-label={t("openLink")}
+              >
+                <Image
+                  src={previewImage}
+                  alt={t("previewAlt")}
+                  width={1440}
+                  height={900}
+                  className="w-full h-auto transition-transform duration-500 ease-out group-hover:scale-[1.02]"
+                  quality={85}
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+              </a>
+            ) : liveUrl ? (
+              <div className="aspect-[16/9] relative">
                 <iframe
                   src={liveUrl}
                   title={t("previewAlt")}
@@ -237,9 +256,9 @@ function PreviewSection({ liveUrl, t }: { liveUrl?: string; t: TranslationFn }) 
                   className="absolute inset-0 z-10"
                   aria-label={t("openLink")}
                 />
-              </>
+              </div>
             ) : (
-              <div className="w-full h-full flex items-center justify-center">
+              <div className="aspect-[16/9] flex items-center justify-center">
                 <div className="text-center">
                   <div className="w-20 h-20 mx-auto mb-4 border border-[var(--color-line)] rounded-sm" />
                   <span className="text-caption text-[var(--color-text-muted)]">
