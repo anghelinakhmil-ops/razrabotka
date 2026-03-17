@@ -243,7 +243,7 @@ function PreviewSection({ liveUrl, previewImage, fullpageImage, t }: { liveUrl?:
 
             {/* Scrollable viewport */}
             {scrollableImage ? (
-              <div className="relative h-[70vh] max-h-[700px] overflow-y-auto overflow-x-hidden bg-[var(--color-background-alt)]">
+              <div data-lenis-prevent className="relative h-[70vh] max-h-[700px] overflow-y-auto overflow-x-hidden bg-[var(--color-background-alt)]">
                 <Image
                   src={scrollableImage}
                   alt={t("previewAlt")}
