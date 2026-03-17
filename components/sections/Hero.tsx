@@ -1,12 +1,10 @@
 "use client";
 
 import { lazy, Suspense } from "react";
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { BrokenText } from "@/components/ui/BrokenText";
-import { ease, duration } from "@/lib/motion";
 import { trackCtaClick } from "@/lib/analytics";
 import { useLenis } from "@/components/motion/LenisProvider";
 
@@ -18,7 +16,7 @@ const ParticleField = lazy(() =>
  * Hero — fullscreen секция с анимированными частицами
  *
  * Стиль: Premium-minimal / Architectural
- * Текст по центру поверх тёмного фона с плавающими частицами в цветах бренда.
+ * Все анимации через CSS — без Framer Motion для быстрого LCP.
  */
 export function Hero() {
   const t = useTranslations("hero");
@@ -48,7 +46,7 @@ export function Hero() {
 
       {/* Content — centered */}
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 text-center">
-        {/* H1 — Headline: rendered immediately for LCP, animated as enhancement */}
+        {/* H1 — Headline */}
         <h1 className="flex flex-col items-center gap-2 mb-8 animate-hero-fade-in">
           <BrokenText
             text={t("line1")}
@@ -68,12 +66,7 @@ export function Hero() {
         </h1>
 
         {/* Subtitle */}
-        <motion.p
-          className="text-body-lg text-white/70 max-w-2xl lg:max-w-none mx-auto mb-4"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: duration.normal, ease, delay: 0.6 }}
-        >
+        <p className="text-body-lg text-white/70 max-w-2xl lg:max-w-none mx-auto mb-4 animate-hero-fade-in-delayed-1">
           {t("subtitle")}{" "}
           <span className="text-white font-medium">{t("subtitleExperts")}</span>,{" "}
           <span className="text-white font-medium">{t("subtitleBusiness")}</span>,
@@ -82,27 +75,17 @@ export function Hero() {
           <span className="text-white font-medium">{t("subtitleCourses")}</span>{" "}
           {t("subtitleAnd")}{" "}
           <span className="text-white font-medium">{t("subtitleEvents")}</span>
-        </motion.p>
+        </p>
 
         {/* Offer line */}
-        <motion.p
-          className="text-body text-white/50 max-w-xl lg:max-w-none mx-auto mb-10"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: duration.normal, ease, delay: 0.7 }}
-        >
+        <p className="text-body text-white/50 max-w-xl lg:max-w-none mx-auto mb-10 animate-hero-fade-in-delayed-2">
           {t("offerLine1")}
           <br className="lg:hidden" />
           {t("offerLine2")}
-        </motion.p>
+        </p>
 
         {/* 2 CTA buttons */}
-        <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: duration.normal, ease, delay: 0.8 }}
-        >
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-hero-fade-in-delayed-3">
           <Button
             variant="outline"
             size="lg"
@@ -123,25 +106,18 @@ export function Hero() {
               {t("ctaCases")}
             </Button>
           </span>
-        </motion.div>
+        </div>
       </div>
 
       {/* Scroll Indicator */}
-      <motion.button
+      <button
         onClick={handleScrollToNext}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50 hover:text-white transition-colors cursor-pointer z-10"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: duration.normal, ease, delay: 1.2 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50 hover:text-white transition-colors cursor-pointer z-10 animate-hero-fade-in-delayed-4"
         aria-label={t("ariaScroll")}
       >
         <span className="text-caption">{t("scroll")}</span>
-        <motion.div
-          className="w-[1px] h-8 bg-current"
-          animate={{ scaleY: [1, 0.5, 1] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-        />
-      </motion.button>
+        <div className="w-[1px] h-8 bg-current animate-scroll-pulse" />
+      </button>
     </section>
   );
 }
