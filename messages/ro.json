@@ -1722,7 +1722,7 @@
       "filterDevelopment": "Dezvoltare",
       "filterDesign": "Design",
       "filterMarketing": "Marketing",
-      "filterBusiness": "Business",
+      "filterBusiness": "Afaceri",
       "noResultsTitle": "Nu sunt articole",
       "noResultsText": "În această categorie nu sunt publicații deocamdată",
       "noResultsButton": "Arată toate articolele",
@@ -1734,8 +1734,8 @@
       "posts": [
         {
           "slug": "website-cost-for-business-2026",
-          "title": "How Much Does a Business Website Cost in 2026",
-          "excerpt": "We break down what affects website pricing, why the range is so wide, and how to avoid overpaying — without losing money on a cheap solution.",
+          "title": "Cât costă un site pentru afaceri în 2026",
+          "excerpt": "Analizăm ce influențează prețul unui site, de ce diferența de preț este atât de mare și cum să nu plătiți în plus — fără să pierdeți bani pe o soluție ieftină.",
           "category": "business",
           "categoryLabel": "Afaceri",
           "date": "2026-03-10",
@@ -1744,8 +1744,8 @@
         },
         {
           "slug": "what-website-your-business-needs",
-          "title": "What Website Does Your Business Need: Landing Page, Multi-Page Site, or Online Store",
-          "excerpt": "Not every business needs a complex website. But a landing page isn't a universal solution either. Let's figure out which format is right for you.",
+          "title": "Ce site are nevoie afacerea dumneavoastră: landing page, site multi-pagină sau magazin online",
+          "excerpt": "Nu orice afacere are nevoie de un site complex. Dar nici landing page-ul nu este o soluție universală. Să stabilim ce format vi se potrivește.",
           "category": "business",
           "categoryLabel": "Afaceri",
           "date": "2026-03-07",
@@ -1754,8 +1754,8 @@
         },
         {
           "slug": "why-ads-fail-without-good-website",
-          "title": "Why Your Ads Don't Work Without a Proper Website",
-          "excerpt": "Spending on ads but getting few leads? The problem might not be your ad settings — but where the traffic lands.",
+          "title": "De ce publicitatea nu funcționează fără un site bun",
+          "excerpt": "Cheltuiți pe publicitate, dar primiți puține cereri? Problema s-ar putea să nu fie în setările reclamei — ci în locul unde ajunge traficul.",
           "category": "marketing",
           "categoryLabel": "Marketing",
           "date": "2026-03-04",
@@ -1764,8 +1764,8 @@
         },
         {
           "slug": "how-many-leads-your-business-loses",
-          "title": "How Many Leads Your Business Loses Because of a Weak Website",
-          "excerpt": "Every day your website either generates leads or pushes potential clients away. Let's calculate how much money you're losing and why.",
+          "title": "Câte cereri pierde afacerea dumneavoastră din cauza unui site slab",
+          "excerpt": "În fiecare zi, site-ul dumneavoastră fie generează cereri, fie îndepărtează clienții potențiali. Să calculăm câți bani pierdeți și de ce.",
           "category": "business",
           "categoryLabel": "Afaceri",
           "date": "2026-03-01",
@@ -1774,8 +1774,8 @@
         },
         {
           "slug": "how-to-choose-web-contractor",
-          "title": "How to Choose a Web Contractor Without Losing Money, Time, and Nerves",
-          "excerpt": "Freelancer, studio, or agency? How to evaluate portfolios, what to look for in contracts, and which red flags you can't ignore.",
+          "title": "Cum să alegeți un contractor web fără să pierdeți bani, timp și nervi",
+          "excerpt": "Freelancer, studio sau agenție? Cum să evaluați portofoliile, la ce să fiți atenți în contracte și ce semnale de alarmă nu pot fi ignorate.",
           "category": "business",
           "categoryLabel": "Afaceri",
           "date": "2026-02-26",
@@ -1798,8 +1798,8 @@
       "breadcrumbBlog": "Blog",
       "posts": {
         "website-cost-for-business-2026": {
-          "title": "How Much Does a Business Website Cost in 2026",
-          "excerpt": "We break down what affects website pricing, why the range is so wide, and how to avoid overpaying — without losing money on a cheap solution.",
+          "title": "Cât costă un site pentru afaceri în 2026",
+          "excerpt": "Analizăm ce influențează prețul unui site, de ce diferența de preț este atât de mare și cum să nu plătiți în plus — fără să pierdeți bani pe o soluție ieftină.",
           "categoryLabel": "Afaceri",
           "date": "2026-03-10",
           "readTime": "8 min",
@@ -1807,34 +1807,34 @@
           "toc": [
             {
               "id": "price-range",
-              "title": "Price Range: From $500 to $50,000"
+              "title": "Intervalul de prețuri: de la 500$ la 50.000$"
             },
             {
               "id": "what-affects-price",
-              "title": "What Affects the Cost"
+              "title": "Ce influențează costul"
             },
             {
               "id": "hidden-costs",
-              "title": "Hidden Costs"
+              "title": "Costuri ascunse"
             },
             {
               "id": "cheap-vs-expensive",
-              "title": "Cheap vs Expensive: Real Consequences"
+              "title": "Ieftin vs scump: consecințe reale"
             },
             {
               "id": "how-to-budget",
-              "title": "How to Budget Properly"
+              "title": "Cum să planificați bugetul corect"
             },
             {
               "id": "when-invest",
-              "title": "When It's Time to Invest"
+              "title": "Când este momentul să investiți"
             }
           ],
-          "content": "<h2 id=\"price-range\">Price Range: From $500 to $50,000</h2><p>Google \"how much does a website cost\" and you'll get numbers from $300 to $100,000. All of them are true. Because \"website\" is like \"car\" — there's a used Daewoo and a new Mercedes. Both drive. But the experience — and results — are different.</p><p>The problem is that most business owners don't understand what they're paying for. They end up either overpaying for unnecessary features or saving where they shouldn't.</p><h2 id=\"what-affects-price\">What Affects the Cost</h2><p><strong>Website type.</strong> A single-page landing is one thing. A corporate site with 10–15 pages is another. An online store with catalog, filters, and payments is a third. Each format requires different amounts of work.</p><p><strong>Design.</strong> A $50 template vs custom design isn't about aesthetics — it's about conversion. Templates don't account for your audience, product, or goals. Custom design is built around specific business objectives.</p><p><strong>Functionality.</strong> Forms, CRM integrations, online payments, user accounts, multilingual support — each adds development hours. But not every feature is necessary for your case.</p><p><strong>Content.</strong> Text, photos, video. Often clients think content \"already exists,\" then discover phone photos won't work and nobody wrote the copy. Quality content is a separate budget line.</p><h2 id=\"hidden-costs\">Hidden Costs Nobody Warns You About</h2><ul><li><strong>Hosting and domain</strong> — $50 to $300/year. Sounds small, but adds up over 3 years.</li><li><strong>SSL certificate</strong> — without it, browsers show \"not secure.\" Free ones exist, but e-commerce needs extended validation.</li><li><strong>Maintenance and updates</strong> — a website isn't \"build and forget.\" CMS needs updating, bugs need fixing, content needs refreshing.</li><li><strong>SEO optimization</strong> — a website without SEO is like a store in a basement with no sign. Basic optimization starts at $500.</li></ul><h2 id=\"cheap-vs-expensive\">Cheap vs Expensive: Real Consequences</h2><p>Real scenario. A business orders a $800 website from a freelancer. Six months later:</p><ul><li>Site loads in 6 seconds — 53% of mobile users leave</li><li>No responsive design — buttons overlap on phones</li><li>No SEO — site doesn't appear in search</li><li>Freelancer disappeared — nobody to fix bugs</li></ul><p>Total: $800 spent, zero leads, need to rebuild. Rebuilding costs more than doing it right the first time.</p><p>Another scenario. A business invests $5,000 in a thoughtful website. Six months later:</p><ul><li>Site ranks in top 10 for key queries</li><li>4–6% conversion — every 20th visitor submits a lead</li><li>Cost per lead from website is 3x lower than from ads</li></ul><p>The difference isn't the budget. It's the approach.</p><h2 id=\"how-to-budget\">How to Budget Properly</h2><p>Forget \"how much does a website cost.\" Ask: <strong>\"how much will one client from the website cost me?\"</strong></p><p>If your average deal is $2,000, and the site brings 10 leads/month with every 5th closing — that's $4,000/month revenue. A $5,000 website pays for itself in 2 months.</p><p>Calculate ROI, not expenses. A website isn't a cost — it's a sales tool.</p><p><strong>Approximate prices in 2026:</strong></p><ul><li>Landing page (1 page) — $1,500–3,000</li><li>Corporate site (5–15 pages) — $3,000–8,000</li><li>Online store — $5,000–15,000</li><li>Complex project with integrations — $10,000+</li></ul><h2 id=\"when-invest\">When It's Time to Invest</h2><p>If you recognize yourself in any of these:</p><ul><li>You have no website and clients come only through word of mouth</li><li>You have a website but are embarrassed to share the link</li><li>You spend on ads but get few leads</li><li>Competitors look more professional online</li><li>You don't know how many clients you're losing because of your site</li></ul><p>— then your website is already costing you money. Not because you're paying for it, but because you're <em>not getting</em> what you could.</p><p>Want to understand what website your business needs and what it will cost? Leave a request. We'll analyze your situation and give an honest estimate with no obligations.</p>"
+          "content": "<h2 id=\"price-range\">Intervalul de prețuri: de la 500$ la 50.000$</h2><p>Căutați pe Google „cât costă un site” și veți obține cifre de la 300$ la 100.000$. Toate sunt adevărate. Pentru că „site” este ca „mașină” — există un Daewoo second-hand și un Mercedes nou. Ambele merg. Dar experiența — și rezultatele — sunt diferite.</p><p>Problema este că majoritatea proprietarilor de afaceri nu înțeleg pentru ce plătesc. Ajung fie să plătească în plus pentru funcții inutile, fie să economisească acolo unde nu ar trebui.</p><h2 id=\"what-affects-price\">Ce influențează costul</h2><p><strong>Tipul site-ului.</strong> Un landing page de o singură pagină este un lucru. Un site corporativ cu 10–15 pagini este altceva. Un magazin online cu catalog, filtre și plăți este al treilea. Fiecare format necesită un volum diferit de muncă.</p><p><strong>Designul.</strong> Un template de 50$ față de un design personalizat nu este o chestiune de estetică — este o chestiune de conversie. Template-urile nu țin cont de audiența, produsul sau obiectivele dumneavoastră. Designul personalizat este construit în jurul obiectivelor specifice de afaceri.</p><p><strong>Funcționalitatea.</strong> Formulare, integrări CRM, plăți online, conturi de utilizator, suport multilingv — fiecare adaugă ore de dezvoltare. Dar nu orice funcție este necesară pentru cazul dumneavoastră.</p><p><strong>Conținutul.</strong> Text, fotografii, video. Adesea clienții cred că conținutul „deja există”, apoi descoperă că fotografiile de pe telefon nu sunt potrivite și nimeni nu a scris textele. Conținutul de calitate este o linie separată de buget.</p><h2 id=\"hidden-costs\">Costuri ascunse despre care nimeni nu vă avertizează</h2><ul><li><strong>Hosting și domeniu</strong> — de la 50$ la 300$/an. Pare puțin, dar se acumulează pe parcursul a 3 ani.</li><li><strong>Certificat SSL</strong> — fără el, browserele afișează „nesecurizat”. Există certificate gratuite, dar e-commerce-ul necesită validare extinsă.</li><li><strong>Întreținere și actualizări</strong> — un site nu este „construiești și uiți”. CMS-ul trebuie actualizat, erorile trebuie corectate, conținutul trebuie reîmprospătat.</li><li><strong>Optimizare SEO</strong> — un site fără SEO este ca un magazin într-un subsol fără semnalizare. Optimizarea de bază începe de la 500$.</li></ul><h2 id=\"cheap-vs-expensive\">Ieftin vs scump: consecințe reale</h2><p>Scenariu real. O afacere comandă un site de 800$ de la un freelancer. Șase luni mai târziu:</p><ul><li>Site-ul se încarcă în 6 secunde — 53% dintre utilizatorii mobili pleacă</li><li>Fără design responsive — butoanele se suprapun pe telefoane</li><li>Fără SEO — site-ul nu apare în căutare</li><li>Freelancerul a dispărut — nimeni nu repară erorile</li></ul><p>Total: 800$ cheltuiți, zero cereri, trebuie reconstruit. Reconstrucția costă mai mult decât să faci bine de la început.</p><p>Alt scenariu. O afacere investește 5.000$ într-un site bine gândit. Șase luni mai târziu:</p><ul><li>Site-ul se clasifică în top 10 pentru interogările cheie</li><li>Conversie de 4–6% — fiecare al 20-lea vizitator trimite o cerere</li><li>Costul per cerere de pe site este de 3 ori mai mic decât din publicitate</li></ul><p>Diferența nu este bugetul. Este abordarea.</p><h2 id=\"how-to-budget\">Cum să planificați bugetul corect</h2><p>Uitați de „cât costă un site”. Întrebați: <strong>„cât mă va costa un client de pe site?”</strong></p><p>Dacă tranzacția medie este de 2.000$, iar site-ul aduce 10 cereri/lună, cu fiecare al 5-lea care închide — aceasta înseamnă 4.000$/lună venituri. Un site de 5.000$ se amortizează în 2 luni.</p><p>Calculați ROI, nu cheltuielile. Un site nu este un cost — este un instrument de vânzări.</p><p><strong>Prețuri aproximative în 2026:</strong></p><ul><li>Landing page (1 pagină) — 1.500–3.000$</li><li>Site corporativ (5–15 pagini) — 3.000–8.000$</li><li>Magazin online — 5.000–15.000$</li><li>Proiect complex cu integrări — 10.000$+</li></ul><h2 id=\"when-invest\">Când este momentul să investiți</h2><p>Dacă vă recunoașteți în oricare dintre acestea:</p><ul><li>Nu aveți un site și clienții vin doar prin recomandări</li><li>Aveți un site, dar vă este jenă să împărtășiți linkul</li><li>Cheltuiți pe publicitate, dar primiți puține cereri</li><li>Concurenții arată mai profesionist online</li><li>Nu știți câți clienți pierdeți din cauza site-ului</li></ul><p>— atunci site-ul dumneavoastră deja vă costă bani. Nu pentru că plătiți pentru el, ci pentru că <em>nu obțineți</em> ceea ce ați putea.</p><p>Doriți să înțelegeți ce site are nevoie afacerea dumneavoastră și cât va costa? Lăsați o cerere. Vom analiza situația și vă vom oferi o estimare sinceră, fără obligații.</p>"
         },
         "what-website-your-business-needs": {
-          "title": "What Website Does Your Business Need: Landing Page, Multi-Page Site, or Online Store",
-          "excerpt": "Not every business needs a complex website. But a landing page isn't a universal solution either. Let's figure out which format is right for you.",
+          "title": "Ce site are nevoie afacerea dumneavoastră: landing page, site multi-pagină sau magazin online",
+          "excerpt": "Nu orice afacere are nevoie de un site complex. Dar nici landing page-ul nu este o soluție universală. Să stabilim ce format vi se potrivește.",
           "categoryLabel": "Afaceri",
           "date": "2026-03-07",
           "readTime": "7 min",
@@ -1842,34 +1842,34 @@
           "toc": [
             {
               "id": "wrong-choice",
-              "title": "The Cost of the Wrong Choice"
+              "title": "Costul unei alegeri greșite"
             },
             {
               "id": "landing",
-              "title": "Landing Page: When One Page Is Enough"
+              "title": "Landing page: când o singură pagină este suficientă"
             },
             {
               "id": "multipage",
-              "title": "Multi-Page Site: When You Need More Trust"
+              "title": "Site multi-pagină: când aveți nevoie de mai multă încredere"
             },
             {
               "id": "ecommerce",
-              "title": "Online Store: When You Sell Products"
+              "title": "Magazin online: când vindeți produse"
             },
             {
               "id": "how-to-choose",
-              "title": "How to Determine Your Format"
+              "title": "Cum să determinați formatul potrivit"
             },
             {
               "id": "next-step",
-              "title": "What to Do Next"
+              "title": "Ce urmează"
             }
           ],
-          "content": "<h2 id=\"wrong-choice\">The Cost of the Wrong Choice</h2><p>One of the most expensive mistakes is building the wrong type of website. A business with 50 products orders a landing page. A consultant with one service builds a 20-page multi-page site. The result is the same: money spent, but the site doesn't work for the business.</p><p>The website format isn't a matter of taste. It's a strategic decision that depends on your sales model, audience, and goals.</p><h2 id=\"landing\">Landing Page: When One Page Is Enough</h2><p><strong>For whom:</strong> one product or service, clear offer, traffic from ads.</p><p>A landing page is one page with one goal: get a lead. No menus, no navigation distractions. The visitor arrives, understands the offer, leaves their contact.</p><p><strong>Works when:</strong></p><ul><li>You're promoting a specific product or promotion</li><li>Traffic comes from ads (Google Ads, social)</li><li>Decision cycle is short</li><li>Client doesn't need to research you extensively</li></ul><p><strong>Doesn't work when:</strong></p><ul><li>You have 5+ services or product categories</li><li>Clients take weeks to decide</li><li>You need to show expertise, cases, team</li></ul><h2 id=\"multipage\">Multi-Page Site: When You Need More Trust</h2><p><strong>For whom:</strong> services, B2B, experts, companies with multiple directions.</p><p>When clients need time to decide, one page isn't enough. They need to see your cases, read about your approach, meet the team, study your services.</p><p><strong>Works when:</strong></p><ul><li>High average check — client compares options</li><li>Multiple services or directions</li><li>Expertise matters: legal, consulting, medical, education</li><li>You need SEO traffic (each page = search entry point)</li></ul><p><strong>How many pages you actually need:</strong></p><ul><li>Home — first impression and navigation</li><li>Services — what you do and for whom</li><li>Cases/portfolio — proof of results</li><li>About — people behind the business</li><li>Contacts — how to reach you</li><li>Blog (optional) — SEO and expertise</li></ul><h2 id=\"ecommerce\">Online Store: When You Sell Products</h2><p><strong>For whom:</strong> retail, products with delivery, digital products.</p><p>If you sell physical or digital products — you need a store. Not a landing page with a \"message us on WhatsApp\" button, but a full system: catalog, cart, payments, inventory.</p><p><strong>Signs you need a store:</strong></p><ul><li>More than 10 products</li><li>Clients buy without consultation</li><li>Need online payments</li><li>Want to scale without growing staff</li></ul><h2 id=\"how-to-choose\">How to Determine Your Format: 5 Questions</h2><ol><li><strong>How many products/services?</strong> 1–2 → landing. 3–10 → multi-page. 10+ products → store.</li><li><strong>How do clients decide?</strong> Quickly → landing. Slowly (compare, research) → multi-page.</li><li><strong>Where does traffic come from?</strong> Ads → landing. Search → multi-page. Marketplaces + own channel → store.</li><li><strong>Need online payments?</strong> Yes → store. No → landing or multi-page.</li><li><strong>What's your budget?</strong> Minimal → landing. Medium → multi-page. Large → store.</li></ol><h2 id=\"next-step\">What to Do Next</h2><p>If you know your format after these questions — great. If you're unsure — that's normal. Website format depends on dozens of factors that don't fit in one checklist.</p><p>We help businesses determine the right format before development begins. It's free and commits you to nothing. Tell us about your business — and we'll suggest which website will bring you more leads.</p>"
+          "content": "<h2 id=\"wrong-choice\">Costul unei alegeri greșite</h2><p>Una dintre cele mai costisitoare greșeli este construirea unui tip greșit de site. O afacere cu 50 de produse comandă un landing page. Un consultant cu un singur serviciu construiește un site multi-pagină de 20 de pagini. Rezultatul este același: banii sunt cheltuiți, dar site-ul nu funcționează pentru afacere.</p><p>Formatul site-ului nu este o chestiune de gust. Este o decizie strategică care depinde de modelul dumneavoastră de vânzări, audiență și obiective.</p><h2 id=\"landing\">Landing page: când o singură pagină este suficientă</h2><p><strong>Pentru cine:</strong> un produs sau serviciu, ofertă clară, trafic din publicitate.</p><p>Un landing page este o pagină cu un singur obiectiv: obținerea unei cereri. Fără meniuri, fără distrageri de navigare. Vizitatorul ajunge, înțelege oferta, lasă datele de contact.</p><p><strong>Funcționează când:</strong></p><ul><li>Promovați un produs sau o promoție specifică</li><li>Traficul vine din publicitate (Google Ads, social media)</li><li>Ciclul de decizie este scurt</li><li>Clientul nu trebuie să vă cerceteze în detaliu</li></ul><p><strong>Nu funcționează când:</strong></p><ul><li>Aveți 5+ servicii sau categorii de produse</li><li>Clienții au nevoie de săptămâni pentru a decide</li><li>Trebuie să arătați expertiza, cazurile, echipa</li></ul><h2 id=\"multipage\">Site multi-pagină: când aveți nevoie de mai multă încredere</h2><p><strong>Pentru cine:</strong> servicii, B2B, experți, companii cu mai multe direcții.</p><p>Când clienții au nevoie de timp pentru a decide, o singură pagină nu este suficientă. Trebuie să vadă cazurile, să citească despre abordarea dumneavoastră, să cunoască echipa, să studieze serviciile.</p><p><strong>Funcționează când:</strong></p><ul><li>Valoare medie ridicată a comenzii — clientul compară opțiunile</li><li>Mai multe servicii sau direcții</li><li>Expertiza contează: juridic, consultanță, medical, educație</li><li>Aveți nevoie de trafic SEO (fiecare pagină = punct de intrare în căutare)</li></ul><p><strong>Câte pagini aveți nevoie de fapt:</strong></p><ul><li>Acasă — prima impresie și navigare</li><li>Servicii — ce faceți și pentru cine</li><li>Cazuri/portofoliu — dovada rezultatelor</li><li>Despre noi — oamenii din spatele afacerii</li><li>Contacte — cum să ne contactați</li><li>Blog (opțional) — SEO și expertiză</li></ul><h2 id=\"ecommerce\">Magazin online: când vindeți produse</h2><p><strong>Pentru cine:</strong> retail, produse cu livrare, produse digitale.</p><p>Dacă vindeți produse fizice sau digitale — aveți nevoie de un magazin. Nu un landing page cu butonul „scrieți-ne pe WhatsApp”, ci un sistem complet: catalog, coș, plăți, stocuri.</p><p><strong>Semne că aveți nevoie de un magazin:</strong></p><ul><li>Mai mult de 10 produse</li><li>Clienții cumpără fără consultație</li><li>Sunt necesare plăți online</li><li>Doriți să scalați fără a crește personalul</li></ul><h2 id=\"how-to-choose\">Cum să determinați formatul potrivit: 5 întrebări</h2><ol><li><strong>Câte produse/servicii?</strong> 1–2 → landing. 3–10 → multi-pagină. 10+ produse → magazin.</li><li><strong>Cum decid clienții?</strong> Rapid → landing. Lent (compară, cercetează) → multi-pagină.</li><li><strong>De unde vine traficul?</strong> Publicitate → landing. Căutare → multi-pagină. Marketplace-uri + canal propriu → magazin.</li><li><strong>Sunt necesare plăți online?</strong> Da → magazin. Nu → landing sau multi-pagină.</li><li><strong>Care este bugetul?</strong> Minim → landing. Mediu → multi-pagină. Mare → magazin.</li></ol><h2 id=\"next-step\">Ce urmează</h2><p>Dacă știți formatul după aceste întrebări — excelent. Dacă nu sunteți sigur — este normal. Formatul site-ului depinde de zeci de factori care nu încap într-un singur checklist.</p><p>Ajutăm afacerile să determine formatul potrivit înainte de începerea dezvoltării. Este gratuit și nu vă obligă la nimic. Povestiți-ne despre afacerea dumneavoastră — și vă vom sugera ce site vă va aduce mai multe cereri.</p>"
         },
         "why-ads-fail-without-good-website": {
-          "title": "Why Your Ads Don't Work Without a Proper Website",
-          "excerpt": "Spending on ads but getting few leads? The problem might not be your ad settings — but where the traffic lands.",
+          "title": "De ce publicitatea nu funcționează fără un site bun",
+          "excerpt": "Cheltuiți pe publicitate, dar primiți puține cereri? Problema s-ar putea să nu fie în setările reclamei — ci în locul unde ajunge traficul.",
           "categoryLabel": "Marketing",
           "date": "2026-03-04",
           "readTime": "6 min",
@@ -1877,34 +1877,34 @@
           "toc": [
             {
               "id": "money-drain",
-              "title": "Where Your Ad Budget Goes"
+              "title": "Unde se duce bugetul de publicitate"
             },
             {
               "id": "website-kills-ads",
-              "title": "5 Ways Your Website Kills Your Ads"
+              "title": "5 moduri în care site-ul ucide publicitatea"
             },
             {
               "id": "real-numbers",
-              "title": "Real Loss Numbers"
+              "title": "Cifre reale ale pierderilor"
             },
             {
               "id": "what-good-site-does",
-              "title": "What a Good Website Does for Ads"
+              "title": "Ce face un site bun pentru publicitate"
             },
             {
               "id": "checklist",
-              "title": "Checklist: Is Your Site Ad-Ready?"
+              "title": "Checklist: este site-ul pregătit pentru publicitate?"
             },
             {
               "id": "what-to-do",
-              "title": "What to Do If Your Site Isn't Ready"
+              "title": "Ce să faceți dacă site-ul nu este pregătit"
             }
           ],
-          "content": "<h2 id=\"money-drain\">Where Your Ad Budget Goes</h2><p>Imagine: you spend $2,000/month on ads. Google Ads is set up, targeting is running, clicks are coming. But leads — only 5–10. Cost per lead — $200–400. With an average deal of $1,000, it barely breaks even.</p><p>First reaction: \"ads don't work\" or \"the marketer is bad.\" But often the problem is deeper: ads bring people in, but the website scares them away.</p><p>It's like renting a billboard on the highway, but instead of a store — a locked door with a \"call this number\" sign. Traffic exists, but sales don't.</p><h2 id=\"website-kills-ads\">5 Ways Your Website Kills Your Ads</h2><p><strong>1. Slow loading.</strong> If the site takes longer than 3 seconds, 53% of mobile users leave. You already paid for their click — but they didn't even see your offer.</p><p><strong>2. No mobile version.</strong> 70–80% of ad traffic is mobile. If the site looks broken on phones, small buttons, unreadable text — the visitor closes the tab in 3 seconds.</p><p><strong>3. Unclear offer.</strong> Person came from an ad saying \"Custom kitchens from $3,000.\" The site says \"comprehensive solutions for your interior.\" No prices, no examples, no specifics. Gap between ad promise and site reality = lost client.</p><p><strong>4. No clear call to action.</strong> Person read everything, got interested — what next? If there's no visible \"Submit request\" button or form — they just leave.</p><p><strong>5. No trust signals.</strong> No reviews, no cases, no team photos, no legal information. For a new visitor, your site is a stranger. People don't give their contacts to strangers.</p><h2 id=\"real-numbers\">Real Loss Numbers</h2><p>Let's say your ad traffic is 1,000 people/month.</p><p><strong>Problem site (1% conversion):</strong></p><ul><li>Leads: 10</li><li>At $2/click → spent $2,000</li><li>Cost per lead: $200</li></ul><p><strong>Good site (4% conversion):</strong></p><ul><li>Leads: 40</li><li>At $2/click → spent $2,000</li><li>Cost per lead: $50</li></ul><p>Difference — <strong>4x</strong>. Same ad spend. Only variable — website quality.</p><p>Over a year: 120 vs 480 leads. At 20% close rate — 24 vs 96 clients. At $2,000 average deal — $48,000 vs $192,000 revenue.</p><h2 id=\"what-good-site-does\">What a Good Website Does for Ads</h2><p><strong>Loads fast.</strong> Under 2 seconds on mobile. Every extra second = minus 7% conversion.</p><p><strong>Continues the ad conversation.</strong> If the ad says \"Custom kitchens from $3,000\" — the site should show kitchens, prices, and examples.</p><p><strong>Has clear structure.</strong> Headline → benefits → proof → action. Visitor should understand in 10 seconds: what you offer, why trust you, what to do next.</p><p><strong>Builds trust.</strong> Real reviews, cases with numbers, team photos, legal details, SSL certificate.</p><p><strong>Has visible CTA.</strong> \"Submit request\" button on every screen. Form — simple, 3–4 fields max.</p><h2 id=\"checklist\">Checklist: Is Your Site Ad-Ready?</h2><ul><li>☐ Loads in 2–3 seconds on mobile</li><li>☐ Looks correct on phones</li><li>☐ Headline matches ad promise</li><li>☐ Has prices or price ranges</li><li>☐ Has reviews or cases</li><li>☐ CTA button on every screen</li><li>☐ Lead form is simple and works</li><li>☐ Contact info and legal entity visible</li></ul><p>If more than 3 items are unchecked — your site isn't ready for ads. Every dollar you invest in advertising is working at half capacity.</p><h2 id=\"what-to-do\">What to Do If Your Site Isn't Ready</h2><p>You don't need to \"redo everything\" right away. Sometimes targeted improvements are enough: speed up loading, rewrite the headline, add a form. Sometimes — yes, you need a new site.</p><p>We can run a quick audit of your site and show exactly where leads are being lost. It's free and takes 15 minutes of your time. Write to us — let's figure it out together.</p>"
+          "content": "<h2 id=\"money-drain\">Unde se duce bugetul de publicitate</h2><p>Imaginați-vă: cheltuiți 2.000$/lună pe publicitate. Google Ads este configurat, targetarea rulează, clicurile vin. Dar cereri — doar 5–10. Costul per cerere — 200–400$. Cu o tranzacție medie de 1.000$, abia ieșiți pe zero.</p><p>Prima reacție: „publicitatea nu funcționează” sau „marketerul este slab”. Dar adesea problema este mai profundă: publicitatea aduce oameni, dar site-ul îi sperie.</p><p>E ca și cum ai închiria un panou publicitar pe autostradă, dar în loc de magazin — o ușă încuiată cu un semn „sunați la acest număr”. Traficul există, dar vânzările nu.</p><h2 id=\"website-kills-ads\">5 moduri în care site-ul ucide publicitatea</h2><p><strong>1. Încarcare lentă.</strong> Dacă site-ul se încarcă mai mult de 3 secunde, 53% dintre utilizatorii mobili pleacă. Ați plătit deja pentru clicul lor — dar nici măcar nu v-au văzut oferta.</p><p><strong>2. Fără versiune mobilă.</strong> 70–80% din traficul publicitar este mobil. Dacă site-ul arată stricat pe telefoane, butoane mici, text ilizibil — vizitatorul închide tab-ul în 3 secunde.</p><p><strong>3. Ofertă neclară.</strong> Persoana a venit de la o reclamă care spune „Bucătării personalizate de la 3.000$”. Site-ul spune „soluții complexe pentru interiorul dumneavoastră”. Fără prețuri, fără exemple, fără detalii. Diferența dintre promisiunea reclamei și realitatea site-ului = client pierdut.</p><p><strong>4. Fără un apel clar la acțiune.</strong> Persoana a citit totul, s-a interesat — ce urmează? Dacă nu există un buton vizibil „Trimite cerere” sau un formular — pur și simplu pleacă.</p><p><strong>5. Fără semnale de încredere.</strong> Fără recenzii, fără cazuri, fără fotografii ale echipei, fără informații juridice. Pentru un vizitator nou, site-ul dumneavoastră este un necunoscut. Oamenii nu își dau datele de contact unor necunoscuți.</p><h2 id=\"real-numbers\">Cifre reale ale pierderilor</h2><p>Să presupunem că traficul din publicitate este de 1.000 de persoane/lună.</p><p><strong>Site problematic (conversie 1%):</strong></p><ul><li>Cereri: 10</li><li>La 2$/clic → cheltuiți 2.000$</li><li>Cost per cerere: 200$</li></ul><p><strong>Site bun (conversie 4%):</strong></p><ul><li>Cereri: 40</li><li>La 2$/clic → cheltuiți 2.000$</li><li>Cost per cerere: 50$</li></ul><p>Diferența — <strong>de 4 ori</strong>. Aceleași cheltuieli de publicitate. Singura variabilă — calitatea site-ului.</p><p>Pe un an: 120 vs 480 cereri. La o rată de închidere de 20% — 24 vs 96 clienți. La o tranzacție medie de 2.000$ — 48.000$ vs 192.000$ venituri.</p><h2 id=\"what-good-site-does\">Ce face un site bun pentru publicitate</h2><p><strong>Se încarcă rapid.</strong> Sub 2 secunde pe mobil. Fiecare secundă în plus = minus 7% conversie.</p><p><strong>Continuă conversația din reclamă.</strong> Dacă reclama spune „Bucătării personalizate de la 3.000$” — site-ul trebuie să arate bucătării, prețuri și exemple.</p><p><strong>Are o structură clară.</strong> Titlu → beneficii → dovezi → acțiune. Vizitatorul trebuie să înțeleagă în 10 secunde: ce oferiți, de ce să aibă încredere, ce să facă mai departe.</p><p><strong>Construiește încredere.</strong> Recenzii reale, cazuri cu cifre, fotografii ale echipei, detalii juridice, certificat SSL.</p><p><strong>Are CTA vizibil.</strong> Butonul „Trimite cerere” pe fiecare ecran. Formular — simplu, maxim 3–4 câmpuri.</p><h2 id=\"checklist\">Checklist: este site-ul pregătit pentru publicitate?</h2><ul><li>☐ Se încarcă în 2–3 secunde pe mobil</li><li>☐ Arată corect pe telefoane</li><li>☐ Titlul corespunde promisiunii din reclamă</li><li>☐ Are prețuri sau intervale de preț</li><li>☐ Are recenzii sau cazuri</li><li>☐ Buton CTA pe fiecare ecran</li><li>☐ Formularul de cerere este simplu și funcționează</li><li>☐ Informațiile de contact și persoana juridică sunt vizibile</li></ul><p>Dacă mai mult de 3 puncte sunt nebifate — site-ul dumneavoastră nu este pregătit pentru publicitate. Fiecare dolar investit în publicitate funcționează la jumătate din capacitate.</p><h2 id=\"what-to-do\">Ce să faceți dacă site-ul nu este pregătit</h2><p>Nu trebuie să „refacă totul” imediat. Uneori sunt suficiente îmbunătățiri punctuale: accelerarea încărcării, rescrierea titlului, adăugarea unui formular. Alteori — da, aveți nevoie de un site nou.</p><p>Putem face un audit rapid al site-ului dumneavoastră și vă arătăm exact unde se pierd cererile. Este gratuit și durează 15 minute din timpul dumneavoastră. Scrieți-ne — să rezolvăm împreună.</p>"
         },
         "how-many-leads-your-business-loses": {
-          "title": "How Many Leads Your Business Loses Because of a Weak Website",
-          "excerpt": "Every day your website either generates leads or pushes potential clients away. Let's calculate how much money you're losing and why.",
+          "title": "Câte cereri pierde afacerea dumneavoastră din cauza unui site slab",
+          "excerpt": "În fiecare zi, site-ul dumneavoastră fie generează cereri, fie îndepărtează clienții potențiali. Să calculăm câți bani pierdeți și de ce.",
           "categoryLabel": "Afaceri",
           "date": "2026-03-01",
           "readTime": "7 min",
@@ -1912,34 +1912,34 @@
           "toc": [
             {
               "id": "invisible-losses",
-              "title": "Losses You Don't See"
+              "title": "Pierderi pe care nu le vedeți"
             },
             {
               "id": "why-people-leave",
-              "title": "Why People Leave Your Website"
+              "title": "De ce pleacă oamenii de pe site"
             },
             {
               "id": "calculate-losses",
-              "title": "How to Calculate Your Losses"
+              "title": "Cum să calculați pierderile"
             },
             {
               "id": "weak-site-signs",
-              "title": "7 Signs of a Weak Website"
+              "title": "7 semne ale unui site slab"
             },
             {
               "id": "what-strong-site-gives",
-              "title": "What a Strong Website Delivers"
+              "title": "Ce oferă un site puternic"
             },
             {
               "id": "first-step",
-              "title": "The First Step"
+              "title": "Primul pas"
             }
           ],
-          "content": "<h2 id=\"invisible-losses\">Losses You Don't See</h2><p>When a store has no customers — it's visible. When a salesperson performs poorly — it's audible. But when a website loses clients — it happens silently. Nobody calls to say: \"I wanted to buy from you, but your website turned me off.\"</p><p>People just close the tab. And you never know they were there.</p><p>On average, a small business website loses 70–90% of potential clients. This isn't an exaggeration — it's analytics data. Out of 100 visitors, only 2–5 submit a lead. The other 95 left. And some left not because they don't need your product, but because the website didn't convince them.</p><h2 id=\"why-people-leave\">Why People Leave Your Website</h2><p><strong>The first 3 seconds.</strong> That's how long you have. A person opens the site — and in 3 seconds decides: stay or leave. If they don't understand your offer in that time — they leave.</p><p><strong>Appearance.</strong> Stanford research shows: 75% of people judge a company's credibility by website design. Outdated design = \"this company isn't growing.\" Or worse: \"these are scammers.\"</p><p><strong>Speed.</strong> Every extra second of loading reduces conversion by 7%. A site that loads in 5 seconds instead of 2 loses 21% of potential leads. Simply because people don't want to wait.</p><p><strong>Mobile version.</strong> Over 60% of traffic is from phones. If the site isn't responsive — you're losing more than half your audience.</p><p><strong>Lack of trust.</strong> No reviews, no cases, no faces. For a new visitor, you're one of thousands. Why should they give you their number?</p><h2 id=\"calculate-losses\">How to Calculate Your Losses</h2><p>Simple formula. You need three numbers:</p><ol><li><strong>Traffic</strong> — how many people visit monthly (check Google Analytics)</li><li><strong>Conversion</strong> — what percentage submits a lead (usually 1–5%)</li><li><strong>Average deal</strong> — how much one client brings</li></ol><p><strong>Example:</strong></p><ul><li>Traffic: 500 people/month</li><li>Conversion: 1% (5 leads)</li><li>Every 3rd closes → 1–2 clients</li><li>Average deal: $3,000</li><li>Revenue: $3,000–6,000/month</li></ul><p>Now imagine 4% conversion (20 leads):</p><ul><li>Every 3rd closes → 6–7 clients</li><li>Revenue: $18,000–21,000/month</li></ul><p>Difference — <strong>$12,000–15,000/month</strong>. Same traffic. Only change — website quality.</p><h2 id=\"weak-site-signs\">7 Signs of a Weak Website</h2><ol><li><strong>You're embarrassed to share your site link.</strong> If you know the site is \"meh\" — clients feel it ten times more.</li><li><strong>Site is 3+ years old and hasn't been updated.</strong> The web changes fast. What looked fine in 2023 looks outdated in 2026.</li><li><strong>Uncomfortable on mobile.</strong> Small text, horizontal scrolling, unclickable buttons.</li><li><strong>No clear offer on the first screen.</strong> If in 5 seconds the visitor doesn't understand what you do — they'll go to a competitor.</li><li><strong>No cases or reviews.</strong> \"We're professionals\" without proof doesn't work.</li><li><strong>Lead form is hidden or broken.</strong> If it takes 10 screens to reach the form or it doesn't submit — you're losing ready clients.</li><li><strong>You don't know your conversion rate.</strong> If you don't measure how many leads the site generates — you're not managing sales.</li></ol><h2 id=\"what-strong-site-gives\">What a Strong Website Delivers</h2><p>A strong website isn't a \"beautiful\" website. It's a website that <strong>sells</strong>. It:</p><ul><li>Loads fast and works on any device</li><li>Explains in 5 seconds what you do and for whom</li><li>Shows proof: cases, reviews, numbers</li><li>Has a simple path to lead: form, button, chat</li><li>Builds trust: design, content, legal details</li></ul><p>This isn't about budget. It's about approach.</p><h2 id=\"first-step\">The First Step</h2><p>Start simple: look at your site through a new client's eyes. Open it on your phone. Time the loading. Try to understand the offer in 5 seconds. Try to submit a lead.</p><p>If something's wrong — you already know where you're losing money.</p><p>Want us to look at your site and show specific loss points? Write to us — it's free and takes 15 minutes.</p>"
+          "content": "<h2 id=\"invisible-losses\">Pierderi pe care nu le vedeți</h2><p>Când un magazin nu are clienți — se vede. Când un vânzător lucrează slab — se aude. Dar când un site pierde clienți — se întâmplă în tăcere. Nimeni nu sună să spună: „Am vrut să cumpăr de la dumneavoastră, dar site-ul m-a descurajat.”</p><p>Oamenii pur și simplu închid tab-ul. Și nu veți ști niciodată că au fost acolo.</p><p>În medie, site-ul unei afaceri mici pierde 70–90% din clienții potențiali. Aceasta nu este o exagerare — sunt date din analiză. Din 100 de vizitatori, doar 2–5 trimit o cerere. Ceilalți 95 au plecat. Iar unii au plecat nu pentru că nu au nevoie de produsul dumneavoastră, ci pentru că site-ul nu i-a convins.</p><h2 id=\"why-people-leave\">De ce pleacă oamenii de pe site</h2><p><strong>Primele 3 secunde.</strong> Atât timp aveți. O persoană deschide site-ul — și în 3 secunde decide: rămâne sau pleacă. Dacă nu înțelege oferta în acel timp — pleacă.</p><p><strong>Aspectul.</strong> Cercetările Stanford arată: 75% dintre oameni judecă credibilitatea unei companii după designul site-ului. Design învechit = „această companie nu se dezvoltă”. Sau mai rău: „aceștia sunt escroci”.</p><p><strong>Viteza.</strong> Fiecare secundă suplimentară de încărcare reduce conversia cu 7%. Un site care se încarcă în 5 secunde în loc de 2 pierde 21% din cererile potențiale. Pur și simplu pentru că oamenii nu vor să aștepte.</p><p><strong>Versiunea mobilă.</strong> Peste 60% din trafic vine de pe telefoane. Dacă site-ul nu este responsive — pierdeți mai mult de jumătate din audiență.</p><p><strong>Lipsa încrederii.</strong> Fără recenzii, fără cazuri, fără chipuri. Pentru un vizitator nou, sunteți unul dintre mii. De ce ar trebui să vă dea numărul de telefon?</p><h2 id=\"calculate-losses\">Cum să calculați pierderile</h2><p>Formulă simplă. Aveți nevoie de trei cifre:</p><ol><li><strong>Trafic</strong> — câți oameni vizitează lunar (verificați Google Analytics)</li><li><strong>Conversie</strong> — ce procent trimite o cerere (de obicei 1–5%)</li><li><strong>Tranzacția medie</strong> — cât aduce un client</li></ol><p><strong>Exemplu:</strong></p><ul><li>Trafic: 500 de persoane/lună</li><li>Conversie: 1% (5 cereri)</li><li>Fiecare al 3-lea închide → 1–2 clienți</li><li>Tranzacția medie: 3.000$</li><li>Venituri: 3.000–6.000$/lună</li></ul><p>Acum imaginați-vă conversie de 4% (20 cereri):</p><ul><li>Fiecare al 3-lea închide → 6–7 clienți</li><li>Venituri: 18.000–21.000$/lună</li></ul><p>Diferența — <strong>12.000–15.000$/lună</strong>. Același trafic. Singura schimbare — calitatea site-ului.</p><h2 id=\"weak-site-signs\">7 semne ale unui site slab</h2><ol><li><strong>Vă este jenă să împărtășiți linkul site-ului.</strong> Dacă știți că site-ul este „așa și-așa” — clienții o simt de zece ori mai mult.</li><li><strong>Site-ul are 3+ ani și nu a fost actualizat.</strong> Webul se schimbă rapid. Ce arăta bine în 2023 pare învechit în 2026.</li><li><strong>Incomod pe mobil.</strong> Text mic, derulare orizontală, butoane pe care nu poți face clic.</li><li><strong>Fără ofertă clară pe primul ecran.</strong> Dacă în 5 secunde vizitatorul nu înțelege ce faceți — va merge la concurent.</li><li><strong>Fără cazuri sau recenzii.</strong> „Suntem profesioniști” fără dovezi nu funcționează.</li><li><strong>Formularul de cerere este ascuns sau nu funcționează.</strong> Dacă trebuie să derulezi 10 ecrane până la formular sau nu se trimite — pierdeți clienți gata de cumpărare.</li><li><strong>Nu cunoașteți rata de conversie.</strong> Dacă nu măsurați câte cereri generează site-ul — nu gestionați vânzările.</li></ol><h2 id=\"what-strong-site-gives\">Ce oferă un site puternic</h2><p>Un site puternic nu este un site „frumos”. Este un site care <strong>vinde</strong>. El:</p><ul><li>Se încarcă rapid și funcționează pe orice dispozitiv</li><li>Explică în 5 secunde ce faceți și pentru cine</li><li>Arată dovezi: cazuri, recenzii, cifre</li><li>Are o cale simplă spre cerere: formular, buton, chat</li><li>Construiește încredere: design, conținut, detalii juridice</li></ul><p>Aceasta nu ține de buget. Ține de abordare.</p><h2 id=\"first-step\">Primul pas</h2><p>Începeți simplu: priviți site-ul prin ochii unui client nou. Deschideți-l pe telefon. Cronometrați încărcarea. Încercați să înțelegeți oferta în 5 secunde. Încercați să trimiteți o cerere.</p><p>Dacă ceva nu este în regulă — deja știți unde pierdeți bani.</p><p>Doriți să ne uităm la site-ul dumneavoastră și să arătăm punctele specifice de pierdere? Scrieți-ne — este gratuit și durează 15 minute.</p>"
         },
         "how-to-choose-web-contractor": {
-          "title": "How to Choose a Web Contractor Without Losing Money, Time, and Nerves",
-          "excerpt": "Freelancer, studio, or agency? How to evaluate portfolios, what to look for in contracts, and which red flags you can't ignore.",
+          "title": "Cum să alegeți un contractor web fără să pierdeți bani, timp și nervi",
+          "excerpt": "Freelancer, studio sau agenție? Cum să evaluați portofoliile, la ce să fiți atenți în contracte și ce semnale de alarmă nu pot fi ignorate.",
           "categoryLabel": "Afaceri",
           "date": "2026-02-26",
           "readTime": "9 min",
@@ -1947,34 +1947,34 @@
           "toc": [
             {
               "id": "why-hard",
-              "title": "Why Choosing a Contractor Is Hard"
+              "title": "De ce este dificil să alegi un contractor"
             },
             {
               "id": "formats",
-              "title": "Freelancer, Studio, or Agency"
+              "title": "Freelancer, studio sau agenție"
             },
             {
               "id": "portfolio",
-              "title": "How to Evaluate a Portfolio"
+              "title": "Cum să evaluați un portofoliu"
             },
             {
               "id": "red-flags",
-              "title": "Red Flags: When to Run"
+              "title": "Semnale de alarmă: când să fugiți"
             },
             {
               "id": "contract",
-              "title": "What to Check in the Contract"
+              "title": "Ce să verificați în contract"
             },
             {
               "id": "good-signs",
-              "title": "Signs of a Good Contractor"
+              "title": "Semnele unui contractor bun"
             },
             {
               "id": "next-step",
-              "title": "Next Step"
+              "title": "Pasul următor"
             }
           ],
-          "content": "<h2 id=\"why-hard\">Why Choosing a Contractor Is Hard</h2><p>The web development market has thousands of contractors with similar portfolios and promises. Everyone says \"we'll make it beautiful, fast, affordable.\" But reality is often different: missed deadlines, unclear results, extra charges for every small thing. And the biggest cost — lost time, which is more expensive than any website.</p><p>The problem is that clients usually don't know how to evaluate a contractor. You don't buy websites every month — it's a one-time purchase. And mistakes here are expensive.</p><h2 id=\"formats\">Freelancer, Studio, or Agency: What to Choose</h2><p><strong>Freelancer ($500–3,000).</strong></p><ul><li>Pros: cheapest, quick start, direct communication</li><li>Cons: may disappear, no team (one person does design, code, content), no guarantees</li><li>Good for: simple landing pages, MVPs, minimal budget</li></ul><p><strong>Studio ($3,000–15,000).</strong></p><ul><li>Pros: team (designer + developer + manager), processes, portfolio</li><li>Cons: more expensive than freelancer, sometimes \"assembly line\" approach</li><li>Good for: corporate sites, online stores, businesses with clear requirements</li></ul><p><strong>Agency ($10,000+).</strong></p><ul><li>Pros: strategy + marketing + development, deep business immersion, analytics</li><li>Cons: expensive, long approval processes</li><li>Good for: complex projects, rebranding, when you need a marketing tool, not just a site</li></ul><h2 id=\"portfolio\">How to Evaluate a Portfolio (Without Being Fooled)</h2><p><strong>1. Open actual sites.</strong> Not screenshots — real sites. Do they work? Load fast? Look good on mobile? If a contractor shows screenshots but real sites are broken — that's a problem.</p><p><strong>2. Look for diversity.</strong> All sites look the same? You'll get the same thing. Good contractors adapt their approach to the task.</p><p><strong>3. Evaluate results, not beauty.</strong> A beautiful site doesn't mean an effective one. Ask: what results did this site bring the client? If the contractor doesn't know — they think about design, not business.</p><p><strong>4. Ask about the process.</strong> How was the work structured? How long did it take? Were there problems and how were they solved?</p><h2 id=\"red-flags\">Red Flags: When to Run</h2><ul><li><strong>\"We'll do it in 3 days.\"</strong> A proper site isn't built in 3 days. If they promise that — it'll be a template with swapped text.</li><li><strong>No contract.</strong> \"Let's skip the paperwork, we trust each other\" — no. A contract protects both sides.</li><li><strong>100% upfront payment.</strong> Standard is 50/50 or milestone-based. 100% upfront = risk of losing everything.</li><li><strong>They don't ask questions.</strong> If a contractor doesn't ask about your audience, competitors, and goals — they'll make \"a website\" instead of a website for your business.</li><li><strong>No fixed timelines.</strong> \"About a month or so\" isn't a timeline. There should be stages with specific dates.</li><li><strong>They guarantee results.</strong> \"Guaranteed #1 in Google\" or \"100 leads in the first month\" — that's a lie.</li></ul><h2 id=\"contract\">What to Check in the Contract</h2><ul><li><strong>Timelines.</strong> Specific start and end dates. What happens if delayed?</li><li><strong>Scope.</strong> Clear list: how many pages, what features, what's included, what's not.</li><li><strong>Cost and payment.</strong> Fixed price or hourly? What's included? What's extra?</li><li><strong>IP rights.</strong> Who owns the code, design, content after payment? It should be you.</li><li><strong>Support.</strong> What happens after launch? Warranty period? Cost of changes?</li><li><strong>Acceptance.</strong> How do you accept work? How many revision rounds? What counts as \"done\"?</li></ul><h2 id=\"good-signs\">Signs of a Good Contractor</h2><ul><li>Asks many questions before starting</li><li>Shows real, working websites</li><li>Explains what's included in the price and what's not</li><li>Names specific timelines and stages</li><li>Says \"no\" when the task can't be done within your budget</li><li>Thinks about your business, not just design</li><li>Has reviews or recommendations from real clients</li></ul><h2 id=\"next-step\">Next Step</h2><p>Choosing a contractor isn't about price. It's about trust, communication, and understanding your goals. A cheap contractor who builds the wrong thing is more expensive than a good contractor who builds it right.</p><p>If you're choosing a contractor right now — write to us. We won't sell — we'll just discuss your task and suggest what to pay attention to. Even if you don't choose us — this consultation will save you money and nerves.</p>"
+          "content": "<h2 id=\"why-hard\">De ce este dificil să alegi un contractor</h2><p>Piața de dezvoltare web are mii de contractori cu portofolii și promisiuni similare. Toți spun „vom face frumos, rapid, accesibil”. Dar realitatea este adesea diferită: termene depășite, rezultate neclare, taxe suplimentare pentru orice lucru mic. Iar cel mai mare cost — timpul pierdut, care este mai scump decât orice site.</p><p>Problema este că clienții de obicei nu știu cum să evalueze un contractor. Nu cumpărați site-uri în fiecare lună — este o achiziție unică. Iar greșelile aici sunt costisitoare.</p><h2 id=\"formats\">Freelancer, studio sau agenție: ce să alegeți</h2><p><strong>Freelancer (500–3.000$).</strong></p><ul><li>Avantaje: cel mai ieftin, start rapid, comunicare directă</li><li>Dezavantaje: poate dispărea, fără echipă (o singură persoană face design, cod, conținut), fără garanții</li><li>Potrivit pentru: landing page-uri simple, MVP-uri, buget minim</li></ul><p><strong>Studio (3.000–15.000$).</strong></p><ul><li>Avantaje: echipă (designer + dezvoltator + manager), procese, portofoliu</li><li>Dezavantaje: mai scump decât freelancerul, uneori abordare „pe bandă rulantă”</li><li>Potrivit pentru: site-uri corporative, magazine online, afaceri cu cerințe clare</li></ul><p><strong>Agenție (10.000$+).</strong></p><ul><li>Avantaje: strategie + marketing + dezvoltare, imersiune profundă în afacere, analiză</li><li>Dezavantaje: scump, procese lungi de aprobare</li><li>Potrivit pentru: proiecte complexe, rebranding, când aveți nevoie de un instrument de marketing, nu doar de un site</li></ul><h2 id=\"portfolio\">Cum să evaluați un portofoliu (fără să fiți înșelați)</h2><p><strong>1. Deschideți site-urile reale.</strong> Nu capturi de ecran — site-uri reale. Funcționează? Se încarcă rapid? Arată bine pe mobil? Dacă un contractor arată capturi de ecran, dar site-urile reale sunt stricate — aceasta este o problemă.</p><p><strong>2. Căutați diversitatea.</strong> Toate site-urile arată la fel? Veți primi același lucru. Contractorii buni își adaptează abordarea la sarcină.</p><p><strong>3. Evaluați rezultatele, nu frumusețea.</strong> Un site frumos nu înseamnă un site eficient. Întrebați: ce rezultate a adus acest site clientului? Dacă contractorul nu știe — se gândește la design, nu la afacere.</p><p><strong>4. Întrebați despre proces.</strong> Cum a fost structurată munca? Cât a durat? Au existat probleme și cum au fost rezolvate?</p><h2 id=\"red-flags\">Semnale de alarmă: când să fugiți</h2><ul><li><strong>„O facem în 3 zile.”</strong> Un site profesionist nu se construiește în 3 zile. Dacă promit asta — va fi un template cu text schimbat.</li><li><strong>Fără contract.</strong> „Să nu ne complicăm cu hârtii, avem încredere unul în altul” — nu. Un contract protejează ambele părți.</li><li><strong>Plata 100% în avans.</strong> Standardul este 50/50 sau pe etape. 100% în avans = risc de a pierde totul.</li><li><strong>Nu pun întrebări.</strong> Dacă un contractor nu întreabă despre audiența, concurenții și obiectivele dumneavoastră — vor face „un site” în loc de un site pentru afacerea dumneavoastră.</li><li><strong>Fără termene fixe.</strong> „Cam o lună, poate” nu este un termen. Trebuie să existe etape cu date concrete.</li><li><strong>Garantează rezultatele.</strong> „Garantat locul 1 în Google” sau „100 de cereri în prima lună” — este o minciună.</li></ul><h2 id=\"contract\">Ce să verificați în contract</h2><ul><li><strong>Termene.</strong> Date concrete de început și sfârșit. Ce se întâmplă în caz de întârziere?</li><li><strong>Domeniul de aplicare.</strong> Lista clară: câte pagini, ce funcții, ce este inclus, ce nu este.</li><li><strong>Cost și plată.</strong> Preț fix sau pe oră? Ce este inclus? Ce este în plus?</li><li><strong>Drepturile de proprietate intelectuală.</strong> Cui îi aparține codul, designul, conținutul după plată? Trebuie să fie al dumneavoastră.</li><li><strong>Suport.</strong> Ce se întâmplă după lansare? Perioada de garanție? Costul modificărilor?</li><li><strong>Recepția lucrărilor.</strong> Cum acceptați lucrarea? Câte runde de revizuire? Ce se consideră „terminat”?</li></ul><h2 id=\"good-signs\">Semnele unui contractor bun</h2><ul><li>Pune multe întrebări înainte de a începe</li><li>Arată site-uri reale, funcționale</li><li>Explică ce este inclus în preț și ce nu</li><li>Indică termene și etape concrete</li><li>Spune „nu” când sarcina nu poate fi realizată în bugetul dumneavoastră</li><li>Se gândește la afacerea dumneavoastră, nu doar la design</li><li>Are recenzii sau recomandări de la clienți reali</li></ul><h2 id=\"next-step\">Pasul următor</h2><p>Alegerea unui contractor nu ține de preț. Ține de încredere, comunicare și înțelegerea obiectivelor dumneavoastră. Un contractor ieftin care construiește ceva greșit este mai scump decât un contractor bun care construiește corect.</p><p>Dacă alegeți un contractor chiar acum — scrieți-ne. Nu vom vinde — vom discuta pur și simplu sarcina dumneavoastră și vom sugera la ce să fiți atenți. Chiar dacă nu ne alegeți pe noi — această consultare vă va economisi bani și nervi.</p>"
         }
       }
     },
