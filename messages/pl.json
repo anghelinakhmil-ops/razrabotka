@@ -46,39 +46,39 @@
     "items": [
       {
         "number": "01",
-        "title": "KONWERSJA, NIE TYLKO PIĘKNO",
-        "subtitle": "Każdy element pracuje na leady",
-        "description": "Średnia konwersja naszych stron — 4–8%. Każdy blok, CTA i tekst jest testowany pod kątem realnych wyników: leady, sprzedaż, rejestracje."
+        "title": "REZULTATY",
+        "subtitle": "Strony nastawione na wyniki biznesowe",
+        "description": "Tworzymy strony nie dla piękna, lecz dla leadów, sprzedaży i zaufania. Każdy element pracuje na konwersję i wyniki komercyjne."
       },
       {
         "number": "02",
-        "title": "NIE SZUKASZ 5 WYKONAWCÓW",
-        "subtitle": "Strategia → design → kod → treść → start",
-        "description": "Jeden brief — i w 2–6 tygodni masz działającą stronę. Robimy wszystko sami: strukturę, teksty, design, programowanie, integracje i uruchomienie."
+        "title": "PEŁNY CYKL",
+        "subtitle": "Od briefu do wsparcia",
+        "description": "Strategia, struktura, teksty, design, rozwój, treści, integracje, uruchomienie i wsparcie — wszystko w jednym miejscu. Nie trzeba szukać osobnych wykonawców."
       },
       {
         "number": "03",
-        "title": "PREMIUM BEZ CENY PREMIUM",
-        "subtitle": "Design poziomu agencji w cenie freelancera",
-        "description": "Minimalizm, dbałość o typografię, animacje przy scrollu, responsive co do piksela. Wizualnie — jak praca agencji za K. Cenowo — znacznie dostępniej."
+        "title": "PREZENTACJA",
+        "subtitle": "Premium design + logika sprzedaży",
+        "description": "Łączymy stylową prezentację wizualną z przemyślaną strukturą i logiką konwersji. Premium, spokojny, nowoczesny — bez zbędnego szumu."
       },
       {
         "number": "04",
-        "title": "WBUDOWANE W TWOJE PROCESY",
-        "subtitle": "CRM, Telegram, email, płatności — od razu",
-        "description": "Formularz wysłany → natychmiast w Telegram i CRM. Analityka GA4 śledząca każde kliknięcie. Płatności, newslettery, formularze — wszystko podłączone i przetestowane."
+        "title": "INTEGRACJE",
+        "subtitle": "Integrujemy stronę z procesami biznesowymi",
+        "description": "CRM, Telegram, email, analityka, płatności — podłączamy wszystko, co potrzebne, aby strona działała jako część systemu, a nie tylko wizytówka."
       },
       {
         "number": "05",
-        "title": "NIE ZNIKAMY PO STARCIE",
-        "subtitle": "14–30 dni wsparcia w pakiecie",
-        "description": "Poprawki, drobne zmiany, konsultacje — bezpłatnie po uruchomieniu. Potem trzy pakiety wsparcia od monitoringu po aktywny rozwój."
+        "title": "WSPARCIE",
+        "subtitle": "Zostajemy po uruchomieniu",
+        "description": "Nie zostawiamy Państwa po oddaniu projektu. Poprawki, drobne zmiany, konsultacje, wsparcie miesięczne — wybierz wygodny format współpracy."
       },
       {
         "number": "06",
-        "title": "POD TWOJE ZADANIE, NIE SZABLON",
-        "subtitle": "Każdy projekt — od zera pod Twoją niszę",
-        "description": "Nie bierzemy szablonu i nie zmieniamy kolorów. Analizujemy Twoją grupę docelową, konkurencję i model biznesowy."
+        "title": "INDYWIDUALNE PODEJŚCIE",
+        "subtitle": "Bez szablonów i kopii",
+        "description": "Nie stosujemy jednej strategii dla wszystkich. Każdy projekt to unikalne rozwiązanie, zbudowane pod Państwa cele, odbiorców i model biznesowy."
       }
     ]
   },

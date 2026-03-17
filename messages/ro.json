@@ -46,39 +46,39 @@
     "items": [
       {
         "number": "01",
-        "title": "CONVERSIE, NU FRUMUSEȚE",
-        "subtitle": "Fiecare element lucrează pentru lead-uri",
-        "description": "Conversia medie a site-urilor noastre — 4–8%. Nu desenăm «imagini frumoase». Fiecare bloc, CTA și text este testat pentru rezultate reale."
+        "title": "REZULTATE",
+        "subtitle": "Site-uri pentru rezultate de afaceri",
+        "description": "Construim site-uri nu pentru frumusețe, ci pentru cereri, vânzări și încredere. Fiecare element lucrează pentru conversie și rezultate comerciale."
       },
       {
         "number": "02",
-        "title": "NU CĂUTAȚI 5 CONTRACTORI",
-        "subtitle": "Strategie → design → cod → conținut → lansare",
-        "description": "Un singur brief — și în 2–6 săptămâni aveți un site funcțional. Facem totul: structură, texte, design, dezvoltare, integrări și lansare."
+        "title": "CICLU COMPLET",
+        "subtitle": "De la brief la suport",
+        "description": "Strategie, structură, texte, design, dezvoltare, conținut, integrări, lansare și suport — totul într-un singur loc. Nu trebuie să căutați contractori separați."
       },
       {
         "number": "03",
-        "title": "PREMIUM FĂRĂ PREȚ PREMIUM",
-        "subtitle": "Design de nivel agenție la preț de freelancer",
-        "description": "Minimalism, atenție la tipografie, animații la scroll, responsive pixel-perfect. Vizual — ca o lucrare de agenție de K. Ca preț — mult mai accesibil."
+        "title": "PREZENTARE",
+        "subtitle": "Design premium + logica vânzărilor",
+        "description": "Combinăm prezentarea vizuală elegantă cu o structură bine gândită și logica conversiei. Premium, calm, modern — fără zgomot inutil."
       },
       {
         "number": "04",
-        "title": "INTEGRAT ÎN PROCESELE DVASTRĂ",
-        "subtitle": "CRM, Telegram, email, plăți — din cutie",
-        "description": "Formular trimis → instant în Telegram și CRM. Analytics GA4 urmărind fiecare click. Plăți, newslettere, formulare — totul conectat și testat."
+        "title": "INTEGRĂRI",
+        "subtitle": "Integrăm site-ul în procesele de afaceri",
+        "description": "CRM, Telegram, email, analiză, plăți — conectăm tot ce este necesar pentru ca site-ul să funcționeze ca parte a sistemului dvs., nu doar o carte de vizită."
       },
       {
         "number": "05",
-        "title": "NU DISPĂREM DUPĂ LANSARE",
-        "subtitle": "14–30 zile suport incluse",
-        "description": "Remedieri, mici editări, consultanțe — gratuit după lansare. Apoi trei pachete de suport de la monitorizare la dezvoltare activă."
+        "title": "SUPORT",
+        "subtitle": "Rămânem după lansare",
+        "description": "Nu vă abandonăm după livrare. Remediere erori, corecții minore, consultații, suport lunar — alegeți formatul de suport convenabil."
       },
       {
         "number": "06",
-        "title": "PENTRU SARCINA DVS, NU ȘABLON",
-        "subtitle": "Fiecare proiect — de la zero pentru nișa dvs",
-        "description": "Nu luăm un șablon și nu schimbăm culorile. Analizăm audiența, concurenții și modelul de afaceri."
+        "title": "ABORDARE INDIVIDUALĂ",
+        "subtitle": "Fără șabloane și copii",
+        "description": "Nu folosim o singură strategie pentru toți. Fiecare proiect este o soluție unică, construită pentru obiectivele, audiența și modelul dvs. de afaceri."
       }
     ]
   },

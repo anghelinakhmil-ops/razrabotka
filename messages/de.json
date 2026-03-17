@@ -46,39 +46,39 @@
     "items": [
       {
         "number": "01",
-        "title": "KONVERSION, NICHT NUR SCHÖNHEIT",
-        "subtitle": "Jedes Element arbeitet für Leads",
-        "description": "Durchschnittliche Konversion unserer Websites — 4–8%. Jeder Block, CTA und Text wird auf echte Ergebnisse getestet: Leads, Verkäufe, Registrierungen."
+        "title": "ERGEBNISSE",
+        "subtitle": "Websites für geschäftliche Ergebnisse",
+        "description": "Wir erstellen Websites nicht für die Schönheit, sondern für Leads, Verkäufe und Vertrauen. Jedes Element arbeitet auf Conversion und kommerzielle Ergebnisse hin."
       },
       {
         "number": "02",
-        "title": "SIE SUCHEN NICHT 5 AUFTRAGNEHMER",
-        "subtitle": "Strategie → Design → Code → Inhalt → Launch",
-        "description": "Ein Brief — und in 2–6 Wochen haben Sie eine funktionierende Website. Wir machen alles: Struktur, Texte, Design, Entwicklung, Integrationen und Launch."
+        "title": "FULL CYCLE",
+        "subtitle": "Vom Briefing bis zum Support",
+        "description": "Strategie, Struktur, Texte, Design, Entwicklung, Content, Integrationen, Launch und Support — alles aus einer Hand. Keine separaten Dienstleister nötig."
       },
       {
         "number": "03",
-        "title": "PREMIUM OHNE PREMIUM-PREIS",
-        "subtitle": "Agentur-Design zum Freelancer-Preis",
-        "description": "Minimalismus, Typografie-Fokus, Scroll-Animationen, Pixel-perfektes Responsive. Visuell — wie eine K Agentur. Preislich — viel zugänglicher."
+        "title": "PRÄSENTATION",
+        "subtitle": "Premium-Design + Verkaufslogik",
+        "description": "Wir verbinden stilvolle visuelle Präsentation mit einer durchdachten Struktur und Conversion-Logik. Premium, ruhig, modern — ohne unnötiges Rauschen."
       },
       {
         "number": "04",
-        "title": "IN IHRE PROZESSE INTEGRIERT",
-        "subtitle": "CRM, Telegram, E-Mail, Zahlungen — sofort einsatzbereit",
-        "description": "Formular eingereicht → sofort in Telegram und CRM. GA4-Analytics mit Tracking jedes Klicks. Zahlungen, Newsletter, Formulare — alles verbunden und getestet."
+        "title": "INTEGRATIONEN",
+        "subtitle": "Wir integrieren Ihre Website in Geschäftsprozesse",
+        "description": "CRM, Telegram, E-Mail, Analytics, Zahlungen — wir verbinden alles Nötige, damit Ihre Website als Teil Ihres Systems funktioniert, nicht nur als Visitenkarte."
       },
       {
         "number": "05",
-        "title": "WIR VERSCHWINDEN NICHT NACH DEM LAUNCH",
-        "subtitle": "14–30 Tage Support inklusive",
-        "description": "Bugfixes, kleine Änderungen, Beratung — kostenlos nach dem Launch. Dann drei Support-Pakete von Monitoring bis aktiver Entwicklung."
+        "title": "SUPPORT",
+        "subtitle": "Wir bleiben nach dem Launch",
+        "description": "Wir lassen Sie nach der Übergabe nicht allein. Bugfixes, kleine Anpassungen, Beratung, monatlicher Support — wählen Sie das passende Support-Format."
       },
       {
         "number": "06",
-        "title": "FÜR IHRE AUFGABE, KEIN TEMPLATE",
-        "subtitle": "Jedes Projekt — von Grund auf für Ihre Nische",
-        "description": "Wir nehmen kein Template und ändern die Farben. Wir analysieren Ihre Zielgruppe, Wettbewerber und Geschäftsmodell."
+        "title": "INDIVIDUELLER ANSATZ",
+        "subtitle": "Ohne Vorlagen und Kopien",
+        "description": "Wir verwenden nicht eine Strategie für alle. Jedes Projekt ist eine einzigartige Lösung, die auf Ihre Ziele, Ihr Publikum und Ihr Geschäftsmodell zugeschnitten ist."
       }
     ]
   },
