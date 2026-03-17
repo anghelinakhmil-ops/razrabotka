@@ -1065,7 +1065,8 @@
           }
         ],
         "limitsLabel": "Limites"
-      }
+      },
+      "priceFrom": "à partir de"
     },
     "brief": {
       "metaTitle": "Brief — Soumettre une demande | NAKO Agency",

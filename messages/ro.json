@@ -1065,7 +1065,8 @@
           }
         ],
         "limitsLabel": "Limite"
-      }
+      },
+      "priceFrom": "de la"
     },
     "brief": {
       "metaTitle": "Brief — Trimite solicitarea | NAKO Agency",

@@ -1065,7 +1065,8 @@
           }
         ],
         "limitsLabel": "Limiti"
-      }
+      },
+      "priceFrom": "da"
     },
     "brief": {
       "metaTitle": "Brief — Invia Richiesta | NAKO Agency",

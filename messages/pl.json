@@ -1065,7 +1065,8 @@
           }
         ],
         "limitsLabel": "Limity"
-      }
+      },
+      "priceFrom": "od"
     },
     "brief": {
       "metaTitle": "Brief — Złóż zapytanie | NAKO Agency",

@@ -1065,7 +1065,8 @@
           }
         ],
         "limitsLabel": "Limits"
-      }
+      },
+      "priceFrom": "ab"
     },
     "brief": {
       "metaTitle": "Briefing — Anfrage senden | NAKO Agency",

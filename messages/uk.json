@@ -1065,7 +1065,8 @@
           }
         ],
         "limitsLabel": "Ліміти"
-      }
+      },
+      "priceFrom": "від"
     },
     "brief": {
       "metaTitle": "Бриф — Залишити заявку | NAKO Agency",

@@ -124,7 +124,7 @@ export function ServicesContent() {
                       audience={tier.audience}
                       features={tier.features}
                       timeline={tier.timeline}
-                      price={getFormattedPrice(regionCode, `${category.id}-${tier.tier}` as PriceId)}
+                      price={`${t("priceFrom")} ${getFormattedPrice(regionCode, `${category.id}-${tier.tier}` as PriceId)}`}
                       timelineLabel={t("timelineLabel")}
                       priceLabel={t("priceLabel")}
                       orderButton={t("orderButton")}
@@ -306,7 +306,7 @@ function SupportSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-start">
             {packages.map((pkg) => {
               const isStandard = pkg.tier === "standard";
-              const price = getFormattedPrice(regionCode, `support-${pkg.tier}` as PriceId);
+              const price = `${t("priceFrom")} ${getFormattedPrice(regionCode, `support-${pkg.tier}` as PriceId)}`;
 
               return (
                 <div

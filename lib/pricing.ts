@@ -102,26 +102,23 @@ function formatNumber(value: number, separator: string): string {
 }
 
 /**
- * Получить отформатированную цену для региона
+ * Получить отформатированную цену для региона (только нижняя граница)
  *
  * @param regionCode — код региона из гео-детекции
  * @param priceId — идентификатор ценовой позиции
- * @returns отформатированная строка, напр. "€550–1,000" или "21 050–37 900 kr"
+ * @returns отформатированная строка, напр. "€550" или "21 050 kr"
  */
 export function getFormattedPrice(regionCode: RegionCode, priceId: PriceId): string {
-  const [baseMin, baseMax] = BASE_PRICES[priceId];
+  const [baseMin] = BASE_PRICES[priceId];
   const multiplier = PRICE_MULTIPLIERS[regionCode] ?? PRICE_MULTIPLIERS.DEFAULT;
   const currencyRate = CURRENCY_RATES[regionCode] ?? 1;
   const format = CURRENCY_FORMAT[regionCode] ?? CURRENCY_FORMAT.DEFAULT;
 
   const min = roundPrice(baseMin * multiplier * currencyRate);
-  const max = roundPrice(baseMax * multiplier * currencyRate);
-
   const minStr = formatNumber(min, format.separator);
-  const maxStr = formatNumber(max, format.separator);
 
   if (format.position === "before") {
-    return `${format.symbol}${minStr}–${maxStr}`;
+    return `${format.symbol}${minStr}`;
   }
-  return `${minStr}–${maxStr} ${format.symbol}`;
+  return `${minStr} ${format.symbol}`;
 }
