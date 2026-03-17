@@ -2006,6 +2006,15 @@
           "description": "Корпоративний сайт-візитка для виробництва керамограніту. Мінімалістичний дизайн, відео-фони, GSAP-анімації.",
           "result": "95+ Lighthouse",
           "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
+        },
+        {
+          "slug": "mindjoy",
+          "title": "MindJoy — Освітня платформа",
+          "category": "expert",
+          "categoryLabel": "Додаток",
+          "description": "Освітня платформа для дітей з гейміфікацією, ІІ-персоналізацією та батьківським контролем.",
+          "result": "10 000+ сімей",
+          "imageSrc": "/images/cases/mindjoy-preview.jpg"
         }
       ]
     },
@@ -2075,6 +2084,52 @@
           "liveUrl": "https://keramolab.ru",
           "previewImage": "/images/cases/ceramo-lab-preview.jpg",
           "fullpageImage": "/images/cases/ceramo-lab-fullpage.jpg"
+        },
+        "mindjoy": {
+          "title": "MindJoy — Освітня платформа",
+          "categoryLabel": "Додаток",
+          "description": "Освітня платформа для дітей з гейміфікацією, ІІ-персоналізацією та батьківським контролем.",
+          "client": "MindJoy",
+          "year": "2025",
+          "duration": "6 тижнів",
+          "task": "Створити лендінг для освітньої платформи MindJoy, яка перетворює навчання дітей 4–14 років на захопливі пригоди. Сайт має переконати батьків у безпеці та ефективності підходу, показати ключові функції та конвертувати в установку додатку.",
+          "solution": [
+            "Розробили темний преміальний дизайн із яскравими акцентами для привернення уваги",
+            "Створили блок із 6 ключових переваг з іконками та описами",
+            "Реалізували 3-кроковий процес «Як це працює» з наочною візуалізацією",
+            "Додали секцію відгуків батьків для соціального доказу",
+            "Інтегрували статистику: 10 000+ сімей, 500 000+ місій, 50M+ XP",
+            "Оптимізували мультимовність: російська та англійська мови"
+          ],
+          "results": [
+            {
+              "value": "10K+",
+              "label": "Активних сімей"
+            },
+            {
+              "value": "500K+",
+              "label": "Виконаних місій"
+            },
+            {
+              "value": "45+",
+              "label": "Країн"
+            },
+            {
+              "value": "95+",
+              "label": "Lighthouse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "FastAPI",
+            "Flutter",
+            "Vercel"
+          ],
+          "liveUrl": "https://mindjoy.world/ru",
+          "previewImage": "/images/cases/mindjoy-preview.jpg",
+          "fullpageImage": "/images/cases/mindjoy-fullpage.jpg"
         }
       }
     }

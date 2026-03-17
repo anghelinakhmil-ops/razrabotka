@@ -2006,6 +2006,15 @@
           "description": "Strona korporacyjna dla producenta gresu porcelanowego. Minimalistyczny design, tła wideo, animacje GSAP.",
           "result": "95+ Lighthouse",
           "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
+        },
+        {
+          "slug": "mindjoy",
+          "title": "MindJoy — Platforma edukacyjna",
+          "category": "expert",
+          "categoryLabel": "Aplikacja",
+          "description": "Platforma edukacyjna dla dzieci z grywalizacją, personalizacją AI i kontrolą rodzicielską.",
+          "result": "10 000+ rodzin",
+          "imageSrc": "/images/cases/mindjoy-preview.jpg"
         }
       ]
     },
@@ -2075,6 +2084,52 @@
           "liveUrl": "https://keramolab.ru",
           "previewImage": "/images/cases/ceramo-lab-preview.jpg",
           "fullpageImage": "/images/cases/ceramo-lab-fullpage.jpg"
+        },
+        "mindjoy": {
+          "title": "MindJoy — Platforma edukacyjna",
+          "categoryLabel": "Aplikacja",
+          "description": "Platforma edukacyjna dla dzieci z grywalizacją, personalizacją AI i kontrolą rodzicielską.",
+          "client": "MindJoy",
+          "year": "2025",
+          "duration": "6 tygodni",
+          "task": "Stworzenie strony docelowej dla platformy edukacyjnej MindJoy, która zamienia naukę dzieci w wieku 4–14 lat w ekscytujące przygody. Strona ma przekonać rodziców o bezpieczeństwie i skuteczności podejścia, zaprezentować kluczowe funkcje i zachęcić do instalacji aplikacji.",
+          "solution": [
+            "Opracowanie ciemnego, premiumowego designu z jasnymi akcentami",
+            "Stworzenie bloku 6 kluczowych zalet z ikonami i opisami",
+            "Implementacja 3-etapowego procesu «Jak to działa» z przejrzystą wizualizacją",
+            "Dodanie sekcji opinii rodziców jako dowodu społecznego",
+            "Integracja statystyk: 10 000+ rodzin, 500 000+ misji, 50M+ XP",
+            "Optymalizacja wielojęzyczności: rosyjski i angielski"
+          ],
+          "results": [
+            {
+              "value": "10K+",
+              "label": "Aktywnych rodzin"
+            },
+            {
+              "value": "500K+",
+              "label": "Ukończonych misji"
+            },
+            {
+              "value": "45+",
+              "label": "Krajów"
+            },
+            {
+              "value": "95+",
+              "label": "Lighthouse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "FastAPI",
+            "Flutter",
+            "Vercel"
+          ],
+          "liveUrl": "https://mindjoy.world/ru",
+          "previewImage": "/images/cases/mindjoy-preview.jpg",
+          "fullpageImage": "/images/cases/mindjoy-fullpage.jpg"
         }
       }
     }

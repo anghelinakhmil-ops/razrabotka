@@ -2006,6 +2006,15 @@
           "description": "Site corporatif pour la production de grès cérame. Design minimaliste, arrière-plans vidéo, animations GSAP.",
           "result": "95+ Lighthouse",
           "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
+        },
+        {
+          "slug": "mindjoy",
+          "title": "MindJoy — Plateforme éducative",
+          "category": "expert",
+          "categoryLabel": "Application",
+          "description": "Plateforme éducative pour enfants avec gamification, personnalisation IA et contrôle parental.",
+          "result": "10 000+ familles",
+          "imageSrc": "/images/cases/mindjoy-preview.jpg"
         }
       ]
     },
@@ -2075,6 +2084,52 @@
           "liveUrl": "https://keramolab.ru",
           "previewImage": "/images/cases/ceramo-lab-preview.jpg",
           "fullpageImage": "/images/cases/ceramo-lab-fullpage.jpg"
+        },
+        "mindjoy": {
+          "title": "MindJoy — Plateforme éducative",
+          "categoryLabel": "Application",
+          "description": "Plateforme éducative pour enfants avec gamification, personnalisation IA et contrôle parental.",
+          "client": "MindJoy",
+          "year": "2025",
+          "duration": "6 semaines",
+          "task": "Créer une landing page pour la plateforme éducative MindJoy, qui transforme l'apprentissage des enfants de 4 à 14 ans en aventures passionnantes. Le site doit convaincre les parents de la sécurité et de l'efficacité de l'approche, présenter les fonctionnalités clés et convertir les visiteurs en installations d'application.",
+          "solution": [
+            "Développement d'un design premium sombre avec des accents lumineux",
+            "Création d'un bloc de 6 avantages clés avec icônes et descriptions",
+            "Implémentation d'un processus en 3 étapes «Comment ça marche» avec visualisation claire",
+            "Ajout d'une section témoignages de parents comme preuve sociale",
+            "Intégration de statistiques : 10 000+ familles, 500 000+ missions, 50M+ XP",
+            "Optimisation du support multilingue : russe et anglais"
+          ],
+          "results": [
+            {
+              "value": "10K+",
+              "label": "Familles actives"
+            },
+            {
+              "value": "500K+",
+              "label": "Missions terminées"
+            },
+            {
+              "value": "45+",
+              "label": "Pays"
+            },
+            {
+              "value": "95+",
+              "label": "Lighthouse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "FastAPI",
+            "Flutter",
+            "Vercel"
+          ],
+          "liveUrl": "https://mindjoy.world/ru",
+          "previewImage": "/images/cases/mindjoy-preview.jpg",
+          "fullpageImage": "/images/cases/mindjoy-fullpage.jpg"
         }
       }
     }

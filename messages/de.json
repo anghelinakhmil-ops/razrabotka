@@ -2006,6 +2006,15 @@
           "description": "Unternehmenswebsite für Feinsteinzeugproduktion. Minimalistisches Design, Video-Hintergründe, GSAP-Animationen.",
           "result": "95+ Lighthouse",
           "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
+        },
+        {
+          "slug": "mindjoy",
+          "title": "MindJoy — Bildungsplattform",
+          "category": "expert",
+          "categoryLabel": "Anwendung",
+          "description": "Bildungsplattform für Kinder mit Gamification, KI-Personalisierung und Elternkontrolle.",
+          "result": "10.000+ Familien",
+          "imageSrc": "/images/cases/mindjoy-preview.jpg"
         }
       ]
     },
@@ -2075,6 +2084,52 @@
           "liveUrl": "https://keramolab.ru",
           "previewImage": "/images/cases/ceramo-lab-preview.jpg",
           "fullpageImage": "/images/cases/ceramo-lab-fullpage.jpg"
+        },
+        "mindjoy": {
+          "title": "MindJoy — Bildungsplattform",
+          "categoryLabel": "Anwendung",
+          "description": "Bildungsplattform für Kinder mit Gamification, KI-Personalisierung und Elternkontrolle.",
+          "client": "MindJoy",
+          "year": "2025",
+          "duration": "6 Wochen",
+          "task": "Erstellung einer Landingpage für die Bildungsplattform MindJoy, die das Lernen für Kinder von 4–14 Jahren in spannende Abenteuer verwandelt. Die Website soll Eltern von der Sicherheit und Wirksamkeit des Ansatzes überzeugen, Schlüsselfunktionen präsentieren und zur App-Installation konvertieren.",
+          "solution": [
+            "Entwicklung eines dunklen Premium-Designs mit leuchtenden Akzenten",
+            "Erstellung eines Blocks mit 6 Hauptvorteilen mit Icons und Beschreibungen",
+            "Implementierung eines 3-Schritte-Prozesses «So funktioniert es» mit klarer Visualisierung",
+            "Hinzufügung eines Eltern-Testimonial-Bereichs als sozialer Beweis",
+            "Integration von Statistiken: 10.000+ Familien, 500.000+ Missionen, 50M+ XP",
+            "Optimierung der Mehrsprachigkeit: Russisch und Englisch"
+          ],
+          "results": [
+            {
+              "value": "10K+",
+              "label": "Aktive Familien"
+            },
+            {
+              "value": "500K+",
+              "label": "Abgeschlossene Missionen"
+            },
+            {
+              "value": "45+",
+              "label": "Länder"
+            },
+            {
+              "value": "95+",
+              "label": "Lighthouse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "FastAPI",
+            "Flutter",
+            "Vercel"
+          ],
+          "liveUrl": "https://mindjoy.world/ru",
+          "previewImage": "/images/cases/mindjoy-preview.jpg",
+          "fullpageImage": "/images/cases/mindjoy-fullpage.jpg"
         }
       }
     }

@@ -2006,6 +2006,15 @@
           "description": "Корпоративный сайт-визитка для производства керамогранита. Минималистичный дизайн, видео-фоны, GSAP-анимации.",
           "result": "95+ Lighthouse",
           "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
+        },
+        {
+          "slug": "mindjoy",
+          "title": "MindJoy — Образовательная платформа",
+          "category": "expert",
+          "categoryLabel": "Приложение",
+          "description": "Образовательная платформа для детей с геймификацией, ИИ-персонализацией и родительским контролем.",
+          "result": "10 000+ семей",
+          "imageSrc": "/images/cases/mindjoy-preview.jpg"
         }
       ]
     },
@@ -2075,6 +2084,52 @@
           "liveUrl": "https://keramolab.ru",
           "previewImage": "/images/cases/ceramo-lab-preview.jpg",
           "fullpageImage": "/images/cases/ceramo-lab-fullpage.jpg"
+        },
+        "mindjoy": {
+          "title": "MindJoy — Образовательная платформа",
+          "categoryLabel": "Приложение",
+          "description": "Образовательная платформа для детей с геймификацией, ИИ-персонализацией и родительским контролем.",
+          "client": "MindJoy",
+          "year": "2025",
+          "duration": "6 недель",
+          "task": "Создать лендинг для образовательной платформы MindJoy, которая превращает обучение детей 4–14 лет в увлекательные приключения. Сайт должен убедить родителей в безопасности и эффективности подхода, показать ключевые функции и конвертировать в установку приложения.",
+          "solution": [
+            "Разработали тёмный премиальный дизайн с яркими акцентами для привлечения внимания",
+            "Создали блок из 6 ключевых преимуществ с иконками и описаниями",
+            "Реализовали 3-шаговый процесс «Как это работает» с наглядной визуализацией",
+            "Добавили секцию отзывов родителей для социального доказательства",
+            "Интегрировали статистику: 10 000+ семей, 500 000+ миссий, 50M+ XP",
+            "Оптимизировали мультиязычность: русский и английский языки"
+          ],
+          "results": [
+            {
+              "value": "10K+",
+              "label": "Активных семей"
+            },
+            {
+              "value": "500K+",
+              "label": "Выполненных миссий"
+            },
+            {
+              "value": "45+",
+              "label": "Стран"
+            },
+            {
+              "value": "95+",
+              "label": "Lighthouse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "FastAPI",
+            "Flutter",
+            "Vercel"
+          ],
+          "liveUrl": "https://mindjoy.world/ru",
+          "previewImage": "/images/cases/mindjoy-preview.jpg",
+          "fullpageImage": "/images/cases/mindjoy-fullpage.jpg"
         }
       }
     }

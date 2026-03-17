@@ -36,6 +36,7 @@ interface CaseData {
 export function generateStaticParams() {
   const slugs = [
     "ceramo-lab",
+    "mindjoy",
   ];
   return slugs.map((slug) => ({ slug }));
 }

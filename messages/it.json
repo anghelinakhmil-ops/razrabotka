@@ -2006,6 +2006,15 @@
           "description": "Sito aziendale per la produzione di gres porcellanato. Design minimalista, sfondi video, animazioni GSAP.",
           "result": "95+ Lighthouse",
           "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
+        },
+        {
+          "slug": "mindjoy",
+          "title": "MindJoy — Piattaforma educativa",
+          "category": "expert",
+          "categoryLabel": "Applicazione",
+          "description": "Piattaforma educativa per bambini con gamification, personalizzazione AI e controllo genitoriale.",
+          "result": "10.000+ famiglie",
+          "imageSrc": "/images/cases/mindjoy-preview.jpg"
         }
       ]
     },
@@ -2075,6 +2084,52 @@
           "liveUrl": "https://keramolab.ru",
           "previewImage": "/images/cases/ceramo-lab-preview.jpg",
           "fullpageImage": "/images/cases/ceramo-lab-fullpage.jpg"
+        },
+        "mindjoy": {
+          "title": "MindJoy — Piattaforma educativa",
+          "categoryLabel": "Applicazione",
+          "description": "Piattaforma educativa per bambini con gamification, personalizzazione AI e controllo genitoriale.",
+          "client": "MindJoy",
+          "year": "2025",
+          "duration": "6 settimane",
+          "task": "Creare una landing page per la piattaforma educativa MindJoy, che trasforma l'apprendimento dei bambini dai 4 ai 14 anni in avventure emozionanti. Il sito deve convincere i genitori della sicurezza e dell'efficacia dell'approccio, presentare le funzionalità chiave e convertire i visitatori in installazioni dell'app.",
+          "solution": [
+            "Sviluppo di un design premium scuro con accenti luminosi",
+            "Creazione di un blocco di 6 vantaggi chiave con icone e descrizioni",
+            "Implementazione di un processo in 3 fasi «Come funziona» con visualizzazione chiara",
+            "Aggiunta di una sezione testimonianze dei genitori come prova sociale",
+            "Integrazione di statistiche: 10.000+ famiglie, 500.000+ missioni, 50M+ XP",
+            "Ottimizzazione del supporto multilingue: russo e inglese"
+          ],
+          "results": [
+            {
+              "value": "10K+",
+              "label": "Famiglie attive"
+            },
+            {
+              "value": "500K+",
+              "label": "Missioni completate"
+            },
+            {
+              "value": "45+",
+              "label": "Paesi"
+            },
+            {
+              "value": "95+",
+              "label": "Lighthouse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "FastAPI",
+            "Flutter",
+            "Vercel"
+          ],
+          "liveUrl": "https://mindjoy.world/ru",
+          "previewImage": "/images/cases/mindjoy-preview.jpg",
+          "fullpageImage": "/images/cases/mindjoy-fullpage.jpg"
         }
       }
     }

@@ -2006,6 +2006,15 @@
           "description": "Site corporativ pentru producția de gresie porțelanată. Design minimalist, fundaluri video, animații GSAP.",
           "result": "95+ Lighthouse",
           "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
+        },
+        {
+          "slug": "mindjoy",
+          "title": "MindJoy — Platformă educațională",
+          "category": "expert",
+          "categoryLabel": "Aplicație",
+          "description": "Platformă educațională pentru copii cu gamificare, personalizare AI și control parental.",
+          "result": "10.000+ familii",
+          "imageSrc": "/images/cases/mindjoy-preview.jpg"
         }
       ]
     },
@@ -2075,6 +2084,52 @@
           "liveUrl": "https://keramolab.ru",
           "previewImage": "/images/cases/ceramo-lab-preview.jpg",
           "fullpageImage": "/images/cases/ceramo-lab-fullpage.jpg"
+        },
+        "mindjoy": {
+          "title": "MindJoy — Platformă educațională",
+          "categoryLabel": "Aplicație",
+          "description": "Platformă educațională pentru copii cu gamificare, personalizare AI și control parental.",
+          "client": "MindJoy",
+          "year": "2025",
+          "duration": "6 săptămâni",
+          "task": "Crearea unui landing page pentru platforma educațională MindJoy, care transformă învățarea copiilor de 4–14 ani în aventuri captivante. Site-ul trebuie să convingă părinții de siguranța și eficacitatea abordării, să prezinte funcțiile cheie și să convertească vizitatorii în instalări de aplicație.",
+          "solution": [
+            "Am dezvoltat un design premium întunecat cu accente luminoase pentru a capta atenția",
+            "Am creat un bloc de 6 avantaje cheie cu pictograme și descrieri",
+            "Am implementat un proces în 3 pași «Cum funcționează» cu vizualizare clară",
+            "Am adăugat o secțiune de testimoniale ale părinților pentru dovadă socială",
+            "Am integrat statistici: 10.000+ familii, 500.000+ misiuni, 50M+ XP",
+            "Am optimizat suportul multilingv: rusă și engleză"
+          ],
+          "results": [
+            {
+              "value": "10K+",
+              "label": "Familii active"
+            },
+            {
+              "value": "500K+",
+              "label": "Misiuni finalizate"
+            },
+            {
+              "value": "45+",
+              "label": "Țări"
+            },
+            {
+              "value": "95+",
+              "label": "Lighthouse"
+            }
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "FastAPI",
+            "Flutter",
+            "Vercel"
+          ],
+          "liveUrl": "https://mindjoy.world/ru",
+          "previewImage": "/images/cases/mindjoy-preview.jpg",
+          "fullpageImage": "/images/cases/mindjoy-fullpage.jpg"
         }
       }
     }
