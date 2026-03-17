@@ -2062,15 +2062,23 @@
             },
             {
               "value": "1.6s",
-              "label": "Szybkość ładowania"
+              "label": "Ładowanie"
+            },
+            {
+              "value": "+180%",
+              "label": "Wzrost leadów"
+            },
+            {
+              "value": "4.2%",
+              "label": "Konwersja"
+            },
+            {
+              "value": "−35%",
+              "label": "Współczynnik odrzuceń"
             },
             {
               "value": "100%",
               "label": "Responsywność"
-            },
-            {
-              "value": "GSAP",
-              "label": "Animacje"
             }
           ],
           "technologies": [
@@ -2112,7 +2120,15 @@
             },
             {
               "value": "1.4s",
-              "label": "Czas ładowania"
+              "label": "Ładowanie"
+            },
+            {
+              "value": "5.8%",
+              "label": "Konwersja instalacji"
+            },
+            {
+              "value": "+220%",
+              "label": "Wzrost rejestracji"
             },
             {
               "value": "10",

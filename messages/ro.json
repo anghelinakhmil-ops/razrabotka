@@ -2062,15 +2062,23 @@
             },
             {
               "value": "1.6s",
-              "label": "Viteză de încărcare"
+              "label": "Încărcare"
+            },
+            {
+              "value": "+180%",
+              "label": "Creștere lead-uri"
+            },
+            {
+              "value": "4.2%",
+              "label": "Rată de conversie"
+            },
+            {
+              "value": "−35%",
+              "label": "Rată de respingere"
             },
             {
               "value": "100%",
-              "label": "Responsive"
-            },
-            {
-              "value": "GSAP",
-              "label": "Animații"
+              "label": "Responsiv"
             }
           ],
           "technologies": [
@@ -2112,7 +2120,15 @@
             },
             {
               "value": "1.4s",
-              "label": "Viteză de încărcare"
+              "label": "Încărcare"
+            },
+            {
+              "value": "5.8%",
+              "label": "Conversie instalare"
+            },
+            {
+              "value": "+220%",
+              "label": "Creștere înregistrări"
             },
             {
               "value": "10",

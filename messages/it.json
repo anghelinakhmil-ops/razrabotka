@@ -2062,15 +2062,23 @@
             },
             {
               "value": "1.6s",
-              "label": "Velocità di caricamento"
+              "label": "Caricamento"
+            },
+            {
+              "value": "+180%",
+              "label": "Crescita lead"
+            },
+            {
+              "value": "4.2%",
+              "label": "Tasso di conversione"
+            },
+            {
+              "value": "−35%",
+              "label": "Frequenza di rimbalzo"
             },
             {
               "value": "100%",
-              "label": "Responsive"
-            },
-            {
-              "value": "GSAP",
-              "label": "Animazioni"
+              "label": "Responsivo"
             }
           ],
           "technologies": [
@@ -2112,7 +2120,15 @@
             },
             {
               "value": "1.4s",
-              "label": "Velocità di caricamento"
+              "label": "Caricamento"
+            },
+            {
+              "value": "5.8%",
+              "label": "Conversione installazione"
+            },
+            {
+              "value": "+220%",
+              "label": "Crescita registrazioni"
             },
             {
               "value": "10",

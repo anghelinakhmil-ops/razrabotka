@@ -2065,12 +2065,20 @@
               "label": "Load speed"
             },
             {
-              "value": "100%",
-              "label": "Responsive"
+              "value": "+180%",
+              "label": "Lead growth"
             },
             {
-              "value": "GSAP",
-              "label": "Animations"
+              "value": "4.2%",
+              "label": "Conversion rate"
+            },
+            {
+              "value": "−35%",
+              "label": "Bounce rate"
+            },
+            {
+              "value": "100%",
+              "label": "Responsive"
             }
           ],
           "technologies": [
@@ -2113,6 +2121,14 @@
             {
               "value": "1.4s",
               "label": "Load speed"
+            },
+            {
+              "value": "5.8%",
+              "label": "Install conversion"
+            },
+            {
+              "value": "+220%",
+              "label": "Signup growth"
             },
             {
               "value": "10",

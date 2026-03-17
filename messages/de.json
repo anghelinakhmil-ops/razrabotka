@@ -2062,15 +2062,23 @@
             },
             {
               "value": "1.6s",
-              "label": "Ladegeschwindigkeit"
+              "label": "Ladezeit"
+            },
+            {
+              "value": "+180%",
+              "label": "Lead-Wachstum"
+            },
+            {
+              "value": "4.2%",
+              "label": "Konversionsrate"
+            },
+            {
+              "value": "−35%",
+              "label": "Absprungrate"
             },
             {
               "value": "100%",
               "label": "Responsiv"
-            },
-            {
-              "value": "GSAP",
-              "label": "Animationen"
             }
           ],
           "technologies": [
@@ -2113,6 +2121,14 @@
             {
               "value": "1.4s",
               "label": "Ladezeit"
+            },
+            {
+              "value": "5.8%",
+              "label": "Install-Konversion"
+            },
+            {
+              "value": "+220%",
+              "label": "Registrierungswachstum"
             },
             {
               "value": "10",
