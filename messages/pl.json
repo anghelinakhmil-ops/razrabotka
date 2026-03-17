@@ -1151,6 +1151,84 @@
             "pro": "3–6 tyg"
           }
         ]
+      },
+      "calculator": {
+        "caption": "Kalkulator",
+        "title": "OBLICZ KOSZT",
+        "description": "Odpowiedz na 6 pytań i otrzymaj orientacyjny koszt swojego projektu.",
+        "back": "Wstecz",
+        "next": "Dalej",
+        "calculate": "Oblicz",
+        "steps": {
+          "siteType": {
+            "title": "Jaki typ strony potrzebujesz?",
+            "options": {
+              "experts": "Strona dla eksperta",
+              "business": "Strona dla firmy",
+              "landing": "Landing / strona promocyjna",
+              "ecommerce": "Sklep internetowy",
+              "courses": "Strona dla kursów / szkoły online",
+              "events": "Strona dla wydarzeń"
+            },
+            "descriptions": {
+              "experts": "Marka osobista, konsultacje, usługi eksperckie",
+              "business": "Strona firmowa, wiele usług lub kierunków",
+              "landing": "Jedna strona pod konkretną ofertę lub akcję",
+              "ecommerce": "Katalog produktów, koszyk, płatności online",
+              "courses": "Kursy online, platforma edukacyjna",
+              "events": "Konferencje, webinary, wydarzenia"
+            }
+          },
+          "pages": {
+            "title": "Ile stron jest planowanych?",
+            "options": {
+              "1": "1 strona",
+              "5-10": "5–10 stron",
+              "10-20": "10–20 stron",
+              "20+": "Ponad 20 stron"
+            }
+          },
+          "design": {
+            "title": "Jaki typ projektu?",
+            "options": {
+              "template": "Na bazie szablonu",
+              "custom": "Indywidualny projekt"
+            }
+          },
+          "features": {
+            "title": "Jakie funkcje potrzebujesz?",
+            "hint": "Wybierz wszystko, czego potrzebujesz. Możesz pominąć ten krok.",
+            "options": {
+              "forms": "Formularze kontaktowe",
+              "crm": "Integracja z CRM",
+              "payments": "Płatności online",
+              "multilingual": "Wielojęzyczność",
+              "blog": "Blog / aktualności",
+              "account": "Panel klienta"
+            }
+          },
+          "content": {
+            "title": "Treść na stronę",
+            "options": {
+              "own": "Mam własne treści",
+              "need": "Potrzebuję pomocy z treścią"
+            }
+          },
+          "seo": {
+            "title": "Potrzebujesz optymalizacji SEO?",
+            "options": {
+              "no": "Nie, na razie nie",
+              "yes": "Tak, chcę się pozycjonować w wyszukiwarkach"
+            }
+          }
+        },
+        "result": {
+          "caption": "Szacunkowy koszt projektu",
+          "note": "To wstępna wycena. Ostateczny koszt zależy od szczegółów projektu. Zostaw zapytanie, a przygotujemy spersonalizowaną ofertę.",
+          "cta": "Omów projekt",
+          "brief": "Wypełnij brief",
+          "reset": "Oblicz ponownie"
+        }
       }
     },
     "brief": {

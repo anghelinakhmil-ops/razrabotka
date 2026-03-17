@@ -1151,6 +1151,84 @@
             "pro": "3–6 wks"
           }
         ]
+      },
+      "calculator": {
+        "caption": "Calculator",
+        "title": "ESTIMATE YOUR PROJECT",
+        "description": "Answer 6 questions and get an approximate cost for your project.",
+        "back": "Back",
+        "next": "Next",
+        "calculate": "Calculate",
+        "steps": {
+          "siteType": {
+            "title": "What type of website do you need?",
+            "options": {
+              "experts": "Expert / personal brand",
+              "business": "Business website",
+              "landing": "Landing / promo page",
+              "ecommerce": "Online store",
+              "courses": "Courses / online school",
+              "events": "Events website"
+            },
+            "descriptions": {
+              "experts": "Personal brand, consulting, expert services",
+              "business": "Corporate site, multiple services or directions",
+              "landing": "Single page for a specific offer or campaign",
+              "ecommerce": "Product catalog, cart, online payments",
+              "courses": "Online courses, educational platform",
+              "events": "Conferences, webinars, events"
+            }
+          },
+          "pages": {
+            "title": "How many pages are planned?",
+            "options": {
+              "1": "1 page",
+              "5-10": "5–10 pages",
+              "10-20": "10–20 pages",
+              "20+": "More than 20 pages"
+            }
+          },
+          "design": {
+            "title": "What kind of design?",
+            "options": {
+              "template": "Template-based",
+              "custom": "Custom design"
+            }
+          },
+          "features": {
+            "title": "What features do you need?",
+            "hint": "Select everything you need. You can skip this step.",
+            "options": {
+              "forms": "Contact forms",
+              "crm": "CRM integration",
+              "payments": "Online payments",
+              "multilingual": "Multilingual",
+              "blog": "Blog / news",
+              "account": "User account"
+            }
+          },
+          "content": {
+            "title": "Website content",
+            "options": {
+              "own": "I have my own content",
+              "need": "I need help with content"
+            }
+          },
+          "seo": {
+            "title": "Do you need SEO optimization?",
+            "options": {
+              "no": "No, not yet",
+              "yes": "Yes, I want to rank in search"
+            }
+          }
+        },
+        "result": {
+          "caption": "Estimated cost of your project",
+          "note": "This is a preliminary estimate. The final cost depends on project details. Leave a request and we'll prepare a personalized offer.",
+          "cta": "Discuss project",
+          "brief": "Fill out brief",
+          "reset": "Calculate again"
+        }
       }
     },
     "brief": {

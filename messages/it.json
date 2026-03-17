@@ -1151,6 +1151,84 @@
             "pro": "3–6 sett"
           }
         ]
+      },
+      "calculator": {
+        "caption": "Calcolatore",
+        "title": "STIMA IL COSTO",
+        "description": "Rispondi a 6 domande e ottieni un costo indicativo per il tuo progetto.",
+        "back": "Indietro",
+        "next": "Avanti",
+        "calculate": "Calcola",
+        "steps": {
+          "siteType": {
+            "title": "Di che tipo di sito hai bisogno?",
+            "options": {
+              "experts": "Sito per esperti",
+              "business": "Sito aziendale",
+              "landing": "Landing / pagina promo",
+              "ecommerce": "E-commerce",
+              "courses": "Sito per corsi / scuola online",
+              "events": "Sito per eventi"
+            },
+            "descriptions": {
+              "experts": "Brand personale, consulenza, servizi esperti",
+              "business": "Sito aziendale, più servizi o direzioni",
+              "landing": "Una pagina per un'offerta o campagna specifica",
+              "ecommerce": "Catalogo prodotti, carrello, pagamenti online",
+              "courses": "Corsi online, piattaforma educativa",
+              "events": "Conferenze, webinar, eventi"
+            }
+          },
+          "pages": {
+            "title": "Quante pagine sono previste?",
+            "options": {
+              "1": "1 pagina",
+              "5-10": "5–10 pagine",
+              "10-20": "10–20 pagine",
+              "20+": "Più di 20 pagine"
+            }
+          },
+          "design": {
+            "title": "Che tipo di design?",
+            "options": {
+              "template": "Basato su template",
+              "custom": "Design personalizzato"
+            }
+          },
+          "features": {
+            "title": "Quali funzionalità ti servono?",
+            "hint": "Seleziona tutto ciò di cui hai bisogno. Puoi saltare questo passaggio.",
+            "options": {
+              "forms": "Moduli di contatto",
+              "crm": "Integrazione CRM",
+              "payments": "Pagamenti online",
+              "multilingual": "Multilingue",
+              "blog": "Blog / notizie",
+              "account": "Area personale"
+            }
+          },
+          "content": {
+            "title": "Contenuti per il sito",
+            "options": {
+              "own": "Ho i miei contenuti",
+              "need": "Ho bisogno di aiuto con i contenuti"
+            }
+          },
+          "seo": {
+            "title": "Hai bisogno di ottimizzazione SEO?",
+            "options": {
+              "no": "No, per ora no",
+              "yes": "Sì, voglio posizionarmi nei motori di ricerca"
+            }
+          }
+        },
+        "result": {
+          "caption": "Costo stimato del progetto",
+          "note": "Questa è una stima preliminare. Il costo finale dipende dai dettagli del progetto. Lascia una richiesta e prepareremo un'offerta personalizzata.",
+          "cta": "Discuti il progetto",
+          "brief": "Compila il brief",
+          "reset": "Ricalcola"
+        }
       }
     },
     "brief": {

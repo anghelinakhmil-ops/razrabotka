@@ -1151,6 +1151,84 @@
             "pro": "3–6 săpt"
           }
         ]
+      },
+      "calculator": {
+        "caption": "Calculator",
+        "title": "ESTIMAȚI COSTUL",
+        "description": "Răspundeți la 6 întrebări și obțineți costul aproximativ al proiectului.",
+        "back": "Înapoi",
+        "next": "Următorul",
+        "calculate": "Calculează",
+        "steps": {
+          "siteType": {
+            "title": "Ce tip de site aveți nevoie?",
+            "options": {
+              "experts": "Site pentru expert",
+              "business": "Site pentru afaceri",
+              "landing": "Landing / pagină promoțională",
+              "ecommerce": "Magazin online",
+              "courses": "Site pentru cursuri / școală online",
+              "events": "Site pentru evenimente"
+            },
+            "descriptions": {
+              "experts": "Brand personal, consultanță, servicii de expert",
+              "business": "Site corporativ, mai multe servicii sau direcții",
+              "landing": "O pagină pentru o ofertă sau campanie specifică",
+              "ecommerce": "Catalog de produse, coș, plăți online",
+              "courses": "Cursuri online, platformă educațională",
+              "events": "Conferințe, webinarii, evenimente"
+            }
+          },
+          "pages": {
+            "title": "Câte pagini sunt planificate?",
+            "options": {
+              "1": "1 pagină",
+              "5-10": "5–10 pagini",
+              "10-20": "10–20 pagini",
+              "20+": "Peste 20 pagini"
+            }
+          },
+          "design": {
+            "title": "Ce tip de design?",
+            "options": {
+              "template": "Pe bază de șablon",
+              "custom": "Design personalizat"
+            }
+          },
+          "features": {
+            "title": "Ce funcții aveți nevoie?",
+            "hint": "Selectați tot ce aveți nevoie. Puteți sări peste acest pas.",
+            "options": {
+              "forms": "Formulare de contact",
+              "crm": "Integrare CRM",
+              "payments": "Plăți online",
+              "multilingual": "Multilingv",
+              "blog": "Blog / știri",
+              "account": "Cont personal"
+            }
+          },
+          "content": {
+            "title": "Conținut pentru site",
+            "options": {
+              "own": "Am propriul conținut",
+              "need": "Am nevoie de ajutor cu conținutul"
+            }
+          },
+          "seo": {
+            "title": "Aveți nevoie de optimizare SEO?",
+            "options": {
+              "no": "Nu, deocamdată",
+              "yes": "Da, vreau să fiu vizibil în căutare"
+            }
+          }
+        },
+        "result": {
+          "caption": "Costul estimat al proiectului",
+          "note": "Aceasta este o estimare preliminară. Costul final depinde de detaliile proiectului. Lăsați o cerere și vă vom pregăti o ofertă personalizată.",
+          "cta": "Discutați proiectul",
+          "brief": "Completați brieful",
+          "reset": "Calculează din nou"
+        }
       }
     },
     "brief": {

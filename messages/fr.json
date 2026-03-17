@@ -1151,6 +1151,84 @@
             "pro": "3–6 sem"
           }
         ]
+      },
+      "calculator": {
+        "caption": "Calculateur",
+        "title": "ESTIMEZ LE COÛT",
+        "description": "Répondez à 6 questions et obtenez un coût approximatif pour votre projet.",
+        "back": "Retour",
+        "next": "Suivant",
+        "calculate": "Calculer",
+        "steps": {
+          "siteType": {
+            "title": "Quel type de site avez-vous besoin ?",
+            "options": {
+              "experts": "Site pour expert",
+              "business": "Site d'entreprise",
+              "landing": "Landing / page promo",
+              "ecommerce": "Boutique en ligne",
+              "courses": "Site pour cours / école en ligne",
+              "events": "Site pour événements"
+            },
+            "descriptions": {
+              "experts": "Marque personnelle, conseil, services d'expert",
+              "business": "Site d'entreprise, plusieurs services ou directions",
+              "landing": "Une page pour une offre ou campagne spécifique",
+              "ecommerce": "Catalogue de produits, panier, paiements en ligne",
+              "courses": "Cours en ligne, plateforme éducative",
+              "events": "Conférences, webinaires, événements"
+            }
+          },
+          "pages": {
+            "title": "Combien de pages sont prévues ?",
+            "options": {
+              "1": "1 page",
+              "5-10": "5–10 pages",
+              "10-20": "10–20 pages",
+              "20+": "Plus de 20 pages"
+            }
+          },
+          "design": {
+            "title": "Quel type de design ?",
+            "options": {
+              "template": "Basé sur un modèle",
+              "custom": "Design personnalisé"
+            }
+          },
+          "features": {
+            "title": "Quelles fonctionnalités avez-vous besoin ?",
+            "hint": "Sélectionnez tout ce dont vous avez besoin. Vous pouvez passer cette étape.",
+            "options": {
+              "forms": "Formulaires de contact",
+              "crm": "Intégration CRM",
+              "payments": "Paiements en ligne",
+              "multilingual": "Multilingue",
+              "blog": "Blog / actualités",
+              "account": "Espace personnel"
+            }
+          },
+          "content": {
+            "title": "Contenu du site",
+            "options": {
+              "own": "J'ai mon propre contenu",
+              "need": "J'ai besoin d'aide pour le contenu"
+            }
+          },
+          "seo": {
+            "title": "Avez-vous besoin d'optimisation SEO ?",
+            "options": {
+              "no": "Non, pas pour l'instant",
+              "yes": "Oui, je veux être visible dans les moteurs de recherche"
+            }
+          }
+        },
+        "result": {
+          "caption": "Coût estimé de votre projet",
+          "note": "Ceci est une estimation préliminaire. Le coût final dépend des détails du projet. Laissez une demande et nous préparerons une offre personnalisée.",
+          "cta": "Discuter du projet",
+          "brief": "Remplir le brief",
+          "reset": "Recalculer"
+        }
       }
     },
     "brief": {

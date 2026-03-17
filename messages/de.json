@@ -1151,6 +1151,84 @@
             "pro": "3–6 Wo"
           }
         ]
+      },
+      "calculator": {
+        "caption": "Kalkulator",
+        "title": "KOSTEN BERECHNEN",
+        "description": "Beantworten Sie 6 Fragen und erhalten Sie eine ungefähre Kostenschätzung für Ihr Projekt.",
+        "back": "Zurück",
+        "next": "Weiter",
+        "calculate": "Berechnen",
+        "steps": {
+          "siteType": {
+            "title": "Welche Art von Website benötigen Sie?",
+            "options": {
+              "experts": "Website für Experten",
+              "business": "Unternehmenswebsite",
+              "landing": "Landing Page / Promo-Seite",
+              "ecommerce": "Onlineshop",
+              "courses": "Website für Kurse / Online-Schule",
+              "events": "Website für Veranstaltungen"
+            },
+            "descriptions": {
+              "experts": "Persönliche Marke, Beratung, Expertendienstleistungen",
+              "business": "Unternehmensseite, mehrere Dienstleistungen oder Bereiche",
+              "landing": "Eine Seite für ein bestimmtes Angebot oder eine Kampagne",
+              "ecommerce": "Produktkatalog, Warenkorb, Online-Zahlungen",
+              "courses": "Online-Kurse, Bildungsplattform",
+              "events": "Konferenzen, Webinare, Veranstaltungen"
+            }
+          },
+          "pages": {
+            "title": "Wie viele Seiten sind geplant?",
+            "options": {
+              "1": "1 Seite",
+              "5-10": "5–10 Seiten",
+              "10-20": "10–20 Seiten",
+              "20+": "Mehr als 20 Seiten"
+            }
+          },
+          "design": {
+            "title": "Welches Design?",
+            "options": {
+              "template": "Auf Template-Basis",
+              "custom": "Individuelles Design"
+            }
+          },
+          "features": {
+            "title": "Welche Funktionen benötigen Sie?",
+            "hint": "Wählen Sie alles aus, was Sie brauchen. Sie können diesen Schritt überspringen.",
+            "options": {
+              "forms": "Kontaktformulare",
+              "crm": "CRM-Integration",
+              "payments": "Online-Zahlungen",
+              "multilingual": "Mehrsprachigkeit",
+              "blog": "Blog / Nachrichten",
+              "account": "Benutzerkonto"
+            }
+          },
+          "content": {
+            "title": "Website-Inhalte",
+            "options": {
+              "own": "Ich habe eigene Inhalte",
+              "need": "Ich brauche Hilfe mit Inhalten"
+            }
+          },
+          "seo": {
+            "title": "Benötigen Sie SEO-Optimierung?",
+            "options": {
+              "no": "Nein, noch nicht",
+              "yes": "Ja, ich möchte in Suchmaschinen sichtbar sein"
+            }
+          }
+        },
+        "result": {
+          "caption": "Geschätzte Kosten Ihres Projekts",
+          "note": "Dies ist eine vorläufige Schätzung. Die endgültigen Kosten hängen von den Projektdetails ab. Hinterlassen Sie eine Anfrage und wir erstellen ein individuelles Angebot.",
+          "cta": "Projekt besprechen",
+          "brief": "Brief ausfüllen",
+          "reset": "Neu berechnen"
+        }
       }
     },
     "brief": {

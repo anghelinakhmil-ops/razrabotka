@@ -108,6 +108,90 @@ function formatNumber(value: number, separator: string): string {
  * @param priceId — идентификатор ценовой позиции
  * @returns отформатированная строка, напр. "€550" или "21 050 kr"
  */
+/**
+ * Калькулятор: базовые цены по типу сайта (EUR, уровень Украины)
+ * Используются min-цены из START-тиров как отправная точка
+ */
+const CALC_BASE: Record<string, number> = {
+  experts: 500,
+  business: 650,
+  landing: 400,
+  ecommerce: 2500,
+  courses: 500,
+  events: 400,
+};
+
+/** Множители для количества страниц */
+const PAGES_MULT: Record<string, number> = {
+  "1": 1.0,
+  "5-10": 1.6,
+  "10-20": 2.2,
+  "20+": 3.0,
+};
+
+/** Множители для дизайна */
+const DESIGN_MULT: Record<string, number> = {
+  template: 1.0,
+  custom: 1.8,
+};
+
+/** Доплаты за фичи (EUR, уровень Украины) */
+const FEATURE_ADD: Record<string, number> = {
+  forms: 80,
+  crm: 150,
+  payments: 200,
+  multilingual: 250,
+  blog: 150,
+  account: 300,
+};
+
+/** Доплата за контент */
+const CONTENT_ADD: Record<string, number> = {
+  own: 0,
+  need: 300,
+};
+
+/** Доплата за SEO */
+const SEO_ADD: Record<string, number> = {
+  no: 0,
+  yes: 400,
+};
+
+/**
+ * Рассчитать ориентировочную стоимость проекта
+ */
+export interface CalcOptions {
+  siteType: string;
+  pages: string;
+  design: string;
+  features: string[];
+  content: string;
+  seo: string;
+}
+
+export function calculateEstimate(regionCode: RegionCode, options: CalcOptions): string {
+  const base = CALC_BASE[options.siteType] ?? 500;
+  const pagesMult = PAGES_MULT[options.pages] ?? 1.0;
+  const designMult = DESIGN_MULT[options.design] ?? 1.0;
+  const featuresAdd = options.features.reduce((sum, f) => sum + (FEATURE_ADD[f] ?? 0), 0);
+  const contentAdd = CONTENT_ADD[options.content] ?? 0;
+  const seoAdd = SEO_ADD[options.seo] ?? 0;
+
+  const totalEur = base * pagesMult * designMult + featuresAdd + contentAdd + seoAdd;
+
+  const multiplier = PRICE_MULTIPLIERS[regionCode] ?? PRICE_MULTIPLIERS.DEFAULT;
+  const currencyRate = CURRENCY_RATES[regionCode] ?? 1;
+  const format = CURRENCY_FORMAT[regionCode] ?? CURRENCY_FORMAT.DEFAULT;
+
+  const price = roundPrice(totalEur * multiplier * currencyRate);
+  const priceStr = formatNumber(price, format.separator);
+
+  if (format.position === "before") {
+    return `${format.symbol}${priceStr}`;
+  }
+  return `${priceStr} ${format.symbol}`;
+}
+
 export function getFormattedPrice(regionCode: RegionCode, priceId: PriceId): string {
   const [baseMin] = BASE_PRICES[priceId];
   const multiplier = PRICE_MULTIPLIERS[regionCode] ?? PRICE_MULTIPLIERS.DEFAULT;

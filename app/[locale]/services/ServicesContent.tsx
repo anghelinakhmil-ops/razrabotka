@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { BrokenText } from "@/components/ui/BrokenText";
 import { TierCard } from "@/components/ui/TierCard";
+import { PriceCalculator } from "@/components/sections/PriceCalculator";
 import { RevealOnScroll } from "@/components/motion";
 import { sectionPresets } from "@/lib/motion";
 import { useRegion } from "@/components/providers/RegionProvider";
@@ -155,6 +156,9 @@ export function ServicesContent() {
           </p>
         </Container>
       </section>
+
+      {/* Price Calculator */}
+      <PriceCalculator />
 
       {/* Comparison Table */}
       <ComparisonSection />
