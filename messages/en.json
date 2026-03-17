@@ -2107,20 +2107,20 @@
           ],
           "results": [
             {
-              "value": "10K+",
-              "label": "Active families"
-            },
-            {
-              "value": "500K+",
-              "label": "Missions completed"
-            },
-            {
-              "value": "45+",
-              "label": "Countries"
-            },
-            {
               "value": "95+",
               "label": "Lighthouse"
+            },
+            {
+              "value": "1.4s",
+              "label": "Load speed"
+            },
+            {
+              "value": "10",
+              "label": "Pages"
+            },
+            {
+              "value": "4",
+              "label": "Languages"
             }
           ],
           "technologies": [

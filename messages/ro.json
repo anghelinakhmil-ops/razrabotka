@@ -2107,20 +2107,20 @@
           ],
           "results": [
             {
-              "value": "10K+",
-              "label": "Familii active"
-            },
-            {
-              "value": "500K+",
-              "label": "Misiuni finalizate"
-            },
-            {
-              "value": "45+",
-              "label": "Țări"
-            },
-            {
               "value": "95+",
               "label": "Lighthouse"
+            },
+            {
+              "value": "1.4s",
+              "label": "Viteză de încărcare"
+            },
+            {
+              "value": "10",
+              "label": "Pagini"
+            },
+            {
+              "value": "4",
+              "label": "Limbi"
             }
           ],
           "technologies": [

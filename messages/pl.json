@@ -2107,20 +2107,20 @@
           ],
           "results": [
             {
-              "value": "10K+",
-              "label": "Aktywnych rodzin"
-            },
-            {
-              "value": "500K+",
-              "label": "Ukończonych misji"
-            },
-            {
-              "value": "45+",
-              "label": "Krajów"
-            },
-            {
               "value": "95+",
               "label": "Lighthouse"
+            },
+            {
+              "value": "1.4s",
+              "label": "Czas ładowania"
+            },
+            {
+              "value": "10",
+              "label": "Stron"
+            },
+            {
+              "value": "4",
+              "label": "Języki"
             }
           ],
           "technologies": [
