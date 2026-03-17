@@ -27,6 +27,7 @@ interface CaseData {
   screenshots?: string[];
   liveUrl?: string;
   previewImage?: string;
+  fullpageImage?: string;
 }
 
 /**
@@ -99,7 +100,7 @@ export default async function CaseDetailPage({
       <HeroSection caseData={caseData} t={t} />
 
       {/* Preview Image */}
-      <PreviewSection liveUrl={caseData.liveUrl} previewImage={caseData.previewImage} t={t} />
+      <PreviewSection liveUrl={caseData.liveUrl} previewImage={caseData.previewImage} fullpageImage={caseData.fullpageImage} t={t} />
 
       {/* Task */}
       <TaskSection task={caseData.task} t={t} />
@@ -216,55 +217,66 @@ function HeroSection({ caseData, t }: { caseData: CaseData; t: TranslationFn }) 
 /**
  * Preview Section
  */
-function PreviewSection({ liveUrl, previewImage, t }: { liveUrl?: string; previewImage?: string; t: TranslationFn }) {
+function PreviewSection({ liveUrl, previewImage, fullpageImage, t }: { liveUrl?: string; previewImage?: string; fullpageImage?: string; t: TranslationFn }) {
+  const scrollableImage = fullpageImage || previewImage;
+
   return (
     <section className="pb-[var(--section-gap)] bg-[var(--color-background)]">
       <Container>
         <RevealOnScroll direction="up">
-          <div className="bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm overflow-hidden relative group">
-            {previewImage ? (
-              <a
-                href={liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block relative"
-                aria-label={t("openLink")}
-              >
+          <div className="border border-[var(--color-line)] rounded-lg overflow-hidden shadow-lg">
+            {/* Browser chrome */}
+            <div className="bg-[#E8E4DD] px-4 py-3 flex items-center gap-3 border-b border-[var(--color-line)]">
+              <div className="flex items-center gap-1.5">
+                <span className="w-3 h-3 rounded-full bg-[#FF5F57]" />
+                <span className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
+                <span className="w-3 h-3 rounded-full bg-[#28C840]" />
+              </div>
+              {liveUrl && (
+                <div className="flex-1 flex justify-center">
+                  <div className="bg-white/70 rounded-md px-4 py-1.5 text-xs text-[var(--color-text-muted)] font-mono max-w-md w-full text-center truncate">
+                    {liveUrl.replace(/^https?:\/\//, "")}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Scrollable viewport */}
+            {scrollableImage ? (
+              <div className="relative h-[70vh] max-h-[700px] overflow-y-auto overflow-x-hidden bg-[var(--color-background-alt)]">
                 <Image
-                  src={previewImage}
+                  src={scrollableImage}
                   alt={t("previewAlt")}
                   width={1440}
-                  height={900}
-                  className="w-full h-auto transition-transform duration-500 ease-out group-hover:scale-[1.02]"
+                  height={7798}
+                  className="w-full h-auto"
                   quality={85}
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-              </a>
-            ) : liveUrl ? (
-              <div className="aspect-[16/9] relative">
-                <iframe
-                  src={liveUrl}
-                  title={t("previewAlt")}
-                  className="w-full h-full border-0 pointer-events-none"
-                  loading="lazy"
-                  sandbox="allow-scripts allow-same-origin"
-                />
-                <a
-                  href={liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute inset-0 z-10"
-                  aria-label={t("openLink")}
+                  priority
                 />
               </div>
             ) : (
-              <div className="aspect-[16/9] flex items-center justify-center">
+              <div className="aspect-[16/9] flex items-center justify-center bg-[var(--color-background-alt)]">
                 <div className="text-center">
                   <div className="w-20 h-20 mx-auto mb-4 border border-[var(--color-line)] rounded-sm" />
                   <span className="text-caption text-[var(--color-text-muted)]">
                     {t("previewAlt")}
                   </span>
                 </div>
+              </div>
+            )}
+
+            {/* Bottom bar with link */}
+            {liveUrl && (
+              <div className="bg-[#E8E4DD] px-4 py-2.5 border-t border-[var(--color-line)] flex justify-end">
+                <a
+                  href={liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors duration-200 flex items-center gap-1"
+                >
+                  {t("openLink")}
+                  <span aria-hidden="true">&thinsp;&#8599;</span>
+                </a>
               </div>
             )}
           </div>
