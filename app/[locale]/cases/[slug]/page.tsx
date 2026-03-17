@@ -107,7 +107,7 @@ export default async function CaseDetailPage({
       <HeroSection caseData={caseData} t={t} />
 
       {/* Preview Image */}
-      <PreviewSection t={t} />
+      <PreviewSection liveUrl={caseData.liveUrl} t={t} />
 
       {/* Task */}
       <TaskSection task={caseData.task} t={t} />
@@ -224,21 +224,39 @@ function HeroSection({ caseData, t }: { caseData: CaseData; t: TranslationFn }) 
 /**
  * Preview Section
  */
-function PreviewSection({ t }: { t: TranslationFn }) {
+function PreviewSection({ liveUrl, t }: { liveUrl?: string; t: TranslationFn }) {
   return (
     <section className="pb-[var(--section-gap)] bg-[var(--color-background)]">
       <Container>
         <RevealOnScroll direction="up">
-          <div className="aspect-[16/9] bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm overflow-hidden">
-            {/* Placeholder */}
-            <div className="w-full h-full flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-4 border border-[var(--color-line)] rounded-sm" />
-                <span className="text-caption text-[var(--color-text-muted)]">
-                  {t("previewAlt")}
-                </span>
+          <div className="aspect-[16/9] bg-[var(--color-background-alt)] border border-[var(--color-line)] rounded-sm overflow-hidden relative">
+            {liveUrl ? (
+              <>
+                <iframe
+                  src={liveUrl}
+                  title={t("previewAlt")}
+                  className="w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                  sandbox="allow-scripts allow-same-origin"
+                />
+                <a
+                  href={liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 z-10"
+                  aria-label={t("openLink")}
+                />
+              </>
+            ) : (
+              <div className="w-full h-full flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-20 h-20 mx-auto mb-4 border border-[var(--color-line)] rounded-sm" />
+                  <span className="text-caption text-[var(--color-text-muted)]">
+                    {t("previewAlt")}
+                  </span>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </RevealOnScroll>
       </Container>
