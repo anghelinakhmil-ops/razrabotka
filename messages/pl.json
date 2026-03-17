@@ -2104,6 +2104,31 @@
       "breadcrumbHome": "Strona główna",
       "breadcrumbCases": "Realizacje",
       "cases": {
+        "ceramo-lab": {
+          "title": "Ceramo Lab — Laboratorium gresu porcelanowego",
+          "categoryLabel": "Korporacyjny",
+          "description": "Korporacyjna strona wizytówka dla producenta gresu porcelanowego. Minimalistyczny design, tła wideo, animacje GSAP.",
+          "client": "Ceramo Lab",
+          "year": "2025",
+          "duration": "4 tygodnie",
+          "task": "Stworzenie premium strony korporacyjnej dla firmy pracującej z gresem porcelanowym jako materiałem architektonicznym. Strona powinna przekazywać laboratoryjne podejście do materiału i prezentować dwa kierunki: produkcję wyrobów oraz montaż.",
+          "solution": [
+            "Opracowaliśmy minimalistyczny design z akcentem na tekstury gresu porcelanowego",
+            "Wdrożyliśmy fullscreenowe tła wideo dla zanurzenia w atmosferę materiału",
+            "Stworzyliśmy system animacji scroll na GSAP + ScrollTrigger",
+            "Zaprojektowaliśmy dwukolumnowy layout dla dwóch kierunków biznesowych",
+            "Zrealizowaliśmy 4-etapową oś czasu podejścia z animowaną linią łączącą",
+            "Zoptymalizowaliśmy wydajność: lazy loading, optymalizacja wideo i obrazów"
+          ],
+          "results": [
+            { "value": "95+", "label": "Lighthouse" },
+            { "value": "1.6s", "label": "Szybkość ładowania" },
+            { "value": "100%", "label": "Responsywność" },
+            { "value": "GSAP", "label": "Animacje" }
+          ],
+          "technologies": ["Next.js 14", "TypeScript", "CSS Modules", "GSAP + ScrollTrigger", "React", "Vercel"],
+          "liveUrl": "https://keramolab.ru"
+        },
         "expert-coach": {
           "title": "Strona coacha personalnego",
           "categoryLabel": "Ekspert",

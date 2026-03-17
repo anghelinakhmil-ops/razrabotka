@@ -2101,6 +2101,31 @@
       "breadcrumbHome": "Home",
       "breadcrumbCases": "Cases",
       "cases": {
+        "ceramo-lab": {
+          "title": "Ceramo Lab — Ceramic Granite Laboratory",
+          "categoryLabel": "Corporate",
+          "description": "Corporate website for a ceramic granite manufacturer. Minimalist design, video backgrounds, GSAP animations.",
+          "client": "Ceramo Lab",
+          "year": "2025",
+          "duration": "4 weeks",
+          "task": "Create a premium corporate website for a company working with ceramic granite as an architectural material. The site should convey a laboratory approach to the material and showcase two directions: product manufacturing and installation/mounting.",
+          "solution": [
+            "Developed a minimalist design focused on ceramic granite textures",
+            "Implemented fullscreen video backgrounds for material immersion",
+            "Built a scroll animation system using GSAP + ScrollTrigger",
+            "Designed a two-column layout for two business directions",
+            "Created a 4-step approach timeline with animated connecting line",
+            "Optimized performance: lazy loading, video and image optimization"
+          ],
+          "results": [
+            { "value": "95+", "label": "Lighthouse" },
+            { "value": "1.6s", "label": "Load speed" },
+            { "value": "100%", "label": "Responsive" },
+            { "value": "GSAP", "label": "Animations" }
+          ],
+          "technologies": ["Next.js 14", "TypeScript", "CSS Modules", "GSAP + ScrollTrigger", "React", "Vercel"],
+          "liveUrl": "https://keramolab.ru"
+        },
         "expert-coach": {
           "title": "Personal Coach Website",
           "categoryLabel": "Expert",

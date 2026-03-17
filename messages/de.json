@@ -2101,6 +2101,31 @@
       "breadcrumbHome": "Startseite",
       "breadcrumbCases": "Cases",
       "cases": {
+        "ceramo-lab": {
+          "title": "Ceramo Lab — Feinsteinzeug-Labor",
+          "categoryLabel": "Unternehmen",
+          "description": "Unternehmenswebsite für einen Feinsteinzeug-Hersteller. Minimalistisches Design, Video-Hintergründe, GSAP-Animationen.",
+          "client": "Ceramo Lab",
+          "year": "2025",
+          "duration": "4 Wochen",
+          "task": "Erstellung einer Premium-Unternehmenswebsite für ein Unternehmen, das mit Feinsteinzeug als architektonischem Material arbeitet. Die Website soll den Laboransatz zum Material vermitteln und zwei Richtungen zeigen: Produktherstellung und Verlegung/Montage.",
+          "solution": [
+            "Minimalistisches Design mit Fokus auf Feinsteinzeug-Texturen entwickelt",
+            "Fullscreen-Video-Hintergründe für Material-Immersion implementiert",
+            "Scroll-Animationssystem mit GSAP + ScrollTrigger erstellt",
+            "Zweispaltiges Layout für zwei Geschäftsrichtungen entworfen",
+            "4-Schritte-Timeline mit animierter Verbindungslinie realisiert",
+            "Performance optimiert: Lazy Loading, Video- und Bildoptimierung"
+          ],
+          "results": [
+            { "value": "95+", "label": "Lighthouse" },
+            { "value": "1.6s", "label": "Ladegeschwindigkeit" },
+            { "value": "100%", "label": "Responsiv" },
+            { "value": "GSAP", "label": "Animationen" }
+          ],
+          "technologies": ["Next.js 14", "TypeScript", "CSS Modules", "GSAP + ScrollTrigger", "React", "Vercel"],
+          "liveUrl": "https://keramolab.ru"
+        },
         "expert-coach": {
           "title": "Website für Personal Coach",
           "categoryLabel": "Experte",

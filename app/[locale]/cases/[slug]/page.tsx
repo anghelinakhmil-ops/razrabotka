@@ -33,6 +33,7 @@ interface CaseData {
  */
 export function generateStaticParams() {
   const slugs = [
+    "ceramo-lab",
     "expert-coach",
     "ecommerce-fashion",
     "landing-saas",

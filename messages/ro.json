@@ -2101,6 +2101,31 @@
       "breadcrumbHome": "Acasă",
       "breadcrumbCases": "Cazuri",
       "cases": {
+        "ceramo-lab": {
+          "title": "Ceramo Lab — Laborator de gresie porțelanată",
+          "categoryLabel": "Corporativ",
+          "description": "Site corporativ de prezentare pentru producția de gresie porțelanată. Design minimalist, fundaluri video, animații GSAP.",
+          "client": "Ceramo Lab",
+          "year": "2025",
+          "duration": "4 săptămâni",
+          "task": "Crearea unui site corporativ premium pentru o companie care lucrează cu gresie porțelanată ca material arhitectural. Site-ul trebuie să transmită abordarea de laborator a materialului și să prezinte două direcții: producția de produse și montajul.",
+          "solution": [
+            "Am dezvoltat un design minimalist axat pe texturile gresiei porțelanate",
+            "Am implementat fundaluri video fullscreen pentru imersiunea în atmosfera materialului",
+            "Am creat un sistem de animații scroll pe GSAP + ScrollTrigger",
+            "Am proiectat un layout cu două coloane pentru cele două direcții de business",
+            "Am realizat un timeline în 4 pași cu linie de conectare animată",
+            "Am optimizat performanța: lazy loading, optimizare video și imagini"
+          ],
+          "results": [
+            { "value": "95+", "label": "Lighthouse" },
+            { "value": "1.6s", "label": "Viteză de încărcare" },
+            { "value": "100%", "label": "Responsive" },
+            { "value": "GSAP", "label": "Animații" }
+          ],
+          "technologies": ["Next.js 14", "TypeScript", "CSS Modules", "GSAP + ScrollTrigger", "React", "Vercel"],
+          "liveUrl": "https://keramolab.ru"
+        },
         "expert-coach": {
           "title": "Site personal de coach",
           "categoryLabel": "Expert",

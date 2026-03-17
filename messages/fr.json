@@ -2101,6 +2101,31 @@
       "breadcrumbHome": "Accueil",
       "breadcrumbCases": "Projets",
       "cases": {
+        "ceramo-lab": {
+          "title": "Ceramo Lab — Laboratoire de grès cérame",
+          "categoryLabel": "Entreprise",
+          "description": "Site vitrine d'entreprise pour la production de grès cérame. Design minimaliste, arrière-plans vidéo, animations GSAP.",
+          "client": "Ceramo Lab",
+          "year": "2025",
+          "duration": "4 semaines",
+          "task": "Créer un site d'entreprise premium pour une société travaillant le grès cérame comme matériau architectural. Le site doit transmettre l'approche laboratoire du matériau et présenter deux directions : la fabrication de produits et la pose/montage.",
+          "solution": [
+            "Développé un design minimaliste axé sur les textures du grès cérame",
+            "Implémenté des arrière-plans vidéo plein écran pour l'immersion dans l'atmosphère du matériau",
+            "Créé un système d'animations au scroll avec GSAP + ScrollTrigger",
+            "Conçu un layout à deux colonnes pour les deux directions commerciales",
+            "Réalisé une timeline en 4 étapes avec ligne de connexion animée",
+            "Optimisé les performances : lazy loading, optimisation vidéo et images"
+          ],
+          "results": [
+            { "value": "95+", "label": "Lighthouse" },
+            { "value": "1.6s", "label": "Vitesse de chargement" },
+            { "value": "100%", "label": "Responsive" },
+            { "value": "GSAP", "label": "Animations" }
+          ],
+          "technologies": ["Next.js 14", "TypeScript", "CSS Modules", "GSAP + ScrollTrigger", "React", "Vercel"],
+          "liveUrl": "https://keramolab.ru"
+        },
         "expert-coach": {
           "title": "Site de coach personnel",
           "categoryLabel": "Expert",

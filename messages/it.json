@@ -2101,6 +2101,31 @@
       "breadcrumbHome": "Home",
       "breadcrumbCases": "Casi",
       "cases": {
+        "ceramo-lab": {
+          "title": "Ceramo Lab — Laboratorio di gres porcellanato",
+          "categoryLabel": "Aziendale",
+          "description": "Sito aziendale per la produzione di gres porcellanato. Design minimalista, sfondi video, animazioni GSAP.",
+          "client": "Ceramo Lab",
+          "year": "2025",
+          "duration": "4 settimane",
+          "task": "Creare un sito aziendale premium per un'azienda che lavora con il gres porcellanato come materiale architettonico. Il sito deve trasmettere l'approccio laboratoriale al materiale e mostrare due direzioni: produzione di manufatti e posa/montaggio.",
+          "solution": [
+            "Sviluppato un design minimalista incentrato sulle texture del gres porcellanato",
+            "Implementati sfondi video fullscreen per l'immersione nell'atmosfera del materiale",
+            "Creato un sistema di animazioni scroll con GSAP + ScrollTrigger",
+            "Progettato un layout a due colonne per le due direzioni aziendali",
+            "Realizzata una timeline in 4 fasi con linea di collegamento animata",
+            "Ottimizzate le prestazioni: lazy loading, ottimizzazione video e immagini"
+          ],
+          "results": [
+            { "value": "95+", "label": "Lighthouse" },
+            { "value": "1.6s", "label": "Velocità di caricamento" },
+            { "value": "100%", "label": "Responsive" },
+            { "value": "GSAP", "label": "Animazioni" }
+          ],
+          "technologies": ["Next.js 14", "TypeScript", "CSS Modules", "GSAP + ScrollTrigger", "React", "Vercel"],
+          "liveUrl": "https://keramolab.ru"
+        },
         "expert-coach": {
           "title": "Sito web per coach personale",
           "categoryLabel": "Esperto",
