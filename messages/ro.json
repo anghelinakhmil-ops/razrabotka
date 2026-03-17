@@ -33,8 +33,8 @@
     "subtitleCourses": "cursuri",
     "subtitleAnd": "și",
     "subtitleEvents": "evenimente",
-    "offerLine1": "Ajutăm la atragerea cererilor, vânzarea serviciilor",
-    "offerLine2": " și conversia traficului în clienți",
+    "offerLine1": "Conversie de la 4%, Lighthouse 95+, lansare în 2–6 săptămâni.",
+    "offerLine2": " Metrici reale — în studiile noastre de caz",
     "cta": "Discutați proiectul",
     "ctaCases": "Vezi cazuri",
     "scroll": "Derulează în jos",
@@ -46,39 +46,39 @@
     "items": [
       {
         "number": "01",
-        "title": "REZULTATE",
-        "subtitle": "Site-uri pentru rezultate de afaceri",
-        "description": "Construim site-uri nu pentru frumusețe, ci pentru cereri, vânzări și încredere. Fiecare element lucrează pentru conversie și rezultate comerciale."
+        "title": "CONVERSIE, NU FRUMUSEȚE",
+        "subtitle": "Fiecare element lucrează pentru lead-uri",
+        "description": "Conversia medie a site-urilor noastre — 4–8%. Nu desenăm «imagini frumoase». Fiecare bloc, CTA și text este testat pentru rezultate reale."
       },
       {
         "number": "02",
-        "title": "CICLU COMPLET",
-        "subtitle": "De la brief la suport",
-        "description": "Strategie, structură, texte, design, dezvoltare, conținut, integrări, lansare și suport — totul într-un singur loc. Nu trebuie să căutați contractori separați."
+        "title": "NU CĂUTAȚI 5 CONTRACTORI",
+        "subtitle": "Strategie → design → cod → conținut → lansare",
+        "description": "Un singur brief — și în 2–6 săptămâni aveți un site funcțional. Facem totul: structură, texte, design, dezvoltare, integrări și lansare."
       },
       {
         "number": "03",
-        "title": "PREZENTARE",
-        "subtitle": "Design premium + logica vânzărilor",
-        "description": "Combinăm prezentarea vizuală elegantă cu o structură bine gândită și logica conversiei. Premium, calm, modern — fără zgomot inutil."
+        "title": "PREMIUM FĂRĂ PREȚ PREMIUM",
+        "subtitle": "Design de nivel agenție la preț de freelancer",
+        "description": "Minimalism, atenție la tipografie, animații la scroll, responsive pixel-perfect. Vizual — ca o lucrare de agenție de K. Ca preț — mult mai accesibil."
       },
       {
         "number": "04",
-        "title": "INTEGRĂRI",
-        "subtitle": "Integrăm site-ul în procesele de afaceri",
-        "description": "CRM, Telegram, email, analiză, plăți — conectăm tot ce este necesar pentru ca site-ul să funcționeze ca parte a sistemului dvs., nu doar o carte de vizită."
+        "title": "INTEGRAT ÎN PROCESELE DVASTRĂ",
+        "subtitle": "CRM, Telegram, email, plăți — din cutie",
+        "description": "Formular trimis → instant în Telegram și CRM. Analytics GA4 urmărind fiecare click. Plăți, newslettere, formulare — totul conectat și testat."
       },
       {
         "number": "05",
-        "title": "SUPORT",
-        "subtitle": "Rămânem după lansare",
-        "description": "Nu vă abandonăm după livrare. Remediere erori, corecții minore, consultații, suport lunar — alegeți formatul de suport convenabil."
+        "title": "NU DISPĂREM DUPĂ LANSARE",
+        "subtitle": "14–30 zile suport incluse",
+        "description": "Remedieri, mici editări, consultanțe — gratuit după lansare. Apoi trei pachete de suport de la monitorizare la dezvoltare activă."
       },
       {
         "number": "06",
-        "title": "ABORDARE INDIVIDUALĂ",
-        "subtitle": "Fără șabloane și copii",
-        "description": "Nu folosim o singură strategie pentru toți. Fiecare proiect este o soluție unică, construită pentru obiectivele, audiența și modelul dvs. de afaceri."
+        "title": "PENTRU SARCINA DVS, NU ȘABLON",
+        "subtitle": "Fiecare proiect — de la zero pentru nișa dvs",
+        "description": "Nu luăm un șablon și nu schimbăm culorile. Analizăm audiența, concurenții și modelul de afaceri."
       }
     ]
   },
@@ -233,46 +233,20 @@
     "viewCase": "Vezi cazul",
     "items": [
       {
-        "slug": "expert-coach",
-        "title": "Site personal coach",
-        "category": "Expert",
-        "result": "+180% cereri",
-        "imageAlt": "Site personal coach — previzualizare proiect"
+        "slug": "ceramo-lab",
+        "title": "Ceramo Lab — Laborator ceramică",
+        "category": "Corporativ",
+        "result": "+180% lead-uri",
+        "imageAlt": "Ceramo Lab — site corporativ",
+        "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
       },
       {
-        "slug": "ecommerce-fashion",
-        "title": "Magazin online de modă",
-        "category": "E-commerce",
-        "result": "3.2s LCP",
-        "imageAlt": "Magazin online de modă — previzualizare proiect"
-      },
-      {
-        "slug": "landing-saas",
-        "title": "Landing produs SaaS",
-        "category": "Landing",
-        "result": "8.5% conversie",
-        "imageAlt": "Landing produs SaaS — previzualizare proiect"
-      },
-      {
-        "slug": "expert-psychologist",
-        "title": "Site psiholog",
-        "category": "Expert",
-        "result": "+240% programări",
-        "imageAlt": "Site psiholog — previzualizare proiect"
-      },
-      {
-        "slug": "ecommerce-cosmetics",
-        "title": "Magazin cosmetice",
-        "category": "E-commerce",
-        "result": "95 Lighthouse",
-        "imageAlt": "Magazin cosmetice — previzualizare proiect"
-      },
-      {
-        "slug": "landing-event",
-        "title": "Pagină promoțională eveniment",
-        "category": "Landing",
-        "result": "1200+ înregistrări",
-        "imageAlt": "Pagină promoțională eveniment — previzualizare proiect"
+        "slug": "mindjoy",
+        "title": "MindJoy — Platformă educațională",
+        "category": "Aplicație",
+        "result": "+220% înregistrări",
+        "imageAlt": "MindJoy — platformă educațională",
+        "imageSrc": "/images/cases/mindjoy-preview.jpg"
       }
     ]
   },

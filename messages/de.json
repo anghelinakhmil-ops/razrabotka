@@ -33,8 +33,8 @@
     "subtitleCourses": "Kurse",
     "subtitleAnd": "und",
     "subtitleEvents": "Events",
-    "offerLine1": "Wir helfen Leads zu generieren, Dienstleistungen zu verkaufen",
-    "offerLine2": " und Traffic in Kunden zu verwandeln",
+    "offerLine1": "Konversion ab 4%, Lighthouse 95+, Launch in 2–6 Wochen.",
+    "offerLine2": " Echte Metriken — in unseren Fallstudien",
     "cta": "Projekt besprechen",
     "ctaCases": "Referenzen ansehen",
     "scroll": "Nach unten scrollen",
@@ -46,39 +46,39 @@
     "items": [
       {
         "number": "01",
-        "title": "ERGEBNISSE",
-        "subtitle": "Websites für geschäftliche Ergebnisse",
-        "description": "Wir erstellen Websites nicht für die Schönheit, sondern für Leads, Verkäufe und Vertrauen. Jedes Element arbeitet auf Conversion und kommerzielle Ergebnisse hin."
+        "title": "KONVERSION, NICHT NUR SCHÖNHEIT",
+        "subtitle": "Jedes Element arbeitet für Leads",
+        "description": "Durchschnittliche Konversion unserer Websites — 4–8%. Jeder Block, CTA und Text wird auf echte Ergebnisse getestet: Leads, Verkäufe, Registrierungen."
       },
       {
         "number": "02",
-        "title": "FULL CYCLE",
-        "subtitle": "Vom Briefing bis zum Support",
-        "description": "Strategie, Struktur, Texte, Design, Entwicklung, Content, Integrationen, Launch und Support — alles aus einer Hand. Keine separaten Dienstleister nötig."
+        "title": "SIE SUCHEN NICHT 5 AUFTRAGNEHMER",
+        "subtitle": "Strategie → Design → Code → Inhalt → Launch",
+        "description": "Ein Brief — und in 2–6 Wochen haben Sie eine funktionierende Website. Wir machen alles: Struktur, Texte, Design, Entwicklung, Integrationen und Launch."
       },
       {
         "number": "03",
-        "title": "PRÄSENTATION",
-        "subtitle": "Premium-Design + Verkaufslogik",
-        "description": "Wir verbinden stilvolle visuelle Präsentation mit einer durchdachten Struktur und Conversion-Logik. Premium, ruhig, modern — ohne unnötiges Rauschen."
+        "title": "PREMIUM OHNE PREMIUM-PREIS",
+        "subtitle": "Agentur-Design zum Freelancer-Preis",
+        "description": "Minimalismus, Typografie-Fokus, Scroll-Animationen, Pixel-perfektes Responsive. Visuell — wie eine K Agentur. Preislich — viel zugänglicher."
       },
       {
         "number": "04",
-        "title": "INTEGRATIONEN",
-        "subtitle": "Wir integrieren Ihre Website in Geschäftsprozesse",
-        "description": "CRM, Telegram, E-Mail, Analytics, Zahlungen — wir verbinden alles Nötige, damit Ihre Website als Teil Ihres Systems funktioniert, nicht nur als Visitenkarte."
+        "title": "IN IHRE PROZESSE INTEGRIERT",
+        "subtitle": "CRM, Telegram, E-Mail, Zahlungen — sofort einsatzbereit",
+        "description": "Formular eingereicht → sofort in Telegram und CRM. GA4-Analytics mit Tracking jedes Klicks. Zahlungen, Newsletter, Formulare — alles verbunden und getestet."
       },
       {
         "number": "05",
-        "title": "SUPPORT",
-        "subtitle": "Wir bleiben nach dem Launch",
-        "description": "Wir lassen Sie nach der Übergabe nicht allein. Bugfixes, kleine Anpassungen, Beratung, monatlicher Support — wählen Sie das passende Support-Format."
+        "title": "WIR VERSCHWINDEN NICHT NACH DEM LAUNCH",
+        "subtitle": "14–30 Tage Support inklusive",
+        "description": "Bugfixes, kleine Änderungen, Beratung — kostenlos nach dem Launch. Dann drei Support-Pakete von Monitoring bis aktiver Entwicklung."
       },
       {
         "number": "06",
-        "title": "INDIVIDUELLER ANSATZ",
-        "subtitle": "Ohne Vorlagen und Kopien",
-        "description": "Wir verwenden nicht eine Strategie für alle. Jedes Projekt ist eine einzigartige Lösung, die auf Ihre Ziele, Ihr Publikum und Ihr Geschäftsmodell zugeschnitten ist."
+        "title": "FÜR IHRE AUFGABE, KEIN TEMPLATE",
+        "subtitle": "Jedes Projekt — von Grund auf für Ihre Nische",
+        "description": "Wir nehmen kein Template und ändern die Farben. Wir analysieren Ihre Zielgruppe, Wettbewerber und Geschäftsmodell."
       }
     ]
   },
@@ -233,46 +233,20 @@
     "viewCase": "Referenz ansehen",
     "items": [
       {
-        "slug": "expert-coach",
-        "title": "Website für Personal Coach",
-        "category": "Experte",
+        "slug": "ceramo-lab",
+        "title": "Ceramo Lab — Keramikgranit-Labor",
+        "category": "Unternehmen",
         "result": "+180% Leads",
-        "imageAlt": "Website für Personal Coach — Projektvorschau"
+        "imageAlt": "Ceramo Lab — Unternehmenswebsite",
+        "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
       },
       {
-        "slug": "ecommerce-fashion",
-        "title": "Fashion Online-Shop",
-        "category": "E-commerce",
-        "result": "3.2s LCP",
-        "imageAlt": "Fashion Online-Shop — Projektvorschau"
-      },
-      {
-        "slug": "landing-saas",
-        "title": "SaaS-Produkt Landing",
-        "category": "Landing",
-        "result": "8,5% Conversion",
-        "imageAlt": "SaaS-Produkt Landing — Projektvorschau"
-      },
-      {
-        "slug": "expert-psychologist",
-        "title": "Website für Psychologin",
-        "category": "Experte",
-        "result": "+240% Buchungen",
-        "imageAlt": "Website für Psychologin — Projektvorschau"
-      },
-      {
-        "slug": "ecommerce-cosmetics",
-        "title": "Kosmetik-Shop",
-        "category": "E-commerce",
-        "result": "95 Lighthouse",
-        "imageAlt": "Kosmetik-Shop — Projektvorschau"
-      },
-      {
-        "slug": "landing-event",
-        "title": "Event-Promoseite",
-        "category": "Landing",
-        "result": "1200+ Anmeldungen",
-        "imageAlt": "Event-Promoseite — Projektvorschau"
+        "slug": "mindjoy",
+        "title": "MindJoy — Bildungsplattform",
+        "category": "Anwendung",
+        "result": "+220% Registrierungen",
+        "imageAlt": "MindJoy — Bildungsplattform",
+        "imageSrc": "/images/cases/mindjoy-preview.jpg"
       }
     ]
   },

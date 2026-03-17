@@ -33,8 +33,8 @@
     "subtitleCourses": "kursów",
     "subtitleAnd": "i",
     "subtitleEvents": "wydarzeń",
-    "offerLine1": "Pomagamy pozyskiwać leady, sprzedawać usługi",
-    "offerLine2": " i zamieniać ruch w klientów",
+    "offerLine1": "Konwersja od 4%, Lighthouse 95+, start w 2–6 tygodni.",
+    "offerLine2": " Realne metryki — w naszych case studies",
     "cta": "Omów projekt",
     "ctaCases": "Zobacz realizacje",
     "scroll": "Przewiń w dół",
@@ -46,39 +46,39 @@
     "items": [
       {
         "number": "01",
-        "title": "REZULTATY",
-        "subtitle": "Strony nastawione na wyniki biznesowe",
-        "description": "Tworzymy strony nie dla piękna, lecz dla leadów, sprzedaży i zaufania. Każdy element pracuje na konwersję i wyniki komercyjne."
+        "title": "KONWERSJA, NIE TYLKO PIĘKNO",
+        "subtitle": "Każdy element pracuje na leady",
+        "description": "Średnia konwersja naszych stron — 4–8%. Każdy blok, CTA i tekst jest testowany pod kątem realnych wyników: leady, sprzedaż, rejestracje."
       },
       {
         "number": "02",
-        "title": "PEŁNY CYKL",
-        "subtitle": "Od briefu do wsparcia",
-        "description": "Strategia, struktura, teksty, design, rozwój, treści, integracje, uruchomienie i wsparcie — wszystko w jednym miejscu. Nie trzeba szukać osobnych wykonawców."
+        "title": "NIE SZUKASZ 5 WYKONAWCÓW",
+        "subtitle": "Strategia → design → kod → treść → start",
+        "description": "Jeden brief — i w 2–6 tygodni masz działającą stronę. Robimy wszystko sami: strukturę, teksty, design, programowanie, integracje i uruchomienie."
       },
       {
         "number": "03",
-        "title": "PREZENTACJA",
-        "subtitle": "Premium design + logika sprzedaży",
-        "description": "Łączymy stylową prezentację wizualną z przemyślaną strukturą i logiką konwersji. Premium, spokojny, nowoczesny — bez zbędnego szumu."
+        "title": "PREMIUM BEZ CENY PREMIUM",
+        "subtitle": "Design poziomu agencji w cenie freelancera",
+        "description": "Minimalizm, dbałość o typografię, animacje przy scrollu, responsive co do piksela. Wizualnie — jak praca agencji za K. Cenowo — znacznie dostępniej."
       },
       {
         "number": "04",
-        "title": "INTEGRACJE",
-        "subtitle": "Integrujemy stronę z procesami biznesowymi",
-        "description": "CRM, Telegram, email, analityka, płatności — podłączamy wszystko, co potrzebne, aby strona działała jako część systemu, a nie tylko wizytówka."
+        "title": "WBUDOWANE W TWOJE PROCESY",
+        "subtitle": "CRM, Telegram, email, płatności — od razu",
+        "description": "Formularz wysłany → natychmiast w Telegram i CRM. Analityka GA4 śledząca każde kliknięcie. Płatności, newslettery, formularze — wszystko podłączone i przetestowane."
       },
       {
         "number": "05",
-        "title": "WSPARCIE",
-        "subtitle": "Zostajemy po uruchomieniu",
-        "description": "Nie zostawiamy Państwa po oddaniu projektu. Poprawki, drobne zmiany, konsultacje, wsparcie miesięczne — wybierz wygodny format współpracy."
+        "title": "NIE ZNIKAMY PO STARCIE",
+        "subtitle": "14–30 dni wsparcia w pakiecie",
+        "description": "Poprawki, drobne zmiany, konsultacje — bezpłatnie po uruchomieniu. Potem trzy pakiety wsparcia od monitoringu po aktywny rozwój."
       },
       {
         "number": "06",
-        "title": "INDYWIDUALNE PODEJŚCIE",
-        "subtitle": "Bez szablonów i kopii",
-        "description": "Nie stosujemy jednej strategii dla wszystkich. Każdy projekt to unikalne rozwiązanie, zbudowane pod Państwa cele, odbiorców i model biznesowy."
+        "title": "POD TWOJE ZADANIE, NIE SZABLON",
+        "subtitle": "Każdy projekt — od zera pod Twoją niszę",
+        "description": "Nie bierzemy szablonu i nie zmieniamy kolorów. Analizujemy Twoją grupę docelową, konkurencję i model biznesowy."
       }
     ]
   },
@@ -233,46 +233,20 @@
     "viewCase": "Zobacz realizację",
     "items": [
       {
-        "slug": "expert-coach",
-        "title": "Strona coacha personalnego",
-        "category": "Ekspert",
+        "slug": "ceramo-lab",
+        "title": "Ceramo Lab — Laboratorium ceramiki",
+        "category": "Korporacyjny",
         "result": "+180% leadów",
-        "imageAlt": "Strona coacha personalnego — podgląd projektu"
+        "imageAlt": "Ceramo Lab — strona korporacyjna",
+        "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
       },
       {
-        "slug": "ecommerce-fashion",
-        "title": "Sklep z modą online",
-        "category": "E-commerce",
-        "result": "3.2s LCP",
-        "imageAlt": "Sklep z modą online — podgląd projektu"
-      },
-      {
-        "slug": "landing-saas",
-        "title": "Landing produktu SaaS",
-        "category": "Landing",
-        "result": "8.5% konwersji",
-        "imageAlt": "Landing produktu SaaS — podgląd projektu"
-      },
-      {
-        "slug": "expert-psychologist",
-        "title": "Strona psychologa",
-        "category": "Ekspert",
-        "result": "+240% rezerwacji",
-        "imageAlt": "Strona psychologa — podgląd projektu"
-      },
-      {
-        "slug": "ecommerce-cosmetics",
-        "title": "Sklep kosmetyczny",
-        "category": "E-commerce",
-        "result": "95 Lighthouse",
-        "imageAlt": "Sklep kosmetyczny — podgląd projektu"
-      },
-      {
-        "slug": "landing-event",
-        "title": "Strona promocyjna wydarzenia",
-        "category": "Landing",
-        "result": "1200+ rejestracji",
-        "imageAlt": "Strona promocyjna wydarzenia — podgląd projektu"
+        "slug": "mindjoy",
+        "title": "MindJoy — Platforma edukacyjna",
+        "category": "Aplikacja",
+        "result": "+220% rejestracji",
+        "imageAlt": "MindJoy — platforma edukacyjna",
+        "imageSrc": "/images/cases/mindjoy-preview.jpg"
       }
     ]
   },

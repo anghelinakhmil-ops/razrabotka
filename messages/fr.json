@@ -33,8 +33,8 @@
     "subtitleCourses": "formations",
     "subtitleAnd": "et",
     "subtitleEvents": "événements",
-    "offerLine1": "Attirer des leads, vendre des services",
-    "offerLine2": " et convertir le trafic en clients",
+    "offerLine1": "Conversion dès 4%, Lighthouse 95+, lancement en 2–6 semaines.",
+    "offerLine2": " Métriques réelles — dans nos études de cas",
     "cta": "Discuter du projet",
     "ctaCases": "Voir les projets",
     "scroll": "Défiler vers le bas",
@@ -46,39 +46,39 @@
     "items": [
       {
         "number": "01",
-        "title": "RÉSULTATS",
-        "subtitle": "Des sites web pour des résultats commerciaux",
-        "description": "Nous créons des sites web non pas pour leur beauté, mais pour les leads, les ventes et la confiance. Chaque élément travaille à la conversion et aux résultats commerciaux."
+        "title": "CONVERSION, PAS JUSTE DU BEAU",
+        "subtitle": "Chaque élément travaille pour les leads",
+        "description": "Conversion moyenne de nos sites — 4–8%. Chaque bloc, CTA et texte est testé pour des résultats réels : leads, ventes, inscriptions."
       },
       {
         "number": "02",
-        "title": "CYCLE COMPLET",
-        "subtitle": "Du brief à l'accompagnement",
-        "description": "Stratégie, structure, texte, design, développement, contenu, intégrations, lancement et support — tout en un seul endroit. Pas besoin de chercher des prestataires séparés."
+        "title": "VOUS NE CHERCHEZ PAS 5 PRESTATAIRES",
+        "subtitle": "Stratégie → design → code → contenu → lancement",
+        "description": "Un seul brief — et en 2–6 semaines vous avez un site fonctionnel. Nous faisons tout : structure, textes, design, développement, intégrations et lancement."
       },
       {
         "number": "03",
-        "title": "PRÉSENTATION",
-        "subtitle": "Design premium + logique de vente",
-        "description": "Nous combinons une présentation visuelle soignée avec une structure réfléchie et une logique de conversion. Premium, calme, moderne — sans bruit inutile."
+        "title": "PREMIUM SANS PRIX PREMIUM",
+        "subtitle": "Design niveau agence au prix freelance",
+        "description": "Minimalisme, attention à la typographie, animations au scroll, responsive pixel-perfect. Visuellement — comme un travail d'agence à K. En prix — beaucoup plus accessible."
       },
       {
         "number": "04",
-        "title": "INTÉGRATIONS",
-        "subtitle": "Nous intégrons votre site dans vos processus métier",
-        "description": "CRM, Telegram, email, analytics, paiements — nous connectons tout ce dont vous avez besoin pour que votre site fonctionne dans votre système, et pas seulement comme carte de visite."
+        "title": "INTÉGRÉ À VOS PROCESSUS",
+        "subtitle": "CRM, Telegram, email, paiements — prêt à l'emploi",
+        "description": "Formulaire soumis → instantanément dans Telegram et CRM. Analytics GA4 suivant chaque clic. Paiements, newsletters, formulaires — tout connecté et testé."
       },
       {
         "number": "05",
-        "title": "SUPPORT",
-        "subtitle": "Nous restons après le lancement",
-        "description": "Nous ne vous abandonnons pas après la livraison. Corrections de bugs, petites modifications, consultations, support mensuel — choisissez le format d'accompagnement qui vous convient."
+        "title": "ON NE DISPARAÎT PAS APRÈS LE LANCEMENT",
+        "subtitle": "14–30 jours de support inclus",
+        "description": "Corrections, petites modifications, consultations — gratuit après le lancement. Puis trois forfaits de support du monitoring au développement actif."
       },
       {
         "number": "06",
-        "title": "APPROCHE INDIVIDUELLE",
-        "subtitle": "Sans modèles ni copies",
-        "description": "Nous n'utilisons pas une stratégie unique pour tous. Chaque projet est une solution unique, construite pour vos objectifs, votre audience et votre modèle d'affaires."
+        "title": "POUR VOTRE TÂCHE, PAS UN TEMPLATE",
+        "subtitle": "Chaque projet — de zéro pour votre niche",
+        "description": "Nous ne prenons pas un template en changeant les couleurs. Nous analysons votre audience, vos concurrents et votre modèle commercial."
       }
     ]
   },
@@ -233,46 +233,20 @@
     "viewCase": "Voir le projet",
     "items": [
       {
-        "slug": "expert-coach",
-        "title": "Site de coach personnel",
-        "category": "Expert",
+        "slug": "ceramo-lab",
+        "title": "Ceramo Lab — Laboratoire céramique",
+        "category": "Corporate",
         "result": "+180% leads",
-        "imageAlt": "Site de coach personnel — aperçu du projet"
+        "imageAlt": "Ceramo Lab — site corporate",
+        "imageSrc": "/images/cases/ceramo-lab-preview.jpg"
       },
       {
-        "slug": "ecommerce-fashion",
-        "title": "Boutique mode en ligne",
-        "category": "E-commerce",
-        "result": "3.2s LCP",
-        "imageAlt": "Boutique mode en ligne — aperçu du projet"
-      },
-      {
-        "slug": "landing-saas",
-        "title": "Landing SaaS",
-        "category": "Landing",
-        "result": "8.5% conversion",
-        "imageAlt": "Landing SaaS — aperçu du projet"
-      },
-      {
-        "slug": "expert-psychologist",
-        "title": "Site de psychologue",
-        "category": "Expert",
-        "result": "+240% réservations",
-        "imageAlt": "Site de psychologue — aperçu du projet"
-      },
-      {
-        "slug": "ecommerce-cosmetics",
-        "title": "Boutique cosmétiques",
-        "category": "E-commerce",
-        "result": "95 Lighthouse",
-        "imageAlt": "Boutique cosmétiques — aperçu du projet"
-      },
-      {
-        "slug": "landing-event",
-        "title": "Page promo événement",
-        "category": "Landing",
-        "result": "1200+ inscriptions",
-        "imageAlt": "Page promo événement — aperçu du projet"
+        "slug": "mindjoy",
+        "title": "MindJoy — Plateforme éducative",
+        "category": "Application",
+        "result": "+220% inscriptions",
+        "imageAlt": "MindJoy — plateforme éducative",
+        "imageSrc": "/images/cases/mindjoy-preview.jpg"
       }
     ]
   },
