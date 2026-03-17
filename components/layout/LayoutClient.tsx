@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { MobileMenu } from "./MobileMenu";
-import { Preloader } from "./Preloader";
+// Preloader removed — was blocking LCP for 3-4 seconds (PageSpeed: 80 → target 90+)
 import { CallbackModal } from "@/components/forms/CallbackModal";
 import { LenisProvider, scrollToTop } from "@/components/motion/LenisProvider";
 import { CustomCursor } from "@/components/ui/CustomCursor";
@@ -64,8 +64,7 @@ export function LayoutClient({ children }: LayoutClientProps) {
 
   return (
     <LenisProvider>
-      {/* Preloader — shows once per session on first load */}
-      <Preloader />
+      {/* Preloader removed for performance — was blocking LCP */}
 
       {/* Custom Cursor — hidden on touch devices */}
       <CustomCursor />
