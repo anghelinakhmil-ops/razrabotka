@@ -34,15 +34,6 @@ interface CaseData {
 export function generateStaticParams() {
   const slugs = [
     "ceramo-lab",
-    "expert-coach",
-    "ecommerce-fashion",
-    "landing-saas",
-    "expert-psychologist",
-    "ecommerce-cosmetics",
-    "landing-event",
-    "expert-lawyer",
-    "ecommerce-electronics",
-    "landing-app",
   ];
   return slugs.map((slug) => ({ slug }));
 }
@@ -127,7 +118,7 @@ export default async function CaseDetailPage({
       )}
 
       {/* Other Cases */}
-      <OtherCasesSection cases={otherCases} t={t} />
+      {otherCases.length > 0 && <OtherCasesSection cases={otherCases} t={t} />}
 
       {/* CTA */}
       <CTASection t={t} />
