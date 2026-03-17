@@ -9,6 +9,7 @@ import { Preloader } from "./Preloader";
 import { CallbackModal } from "@/components/forms/CallbackModal";
 import { LenisProvider, scrollToTop } from "@/components/motion/LenisProvider";
 import { CustomCursor } from "@/components/ui/CustomCursor";
+import { ScrollToTopButton } from "./ScrollToTopButton";
 import { captureUtm } from "@/lib/utm";
 
 interface LayoutClientProps {
@@ -88,6 +89,9 @@ export function LayoutClient({ children }: LayoutClientProps) {
       <main className="relative z-10 min-h-[100dvh] bg-[var(--color-background)] pt-[72px] lg:pt-[80px]">
         {children}
       </main>
+
+      {/* Scroll to Top */}
+      <ScrollToTopButton />
 
       {/* Footer */}
       <Footer onCallbackClick={handleCallbackClick} />
