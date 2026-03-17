@@ -2214,14 +2214,6 @@
               "label": "Crescita lead"
             },
             {
-              "value": "4.2%",
-              "label": "Tasso di conversione"
-            },
-            {
-              "value": "−35%",
-              "label": "Frequenza di rimbalzo"
-            },
-            {
               "value": "100%",
               "label": "Responsivo"
             }
